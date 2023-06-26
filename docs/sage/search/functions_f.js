@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['savescreenshot_0',['SaveScreenShot',['../class_sage_1_1_c_renderer3_d.html#ad03932444876a4d08710b7bfc60d3090',1,'Sage::CRenderer3D']]],
+  ['secondstoticks_1',['SecondsToTicks',['../class_sage_1_1_c_timer.html#ad87320b8b72e2d6eeb76fc93849aaced',1,'Sage::CTimer']]],
+  ['setbgcolor_2',['SetBgColor',['../class_sage_1_1_c_renderer3_d.html#ad5ffb34be21ed9de5c73e643bb2d304b',1,'Sage::CRenderer3D']]],
+  ['setcamerapos_3',['SetCameraPos',['../class_sage_1_1_c_sprite_renderer.html#acfb173389d223b51774f5c0500a88aad',1,'Sage::CSpriteRenderer']]],
+  ['setdelay_4',['SetDelay',['../class_sage_1_1_c_event_timer.html#a97e769b910c44d17ec9617d9cbccd37d',1,'Sage::CEventTimer::SetDelay(const float)'],['../class_sage_1_1_c_event_timer.html#add450698f906c568fcc4dc13411cd331',1,'Sage::CEventTimer::SetDelay(const float, const float)']]],
+  ['setfixedtimestep_5',['SetFixedTimeStep',['../class_sage_1_1_c_timer.html#a2f0cc0afde893f445eeec2a3d38f83f6',1,'Sage::CTimer']]],
+  ['setframetime_6',['SetFrameTime',['../class_sage_1_1_c_timer.html#a99a1a189f1ec478e735016576bff268b',1,'Sage::CTimer']]],
+  ['setlistener_7',['SetListener',['../class_sage_1_1_c_sound.html#a2712eca572f424f42bf8d5bbc2480f3e',1,'Sage::CSound']]],
+  ['setlistenerorient_8',['SetListenerOrient',['../class_sage_1_1_c_sound.html#a9a3b6e89e60796c3a375636adab8c752',1,'Sage::CSound']]],
+  ['setlistenerpos_9',['SetListenerPos',['../class_sage_1_1_c_sound.html#a72011b02fdba4317ed0c7c0435724987',1,'Sage::CSound::SetListenerPos(const Vector3 &amp;)'],['../class_sage_1_1_c_sound.html#a01cad4589a84b31f34a1d0c7f98be76e',1,'Sage::CSound::SetListenerPos(const Vector2 &amp;)']]],
+  ['setorthographic_10',['SetOrthographic',['../class_sage_1_1_c_camera.html#a9cea93e4eaa931f448688ff0b0b54659',1,'Sage::CCamera']]],
+  ['setperspective_11',['SetPerspective',['../class_sage_1_1_c_camera.html#ade2fecf77d3484403ffc3fbc76d5d028',1,'Sage::CCamera']]],
+  ['setpitch_12',['SetPitch',['../class_sage_1_1_c_camera.html#ab8693f3bbec6c24df78d3eeedf5108ee',1,'Sage::CCamera::SetPitch()'],['../class_sage_1_1_c_sound.html#a0de00e3bd3d53418233bb0c7ba920d91',1,'Sage::CSound::SetPitch()']]],
+  ['setroll_13',['SetRoll',['../class_sage_1_1_c_camera.html#a351cb495da517e28727b95f1e0f3a392',1,'Sage::CCamera']]],
+  ['setscale_14',['SetScale',['../class_sage_1_1_c_sound.html#a5624e9a84d9e2313eaa350ff88cc9780',1,'Sage::CSound']]],
+  ['settexturedescptr_15',['SetTextureDescPtr',['../class_sage_1_1_c_sprite.html#ac06b75603e5896e63203c9b91be4fa39',1,'Sage::CSprite']]],
+  ['setvel_16',['SetVel',['../class_sage_1_1_c_camera.html#a3ed455207e313414dead180d58dfe55a',1,'Sage::CCamera']]],
+  ['setwinsize_17',['SetWinSize',['../class_sage_1_1_c_settings_manager.html#a8a7ac51ac63186bf2b1a26996d2b100b',1,'Sage::CSettingsManager']]],
+  ['setyaw_18',['SetYaw',['../class_sage_1_1_c_camera.html#a33a9fe002bf74b84c5a0d5380ce313b6',1,'Sage::CCamera']]],
+  ['srand_19',['srand',['../class_sage_1_1_c_random.html#a88799734f848e1f9baca07ffbd1cc070',1,'Sage::CRandom::srand(UINT)'],['../class_sage_1_1_c_random.html#ad394ffa1ea93c111c77388f3ab8ef24f',1,'Sage::CRandom::srand()']]],
+  ['start_20',['Start',['../class_sage_1_1_c_event_timer.html#a7e11d20ff6b1eb039aa635f4fbfc7b36',1,'Sage::CEventTimer']]],
+  ['startloadingthread_21',['StartLoadingThread',['../_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb',1,'Sage::StartLoadingThread(CSpriteRenderer *pRenderer, CMediaList&lt; t &gt; m, bool *pFlag)'],['../_sage_loading_thread_8h.html#a14d2095562d0ef5297a4cd38812d6d7f',1,'Sage::StartLoadingThread(CSound *pAudio, CMediaList&lt; t &gt; m, bool *pFlag)']]],
+  ['step_22',['Step',['../class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f',1,'Sage::CParticleEngine']]],
+  ['stop_23',['Stop',['../class_sage_1_1_c_sound.html#a37ccd37b4e00ff0daf110f888ee24280',1,'Sage::CSound::Stop()'],['../class_sage_1_1_c_sound.html#a9a6fa009546ff7d53fc505d39e5ee7c2',1,'Sage::CSound::Stop(t)'],['../class_sage_1_1_c_sound.html#a08ff13fd976f3ce80f559a1be16198ac',1,'Sage::CSound::Stop(const CSoundDesc &amp;)']]]
+];

@@ -1,0 +1,619 @@
+/**
+
+\mainpage notitle
+
+\anchor sec1
+# 1. Introduction
+
+SAGE, the Simple Academic Game Engine,
+is a simple game engine for instructional applications.
+It is called *simple* because it consists of approximately
+10,500 lines of open-source C++ code (exclusive of blank lines
+and block comments), whereas commercial game engines typically
+have millions of lines of code.
+It uses Microsoft DirectX 12 for graphics, DirectXTK 12
+for graphics helpers and audio support, and TinyXML2 for reading XML files.
+It has been used by students in [Ian Parberry](https://ianparberry.com/)'s 
+game programming classes
+to code 2D, 2.5D, and 3D games using Visual C++ under 64-bit Windows 11.
+It must be emphasized that SAGE is an _instructional_ game engine.
+It is __not__ intended for use outside the classroom and it is definitely
+__not__ intended for commercial use.
+SAGE is currently a private, members-only repository.
+If you are an instructor and you wish to test it out for use in
+your game programming class, please email
+[Ian Parberry](https://ianparberry.com/).
+
+## Installing SAGE
+
+If SAGE is not already installed on your computer, 
+please read and follow
+[the installation instructions](../install/index.html).
+
+\anchor sec2
+# 2. Design Patterns
+
+A _design pattern_ is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code.
+Design patterns began with the so-called gang of four consisting of Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. 
+In 1994 they published a book called _Design Patterns: Elements of Reusable Object-Oriented Software_.
+SAGE uses what are called _implementation strategy design patterns_,
+which relate to source code organization. 
+There are two types of implementation strategy design pattern:
+_algorithm_ and _data_.
+SAGE uses three algorithm design patterns and four data design patterns.
+ 
+\anchor sec2-1
+## 2.1 Algorithm Design Patterns
+
+The three algorithm design patterns used by SAGE are 
+_entity_, _manager_, and _component_.
+
+1. An _entity_ is a simple class that is concerned only with its own state and actions. 
+Entities typically rely on components to perform tasks for them. 
+Access to entities is typically through a manager.
+
+2. A _manager_ contains a collection of entities. 
+Managers are responsible for entity creation and destruction, and delegation of tasks to all entities for which the manager has responsibility. 
+A manager typically stores its entities in a private container such as `std::vector` or `std::list`. 
+The manager's entities typically list the manager as a friend so that the manager has direct access to the entity's data without the need for cumbersome access functions.
+
+3. A _component_ is a class that provides services typically provided by the
+operating system such as graphics and sound.
+
+\anchor sec2-2
+## 2.2 Data Design Patterns
+
+The four data design patterns used by SAGE are
+ _descriptor_, _monostate_, _accessor_, and _aggregator_.
+ 
+1. A _descriptor_ encapsulates information in the form of public member variables. They are typically used to replace a long parameter list with a single parameter.
+
+2. A _monostate_ is a class that encapsulates a single instance of data to be shared between classes using class variables (static member variables).
+A monostate may be instantiated in the code, but it more generally
+has classes derived from it. 
+Monostates are used to provide data to multiple entities, managers, components, without the need for global variables, long parameter lists, or local copies of the data.
+The Monostate Design Pattern is also called the _Borg Idiom_ in the Python community.
+
+3. An _accessor_ is a monostate consisting only of protected member variables.
+
+4. An _aggregator_ is an accessor consisting of static protected pointers to components.
+
+\anchor sec3
+# 3. SAGE Classes
+
+The following classes are provided by SAGE in `namespace Sage`.
+Do not instantiate them in your game unless instructed otherwise.
+Some have already been instantiated for you.
+Others have been designed to be derived from.
+Do not modify SAGE code in order to make your game run. Instead,
+you should derive your own class from the relevant SAGE class and
+add your functionality in overloaded member functions.
+
+\anchor sec3-1
+## 3.1 Input Devices
+
+\anchor table-1
+<center>
+<table>
+<caption>Table 1. SAGE input device classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<td><center><b>Usage</b></center></td>
+<tr>
+<td>`Sage::CController`</td>
+<td>Component</td>
+<td>XBox controller handler</td>
+<td>Instantiated by SAGE</td>
+<tr>
+<td>`Sage::CKeyboard`</td>
+<td>Component</td>
+<td>Keyboard handler</td>
+<td>Instantiated by SAGE</td>
+<tr>
+<td>`Sage::CMouse`</td>
+<td>Component</td>
+<td>Mouse position handler</td>
+<td>Instantiated by SAGE</td>
+</table>
+</center>
+
+SAGE provides device handlers
+for an X-Box controller, the keyboard, and the mouse (see \ref table-1 "Table 1").
+For efficiency, these handlers are polled, and are not dependent on the Windows
+message passing system. All three components have a `GetState()` function that
+should be called once per frame to
+capture the current state of the device.
+This state snapshot can then be examined by calling device-specific
+reader functions.
+One thing that you may not be expecting is that `Sage::CMouse` handles only
+the position of the mouse. Mouse buttons are handled by `Sage::CKeyboard`.
+This is a foible of the way Windows handles its devices.
+
+\anchor sec3-2
+## 3.2 Time
+
+\anchor table-2
+<center>
+<table>
+<caption>Table 2. SAGE timer classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<td><center><b>Usage</b></center></td>
+<tr>
+<td>`Sage::CEventTimer`</td>
+<td>Component</td>
+<td>Timer for regularly scheduled events</td>
+<td>Instantiated in your game</td>
+<tr>
+<td>`Sage::CTimer`</td>
+<td>Component</td>
+<td>High-accuracy timer</td>
+<td>Instantiated by SAGE</td>
+</table>
+</center>
+
+Your game must be able to measure your computers frame rate and frame
+interval, which is the amount of time between frames. 
+This will typically vary between 30 frames per second (around 33 milliseconds per frame)
+and over 300 frame per second (around 3 milliseconds per frame).
+SAGE provides two timer classes (see \ref table-2 "Table 2").
+`Sage::CTimer` is a high-accuracy frame timer. It has a function `Sage::CTimer::Tick()`
+that must be called once per frame to capture a snapshot of the time.
+Then, for example, the current frame time in seconds can be obtained
+as a floating point value
+by calling `Sage::CTimer::GetFrameTime()`.
+
+`Sage::CEventTimer` lets you handle regularly scheduled events such
+as flashing lights or the reloading of a weapon. The events can
+be scheduled with an optional amount of variability.
+To use it, instantiate one instance of `Sage::CEventTimer` for each event,
+providing the delay and optional amount of variability as parameters to
+the constructor. Thereafter, call the event timer's function `Sage::CEventTimer::Triggered()`
+once per frame. This function will return `true` and reset the event if
+the delay time plus the variability time are greater than the elapsed time
+since the event was last triggered (or the time it was created, if it has never been triggered).
+Otherwise it will return `false`.
+
+\anchor sec3-3
+## 3.3 Sound
+
+\anchor table-3
+<center>
+<table>
+<caption>Table 3. SAGE sound classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CSound`</td>
+<td>Component</td>
+<td>Sound player</td>
+<tr>
+<td>`Sage::CSoundDesc`</td>
+<td>Descriptor</td>
+<td>Sound descriptor</td>
+<tr>
+<td>`Sage::CPlayableSoundDesc`</td>
+<td>Descriptor</td>
+<td>Playable sound descriptor</td>
+</table>
+</center>
+
+SAGE provides a sound player `Sage::CSound` that will let you play and mix
+multiple copies of multiple sounds in 3D audio at varying pitches and volumes.
+If all you wish to do is play the sound at default pitch and
+volume, or perhaps specify only the pitch and/or the volume, `Sage::CSound`
+has specific member functions for you. Anything more complicated needs you
+provide an instance of a sound descriptor `Sage::CSoundDesc` as a parameter.
+`Sage::CPlayableSoundDesc` is intended for internal use in SAGE only,
+which means that you should never need to use it in your game.
+Loading sounds from `wav` files will be covered in \ref sec3-7 "Section 3.7".
+
+\anchor sec3-4
+## 3.4 Game Objects
+
+\anchor table-4
+<center>
+<table>
+<caption>Table 4. SAGE game object classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CObject`</td>
+<td>Entity</td>
+<td>Basic game object</td>
+<tr>
+<td>`Sage::CObjectManager`</td>
+<td>Manager</td>
+<td>Basic object manager</td>
+</table>
+</center>
+
+A _game object_ is the abstract representation of a thing in your game,
+such as a character, a wall, or a missile.
+SAGE best practice is to derive your own game object class `CObject` from
+`Sage::CObject`, which provides base functionality to game objects.
+`Sage::CObject` provides stubs for the move and draw virtual functions
+`Sage::CObject::Move` and `Sage::CObject::Draw`, which you should definitely
+override in your implementation of `CObject`.
+
+It is also SAGE best practice to manage your objects with an _object manager_
+`CObjectManager` derived from `Sage::CObjectManager`,
+which provides base functionality to manage game objects.
+`Sage::CObjectManager` maintains an _object list_ containing pointers to
+game objects, which are assumed to have been derived from `Sage::CObject`.
+It has a virtual function `Sage::CObjectManager::Draw` which calls
+the virtual `Draw` function of every object in the object list,
+and a virtual function `Sage::CObjectManager::Move` which calls
+the virtual `Move` function of every object in the object list,
+then performs collision detection and response between pairs of
+objects in the object list.
+
+When an instance of your game object class `CObject` derived from `Sage::CObject`
+dies in your game, you must call its inherited function `Sage::CObject::MarkForDeletion()`.
+At the end of `Sage::CObjectManager::Move()`, after collision detection
+and response, all objects in the object list that have been marked for deletion
+are removed from the object list and `delete`d.
+Your `CObjectManager::Move()` function which over-rides `Sage::CObjectManager::Move()`
+can either call `Sage::CObjectManager::Move()` or perform its own 
+object motion and collision
+detection and response, and then call `Sage::CObjectManager::DeleteMarkedObjects()`.
+
+\anchor sec3-5
+## 3.5 Rendering
+
+\anchor table-5
+<center>
+<table>
+<caption>Table 5. SAGE rendering classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CCamera`</td>
+<td>Component</td>
+<td>Camera</td>
+<tr>
+<td>`Sage::CCameraCommon`</td>
+<td>Accessor</td>
+<td>Camera common variables</td>
+<tr>
+<td>`Sage::CRenderer3D`</td>
+<td>Component</td>
+<td>3d renderer</td>
+<tr>
+<td>`Sage::CScreenshotFlag`</td>
+<td>Accessor</td>
+<td>Screenshot flag</td>
+<tr>
+<td>`Sage::CSpriteRenderer`</td>
+<td>Component</td>
+<td>Sprite renderer</td>
+<tr>
+<td>`Sage::CTextureDesc`</td>
+<td>Descriptor</td>
+<td>Texture descriptor</td>
+</table>
+</center>
+
+SAGE provides two rendering classes, `Sage::CSpriteRenderer` for 2D and 2.5D
+sprite games, and `Sage::CRenderer3D`.
+Control of the camera is provided by accessing the variables
+in `Sage::CCameraCommon`.
+`Sage::CCamera` is intended only for internal use in SAGE and should
+not be instantiated in your game.
+`Sage::CScreenshotFlag`, which enables screen shotting when
+the player presses the `print screen` button, is also intended only for
+ internal use in SAGE and should
+not be instantiated in your game.
+The texture descriptor `Sage::CTextureDesc` is intended for use in 3D
+games only and should
+not be instantiated in a 2D or 2.5D sprite game.
+
+`Sage::CSpriteRenderer` has several versions of `Sage::CSpriteRenderer::Draw` 
+to draw a sprite, the simplest of which takes as parameters
+a sprite index, a position, and (optionally) an orientation angle in radians.
+If more control is desired, such as scaling and tinting,
+ construct an instance of 
+`Sage::CSpriteDesc2D` and pass a pointer to it to `Sage::CSpriteRenderer::Draw`
+instead.
+Since neither DirectX12 nor the DirectX12 Toolkit provide functions
+for drawing lines, rectangles, or circles, these functions are
+provided by `Sage::CSpriteRenderer`, although frankly they are a kluge.
+
+The `Sage::CSpriteRenderer` constructor allows it to be used in three
+modes, specified by a parameter of the enumerated type `Sage::eSpriteMode`.
+`Sage::eSpriteMode::Batched2D` renders sprites using `SpriteBatch` from
+the DirectX12 Toolkit. 
+`Sage::eSpriteMode::Unbatched2D` renders sprites natively. 
+Both of these modes render using _painter's algorithm_, that is, 
+sprites are drawn on top of each other in the order in which they are
+rendered. This means that the background must be drawn first, and that
+anything that must be drawn on top of anything, such as text or
+instrumentation, must be drawn last.
+
+`Sage::eSpriteMode::Unbatched3D` is for use in 3D games (experimental at
+the moment) or in 2D or 2.5D games in which you want or need the capability
+to draw the sprites in any order, with the depth specified by the
+third dimension of a 3D vector. In this case, instead of calling
+`Sage::CSpriteRenderer::Draw` for each sprite, collect the 3D sprite descriptors in
+an instance of `std::vector<Sage::CSpriteDesc3D>` and pass that as
+a parameter to `Sage::CSpriteRenderer::Draw` which will sort them by depth
+(in Z-order) before rendering them.
+
+\anchor sec3-6
+## 3.6 Sprites
+
+\anchor table-6
+<center>
+<table>
+<caption>Table 6. SAGE sprite classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CSprite`</td>
+<td>Component</td>
+<td>Sprite</td>
+<tr>
+<td>`Sage::CSpriteDesc`</td>
+<td>Descriptor</td>
+<td>Base sprite descriptor</td>
+<tr>
+<td>`Sage::CSpriteDesc2D`</td>
+<td>Descriptor</td>
+<td>2D sprite descriptor</td>
+<tr>
+<td>`Sage::CSpriteDesc3D`</td>
+<td>Descriptor</td>
+<td>3D sprite descriptor</td>
+</table>
+</center>
+
+`Sage::CSprite` is the abstract representation of a multi-frame sprite.
+It is intended only for internal use in SAGE and should
+not be instantiated in your game.
+`Sage::CSpriteRenderer` maintains a list of pointers to instances of `Sage::CSprite`
+and will take care of their management without any need for additional code
+ in your game.
+The 2D sprite descriptor `Sage::CSpriteDesc2D` describes the
+properties of a two-dimensional sprite in a 2D or 2.5D game,
+and `Sage::CSpriteDesc3D` does the same for a three-dimensional sprite
+in a 3D game.
+`Sage::CSpriteDesc` describes the properties common to
+2D and 3D sprites, and `Sage::CSpriteDesc2D` and `Sage::CSpriteDesc3D`
+are derived from it. 
+It is intended only for internal use in SAGE and should
+not be instantiated in your game.
+
+\anchor sec3-7
+## 3.7 Loading Media
+
+\anchor table-7
+<center>
+<table>
+<caption>Table 7. SAGE media loading classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CLoadingThread`</td>
+<td>Component</td>
+<td>Media loading thread</td>
+<tr>
+<td>`Sage::CMediaDesc`</td>
+<td>Descriptor</td>
+<td>Media descriptor</td>
+<tr>
+<td>`Sage::CMediaList`</td>
+<td>Component</td>
+<td>Media descriptor list</td>
+</table>
+</center>
+
+SAGE provides the ability to read media, that is, sprites and sounds
+sequentially or in parallel threads.
+The problem with the former is that your game window will freeze up
+while the media loads from disk, which can be for several seconds depending
+on the size of the media and the speed of your computers HD or SSD.
+While multithreaded loading is preferable, sequential loading is provided for
+debugging and testing purposes.
+
+In either case, SAGE makes use of a _media descriptor_ class
+`Sage::CMediaDesc` which consists of a an index
+and a string. The index is used to store the piece of media in
+an array, and the string is used to search for an XML tag that
+specifies the media file from which it is to be read.
+To load sounds, insert the corresponding media descriptors into
+an instance of `Sage::CMediaList` and pass that as a parameter
+to `Sage::CSound::LoadMT` for asynchronous (i.e. multi-threaded) loading or
+to `Sage::CSound::Load` for sequential loading (see \ref sec3-3 "Section 3.3"
+for more information about `Sage::CSound`).
+To load sprites, insert the corresponding media descriptors into
+an instance of `Sage::CMediaList` and pass that as a parameter
+to `Sage::CSpriteRenderer::LoadMT` for asynchronous (i.e. multi-threaded) loading or
+to `Sage::CSpriteRenderer::Load` for sequential loading 
+(see \ref sec3-6 "Section 3.6"
+for more information about `Sage::CSpriteRenderer`).
+
+\anchor sec3-8
+## 3.8 Particle Engine
+
+\anchor table-8
+<center>
+<table>
+<caption>Table 8. SAGE particle engine classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CParticleDesc`</td>
+<td>Descriptor</td>
+<td>Particle descriptor</td>
+<tr>
+<td>`Sage::CParticle`</td>
+<td>Entity</td>
+<td>Particle</td>
+<tr>
+<td>`Sage::CParticleEngine`</td>
+<td>Component</td>
+<td>Base particle engine</td>
+<tr>
+<td>`Sage::CParticleEngine2D`</td>
+<td>Component</td>
+<td>2D particle engine</td>
+<tr>
+<td>`Sage::CParticleEngine3D`</td>
+<td>Component</td>
+<td>3D particle engine</td>
+</table>
+</center>
+
+SAGE provides a 2D particle engine `Sage::CParticleEngine2D`
+and a 3D particle engine `Sage::CParticleEngine3D` (under development),
+both derived from `Sage::CParticleEngine`.
+The latter is intended only for internal use in SAGE and should
+not be instantiated in your game.
+`Sage::CParticle` represents a particle and should also not
+ be instantiated in your game.
+To create a particle, fill in a _particle descriptor_ `Sage::CParticleDesc`
+with the particle properties (including fade in, fade out, scale in, scale out)
+and pass it as a parameter to `Sage::CParticleEngine2D::Create()`. Function
+`Sage::CParticleEngine2D::Step()` must be called once per frame to 
+animate the particles.
+
+\anchor sec3-9
+## 3.9 Windows and Settings
+
+\anchor table-9
+<center>
+<table>
+<caption>Table 9. SAGE windows and settings classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CSettings`</td>
+<td>Accessor</td>
+<td>Game settings</td>
+<tr>
+<td>`Sage::CSettingsManager`</td>
+<td>Manager</td>
+<td>Game settings manager</td>
+<tr>
+<td>`Sage::CWindow`</td>
+<td>Component</td>
+<td>Window handler</td>
+<tr>
+<td>`Sage::CWindowDesc`</td>
+<td>Descriptor</td>
+<td>Window descriptor</td>
+</table>
+</center>
+
+`Sage::CSettings` contains game settings that are read from
+an XML file by `Sage::CSettingsManager`.
+Any of your game classes that require these settings
+should be derived from `Sage::CSettings`.
+The _window descriptor_ `Sage::CWindowDesc`
+contains some important Windows properties such as the
+window and instance handles for your game.
+Any of your game classes that require these properties
+should be derived from `Sage::CWindowDesc`.
+`Sage::CWindow` handles Windows specific operations required
+to manage your game. It should be instantiated in your `main.cpp`.
+
+\anchor sec3-10
+## 3.10 Other
+
+\anchor table-10
+<center>
+<table>
+<caption>Table 10. Other SAGE classes.</caption>
+<tr>
+<td><center><b>SAGE Class</b></center></td>
+<td><center><b>Design Pattern</b></center></td>
+<td><center><b>Description</b></center></td>
+<tr>
+<td>`Sage::CComponent`</td>
+<td>Aggregator</td>
+<td>Component pointers</td>
+<tr>
+<td>`Sage::CRandom`</td>
+<td>Component</td>
+<td>Pseudo-random number generator</td>
+</table>
+</center>
+
+`Sage::CRandom` is a pseudo-random number generator that can be used
+to generate pseudo-random integers, floating point values, and colors.
+It can be set to generate a different sequence of pseudo-random
+values every time your game is played, or, for debugging purposes,
+to generate the same sequence of pseudo-random
+values every time your game is played.
+
+`Sage::CComponent` contains pointers to important components that are
+instantiated for you by SAGE. These include a sound player, a timer,
+a pseudo-random number generator, and handlers for a keyboard, mouse, and
+XBox controller. Any of your game classes that require these components
+should be derived from `Sage::CComponent`.
+
+\anchor sec4
+## 4. Some Sage Conventions
+
+1. SAGE class names always start with an upper-case `C` for *class*,
+for example, `CRandom` and `CSprite`.
+
+2. SAGE code is in namespace `Sage`,
+so you will have to access tham as, for example,
+`Sage::CRandom` and `Sage::CSprite`. This will help you to distinguish the
+SAGE code from the non-SAGE code in the examples.
+
+3. Generally, a class `Sage::XXX` will have its
+declaration in a header file called `SageXXX.h`
+and its implementation in a code file called `SageXXX.cpp`.
+There are some exceptions, for example, templated code.
+
+4. Class member variables have names that start with a lower-case
+`m` for *member* followed by the underline character, like this: `m_`.
+The next character or two will be a lower-case string
+indicative of the variable type, followed by the first letter of
+the variable's descriptive name, which will always be upper-case.
+For example,
+`m_fFriction` is a floating point variable for friction,
+`m_nNumFrames` is an integer variable for the number of frames
+(which could be `int`, `UINT`,
+or `size_t`),
+and `m_pTimer` is a pointer to a timer. 
+
+5. SAGE is documented using [Doxygen](https://www.doxygen.nl/)
+which allows us to generate html documentation from
+programmer-readable comments.
+Doxygen comments start with `///` for a block comment
+and `//<` for an in-line comment.
+
+
+6. Public member functions that simply return the
+value stored in a private or protected member variables
+start with `Get`, for example,  
+`Sage::CCamera::GetYaw()` returns `Sage::CCamera::m_fYaw`.
+
+7. Public member functions that modify the
+values stored in private or protected member variables
+start with `Set`, for example,  
+`Sage::CCamera::SetYaw()` sets `Sage::CCamera::m_fYaw`
+and recomputes the camera's orientation matrix and view frunstum.
+
+**/

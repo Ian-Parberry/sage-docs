@@ -1,0 +1,89 @@
+/**
+\mainpage notitle
+
+This is a collision detection and response toy.
+It's driven by a dialog box so there is no keyboard
+input. It's intended
+to help you visualize what's going on in the 
+Shapes project by experimenting with various settings.
+There's really no need for you to pay much attention
+to the source code except for the code
+in the [Shapes Library](../shapes/index.html). 
+
+@image html screenshot.png "Ten balls with Show Tracks turned on."
+
+You might, however, be interested in the Windows dialog
+box code which uses native Windows API calls.
+
+@image html dialogbox.png "The dialog box containing the controls."
+
+## Dialog Box Controls
+
+The dialog box controls are clustered into named regions as described below.
+
+### Balls in Play
+
+- Launched: The number of balls launched.
+- Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
+- Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
+
+### Load
+
+- FPS: The current number of animation frames per second.
+- Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.
+
+### Next Ball
+
+- Size: The size of the next ball to be launched is controlled by a slider.
+- Speed: The speed of the next ball to be launched is controlled by a slider.
+
+### Collision Detection and Response
+
+- AABB tests per iteration: The number of AABB overlap tests performed per collision iteration.
+- AABB tests per second: The number of AABB overlap tests performed per second.
+- Full tests per second: The number of full tests performed per second. These are performed only when AABBs overlap.
+- Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.
+
+### Quadtree
+
+- Active: Toggle the use of quadtrees for space subdivision.
+- Levels: Set the number of levels in the quadtree.
+- Nodes: The number of nodes in an active quadtree.
+- Leaves: The number of leaves in an active quadtree.
+- Leaf area: The dimension of the rectangle covered by each quadtree leaf.
+- Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.
+
+### Iterations
+
+- Motion: The number of motion iterations per animation frame.
+- Collision: The number of collision iterations per motion iteration.
+
+### Show
+
+- Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color.
+- Tracks: Draw a track behind each ball.
+- Tangents: Draw tangents to arcs and line segments.
+- AABBs: Draw AABBs for the collision shapes. If quadtrees are active, then also draw the quadtree grid.
+- Reticles: Draw a spinning reticle at each point of impact of a ball. The reticle color, and style will vary with the type of collision and its rotation speed will vary with the collision speed.
+- Velocity: Draw an arrow on each ball in the direction of travel with size proportional to speed.
+- Sectors: Draw arc sectors.
+- Lights: Light up static and kinematic shapes briefly after each collision.
+
+### Launch
+
+- Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.
+
+### Other
+
+- Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.
+- Rotate: Toggle rotation of the kinematic shapes.
+- Help: Show help from web page.
+- Clear: Delete all of the balls.
+- Quit: Exit the program.
+
+
+
+**/
+
+
+

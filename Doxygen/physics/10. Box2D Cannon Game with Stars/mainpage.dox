@@ -1,0 +1,55 @@
+/**
+
+\mainpage notitle
+
+This version of the Cannon Game uses a Box2D contact listener to play the right
+collision sounds and animate colored stars at the points of contact. 
+It's almost identical to the 
+[Box2D Cannon Game](https://larc.unt.edu/code/physics/cannon/) except that the code
+for playing collision sounds has been removed, and code for a Box2D
+contact listener has been added.
+
+@image html screenshot.png
+
+Keyboard Controls
+-----------------
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>Enter</td>
+<td>Restart when over</td>
+<tr>
+<td>Space</td>
+<td>Fire cannon</td>
+<tr>
+<td>Up arrow</td>
+<td>Rotate cannon barrel up  while key is down</td>
+<tr>
+<td>Down arrow</td>
+<td>Rotate cannon barrel down while key is down</td>
+<tr>
+<td>Left arrow</td>
+<td>Start cannon moving left</td>
+<tr>
+<td>Right arrow</td>
+<td>Start cannon moving right</td>
+<tr>
+<td>S</td>
+<td>Stop cannon</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+
+**/
+
+
+

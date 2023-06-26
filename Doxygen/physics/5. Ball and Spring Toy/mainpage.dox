@@ -1,0 +1,51 @@
+/**
+\mainpage notitle
+
+The Ball and Spring Toy applies Verlet integration and Gauss-Seidel 
+Relaxation to bodies made up of balls connected by springs
+and sticks. The bodies fall under gravity and you can apply
+a random impulse to them to see how they react
+The types of bodies available are chains
+of length 2, 3, and 4; wheels of size 4, 5, and 6;
+and a ragdoll robot. For each body type except the ragdoll
+robot you are given two bodies, one with springs and one
+with sticks. The screenshot below shows a pair of wheels
+of size 5 (that is, they have 5 balls on their circumferences).
+The one on the left is made with springs, which is shown deformed
+after the application of an impulse. The one on the right is
+made up of sticks and does not deform under impulse. The ragdoll robot
+has some primitive AI that attempts to make it stand up and move to
+the center of the window.
+
+@image html screenshot.png
+
+Keyboard Controls
+-----------------
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>Backspace</td>
+<td>Restart with the current body type</td>
+<tr>
+<td>Enter</td>
+<td>Advance to the next body type</td>
+<tr>
+<td>Space</td>
+<td>Apply a random impulse</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+
+
+**/
+
+

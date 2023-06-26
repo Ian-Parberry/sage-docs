@@ -1,0 +1,63 @@
+/**
+
+\mainpage notitle
+
+The Stroop Test Game makes the classical Stroop Test into a
+game with completely gratuitous and totally unnecessary 
+sound, physics and visual effects. 
+The player is presented with a sequence of words colored either red, green, or blue
+and is required to hit one of three keys depending on the color of the current word.
+The catch is that the words are the English words "red", "green", and "blue",
+which may or may not actually match their color.
+
+@image html screenshot.png
+
+If the player hits the key corresponding to the word's actual color
+(the left arrow for red words, the up arrow
+for green words, and the right arrow for blue words),
+then it explodes into individual letters that in turn explode
+individually into little copies of themselves which shrink down to nothing and vanish.
+Any missed words descend to the bottom where they bounce around and eventually explode
+in their own time. Explosions generate clouds of smoke and collisions generate bubbles
+that blow about in the wind created by explosions and passing words.
+
+Keyboard Controls
+-----------------
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>F2</td>
+<td>Toggle drawing of air pressure</td>
+<tr>
+<td>F3</td>
+<td>Toggle drawing of wind vectors</td>
+<tr>
+<td>F4</td>
+<td>Toggle drawing of vertices</td>
+<tr>
+<td>F5</td>
+<td>Toggle drawing of particle effects</td>
+<tr>
+<td>Left arrow</td>
+<td>Hit for red words</td>
+<tr>
+<td>Up arrow</td>
+<td>Hit for green words</td>
+<tr>
+<td>Right arrow</td>
+<td>Hit for blue words</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+
+**/
+

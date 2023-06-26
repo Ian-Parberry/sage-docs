@@ -1,0 +1,192 @@
+/**
+
+\mainpage notitle
+
+\anchor preamble
+
+Before we begin, make sure that you are on a PC running Windows 11
+and that your account has the authority to install new programs
+and to create and edit Windows environment variables.
+This may not be the case if you are on a work or school computer.
+If you are unfamiliar with environment variables,
+you can access them by
+hitting the Window key on your keyboard and typing "Environment".
+Click on `Edit the system environment variables`.
+The `Environment Variables` dialog box should appear. 
+Click on the `New` or `Edit` button and fill in the
+name and value fields.
+
+\anchor visualstudio
+# 1. Microsoft Visual Studio
+
+If your computer already has Microsoft Visual Studio installed,
+check that it has the following three workloads as shown in
+\ref fig1 "Fig. 1":
+Desktop development with C++, Game development with C++, and
+.NET desktop development.
+If not, you can install them from within Visual Studio without
+having to deinstall and reinstall the whole thing.
+You can get a copy of Visual Studio Community from
+[https://visualstudio.microsoft.com/vs/community/](https://visualstudio.microsoft.com/vs/community/).
+Make sure that you choose the workloads mentioned above.
+
+\anchor fig1
+\image html vsconfig.png "Fig 1. Visual Studio Workloads." width=95%
+
+\anchor msbuild
+# 2. MSBuild
+
+In order to use the included batch files `Build.bat` for fast
+compilation without running Visual Studio, you must add the location of `MSBuild.exe`, which was installed when you installed
+Visual Studio, to your `Path` environment variable.
+Its location will depend on which version of Visual Studio you are running.
+For example, the location for Visual Studio 2022 Community is 
+\verbatim
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
+\endverbatim
+ 
+If you are unfamiliar with the process of modifying
+or creating an environment variable,
+begin by
+hitting the Window key on your keyboard and typing "Environment".
+Click on `Edit the system environment variables`.
+The `Environment Variables` dialog box should appear. 
+Click on the `New` or `Edit` button and fill in the
+name and value fields.
+
+__Important Note__: Visual Studio only reads the contents of environment
+variables on startup, so make your you quit all instances of Visual Studio
+and restart them after creating or changing any environment variable.
+
+\anchor directxtk12
+# 3. DirectXTK12
+
+Before compiling SAGE you must install and compile 
+the DirectX12 Toolkit.
+Clone or download the source code from
+[https://github.com/Microsoft/DirectXTK12/](https://github.com/Microsoft/DirectXTK12/).
+Open `DirectXTK_Desktop_2022_Win10.sln` in Visual Studio
+and compile in both `Release` and `Debug` configurations
+with 64-bit platform (`x64`) selected.
+We use `x64` because data that is
+to be uploaded to the GPU needs to be 16-byte aligned, which
+happens automatically with 64-bit code but not with 32-bit code.
+Technically it is possible to modify SAGE to work on a 32-bit
+platform, but that involves overriding the `new` operator
+in the renderer and life's
+just too short to get into that.
+
+Next, create a Windows environment variable `DIRECTXTK12_DIR`
+and set it to the name of the folder in which you installed DirectXTK 12.
+On my computer this is `C:\Users\ian\Documents\GitHub\DXTK12\`.
+Then create a Windows environment variable `DIRECTXTK12LIB_DIR`
+and set it to the name of the library folder for DirectXTK 12.
+On my computer this is `C:\Users\ian\Documents\GitHub\DXTK12\Bin\Desktop_2019_Win10\`.
+Make sure that both paths ends in a backslash character.
+
+\anchor sage
+# 4. SAGE
+
+To check that you have done it right so far,
+you will find a batch
+files `testenv.bat` in the folder with `Sage.sln`.
+Double-click on it to run.
+If all goes well, you will
+see the message "0 errors found".
+
+Open `Sage.sln` in Visual Studio
+and compile in both `Release` and `Debug` configurations
+with 64-bit platform (`x64`) selected.
+As part of the build process, this will create a Windows environment variable `SAGE_DIR`
+and set it to the current folder. 
+This will be used in all SAGE games to tell Visual Studio where to find
+SAGE header and library files.
+
+Alternately, running `Build.bat` will
+compile in both Release and Debug configurations and set the
+`SAGE_DIR` environment variable.
+Note, however, that it simply reports success or failure for each configuration.
+There are no warning or error messages.
+If a build fails, run `testenv.bat` and try building in Visual Studio instead.
+
+\anchor vld
+# 5. Visual Leak Detector
+
+We strongly recommend that you install Visual Leak Detector from
+[https://kinddragon.github.io/vld/](https://kinddragon.github.io/vld/).
+Click on `Releases` and run the latest installer.
+You will need to set an environment variable `VLD_DIR` that SAGE
+will use to find the header and library folders for Visual Leak Detector.
+The default is
+`C:\Program Files (x86)\Visual Leak Detector` (unless you opted to install
+it in a different location).
+Visual Leak Detector detects memory leaks but only works when
+your game is compiled in `Debug` mode.
+
+Alternately, if you don't want Visual Leak Detector to detect memory
+leaks, simply comment out the line `#include <vld.h>` from the file
+`Main.cpp` in any SAGE games.
+
+\anchor box2d
+# 6. Box2D
+
+Some SAGE physics games require that you install a 2D physics
+engine called Box2D. First you
+must install `CMake` from [https://cmake.org/](https://cmake.org/).
+Make sure that you click the "Add CMake to the system PATH for the current user"
+radio button on the `CMake` Install Options dialog box when it appears.
+Then clone or download the source code for Box2D from
+[https://github.com/erincatto/Box2D](https://github.com/erincatto/Box2D).
+Run `Build.bat`, which will open `Box2D.sln` in Visual Studio.
+Build it in both Debug and Release configurations for the `x64` platform.
+Finally, create an environment variable `BOX2D_DIR` and set it to
+folder into which you cloned or downloaded Box2D. Mine is set to
+`C:\Users\ian\Documents\GitHub\Box2D\`.
+
+\anchor bullet
+# 7. Bullet Physics
+
+Some SAGE physics games require that you install a 3D physics
+engine called Bullet Physics.
+Clone or download the source code for Bullet Physics from
+[https://github.com/bullet3/bullet3](https://github.com/bullet3/bullet3).
+Run `build_visual_studio_vr_pybullet_double.bat`. This will create `0_Bullet3Solution.sln`, which is a solution file for an older version of Visual Studio.
+Open `0_Bullet3Solution.sln` in Visual Studio.
+It will ask you to retarget all of the projects in the solution. Click OK.
+
+In the Visual Studio Solution Explorer, select the projects `BulletCollision`, `BulletDynamics`, and `LinearMath`.
+Right-click on one of them and select Properties.
+We have to change some settings to make it compatible with the rest of our code before we build it.
+Firstly we need to change the precision from `double` to `float`.
+In the Property pages (see \ref fig2 "Fig. 2")
+for `All Configurations` of the platform `x64` select
+`C/C++` then `Preprocessor` in the left pane and `Preprocessor Definitions`
+in the right pane. Delete the string `BT_USE_DOUBLE_PRECISION;` and click OK.
+This is shown in \ref fig2 "Fig. 2".
+
+\anchor fig2
+\image html bulletfloat.png "Fig 2. Bullet preprocessor definitions." width=60%
+
+Secondly, we need to change the run-time library to `Multi-threaded DLL`. 
+This is done as follows. On the same page as above,
+select the Release configuration of the platform `x64`.
+Next, select
+`C/C++` then `Code Generation` in the left pane and `Runtime Library`
+in the right pane. Select `Multi-threaded DLL (/MD)` from the
+drop-down menu beside it.
+This is shown in \ref fig3 "Fig. 3".
+Do the same for the Debug configuration of the platform `x64`,
+but in this case select `Multi-threaded Debug DLL (/MDd)`
+from the drop-down menu.
+
+\anchor fig3
+\image html bulletmtr.png "Fig 3. Bullet runtime library." width=60%
+
+Build the three projects mentioned above
+in both Debug and Release configurations for the `x64` platform.
+Finally, create an environment variable `BULLET_DIR` and set it to
+folder into which you cloned or downloaded Bullet Physics. Mine is set to
+`C:\Users\ian\Documents\GitHub\bullet3\`.
+
+
+**/

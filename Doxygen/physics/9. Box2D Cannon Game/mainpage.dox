@@ -1,0 +1,58 @@
+/**
+
+\mainpage notitle
+
+The aim of the Cannon Game is to use a cannon to knock down a tower of crates. 
+You must get all of the crates below a line approximately at the horizon to win.
+If you win, you'll see a text message telling you how many shots you used
+and how much time you took. There's a HUD at top left of the window
+with a guage that tells you the cannon's current temperature and the
+maximum temperature experienced so far. Firing the cannon increases the
+temperature and it cools over the next few seconds. 
+If the cannon overheats, then it explodes and
+you lose. You have 60 seconds to knock down the tower. There's a
+stopwatch to the right of the temperature guage so you can see how much
+time is left.
+
+@image html screenshot.png
+
+Keyboard Controls
+-----------------
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>Enter</td>
+<td>Restart when over</td>
+<tr>
+<td>Space</td>
+<td>Fire cannon</td>
+<tr>
+<td>Up arrow</td>
+<td>Rotate cannon barrel up  while key is depressed</td>
+<tr>
+<td>Down arrow</td>
+<td>Rotate cannon barrel down while key is depressed</td>
+<tr>
+<td>Left arrow</td>
+<td>Start cannon moving left</td>
+<tr>
+<td>Right arrow</td>
+<td>Start cannon moving right</td>
+<tr>
+<td>S</td>
+<td>Stop cannon</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+
+**/
+

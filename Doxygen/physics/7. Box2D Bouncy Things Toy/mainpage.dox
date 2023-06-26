@@ -1,0 +1,42 @@
+/**
+
+\mainpage notitle
+
+This is a simple toy that lets you see how easy it is to get started with Box2D.
+ The next few code demos will drill down into Box2D more deeply,
+so don't be concerned if you don't fully understand all of the code here. 
+This code demo does not have sound.
+
+@image html screenshot.png
+
+Keyboard Controls
+-----------------
+
+The space bar drops a large number of balls and boxes that
+you can watch fall to the bottom of the screen
+and bounce around in a most satisfactory manner.
+This will work until the window is approximately full.
+Backspace clears all of the balls and
+boxes so that you can try again. 
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>Backspace</td>
+<td>Reset</td>
+<tr>
+<td>Space</td>
+<td>Drop stuff</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+**/
+

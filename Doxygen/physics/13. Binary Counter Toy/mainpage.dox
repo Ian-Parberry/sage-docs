@@ -1,0 +1,49 @@
+/**
+
+\mainpage notitle
+
+This toy uses Box2D to implement a 5-bit gravity-driven ripple-carry counter that 
+counts from zero to \f$2^5 - 1 = 31\f$. 
+
+@image html screenshot.png
+
+The key to this toy is the single-bit counter shown below. 
+Bits that are 1 are represented by soccer balls. Bits that are
+zero are represented by the lack of a soccer ball. For example,
+the image on the
+left represents a 0, and the image on the right represents a 1.
+
+@image html zero-one.png
+
+There is an LED readout for the number of balls released and
+an array of nixie tubes showing that number in binary.
+It takes a few seconds for the carry to ripple down after the release of a new ball,
+after which the current binary number represented by the soccer balls
+is read aloud and the corresponding soccer balls (or lack of them)
+highlighted by a spinning reticle.
+
+Keyboard Controls
+-----------------
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>Backspace</td>
+<td>Reset</td>
+<tr>
+<td>Space</td>
+<td>Increment the counter</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+
+**/
+

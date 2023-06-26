@@ -1,0 +1,102 @@
+/**
+\mainpage notitle
+
+A simple top-down game with graphics, particle effects, and sound.
+The player character is a person in a brown cap with a rifle.
+There is a non-player character in a green cap standing guard on a platform
+at the top right of the screen. The guard will shoot at you if you are
+too close or if you draw attention to yourself by firing your gun.
+You control your character using the keyboard or an XBox
+controller (see the tables below). The background is a simple image and the
+world size is its width and height, which are larger than the window. The
+camera follows the player but it stops
+at the edges of the world so that you never see anything that
+is outside the world. Bullets persist until they run into something,
+either the player, the guard, or the edges of the world.
+The guard does not move. 
+///
+@image html screenshot.png width=50%
+
+Keyboard Controls
+-----------------
+///
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>Esc</td>
+<td>Exit</td>
+<tr>
+<td>F1</td>
+<td>Help (this document)</td>
+<tr>
+<td>F2</td>
+<td>Toggle frame rate display</td>
+<tr>
+<td>F3</td>
+<td>Toggle God mode (player invulnerability)</td>
+<tr>
+<td>Up arrow</td>
+<td>Move forwards when pressed</td>
+<tr>
+<td>Down arrow</td>
+<td>Retreat when pressed</td>
+<tr>
+<td>Left arrow</td>
+<td>Rotate counterclockwise when pressed</td>
+<tr>
+<td>Right arrow</td>
+<td>Rotate clockwise when pressed</td>
+<tr>
+<td>Space</td>
+<td>Shoot</td>
+<tr>
+<td>A</td>
+<td>Strafe left</td>
+<tr>
+<td>D</td>
+<td>Strafe right</td>
+<tr>
+<td>Backspace</td>
+<td>Restart game</td>
+<tr>
+<td>PrtScr (hold down)</td>
+<td>Save screenshot to a PNG file</td>
+</table>
+</center>
+
+X-Box Controller
+----------------
+///
+<center>
+<table>
+<tr>
+<td><center><b>Control</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td>Right Trigger</td>
+<td>Forward speed</td>
+<tr>
+<td>Right Thumb</td>
+<td>Rotation speed and direction</td>
+<tr>
+<td>Right Button</td>
+<td>Shoot</td>
+<tr>
+<td>DPad Left</td>
+<td>Strafe left</td>
+<tr>
+<td>DPad Right</td>
+<td>Strafe right</td>
+</table>
+</center>
+///
+The Simple Academic Game Engine
+---------------
+///
+This code uses SAGE, the Simple Academic Game Engine.
+Other game prototypes are also available.
+
+
