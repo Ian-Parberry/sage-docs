@@ -24,11 +24,12 @@ If you are an instructor and you wish to test it out for use in
 your game programming class, please email
 [Ian Parberry](https://ianparberry.com/).
 
-## Installing SAGE
-
-If SAGE is not already installed on your computer, 
-please read and follow
-[the installation instructions](../install/index.html).
+The remainder of this page is divided into four sections.
+\ref sec2 "Section 2" explains the design patterms used in SAGE,
+\ref sec3 "Section 3" goes over some of the more important SAGE classes,
+\ref sec4 "Section 4" covers some of the conventions used in SAGE code,
+and 
+\ref sec5 "Section 5" addresses the question "what next?"
 
 \anchor sec2
 # 2. Design Patterns
@@ -571,7 +572,7 @@ XBox controller. Any of your game classes that require these components
 should be derived from `Sage::CComponent`.
 
 \anchor sec4
-## 4. Some Sage Conventions
+# 4. Some Sage Code Conventions
 
 1. SAGE class names always start with an upper-case `C` for *class*,
 for example, `CRandom` and `CSprite`.
@@ -604,7 +605,6 @@ programmer-readable comments.
 Doxygen comments start with `///` for a block comment
 and `//<` for an in-line comment.
 
-
 6. Public member functions that simply return the
 value stored in a private or protected member variables
 start with `Get`, for example,  
@@ -614,6 +614,14 @@ start with `Get`, for example,
 values stored in private or protected member variables
 start with `Set`, for example,  
 `Sage::CCamera::SetYaw()` sets `Sage::CCamera::m_fYaw`
-and recomputes the camera's orientation matrix and view frunstum.
+and recomputes the camera's orientation matrix and view frustum.
 
+\anchor sec5
+# 5. What Next?
+
+If SAGE is not already installed on your computer, 
+please read and follow
+[the installation instructions](../install/index.html).
+Finally, the `sage` repository comes with a simple game called the
+<a href="../blank/index.html">Blank Game</a>.
 **/

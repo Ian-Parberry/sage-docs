@@ -9,12 +9,20 @@ and that your account has the authority to install new programs
 and to create and edit Windows environment variables.
 This may not be the case if you are on a work or school computer.
 If you are unfamiliar with environment variables,
-you can access them by
+you can create and edit them by
 hitting the Window key on your keyboard and typing "Environment".
 Click on `Edit the system environment variables`.
 The `Environment Variables` dialog box should appear. 
 Click on the `New` or `Edit` button and fill in the
 name and value fields.
+
+The remainder of this page is divided into six sections.
+\ref visualstudio "Section 1" explains how to download and install Visual Studio,
+\ref msbuild "Section 2" shows how to add MSBuild to your `PATH` environment variable,
+\ref directxtk12 "Section 3" explains how to download and install the DirectX12 Toolkit,
+\ref sage "Section 4" shows how to build SAGE,
+\ref vld "Section 5" explains how to install Visual Leak Detector, and
+\ref summary "Section 6" contains a summary to help you check your progress.
 
 \anchor visualstudio
 # 1. Microsoft Visual Studio
@@ -87,6 +95,7 @@ Make sure that both paths ends in a backslash character.
 \anchor sage
 # 4. SAGE
 
+Navigate to the topmost folder in your copy of the `sage` repository.
 To check that you have done it right so far,
 you will find a batch
 files `testenv.bat` in the folder with `Sage.sln`.
@@ -101,7 +110,6 @@ As part of the build process, this will create a Windows environment variable `S
 and set it to the current folder. 
 This will be used in all SAGE games to tell Visual Studio where to find
 SAGE header and library files.
-
 Alternately, running `Build.bat` will
 compile in both Release and Debug configurations and set the
 `SAGE_DIR` environment variable.
@@ -127,66 +135,33 @@ Alternately, if you don't want Visual Leak Detector to detect memory
 leaks, simply comment out the line `#include <vld.h>` from the file
 `Main.cpp` in any SAGE games.
 
-\anchor box2d
-# 6. Box2D
+\anchor summary
+# 6. Summary
 
-Some SAGE physics games require that you install a 2D physics
-engine called Box2D. First you
-must install `CMake` from [https://cmake.org/](https://cmake.org/).
-Make sure that you click the "Add CMake to the system PATH for the current user"
-radio button on the `CMake` Install Options dialog box when it appears.
-Then clone or download the source code for Box2D from
-[https://github.com/erincatto/Box2D](https://github.com/erincatto/Box2D).
-Run `Build.bat`, which will open `Box2D.sln` in Visual Studio.
-Build it in both Debug and Release configurations for the `x64` platform.
-Finally, create an environment variable `BOX2D_DIR` and set it to
-folder into which you cloned or downloaded Box2D. Mine is set to
-`C:\Users\ian\Documents\GitHub\Box2D\`.
+Before moving on, make sure that you have done the following.
 
-\anchor bullet
-# 7. Bullet Physics
+1. Install Visual Studio with Desktop development with C++, Game development with C++, and .NET desktop development.
+See \ref visualstudio "Section 1".
 
-Some SAGE physics games require that you install a 3D physics
-engine called Bullet Physics.
-Clone or download the source code for Bullet Physics from
-[https://github.com/bullet3/bullet3](https://github.com/bullet3/bullet3).
-Run `build_visual_studio_vr_pybullet_double.bat`. This will create `0_Bullet3Solution.sln`, which is a solution file for an older version of Visual Studio.
-Open `0_Bullet3Solution.sln` in Visual Studio.
-It will ask you to retarget all of the projects in the solution. Click OK.
+2. Find the folder for `MSBuild.exe` and add it to your `PATH`
+environment variable. This will let you run the batch files `Build.bat`
+as a fast alternative to running Visual Studio.
+See \ref msbuild "Section 2".
 
-In the Visual Studio Solution Explorer, select the projects `BulletCollision`, `BulletDynamics`, and `LinearMath`.
-Right-click on one of them and select Properties.
-We have to change some settings to make it compatible with the rest of our code before we build it.
-Firstly we need to change the precision from `double` to `float`.
-In the Property pages (see \ref fig2 "Fig. 2")
-for `All Configurations` of the platform `x64` select
-`C/C++` then `Preprocessor` in the left pane and `Preprocessor Definitions`
-in the right pane. Delete the string `BT_USE_DOUBLE_PRECISION;` and click OK.
-This is shown in \ref fig2 "Fig. 2".
+3. Clone and download DirectXTK12 from 
+<a href="https://github.com/Microsoft/DirectXTK12/">GitHub</a>. Build 
+it in both Release and Debug configurations. Set the environment variables `DIRECTXTK12_DIR` and `DIRECTXTK12LIB_DIR`.
+See \ref directxtk12 "Section 3".
 
-\anchor fig2
-\image html bulletfloat.png "Fig 2. Bullet preprocessor definitions." width=60%
+4. Build SAGE in both Release and Debug configurations.
+The best way to do this is to run `Build.bat`
+in the topmost folder in your copy of the `sage` repository.
+If this reports failure, run `checkenv.bat` to make sure that
+you set the DIRECTXTK12 environment variables correctly.
+See \ref sage "Section 4".
 
-Secondly, we need to change the run-time library to `Multi-threaded DLL`. 
-This is done as follows. On the same page as above,
-select the Release configuration of the platform `x64`.
-Next, select
-`C/C++` then `Code Generation` in the left pane and `Runtime Library`
-in the right pane. Select `Multi-threaded DLL (/MD)` from the
-drop-down menu beside it.
-This is shown in \ref fig3 "Fig. 3".
-Do the same for the Debug configuration of the platform `x64`,
-but in this case select `Multi-threaded Debug DLL (/MDd)`
-from the drop-down menu.
-
-\anchor fig3
-\image html bulletmtr.png "Fig 3. Bullet runtime library." width=60%
-
-Build the three projects mentioned above
-in both Debug and Release configurations for the `x64` platform.
-Finally, create an environment variable `BULLET_DIR` and set it to
-folder into which you cloned or downloaded Bullet Physics. Mine is set to
-`C:\Users\ian\Documents\GitHub\bullet3\`.
-
+5. Install <a href="https://kinddragon.github.io/vld/">Visual Leak Detector</a>.
+Build it in Debug configuration. Set the environment variable `VLD_DIR`.
+See \ref vld "Section 5".
 
 **/

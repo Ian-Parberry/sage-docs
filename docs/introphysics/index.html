@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SAGE Physics Games: Main Page</title>
+<title>SAGE Physics Games and Toys: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,8 +29,9 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="sage-physics.png"/></td>
   <td id="projectalign">
-   <div id="projectname">SAGE Physics Games
+   <div id="projectname">SAGE Physics Games and Toys
    </div>
+   <div id="projectbrief">Bespoke Physics Code and Physics Engines</div>
   </td>
  </tr>
  </tbody>
@@ -77,24 +78,57 @@ $(function() {
 </div>
 
 <div><div class="contents">
-<div class="textblock"><p>Under Construction.</p>
-<p>These games were made with <a href="../sage/index.html">SAGE</a>.</p>
-<ol type="1">
-<li><a href="../pool/index.html">8-ball Pool End Game</a>.</li>
-<li><a href="../shapes/index.html">Shapes Library</a>.</li>
-<li>Collision Math Toy</li>
-<li>Pinball Game</li>
-<li>Ball and Spring Toy</li>
-<li>Box2D Render Library</li>
-<li>Box2D Bouncy Things Toy</li>
-<li>Box2D Joint Toy</li>
-<li>Box2D Cannon Game</li>
-<li>Box2D Cannon Game with Stars</li>
-<li>Box2D Blank Game</li>
-<li>Stroop Test Game</li>
-<li>Binary Counter Toy</li>
-<li>Cannon Lullaby Toy</li>
-<li>Bullet Physics Block Toy </li>
+<div class="textblock"><p>For the purposes of this repository, a <em>game</em> is something that you can win or lose, while a <em>toy</em> is something that you can play with until you are bored. These games and toys were made with <a href="../sage/index.html">SAGE</a>.</p>
+<h1>Hand-coded 2D Physics</h1>
+<div class="image">
+<img src="bespoke.png" alt="" width="65%"/>
+</div>
+<p>The following toys and games use hand-coded (bespoke) physics code.</p>
+<ol>
+<li>
+<a href="../pool/index.html">8-ball Pool End Game</a>: Exact circle-to-circle and circle-to-axis collision detection and response.  </li>
+<li>
+<a href="../shapes/index.html">Shapes Library</a>: A fast and sloppy collision detection and response library for moving circles.  </li>
+<li>
+<a href="../collisionmath/index.html">Collision Math Toy</a>: A toy for experimenting with the <a href="../shapes/index.html">Shapes Library</a>.  </li>
+<li>
+<a href="../pinball/index.html">Pinball Game</a>: A rudimentary pinball game using the <a href="../shapes/index.html">Shapes Library</a>.  </li>
+<li>
+<a href="../ballandspring/index.html">Ball and Spring Toy</a>: Verlet integration for easy spring and stick implementation.  </li>
+</ol>
+<h1>2D Physics With Box2D</h1>
+<div class="image">
+<img src="box2d.png" alt="" width="75%"/>
+</div>
+<p>The following games and toys require you to <a href="../installphysics/index.html">install Box2D</a>, an open-source 2D physics library.</p>
+<ol start="6">
+<li>
+<a href="../box2drender/index.html">Box2D Render Library</a>: A renderer for Box2D bodies.  </li>
+<li>
+<a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>: Balls and boxes bouncing around without sound.  </li>
+<li>
+<a href="../box2djoints/index.html">Box2D Joint Toy</a>: Examples of Box2D joints without sound.  </li>
+<li>
+<a href="../cannon/index.html">Box2D Cannon Game</a>: Knock down crates with a cannon using a kludged method to play collision sounds.  </li>
+<li>
+<a href="../cannonstars/index.html">Box2D Cannon Game with Stars</a>: Now using collision manifolds to play sounds and generate stars at collision points.  </li>
+<li>
+<a href="../box2dblank/index.html">Box2D Blank Game</a>: This game really is blank, but you can use it as the basis for your own Box2D game.  </li>
+<li>
+<a href="../stroop/index.html">Stroop Test Game</a>: A game based on the Stroop test.  </li>
+<li>
+<a href="../binary/index.html">Binary Counter Toy</a>: A gravity-fed ripple-carry counter using Physics.  </li>
+<li>
+<a href="../lullaby/index.html">Cannon Lullaby Toy</a>: Cannonballs hit emitters to play a tune regardless of the cannon's position and elevation.  </li>
+</ol>
+<h1>3D Physics With Bullet Physics</h1>
+<div class="image">
+<img src="bullet.png" alt="" width="80%"/>
+</div>
+<p>The following toy requires you to <a href="../installphysics/index.html#bullet">install Bullet Physics</a>, an open-source 3D physics library.</p>
+<ol start="15">
+<li>
+<a href="../bulletblocks/index.html">Bullet Physics Block Toy</a>: Knock some blocks and other objects off the edge of a finite plane.  </li>
 </ol>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

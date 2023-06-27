@@ -2,25 +2,107 @@
 
 \mainpage notitle
 
-Under Construction.
-
-These games were made with
+For the purposes of this repository, a _game_ is
+something that you can win or lose, while a _toy_ is
+something that you can play with until you are bored.
+These games and toys were made with
 [SAGE](../sage/index.html).
 
-1. [8-ball Pool End Game](../pool/index.html).
-2. [Shapes Library](../shapes/index.html).
-3. Collision Math Toy
-4. Pinball Game
-5. Ball and Spring Toy
-6. Box2D Render Library
-7. Box2D Bouncy Things Toy
-8. Box2D Joint Toy
-9. Box2D Cannon Game
-10. Box2D Cannon Game with Stars
-11. Box2D Blank Game
-12. Stroop Test Game
-13. Binary Counter Toy
-14. Cannon Lullaby Toy
-15. Bullet Physics Block Toy
+# Hand-coded 2D Physics
+
+@image html bespoke.png width=65%
+
+The following toys and games use hand-coded (bespoke) physics code.
+
+<ol>
+  <li>
+    [8-ball Pool End Game](../pool/index.html): Exact
+    circle-to-circle and circle-to-axis collision detection and response.
+  </li>
+  <li>
+    [Shapes Library](../shapes/index.html):
+    A fast and sloppy collision detection and response library for
+    moving circles.
+  </li>
+  <li>
+    [Collision Math Toy](../collisionmath/index.html):
+    A toy for experimenting with the [Shapes Library](../shapes/index.html).
+  </li>
+  <li>
+    [Pinball Game](../pinball/index.html):
+    A rudimentary pinball game using the [Shapes Library](../shapes/index.html).
+  </li>
+  <li>
+    [Ball and Spring Toy](../ballandspring/index.html): Verlet integration for easy spring and stick implementation.
+  </li>
+</ol>
+
+
+# 2D Physics With Box2D
+
+@image html box2d.png width=75%
+
+The following games and toys require you to
+<a href="../installphysics/index.html">install Box2D</a>, an
+open-source 2D physics library.
+
+<ol start="6">
+  <li>
+    [Box2D Render Library](../box2drender/index.html):
+    A renderer for Box2D bodies.
+  </li>
+  <li>
+    [Box2D Bouncy Things Toy](../bouncy/index.html):
+    Balls and boxes bouncing around without sound.
+  </li>
+  <li>
+    [Box2D Joint Toy](../box2djoints/index.html):
+    Examples of Box2D joints without sound.
+  </li>
+  <li>
+    [Box2D Cannon Game](../cannon/index.html):
+    Knock down crates with a cannon using a kludged method
+    to play collision sounds.
+  </li>
+  <li>
+    [Box2D Cannon Game with Stars](../cannonstars/index.html):
+    Now using 
+    collision manifolds to play sounds and generate
+    stars at collision points.
+  </li>
+  <li>
+    [Box2D Blank Game](../box2dblank/index.html):
+    This game really is blank, but you can use it as the basis
+    for your own Box2D game.
+  </li>
+  <li>
+    [Stroop Test Game](../stroop/index.html):
+    A game based on the Stroop test.
+  </li>
+  <li>
+    [Binary Counter Toy](../binary/index.html):
+    A gravity-fed ripple-carry counter using Physics.
+  </li>
+  <li>
+    [Cannon Lullaby Toy](../lullaby/index.html):
+    Cannonballs hit emitters to
+    play a tune regardless of the cannon's position and elevation.
+  </li>
+</ol>
+
+# 3D Physics With Bullet Physics
+
+@image html bullet.png width=80%
+
+The following toy requires you to
+<a href="../installphysics/index.html#bullet">install Bullet Physics</a>, an
+open-source 3D physics library.
+
+<ol start="15">
+  <li>
+    [Bullet Physics Block Toy](../bulletblocks/index.html):
+    Knock some blocks and other objects off the edge of a finite plane.
+  </li>
+</ol>
 
 **/

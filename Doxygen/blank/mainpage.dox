@@ -10,22 +10,20 @@ and a rotating sprite of some amusing text (see \ref fig1 "Fig. 1").
 Its purpose is to get you started quickly on the basics
 of making a 2D game with SAGE (see \ref section3 "Section 3"). You can also
 use it to start development of a new game. 
-In the following, the term
-_solution folder_ means the folder that contains the Visual Studio Solution
-file `Blank Game.sln`.
 
 \anchor fig1
 \image html screenshot.png "Fig. 1: A screenshot of the Blank 2D Game." width=30%
 
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the keyboard controls
-and their corresponding actions.
+and their corresponding actions,
 \ref section3 "Section 3" is a reminder to install SAGE, the Simple
-Academic Game Engine.
-\ref section4 "Section 4" is a reminder to install VLD, the Visual Leak Detector.
-\ref section5 "Section 5" describes the media used by the Blank Game,
-including images, sounds, and fonts.
-\ref section6 "Section 6" gives a breakdown of the code for the Blank Game.
+Academic Game Engine,
+\ref section4 "Section 4" describes the media used by the Blank Game,
+including images, sounds, and fonts,
+\ref section5 "Section 5" gives a breakdown of the code for the Blank Game,
+and
+\ref section6 "Section 6" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
@@ -62,65 +60,35 @@ including images, sounds, and fonts.
 \anchor section3
 # 3. SAGE
 
-This code uses SAGE, which can be downloaded from
-[https://github.com/Ian-Parberry/sage/](https://github.com/Ian-Parberry/sage/).
-Make sure that SAGE and all of the projects it requires have been
-installed and compiled before attempting to compile this project.
-To check that you have done it right, run the batch file `testenv.bat`
-(by double-clicking on it), which you
-will find in the solution folder for this game. If all goes well, you will
-see the message "0 errors found".
-Make sure that you read and understand the SAGE Documentation at
-[https://ian-parberry.github.io/sage/](https://ian-parberry.github.io/sage/)
-before you try to understand the code in this project.
+This code uses <a href="../sage/index.html">SAGE</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>.
+Navigate to the folder `Blank 2D Game` in your copy of the `sage` repository.
+Run `checkenv.bat` to verify that you have set the environment
+variables correctly.
+Run `Build.bat`. The Release executable file `Blank Game.exe`
+will appear. When you run it you will see something similar to
+\ref fig1 "Fig. 1" with the text wheel rotating about its center.
+Experiment with the keyboard commands listed in \ref section2 "Section 2".
 
 \anchor section4
-# 4. Visual Leak Detector
-
-We recommend that you install Visual Leak Detector from
-[https://kinddragon.github.io/vld/](https://kinddragon.github.io/vld/).
-Click on `Releases` and run the latest installer.
-You will need to set an environment variable `VLD_DIR` that SAGE
-will use to find the header and library folders for Visual Leak Detector.
-The default is
-`C:\Program Files (x86)\Visual Leak Detector` (unless you opted to install
-it in a different location).
-Visual Leak Detector detects memory leaks but only works when
-your game is compiled in `Debug` mode.
-
-__Important Reminder__: Visual Studio only reads the contents of environment
-variables on startup, so make your you quit all instances of Visual Studio
-and restart them after installing Visual Leak Detector.
-
-Alternately, if you don't want Visual Leak Detector to detect memory
-leaks, simply comment out the line `#include <vld.h>` from the file
-`Main.cpp` in any SAGE games (see \ref section6-1-2 "Section 6.1.2").
-
-\anchor section5
-# 5. Media
+# 4. Media
 
 The media for this game, consisting of fonts, images, sounds, and XML files,
 can be found in the folder `Media` in the solution folder.
-A copy of this folder must be placed in the same folder
- with the executable file `Blank Game.exe` copied from
-`x64\Release` (after you have compiled it in Release mode) 
-when you distribute the game (see \ref fig2 "Fig. 2").
-These can be found in the folders `Fonts`, `Images`, `Sounds`, and
+These can be found in sub-folders `Fonts`, `Images`, `Sounds`, and
 `XML`, respectively. You can change the names of the first three
-folders provided you also make the changes indicated in \ref section5-4 "Section 5.4".
-
-\anchor fig2
-\image html distribute.png "Fig. 2: How to distribute your game." width=40%
+folders provided you also make the changes indicated in \ref section4-4 "Section 4.4".
 
 The remainder of this section is divided into four subsections
 describing
-fonts (\ref section5-1 "Section 5.1"), 
-images (\ref section5-2 "Section 5.2"),
-sounds (\ref section5-3 "Section 5.3"), and
-XML files (\ref section5-4 "Section 5.4").
+fonts (\ref section4-1 "Section 4.1"), 
+images (\ref section4-2 "Section 4.2"),
+sounds (\ref section4-3 "Section 4.3"), and
+XML files (\ref section4-4 "Section 4.4").
 
-\anchor section5-1
-## 5.1 Fonts
+\anchor section4-1
+## 4.1 Fonts
 
 The `Fonts` folder contains a font in `spritefont` format, 
 `AverageSans_24.spritefont`.
@@ -130,34 +98,34 @@ It was converted to `spritefont` format using
 [https://github.com/microsoft/DirectXTK12/wiki/SpriteFont](https://github.com/microsoft/DirectXTK12/wiki/SpriteFont), which you can find in your DirectXTK12 download (provided you followed the
 instructions when you installed SAGE, see \ref section3 "Section 3").
 
-\anchor section5-2
-## 5.2 Images
+\anchor section4-2
+## 4.2 Images
 
 The `Images` folder contains two image files in `PNG` format.
-The background image `background.png` shown in \ref fig3 "Fig. 3", and the
-text wheel shown in \ref fig4 "Fig. 4".
+The background image `background.png` shown in \ref fig2 "Fig. 2", and the
+text wheel shown in \ref fig3 "Fig. 3".
 The file names can be changed
-provided you also make the changes indicated in \ref section5-4 "Section 5.4".
+provided you also make the changes indicated in \ref section4-4 "Section 4.4".
+
+\anchor fig2
+\image html background.png "Fig. 2: The background image." width=30% 
 
 \anchor fig3
-\image html background.png "Fig. 3: The background image." width=30% 
+\image html textwheel.png "Fig. 3: The text wheel sprite." width=20% 
 
-\anchor fig4
-\image html textwheel.png "Fig. 4: The text wheel sprite." width=20% 
-
-\anchor section5-3
-## 5.3 Sounds
+\anchor section4-3
+## 4.3 Sounds
 
 The `Sounds` folder contains two sound files in `WAV` format.
 The file `clang.wav` contains a clang sound, and
 `umph.wav` contains a grunting sound.
 The file names can be changed
-provided you also make the changes indicated in \ref section5-4 "Section 5.4".
+provided you also make the changes indicated in \ref section4-4 "Section 4.4".
 Note that the sound files must be in mono (single track) format,
 otherwise bad things might happen.
 
-\anchor section5-4
-## 5.4 XML
+\anchor section4-4
+## 4.4 XML
 
 The `XML` folder contains a single XML file called `GameSettings.xml` that contains settings.
 The contents of the file are bracketed in `<settings>` and `</settings>` tags.
@@ -168,13 +136,13 @@ The contents of the file are bracketed in `<settings>` and `</settings>` tags.
 \endcode
 
 The following tags can appear between these two tags in any order.
-the game and renderer tag (\ref section5-4-1 "Section 5.4.1"), 
-the font tag (\ref section5-4-2 "Section 5.4.2"), 
-the sprite tags (\ref section5-4-3 "Section 5.4.3"), and
-the sound tags (\ref section5-4-4 "Section 5.4.4"). 
+the game and renderer tag (\ref section4-4-1 "Section 4.4.1"), 
+the font tag (\ref section4-4-2 "Section 4.4.2"), 
+the sprite tags (\ref section4-4-3 "Section 4.4.3"), and
+the sound tags (\ref section4-4-4 "Section 4.4.4"). 
 
-\anchor section5-4-1
-### 5.4.1 The Game and Renderer Tags
+\anchor section4-4-1
+### 4.4.1 The Game and Renderer Tags
 
 The tag `<game>` lets you specify the name of the game, which will be
 displayed at the top of the game window.
@@ -186,8 +154,8 @@ of the user part of the game window.
   <renderer width="1024" height="768"/>
 \endcode
 
-\anchor section5-4-2
-### 5.4.2 The Font Tag
+\anchor section4-4-2
+### 4.4.2 The Font Tag
 
 The tag `<font>` lets you specify the name and location of the text font file.
 
@@ -195,8 +163,8 @@ The tag `<font>` lets you specify the name and location of the text font file.
   <font file="Media\Fonts\AverageSans_24.spritefont"/>
 \endcode
 
-\anchor section5-4-3
-### 5.4.3 The Sprite Tags
+\anchor section4-4-3
+### 4.4.3 The Sprite Tags
 
 The `<sprites>` tag lets you specify the path to the images folder.
 It is followed by a list of `<sprite>` tags, one for each sprite
@@ -217,8 +185,8 @@ in any order inside the `<sprites>` and `</sprites>` tags.
   </sprites>
 \endcode
 
-\anchor section5-4-4
-### 5.4.4 The Sound Tags
+\anchor section4-4-4
+### 4.4.4 The Sound Tags
 
 The `<sounds>` tag lets you specify the path to the sound folder.
 It is followed by a list of `<sound>` tags, one for each sound effect
@@ -243,38 +211,40 @@ in any order inside the `<sounds>` and `</sounds>` tags.
   </sounds>
 \endcode
 
-\anchor section6
-# 6. Code Breakdown
+\anchor section5
+# 5. Code Breakdown
 
-This section is divided into two subsections.
-\ref section6-1 "Section 6.1" breaks down the code
+Open `Blank Game.sln` in Visual Studio and examine the
+code in the editor while you read the
+rest of this section, which is divided into two subsections.
+\ref section5-1 "Section 5.1" breaks down the code
 in `Main.cpp`. 
-\ref section6-2 "Section 6.2" breaks down the code
+\ref section5-2 "Section 5.2" breaks down the code
 for `CGame`, the object-oriented game code. 
 
-\anchor section6-1
-## 6.1 Main.cpp
+\anchor section5-1
+## 5.1 Main.cpp
 
 `Main.cpp` should be identical in all SAGE games except for 
 commenting in and out a single line of code to
-activate the optional debug console (see \ref section6-1-1 "Section 6.1.1")
-and memory leak detector (see \ref section6-1-2 "Section 6.1.2").
+activate the optional debug console (see \ref section5-1-1 "Section 5.1.1")
+and memory leak detector (see \ref section5-1-2 "Section 5.1.2").
 Function `wWinMain()` sets things up so that your implementation
 of `CGame::Initialize()` is called at the correct time during
 initialization, `CGame::ProcessFrame()` is called as often as possible
 to compose and render a frame of animation, and 
 `CGame::Release()` is called at the correct time during 
 game shutdown. `CGame` will be discussed in more detail in
-\ref section6-2 "Section 6.2".
-
-The heavy lifting is done by 
-[`Sage::WinMain`](../html/class_sage_1_1_c_window.html#adfe2944a5e50b1df557bb0babbc5eb9c)
+\ref section5-2 "Section 5.2".
+The heavy lifting here is done by calling
+<a href="../sage/class_sage_1_1_c_window.html#adfe2944a5e50b1df557bb0babbc5eb9c">
+`Sage::WinMain`</a>
 where you
 can see the details of Windows code initialization including the message pump.
 At this stage you can safely ignore these details, however.
 
-\anchor section6-1-1
-### 6.1.1 The Debug Console
+\anchor section5-1-1
+### 5.1.1 The Debug Console
 
 SAGE includes an optional text debug window that can
 be used in both `Debug` and `Release` modes.
@@ -306,27 +276,27 @@ std::cout << "This is a test debug output" << std::endl;
 \endcode
 
 inserted into a function such as `CGame::LoadSprites()` will result in the
-output shown in the debug console in \ref fig5 "Fig. 5". Your debug text will
+output shown in the debug console in \ref fig4 "Fig. 4". Your debug text will
 be in red and directions will be in green text.
 
-\anchor fig5
-\image html debugconsole.png "Fig. 5: The debug console." width=50% 
+\anchor fig4
+\image html debugconsole.png "Fig. 4: The debug console." width=50% 
 
 The debug
 console window will persist after you quit your game in order to
 preserve debug output. Click on it to gain focus and
 press, for example, the space key to close it down
-as shown in \ref fig6 "Fig. 6"
+as shown in \ref fig5 "Fig. 5"
 
-\anchor fig6
-\image html debugconsole2.png "Fig. 6: The debug console at exit." width=50% 
+\anchor fig5
+\image html debugconsole2.png "Fig. 5: The debug console at exit." width=50% 
 
 The `#define` for the debug console is commented out by default,
 which means that the console window will not appear and all text
 output will go to `/dev/null`.
 
-\anchor section6-1-2
-### 6.1.2 Visual Leak Detector
+\anchor section5-1-2
+### 5.1.2 Visual Leak Detector
 
 If you choose to not install Visual Leak Detector
 (see \ref section4 "Section 4"),
@@ -336,33 +306,33 @@ then comment out the following line:
 #include <vld.h> 
 \endcode
 
-\anchor section6-2
-## 6.2 CGame
+\anchor section5-2
+## 5.2 CGame
 
 `CGame` is the object-oriented representation of your game.
 Its declaration is in `Game.h` and its definition is in `Game.cpp`.
 In addition, there are some useful defines and enumerated types
 in `GameDefines.h`.
 
-\anchor section6-2-1
-### 6.2.1 CGame: Initialization
+\anchor section5-2-1
+### 5.2.1 CGame: Initialization
 
-As mentioned in \ref section6-1 "Section 6.1",
+As mentioned in \ref section5-1 "Section 5.1",
 `CGame::Initialize()` contains initialization code and will
 be called once only when your game starts.
-It creates a DirectXTK12 renderer (an instance of 
-[`Sage::CSpriteRenderer`](../html/class_sage_1_1_c_sprite_renderer.html))
+It creates a DirectXTK12 renderer (an instance of
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>)
 pointed to by `CGame::m_pRenderer`. The parameter
 `Sage::eSpriteMode::Batched2D` to the sprite renderer directs it
 to use batched mode sprite renderer from DirectXTK12.
-It then calls `CGame::LoadSprites()` (see \ref section6-2-2 "Section 6.2.2")
+It then calls `CGame::LoadSprites()` (see \ref section5-2-2 "Section 5.2.2")
 to load the sprites needed for the
 game, then calls `CGame::LoadSounds()` 
-(see \ref section6-2-3 "Section 6.2.3")
+(see \ref section5-2-3 "Section 5.2.3")
 to load the sounds.
 
-\anchor section6-2-2
-### 6.2.2 CGame: Loading Sprites 
+\anchor section5-2-2
+### 5.2.2 CGame: Loading Sprites 
 
 `CGame::LoadSprites()` loads sprites for the background and the text wheel.
 For convenience, the following enumerated type is declared in `GameDefines.h`.
@@ -375,7 +345,7 @@ enum class eSprite{
 
 These will be used to refer to the sprites in the source code.
 `CGame::LoadSprites()` first declares a
-[`Sage::CMediaList`](../html/class_sage_1_1_c_media_list.html)
+<a href="../sage/class_sage_1_1_c_media_list.html">`Sage::CMediaList`</a>
 of type `eSprite`.
 
 \code{.cpp}
@@ -393,14 +363,14 @@ media list.
 The first parameter is the `eSprite` entry for the sprite (its name
 within the source code) and a string (its name in `GameSettings.xml`).
 This string must be identical to the string in the `name` field of a `sprite`
-tag in `GameSettings.xml` (see \ref section5-4-3 "Section 5.4.3").
+tag in `GameSettings.xml` (see \ref section4-4-3 "Section 4.4.3").
 It then calls 
-[`Sage::CSound::LoadMT()`](../html/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8)
- to load the
+<a href="../sage/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8">`Sage::CSound::LoadMT()`</a>
+to load the
 sprites asynchronously in a separate thread. 
 (Recall that `CGame` has a pointer to an instance of
-[`Sage::CSpriteRenderer`](../html/class_sage_1_1_c_sprite_renderer.html)
-in member variable `m_pRenderer`, see \ref section6-2-1 "Section 6.2.1").
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
+in member variable `m_pRenderer`, see \ref section5-2-1 "Section 5.2.1").
 
 \code{.cpp}
   m_pRenderer->LoadMT(media);
@@ -416,8 +386,8 @@ use the following instead.
   m_pRenderer->Load(media);
 \endcode
 
-\anchor section6-2-3
-### 6.2.3 CGame: Loading Sounds
+\anchor section5-2-3
+### 5.2.3 CGame: Loading Sounds
 
 `CGame::LoadSounds()` loads sounds.
 For convenience, the following enumerated type is declared in `GameDefines.h`.
@@ -430,7 +400,7 @@ enum class eSound{
 
 These will be used to refer to the sounds in the source code.
 `CGame::LoadSounds()` first declares a
-[`Sage::CMediaList`](../html/class_sage_1_1_c_media_list.html)
+<a href="../sage/class_sage_1_1_c_media_list.html">`Sage::CMediaList`</a>
 of type `eSound`.
 
 \code{.cpp}
@@ -448,15 +418,15 @@ media list.
 The first parameter is the `eSound` entry for the sound (its name
 within the source code) and a string (its name in `GameSettings.xml`).
 This string must be identical to the string in the `name` field of a `sound`
-tag in `GameSettings.xml` (see \ref section5-4-4 "Section 5.4.4").
+tag in `GameSettings.xml` (see \ref section4-4-4 "Section 4.4.4").
 It then calls 
-[`Sage::CSound::LoadMT()`](../html/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8)
+<a href="../sage/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8">`Sage::CSound::LoadMT()`</a>
 to load the
 sounds asynchronously in a separate thread. 
 `CGame` inherits a pointer `m_pSound` to an instance of
-[`Sage::CSound`](../html/class_sage_1_1_c_sound.html)
+<a href="../sage/class_sage_1_1_c_sound.html">`Sage::CSound`</a>
 from
-[`Sage::CComponent`](../html/class_sage_1_1_c_component.html).
+<a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>.
 
 \code{.cpp}
   m_pSound->LoadMT(media);
@@ -472,16 +442,16 @@ use the following instead.
   m_pSound->Load(media);
 \endcode
 
-\anchor section6-2-4
-### 6.2.4 CGame: The Frame Loop
+\anchor section5-2-4
+### 5.2.4 CGame: The Frame Loop
 
-As mentioned in \ref section6-1 "Section 6.1",
+As mentioned in \ref section5-1 "Section 5.1",
 `CGame::ProcessFrame()` contains code that creates and displays
 the next frame of animation. SAGE will ensure that this function
 will be called repeatedly in a loop that terminates only when the game exits.
 
-\anchor section6-2-4-1
-#### 6.2.4.1 CGame: Frame Loop: The Game State
+\anchor section5-2-4-1
+#### 5.2.4.1 CGame: Frame Loop: The Game State
 
 The behavior of `CGame::ProcessFrame()` will depend on the current
 state of the game, which is recorded in `CGame::m_eGameState`,
@@ -497,15 +467,16 @@ enum class eGameState{
 we will change it to `eGameState::Playing` when the (possibly asynchronous)
 loading of sprites and sounds is finished.
 
-\anchor section6-2-4-2
-#### 6.2.4.2 CGame: Frame Loop: The Keyboard Handler
+\anchor section5-2-4-2
+#### 5.2.4.2 CGame: Frame Loop: The Keyboard Handler
 
 The first thing that `CGame::ProcessFrame()` does is call the keyboard
 handler `CGame::KeyboardHandler()`. `CGame` inherits
-from [`Sage::CComponent`](../html/class_sage_1_1_c_component.html)
+from
+<a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>
  a pointer `m_pKeyboard` to
 an instance of 
-[`Sage::CKeyboard`](../html/class_sage_1_1_c_keyboard.html)
+<a href="../sage/class_sage_1_1_c_keyboard.html">`Sage::CKeyboard`</a>
 which provides functions to poll
 the current state of a key on the keyboard.
 `CGame::KeyboardHandler()` first calls: 
@@ -532,18 +503,20 @@ can be used as follows:
   m_pKeyboard->TriggerDown('A') 
 \endcode
 
-\anchor section6-2-4-3
-#### 6.2.4.3 CGame: Frame Loop: Motion
+\anchor section5-2-4-3
+#### 5.2.4.3 CGame: Frame Loop: Motion
 
 If the current game state is not `eGameState::Loading`
-(see \ref section6-2-4-1 "Section 6.2.4.1")
+(see \ref section5-2-4-1 "Section 5.2.4.1")
 then `CGame::ProcessFrame()` does the following.
 `CGame` inherits
-from [`Sage::CComponent`](../html/class_sage_1_1_c_component.html)
+from <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>
 a pointer `m_pSound` to
-an instance of [`Sage::CSound`](../html/class_sage_1_1_c_sound.html), which provides functions to play and
+an instance of 
+<a href="../sage/class_sage_1_1_c_sound.html">`Sage::CSound`</a>
+, which provides functions to play and
 mix sounds asynchronously. Function
-[`Sage::CSound::BeginFrame()`](../html/class_sage_1_1_c_sound.html#acce2cf44671cf243cd1670853941d4c2)
+<a href="../sage/class_sage_1_1_c_sound.html#acce2cf44671cf243cd1670853941d4c2">`Sage::CSound::BeginFrame()`</a>
 is then called to notify the sound player that a new animation frame has begun.
 
 \code{.cpp}
@@ -555,16 +528,15 @@ twice (or more) in any given frame - which would result in the
 sound being played at twice (or more) the volume.
 
 `CGame` also inherits
-from [`Sage::CComponent`](../html/class_sage_1_1_c_component.html)
-a pointer `m_pTimer` to
-an instance of 
-[`Sage::CTimer`](../html/class_sage_1_1_c_timer.html),
+from <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>
+a pointer `m_pTimer` to an instance of 
+<a href="../sage/class_sage_1_1_c_timer.html">`Sage::CTimer`</a>,
  which provides functions to
 accurately measure time. The motion of all game objects should
 be proportional to frame time, otherwise things would move faster
 on a 60Hz monitor than on a 30Hz monitor.
 References to the timer should be inside a 
-[`Sage::CTimer::Tick()`](../html/class_sage_1_1_c_timer.html#ab24d65d62c636f7b2a09d30380cc4ef0)
+<a href="../sage/class_sage_1_1_c_timer.html#ab24d65d62c636f7b2a09d30380cc4ef0">`Sage::CTimer::Tick()`</a>
 functor as follows:
 
 \code{.cpp}
@@ -584,7 +556,7 @@ which returns the frame time in seconds as a `float`.
 
 `CGame` has a member variable `m_pSpriteDesc` which will point to
 a sprite descriptor
-[`Sage::CSpriteDesc2D`](../html/class_sage_1_1_c_sprite_desc2_d.html)
+<a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a>
 that records properties
 of the sprite such as its screen coordinates and angle of orientation.
 Its orientation is stored in `m_pSpriteDesc->m_fRoll` in radians.
@@ -597,18 +569,18 @@ m_pSpriteDesc->m_fRoll += 0.125f*XM_2PI*m_pTimer->GetFrameTime();
 The `0.125f` multiplier ensures that the text wheel
 rotates once every 8 seconds.
 
-\anchor section6-2-4-4
-#### 6.2.4.4 CGame: Frame Loop: Rendering
+\anchor section5-2-4-4
+#### 5.2.4.4 CGame: Frame Loop: Rendering
 
 `CGame::ProcessFrame()` then renders an animation frame by calling
 `CGame::RenderFrame()`. All rendering must be done
 between calls to
-[`Sage::CSpriteRenderer::BeginFrame()`](../html/class_sage_1_1_c_sprite_renderer.html#aa9fdd8301a51b7e7c853ed4a1649ac5e)
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#aa9fdd8301a51b7e7c853ed4a1649ac5e">`Sage::CSpriteRenderer::BeginFrame()`</a>
 and
-[`Sage::CSpriteRenderer::EndFrame()`](../html/class_sage_1_1_c_sprite_renderer.html#a16dbd29c51dc0384d186b39671d8f5d8).
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#a16dbd29c51dc0384d186b39671d8f5d8">`Sage::CSpriteRenderer::EndFrame()`</a>).
 (Recall that `CGame` has a pointer to an instance of
-[`Sage::CSpriteRenderer`](../html/class_sage_1_1_c_sprite_renderer.html)
-in member variable `m_pRenderer`, see \ref section6-2-1 "Section 6.2.1").
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
+in member variable `m_pRenderer`, see \ref section5-2-1 "Section 5.2.1").
 
 If the game has finished loading sounds and sprites,
 that is, if `m_eGameState` is not `eGameState::Loading`,
@@ -621,9 +593,9 @@ m_pRenderer->Draw(eSprite::Background, m_vWinCenter);
 
 Note that `CGame` inherits `m_vWinCenter`, a 2D vector `Vector2`
 containing the position of the center of the user rectangle in the
-game window,
+game window
 from
-[`Sage::CSettings`](../html/class_sage_1_1_c_settings.html).
+<a href="../sage/class_sage_1_1_c_settings.html">`Sage::CSettings`</a>.
 We then draw the text wheel sprite at its current orientation using:
 
 \code{.cpp}
@@ -632,8 +604,9 @@ m_pRenderer->Draw(m_pSpriteDesc);
 
 Since the background is drawn first, the text wheel will be drawn
 on top of it (transparent pixels in the text wheel are omitted, naturally).
-(Recall from \ref section6-2-1 "Section 6.2.1" that
-our instance of [`Sage::CSpriteRenderer`](../html/class_sage_1_1_c_sprite_renderer.html) uses batched mode
+(Recall from \ref section5-2-1 "Section 5.2.1" that
+our instance of
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a> uses batched mode
 sprite rendering from DirectXTK12).
 This method of rendering from back to front is called
 _painter's algorithm_.
@@ -642,7 +615,8 @@ On the other hand, if
 the game is still loading sounds and sprites,
 that is, if `m_eGameState` is `eGameState::Loading`,
 then we draw the text `Loading...` at the center of the window
-using `Sage::CSpriteRenderer::DrawCenteredText()`:
+using 
+`Sage::CSpriteRenderer::DrawCenteredText()`:
 
 \code{.cpp}
 m_pRenderer->DrawCenteredText(L"Loading...");
@@ -650,7 +624,7 @@ m_pRenderer->DrawCenteredText(L"Loading...");
 
 You probably won't see this text in the Blank Game,
 or you might see it for a fraction of a second,
-but you will see it on Sage games that have
+but you will see it on SAGE games that have
 many more, and/or much larger sprites and sounds,
 particularly if you don't have a solid state hard drive.
 
@@ -660,8 +634,8 @@ the F2 key, then `CGame::DrawFrameRateText()` is called to draw
 the frame rate obtained from `m_pTimer->GetFPS()`
 at the top right of the screen.
 
-\anchor section6-2-4-5
-#### 6.2.4.5 CGame: Frame Loop: Process Game State
+\anchor section5-2-4-5
+#### 5.2.4.5 CGame: Frame Loop: Process Game State
 
 `CGame::ProcessState()` processes any changes to the game
 state that occurred in the current frame.
@@ -681,16 +655,23 @@ memory leaks and crashes in your own game.
 Recall that Visual Leak Detector (see \ref section4 "Section 4")
 can be used in Debug mode to detect memory leaks.
 
-\anchor section6-2-5
-### 6.2.5 CGame: Shutting Down
+\anchor section5-2-5
+### 5.2.5 CGame: Shutting Down
 
-As mentioned in \ref section6-1 "Section 6.1",
+As mentioned in \ref section5-1 "Section 5.1",
 `CGame::Release()` contains shutdown code and will
 be called once only when your game shuts down.
-All it needs to do is delete the instance of [`Sage::CSpriteRenderer`](../html/class_sage_1_1_c_sprite_renderer.html),
+All it needs to do is delete the instance of
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>),
 which takes care of the details of shutting down DirectX 12.
 It is important that this gets done before the destructor
 `CGame::~CGame()` is called.
+
+\anchor section6
+# 6. What Next?
+
+What's next are some <a href="../introgames/index.html">more games</a>
+and some <a href="../introphysics/index.html">physics games and toys</a>
 
 **/
 
