@@ -22,37 +22,42 @@ Controls
 
 This toy can be played with either the keypad or an 
 XBOX controller. 
+
 <center>
-<table>
-<tr>
-<td><center><b>Keyboard</b></center></td>
-<td><center><b>Controller</b></center></td>
-<td><center><b>Action</b></center></td>
-<tr>
-<td>F1</td>
-<td></td>
-<td>Help (this document)</td>
-<tr>
-<td>Space</td>
-<td>Right button</td>
-<td>Throw a ball along the view vector.</td>
-<tr>
-<td>Arrow keys</td>
-<td>Right stick</td>
-<td>Camera orientation.</td>
-<tr>
-<td>WASD</td>
-<td>Dpad</td>
-<td>Camera motion (relative to the view vector).
-<tr>
-<td>Backspace</td>
-<td>A</td>
-<td>Reset to initial conditions.</td>
-<tr>
-<td>PrtScr (hold down)</td>
-<td></td>
-<td>Save screenshot to a PNG file</td>
-</table>
+  <table>
+    <tr>
+      <td><center><b>Keyboard</b></center></td>
+      <td><center><b>Controller</b></center></td>
+      <td><center><b>Action</b></center></td>
+    <tr>
+      <td>F1</td>
+      <td>-</td>
+      <td>Help (this document)</td>
+    <tr>
+      <td>Space</td>
+      <td>Right button</td>
+      <td>Throw a ball along the view vector.</td>
+    <tr>
+      <td>Arrow keys</td>
+      <td>Right stick</td>
+      <td>Camera orientation.</td>
+    <tr>
+      <td>WASD</td>
+      <td>Dpad</td>
+      <td>Camera motion (relative to the view vector).
+    <tr>
+      <td>Backspace</td>
+      <td>A</td>
+      <td>Reset to initial conditions.</td>
+    <tr>
+      <td>PrtScr (hold down)</td>
+      <td>-</td>
+      <td>Save screenshot to a PNG file</td>
+    <tr>
+      <td>Esc</td>
+      <td>-</td>
+      <td>Quit game and exit</td>
+  </table>
 </center>
 
 To-Do List

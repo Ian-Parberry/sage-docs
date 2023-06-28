@@ -1,0 +1,73 @@
+/**
+\mainpage notitle
+
+\anchor section1
+# 1. Introduction
+
+UNDER CONSTRUCTION
+
+\anchor fig1
+\image html screenshot.png "Fig. 1: A screenshot of the Tiled Platformer." width=50%
+
+The remainder of this page is divided into three sections.
+\ref section2 "Section 2" lists the controls
+and their corresponding actions,
+\ref section3 "Section 3" is a reminder to install SAGE, the Simple
+Academic Game Engine,
+and
+\ref section4 "Section 4" gives a breakdown of the code for the Tiled Platformer.
+
+\anchor section2
+# 2. Controls
+
+<center>
+  <table>
+    <tr>
+      <td><center><b>Keyboard</b></center></td>
+      <td><center><b>Controller</b></center></td>
+      <td><center><b>Action</b></center></td>
+    <tr>
+      <td><center>F1</center></td>
+      <td><center>-</center></td>
+      <td>Help (this document)</td>
+    <tr>
+      <td><center>PrtScr</center></td>
+      <td><center>-</center></td>
+      <td>Save screenshot to a PNG file</td>
+    <tr>
+      <td><center>Esc</center></td>
+      <td><center>-</center></td>
+      <td>Exit</td>
+  </table>
+</center>
+
+\anchor section3
+# 3. SAGE
+
+This code uses <a href="../sage/index.html">SAGE</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>.
+Navigate to the folder `3. Tiled Platformer` in your
+copy of the `sage-games` repository.
+Run `checkenv.bat` to verify that you have set the environment
+variables correctly.
+Run `Build.bat`. The Release executable file `Tiled Platformer.exe`
+will appear. When you run it you will see something similar to
+\ref fig1 "Fig. 1".
+Use the commands listed in \ref section2 "Section 2" to get
+to the door without dying.
+
+\anchor section4
+# 4. Code Breakdown
+
+Open `Tiled Platformer.sln` in Visual Studio and examine the
+code in the editor while you read the
+rest of this section, which is divided into subsections.
+
+Changes from <a href="../topdowntiled">The Top Down Tiled Game</a> include ...
+
+UNDER CONSTRUCTION
+
+
+
+**/

@@ -78,54 +78,56 @@ $(function() {
 </div>
 
 <div><div class="contents">
-<div class="textblock"><p>This game is identical to the <a href="https://larc.unt.edu/code/topdownwithdeath/">Top-Down Shooter With Death</a> with the addition of a tiled background that is read from a text map, and multiple levels. / </p><div class="image">
+<div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
+<p>This game is similar to the <a href="../topdown">Top Down Game</a> with the addition of a tiled background that is read from a text map, and multiple levels with multiple guards. <a class="el" href="index.html#fig1">Fig. 1</a> shows one of the levels.</p>
+<p><a class="anchor" id="fig1"></a></p><div class="image">
 <img src="screenshot.png" alt="" width="30%"/>
-</div>
-<h2>Keyboard Controls </h2>
-<p>/ </p><center> <table class="doxtable">
+<div class="caption">
+Fig. 1: A screenshot of the Top Down Tiled Game.</div></div>
+<p>The remainder of this page is divided into four sections. <a class="el" href="index.html#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="index.html#section3">Section 3</a> is a reminder to install SAGE, the Simple Academic Game Engine, <a class="el" href="index.html#section4">Section 4</a> gives a breakdown of the code for the Top Down Tiled Game, and <a class="el" href="index.html#section5">Section 5</a> addresses the question "what next?".</p>
+<p><a class="anchor" id="section2"></a></p><h1>2. Controls</h1>
+<center> <table class="doxtable">
 <tr>
-<td><center><b>Key</b></center> </td><td><center><b>Action</b></center> </td></tr>
+<td><center><b>Keyboard</b></center> </td><td><center><b>Controller</b></center> </td><td><center><b>Mouse</b></center> </td><td><center><b>Action</b></center> </td></tr>
 <tr>
-<td>F1 </td><td>Help (this document) </td></tr>
+<td><center>F1</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Help (this document) </td></tr>
 <tr>
-<td>F2 </td><td>Toggle frame rate display </td></tr>
+<td><center>F2</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Toggle frame rate display </td></tr>
 <tr>
-<td>Up arrow </td><td>Move forwards when pressed </td></tr>
+<td><center>F3</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Toggle show bounds </td></tr>
 <tr>
-<td>Down arrow </td><td>Retreat when pressed </td></tr>
+<td><center>F4</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Toggle show NPC state </td></tr>
 <tr>
-<td>Left arrow </td><td>Rotate counterclockwise when pressed </td></tr>
+<td><center>-</center> </td><td>Right thumb </td><td>Move left </td><td>Rotate counterclockwise </td></tr>
 <tr>
-<td>Right arrow </td><td>Rotate clockwise when pressed </td></tr>
+<td><center>-</center> </td><td>Right thumb </td><td>Move right </td><td>Rotate clockwise </td></tr>
 <tr>
-<td>Space </td><td>Shoot </td></tr>
+<td><center>Space</center> </td><td>Right button </td><td>Left button </td><td>Shoot </td></tr>
 <tr>
-<td>A </td><td>Strafe left </td></tr>
+<td><center>A</center> </td><td>Digital pad left </td><td><center>-</center> </td><td>Strafe left </td></tr>
 <tr>
-<td>D </td><td>Strafe right </td></tr>
+<td><center>D</center> </td><td>Digital pad right </td><td><center>-</center> </td><td>Strafe right </td></tr>
 <tr>
-<td>G </td><td>Toggle God mode </td></tr>
+<td><center>G</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Toggle God mode </td></tr>
 <tr>
-<td>Backspace </td><td>Restart game </td></tr>
+<td><center>S</center> </td><td>Digital pad down </td><td><center>-</center> </td><td>Retreat </td></tr>
 <tr>
-<td>PrtScr (hold down) </td><td>Save screenshot to a PNG file </td></tr>
+<td><center>W</center> </td><td><center>-</center> </td><td>Right trigger </td><td>Move forwards </td></tr>
+<tr>
+<td><center>Backspace</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Restart game </td></tr>
+<tr>
+<td><center>PrtScr</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Save screenshot to a PNG file </td></tr>
+<tr>
+<td><center>Esc</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Exit </td></tr>
 </table>
-</center><h2>X-Box Controller </h2>
-<p>/ </p><center> <table class="doxtable">
-<tr>
-<td><center><b>Control</b></center> </td><td><center><b>Action</b></center> </td></tr>
-<tr>
-<td>Right Trigger </td><td>Forward speed </td></tr>
-<tr>
-<td>Right Thumb </td><td>Rotation speed and direction </td></tr>
-<tr>
-<td>Right Button </td><td>Shoot </td></tr>
-<tr>
-<td>DPad Left </td><td>Strafe left </td></tr>
-<tr>
-<td>DPad Right </td><td>Strafe right </td></tr>
-</table>
-</center><p> / </p>
+</center><p><a class="anchor" id="section3"></a></p><h1>3. SAGE</h1>
+<p>This code uses <a href="../sage/index.html">SAGE</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a>. Navigate to the folder <code>2. Top Down Tiled Game</code> in your copy of the <code>sage-games</code> repository. Run <code>checkenv.bat</code> to verify that you have set the environment variables correctly. Run <code>Build.bat</code>. The Release executable file <code>Top Down Game.exe</code> will appear. When you run it you will see something similar to <a class="el" href="index.html#fig1">Fig. 1</a>. Use the commands listed in <a class="el" href="index.html#section2">Section 2</a> to kill the guards before they kill you. There are three levels.</p>
+<p><a class="anchor" id="section4"></a></p><h1>4. Code Breakdown</h1>
+<p>Open <code>Top Down Tiled Game.sln</code> in Visual Studio and examine the code in the editor while you read the rest of this section, which is divided into subsections.</p>
+<p>Changes from <a href="../topdown">The Top Down Game</a> include ...</p>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5"></a></p><h1>5. What Next?</h1>
+<p>Next, take a look at the <a href="../sidescroller">Tiled Sidescroller</a>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

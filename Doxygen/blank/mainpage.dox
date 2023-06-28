@@ -29,32 +29,32 @@ and
 # 2. Keyboard Controls
 
 <center>
-<table>
-<tr>
-<td><center><b>Key</b></center></td>
-<td><center><b>Action</b></center></td>
-<tr>
-<td>F1</td>
-<td>Help (this document)</td>
-<tr>
-<td>F2</td>
-<td>Toggle frame rate display</td>
-<tr>
-<td>Space Down</td>
-<td>Play a clang sound</td>
-<tr>
-<td>Space Up</td>
-<td>Play a grunt sound</td>
-<tr>
-<td>Backspace</td>
-<td>Restart game</td>
-<tr>
-<td>PrtScr (hold down)</td>
-<td>Save screenshot to a PNG file</td>
-<tr>
-<td>Esc</td>
-<td>Quit game and exit</td>
-</table>
+  <table>
+    <tr>
+      <td><center><b>Key</b></center></td>
+      <td><center><b>Action</b></center></td>
+    <tr>
+      <td>F1</td>
+      <td>Help (this document)</td>
+    <tr>
+      <td>F2</td>
+      <td>Toggle frame rate display</td>
+    <tr>
+      <td>Space Down</td>
+      <td>Play a clang sound</td>
+    <tr>
+      <td>Space Up</td>
+      <td>Play a grunt sound</td>
+    <tr>
+      <td>Backspace</td>
+      <td>Restart game</td>
+    <tr>
+      <td>PrtScr (hold down)</td>
+      <td>Save screenshot to a PNG file</td>
+    <tr>
+      <td>Esc</td>
+      <td>Quit game and exit</td>
+  </table>
 </center>
 
 \anchor section3

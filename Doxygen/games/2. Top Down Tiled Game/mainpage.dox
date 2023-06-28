@@ -1,84 +1,145 @@
 /**
 \mainpage notitle
 
-This game is identical to the 
-[Top-Down Shooter With Death](https://larc.unt.edu/code/topdownwithdeath/)
+\anchor section1
+# 1. Introduction
+
+This game is similar to the 
+<a href="../topdown">Top Down Game</a>
 with the addition of a tiled background that is read from a text map, and
-multiple levels.
-///
-@image html screenshot.png width=30%
+multiple levels with multiple guards.
+\ref fig1 "Fig. 1" shows one of the levels.
 
-Keyboard Controls
------------------
-///
+\anchor fig1
+\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=30%
+
+The remainder of this page is divided into four sections.
+\ref section2 "Section 2" lists the controls
+and their corresponding actions,
+\ref section3 "Section 3" is a reminder to install SAGE, the Simple
+Academic Game Engine,
+\ref section4 "Section 4" gives a breakdown of the code for the Top Down Tiled Game,
+and
+\ref section5 "Section 5" addresses the question "what next?".
+
+\anchor section2
+# 2. Controls
+
 <center>
-<table>
-<tr>
-<td><center><b>Key</b></center></td>
-<td><center><b>Action</b></center></td>
-<tr>
-<td>F1</td>
-<td>Help (this document)</td>
-<tr>
-<td>F2</td>
-<td>Toggle frame rate display</td>
-<tr>
-<td>Up arrow</td>
-<td>Move forwards when pressed</td>
-<tr>
-<td>Down arrow</td>
-<td>Retreat when pressed</td>
-<tr>
-<td>Left arrow</td>
-<td>Rotate counterclockwise when pressed</td>
-<tr>
-<td>Right arrow</td>
-<td>Rotate clockwise when pressed</td>
-<tr>
-<td>Space</td>
-<td>Shoot</td>
-<tr>
-<td>A</td>
-<td>Strafe left</td>
-<tr>
-<td>D</td>
-<td>Strafe right</td>
-<tr>
-<td>G</td>
-<td>Toggle God mode</td>
-<tr>
-<td>Backspace</td>
-<td>Restart game</td>
-<tr>
-<td>PrtScr (hold down)</td>
-<td>Save screenshot to a PNG file</td>
-</table>
+  <table>
+    <tr>
+      <td><center><b>Keyboard</b></center></td>
+      <td><center><b>Controller</b></center></td>
+      <td><center><b>Mouse</b></center></td>
+      <td><center><b>Action</b></center></td>
+    <tr>
+      <td><center>F1</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Help (this document)</td>
+    <tr>
+      <td><center>F2</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Toggle frame rate display</td>
+    <tr>
+      <td><center>F3</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Toggle show bounds</td>
+    <tr>
+      <td><center>F4</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Toggle show NPC state</td>
+    <tr>
+      <td><center>-</center></td>
+      <td>Right thumb</td>
+      <td>Move left</td>
+      <td>Rotate counterclockwise</td>
+    <tr>
+      <td><center>-</center></td>
+      <td>Right thumb</td>
+      <td>Move right</td>
+      <td>Rotate clockwise</td> 
+    <tr>
+      <td><center>Space</center></td>
+      <td>Right button</td>
+      <td>Left button</td>
+      <td>Shoot</td>
+    <tr>
+      <td><center>A</center></td>
+      <td>Digital pad left</td>
+      <td><center>-</center></td>
+      <td>Strafe left</td>
+    <tr>
+      <td><center>D</center></td>
+      <td>Digital pad right</td>
+      <td><center>-</center></td>
+      <td>Strafe right</td>
+    <tr>
+      <td><center>G</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Toggle God mode</td>
+    <tr>
+      <td><center>S</center></td>
+      <td>Digital pad down</td>
+      <td><center>-</center></td>
+      <td>Retreat</td>
+    <tr>
+      <td><center>W</center></td>
+      <td><center>-</center></td>
+      <td>Right trigger</td>
+      <td>Move forwards</td>
+    <tr>
+      <td><center>Backspace</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Restart game</td>
+    <tr>
+      <td><center>PrtScr</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Save screenshot to a PNG file</td>
+    <tr>
+      <td><center>Esc</center></td>
+      <td><center>-</center></td>
+      <td><center>-</center></td>
+      <td>Exit</td>
+  </table>
 </center>
 
-X-Box Controller
-----------------
-///
-<center>
-<table>
-<tr>
-<td><center><b>Control</b></center></td>
-<td><center><b>Action</b></center></td>
-<tr>
-<td>Right Trigger</td>
-<td>Forward speed</td>
-<tr>
-<td>Right Thumb</td>
-<td>Rotation speed and direction</td>
-<tr>
-<td>Right Button</td>
-<td>Shoot</td>
-<tr>
-<td>DPad Left</td>
-<td>Strafe left</td>
-<tr>
-<td>DPad Right</td>
-<td>Strafe right</td>
-</table>
-</center>
-///
+\anchor section3
+# 3. SAGE
+
+This code uses <a href="../sage/index.html">SAGE</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>.
+Navigate to the folder `2. Top Down Tiled Game` in your
+copy of the `sage-games` repository.
+Run `checkenv.bat` to verify that you have set the environment
+variables correctly.
+Run `Build.bat`. The Release executable file `Top Down Game.exe`
+will appear. When you run it you will see something similar to
+\ref fig1 "Fig. 1".
+Use the commands listed in \ref section2 "Section 2" to kill the
+guards before they kill you. There are three levels.
+
+\anchor section4
+# 4. Code Breakdown
+
+Open `Top Down Tiled Game.sln` in Visual Studio and examine the
+code in the editor while you read the
+rest of this section, which is divided into subsections.
+
+Changes from <a href="../topdown">The Top Down  Game</a> include ...
+
+UNDER CONSTRUCTION
+
+\anchor section5
+# 5. What Next?
+
+Next, take a look at the <a href="../sidescroller">Tiled Sidescroller</a>.
+
 **/
