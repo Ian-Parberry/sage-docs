@@ -12,9 +12,7 @@ DirectXTK12. The models are input using the built-in
 function `Model::CreateFromSDKMESH` which requires that the
 models be in SDKMESH format. The 3D models are from
 [free3d.com](https://free3d.com/) and were converted
-from OBJ format using `DirectXMesh`. The logo on the small
-crate has been changed to the logo for the Laboratory for
-Recreational Computing.
+from OBJ format using `DirectXMesh`. 
 
 \image html screenshot.png width=800
 

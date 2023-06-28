@@ -86,7 +86,7 @@ open-source 2D physics library.
   <li>
     [Cannon Lullaby Toy](../lullaby/index.html):
     Cannonballs hit emitters to
-    play a tune regardless of the cannon's position and elevation.
+    play a tune regardless of the cannon's position.
   </li>
 </ol>
 
