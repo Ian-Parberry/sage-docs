@@ -599,18 +599,30 @@ For example,
 or `size_t`),
 and `m_pTimer` is a pointer to a timer. 
 
-5. SAGE is documented using [Doxygen](https://www.doxygen.nl/)
+5. In 2D SAGE games the Origin of the coordinate space
+it at the lower-leftmost point of the window. The
+positive X-axis goes to the right, the positive
+Y-axis does up, and the positive
+Z-axis does into the screen.
+
+6. The _orientation_ of a sprite in SAGE, that is, the angle that
+it is to be rotated, is called `m_fRoll`, because in 3D games we
+have three orientation angles, _yaw_ (rotation about the
+Y-axis), _pitch_ (rotation about the X-axis) and
+_roll_ (rotation about the Z-axis).
+
+7. SAGE is documented using [Doxygen](https://www.doxygen.nl/)
 which allows us to generate html documentation from
 programmer-readable comments.
 Doxygen comments start with `///` for a block comment
 and `//<` for an in-line comment.
 
-6. Public member functions that simply return the
+8. Public member functions that simply return the
 value stored in a private or protected member variables
 start with `Get`, for example,  
 `Sage::CCamera::GetYaw()` returns `Sage::CCamera::m_fYaw`.
 
-7. Public member functions that modify the
+9. Public member functions that modify the
 values stored in private or protected member variables
 start with `Set`, for example,  
 `Sage::CCamera::SetYaw()` sets `Sage::CCamera::m_fYaw`

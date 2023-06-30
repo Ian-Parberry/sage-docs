@@ -1,7 +1,12 @@
 /**
 \mainpage notitle
 
-Under construction.
+This library consists of a simple class `CBox2DRenderer` that
+will help you draw Box2D bodies using circles and lines in
+<a href="../sage/index.html">SAGE</a>.
+To use it you only need to call `CBox2DRenderer::Drawb2Body()` with a pointer to
+an instance of `b2Body`. Read the rest of code to learn how
+to access the parts that make up a `b2Body`.
 
 **/
 
