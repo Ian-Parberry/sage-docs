@@ -309,8 +309,25 @@ then comment out the following line:
 \anchor section5-2
 ## 5.2 CCommon
 
+`CCommon` is an Accessor (see
+<a href="../sage/index.html#sec2-2">SAGE Data Design Patterns</a>) that
+contains variables that need to be shared between various
+classes. 
+Its declaration is in `Common.h` and its definition is in `Common.cpp`.
+We use it to avoid using global variables (which are discouraged
+in object-oriented programming) and to avoid cluttering up the parameter
+lists of functions that need to access them.
+In the Blank Game, `CCommon` consists of a single static member variable,
+a pointer to a renderer `CCommon::m_pRenderer`, which is initialized
+to `nullptr`.
+
 \anchor section5-3
 ## 5.3 CObject
+
+`CObject is the abstract representation of a game object.
+Its declaration is in `Object.h` and its definition is in `Object.cpp`.
+See <a href="class_c_object.html#details">CObject More Details</a>
+for more details.
 
 \anchor section5-4
 ## 5.4 CGame
@@ -328,14 +345,16 @@ As mentioned in \ref section5-1 "Section 5.1",
 be called once only when your game starts.
 It creates a DirectXTK12 renderer (an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>)
-pointed to by `CGame::m_pRenderer`. The parameter
+pointed to by `CCommon::m_pRenderer`. The parameter
 `Sage::eSpriteMode::Batched2D` to the sprite renderer directs it
 to use batched mode sprite renderer from DirectXTK12.
-It then calls `CGame::LoadSprites()` (see \ref section5-4-2 "Section 5.4.2")
-to load the sprites needed for the
-game, then calls `CGame::LoadSounds()` 
+It then creates an instance of `Sage::CObjectManager<CObject>`
+to manage the game objects (see \ref section5-3 "Section 5.3)
+and saves a pointer to it in member variable `CGame::m_pObjectManager`.
+Finally, it calls `CGame::LoadSprites()` (see \ref section5-4-2 "Section 5.4.2")
+to load the game sprites and `CGame::LoadSounds()` 
 (see \ref section5-4-3 "Section 5.4.3")
-to load the sounds.
+to load the game sounds.
 
 \anchor section5-4-2
 ### 5.4.2 CGame: Loading Sprites 
@@ -376,7 +395,8 @@ to load the
 sprites asynchronously in a separate thread. 
 (Recall that `CGame` has a pointer to an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
-in member variable `m_pRenderer`, see \ref section5-4-1 "Section 5.4.1").
+in member variable `m_pRenderer`,
+which it inherited from `CCommon`, see \ref section5-2 "Section 5.2").
 
 \code{.cpp}
   m_pRenderer->LoadMT(media);
@@ -586,7 +606,8 @@ and
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#a16dbd29c51dc0384d186b39671d8f5d8">`Sage::CSpriteRenderer::EndFrame()`</a>).
 (Recall that `CGame` has a pointer to an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
-in member variable `m_pRenderer`, see \ref section5-4-1 "Section 5.4.1").
+in member variable `m_pRenderer`,
+which it inherited from `CCommon`, see \ref section5-2 "Section 5.2").
 
 If the game has finished loading sounds and sprites,
 that is, if `m_eGameState` is not `eGameState::Loading`,
@@ -651,8 +672,10 @@ the sound player to see whether they have finished loading,
 that is, `m_pRenderer->Loaded()` returns `true` and
 `m_pSound->Loaded()` returns `true`.
 If so, we call `CGame::BeginGame()`, which sets
-`m_eGameState` to `eGameState::Playing` and creates a new
-sprite for the text wheel at the center of the screen.
+`m_eGameState` to `eGameState::Playing`,
+clears any old objects from the object manager, and creates an
+instance of `CSprite` for the text wheel at the center of the screen
+and inserts it into the object manager.
 
 Note that `CGame::BeginGame()` is also called from
 `CGame::KeyboardHandler()` in response to the `Backspace`
