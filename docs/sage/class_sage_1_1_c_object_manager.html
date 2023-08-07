@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf7009a5e332c824881a4c2981d8e2fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_object_manager.html#adf7009a5e332c824881a4c2981d8e2fc">~CObjectManager</a> ()</td></tr>
 <tr class="memdesc:adf7009a5e332c824881a4c2981d8e2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:adf7009a5e332c824881a4c2981d8e2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af854af13895ebbd4aadf1eb8b1dc8b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_object_manager.html#af854af13895ebbd4aadf1eb8b1dc8b10">Insert</a> (obj *)</td></tr>
+<tr class="memdesc:af854af13895ebbd4aadf1eb8b1dc8b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create object.  <br /></td></tr>
+<tr class="separator:af854af13895ebbd4aadf1eb8b1dc8b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028ad690660f63b969153a3193962954"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_object_manager.html#a028ad690660f63b969153a3193962954">Clear</a> ()</td></tr>
 <tr class="memdesc:a028ad690660f63b969153a3193962954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset to empty and delete all objects.  <br /></td></tr>
 <tr class="separator:a028ad690660f63b969153a3193962954"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +357,41 @@ template&lt;class obj &gt; </div>
 <p>Move all objects by iterating through all objects in the object list and calling their draw functions. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">obj</td><td>Object class. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af854af13895ebbd4aadf1eb8b1dc8b10" name="af854af13895ebbd4aadf1eb8b1dc8b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af854af13895ebbd4aadf1eb8b1dc8b10">&#9670;&#160;</a></span>Insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class obj &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_sage_1_1_c_object_manager.html">Sage::CObjectManager</a>&lt; obj &gt;::Insert </td>
+          <td>(</td>
+          <td class="paramtype">obj *&#160;</td>
+          <td class="paramname"><em>pObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Insert object.</p>
+<p>Insert object into object list. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pObj</td><td>Pointer to object. </td></tr>
   </table>
   </dd>
 </dl>

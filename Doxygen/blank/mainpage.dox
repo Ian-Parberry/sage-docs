@@ -307,15 +307,21 @@ then comment out the following line:
 \endcode
 
 \anchor section5-2
-## 5.2 CGame
+## 5.2 CCommon
+
+\anchor section5-3
+## 5.3 CObject
+
+\anchor section5-4
+## 5.4 CGame
 
 `CGame` is the object-oriented representation of your game.
 Its declaration is in `Game.h` and its definition is in `Game.cpp`.
 In addition, there are some useful defines and enumerated types
 in `GameDefines.h`.
 
-\anchor section5-2-1
-### 5.2.1 CGame: Initialization
+\anchor section5-4-1
+### 5.4.1 CGame: Initialization
 
 As mentioned in \ref section5-1 "Section 5.1",
 `CGame::Initialize()` contains initialization code and will
@@ -325,14 +331,14 @@ It creates a DirectXTK12 renderer (an instance of
 pointed to by `CGame::m_pRenderer`. The parameter
 `Sage::eSpriteMode::Batched2D` to the sprite renderer directs it
 to use batched mode sprite renderer from DirectXTK12.
-It then calls `CGame::LoadSprites()` (see \ref section5-2-2 "Section 5.2.2")
+It then calls `CGame::LoadSprites()` (see \ref section5-4-2 "Section 5.4.2")
 to load the sprites needed for the
 game, then calls `CGame::LoadSounds()` 
-(see \ref section5-2-3 "Section 5.2.3")
+(see \ref section5-4-3 "Section 5.4.3")
 to load the sounds.
 
-\anchor section5-2-2
-### 5.2.2 CGame: Loading Sprites 
+\anchor section5-4-2
+### 5.4.2 CGame: Loading Sprites 
 
 `CGame::LoadSprites()` loads sprites for the background and the text wheel.
 For convenience, the following enumerated type is declared in `GameDefines.h`.
@@ -370,7 +376,7 @@ to load the
 sprites asynchronously in a separate thread. 
 (Recall that `CGame` has a pointer to an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
-in member variable `m_pRenderer`, see \ref section5-2-1 "Section 5.2.1").
+in member variable `m_pRenderer`, see \ref section5-4-1 "Section 5.4.1").
 
 \code{.cpp}
   m_pRenderer->LoadMT(media);
@@ -386,8 +392,8 @@ use the following instead.
   m_pRenderer->Load(media);
 \endcode
 
-\anchor section5-2-3
-### 5.2.3 CGame: Loading Sounds
+\anchor section5-4-3
+### 5.4.3 CGame: Loading Sounds
 
 `CGame::LoadSounds()` loads sounds.
 For convenience, the following enumerated type is declared in `GameDefines.h`.
@@ -442,16 +448,16 @@ use the following instead.
   m_pSound->Load(media);
 \endcode
 
-\anchor section5-2-4
-### 5.2.4 CGame: The Frame Loop
+\anchor section5-4-4
+### 5.4.4 CGame: The Frame Loop
 
 As mentioned in \ref section5-1 "Section 5.1",
 `CGame::ProcessFrame()` contains code that creates and displays
 the next frame of animation. SAGE will ensure that this function
 will be called repeatedly in a loop that terminates only when the game exits.
 
-\anchor section5-2-4-1
-#### 5.2.4.1 CGame: Frame Loop: The Game State
+\anchor section5-4-4-1
+#### 5.4.4.1 CGame: Frame Loop: The Game State
 
 The behavior of `CGame::ProcessFrame()` will depend on the current
 state of the game, which is recorded in `CGame::m_eGameState`,
@@ -467,8 +473,8 @@ enum class eGameState{
 we will change it to `eGameState::Playing` when the (possibly asynchronous)
 loading of sprites and sounds is finished.
 
-\anchor section5-2-4-2
-#### 5.2.4.2 CGame: Frame Loop: The Keyboard Handler
+\anchor section5-4-4-2
+#### 5.4.4.2 CGame: Frame Loop: The Keyboard Handler
 
 The first thing that `CGame::ProcessFrame()` does is call the keyboard
 handler `CGame::KeyboardHandler()`. `CGame` inherits
@@ -503,18 +509,18 @@ can be used as follows:
   m_pKeyboard->TriggerDown('A') 
 \endcode
 
-\anchor section5-2-4-3
-#### 5.2.4.3 CGame: Frame Loop: Motion
+\anchor section5-4-4-3
+#### 5.4.4.3 CGame: Frame Loop: Motion
 
 If the current game state is not `eGameState::Loading`
-(see \ref section5-2-4-1 "Section 5.2.4.1")
+(see \ref section5-4-4-1 "Section 5.4.4.1")
 then `CGame::ProcessFrame()` does the following.
 `CGame` inherits
 from <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>
 a pointer `m_pSound` to
 an instance of 
-<a href="../sage/class_sage_1_1_c_sound.html">`Sage::CSound`</a>
-, which provides functions to play and
+<a href="../sage/class_sage_1_1_c_sound.html">`Sage::CSound`</a>,
+which provides functions to play and
 mix sounds asynchronously. Function
 <a href="../sage/class_sage_1_1_c_sound.html#acce2cf44671cf243cd1670853941d4c2">`Sage::CSound::BeginFrame()`</a>
 is then called to notify the sound player that a new animation frame has begun.
@@ -569,8 +575,8 @@ m_pSpriteDesc->m_fRoll += 0.125f*XM_2PI*m_pTimer->GetFrameTime();
 The `0.125f` multiplier ensures that the text wheel
 rotates once every 8 seconds.
 
-\anchor section5-2-4-4
-#### 5.2.4.4 CGame: Frame Loop: Rendering
+\anchor section5-4-4-4
+#### 5.4.4.4 CGame: Frame Loop: Rendering
 
 `CGame::ProcessFrame()` then renders an animation frame by calling
 `CGame::RenderFrame()`. All rendering must be done
@@ -580,7 +586,7 @@ and
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#a16dbd29c51dc0384d186b39671d8f5d8">`Sage::CSpriteRenderer::EndFrame()`</a>).
 (Recall that `CGame` has a pointer to an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
-in member variable `m_pRenderer`, see \ref section5-2-1 "Section 5.2.1").
+in member variable `m_pRenderer`, see \ref section5-4-1 "Section 5.4.1").
 
 If the game has finished loading sounds and sprites,
 that is, if `m_eGameState` is not `eGameState::Loading`,
@@ -604,7 +610,7 @@ m_pRenderer->Draw(m_pSpriteDesc);
 
 Since the background is drawn first, the text wheel will be drawn
 on top of it (transparent pixels in the text wheel are omitted, naturally).
-(Recall from \ref section5-2-1 "Section 5.2.1" that
+(Recall from \ref section5-4-1 "Section 5.4.1" that
 our instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a> uses batched mode
 sprite rendering from DirectXTK12).
@@ -634,8 +640,8 @@ the F2 key, then `CGame::DrawFrameRateText()` is called to draw
 the frame rate obtained from `m_pTimer->GetFPS()`
 at the top right of the screen.
 
-\anchor section5-2-4-5
-#### 5.2.4.5 CGame: Frame Loop: Process Game State
+\anchor section5-4-4-5
+#### 5.4.4.5 CGame: Frame Loop: Process Game State
 
 `CGame::ProcessState()` processes any changes to the game
 state that occurred in the current frame.

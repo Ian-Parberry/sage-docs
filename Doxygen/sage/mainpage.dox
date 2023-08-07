@@ -49,14 +49,20 @@ SAGE uses three algorithm design patterns and four data design patterns.
 The three algorithm design patterns used by SAGE are 
 _entity_, _manager_, and _component_.
 
+\anchor entity
+
 1. An _entity_ is a simple class that is concerned only with its own state and actions. 
 Entities typically rely on components to perform tasks for them. 
 Access to entities is typically through a manager.
+
+\anchor manager
 
 2. A _manager_ contains a collection of entities. 
 Managers are responsible for entity creation and destruction, and delegation of tasks to all entities for which the manager has responsibility. 
 A manager typically stores its entities in a private container such as `std::vector` or `std::list`. 
 The manager's entities typically list the manager as a friend so that the manager has direct access to the entity's data without the need for cumbersome access functions.
+
+\anchor component
 
 3. A _component_ is a class that provides services typically provided by the
 operating system such as graphics and sound.
@@ -66,8 +72,12 @@ operating system such as graphics and sound.
 
 The four data design patterns used by SAGE are
  _descriptor_, _monostate_, _accessor_, and _aggregator_.
+
+\anchor descriptor
  
 1. A _descriptor_ encapsulates information in the form of public member variables. They are typically used to replace a long parameter list with a single parameter.
+
+\anchor monostate
 
 2. A _monostate_ is a class that encapsulates a single instance of data to be shared between classes using class variables (static member variables).
 A monostate may be instantiated in the code, but it more generally
@@ -75,7 +85,11 @@ has classes derived from it.
 Monostates are used to provide data to multiple entities, managers, components, without the need for global variables, long parameter lists, or local copies of the data.
 The Monostate Design Pattern is also called the _Borg Idiom_ in the Python community.
 
+\anchor accessor
+
 3. An _accessor_ is a monostate consisting only of protected member variables.
+
+\anchor aggregator
 
 4. An _aggregator_ is an accessor consisting of static protected pointers to components.
 

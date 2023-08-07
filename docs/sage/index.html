@@ -85,17 +85,27 @@ $(function() {
 <p>A <em>design pattern</em> is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. Design patterns began with the so-called gang of four consisting of Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. In 1994 they published a book called <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>. SAGE uses what are called <em>implementation strategy design patterns</em>, which relate to source code organization. There are two types of implementation strategy design pattern: <em>algorithm</em> and <em>data</em>. SAGE uses three algorithm design patterns and four data design patterns.</p>
 <p><a class="anchor" id="sec2-1"></a></p><h2>2.1 Algorithm Design Patterns</h2>
 <p>The three algorithm design patterns used by SAGE are <em>entity</em>, <em>manager</em>, and <em>component</em>.</p>
-<ol type="1">
+<p><a class="anchor" id="entity"></a></p><ol type="1">
 <li>An <em>entity</em> is a simple class that is concerned only with its own state and actions. Entities typically rely on components to perform tasks for them. Access to entities is typically through a manager.</li>
+</ol>
+<p><a class="anchor" id="manager"></a></p><ol type="1">
 <li>A <em>manager</em> contains a collection of entities. Managers are responsible for entity creation and destruction, and delegation of tasks to all entities for which the manager has responsibility. A manager typically stores its entities in a private container such as <code>std::vector</code> or <code>std::list</code>. The manager's entities typically list the manager as a friend so that the manager has direct access to the entity's data without the need for cumbersome access functions.</li>
+</ol>
+<p><a class="anchor" id="component"></a></p><ol type="1">
 <li>A <em>component</em> is a class that provides services typically provided by the operating system such as graphics and sound.</li>
 </ol>
 <p><a class="anchor" id="sec2-2"></a></p><h2>2.2 Data Design Patterns</h2>
 <p>The four data design patterns used by SAGE are <em>descriptor</em>, <em>monostate</em>, <em>accessor</em>, and <em>aggregator</em>.</p>
-<ol type="1">
+<p><a class="anchor" id="descriptor"></a></p><ol type="1">
 <li>A <em>descriptor</em> encapsulates information in the form of public member variables. They are typically used to replace a long parameter list with a single parameter.</li>
+</ol>
+<p><a class="anchor" id="monostate"></a></p><ol type="1">
 <li>A <em>monostate</em> is a class that encapsulates a single instance of data to be shared between classes using class variables (static member variables). A monostate may be instantiated in the code, but it more generally has classes derived from it. Monostates are used to provide data to multiple entities, managers, components, without the need for global variables, long parameter lists, or local copies of the data. The Monostate Design Pattern is also called the <em>Borg Idiom</em> in the Python community.</li>
+</ol>
+<p><a class="anchor" id="accessor"></a></p><ol type="1">
 <li>An <em>accessor</em> is a monostate consisting only of protected member variables.</li>
+</ol>
+<p><a class="anchor" id="aggregator"></a></p><ol type="1">
 <li>An <em>aggregator</em> is an accessor consisting of static protected pointers to components.</li>
 </ol>
 <p><a class="anchor" id="sec3"></a></p><h1>3. SAGE Classes</h1>
