@@ -63,7 +63,7 @@ and
 This code uses <a href="../sage/index.html">SAGE</a>.
 Make sure that you have followed the
 <a href="../install/index.html">SAGE Installation Instructions</a>.
-Navigate to the folder `Blank 2D Game` in your copy of the `sage` repository.
+Navigate to the folder `Blank 2D Game` in your copy of the SAGE repository.
 Run `checkenv.bat` to verify that you have set the environment
 variables correctly.
 Run `Build.bat`. The Release executable file `Blank Game.exe`
