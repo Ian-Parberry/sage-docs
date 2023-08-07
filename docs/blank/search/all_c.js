@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wwinmain_0',['wWinMain',['../_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520',1,'Main.cpp']]]
+  ['release_0',['Release',['../class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797',1,'CGame']]],
+  ['renderframe_1',['RenderFrame',['../class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0',1,'CGame']]]
 ];

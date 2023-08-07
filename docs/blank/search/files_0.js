@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['game_2ecpp_0',['Game.cpp',['../_game_8cpp.html',1,'']]],
-  ['game_2eh_1',['Game.h',['../_game_8h.html',1,'']]],
-  ['gamedefines_2eh_2',['GameDefines.h',['../_game_defines_8h.html',1,'']]]
+  ['common_2ecpp_0',['Common.cpp',['../_common_8cpp.html',1,'']]],
+  ['common_2eh_1',['Common.h',['../_common_8h.html',1,'']]]
 ];

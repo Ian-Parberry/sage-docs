@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['release_0',['Release',['../class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797',1,'CGame']]],
-  ['renderframe_1',['RenderFrame',['../class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0',1,'CGame']]]
+  ['processframe_0',['ProcessFrame',['../class_c_game.html#aec83638cb2fdd94ef098132eb59617d8',1,'CGame']]],
+  ['processstate_1',['ProcessState',['../class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d',1,'CGame']]]
 ];

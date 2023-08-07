@@ -88,8 +88,11 @@ $(function() {
 Inheritance diagram for CGame:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_c_game.png" alt=""/>
- </div></div>
+  <img src="class_c_game.png" usemap="#CGame_map" alt=""/>
+  <map id="CGame_map" name="CGame_map">
+<area href="class_c_common.html" title="The common variables class." alt="CCommon" shape="rect" coords="258,0,377,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,14 +143,18 @@ Private Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bDrawFrameRate</b> = false</td></tr>
 <tr class="memdesc:aebf03edb5525b616bdefb05d23b9aa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the frame rate. <br /></td></tr>
 <tr class="separator:aebf03edb5525b616bdefb05d23b9aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3655c38ef59a9ddefe8e5574fd5808b"><td class="memItemLeft" align="right" valign="top"><a id="ae3655c38ef59a9ddefe8e5574fd5808b" name="ae3655c38ef59a9ddefe8e5574fd5808b"></a>
-Sage::CSpriteDesc2D *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSpriteDesc</b> = nullptr</td></tr>
-<tr class="memdesc:ae3655c38ef59a9ddefe8e5574fd5808b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite descriptor. <br /></td></tr>
-<tr class="separator:ae3655c38ef59a9ddefe8e5574fd5808b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56bf92d9417818ca1bbb1049394045f1"><td class="memItemLeft" align="right" valign="top"><a id="a56bf92d9417818ca1bbb1049394045f1" name="a56bf92d9417818ca1bbb1049394045f1"></a>
-Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRenderer</b> = nullptr</td></tr>
-<tr class="memdesc:a56bf92d9417818ca1bbb1049394045f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to renderer. <br /></td></tr>
-<tr class="separator:a56bf92d9417818ca1bbb1049394045f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7848d55c076f86860849d948b26b174d"><td class="memItemLeft" align="right" valign="top"><a id="a7848d55c076f86860849d948b26b174d" name="a7848d55c076f86860849d948b26b174d"></a>
+Sage::CObjectManager&lt; <a class="el" href="class_c_object.html">CObject</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pObjectManager</b> = nullptr</td></tr>
+<tr class="memdesc:a7848d55c076f86860849d948b26b174d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object manager. <br /></td></tr>
+<tr class="separator:a7848d55c076f86860849d948b26b174d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_static_attribs_class_c_common"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_c_common')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_c_common.html">CCommon</a></td></tr>
+<tr class="memitem:affe2697f28fbe937757db5eaa94c00d3 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRenderer</b> = nullptr</td></tr>
+<tr class="memdesc:affe2697f28fbe937757db5eaa94c00d3 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to renderer. <br /></td></tr>
+<tr class="separator:affe2697f28fbe937757db5eaa94c00d3 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The game class is the object-oriented implementation of the game. This class must contain the following public member functions. <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">Initialize()</a></code> does initialization and will be run exactly once at the start of the game. <code><a class="el" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame.">ProcessFrame()</a></code> will be called once per frame to create and render the next animation frame. <code><a class="el" href="class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer.">Release()</a></code> will be called at game exit but before any destructors are run. </p>
