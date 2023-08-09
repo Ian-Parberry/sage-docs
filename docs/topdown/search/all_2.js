@@ -7,12 +7,13 @@ var searchData=
   ['changestate_4',['ChangeState',['../class_c_guard.html#a3b22279349c76fa4e1966c5d776da07a',1,'CGuard']]],
   ['closetoplayer_5',['CloseToPlayer',['../class_c_guard.html#a45e169dc2c90f2ccc7544f4aa738806e',1,'CGuard']]],
   ['cobject_6',['CObject',['../class_c_object.html',1,'CObject'],['../class_c_object.html#a1b3ba191e57cb19e577230055988b70f',1,'CObject::CObject()']]],
-  ['cobjectmanager_7',['CObjectManager',['../class_c_object_manager.html',1,'CObjectManager'],['../class_c_guard.html#a308775fed4dfbed8d4a5ae0efd086fcc',1,'CGuard::CObjectManager'],['../class_c_object.html#a308775fed4dfbed8d4a5ae0efd086fcc',1,'CObject::CObjectManager']]],
+  ['cobjectmanager_7',['CObjectManager',['../class_c_object_manager.html',1,'CObjectManager'],['../class_c_bullet.html#a308775fed4dfbed8d4a5ae0efd086fcc',1,'CBullet::CObjectManager'],['../class_c_guard.html#a308775fed4dfbed8d4a5ae0efd086fcc',1,'CGuard::CObjectManager'],['../class_c_object.html#a308775fed4dfbed8d4a5ae0efd086fcc',1,'CObject::CObjectManager']]],
   ['collisionresponse_8',['CollisionResponse',['../class_c_bullet.html#a13e3d4589c8e5f7b6099f71341236f8b',1,'CBullet::CollisionResponse()'],['../class_c_guard.html#a7100575b2f8b1a4ece0bf3b24d44bfca',1,'CGuard::CollisionResponse()'],['../class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d',1,'CObject::CollisionResponse()'],['../class_c_player.html#a257ff19b21196bf7a42bbaa36e7126a8',1,'CPlayer::CollisionResponse()']]],
   ['common_2ecpp_9',['Common.cpp',['../_common_8cpp.html',1,'']]],
   ['common_2eh_10',['Common.h',['../_common_8h.html',1,'']]],
-  ['controllerhandler_11',['ControllerHandler',['../class_c_game.html#aeca1323f12998e4897141599d8ba7550',1,'CGame']]],
+  ['controllerhandler_11',['ControllerHandler',['../class_c_game.html#a1ef415ad921f0a1b97149ec59ecbe7ea',1,'CGame']]],
   ['cplayer_12',['CPlayer',['../class_c_player.html',1,'CPlayer'],['../class_c_player.html#af8bc34d7e649704e88ceaadbabb74852',1,'CPlayer::CPlayer()']]],
   ['create_13',['Create',['../class_c_object_manager.html#a7f49b5b7c0da33dc53401a26aa865f39',1,'CObjectManager']]],
-  ['createobjects_14',['CreateObjects',['../class_c_game.html#a6a5af1b87c696a23a626812b74c653ea',1,'CGame']]]
+  ['createobjects_14',['CreateObjects',['../class_c_game.html#a6a5af1b87c696a23a626812b74c653ea',1,'CGame']]],
+  ['createparticle_15',['CreateParticle',['../class_c_object.html#a762c11c6a2660e663f9c643470a6f124',1,'CObject']]]
 ];

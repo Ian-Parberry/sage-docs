@@ -25,7 +25,7 @@ your game programming class, please email
 [Ian Parberry](https://ianparberry.com/).
 
 The remainder of this page is divided into four sections.
-\ref sec2 "Section 2" explains the design patterms used in SAGE,
+\ref sec2 "Section 2" explains the design patterns used in SAGE,
 \ref sec3 "Section 3" goes over some of the more important SAGE classes,
 \ref sec4 "Section 4" covers some of the conventions used in SAGE code,
 and 
@@ -427,7 +427,7 @@ sequentially or in parallel threads.
 The problem with the former is that your game window will freeze up
 while the media loads from disk, which can be for several seconds depending
 on the size of the media and the speed of your computers HD or SSD.
-While multithreaded loading is preferable, sequential loading is provided for
+While multi-threaded loading is preferable, sequential loading is provided for
 debugging and testing purposes.
 
 In either case, SAGE makes use of a _media descriptor_ class

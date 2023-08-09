@@ -131,6 +131,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77cb66ce0bef1e25f9f47051a98d79f0"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_controller.html#a77cb66ce0bef1e25f9f47051a98d79f0">GetButtonYToggle</a> ()</td></tr>
 <tr class="memdesc:a77cb66ce0bef1e25f9f47051a98d79f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get button Y toggle state.  <br /></td></tr>
 <tr class="separator:a77cb66ce0bef1e25f9f47051a98d79f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260648b8fb60fb0853fb6f1d89d624f6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_controller.html#a260648b8fb60fb0853fb6f1d89d624f6">GetButtonADown</a> ()</td></tr>
+<tr class="memdesc:a260648b8fb60fb0853fb6f1d89d624f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get button A state.  <br /></td></tr>
+<tr class="separator:a260648b8fb60fb0853fb6f1d89d624f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c2dcfb41ea48a939f652bc51240bd4"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_controller.html#a80c2dcfb41ea48a939f652bc51240bd4">GetButtonBDown</a> ()</td></tr>
+<tr class="memdesc:a80c2dcfb41ea48a939f652bc51240bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get button B state.  <br /></td></tr>
+<tr class="separator:a80c2dcfb41ea48a939f652bc51240bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5148cca1154fd34424e9671982740f"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_controller.html#a1b5148cca1154fd34424e9671982740f">GetButtonXDown</a> ()</td></tr>
+<tr class="memdesc:a1b5148cca1154fd34424e9671982740f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get button X state.  <br /></td></tr>
+<tr class="separator:a1b5148cca1154fd34424e9671982740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ad69562c0fc194f1ec582874babf3c"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_controller.html#aa4ad69562c0fc194f1ec582874babf3c">GetButtonYDown</a> ()</td></tr>
+<tr class="memdesc:aa4ad69562c0fc194f1ec582874babf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get button Y state.  <br /></td></tr>
+<tr class="separator:aa4ad69562c0fc194f1ec582874babf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e9132abe73782d11e9f50456057a869"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_controller.html#a5e9132abe73782d11e9f50456057a869">GetDPadRight</a> () const</td></tr>
 <tr class="memdesc:a5e9132abe73782d11e9f50456057a869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get digital pad right button state.  <br /></td></tr>
 <tr class="separator:a5e9132abe73782d11e9f50456057a869"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +235,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bButtonRSDown</b> =
 
 </div>
 </div>
+<a id="a260648b8fb60fb0853fb6f1d89d624f6" name="a260648b8fb60fb0853fb6f1d89d624f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a260648b8fb60fb0853fb6f1d89d624f6">&#9670;&#160;</a></span>GetButtonADown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool CController::GetButtonADown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test whether button A is down. </p><dl class="section return"><dt>Returns</dt><dd>true if button A is down. </dd></dl>
+
+</div>
+</div>
 <a id="a5309ae583d84aa3f3a3a191be03dfbe7" name="a5309ae583d84aa3f3a3a191be03dfbe7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5309ae583d84aa3f3a3a191be03dfbe7">&#9670;&#160;</a></span>GetButtonAToggle()</h2>
 
@@ -238,6 +268,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bButtonRSDown</b> =
       </table>
 </div><div class="memdoc">
 <p>Get button A toggle status. Uses <code>m_bButtonADown</code> to store previous button state. </p><dl class="section return"><dt>Returns</dt><dd>true if button A was up and is now down. </dd></dl>
+
+</div>
+</div>
+<a id="a80c2dcfb41ea48a939f652bc51240bd4" name="a80c2dcfb41ea48a939f652bc51240bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c2dcfb41ea48a939f652bc51240bd4">&#9670;&#160;</a></span>GetButtonBDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool CController::GetButtonBDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test whether button B is down. </p><dl class="section return"><dt>Returns</dt><dd>true if button B is down. </dd></dl>
 
 </div>
 </div>
@@ -296,6 +344,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bButtonRSDown</b> =
 
 </div>
 </div>
+<a id="a1b5148cca1154fd34424e9671982740f" name="a1b5148cca1154fd34424e9671982740f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5148cca1154fd34424e9671982740f">&#9670;&#160;</a></span>GetButtonXDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool CController::GetButtonXDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test whether button X is down. </p><dl class="section return"><dt>Returns</dt><dd>true if button X is down. </dd></dl>
+
+</div>
+</div>
 <a id="affeb4812b3c8fe37f8161da4d04922c4" name="affeb4812b3c8fe37f8161da4d04922c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affeb4812b3c8fe37f8161da4d04922c4">&#9670;&#160;</a></span>GetButtonXToggle()</h2>
 
@@ -311,6 +377,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bButtonRSDown</b> =
       </table>
 </div><div class="memdoc">
 <p>Get button X toggle status. Uses <code>m_bButtonXDown</code> to store previous button state. </p><dl class="section return"><dt>Returns</dt><dd>true if button X was up and is now down. </dd></dl>
+
+</div>
+</div>
+<a id="aa4ad69562c0fc194f1ec582874babf3c" name="aa4ad69562c0fc194f1ec582874babf3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ad69562c0fc194f1ec582874babf3c">&#9670;&#160;</a></span>GetButtonYDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool CController::GetButtonYDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Test whether button Y is down. </p><dl class="section return"><dt>Returns</dt><dd>true if button Y is down. </dd></dl>
 
 </div>
 </div>
