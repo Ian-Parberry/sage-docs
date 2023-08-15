@@ -31,9 +31,8 @@ The guard rotates but does not move from the bunker.
 The remainder of this page is divided into four sections.
 \ref section2 "Section 2" lists the controls
 and their corresponding actions,
-\ref section3 "Section 3" is a reminder to install SAGE, the Simple
-Academic Game Engine,
-\ref section4 "Section 4" gives a breakdown of the code for the Top Down Game,
+\ref section3 "Section 3" tells you how to build it,
+\ref section4 "Section 4" gives a breakdown of the code,
 and
 \ref section5 "Section 5" addresses the question "what next?".
 
@@ -70,12 +69,12 @@ and
     <tr>
       <td><center>-</center></td>
       <td>Right thumb</td>
-      <td>Move left</td>
+      <td>Move left*</td>
       <td>Rotate counterclockwise</td>
     <tr>
       <td><center>-</center></td>
       <td>Right thumb</td>
-      <td>Move right</td>
+      <td>Move right*</td>
       <td>Rotate clockwise</td> 
     <tr>
       <td><center>Space</center></td>
@@ -104,8 +103,8 @@ and
       <td>Retreat</td>
     <tr>
       <td><center>W</center></td>
-      <td><center>-</center></td>
       <td>Right trigger</td>
+      <td><center>-</center></td>
       <td>Move forwards</td>
     <tr>
       <td><center>Backspace</center></td>
@@ -125,8 +124,11 @@ and
   </table>
 </center>
 
+ `*` Note that the mouse cursor must be inside the game window for player
+rotation to occur.
+
 \anchor section3
-# 3. SAGE
+# 3. How to Build
 
 This code uses <a href="../sage/index.html">SAGE</a>.
 Make sure that you have followed the
@@ -135,11 +137,11 @@ Navigate to the folder `1. Top Down Game` in your
 copy of the `sage-games` repository.
 Run `checkenv.bat` to verify that you have set the environment
 variables correctly.
-Run `Build.bat`. The Release executable file `Top Down Game.exe`
-will appear. When you run it you will see something similar to
-\ref fig1 "Fig. 1".
-Use the commands listed in \ref section2 "Section 2" to kill the
-guard before they kill you.
+Open `Top Down Game.sln` with Visual Studio and build the Release configuration.
+The Release executable file `Top Down Game.exe`
+will appear. 
+Alternatively, run `Build.bat` to build both Release and Debug configurations. 
+
 
 \anchor section4
 # 4. Code Breakdown
@@ -147,10 +149,49 @@ guard before they kill you.
 Open `Top Down Game.sln` in Visual Studio and examine the
 code in the editor while you read the
 rest of this section, which is divided into subsections.
+This section assumes that you have read and understood
+the documentation from 
+<a href="../sage/index.html">SAGE</a>
+and <a href="../blank">The Blank Game</a>.
 
-Changes from <a href="../blank">The Blank Game</a> include ...
+\anchor section4-2
+## 4.1 Particle Engines
 
-UNDER CONSTRUCTION
+\anchor section4-2
+## 4.2 Game Objects
+
+\anchor section4-2-1
+### 4.2.1 The Base Game Object
+
+The base game object `CObject` is declared in `Object.h` and defined in `Object.cpp`.
+It is derived from <a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>.
+
+\anchor section4-2-2
+### 4.2.2 The Armed Object
+
+The armed object `CArmedObject` is declared in `ArmedObject.h` and defined in `ArmedObject.cpp`.
+It is derived from `CObject`.
+
+\anchor section4-2-3
+### 4.2.3 The Player Object
+
+The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
+It is derived from `CArmedObject`.
+
+\anchor fig2
+\image html offsets.png "Fig. 2: The player sprite and offsets." width=45%
+
+\anchor section4-2-4
+### 4.2.4 The Guard Object
+
+The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
+It is derived from `CArmedObject`.
+
+\anchor section4-2-5
+### 4.2.5 The Bullet Object
+
+The bullet object `CBullet` is declared in `Bullet.h` and defined in `Bullet.cpp`.
+It is derived from `CObject`.
 
 \anchor section5
 # 5. What Next?

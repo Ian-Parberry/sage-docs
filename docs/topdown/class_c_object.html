@@ -80,7 +80,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_c_object-members.html">List of all members</a>  </div>
@@ -98,10 +97,11 @@ Inheritance diagram for CObject:</div>
  <div class="center">
   <img src="class_c_object.png" usemap="#CObject_map" alt=""/>
   <map id="CObject_map" name="CObject_map">
-<area href="class_c_common.html" title="The common variables class." alt="CCommon" shape="rect" coords="154,0,247,24"/>
-<area href="class_c_bullet.html" title="The bullet object." alt="CBullet" shape="rect" coords="0,112,93,136"/>
-<area href="class_c_guard.html" title="The guard object." alt="CGuard" shape="rect" coords="103,112,196,136"/>
-<area href="class_c_player.html" title="The player object." alt="CPlayer" shape="rect" coords="206,112,299,136"/>
+<area href="class_c_common.html" title="The common variables class." alt="CCommon" shape="rect" coords="157,0,252,24"/>
+<area href="class_c_armed_object.html" title="The armed object." alt="CArmedObject" shape="rect" coords="52,112,147,136"/>
+<area href="class_c_bullet.html" title="The bullet object." alt="CBullet" shape="rect" coords="157,112,252,136"/>
+<area href="class_c_guard.html" title="The guard object." alt="CGuard" shape="rect" coords="0,168,95,192"/>
+<area href="class_c_player.html" title="The player object." alt="CPlayer" shape="rect" coords="105,168,200,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,26 +120,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CObject</b> ()</t
 <tr class="memitem:ae060ffb1aa3bf6148614cf6506074e42"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42">Draw</a> ()</td></tr>
 <tr class="memdesc:ae060ffb1aa3bf6148614cf6506074e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw object.  <br /></td></tr>
 <tr class="separator:ae060ffb1aa3bf6148614cf6506074e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab39ee0bc168e051d1b2497b1259d0b83"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83">GetType</a> () const</td></tr>
-<tr class="memdesc:ab39ee0bc168e051d1b2497b1259d0b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
-<tr class="separator:ab39ee0bc168e051d1b2497b1259d0b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762c11c6a2660e663f9c643470a6f124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a762c11c6a2660e663f9c643470a6f124">CreateParticle</a> (const Sage::CParticleDesc2D &amp;)</td></tr>
-<tr class="separator:a762c11c6a2660e663f9c643470a6f124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
 <tr class="memdesc:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response.  <br /></td></tr>
 <tr class="separator:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44faca41d39b15a4835dc23a55d61b41"><td class="memItemLeft" align="right" valign="top">const Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a44faca41d39b15a4835dc23a55d61b41">GetViewVector</a> () const</td></tr>
-<tr class="memdesc:a44faca41d39b15a4835dc23a55d61b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute view vector.  <br /></td></tr>
-<tr class="separator:a44faca41d39b15a4835dc23a55d61b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8050bdf0425ade247d0159c07413119e"><td class="memItemLeft" align="right" valign="top">const Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a8050bdf0425ade247d0159c07413119e">GetGunOffset</a> () const</td></tr>
-<tr class="memdesc:a8050bdf0425ade247d0159c07413119e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get gun offset.  <br /></td></tr>
-<tr class="separator:a8050bdf0425ade247d0159c07413119e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253da7731dd37f25b166d8603360c7ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a253da7731dd37f25b166d8603360c7ea">RotateTowards</a> (const Vector2 &amp;)</td></tr>
-<tr class="memdesc:a253da7731dd37f25b166d8603360c7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swivel towards position.  <br /></td></tr>
-<tr class="separator:a253da7731dd37f25b166d8603360c7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39ee0bc168e051d1b2497b1259d0b83"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83">GetType</a> () const</td></tr>
+<tr class="memdesc:ab39ee0bc168e051d1b2497b1259d0b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
+<tr class="separator:ab39ee0bc168e051d1b2497b1259d0b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -163,39 +149,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRoll</b> = 0</td>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b> = 0</td></tr>
 <tr class="memdesc:afb97f8e0ea95db14d0f8dabb006ded9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding circle radius. <br /></td></tr>
 <tr class="separator:afb97f8e0ea95db14d0f8dabb006ded9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d9f6cbb6e1d7eae8f8fa4d8bebdd46"><td class="memItemLeft" align="right" valign="top"><a id="a27d9f6cbb6e1d7eae8f8fa4d8bebdd46" name="a27d9f6cbb6e1d7eae8f8fa4d8bebdd46"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRotSpeed</b> = 0</td></tr>
-<tr class="memdesc:a27d9f6cbb6e1d7eae8f8fa4d8bebdd46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotational speed. <br /></td></tr>
-<tr class="separator:a27d9f6cbb6e1d7eae8f8fa4d8bebdd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be2c24796d998aed040fd7021f43550"><td class="memItemLeft" align="right" valign="top"><a id="a1be2c24796d998aed040fd7021f43550" name="a1be2c24796d998aed040fd7021f43550"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bStatic</b> = true</td></tr>
-<tr class="memdesc:a1be2c24796d998aed040fd7021f43550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is static (does not move). <br /></td></tr>
-<tr class="separator:a1be2c24796d998aed040fd7021f43550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a921dc7b98a4e4020a342a8aa2f41299c"><td class="memItemLeft" align="right" valign="top"><a id="a921dc7b98a4e4020a342a8aa2f41299c" name="a921dc7b98a4e4020a342a8aa2f41299c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsTarget</b> = true</td></tr>
-<tr class="memdesc:a921dc7b98a4e4020a342a8aa2f41299c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a target. <br /></td></tr>
-<tr class="separator:a921dc7b98a4e4020a342a8aa2f41299c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38e0bc3684420ffdebb2b5949c3ac7a5"><td class="memItemLeft" align="right" valign="top"><a id="a38e0bc3684420ffdebb2b5949c3ac7a5" name="a38e0bc3684420ffdebb2b5949c3ac7a5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIsBullet</b> = false</td></tr>
-<tr class="memdesc:a38e0bc3684420ffdebb2b5949c3ac7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a bullet. <br /></td></tr>
-<tr class="separator:a38e0bc3684420ffdebb2b5949c3ac7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934af5051b7a6c4246c2bd0dd6835791"><td class="memItemLeft" align="right" valign="top"><a id="a934af5051b7a6c4246c2bd0dd6835791" name="a934af5051b7a6c4246c2bd0dd6835791"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCenterOffset</b></td></tr>
-<tr class="memdesc:a934af5051b7a6c4246c2bd0dd6835791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center offset. <br /></td></tr>
-<tr class="separator:a934af5051b7a6c4246c2bd0dd6835791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40028360cb3263375bc5d06f51040f14"><td class="memItemLeft" align="right" valign="top"><a id="a40028360cb3263375bc5d06f51040f14" name="a40028360cb3263375bc5d06f51040f14"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vGunOffset</b></td></tr>
-<tr class="memdesc:a40028360cb3263375bc5d06f51040f14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gun offset. <br /></td></tr>
-<tr class="separator:a40028360cb3263375bc5d06f51040f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5942c717cfc61a9e5813c06d6ebff4b"><td class="memItemLeft" align="right" valign="top"><a id="ae5942c717cfc61a9e5813c06d6ebff4b" name="ae5942c717cfc61a9e5813c06d6ebff4b"></a>
-Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pGunFireEvent</b> = nullptr</td></tr>
-<tr class="memdesc:ae5942c717cfc61a9e5813c06d6ebff4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gun fire event. <br /></td></tr>
-<tr class="separator:ae5942c717cfc61a9e5813c06d6ebff4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8885e021f03ab00815779578690c0f"><td class="memItemLeft" align="right" valign="top"><a id="a1f8885e021f03ab00815779578690c0f" name="a1f8885e021f03ab00815779578690c0f"></a>
-Sage::CParticleEngine2D *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLocalParticleEngine</b> = nullptr</td></tr>
-<tr class="memdesc:a1f8885e021f03ab00815779578690c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to particle engine. <br  />
- <br /></td></tr>
-<tr class="separator:a1f8885e021f03ab00815779578690c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -318,11 +271,11 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Response to collision. Move back the overlap distance along the collision normal. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Response to a collision, which is to move back the overlap distance along the collision normal. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">norm</td><td>Collision normal. </td></tr>
     <tr><td class="paramname">d</td><td>Overlap distance. </td></tr>
@@ -332,30 +285,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 </dl>
 
 <p>Reimplemented in <a class="el" href="class_c_bullet.html#a13e3d4589c8e5f7b6099f71341236f8b">CBullet</a>, <a class="el" href="class_c_guard.html#a7100575b2f8b1a4ece0bf3b24d44bfca">CGuard</a>, and <a class="el" href="class_c_player.html#a257ff19b21196bf7a42bbaa36e7126a8">CPlayer</a>.</p>
-
-</div>
-</div>
-<a id="a762c11c6a2660e663f9c643470a6f124" name="a762c11c6a2660e663f9c643470a6f124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762c11c6a2660e663f9c643470a6f124">&#9670;&#160;</a></span>CreateParticle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CObject::CreateParticle </td>
-          <td>(</td>
-          <td class="paramtype">const Sage::CParticleDesc2D &amp;&#160;</td>
-          <td class="paramname"><em>d</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Create a local particle. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">d</td><td>Sprite descriptor for particle. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -381,35 +310,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Draw the sprite offset by the center offset. </p>
+<p>Draw sprite. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_guard.html#a41e5204843c2ee44f37f2f55dbbe84e9">CGuard</a>.</p>
-
-</div>
-</div>
-<a id="a8050bdf0425ade247d0159c07413119e" name="a8050bdf0425ade247d0159c07413119e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8050bdf0425ade247d0159c07413119e">&#9670;&#160;</a></span>GetGunOffset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Vector2 CObject::GetGunOffset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Get the gun offset. </p><dl class="section return"><dt>Returns</dt><dd>The gun offset. </dd></dl>
+<p>Reimplemented in <a class="el" href="class_c_armed_object.html#aad111986969a998621a865da7e0e562d">CArmedObject</a>, and <a class="el" href="class_c_guard.html#a41e5204843c2ee44f37f2f55dbbe84e9">CGuard</a>.</p>
 
 </div>
 </div>
@@ -428,32 +331,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
       </table>
 </div><div class="memdoc">
 <p>Reader function for the object type. </p><dl class="section return"><dt>Returns</dt><dd>The object type. </dd></dl>
-
-</div>
-</div>
-<a id="a44faca41d39b15a4835dc23a55d61b41" name="a44faca41d39b15a4835dc23a55d61b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44faca41d39b15a4835dc23a55d61b41">&#9670;&#160;</a></span>GetViewVector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Vector2 CObject::GetViewVector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Compute the view vector from the object orientation. </p><dl class="section return"><dt>Returns</dt><dd>The view vector. </dd></dl>
 
 </div>
 </div>
@@ -479,42 +356,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Move particle effects relative to the end of the gun barrel and performs a step of the particle engine. </p>
+<p>Stub. </p>
 
-<p>Reimplemented in <a class="el" href="class_c_bullet.html#a94460251d0cf3b2b4f6b8ab482a7b081">CBullet</a>, <a class="el" href="class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279">CGuard</a>, and <a class="el" href="class_c_player.html#a8cdce2b8fd7f5765c19d1d45f9899866">CPlayer</a>.</p>
-
-</div>
-</div>
-<a id="a253da7731dd37f25b166d8603360c7ea" name="a253da7731dd37f25b166d8603360c7ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a253da7731dd37f25b166d8603360c7ea">&#9670;&#160;</a></span>RotateTowards()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CObject::RotateTowards </td>
-          <td>(</td>
-          <td class="paramtype">const Vector2 &amp;&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Rotate the turrent towards a target point determine whether object is facing sufficiently close to it. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pos</td><td>Target point. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if pointing close to target point. </dd></dl>
+<p>Reimplemented in <a class="el" href="class_c_armed_object.html#a3f6fe2f4bcdfefc75a7724343aadf5c2">CArmedObject</a>, <a class="el" href="class_c_bullet.html#a94460251d0cf3b2b4f6b8ab482a7b081">CBullet</a>, <a class="el" href="class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279">CGuard</a>, and <a class="el" href="class_c_player.html#a8cdce2b8fd7f5765c19d1d45f9899866">CPlayer</a>.</p>
 
 </div>
 </div>
