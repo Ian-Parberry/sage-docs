@@ -459,17 +459,13 @@ for more information about `Sage::CSpriteRenderer`).
 <td><center><b>Design Pattern</b></center></td>
 <td><center><b>Description</b></center></td>
 <tr>
-<td>`Sage::CParticleDesc`</td>
+<td>`Sage::CParticleDesc2D`</td>
 <td>Descriptor</td>
-<td>Particle descriptor</td>
+<td>2D particle descriptor</td>
 <tr>
-<td>`Sage::CParticle`</td>
-<td>Entity</td>
-<td>Particle</td>
-<tr>
-<td>`Sage::CParticleEngine`</td>
-<td>Component</td>
-<td>Base particle engine</td>
+<td>`Sage::CParticleDesc3D`</td>
+<td>Descriptor</td>
+<td>3D particle descriptor</td>
 <tr>
 <td>`Sage::CParticleEngine2D`</td>
 <td>Component</td>
@@ -488,11 +484,18 @@ The latter is intended only for internal use in SAGE and should
 not be instantiated in your game.
 `Sage::CParticle` represents a particle and should also not
  be instantiated in your game.
-To create a particle, fill in a _particle descriptor_ `Sage::CParticleDesc`
+To create a particle in a 2D game,
+fill in a _2D particle descriptor_ `Sage::CParticleDesc2D`
 with the particle properties (including fade in, fade out, scale in, scale out)
-and pass it as a parameter to `Sage::CParticleEngine2D::Create()`. Function
-`Sage::CParticleEngine2D::Step()` must be called once per frame to 
-animate the particles.
+and pass it as a parameter to `Sage::CParticleEngine2D::Create()`. 
+Function `Sage::CParticleEngine2D::Step()` must be called once per frame to 
+animate 2D particles.
+To create a particle in a 3D game,
+fill in a _3D particle descriptor_ `Sage::CParticleDesc3D`
+with the particle properties
+and pass it as a parameter to `Sage::CParticleEngine3D::Create()`. 
+Function `Sage::CParticleEngine3D::Step()` must be called once per frame to 
+animate 3D particles.
 
 \anchor sec3-9
 ## 3.9 Windows and Settings

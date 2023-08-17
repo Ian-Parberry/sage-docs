@@ -1,7 +1,7 @@
 /**
 \mainpage notitle
 
-\anchor section1
+\anchor sec1
 # 1. Introduction
 
 This is a simple top-down game with graphics, particle effects, and sound.
@@ -12,7 +12,7 @@ at the top right of \ref fig1 "Fig. 1". The guard will shoot at you if you are
 too close or if you draw attention to yourself by firing your gun.
 You control your character with either the the keyboard and mouse,
 or with an XBox
-controller (see \ref section2 "Section 2"). 
+controller (see \ref sec2 "Section 2"). 
 The controller takes precedence over the keyboard and mouse when it is plugged in.
 
 The background is a simple image and the
@@ -29,14 +29,14 @@ The guard rotates but does not move from the bunker.
 \image html screenshot.png "Fig. 1: A screenshot of the Top-Down Game." width=50%
 
 The remainder of this page is divided into four sections.
-\ref section2 "Section 2" lists the controls
+\ref sec2 "Section 2" lists the controls
 and their corresponding actions,
-\ref section3 "Section 3" tells you how to build it,
-\ref section4 "Section 4" gives a breakdown of the code,
+\ref sec3 "Section 3" tells you how to build it,
+\ref sec4 "Section 4" gives a breakdown of the code,
 and
-\ref section5 "Section 5" addresses the question "what next?".
+\ref sec5 "Section 5" addresses the question "what next?".
 
-\anchor section2
+\anchor sec2
 # 2. Controls
 
 <center>
@@ -127,7 +127,7 @@ and
  `*` Note that the mouse cursor must be inside the game window for player
 rotation to occur.
 
-\anchor section3
+\anchor sec3
 # 3. How to Build
 
 This code uses <a href="../sage/index.html">SAGE</a>.
@@ -143,36 +143,45 @@ will appear.
 Alternatively, run `Build.bat` to build both Release and Debug configurations. 
 
 
-\anchor section4
+\anchor sec4
 # 4. Code Breakdown
 
 Open `Top Down Game.sln` in Visual Studio and examine the
 code in the editor while you read the
-rest of this section, which is divided into subsections.
+rest of this section.
 This section assumes that you have read and understood
 the documentation from 
 <a href="../sage/index.html">SAGE</a>
 and <a href="../blank">The Blank Game</a>.
 
-\anchor section4-2
+\anchor sec4-2
 ## 4.1 Particle Engines
 
-\anchor section4-2
+`CCommon` contains a pointer `m_pParticleEngine` to a
+<a href="../sage/index.html#sec3-8">2D particle engine</a>
+to be used for static particle effects, that is, particle
+effects that do not move with a particular object.
+`CArmedObject` contains a pointer `m_pLocalParticleEngine` to a
+<a href="../sage/index.html#sec3-8">2D particle engine</a>
+for static particle effects, that is, particle
+effects that do not move with a particular object.
+
+\anchor sec4-2
 ## 4.2 Game Objects
 
-\anchor section4-2-1
+\anchor sec4-2-1
 ### 4.2.1 The Base Game Object
 
 The base game object `CObject` is declared in `Object.h` and defined in `Object.cpp`.
 It is derived from <a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>.
 
-\anchor section4-2-2
+\anchor sec4-2-2
 ### 4.2.2 The Armed Object
 
 The armed object `CArmedObject` is declared in `ArmedObject.h` and defined in `ArmedObject.cpp`.
 It is derived from `CObject`.
 
-\anchor section4-2-3
+\anchor sec4-2-3
 ### 4.2.3 The Player Object
 
 The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
@@ -181,19 +190,19 @@ It is derived from `CArmedObject`.
 \anchor fig2
 \image html offsets.png "Fig. 2: The player sprite and offsets." width=45%
 
-\anchor section4-2-4
+\anchor sec4-2-4
 ### 4.2.4 The Guard Object
 
 The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
 It is derived from `CArmedObject`.
 
-\anchor section4-2-5
+\anchor sec4-2-5
 ### 4.2.5 The Bullet Object
 
 The bullet object `CBullet` is declared in `Bullet.h` and defined in `Bullet.cpp`.
 It is derived from `CObject`.
 
-\anchor section5
+\anchor sec5
 # 5. What Next?
 
 Next, take a look at the <a href="../topdowntiled">Top Down Tiled Game</a>.
