@@ -127,21 +127,21 @@ Fig. 1: A screenshot of the Top-Down Game.</div></div>
 <p><a class="anchor" id="sec4"></a></p><h1>4. Code Breakdown</h1>
 <p>Open <code>Top Down Game.sln</code> in Visual Studio and examine the code in the editor while you read the rest of this section. This section assumes that you have read and understood the documentation from <a href="../sage/index.html">SAGE</a> and <a href="../blank">The Blank Game</a>.</p>
 <p><a class="anchor" id="sec4-2"></a></p><h2>4.1 Particle Engines</h2>
-<p><code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code> contains a pointer <code>m_pParticleEngine</code> to a <a href="../sage/index.html#sec3-8">2D particle engine</a> to be used for static particle effects, that is, particle effects that do not move with a particular object.</p>
+<p><code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code> contains a pointer <code>m_pParticleEngine</code> to a <a href="../sage/index.html#sec3-8">2D particle engine</a> to be used for static particle effects, that is, particle effects that do not move with a particular object. <code><a class="el" href="class_c_armed_object.html" title="The armed object.">CArmedObject</a></code> contains a pointer <code>m_pLocalParticleEngine</code> to a <a href="../sage/index.html#sec3-8">2D particle engine</a> for static particle effects, that is, particle effects that do not move with a particular object.</p>
 <p><a class="anchor" id="sec4-2"></a></p><h2>4.2 Game Objects</h2>
-<p><a class="anchor" id="sec4-2-1"></a></p><h3>4.2.1 The Base Game Object</h3>
+<p><a class="anchor" id="sec4-2-1"></a></p><h3>4.2.1 Base Game Object</h3>
 <p>The base game object <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> is declared in <code><a class="el" href="_object_8h.html" title="Interface for the game object class CObject.">Object.h</a></code> and defined in <code><a class="el" href="_object_8cpp.html" title="Code for the game object class CObject.">Object.cpp</a></code>. It is derived from <a href="../sage/class_sage_1_1_c_object.html"><code>Sage::CObject</code></a>.</p>
-<p><a class="anchor" id="sec4-2-2"></a></p><h3>4.2.2 The Armed Object</h3>
-<p>The armed object <code><a class="el" href="class_c_armed_object.html" title="The armed object.">CArmedObject</a></code> is declared in <code><a class="el" href="_armed_object_8h.html" title="Interface for the armed game object class CArmedObject.">ArmedObject.h</a></code> and defined in <code>ArmedObject.cpp</code>. It is derived from <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code>.</p>
-<p><a class="anchor" id="sec4-2-3"></a></p><h3>4.2.3 The Player Object</h3>
-<p>The player object <code><a class="el" href="class_c_player.html" title="The player object.">CPlayer</a></code> is declared in <code><a class="el" href="_player_8h.html" title="Interface for the player object class CPlayer.">Player.h</a></code> and defined in <code><a class="el" href="_player_8cpp.html" title="Code for the player object class CPlayer.">Player.cpp</a></code>. It is derived from <code><a class="el" href="class_c_armed_object.html" title="The armed object.">CArmedObject</a></code>.</p>
+<p><a class="anchor" id="sec4-2-2"></a></p><h3>4.2.2 Armed Object</h3>
+<p>The armed object <code><a class="el" href="class_c_armed_object.html" title="The armed object.">CArmedObject</a></code> is declared in <code><a class="el" href="_armed_object_8h.html" title="Interface for the armed game object class CArmedObject.">ArmedObject.h</a></code> and defined in <code><a class="el" href="_armed_object_8cpp.html" title="Code for the game object class CArmedObject.">ArmedObject.cpp</a></code>. It is derived from <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code>.</p>
 <p><a class="anchor" id="fig2"></a></p><div class="image">
-<img src="offsets.png" alt="" width="45%"/>
+<img src="offsets.png" alt="" width="35%"/>
 <div class="caption">
 Fig. 2: The player sprite and offsets.</div></div>
-<p><a class="anchor" id="sec4-2-4"></a></p><h3>4.2.4 The Guard Object</h3>
+<p><a class="anchor" id="sec4-2-3"></a></p><h3>4.2.3 Player Object</h3>
+<p>The player object <code><a class="el" href="class_c_player.html" title="The player object.">CPlayer</a></code> is declared in <code><a class="el" href="_player_8h.html" title="Interface for the player object class CPlayer.">Player.h</a></code> and defined in <code><a class="el" href="_player_8cpp.html" title="Code for the player object class CPlayer.">Player.cpp</a></code>. It is derived from <code><a class="el" href="class_c_armed_object.html" title="The armed object.">CArmedObject</a></code>.</p>
+<p><a class="anchor" id="sec4-2-4"></a></p><h3>4.2.4 Guard Object</h3>
 <p>The guard object <code><a class="el" href="class_c_guard.html" title="The guard object.">CGuard</a></code> is declared in <code><a class="el" href="_guard_8h.html" title="Interface for the guard object class CGuard.">Guard.h</a></code> and defined in <code><a class="el" href="_guard_8cpp.html" title="Code for the guard object class CGuard.">Guard.cpp</a></code>. It is derived from <code><a class="el" href="class_c_armed_object.html" title="The armed object.">CArmedObject</a></code>.</p>
-<p><a class="anchor" id="sec4-2-5"></a></p><h3>4.2.5 The Bullet Object</h3>
+<p><a class="anchor" id="sec4-2-5"></a></p><h3>4.2.5 Bullet Object</h3>
 <p>The bullet object <code><a class="el" href="class_c_bullet.html" title="The bullet object.">CBullet</a></code> is declared in <code><a class="el" href="_bullet_8h.html" title="Interface for the bullet object class CBullet.">Bullet.h</a></code> and defined in <code><a class="el" href="_bullet_8cpp.html" title="Code for the bullet object class CBullet.">Bullet.cpp</a></code>. It is derived from <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code>.</p>
 <p><a class="anchor" id="sec5"></a></p><h1>5. What Next?</h1>
 <p>Next, take a look at the <a href="../topdowntiled">Top Down Tiled Game</a>. </p>

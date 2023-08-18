@@ -170,34 +170,34 @@ effects that do not move with a particular object.
 ## 4.2 Game Objects
 
 \anchor sec4-2-1
-### 4.2.1 The Base Game Object
+### 4.2.1 Base Game Object
 
 The base game object `CObject` is declared in `Object.h` and defined in `Object.cpp`.
 It is derived from <a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>.
 
 \anchor sec4-2-2
-### 4.2.2 The Armed Object
+### 4.2.2 Armed Object
 
 The armed object `CArmedObject` is declared in `ArmedObject.h` and defined in `ArmedObject.cpp`.
 It is derived from `CObject`.
 
+\anchor fig2
+\image html offsets.png "Fig. 2: The player sprite and offsets." width=35%
+
 \anchor sec4-2-3
-### 4.2.3 The Player Object
+### 4.2.3 Player Object
 
 The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
 It is derived from `CArmedObject`.
 
-\anchor fig2
-\image html offsets.png "Fig. 2: The player sprite and offsets." width=45%
-
 \anchor sec4-2-4
-### 4.2.4 The Guard Object
+### 4.2.4 Guard Object
 
 The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
 It is derived from `CArmedObject`.
 
 \anchor sec4-2-5
-### 4.2.5 The Bullet Object
+### 4.2.5 Bullet Object
 
 The bullet object `CBullet` is declared in `Bullet.h` and defined in `Bullet.cpp`.
 It is derived from `CObject`.
