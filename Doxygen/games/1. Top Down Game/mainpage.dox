@@ -196,6 +196,9 @@ It is derived from `CArmedObject`.
 The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
 It is derived from `CArmedObject`.
 
+\anchor fig3
+\image html reload.gif "Fig. 3: The guard shotgun reload animation."
+
 \anchor sec4-2-5
 ### 4.2.5 Bullet Object
 
