@@ -132,6 +132,40 @@ One thing that you may not be expecting is that `Sage::CMouse` handles only
 the position of the mouse. Mouse buttons are handled by `Sage::CKeyboard`.
 This is a foible of the way Windows handles its devices.
 
+### Important Member Functions
+
+Important `Sage::CKeyboard` public member functions include
+the following.
+See `Sage::CKeyboard` to see how other keyboard tests.
+
+- `Sage::CKeyboard::GetState()`, which must be called once per animation
+frame to poll the current keyboard state;
+- `Sage::CKeyboard::TriggerDown()`, which returns `true` if a key described by a `WPARAM` was up and went down in the current animation frame.
+- `Sage::CKeyboard::Down()`, which returns `true` if a key described by a `WPARAM`
+is currently down.
+
+Important `Sage::CMouse` public member functions include
+the following.
+See `Sage::CMouse` to see how to get other mouse data.
+
+- `Sage::CMouse::GetState()`, which must be called once per animation
+frame to poll the current mouse state;
+- `Sage::CMouse::GetMove()`, which returns a vector describing the mouse
+motion since the last frame.
+
+Important `Sage::CController` public member functions include
+the following.
+See `Sage::CController` to see how to test other controller buttons and
+controls.
+
+- `Sage::CController::GetState()`, which must be called once per animation
+frame to poll the current controller state;
+- `Sage::CController::IsConnected()`, which returns `true` if a controller is
+connected;
+- `Sage::CController::Vibrate()`, which sets the left and right rumble; and
+- `Sage::CController::GetButtonAToggle()`, which returns `true` if button A
+on the controller was up and went down in the current animation frame.
+
 \anchor sec3-2
 ## 3.2 Time
 
@@ -214,6 +248,16 @@ provide an instance of a sound descriptor `Sage::CSoundDesc` as a parameter.
 `Sage::CPlayableSoundDesc` is intended for internal use in SAGE only,
 which means that you should never need to use it in your game.
 Loading sounds from `wav` files will be covered in \ref sec3-7 "Section 3.7".
+
+There are three basic functions for playing a sound:
+
+1. `Sage::CSound::Play()` takes a sound index (usually a member of an enumerated type) and a position at which to play the sound (which defaults to the center of the world), and optionally the volume, or volume and pitch.
+
+2. `Sage::CSound::Loop()` takes a sound index and optionally a position at which to play the sound, and it plays the sound repeatedly until some version of the `Sage::CSound::Stop()` function is called.
+
+3. `Sage::CSound::Vary()` takes a sound index, a position at which to play the sound, a coefficient of variability (which defaults to `0.25f`) and plays the sound at a different volume and pitch each time it is called, varying by the coefficient of variability. A base volume and pitch may also be provided.
+
+See `Sage::CSound` for more functions.
 
 \anchor sec3-4
 ## 3.4 Game Objects
@@ -310,7 +354,9 @@ sprite games, and `Sage::CRenderer3D`.
 Control of the camera is provided by accessing the variables
 in `Sage::CCameraCommon`.
 `Sage::CCamera` is intended only for internal use in SAGE and should
-not be instantiated in your game.
+not be instantiated in your game. The camera can be accessed through the
+renderer using, for example, `Sage::CSpriteRenderer::GetCameraPos()` and
+`Sage::CSpriteRenderer::SetCameraPos()`.
 `Sage::CScreenshotFlag`, which enables screen shotting when
 the player presses the `print screen` button, is also intended only for
  internal use in SAGE and should
@@ -345,10 +391,21 @@ instrumentation, must be drawn last.
 the moment) or in 2D or 2.5D games in which you want or need the capability
 to draw the sprites in any order, with the depth specified by the
 third dimension of a 3D vector. In this case, instead of calling
-`Sage::CSpriteRenderer::Draw` for each sprite, collect the 3D sprite descriptors in
+`Sage::CSpriteRenderer::Draw()` for each sprite, collect the 3D sprite descriptors in
 an instance of `std::vector<Sage::CSpriteDesc3D>` and pass that as
-a parameter to `Sage::CSpriteRenderer::Draw` which will sort them by depth
+a parameter to `Sage::CSpriteRenderer::Draw()` which will sort them by depth
 (in Z-order) before rendering them.
+
+For 2D games in particular,
+`Sage::CSpriteRenderer` includes multiple ways of drawing 2D sprites using
+`Sage::CSpriteRenderer::Draw()` by providing the following parameters.
+
+1. The sprite index (usually a member of an enumerated type),
+a position, and optionally the orientation angle (in radians, measured counter-clockwise from the positive X-axis), which defaults to zero.
+
+2. A pointer to an instance of the 2D sprite descriptor `CSpriteDesc2D`.
+See \ref spritedesc "Section 3.6" for more details.
+ 
 
 \anchor sec3-6
 ## 3.6 Sprites
@@ -390,11 +447,29 @@ The 2D sprite descriptor `Sage::CSpriteDesc2D` describes the
 properties of a two-dimensional sprite in a 2D or 2.5D game,
 and `Sage::CSpriteDesc3D` does the same for a three-dimensional sprite
 in a 3D game.
+
 `Sage::CSpriteDesc` describes the properties common to
 2D and 3D sprites, and `Sage::CSpriteDesc2D` and `Sage::CSpriteDesc3D`
 are derived from it. 
 It is intended only for internal use in SAGE and should
 not be instantiated in your game.
+
+### Important Sprite Properties
+
+Important sprite properties in `Sage::CSprite` include
+an array `Sage::CSprite::m_pRect` of bounding rectangles for a
+multi-frame sprite contained in a sprite sheet (a single image containing
+multiple frames) and useful reader functions such as
+`Sage::CSprite::GetWidth()` and
+`Sage::CSprite::GetHeight()`
+to get the width and height (respectively) of the sprite in pixels after it has been loaded.
+
+\anchor spritedesc
+### Important Sprite Descriptor Properties
+
+Important properties of `Sage::CSpriteDesc`, and therefore `Sage::CSpriteDesc2D` and `Sage::CSpriteDesc3D` include the
+ sprite index, current animation frame,
+scale along the local X-axis of the sprite, scale along the local Y-axis of the sprite, roll angle (orientation), tint (which lets you color the non-black pixels of the sprite), and alpha value (amount of transparency).
 
 \anchor sec3-7
 ## 3.7 Loading Media
@@ -496,6 +571,20 @@ with the particle properties
 and pass it as a parameter to `Sage::CParticleEngine3D::Create()`. 
 Function `Sage::CParticleEngine3D::Step()` must be called once per frame to 
 animate 3D particles.
+
+### Important Particle Descriptor Properties
+
+Important properties of `Sage::CParticleDesc`, and therefore `Sage::CParticleDesc2D` and `Sage::CParticleDesc3D` include the particle's velocity, acceleration, friction, rotational velocity, lifetime in seconds, scale-in and scale-out fractions (as a fraction of lifetime), and fade-in and fade-out fractions (also as a fraction of lifetime).
+For example, with lifetime equal to `1.5f` seconds, scale-in equal to
+`0.2f` and scale-out equal to `0.5f`, the particle grows from zero
+to full size in `0.2f*1.5f = 0.3f` seconds,
+remains at full size for `0.45` seconds,
+and shrinks to zero in `1.5f*0.5f = 0.75f` seconds.
+Similarly, with lifetime equal to `1.5f` seconds, fade-in equal to
+`0.2f` and fades-out equal to `0.5f`, the particle fades in from fully transparent to fully opaque in `0.2f*1.5f = 0.3f` seconds,
+remains at full opaqueness for `0.45` seconds,
+and fades out to full transparency in `1.5f*0.5f = 0.75f` seconds.
+Both scaling and transparency may be used together.
 
 \anchor sec3-9
 ## 3.9 Windows and Settings

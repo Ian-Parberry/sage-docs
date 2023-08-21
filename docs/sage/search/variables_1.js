@@ -132,10 +132,11 @@ var searchData=
   ['m_5fvlistenerpos_129',['m_vListenerPos',['../class_sage_1_1_c_sound.html#a6922249c37ffa58a96a0a5f0d382f2b3',1,'Sage::CSound']]],
   ['m_5fvmousepos_130',['m_vMousePos',['../class_sage_1_1_c_window.html#a5a7164dfdb40718ee3887ab79811f200',1,'Sage::CWindow']]],
   ['m_5fvoldpos_131',['m_vOldPos',['../class_sage_1_1_c_mouse.html#a1c969ab61bb17c6ed79f7a573a4a45d9',1,'Sage::CMouse']]],
-  ['m_5fvpos_132',['m_vPos',['../class_sage_1_1_c_camera.html#a4fe5dd085ebd7d00528ac0df1e332d94',1,'Sage::CCamera::m_vPos'],['../class_sage_1_1_c_sprite_desc2_d.html#abb7cb8023c3d0ab1033b73ddd4709b08',1,'Sage::CSpriteDesc2D::m_vPos'],['../class_sage_1_1_c_sprite_desc3_d.html#a6540c363d09ee2cdd346e202d0921e8c',1,'Sage::CSpriteDesc3D::m_vPos']]],
-  ['m_5fvup_133',['m_vUp',['../class_sage_1_1_c_camera.html#a62fd1b85a49a51520c19be7c3ae7f684',1,'Sage::CCamera']]],
-  ['m_5fvvel_134',['m_vVel',['../class_sage_1_1_c_camera.html#ad5a8fc17fb6c8b5c6e3041a9f6cba177',1,'Sage::CCamera::m_vVel'],['../class_sage_1_1_c_particle_desc.html#a1a9a7244188b4d632b722719c586e643',1,'Sage::CParticleDesc::m_vVel']]],
-  ['m_5fvview_135',['m_vView',['../class_sage_1_1_c_camera.html#a8897f4fc349de4a4fcdaab7ee88b8165',1,'Sage::CCamera']]],
-  ['m_5fvwincenter_136',['m_vWinCenter',['../class_sage_1_1_c_settings.html#ad3284f6c7f21189fbe227c03feb729e0',1,'Sage::CSettings']]],
-  ['m_5fxmldoc_137',['m_xmlDoc',['../class_sage_1_1_c_settings_manager.html#a50ca5d69be72d71cd760f8353730d8a4',1,'Sage::CSettingsManager']]]
+  ['m_5fvorigin_132',['m_vOrigin',['../class_sage_1_1_c_particle_engine.html#a3dedd8be83edba68042e5c6e18c95463',1,'Sage::CParticleEngine']]],
+  ['m_5fvpos_133',['m_vPos',['../class_sage_1_1_c_camera.html#a4fe5dd085ebd7d00528ac0df1e332d94',1,'Sage::CCamera::m_vPos'],['../class_sage_1_1_c_sprite_desc2_d.html#abb7cb8023c3d0ab1033b73ddd4709b08',1,'Sage::CSpriteDesc2D::m_vPos'],['../class_sage_1_1_c_sprite_desc3_d.html#a6540c363d09ee2cdd346e202d0921e8c',1,'Sage::CSpriteDesc3D::m_vPos']]],
+  ['m_5fvup_134',['m_vUp',['../class_sage_1_1_c_camera.html#a62fd1b85a49a51520c19be7c3ae7f684',1,'Sage::CCamera']]],
+  ['m_5fvvel_135',['m_vVel',['../class_sage_1_1_c_camera.html#ad5a8fc17fb6c8b5c6e3041a9f6cba177',1,'Sage::CCamera::m_vVel'],['../class_sage_1_1_c_particle_desc.html#a1a9a7244188b4d632b722719c586e643',1,'Sage::CParticleDesc::m_vVel']]],
+  ['m_5fvview_136',['m_vView',['../class_sage_1_1_c_camera.html#a8897f4fc349de4a4fcdaab7ee88b8165',1,'Sage::CCamera']]],
+  ['m_5fvwincenter_137',['m_vWinCenter',['../class_sage_1_1_c_settings.html#ad3284f6c7f21189fbe227c03feb729e0',1,'Sage::CSettings']]],
+  ['m_5fxmldoc_138',['m_xmlDoc',['../class_sage_1_1_c_settings_manager.html#a50ca5d69be72d71cd760f8353730d8a4',1,'Sage::CSettingsManager']]]
 ];

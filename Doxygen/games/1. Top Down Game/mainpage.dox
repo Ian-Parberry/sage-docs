@@ -157,15 +157,6 @@ and <a href="../blank">The Blank Game</a>.
 \anchor sec4-2
 ## 4.1 Particle Engines
 
-`CCommon` contains a pointer `m_pParticleEngine` to a
-<a href="../sage/index.html#sec3-8">2D particle engine</a>
-to be used for static particle effects, that is, particle
-effects that do not move with a particular object.
-`CArmedObject` contains a pointer `m_pLocalParticleEngine` to a
-<a href="../sage/index.html#sec3-8">2D particle engine</a>
-for static particle effects, that is, particle
-effects that do not move with a particular object.
-
 \anchor sec4-2
 ## 4.2 Game Objects
 
@@ -179,22 +170,54 @@ It is derived from <a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject
 ### 4.2.2 Armed Object
 
 The armed object `CArmedObject` is declared in `ArmedObject.h` and defined in `ArmedObject.cpp`.
-It is derived from `CObject`.
+It is derived from `CObject` (see \ref sec4-2-1 "Section 4.2.1").
+Recall that the 
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw()`</a>
+ function draws sprites with their center at the position specified by a parameter and optionally rotates the sprite about its center by another parameter. We saw this in action when drawing the text ring at the center of the window in the
+and <a href="../blank">The Blank Game</a>.
+In this game the armed objects are the player and the guard, seen in \ref fig2 "Fig. 2". 
 
 \anchor fig2
-\image html offsets.png "Fig. 2: The player sprite and offsets." width=35%
+\image html PCandNPC.png "Fig. 2: The player (left) and guard (right) sprites." width=35%
+
+These sprites will be drawn by `CArmedObject::Draw()`
+with the center of sprite's cap at the object's position and they should rotate about that point.
+In order to do this we need the vector offset from the center of the object to the center of the sprite, called the _center offset_ (see \ref fig3 "Figure 3").
+This will be stored in protected member variable `CArmedObject::m_vCenterOffset`.
+We will also animate a muzzle flash particle effect at the end of the gun barrel.
+To do this we need the vector offset from the center of the sprite to the end of the gun barrel, called the _gun offset_ (see also \ref fig3 "Figure 3").
+This will be stored in protected member variable `CArmedObject::m_vGunOffset`.
+
+\anchor fig3
+\image html offsets.png "Fig. 3: The player sprite and offsets." width=35%
+
+`CArmedObject` contains a private pointer `m_pLocalParticleEngine` to a
+<a href="../sage/index.html#sec3-8">2D particle engine</a>
+for particle effects that move with that object. In particular we
+need to draw the muzzle flash (which is animated over several frames)
+at the end of the gun barrel, which may have moved and/or rotated from
+its position when the gun fired. In order to do this we will need to call
+<a href="../sage/class_sage_1_1_c_particle_engine.html#a5e4add4fdc2f94979d70ea3b1f10053b">Sage::CSpriteEngine2D::TranslateTo()</a> to the translated and rotated
+muzzle position along with
+<a href="../sage/class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f">Sage::CSpriteEngine2D::Step()</a> once per frame in
+`CArmedObject::Move()`.
+
+Another `CArmedObject` member function of interest is `CArmedObject::RotateTowards()`, which takes as parameter a 2D vector called the _target_ and rotates the sprite so that the gun barrel is closer to pointing at the target, returning `true` if it is pointing "close enough" to it. 
+See the full description of `CArmedObject::RotateTowards()` for more details
+on how this is done.
+`CArmedObject::RotateTowards()` will be used to smoothly rotate the player to face the mouse pointer (see \ref sec4-2-3 "Section 4.2.3") and for the guard to smoothly rotate to face the player under control of its AI (see \ref sec4-2-4 "Section 4.2.4").
 
 \anchor sec4-2-3
 ### 4.2.3 Player Object
 
 The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
-It is derived from `CArmedObject`.
+It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
 
 \anchor sec4-2-4
 ### 4.2.4 Guard Object
 
 The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
-It is derived from `CArmedObject`.
+It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
 
 \anchor fig3
 \image html reload.gif "Fig. 3: The guard shotgun reload animation."
@@ -203,7 +226,12 @@ It is derived from `CArmedObject`.
 ### 4.2.5 Bullet Object
 
 The bullet object `CBullet` is declared in `Bullet.h` and defined in `Bullet.cpp`.
-It is derived from `CObject`.
+It is derived from `CObject` (see \ref sec4-2-1 "Section 4.2.1").
+
+`CCommon` contains a pointer `m_pParticleEngine` to a
+<a href="../sage/index.html#sec3-8">2D particle engine</a>
+to be used for static particle effects, that is, particle
+effects that do not move with a particular object.
 
 \anchor sec5
 # 5. What Next?
