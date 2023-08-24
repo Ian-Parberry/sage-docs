@@ -189,14 +189,6 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad139465da4c7e19ca5b2243c7d0ffda3"><td class="memItemLeft" align="right" valign="top"><a id="ad139465da4c7e19ca5b2243c7d0ffda3" name="ad139465da4c7e19ca5b2243c7d0ffda3"></a>
-const UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nMaxHealth</b> = 4</td></tr>
-<tr class="memdesc:ad139465da4c7e19ca5b2243c7d0ffda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum health. <br /></td></tr>
-<tr class="separator:ad139465da4c7e19ca5b2243c7d0ffda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9861415d5209e55f8218d5acdad9d6d"><td class="memItemLeft" align="right" valign="top"><a id="ab9861415d5209e55f8218d5acdad9d6d" name="ab9861415d5209e55f8218d5acdad9d6d"></a>
-UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = <a class="el" href="class_c_guard.html#ad139465da4c7e19ca5b2243c7d0ffda3">m_nMaxHealth</a></td></tr>
-<tr class="memdesc:ab9861415d5209e55f8218d5acdad9d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current health. <br /></td></tr>
-<tr class="separator:ab9861415d5209e55f8218d5acdad9d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae49eea356237db4e424d768f0b10436e"><td class="memItemLeft" align="right" valign="top"><a id="ae49eea356237db4e424d768f0b10436e" name="ae49eea356237db4e424d768f0b10436e"></a>
 <a class="el" href="class_c_guard.html#aefa1c17763272aeb804575c9a762235f">eState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eState</b> = eState::Alert</td></tr>
 <tr class="memdesc:ae49eea356237db4e424d768f0b10436e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guard state. <br /></td></tr>
@@ -211,12 +203,12 @@ Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWai
 <tr class="separator:a655dd70c37e54b073bece1e920093edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c578cf2c71278045658335c5d23944"><td class="memItemLeft" align="right" valign="top"><a id="a95c578cf2c71278045658335c5d23944" name="a95c578cf2c71278045658335c5d23944"></a>
 Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pAlertEvent</b> = nullptr</td></tr>
-<tr class="memdesc:a95c578cf2c71278045658335c5d23944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait event. <br /></td></tr>
+<tr class="memdesc:a95c578cf2c71278045658335c5d23944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alert event. <br /></td></tr>
 <tr class="separator:a95c578cf2c71278045658335c5d23944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af696e6323c713233c6b340ac89e013bf"><td class="memItemLeft" align="right" valign="top"><a id="af696e6323c713233c6b340ac89e013bf" name="af696e6323c713233c6b340ac89e013bf"></a>
-Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pBoredomEvent</b> = nullptr</td></tr>
-<tr class="memdesc:af696e6323c713233c6b340ac89e013bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boredom event. <br /></td></tr>
-<tr class="separator:af696e6323c713233c6b340ac89e013bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2e955a1ae1166e1760bd46d243554d"><td class="memItemLeft" align="right" valign="top"><a id="ace2e955a1ae1166e1760bd46d243554d" name="ace2e955a1ae1166e1760bd46d243554d"></a>
+Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pScanningEvent</b> = nullptr</td></tr>
+<tr class="memdesc:ace2e955a1ae1166e1760bd46d243554d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scanning event. <br /></td></tr>
+<tr class="separator:ace2e955a1ae1166e1760bd46d243554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5c911ee993e39a46b50fce60dce4860"><td class="memItemLeft" align="right" valign="top"><a id="ac5c911ee993e39a46b50fce60dce4860" name="ac5c911ee993e39a46b50fce60dce4860"></a>
 Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pFrameEvent</b> = nullptr</td></tr>
 <tr class="memdesc:ac5c911ee993e39a46b50fce60dce4860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stray event timer. <br /></td></tr>
@@ -226,6 +218,10 @@ Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pGun
 <tr class="memdesc:a73f83625a5406ee8ea8a113202a1a916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gun fire event. <br /></td></tr>
 <tr class="separator:a73f83625a5406ee8ea8a113202a1a916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_c_armed_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_armed_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_armed_object.html">CArmedObject</a></td></tr>
+<tr class="memitem:abaafda780be819da1c20add13401db04 inherit pro_attribs_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">
+UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = 1</td></tr>
+<tr class="memdesc:abaafda780be819da1c20add13401db04 inherit pro_attribs_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current health. <br /></td></tr>
+<tr class="separator:abaafda780be819da1c20add13401db04 inherit pro_attribs_class_c_armed_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b104d4fc29dd564520a68414f67c77 inherit pro_attribs_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRotSpeed</b> = 0</td></tr>
 <tr class="memdesc:ae5b104d4fc29dd564520a68414f67c77 inherit pro_attribs_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotational speed. <br /></td></tr>
@@ -316,7 +312,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 <tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_c_guard.html" title="The guard object.">CGuard</a> is the abstract representation of a guard. </p>
+<div class="textblock"><p><code><a class="el" href="class_c_guard.html" title="The guard object.">CGuard</a> is the abstract representation of a guard</code>. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aefa1c17763272aeb804575c9a762235f" name="aefa1c17763272aeb804575c9a762235f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aefa1c17763272aeb804575c9a762235f">&#9670;&#160;</a></span>eState</h2>
@@ -489,7 +485,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Response to collision. If colliding with an object, play a sound. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Response to collision. If colliding with a bullet, play a sound, decrement health, and if health is zero then die. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">norm</td><td>Collision normal. </td></tr>
     <tr><td class="paramname">d</td><td>Overlap distance. </td></tr>
@@ -524,7 +520,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Draw the sprite offset by the center offset value. </p>
+<p>Draw the current frame of the sprite offset by the center offset value. The current frame will be 0 if not reloading. Change state from Reloading to Waiting once the reloading animation has finished. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_armed_object.html#aad111986969a998621a865da7e0e562d">CArmedObject</a>.</p>
 
@@ -604,7 +600,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Rotate the guard and fire the gun at at the closest available target if there is one, and rotate at a constant speed otherwise. </p>
+<p>Take action based on state. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_armed_object.html#a3f6fe2f4bcdfefc75a7724343aadf5c2">CArmedObject</a>.</p>
 

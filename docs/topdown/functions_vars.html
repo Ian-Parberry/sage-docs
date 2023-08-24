@@ -82,25 +82,22 @@ $(function() {
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
 <li>m_bCCW&#160;:&#160;<a class="el" href="class_c_guard.html#ac856a990b9fe8edf2cb0c3345160fa87">CGuard</a></li>
-<li>m_bDrawAttention&#160;:&#160;<a class="el" href="class_c_player.html#a4599fd7cfc3c22c7d39d6a81fe740dd4">CPlayer</a></li>
 <li>m_bDrawFrameRate&#160;:&#160;<a class="el" href="class_c_game.html#aebf03edb5525b616bdefb05d23b9aa36">CGame</a></li>
 <li>m_bGodMode&#160;:&#160;<a class="el" href="class_c_common.html#a8c40cb827e6cdf7db561a4759b836da9">CCommon</a></li>
 <li>m_bShowBounds&#160;:&#160;<a class="el" href="class_c_common.html#ab089de087cef73dc61a2a45d33192aab">CCommon</a></li>
 <li>m_bShowState&#160;:&#160;<a class="el" href="class_c_common.html#a69435ca535bedd9d0c894f8730788fe3">CCommon</a></li>
+<li>m_bVulnerable&#160;:&#160;<a class="el" href="class_c_player.html#a08788e2ce86e5ed0a613b167235a27c6">CPlayer</a></li>
 <li>m_eDirection&#160;:&#160;<a class="el" href="class_c_player.html#a06389c30d1d3e38de298a723f5c32cb1">CPlayer</a></li>
 <li>m_eGameState&#160;:&#160;<a class="el" href="class_c_game.html#a6d6d7b949d4a47b7c5d03c9dbf4be6fd">CGame</a></li>
 <li>m_eObject&#160;:&#160;<a class="el" href="class_c_object.html#a4eb51a58366c30f1c8e13ab4f04aaad6">CObject</a></li>
 <li>m_eSprite&#160;:&#160;<a class="el" href="class_c_object.html#a11aea2e50bb8c5cde8782b67edf35368">CObject</a></li>
 <li>m_eState&#160;:&#160;<a class="el" href="class_c_guard.html#ae49eea356237db4e424d768f0b10436e">CGuard</a></li>
-<li>m_fDesiredLookAtPt&#160;:&#160;<a class="el" href="class_c_player.html#a8d547ff8fb184804e63ee3d55281f0d6">CPlayer</a></li>
 <li>m_fRadius&#160;:&#160;<a class="el" href="class_c_object.html#afb97f8e0ea95db14d0f8dabb006ded9d">CObject</a></li>
 <li>m_fRoll&#160;:&#160;<a class="el" href="class_c_object.html#a2c2b78109c8df0925ed2fb5c5e23a2a4">CObject</a></li>
 <li>m_fRotSpeed&#160;:&#160;<a class="el" href="class_c_armed_object.html#ae5b104d4fc29dd564520a68414f67c77">CArmedObject</a></li>
-<li>m_nHealth&#160;:&#160;<a class="el" href="class_c_guard.html#ab9861415d5209e55f8218d5acdad9d6d">CGuard</a>, <a class="el" href="class_c_player.html#a76f4a251c62bcbe2e97e3827f2d87335">CPlayer</a></li>
-<li>m_nMaxHealth&#160;:&#160;<a class="el" href="class_c_guard.html#ad139465da4c7e19ca5b2243c7d0ffda3">CGuard</a>, <a class="el" href="class_c_player.html#a0930a0ba1983641e2d24bbf328850ac2">CPlayer</a></li>
+<li>m_nHealth&#160;:&#160;<a class="el" href="class_c_armed_object.html#abaafda780be819da1c20add13401db04">CArmedObject</a></li>
 <li>m_pAlertEvent&#160;:&#160;<a class="el" href="class_c_guard.html#a95c578cf2c71278045658335c5d23944">CGuard</a></li>
-<li>m_pBoredomEvent&#160;:&#160;<a class="el" href="class_c_guard.html#af696e6323c713233c6b340ac89e013bf">CGuard</a></li>
-<li>m_pDrawAttentionEvent&#160;:&#160;<a class="el" href="class_c_player.html#a13ee2eb76c29e9549d8c14fd1678604f">CPlayer</a></li>
+<li>m_pEndVulnerableEvent&#160;:&#160;<a class="el" href="class_c_player.html#ae24b6dbb9ba575ef11f17894b07f2ba8">CPlayer</a></li>
 <li>m_pFrameEvent&#160;:&#160;<a class="el" href="class_c_guard.html#ac5c911ee993e39a46b50fce60dce4860">CGuard</a></li>
 <li>m_pGunFireEvent&#160;:&#160;<a class="el" href="class_c_guard.html#a73f83625a5406ee8ea8a113202a1a916">CGuard</a></li>
 <li>m_pLocalParticleEngine&#160;:&#160;<a class="el" href="class_c_armed_object.html#ae186f667b0d47c3897b033cf92219adf">CArmedObject</a></li>
@@ -108,8 +105,10 @@ $(function() {
 <li>m_pParticleEngine&#160;:&#160;<a class="el" href="class_c_common.html#a87d040e4cf07e493ebc5f7eacef26d13">CCommon</a></li>
 <li>m_pPlayer&#160;:&#160;<a class="el" href="class_c_common.html#ab278f41b93c7393ce87eb0674349e796">CCommon</a></li>
 <li>m_pRenderer&#160;:&#160;<a class="el" href="class_c_common.html#affe2697f28fbe937757db5eaa94c00d3">CCommon</a></li>
+<li>m_pScanningEvent&#160;:&#160;<a class="el" href="class_c_guard.html#ace2e955a1ae1166e1760bd46d243554d">CGuard</a></li>
 <li>m_pWaitEvent&#160;:&#160;<a class="el" href="class_c_guard.html#a655dd70c37e54b073bece1e920093edf">CGuard</a></li>
 <li>m_vCenterOffset&#160;:&#160;<a class="el" href="class_c_armed_object.html#a83b57ecaefa829ef5442fcfbaee8830d">CArmedObject</a></li>
+<li>m_vDesiredLookAtPt&#160;:&#160;<a class="el" href="class_c_player.html#a22506b2a963bd38895ace1ad0129e1ba">CPlayer</a></li>
 <li>m_vGunOffset&#160;:&#160;<a class="el" href="class_c_armed_object.html#a86b429611b2cbdf0ec856ddee7fd79f4">CArmedObject</a></li>
 <li>m_vPos&#160;:&#160;<a class="el" href="class_c_object.html#a0219c1e480987fa4f0f126a315bc2398">CObject</a></li>
 <li>m_vVelocity&#160;:&#160;<a class="el" href="class_c_bullet.html#ae3d1ccb3a25884107f6e4dff0d27313e">CBullet</a></li>

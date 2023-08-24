@@ -80,8 +80,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c_player-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CPlayer Class Reference</div></div>
 </div><!--header-->
@@ -126,13 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb2b18f4ec72d88dac09f9f4362e64b0"><td class="memItemLeft" align="right" valign="top">const Vector2 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#abb2b18f4ec72d88dac09f9f4362e64b0">GetPos</a> () const</td></tr>
 <tr class="memdesc:abb2b18f4ec72d88dac09f9f4362e64b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position.  <br /></td></tr>
 <tr class="separator:abb2b18f4ec72d88dac09f9f4362e64b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3809b90f5624c61514e9abe3da9598d7"><td class="memItemLeft" align="right" valign="top"><a id="a3809b90f5624c61514e9abe3da9598d7" name="a3809b90f5624c61514e9abe3da9598d7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawAttentionFlag</b> ()</td></tr>
-<tr class="memdesc:a3809b90f5624c61514e9abe3da9598d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the draw attention flag. <br /></td></tr>
-<tr class="separator:a3809b90f5624c61514e9abe3da9598d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8bd187ed245b17a2d1ee90a0fc24fca"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#ac8bd187ed245b17a2d1ee90a0fc24fca">GetDrawAttentionFlag</a> () const</td></tr>
-<tr class="memdesc:ac8bd187ed245b17a2d1ee90a0fc24fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the draw attention flag.  <br /></td></tr>
-<tr class="separator:ac8bd187ed245b17a2d1ee90a0fc24fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372b933d030cd0ae3bc375d9770b345f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a372b933d030cd0ae3bc375d9770b345f">SetVulnerable</a> ()</td></tr>
+<tr class="memdesc:a372b933d030cd0ae3bc375d9770b345f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the vulnerable flag.  <br /></td></tr>
+<tr class="separator:a372b933d030cd0ae3bc375d9770b345f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0768c2e56e93086b162adcdceb88b7df"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a0768c2e56e93086b162adcdceb88b7df">IsVulnerable</a> () const</td></tr>
+<tr class="memdesc:a0768c2e56e93086b162adcdceb88b7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the vulnerable flag.  <br /></td></tr>
+<tr class="separator:a0768c2e56e93086b162adcdceb88b7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_armed_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_armed_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_armed_object.html">CArmedObject</a></td></tr>
 <tr class="memitem:a2ea423ad4712085f567dae404dce3aa1 inherit pub_methods_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_armed_object.html#a2ea423ad4712085f567dae404dce3aa1">CArmedObject</a> (<a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>, <a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, const Vector2 &amp;)</td></tr>
 <tr class="memdesc:a2ea423ad4712085f567dae404dce3aa1 inherit pub_methods_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
@@ -170,11 +169,33 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CObject</b> ()</t
 <tr class="memdesc:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
 <tr class="separator:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:a257ff19b21196bf7a42bbaa36e7126a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a257ff19b21196bf7a42bbaa36e7126a8">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
 <tr class="memdesc:a257ff19b21196bf7a42bbaa36e7126a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response.  <br /></td></tr>
 <tr class="separator:a257ff19b21196bf7a42bbaa36e7126a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a08788e2ce86e5ed0a613b167235a27c6"><td class="memItemLeft" align="right" valign="top"><a id="a08788e2ce86e5ed0a613b167235a27c6" name="a08788e2ce86e5ed0a613b167235a27c6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bVulnerable</b> = false</td></tr>
+<tr class="memdesc:a08788e2ce86e5ed0a613b167235a27c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vulnerable flag. <br /></td></tr>
+<tr class="separator:a08788e2ce86e5ed0a613b167235a27c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24b6dbb9ba575ef11f17894b07f2ba8"><td class="memItemLeft" align="right" valign="top"><a id="ae24b6dbb9ba575ef11f17894b07f2ba8" name="ae24b6dbb9ba575ef11f17894b07f2ba8"></a>
+Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEndVulnerableEvent</b> = nullptr</td></tr>
+<tr class="memdesc:ae24b6dbb9ba575ef11f17894b07f2ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">End being vulnerable. <br /></td></tr>
+<tr class="separator:ae24b6dbb9ba575ef11f17894b07f2ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06389c30d1d3e38de298a723f5c32cb1"><td class="memItemLeft" align="right" valign="top"><a id="a06389c30d1d3e38de298a723f5c32cb1" name="a06389c30d1d3e38de298a723f5c32cb1"></a>
+<a class="el" href="_game_defines_8h.html#a31793e4efbb182e74f29154fb352f2a5">eDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eDirection</b> = eDirection::None</td></tr>
+<tr class="memdesc:a06389c30d1d3e38de298a723f5c32cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction of motion. <br /></td></tr>
+<tr class="separator:a06389c30d1d3e38de298a723f5c32cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22506b2a963bd38895ace1ad0129e1ba"><td class="memItemLeft" align="right" valign="top"><a id="a22506b2a963bd38895ace1ad0129e1ba" name="a22506b2a963bd38895ace1ad0129e1ba"></a>
+Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vDesiredLookAtPt</b></td></tr>
+<tr class="memdesc:a22506b2a963bd38895ace1ad0129e1ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired look-at point. <br /></td></tr>
+<tr class="separator:a22506b2a963bd38895ace1ad0129e1ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_c_armed_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_armed_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_c_armed_object.html">CArmedObject</a></td></tr>
 <tr class="memitem:aad443c44e76a89026a2e8b02271d1242 inherit pro_methods_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">const Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_armed_object.html#aad443c44e76a89026a2e8b02271d1242">GetViewVector</a> () const</td></tr>
 <tr class="memdesc:aad443c44e76a89026a2e8b02271d1242 inherit pro_methods_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute view vector.  <br /></td></tr>
@@ -188,34 +209,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2fb8a2d0fa6c8ddd0fd89a2cf505b0c2 inherit pro_methods_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_armed_object.html#a2fb8a2d0fa6c8ddd0fd89a2cf505b0c2">DeathFX</a> ()</td></tr>
 <tr class="memdesc:a2fb8a2d0fa6c8ddd0fd89a2cf505b0c2 inherit pro_methods_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Death special effects.  <br /></td></tr>
 <tr class="separator:a2fb8a2d0fa6c8ddd0fd89a2cf505b0c2 inherit pro_methods_class_c_armed_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0930a0ba1983641e2d24bbf328850ac2"><td class="memItemLeft" align="right" valign="top"><a id="a0930a0ba1983641e2d24bbf328850ac2" name="a0930a0ba1983641e2d24bbf328850ac2"></a>
-const UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nMaxHealth</b> = 8</td></tr>
-<tr class="memdesc:a0930a0ba1983641e2d24bbf328850ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum health. <br /></td></tr>
-<tr class="separator:a0930a0ba1983641e2d24bbf328850ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f4a251c62bcbe2e97e3827f2d87335"><td class="memItemLeft" align="right" valign="top"><a id="a76f4a251c62bcbe2e97e3827f2d87335" name="a76f4a251c62bcbe2e97e3827f2d87335"></a>
-UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = <a class="el" href="class_c_player.html#a0930a0ba1983641e2d24bbf328850ac2">m_nMaxHealth</a></td></tr>
-<tr class="memdesc:a76f4a251c62bcbe2e97e3827f2d87335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current health. <br /></td></tr>
-<tr class="separator:a76f4a251c62bcbe2e97e3827f2d87335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4599fd7cfc3c22c7d39d6a81fe740dd4"><td class="memItemLeft" align="right" valign="top"><a id="a4599fd7cfc3c22c7d39d6a81fe740dd4" name="a4599fd7cfc3c22c7d39d6a81fe740dd4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bDrawAttention</b> = false</td></tr>
-<tr class="memdesc:a4599fd7cfc3c22c7d39d6a81fe740dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw attention flag. <br /></td></tr>
-<tr class="separator:a4599fd7cfc3c22c7d39d6a81fe740dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ee2eb76c29e9549d8c14fd1678604f"><td class="memItemLeft" align="right" valign="top"><a id="a13ee2eb76c29e9549d8c14fd1678604f" name="a13ee2eb76c29e9549d8c14fd1678604f"></a>
-Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDrawAttentionEvent</b> = nullptr</td></tr>
-<tr class="memdesc:a13ee2eb76c29e9549d8c14fd1678604f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw attention event. <br /></td></tr>
-<tr class="separator:a13ee2eb76c29e9549d8c14fd1678604f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06389c30d1d3e38de298a723f5c32cb1"><td class="memItemLeft" align="right" valign="top"><a id="a06389c30d1d3e38de298a723f5c32cb1" name="a06389c30d1d3e38de298a723f5c32cb1"></a>
-<a class="el" href="_game_defines_8h.html#a31793e4efbb182e74f29154fb352f2a5">eDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eDirection</b> = eDirection::None</td></tr>
-<tr class="memdesc:a06389c30d1d3e38de298a723f5c32cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Direction of motion. <br /></td></tr>
-<tr class="separator:a06389c30d1d3e38de298a723f5c32cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d547ff8fb184804e63ee3d55281f0d6"><td class="memItemLeft" align="right" valign="top"><a id="a8d547ff8fb184804e63ee3d55281f0d6" name="a8d547ff8fb184804e63ee3d55281f0d6"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_fDesiredLookAtPt</b></td></tr>
-<tr class="memdesc:a8d547ff8fb184804e63ee3d55281f0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desired look-at point. <br /></td></tr>
-<tr class="separator:a8d547ff8fb184804e63ee3d55281f0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_c_armed_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_armed_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_armed_object.html">CArmedObject</a></td></tr>
+<tr class="memitem:abaafda780be819da1c20add13401db04 inherit pro_attribs_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">
+UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = 1</td></tr>
+<tr class="memdesc:abaafda780be819da1c20add13401db04 inherit pro_attribs_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current health. <br /></td></tr>
+<tr class="separator:abaafda780be819da1c20add13401db04 inherit pro_attribs_class_c_armed_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b104d4fc29dd564520a68414f67c77 inherit pro_attribs_class_c_armed_object"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRotSpeed</b> = 0</td></tr>
 <tr class="memdesc:ae5b104d4fc29dd564520a68414f67c77 inherit pro_attribs_class_c_armed_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotational speed. <br /></td></tr>
@@ -254,9 +252,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRoll</b> = 0</td>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b> = 0</td></tr>
 <tr class="memdesc:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding circle radius. <br /></td></tr>
 <tr class="separator:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_attribs_class_c_common"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_c_common')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_c_common.html">CCommon</a></td></tr>
 <tr class="memitem:affe2697f28fbe937757db5eaa94c00d3 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRenderer</b> = nullptr</td></tr>
@@ -369,7 +364,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -383,24 +378,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 </dl>
 
 <p>Reimplemented from <a class="el" href="class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d">CObject</a>.</p>
-
-</div>
-</div>
-<a id="ac8bd187ed245b17a2d1ee90a0fc24fca" name="ac8bd187ed245b17a2d1ee90a0fc24fca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8bd187ed245b17a2d1ee90a0fc24fca">&#9670;&#160;</a></span>GetDrawAttentionFlag()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool CPlayer::GetDrawAttentionFlag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Reader function for draw attention flag. </p><dl class="section return"><dt>Returns</dt><dd>Draw attention flag. </dd></dl>
 
 </div>
 </div>
@@ -419,6 +396,24 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
       </table>
 </div><div class="memdoc">
 <p>Reader function for position. </p><dl class="section return"><dt>Returns</dt><dd>Position. </dd></dl>
+
+</div>
+</div>
+<a id="a0768c2e56e93086b162adcdceb88b7df" name="a0768c2e56e93086b162adcdceb88b7df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0768c2e56e93086b162adcdceb88b7df">&#9670;&#160;</a></span>IsVulnerable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool CPlayer::IsVulnerable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reader function for vulnerable flag. </p><dl class="section return"><dt>Returns</dt><dd>Vulnerable flag, true if vulnerable. </dd></dl>
 
 </div>
 </div>
@@ -519,6 +514,24 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a372b933d030cd0ae3bc375d9770b345f" name="a372b933d030cd0ae3bc375d9770b345f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372b933d030cd0ae3bc375d9770b345f">&#9670;&#160;</a></span>SetVulnerable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPlayer::SetVulnerable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the vulnerable flag to true to make the player vulnerable to attack. </p>
 
 </div>
 </div>

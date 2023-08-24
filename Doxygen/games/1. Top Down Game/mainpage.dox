@@ -157,6 +157,11 @@ and <a href="../blank">The Blank Game</a>.
 \anchor sec4-2
 ## 4.1 Particle Engines
 
+`CCommon` contains a pointer `m_pParticleEngine` to a
+<a href="../sage/index.html#sec3-8">2D particle engine</a>
+to be used for static particle effects, that is, particle
+effects that do not move with a particular object.
+
 \anchor sec4-2
 ## 4.2 Game Objects
 
@@ -165,6 +170,37 @@ and <a href="../blank">The Blank Game</a>.
 
 The base game object `CObject` is declared in `Object.h` and defined in `Object.cpp`.
 It is derived from <a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>.
+`GameDefines.h` contains the declaration of an object enumerated type
+`eObject` and a sprite enumerated type `eSprite`. 
+`CObject` has a protected member variable `m_eObject` of type `eObject`
+to identify the object type and a protected member variable `m_eSprite` of type `eSprite`
+to identify the sprite type.
+It also has protected member variables for object position, orientation,
+and collision circle radius,
+`m_vPos`,
+`m_fRoll`, and
+`m_fRadius`, respectively.
+
+Public member functions include a simple `Draw` function that draws the
+object's sprite with its center at `m_vPos` and at orientation `m_fRoll`.
+There is also a stub `Move` function that contains no code. Both of these
+are expected to be overridden by functions in classes derived from `CObject`.
+
+`CObject` also has a public member function `CObject::CollisionResponse`
+that is to be called whenever its collision circle
+overlaps that of another object. It has three parameters:
+a vector normal to the collision, the overlap distance,
+and a pointer to the object collided with.
+Although the latter is not used in the body of the function,
+which simply moves the object by the overlap distance in the direction
+of the collision normal,
+it will be used in functions overriding `CObject::CollisionResponse`
+in classes derived from `CObject`.
+Note that functions overriding `CObject::CollisionResponse`
+will call `CObject::CollisionResponse` as a default.
+`CObject::CollisionResponse` is called in `CObjectManager::BroadPhase`
+for collisions with the edge of the world, 
+and `CObjectManager::NarrowPhase` for collisions with other objects.
 
 \anchor sec4-2-2
 ### 4.2.2 Armed Object
@@ -175,10 +211,10 @@ Recall that the
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw()`</a>
  function draws sprites with their center at the position specified by a parameter and optionally rotates the sprite about its center by another parameter. We saw this in action when drawing the text ring at the center of the window in the
 and <a href="../blank">The Blank Game</a>.
-In this game the armed objects are the player and the guard, seen in \ref fig2 "Fig. 2". 
+In this game the armed objects are the player and the guard, seen in \ref fig2 "Fig. 2". Notice that the sprites initially face along the positive X-axis.
 
 \anchor fig2
-\image html PCandNPC.png "Fig. 2: The player (left) and guard (right) sprites." width=35%
+\image html PCandNPC.png "Fig. 2: The guard (left) and player (right) sprites." width=35%
 
 These sprites will be drawn by `CArmedObject::Draw()`
 with the center of sprite's cap at the object's position and they should rotate about that point.
@@ -202,10 +238,18 @@ muzzle position along with
 <a href="../sage/class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f">Sage::CSpriteEngine2D::Step()</a> once per frame in
 `CArmedObject::Move()`.
 
+\anchor rotatetowards
+
 Another `CArmedObject` member function of interest is `CArmedObject::RotateTowards()`, which takes as parameter a 2D vector called the _target_ and rotates the sprite so that the gun barrel is closer to pointing at the target, returning `true` if it is pointing "close enough" to it. 
 See the full description of `CArmedObject::RotateTowards()` for more details
 on how this is done.
 `CArmedObject::RotateTowards()` will be used to smoothly rotate the player to face the mouse pointer (see \ref sec4-2-3 "Section 4.2.3") and for the guard to smoothly rotate to face the player under control of its AI (see \ref sec4-2-4 "Section 4.2.4").
+
+Function `CArmedObject::DeathFX()` creates some particle effects to be played
+after the object dies. Note that this function uses the global particle
+engine `*m_pParticleEngine` inherited from `CCommon`, not the local particle engine 
+`*m_pLocalParticleEngine` because the particle effects must persist after the object has been deleted. Firstly we create a particle that looks just like the armed object itself which fades out over a second's elapsed time and a skeleton sprite of type `eSprite::Skeleton` that fades in and out and moves to the upper left. `CArmedObject::DeathFX()` will be called from the collision response functions of `CPlayer` and `CGuard`, which will be derived from `CArmedObject`
+and are covered below.
 
 \anchor sec4-2-3
 ### 4.2.3 Player Object
@@ -213,25 +257,192 @@ on how this is done.
 The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
 It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
 
+#### Vulnerability
+
+The player object is said to be _vulnerable_ to attack from the guard object
+whenever the player fires their gun, and for a short period
+afterwards. `CPlayer` has a private member variable `m_bVulnerable`
+that will be set to `true` whenever the player is vulnerable. 
+It has a public reader function `CPlayer::IsVulnerable` and a public writer
+function ``CPlayer::IsVulnerable`.
+The former will be used by the guard to determine whether the player is
+vulnerable, and the latter will be used by `CObjectManager` to make the player
+vulnerable when the player fires their gun, that is, when a bullet object
+is created.
+The player will remain
+vulnerable until the event timer `*m_pEndVulnerableEvent` 
+(an instance of <a href="../sage/index.html#sec3-2">`Sage::CEventTimer`</a>)
+triggers.
+
+#### Handling Player Inputs
+
+Device inputs come to the player object via a public member function
+`CPlayer::SetMovement`, which has a parameter of type
+`eDirection`, an enumerated type defines in `GameDefines.h`.
+This is saved in private member variable `m_eDirection`
+and used in the call to `CPlayer::Move`, which
+overrides `CObject::Move`.
+`CPlayer` also has a private member variable
+`m_vDesiredLookAtPt` which will be set to the current mouse position
+in `CGame::MouseHandler` by calling
+`CPlayer::LookAt`.
+`CPlayer::Move` will call `CArmedObject::RotateTowards`
+(see also \ref rotatetowards "Section 4.2.2")
+to rotate a small amount in the direction of `m_vDesiredLookAtPt`.
+Finally, `CPlayer::Move` ends player vulnerability is the
+end vulnerable event is triggered, calls `CArmedObject::Move`
+and sets the sound player's 
+<a href="../sage/class_sage_1_1_c_sound.html#a01cad4589a84b31f34a1d0c7f98be76e">
+`Sage::CSound::SetListenerPos`</a>
+function to make sounds relative to the player's position in 2D space.
+
 \anchor sec4-2-4
 ### 4.2.4 Guard Object
 
 The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
 It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
+`CGuard` is different from `CPlayer` in that it has code
+for autonomous actions instead of code for responding
+to player inputs. It also rotates to face the player
+using much the same code as the player rotating to face the mouse cursor.
+The guard's actions are governed by a simple finite state
+machine whose states and transitions may also include
+a certain amount of randomness provided by the pseudo-random
+number generator pointed to by `m_pRandom`
+(inherited from
+<a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>)
+an instance of
+<a href="../sage/class_sage_1_1_c_random.html">`Sage::CRandom`</a>.
+
+#### The State Machine
+
+`CGuard` includes the private definition of an enumerated type `CGuard::eState`,
+consisting of the following states.
+
+1. `CGuard::eState::Alert` - aware of player and firing at it.
+
+2. `CGuard::eState::Waiting` - not rotating, just staring off into the distance.
+
+3. `CGuard::eState::Scanning` - turning slowly either clockwise or counterclockwise.
+
+4. `CGuard::eState::Reloading` - reloading the gun and displaying the \ref reload-animation "Reload Animation". 
+
+`CGuard` has a protected member variable `m_eState` of type `CGuard::eState`
+that stores the guard's current state.
+As described in \ref sec2 "Section 2",
+ hitting `F4` on the keyboard will toggle the
+drawing of white text describing the guard's current state.
+For example \ref fig3 "Figure 3" shows the guard in state
+`CGuard::eState::Scanning`.
+This text is drawn by calling the protected member function `CGuard::DrawState`
+from `CGuard::Draw`. `CGuard::DrawState` calls `CGuard::GetStateString`
+to convert `m_eState` to a (wide) string
+that is then drawn to the screen by calling 
+<a href="../sage/class_sage_1_1_c_renderer3_d.html#a5868fca5687d4f44843af7a5119f0382">`Sage::CRenderer3D::DrawScreenText`</a>,
+which is inherited by
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>. 
 
 \anchor fig3
-\image html reload.gif "Fig. 3: The guard shotgun reload animation."
+\image html scanning.png "Fig. 3: The guard showing scanning state." width=20%
+
+`CGuard::ChangeState` is called whenever the guard's state is to be changed.
+It sets `m_eState` to the new state and sets various other variables
+in a `switch` statement that depends on the new state.
+Instances of <a href="../sage/index.html#sec3-2">`Sage::CEventTimer`</a> pointed to by
+`m_pWaitEvent`, `m_pAlertEvent`, and `m_pScanningEvent` are used to move out of 
+`CGuard::eState::Waiting`,
+`CGuard::eState::Alert`, and
+`CGuard::eState::Scanning`, respectively, after the appropriate amount of time has passed.
+The guard moves out of state `CGuard::eState::Reloading` once all
+frames of the \ref reload-animation "reloading animation" have been displayed.
+
+\anchor reload-animation
+#### Reload Animation
+
+Every time the guard files a bullet, it displays a reload animation as shown in
+\ref fig4 "Fig. 4". The animation frames are loaded from a _sprite sheet_
+as shown in \ref fig5 "Fig. 5".
+
+\anchor fig4
+\image html reload.gif "Fig. 4: The guard reload animation."
+
+\anchor fig5
+\image html sheet1.png "Fig. 5: The guard sprite sheet."  width=45%
+
+All that has to be done to enable sprite animation is to modify `GameSettings.xml` to describe where the individual frames are on the sprite sheet, add code to 
+`CGame::LoadSprites` to load them in, and add code to `CGuard::Draw` function to
+change frames over time.
+
+In addition to the single-frame-in-a-file `<sprite>` tags we used in `GameSettings.xml` in <a href="../blank/index.html">The Blank Game</a>, we can load multiple frames from a sprite sheet as follows.
+Firstly we create a `<sprite>` `</sprite>` pair describing the sprite sheet,
+enclosing a list of `<frame>` tags describing the frames.
+The `<sprite>` tag has a `name` field for the name to be used in the code,
+a `sheet` field for the sprite sheet files name, and a `frames` field for the
+number of frames. The `<frame>` tag has a field `index` for the frame index
+and four fields describing the bounding rectangle in the sprite sheet,
+specifically its `left`, `right`, `top`, and `bottom` position measured
+in pixels. Note that the Y-coordinate is measured from the _top_ of the image.
+
+```xml
+<sprite name="guardreload" sheet="sheet1" frames="20">  
+  <frame index="0"  left="0"   top="0"  right="128" bottom="78"/>
+  <frame index="1"  left="128" top="0"  right="256" bottom="78"/>
+  ...
+  <frame index="19" left="384" top="312" right="512" bottom="390"/>
+</sprite>
+```
+
+We can then load the sprite from this description with the line
+
+```
+  media.Insert(eSprite::GuardReload, "guardreload");
+```
+
+in `CGame::LoadSprites`
+using the `name` field from the `<sprite>` tag as the second parameter.
+The frame number is a static local variable `nCurFrame` in `CGuard::Draw` which is incremented
+after a period of time governed by the <a href="../sage/index.html#sec3-2">`Sage::CEventTimer`</a> pointed to by
+`m_pFrameEvent`.
+This is then put into the `m_nCurrentFrame` variable in a 2D sprite descriptor
+(see <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a>),
+the remainder of which is filled in before being
+passed to the version of
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw`</a> that takes a pointer to a 2D sprite descriptor <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a> as a parameter.
+
+#### Moving
+
+`CGuard::Move` takes action based on the guard's current state, and calls
+`CGuard::ChangeState` to change state based on the player's
+position and vulnerability, and various
+<a href="../sage/index.html#sec3-2">event timers</a>.
+It finishes with a call to `CArmedObject::Move`.
+
+#### Collision Response
+
+`CGuard` has a collision response function `CGuard::CollisionResponse` that
+overrides `CArmedObject::CollisionResponse`. It takes care of collisions
+with a bullet, including blood spatter particle effect, reduction in health,
+and death if appropriate.
 
 \anchor sec4-2-5
 ### 4.2.5 Bullet Object
 
 The bullet object `CBullet` is declared in `Bullet.h` and defined in `Bullet.cpp`.
 It is derived from `CObject` (see \ref sec4-2-1 "Section 4.2.1").
+`CBullet` has a private member function `m_vVelocity`, which
+is used in `CBullet::Move` to change the bullet's position by
+an amout proportional to the velocity multiplied by frame time.
+Bullets die when colliding with the edges of the world or another
+object in `CBullet::CollisionResponse`, with the appropriate sound
+and particle effects (a puff of dust when colliding with the
+edge of the world, and a blood spatter when colliding with
+the player or the guard).
 
-`CCommon` contains a pointer `m_pParticleEngine` to a
-<a href="../sage/index.html#sec3-8">2D particle engine</a>
-to be used for static particle effects, that is, particle
-effects that do not move with a particular object.
+\anchor sec4-3
+## 4.3 The Object Manager
+
+The object manager `CObjectManager` is declared in `CObjectManager.h` and defined in `CObjectManager.cpp`.
+It is derived from <a href="../sage/class_sage_1_1_c_object_manager.html">`Sage::CObjectManager<CObject>`</a>.
 
 \anchor sec5
 # 5. What Next?
