@@ -60,7 +60,7 @@ and
       <td><center>F3</center></td>
       <td><center>-</center></td>
       <td><center>-</center></td>
-      <td>Toggle show bounds</td>
+      <td>Toggle show bounding circles</td>
     <tr>
       <td><center>F4</center></td>
       <td><center>-</center></td>
@@ -152,7 +152,7 @@ rest of this section.
 This section assumes that you have read and understood
 the documentation from 
 <a href="../sage/index.html">SAGE</a>
-and <a href="../blank">The Blank Game</a>.
+and <a href="../blank/index.html">The Blank Game</a>.
 
 \anchor sec4-2
 ## 4.1 Particle Engines
@@ -210,7 +210,7 @@ It is derived from `CObject` (see \ref sec4-2-1 "Section 4.2.1").
 Recall that the 
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw()`</a>
  function draws sprites with their center at the position specified by a parameter and optionally rotates the sprite about its center by another parameter. We saw this in action when drawing the text ring at the center of the window in the
-and <a href="../blank">The Blank Game</a>.
+and <a href="../blank/index.html">The Blank Game</a>.
 In this game the armed objects are the player and the guard, seen in \ref fig2 "Fig. 2". Notice that the sprites initially face along the positive X-axis.
 
 \anchor fig2
@@ -218,10 +218,10 @@ In this game the armed objects are the player and the guard, seen in \ref fig2 "
 
 These sprites will be drawn by `CArmedObject::Draw()`
 with the center of sprite's cap at the object's position and they should rotate about that point.
-In order to do this we need the vector offset from the center of the object to the center of the sprite, called the _center offset_ (see \ref fig3 "Figure 3").
+In order to do this we need the vector offset from the center of the object to the center of the sprite, called the _center offset_ (see \ref fig3 "Fig. 3").
 This will be stored in protected member variable `CArmedObject::m_vCenterOffset`.
 We will also animate a muzzle flash particle effect at the end of the gun barrel.
-To do this we need the vector offset from the center of the sprite to the end of the gun barrel, called the _gun offset_ (see also \ref fig3 "Figure 3").
+To do this we need the vector offset from the center of the sprite to the end of the gun barrel, called the _gun offset_ (see also \ref fig3 "Fig. 3").
 This will be stored in protected member variable `CArmedObject::m_vGunOffset`.
 
 \anchor fig3
@@ -332,7 +332,7 @@ that stores the guard's current state.
 As described in \ref sec2 "Section 2",
  hitting `F4` on the keyboard will toggle the
 drawing of white text describing the guard's current state.
-For example \ref fig3 "Figure 3" shows the guard in state
+For example \ref fig4 "Fig. 4" shows the guard in state
 `CGuard::eState::Scanning`.
 This text is drawn by calling the protected member function `CGuard::DrawState`
 from `CGuard::Draw`. `CGuard::DrawState` calls `CGuard::GetStateString`
@@ -342,8 +342,8 @@ that is then drawn to the screen by calling
 which is inherited by
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>. 
 
-\anchor fig3
-\image html scanning.png "Fig. 3: The guard showing scanning state." width=20%
+\anchor fig4
+\image html scanning.png "Fig. 4: The guard showing scanning state." width=20%
 
 `CGuard::ChangeState` is called whenever the guard's state is to be changed.
 It sets `m_eState` to the new state and sets various other variables
@@ -354,20 +354,31 @@ Instances of <a href="../sage/index.html#sec3-2">`Sage::CEventTimer`</a> pointed
 `CGuard::eState::Alert`, and
 `CGuard::eState::Scanning`, respectively, after the appropriate amount of time has passed.
 The guard moves out of state `CGuard::eState::Reloading` once all
-frames of the \ref reload-animation "reloading animation" have been displayed.
+frames of the \ref reload-animation "reloading animation" have been displayed. 
+
+\anchor fig5
+\image html guardstates.png "Fig. 5: The guard state machine." width=35%
+
+The guard state machine is shown in \ref fig5 "Fig. 5". The circles represent the
+four states. The arrow into the top state indicates that it is the initial state.
+The other arrows represent transitions between states and have labels indication
+the conditions required for a change of state along that transition. The blue arrows
+indicate Boolean conditions in the code. The green arrows indicate events that need
+to be triggered. The purple arrow are a combination of Boolean conditions and events.
+Recall that events trigger after a certain period of time.
 
 \anchor reload-animation
 #### Reload Animation
 
 Every time the guard files a bullet, it displays a reload animation as shown in
-\ref fig4 "Fig. 4". The animation frames are loaded from a _sprite sheet_
-as shown in \ref fig5 "Fig. 5".
+\ref fig6 "Fig. 6". The animation frames are loaded from a _sprite sheet_
+as shown in \ref fig7 "Fig. 7".
 
-\anchor fig4
-\image html reload.gif "Fig. 4: The guard reload animation."
+\anchor fig6
+\image html reload.gif "Fig. 6: The guard reload animation."
 
-\anchor fig5
-\image html sheet1.png "Fig. 5: The guard sprite sheet."  width=45%
+\anchor fig7
+\image html sheet1.png "Fig. 7: The guard sprite sheet."  width=45%
 
 All that has to be done to enable sprite animation is to modify `GameSettings.xml` to describe where the individual frames are on the sprite sheet, add code to 
 `CGame::LoadSprites` to load them in, and add code to `CGuard::Draw` function to
@@ -443,6 +454,85 @@ the player or the guard).
 
 The object manager `CObjectManager` is declared in `ObjectManager.h` and defined in `ObjectManager.cpp`.
 It is derived from <a href="../sage/class_sage_1_1_c_object_manager.html">`Sage::CObjectManager<CObject>`</a>.
+`CObjectManager::NarrowPhase` performs collision detection and response for two
+objects. It gets called once per pair of objects
+in <a href="../sage/class_sage_1_1_c_object_manager.html#a51d74fc1fb4e6379f119760b56b13185">`Sage::CObjectManager<CObject>::BroadPhase`</a>. If the bounding circles of the two objects
+overlap, then it calls both object's `CollisionResponse` functions, which
+by the power of virtual functions will be either
+`CObject::CollisionResponse`,
+`CPlayer::CollisionResponse`,
+`CGuard::CollisionResponse`, or
+`CBullet::CollisionResponse`,
+depending on the object type.
+Bounding circles have a radius of `CObject::m_fRadius` and are centered at
+`CObject::m_vPos`, that is, the object's center of rotation.
+As described in \ref sec2 "Section 2",
+ hitting `F3` on the keyboard will toggle the drawing of the guard's and the player's
+ collision circles as shown in \ref fig8 "Fig. 8".
+Note that since the bounding circle of the player and the guard are more-or-less
+tightly inscribed around their respective torsos,
+only bullet hits to the torso will count.
+
+\anchor fig8
+\image html boundingcircle.png "Fig. 8: The guard showing its collision circle." width=20%
+
+`CObjectManager::BroadPhase` calls 
+<a href="../sage/class_sage_1_1_c_object_manager.html#a51d74fc1fb4e6379f119760b56b13185">`Sage::CObjectManager<CObject>::BroadPhase`</a>
+to do object-object collision detection and response,
+then does collision detection and response for objects and the edges of the world,
+using `CObjectManager::AtWorldEdge` to detect the edges of the world from
+the width and height of the background sprite.
+
+`CObjectManager` also has a handy function `CObjectManager::Create` to instantiate
+objects and insert them into the object list. Most importantly,
+`CObjectManager::FireGun` fires a gun from an
+instance of `CArmedObject`  by creating a bullet object
+of the appropriate type and a muzzle flash particle effect
+at the exit of the gun barrel
+using `CArmedObject::GetViewVector` to find the direction that the gun is pointing
+and `CArmedObject::GetGunOffset` (see \ref fig3 "Fig. 3")
+to get the (rotated) offset from the sprite center
+to the end of the gun barrel.
+
+\anchor sec4-4
+## 4.4 Main Changes to CGame
+
+\anchor sec4-4-1
+### 4.4.1 Processing Inputs
+
+In addition to the keyboard handler `CGame::KeyboardHandler` modified
+from <a href="../blank/index.html">The Blank Game</a>, `CGame` now has a mouse
+handler `CGame::MouseHandler` and an XBox controller handler
+`CGame::ControllerHandler`
+(refer back to \ref sec2 "Section 2" for the mouse and controller input mappings).
+The former uses a pointer to a mouse handler `m_pMouse`
+and the latter uses a pointer to a controller handler `m_pController`,
+both of which are inherited from
+<a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>.
+
+\anchor sec4-4-2
+### 4.4.2 Follow Camera
+
+In <a href="../blank/index.html">The Blank Game</a> you probably weren't even aware
+of the camera, which is centered above the center of the background along the Z axis.
+Now function `CGame::FollowCamera` is centered above the player, except when the player
+object is close to the top, bottom, left, or right of the world, in which
+case the camera stops with the edge of the background image at the corresponding
+edge of the window. The new position of the camera is computed in local variable
+`vCameraPos` and passed to the renderer using 
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#acfb173389d223b51774f5c0500a88aad">`Sage::CSpriteRenderer::SetCameraPos`</a>.
+`CGame::FollowCamera` is called once per frame in `CGame::ProcessFrame`.
+
+\anchor sec4-4-3
+### 4.4.2 Game State
+
+`CGame::ProcessState` is slightly more complicated than it was in
+<a href="../blank/index.html">The Blank Game</a>.
+The enumerated type `eGameState` in `GameDefines.h` now has a third
+member `eGameState::Waiting`. The game will be in this state for
+a few seconds after the game has been completed by the death and
+death animation of either the player of the guard, after which the
+game will be restarted and again enter state `eGameState::Playing`.
 
 \anchor sec5
 # 5. What Next?
