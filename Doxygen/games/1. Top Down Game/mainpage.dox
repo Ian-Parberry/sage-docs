@@ -257,7 +257,7 @@ and are covered below.
 The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
 It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
 
-#### Vulnerability
+#### 4.2.3.1 Vulnerability
 
 The player object is said to be _vulnerable_ to attack from the guard object
 whenever the player fires their gun, and for a short period
@@ -274,7 +274,7 @@ vulnerable until the event timer `*m_pEndVulnerableEvent`
 (an instance of <a href="../sage/index.html#sec3-2">`Sage::CEventTimer`</a>)
 triggers.
 
-#### Handling Player Inputs
+#### 4.2.3.2 Responding to Player Inputs
 
 Device inputs come to the player object via a public member function
 `CPlayer::SetMovement`, which has a parameter of type
@@ -314,7 +314,7 @@ number generator pointed to by `m_pRandom`
 an instance of
 <a href="../sage/class_sage_1_1_c_random.html">`Sage::CRandom`</a>.
 
-#### The State Machine
+#### 4.2.4.1 The State Machine
 
 `CGuard` includes the private definition of an enumerated type `CGuard::eState`,
 consisting of the following states.
@@ -357,7 +357,7 @@ The guard moves out of state `CGuard::eState::Reloading` once all
 frames of the \ref reload-animation "reloading animation" have been displayed. 
 
 \anchor fig5
-\image html guardstates.png "Fig. 5: The guard state machine." width=35%
+\image html guardstates.png "Fig. 5: The guard state machine." width=40%
 
 The guard state machine is shown in \ref fig5 "Fig. 5". The circles represent the
 four states. The arrow into the top state indicates that it is the initial state.
@@ -368,7 +368,7 @@ to be triggered. The purple arrow are a combination of Boolean conditions and ev
 Recall that events trigger after a certain period of time.
 
 \anchor reload-animation
-#### Reload Animation
+#### 4.2.4.2 Reload Animation
 
 Every time the guard files a bullet, it displays a reload animation as shown in
 \ref fig6 "Fig. 6". The animation frames are loaded from a _sprite sheet_
@@ -420,7 +420,7 @@ the remainder of which is filled in before being
 passed to the version of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw`</a> that takes a pointer to a 2D sprite descriptor <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a> as a parameter.
 
-#### Moving
+#### 4.2.4.3 Moving
 
 `CGuard::Move` takes action based on the guard's current state, and calls
 `CGuard::ChangeState` to change state based on the player's
@@ -428,7 +428,7 @@ position and vulnerability, and various
 <a href="../sage/index.html#sec3-2">event timers</a>.
 It finishes with a call to `CArmedObject::Move`.
 
-#### Collision Response
+#### 4.2.4.4 Collision Response
 
 `CGuard` has a collision response function `CGuard::CollisionResponse` that
 overrides `CArmedObject::CollisionResponse`. It takes care of collisions
@@ -514,11 +514,27 @@ both of which are inherited from
 ### 4.4.2 Follow Camera
 
 In <a href="../blank/index.html">The Blank Game</a> you probably weren't even aware
-of the camera, which is centered above the center of the background along the Z axis.
-Now function `CGame::FollowCamera` is centered above the player, except when the player
+of the camera, which is positioned above the center of the background along the Z axis
+(see \ref fig9 "Fig. 9"). Everything in the _view frustum_,
+the pyramid drawn with its apex at the camera position in \ref fig9 "Fig. 9",
+is projected onto the window, so that everything appears to be in 2D, not 3D.
+
+\anchor fig9
+\image html camera0.png "Fig. 9: The camera in the Blank Game." width=80%
+
+Now function `CGame::FollowCamera` positions the camera above the player (see \ref fig10 "Fig. 10),
+except when the player
 object is close to the top, bottom, left, or right of the world, in which
 case the camera stops with the edge of the background image at the corresponding
-edge of the window. The new position of the camera is computed in local variable
+edge of the window (see \ref fig11 "Fig. 11). 
+
+\anchor fig10
+\image html camera1.png "Fig. 10: The follow camera." width=80%
+
+\anchor fig11
+\image html camera2.png "Fig. 11: The follow camera at the edge of the world." width=80%
+
+The new position of the camera is computed in local variable
 `vCameraPos` and passed to the renderer using 
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#acfb173389d223b51774f5c0500a88aad">`Sage::CSpriteRenderer::SetCameraPos`</a>.
 `CGame::FollowCamera` is called once per frame in `CGame::ProcessFrame`.
@@ -533,6 +549,16 @@ member `eGameState::Waiting`. The game will be in this state for
 a few seconds after the game has been completed by the death and
 death animation of either the player of the guard, after which the
 game will be restarted and again enter state `eGameState::Playing`.
+
+\anchor fig12
+\image html gamestates.png "Fig. 12: The game state machine." width=30%
+
+The game state machine is shown in \ref fig9 "Fig. 12". The circles represent the
+three states. The arrow into the top state indicates that it is the initial state.
+The other arrows represent transitions between states and have labels indication
+the conditions required for a change of state along that transition. The blue arrows
+indicate Boolean conditions in the code. The green arrows indicate events that need
+to be triggered.
 
 \anchor sec5
 # 5. What Next?
