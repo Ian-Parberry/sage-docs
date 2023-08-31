@@ -26,15 +26,17 @@ impact (a blood spatter or a small cloud of dust).
 The guard rotates but does not move from the bunker. 
 
 \anchor fig1
-\image html screenshot.png "Fig. 1: A screenshot of the Top-Down Game." width=50%
+\image html screenshot.png "Fig. 1: A screenshot of the Top Down Game." width=50%
 
-The remainder of this page is divided into four sections.
+The remainder of this page is divided into five sections.
 \ref sec2 "Section 2" lists the controls
 and their corresponding actions,
 \ref sec3 "Section 3" tells you how to build it,
-\ref sec4 "Section 4" gives a breakdown of the code,
+\ref sec4 "Section 4" gives you a list of actions to take in the game to see some of its
+important features,
+\ref sec5 "Section 5" gives a breakdown of the code,
 and
-\ref sec5 "Section 5" addresses the question "what next?".
+\ref sec6 "Section 6" addresses the question "what next?".
 
 \anchor sec2
 # 2. Controls
@@ -128,25 +130,78 @@ and
 rotation to occur.
 
 \anchor sec3
-# 3. How to Build
+# 3. Building the Game
 
 This code uses <a href="../sage/index.html">SAGE</a>.
 Make sure that you have followed the
 <a href="../install/index.html">SAGE Installation Instructions</a>.
-Navigate to the folder `1. Top Down Game` in your
-copy of the `sage-games` repository.
-Run `checkenv.bat` to verify that you have set the environment
+Navigate to the folder <span style="background-color:#D8E4D8;">`1. Top Down Game`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-games`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
 variables correctly.
-Open `Top Down Game.sln` with Visual Studio and build the Release configuration.
-The Release executable file `Top Down Game.exe`
+Open <span style="background-color:#D8E4D8;">`Top Down Game.sln`</span>
+ with Visual Studio and build the Release configuration.
+The Release executable file <span style="background-color:#D8E4D8;">`Top Down Game.exe`</span>
 will appear. 
-Alternatively, run `Build.bat` to build both Release and Debug configurations. 
-
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
 
 \anchor sec4
-# 4. Code Breakdown
+# 4. Game Play
 
-Open `Top Down Game.sln` in Visual Studio and examine the
+Run <span style="background-color:#D8E4D8;">`Top Down Game.exe`</span>
+and do the following: 
+
+<ol>
+<li>
+Move the mouse cursor into the window. Notice that the player
+character in the bottom left corner of the window rotates to face the mouse pointer.
+
+<li>
+With the mouse pointer over the guard, click the left mouse button to fire your
+gun a dozen or more times. Notice the muzzle flash from your gun and the blood
+spatter from the guard. At your first shot, the guard will become aware of you
+and rotate to start shooting at you. 
+After the guard dies you will see its death animation, after
+which the game will restart.
+
+<li>
+Repeat the previous step with bounding circles and NPC state turned on
+(toggle these with `F3` and `F4`, respectively). Notice that blood spatters
+are centered on the point of impact between a bullet and a bounding circle.
+Observe the guard's state changes during this process.
+
+<li>
+Restart the game by hitting the `Backspace` key. Turn on God mode using the `G`
+key so that the player does not die. Move the player character toward the guard
+by placing the mouse cursor over the guard and keeping the `W` key down.
+Notice the following:
+
+<ol type="a">
+<li>
+The camera moves when you get far enough from the edge of the window.
+<li>
+When you get close to the guard it will become aware of you
+and rotate to start shooting at you.
+<li> 
+Observe what happens when your bounding circle
+hits the guard's bounding circle. While this will never happen in a real game
+(without God mode) because the player will die before getting there,
+it's best to have code that handles it for safety.
+Examine the code to find out why this happens.
+</ol>
+
+<li>
+Use the mouse and the `W` key to move the player to all four edges of the world.
+Observe what happens, and examine the code to find out why it happens.
+Fire the gun at the edge of the world to see the collision response particle effect.
+</ol>
+
+\anchor sec5
+# 5. Code Breakdown
+
+Open <span style="background-color:#D8E4D8;">`Top Down Game.sln`</span> in Visual Studio and examine the
 code in the editor while you read the
 rest of this section.
 This section assumes that you have read and understood
@@ -154,19 +209,39 @@ the documentation from
 <a href="../sage/index.html">SAGE</a>
 and <a href="../blank/index.html">The Blank Game</a>.
 
-\anchor sec4-2
-## 4.1 Particle Engines
+\anchor sec5-1
+## 5.1 Particle Engines
 
 `CCommon` contains a pointer `m_pParticleEngine` to a
 <a href="../sage/index.html#sec3-8">2D particle engine</a>
 to be used for static particle effects, that is, particle
 effects that do not move with a particular object.
 
-\anchor sec4-2
-## 4.2 Game Objects
+\anchor sec5-2
+## 5.2 Game Objects
 
-\anchor sec4-2-1
-### 4.2.1 Base Game Object
+There are five kinds of game objects.
+The \ref sec5-2-1 "base game object" adds properties and functionality to
+<a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a> that are
+required by all objects in this game. 
+Note that `CObject`
+is provided as a template parameter to `CObjectManager` and thus to
+<a href="../sage/class_sage_1_1_c_object_manager.html">`Sage::CObjectManager`</a>,
+which means that its object list will be an array of pointers to `CObject`.
+Therefore, when object member functions are called from the object manager
+virtual functions will be used to elevate the call to the correct derived class.
+
+The \ref sec5-2-2 "armed object"  `CArmedObject`
+adds to `CObject` the properties and functionality
+of carrying and firing a gun, which applies to both the player and the guard.
+The 
+\ref sec5-2-3 "player object" `CPlayer` adds code to `CArmedObject`
+for processing game inputs from the keyboard, mouse, and controller.
+The \ref sec5-2-4 "guard object" `CGuard` adds some AI code to `CArmedObject`.
+The \ref sec5-2-5 "bullet object" `CBullet` adds some code to `CObject` for bullets.
+
+\anchor sec5-2-1
+### 5.2.1 Base Game Object
 
 The base game object `CObject` is declared in `Object.h` and defined in `Object.cpp`.
 It is derived from <a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>.
@@ -202,11 +277,11 @@ will call `CObject::CollisionResponse` as a default.
 for collisions with the edge of the world, 
 and `CObjectManager::NarrowPhase` for collisions with other objects.
 
-\anchor sec4-2-2
-### 4.2.2 Armed Object
+\anchor sec5-2-2
+### 5.2.2 Armed Object
 
 The armed object `CArmedObject` is declared in `ArmedObject.h` and defined in `ArmedObject.cpp`.
-It is derived from `CObject` (see \ref sec4-2-1 "Section 4.2.1").
+It is derived from `CObject` (see \ref sec5-2-1 "Section 5.2.1").
 Recall that the 
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw()`</a>
  function draws sprites with their center at the position specified by a parameter and optionally rotates the sprite about its center by another parameter. We saw this in action when drawing the text ring at the center of the window in the
@@ -243,7 +318,7 @@ muzzle position along with
 Another `CArmedObject` member function of interest is `CArmedObject::RotateTowards()`, which takes as parameter a 2D vector called the _target_ and rotates the sprite so that the gun barrel is closer to pointing at the target, returning `true` if it is pointing "close enough" to it. 
 See the full description of `CArmedObject::RotateTowards()` for more details
 on how this is done.
-`CArmedObject::RotateTowards()` will be used to smoothly rotate the player to face the mouse pointer (see \ref sec4-2-3 "Section 4.2.3") and for the guard to smoothly rotate to face the player under control of its AI (see \ref sec4-2-4 "Section 4.2.4").
+`CArmedObject::RotateTowards()` will be used to smoothly rotate the player to face the mouse pointer (see \ref sec5-2-3 "Section 5.2.3") and for the guard to smoothly rotate to face the player under control of its AI (see \ref sec5-2-4 "Section 5.2.4").
 
 Function `CArmedObject::DeathFX()` creates some particle effects to be played
 after the object dies. Note that this function uses the global particle
@@ -251,13 +326,13 @@ engine `*m_pParticleEngine` inherited from `CCommon`, not the local particle eng
 `*m_pLocalParticleEngine` because the particle effects must persist after the object has been deleted. Firstly we create a particle that looks just like the armed object itself which fades out over a second's elapsed time and a skeleton sprite of type `eSprite::Skeleton` that fades in and out and moves to the upper left. `CArmedObject::DeathFX()` will be called from the collision response functions of `CPlayer` and `CGuard`, which will be derived from `CArmedObject`
 and are covered below.
 
-\anchor sec4-2-3
-### 4.2.3 Player Object
+\anchor sec5-2-3
+### 5.2.3 Player Object
 
 The player object `CPlayer` is declared in `Player.h` and defined in `Player.cpp`.
-It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
+It is derived from `CArmedObject` (see \ref sec5-2-2 "Section 5.2.2").
 
-#### 4.2.3.1 Vulnerability
+#### 5.2.3.1 Vulnerability
 
 The player object is said to be _vulnerable_ to attack from the guard object
 whenever the player fires their gun, and for a short period
@@ -274,7 +349,7 @@ vulnerable until the event timer `*m_pEndVulnerableEvent`
 (an instance of <a href="../sage/index.html#sec3-2">`Sage::CEventTimer`</a>)
 triggers.
 
-#### 4.2.3.2 Responding to Player Inputs
+#### 5.2.3.2 Responding to Player Inputs
 
 Device inputs come to the player object via a public member function
 `CPlayer::SetMovement`, which has a parameter of type
@@ -287,7 +362,7 @@ overrides `CObject::Move`.
 in `CGame::MouseHandler` by calling
 `CPlayer::LookAt`.
 `CPlayer::Move` will call `CArmedObject::RotateTowards`
-(see also \ref rotatetowards "Section 4.2.2")
+(see also \ref rotatetowards "Section 5.2.2")
 to rotate a small amount in the direction of `m_vDesiredLookAtPt`.
 Finally, `CPlayer::Move` ends player vulnerability is the
 end vulnerable event is triggered, calls `CArmedObject::Move`
@@ -296,11 +371,11 @@ and sets the sound player's
 `Sage::CSound::SetListenerPos`</a>
 function to make sounds relative to the player's position in 2D space.
 
-\anchor sec4-2-4
-### 4.2.4 Guard Object
+\anchor sec5-2-4
+### 5.2.4 Guard Object
 
 The guard object `CGuard` is declared in `Guard.h` and defined in `Guard.cpp`.
-It is derived from `CArmedObject` (see \ref sec4-2-2 "Section 4.2.2").
+It is derived from `CArmedObject` (see \ref sec5-2-2 "Section 5.2.2").
 `CGuard` is different from `CPlayer` in that it has code
 for autonomous actions instead of code for responding
 to player inputs. It also rotates to face the player
@@ -314,7 +389,7 @@ number generator pointed to by `m_pRandom`
 an instance of
 <a href="../sage/class_sage_1_1_c_random.html">`Sage::CRandom`</a>.
 
-#### 4.2.4.1 The State Machine
+#### 5.2.4.1 The State Machine
 
 `CGuard` includes the private definition of an enumerated type `CGuard::eState`,
 consisting of the following states.
@@ -368,7 +443,7 @@ to be triggered. The purple arrow are a combination of Boolean conditions and ev
 Recall that events trigger after a certain period of time.
 
 \anchor reload-animation
-#### 4.2.4.2 Reload Animation
+#### 5.2.4.2 Reload Animation
 
 Every time the guard files a bullet, it displays a reload animation as shown in
 \ref fig6 "Fig. 6". The animation frames are loaded from a _sprite sheet_
@@ -420,7 +495,7 @@ the remainder of which is filled in before being
 passed to the version of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30">`Sage::CSpriteRenderer::Draw`</a> that takes a pointer to a 2D sprite descriptor <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a> as a parameter.
 
-#### 4.2.4.3 Moving
+#### 5.2.4.3 Moving
 
 `CGuard::Move` takes action based on the guard's current state, and calls
 `CGuard::ChangeState` to change state based on the player's
@@ -428,18 +503,18 @@ position and vulnerability, and various
 <a href="../sage/index.html#sec3-2">event timers</a>.
 It finishes with a call to `CArmedObject::Move`.
 
-#### 4.2.4.4 Collision Response
+#### 5.2.4.4 Collision Response
 
 `CGuard` has a collision response function `CGuard::CollisionResponse` that
 overrides `CArmedObject::CollisionResponse`. It takes care of collisions
 with a bullet, including blood spatter particle effect, reduction in health,
 and death if appropriate.
 
-\anchor sec4-2-5
-### 4.2.5 Bullet Object
+\anchor sec5-2-5
+### 5.2.5 Bullet Object
 
 The bullet object `CBullet` is declared in `Bullet.h` and defined in `Bullet.cpp`.
-It is derived from `CObject` (see \ref sec4-2-1 "Section 4.2.1").
+It is derived from `CObject` (see \ref sec5-2-1 "Section 5.2.1").
 `CBullet` has a private member function `m_vVelocity`, which
 is used in `CBullet::Move` to change the bullet's position by
 an amout proportional to the velocity multiplied by frame time.
@@ -449,8 +524,8 @@ and particle effects (a puff of dust when colliding with the
 edge of the world, and a blood spatter when colliding with
 the player or the guard).
 
-\anchor sec4-3
-## 4.3 The Object Manager
+\anchor sec5-3
+## 5.3 The Object Manager
 
 The object manager `CObjectManager` is declared in `ObjectManager.h` and defined in `ObjectManager.cpp`.
 It is derived from <a href="../sage/class_sage_1_1_c_object_manager.html">`Sage::CObjectManager<CObject>`</a>.
@@ -484,7 +559,11 @@ using `CObjectManager::AtWorldEdge` to detect the edges of the world from
 the width and height of the background sprite.
 
 `CObjectManager` also has a handy function `CObjectManager::Create` to instantiate
-objects and insert them into the object list. Most importantly,
+objects and insert them into the object list. In
+<a href="../blank/index.html">The Blank Game</a> this was handled in
+<a href="../blank/class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e">CGame::BeginGame</a>
+but it makes sense to do it in the object manager now.
+
 `CObjectManager::FireGun` fires a gun from an
 instance of `CArmedObject`  by creating a bullet object
 of the appropriate type and a muzzle flash particle effect
@@ -492,13 +571,25 @@ at the exit of the gun barrel
 using `CArmedObject::GetViewVector` to find the direction that the gun is pointing
 and `CArmedObject::GetGunOffset` (see \ref fig3 "Fig. 3")
 to get the (rotated) offset from the sprite center
-to the end of the gun barrel.
+to the end of the gun barrel. To make things a little harder a small random
+deflection is added to each bullet so that consecutive bullets follow
+slightly different paths. Pseudo-randomness is provided an the instance of
+<a href="../sage/class_sage_1_1_c_random.html">`Sage::CRandom`</a>,
+a pointer to which is inherited
+from <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>.
 
-\anchor sec4-4
-## 4.4 Main Changes to CGame
+\anchor sec5-4
+## 5.4 Changes to CGame
 
-\anchor sec4-4-1
-### 4.4.1 Processing Inputs
+The most significant changes to CGame are for
+\ref sec5-4-1 "processing inputs" from the mouse and controller,
+a \ref sec5-4-2 "follow camera" that moves the window with the player,
+and a new \ref sec5-4-3 "game state" that allows the game to restart
+after a few seconds delay to allow death animations to complete
+when the game is over.
+
+\anchor sec5-4-1
+### 5.4.1 Processing Inputs
 
 In addition to the keyboard handler `CGame::KeyboardHandler` modified
 from <a href="../blank/index.html">The Blank Game</a>, `CGame` now has a mouse
@@ -510,8 +601,8 @@ and the latter uses a pointer to a controller handler `m_pController`,
 both of which are inherited from
 <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>.
 
-\anchor sec4-4-2
-### 4.4.2 Follow Camera
+\anchor sec5-4-2
+### 5.4.2 Follow Camera
 
 In <a href="../blank/index.html">The Blank Game</a> you probably weren't even aware
 of the camera, which is positioned above the center of the background along the Z axis
@@ -520,7 +611,7 @@ the pyramid drawn with its apex at the camera position in \ref fig9 "Fig. 9",
 is projected onto the window, so that everything appears to be in 2D, not 3D.
 
 \anchor fig9
-\image html camera0.png "Fig. 9: The camera in the Blank Game." width=80%
+\image html camera0.png "Fig. 9: The default camera in the Blank Game." width=80%
 
 Now function `CGame::FollowCamera` positions the camera above the player (see \ref fig10 "Fig. 10),
 except when the player
@@ -529,18 +620,18 @@ case the camera stops with the edge of the background image at the corresponding
 edge of the window (see \ref fig11 "Fig. 11). 
 
 \anchor fig10
-\image html camera1.png "Fig. 10: The follow camera." width=80%
+\image html camera1.png "Fig. 10: The follow camera keeps the player at the center of the window whenever possible." width=80%
 
 \anchor fig11
-\image html camera2.png "Fig. 11: The follow camera at the edge of the world." width=80%
+\image html camera2.png "Fig. 11: The follow camera when the player is near an edge of the world." width=80%
 
 The new position of the camera is computed in local variable
 `vCameraPos` and passed to the renderer using 
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html#acfb173389d223b51774f5c0500a88aad">`Sage::CSpriteRenderer::SetCameraPos`</a>.
 `CGame::FollowCamera` is called once per frame in `CGame::ProcessFrame`.
 
-\anchor sec4-4-3
-### 4.4.2 Game State
+\anchor sec5-4-3
+### 5.4.3 Game State
 
 `CGame::ProcessState` is slightly more complicated than it was in
 <a href="../blank/index.html">The Blank Game</a>.
@@ -560,8 +651,8 @@ the conditions required for a change of state along that transition. The blue ar
 indicate Boolean conditions in the code. The green arrows indicate events that need
 to be triggered.
 
-\anchor sec5
-# 5. What Next?
+\anchor sec6
+# 6. What Next?
 
 Next, take a look at the <a href="../topdowntiled">Top Down Tiled Game</a>.
 

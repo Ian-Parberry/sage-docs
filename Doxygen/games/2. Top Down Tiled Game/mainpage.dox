@@ -14,15 +14,16 @@ multiple levels with multiple guards.
 \image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=30%
 
 The remainder of this page is divided into four sections.
-\ref section2 "Section 2" lists the controls
+\ref sec2 "Section 2" lists the controls
 and their corresponding actions,
-\ref section3 "Section 3" is a reminder to install SAGE, the Simple
-Academic Game Engine,
-\ref section4 "Section 4" gives a breakdown of the code for the Top Down Tiled Game,
+\ref sec3 "Section 3" tells you how to build it,
+\ref sec4 "Section 4" gives you a list of actions to take in the game to see some of its
+important features,
+\ref sec5 "Section 5" gives a breakdown of the code,
 and
-\ref section5 "Section 5" addresses the question "what next?".
+\ref sec6 "Section 6" addresses the question "what next?".
 
-\anchor section2
+\anchor sec2
 # 2. Controls
 
 <center>
@@ -55,12 +56,12 @@ and
     <tr>
       <td><center>-</center></td>
       <td>Right thumb</td>
-      <td>Move left</td>
+      <td>Move left*</td>
       <td>Rotate counterclockwise</td>
     <tr>
       <td><center>-</center></td>
       <td>Right thumb</td>
-      <td>Move right</td>
+      <td>Move right*</td>
       <td>Rotate clockwise</td> 
     <tr>
       <td><center>Space</center></td>
@@ -110,36 +111,112 @@ and
   </table>
 </center>
 
-\anchor section3
-# 3. SAGE
+ `*` Note that the mouse cursor must be inside the game window for player
+rotation to occur.
+
+\anchor sec3
+# 3. Building the Game
 
 This code uses <a href="../sage/index.html">SAGE</a>.
 Make sure that you have followed the
 <a href="../install/index.html">SAGE Installation Instructions</a>.
-Navigate to the folder `2. Top Down Tiled Game` in your
-copy of the `sage-games` repository.
-Run `checkenv.bat` to verify that you have set the environment
+Navigate to the folder <span style="background-color:#D8E4D8;">`2. Top Down Tiled Game`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-games`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
 variables correctly.
-Run `Build.bat`. The Release executable file `Top Down Game.exe`
-will appear. When you run it you will see something similar to
-\ref fig1 "Fig. 1".
-Use the commands listed in \ref section2 "Section 2" to kill the
-guards before they kill you. There are three levels.
+Open <span style="background-color:#D8E4D8;">`Top Down Tiled Game.sln`</span>
+ with Visual Studio and build the Release configuration.
+The Release executable file <span style="background-color:#D8E4D8;">`Top Down Tiled Game.exe`</span>
+will appear. 
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
 
-\anchor section4
-# 4. Code Breakdown
+\anchor sec4
+# 4. Game Play
 
-Open `Top Down Tiled Game.sln` in Visual Studio and examine the
-code in the editor while you read the
-rest of this section, which is divided into subsections.
-
-Changes from <a href="../topdown">The Top Down  Game</a> include ...
+Run <span style="background-color:#D8E4D8;">`Top Down Tiled Game.exe`</span>
+and do the following: 
 
 UNDER CONSTRUCTION
 
-\anchor section5
-# 5. What Next?
+\anchor sec5
+# 5. Code Breakdown
 
-Next, take a look at the <a href="../platformer">Tiled Platformer</a>.
+Open <span style="background-color:#D8E4D8;">`Top Down Tiled Game.sln`</span> in Visual Studio and examine the
+code in the editor while you read the
+rest of this section.
+This section assumes that you have read and understood
+the documentation from 
+<a href="../sage/index.html">SAGE</a>,
+<a href="../blank/index.html">The Blank Game</a>,
+and <a href="../topdown/index.html">The Top Down Game</a>.
+
+Changes from <a href="../topdown/index.html">The Top Down Game</a> include ...
+
+\anchor sec5-1
+## 5.1 The Tile Manager
+
+The tile manager `CTileManager` is declared in `TileManager.h` and defined in `TileManager.cpp`.
+It is derived from 
+<a href="../docs/sage/class_sage_1_1_c_settings.html">`Sage::CSettings`</a>
+and `CCommon`.
+The tile manager's responsibilities include
+reading the current level from a text file
+in <span style="background-color:#D8E4D8;">`Media\Maps`</span> and interpreting it to `CGame`
+to specify the background image and
+initial object positions.
+
+The tile manager header file `TileManager.h` also includes the a
+declaration for an _object descriptor_ `CObjectDesc` that will be used to
+encapsulate properties of a game object interpreted from the map file for
+transfer to the object manager.
+
+\anchor sec5-1-1
+## 5.1.1 Map File Format
+
+The map files consist of upper and lower case letters in which
+each letter represents a background tile and/or the initial placement
+for a game object, and each line represents a row of tiles and/or objects.
+The letters are interpreted as follows.
+`W` represents a wall tile.
+`F` represents a floor tile. 
+Upper case characters `U`, `D`, `L`, or `R` represent the player
+character oriented with its gun pointing
+up, down, left, or right, respectively.
+There should be only one of these in the file.
+Lower case characters `u`, `d`, `l`, or `r` represent a guard
+character oriented with its gun pointing
+up, down, left, or right, respectively.
+There may be more than one of these in the file.
+The player and guard characters are assumed to be on a floor tile.
+For example,
+the file <span style="background-color:#D8E4D8;">`Media\Maps\small.txt`</span>
+contains the specification for the
+map shown in \ref fig1 "Fig. 1", as follows:
+
+    WWWWWWWWWWWWWWWW
+    WFFFFFFWFFFFFFFW
+    WFFFFFFWFFFFFdFW
+    WFFFFFFFFFFFFFFW
+    WFFFFFFFFFFFFFFW
+    WFFFFFFWFFFFFFFW
+    WFFFFFFWFFFFFFFW
+    WWWFFWWWWWWWFFFW
+    WFFFFFFFFFFWFFFW
+    WFFFFFFFFFFWFFFW
+    WFFFFFFFFFFWFFFW
+    WFFFFFFFFFFWFFFW
+    WFFFFFFFFFFWFFFW
+    WFFFUFFFFFFFFFFW
+    WFFFFFFFFFFFFFFW
+    WWWWWWWWWWWWWWWW
+    
+
+
+\anchor sec6
+# 6. What Next?
+
+Next, take a look at the <a href="../platformer/index.html">Tiled Platformer</a>.
 
 **/

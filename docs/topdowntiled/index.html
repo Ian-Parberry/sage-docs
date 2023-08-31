@@ -84,8 +84,8 @@ $(function() {
 <img src="screenshot.png" alt="" width="30%"/>
 <div class="caption">
 Fig. 1: A screenshot of the Top Down Tiled Game.</div></div>
-<p>The remainder of this page is divided into four sections. <a class="el" href="index.html#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="index.html#section3">Section 3</a> is a reminder to install SAGE, the Simple Academic Game Engine, <a class="el" href="index.html#section4">Section 4</a> gives a breakdown of the code for the Top Down Tiled Game, and <a class="el" href="index.html#section5">Section 5</a> addresses the question "what next?".</p>
-<p><a class="anchor" id="section2"></a></p><h1>2. Controls</h1>
+<p>The remainder of this page is divided into four sections. <a class="el" href="index.html#sec2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="index.html#sec3">Section 3</a> tells you how to build it, <a class="el" href="index.html#sec4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="index.html#sec5">Section 5</a> gives a breakdown of the code, and <a class="el" href="index.html#sec6">Section 6</a> addresses the question "what next?".</p>
+<p><a class="anchor" id="sec2"></a></p><h1>2. Controls</h1>
 <center> <table class="doxtable">
 <tr>
 <td><center><b>Keyboard</b></center> </td><td><center><b>Controller</b></center> </td><td><center><b>Mouse</b></center> </td><td><center><b>Action</b></center> </td></tr>
@@ -98,9 +98,9 @@ Fig. 1: A screenshot of the Top Down Tiled Game.</div></div>
 <tr>
 <td><center>F4</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Toggle show NPC state </td></tr>
 <tr>
-<td><center>-</center> </td><td>Right thumb </td><td>Move left </td><td>Rotate counterclockwise </td></tr>
+<td><center>-</center> </td><td>Right thumb </td><td>Move left* </td><td>Rotate counterclockwise </td></tr>
 <tr>
-<td><center>-</center> </td><td>Right thumb </td><td>Move right </td><td>Rotate clockwise </td></tr>
+<td><center>-</center> </td><td>Right thumb </td><td>Move right* </td><td>Rotate clockwise </td></tr>
 <tr>
 <td><center>Space</center> </td><td>Right button </td><td>Left button </td><td>Shoot </td></tr>
 <tr>
@@ -120,14 +120,37 @@ Fig. 1: A screenshot of the Top Down Tiled Game.</div></div>
 <tr>
 <td><center>Esc</center> </td><td><center>-</center> </td><td><center>-</center> </td><td>Exit </td></tr>
 </table>
-</center><p><a class="anchor" id="section3"></a></p><h1>3. SAGE</h1>
-<p>This code uses <a href="../sage/index.html">SAGE</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a>. Navigate to the folder <code>2. Top Down Tiled Game</code> in your copy of the <code>sage-games</code> repository. Run <code>checkenv.bat</code> to verify that you have set the environment variables correctly. Run <code>Build.bat</code>. The Release executable file <code>Top Down Game.exe</code> will appear. When you run it you will see something similar to <a class="el" href="index.html#fig1">Fig. 1</a>. Use the commands listed in <a class="el" href="index.html#section2">Section 2</a> to kill the guards before they kill you. There are three levels.</p>
-<p><a class="anchor" id="section4"></a></p><h1>4. Code Breakdown</h1>
-<p>Open <code>Top Down Tiled Game.sln</code> in Visual Studio and examine the code in the editor while you read the rest of this section, which is divided into subsections.</p>
-<p>Changes from <a href="../topdown">The Top Down Game</a> include ...</p>
+</center><p><code>*</code> Note that the mouse cursor must be inside the game window for player rotation to occur.</p>
+<p><a class="anchor" id="sec3"></a></p><h1>3. Building the Game</h1>
+<p>This code uses <a href="../sage/index.html">SAGE</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>2. Top Down Tiled Game</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-games</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Top Down Tiled Game.sln</code></span> with Visual Studio and build the Release configuration. The Release executable file <span style="background-color:#D8E4D8;"><code>Top Down Tiled Game.exe</code></span> will appear. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
+<p><a class="anchor" id="sec4"></a></p><h1>4. Game Play</h1>
+<p>Run <span style="background-color:#D8E4D8;"><code>Top Down Tiled Game.exe</code></span> and do the following:</p>
 <p>UNDER CONSTRUCTION</p>
-<p><a class="anchor" id="section5"></a></p><h1>5. What Next?</h1>
-<p>Next, take a look at the <a href="../platformer">Tiled Platformer</a>. </p>
+<p><a class="anchor" id="sec5"></a></p><h1>5. Code Breakdown</h1>
+<p>Open <span style="background-color:#D8E4D8;"><code>Top Down Tiled Game.sln</code></span> in Visual Studio and examine the code in the editor while you read the rest of this section. This section assumes that you have read and understood the documentation from <a href="../sage/index.html">SAGE</a>, <a href="../blank/index.html">The Blank Game</a>, and <a href="../topdown/index.html">The Top Down Game</a>.</p>
+<p>Changes from <a href="../topdown/index.html">The Top Down Game</a> include ...</p>
+<p><a class="anchor" id="sec5-1"></a></p><h2>5.1 The Tile Manager</h2>
+<p>The tile manager <code><a class="el" href="class_c_tile_manager.html" title="Tile manager.">CTileManager</a></code> is declared in <code><a class="el" href="_tile_manager_8h.html" title="Interface for the tile manager CTileManager.">TileManager.h</a></code> and defined in <code><a class="el" href="_tile_manager_8cpp.html" title="Code for the tile manager CTileManager.">TileManager.cpp</a></code>. It is derived from <a href="../docs/sage/class_sage_1_1_c_settings.html"><code>Sage::CSettings</code></a> and <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code>. The tile manager's responsibilities include reading the current level from a text file in <span style="background-color:#D8E4D8;"><code>Media\Maps</code></span> and interpreting it to <code><a class="el" href="class_c_game.html" title="The game class.">CGame</a></code> to specify the background image and initial object positions.</p>
+<p>The tile manager header file <code><a class="el" href="_tile_manager_8h.html" title="Interface for the tile manager CTileManager.">TileManager.h</a></code> also includes the a declaration for an <em>object descriptor</em> <code><a class="el" href="class_c_object_desc.html" title="Object descriptor.">CObjectDesc</a></code> that will be used to encapsulate properties of a game object interpreted from the map file for transfer to the object manager.</p>
+<p><a class="anchor" id="sec5-1-1"></a></p><h2>5.1.1 Map File Format</h2>
+<p>The map files consist of upper and lower case letters in which each letter represents a background tile and/or the initial placement for a game object, and each line represents a row of tiles and/or objects. The letters are interpreted as follows. <code>W</code> represents a wall tile. <code>F</code> represents a floor tile. Upper case characters <code>U</code>, <code>D</code>, <code>L</code>, or <code>R</code> represent the player character oriented with its gun pointing up, down, left, or right, respectively. There should be only one of these in the file. Lower case characters <code>u</code>, <code>d</code>, <code>l</code>, or <code>r</code> represent a guard character oriented with its gun pointing up, down, left, or right, respectively. There may be more than one of these in the file. The player and guard characters are assumed to be on a floor tile. For example, the file <span style="background-color:#D8E4D8;"><code>Media\Maps\small.txt</code></span> contains the specification for the map shown in <a class="el" href="index.html#fig1">Fig. 1</a>, as follows: </p><pre class="fragment">WWWWWWWWWWWWWWWW
+WFFFFFFWFFFFFFFW
+WFFFFFFWFFFFFdFW
+WFFFFFFFFFFFFFFW
+WFFFFFFFFFFFFFFW
+WFFFFFFWFFFFFFFW
+WFFFFFFWFFFFFFFW
+WWWFFWWWWWWWFFFW
+WFFFFFFFFFFWFFFW
+WFFFFFFFFFFWFFFW
+WFFFFFFFFFFWFFFW
+WFFFFFFFFFFWFFFW
+WFFFFFFFFFFWFFFW
+WFFFUFFFFFFFFFFW
+WFFFFFFFFFFFFFFW
+WWWWWWWWWWWWWWWW
+</pre><p><a class="anchor" id="sec6"></a></p><h1>6. What Next?</h1>
+<p>Next, take a look at the <a href="../platformer/index.html">Tiled Platformer</a>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
