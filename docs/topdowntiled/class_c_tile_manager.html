@@ -133,6 +133,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3021ca6fb30b2e041cb63bef80a72feb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a3021ca6fb30b2e041cb63bef80a72feb">MakeBoundingBoxes</a> ()</td></tr>
 <tr class="memdesc:a3021ca6fb30b2e041cb63bef80a72feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make bounding boxes for walls.  <br /></td></tr>
 <tr class="separator:a3021ca6fb30b2e041cb63bef80a72feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16aecc34eca5babed8212a6c721bd364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a16aecc34eca5babed8212a6c721bd364">MakeBoundingBoxesH</a> ()</td></tr>
+<tr class="memdesc:a16aecc34eca5babed8212a6c721bd364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make bounding boxes for walls.  <br /></td></tr>
+<tr class="separator:a16aecc34eca5babed8212a6c721bd364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fe8fe47bbd2f98ecfa6cf75753beb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#ab3fe8fe47bbd2f98ecfa6cf75753beb4">MakeBoundingBoxesV</a> ()</td></tr>
+<tr class="memdesc:ab3fe8fe47bbd2f98ecfa6cf75753beb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make bounding boxes for walls.  <br /></td></tr>
+<tr class="separator:ab3fe8fe47bbd2f98ecfa6cf75753beb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cae6688a52116f4c86778fd776e9f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a3cae6688a52116f4c86778fd776e9f23">MakeBoundingBoxes1</a> ()</td></tr>
+<tr class="memdesc:a3cae6688a52116f4c86778fd776e9f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make bounding boxes for walls.  <br /></td></tr>
+<tr class="separator:a3cae6688a52116f4c86778fd776e9f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ffbbf152d3d27f59e281c0b7668e06f"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a6ffbbf152d3d27f59e281c0b7668e06f">IndexToPosition</a> (size_t, size_t)</td></tr>
 <tr class="memdesc:a6ffbbf152d3d27f59e281c0b7668e06f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tile index to position.  <br /></td></tr>
 <tr class="separator:a6ffbbf152d3d27f59e281c0b7668e06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,6 +513,84 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 </table>
 </div><div class="memdoc">
 <p>Make the AABBs for the walls. Care is taken to use the longest horizontal and vertical AABBs possible so that there aren't so many of them. </p>
+
+</div>
+</div>
+<a id="a3cae6688a52116f4c86778fd776e9f23" name="a3cae6688a52116f4c86778fd776e9f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cae6688a52116f4c86778fd776e9f23">&#9670;&#160;</a></span>MakeBoundingBoxes1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTileManager::MakeBoundingBoxes1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make bounding boxes that consist of a single tile. </p>
+
+</div>
+</div>
+<a id="a16aecc34eca5babed8212a6c721bd364" name="a16aecc34eca5babed8212a6c721bd364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16aecc34eca5babed8212a6c721bd364">&#9670;&#160;</a></span>MakeBoundingBoxesH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTileManager::MakeBoundingBoxesH </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make horizontal bounding boxes that we as long as possible but skip any walls that consist of just a single tile. </p>
+
+</div>
+</div>
+<a id="ab3fe8fe47bbd2f98ecfa6cf75753beb4" name="ab3fe8fe47bbd2f98ecfa6cf75753beb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3fe8fe47bbd2f98ecfa6cf75753beb4">&#9670;&#160;</a></span>MakeBoundingBoxesV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CTileManager::MakeBoundingBoxesV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Make vertical bounding boxes that we as long as possible but skip any walls that consist of just a single tile. </p>
 
 </div>
 </div>

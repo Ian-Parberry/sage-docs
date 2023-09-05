@@ -9,9 +9,11 @@ This game is similar to the
 with the addition of a tiled background that is read from a text map, and
 multiple levels with multiple guards.
 \ref fig1 "Fig. 1" shows one of the levels.
+Notice that we are re-using the player and guard sprites from
+<a href="../topdown/index.html">The Top Down Game</a>, but rendering them smaller.
 
 \anchor fig1
-\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=30%
+\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=40%
 
 The remainder of this page is divided into four sections.
 \ref sec2 "Section 2" lists the controls
@@ -166,7 +168,6 @@ reading the current level from a text file
 in <span style="background-color:#D8E4D8;">`Media\Maps`</span> and interpreting it to `CGame`
 to specify the background image and
 initial object positions.
-
 The tile manager header file `TileManager.h` also includes the a
 declaration for an _object descriptor_ `CObjectDesc` that will be used to
 encapsulate properties of a game object interpreted from the map file for
@@ -211,7 +212,87 @@ map shown in \ref fig1 "Fig. 1", as follows:
     WFFFUFFFFFFFFFFW
     WFFFFFFFFFFFFFFW
     WWWWWWWWWWWWWWWW
-    
+
+`CGame::BeginGame` reads
+the map for the current level into a 2D array of characters
+`CTileManager::m_chMap`
+by calling `CTileManager::LoadMap` with the text file name as the parameter.
+In the next subsection we will see how the tile manager
+uses `CTileManager::m_chMap` to draw the tiled background in
+`CTileManager::Draw`.
+
+\anchor sec5-1-2
+## 5.1.2 Drawing Tiles
+
+\anchor fig2
+\image html tiles.png "Fig. 2: The tiles." width=15%
+
+There are three different type of tile sprite shown in \ref fig2 "Fig.2",
+the floor tile (left),
+the wall tile (middle), and
+the error tile (right).
+The error tile should never appear in your game - if it does then you have an
+error in your text map.
+These three tiles are input from files `tile0.png`, `tile1.png`, and `tile2.png`
+into the three-frame sprite `eSprite::Tile`, as indicated by the following
+line in `Gamesettings.xml`.
+
+```xml
+<sprite name="tile" file="tile" ext ="png" frames="3"/>
+```
+We can then load the sprite from this description with the line
+
+```C
+  media.Insert(eSprite::Tile, "tile");
+```
+
+in `CGame::LoadSprites`
+using the `name` field from the `<sprite>` tag as the second parameter.
+This is how you load sprites from different files numbered 0, 1, 2, etc.,
+as opposed to the animated sprite for the 
+<a href="../topdown/index.html#reload-animation">guard</a>,
+which is loaded from a sprite sheet.
+The floor and wall tiles should roughly line up without any
+gap, for example, \ref fig3 "Fig. 3." shows that the wall tile
+at the center lines up with the four tiles that it touches.
+
+\anchor fig3
+\image html tiledwall.png "Fig. 3: A 3x3 tiling using wall tiles." width=15%
+
+Enumerated type member `eSprite::Tile` is passed to `CTileManager::Draw`,
+which draws the tiled background from `CTileManager::m_chMap` using the first frame of the tile
+sprite as the floor, the second frame as the walls, and the third frame in case of error
+(see \ref fig2 "Fig. 2").
+`CTileManager::Draw`
+is called from `CObjectManager::Draw`,
+which is called from `CGame::RenderFrame`.
+
+\anchor sec5-1-3
+## 5.1.2 Collision Detection With Walls
+
+Collision detection and response for objects colliding
+with walls is done with _axially aligned bounding boxes_
+(AABBs for short), which are boxes with their edges aligned with
+the principal axes. Although we are in a 2D game, we will use the
+3D bounding box `DirectX::BoundingBox` for convenience, fudging the
+Z dimension as we go. `CTileManager` has a list of AABBs for the walls
+in a private member variable of type `std::vector<DirectX::BoundingBox>`
+called CTileManager::`m_vecWalls`. It is tempting to use an AABB for each wall tile,
+but that would mean that even small maps like the one shown in
+\ref fig1 "Fig. 1" would need 78 AABBs, whereas these can be collapsed
+into 9 overlapping AABBs as shown in \ref fig4 "Fig. 4".
+
+\anchor fig4
+\image html aabbs.png "Fig. 4: AABBs for the walls." width=40%
+
+These large AABBs are created using function `CTileManager::MakeBoundingBoxes`,
+which is called from `CTileManager::LoadMap` after the map has been loaded.
+`CTileManager::MakeBoundingBoxes` consists of three phases,
+`CTileManager::MakeBoundingBoxesH` for horizontal bounding boxes that consist
+of at least two tiles, 
+`CTileManager::MakeBoundingBoxesV` for vertical bounding boxes that consist
+of at least two tiles, and `CTileManager::MakeBoundingBoxes1` for bounding
+boxes that consist of a single tile.
 
 
 \anchor sec6
