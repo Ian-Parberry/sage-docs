@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['firegun_0',['FireGun',['../class_c_object_manager.html#a0e9fcfce59367c25eb9c314d2d7bfddb',1,'CObjectManager']]],
-  ['followcamera_1',['FollowCamera',['../class_c_game.html#a7f54d0f4d35f427ddfd5a4442c6d885d',1,'CGame']]]
+  ['edirection_0',['eDirection',['../_game_defines_8h.html#a31793e4efbb182e74f29154fb352f2a5',1,'GameDefines.h']]],
+  ['egamestate_1',['eGameState',['../_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af6807f',1,'GameDefines.h']]],
+  ['eobject_2',['eObject',['../_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7',1,'GameDefines.h']]],
+  ['esound_3',['eSound',['../_game_defines_8h.html#a3db76da03074f1c9deade21f12f5ca38',1,'GameDefines.h']]],
+  ['esprite_4',['eSprite',['../_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4',1,'GameDefines.h']]],
+  ['estate_5',['eState',['../class_c_guard.html#aefa1c17763272aeb804575c9a762235f',1,'CGuard']]]
 ];

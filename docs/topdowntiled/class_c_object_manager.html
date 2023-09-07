@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a849420297e5c9bf08f073d90b448daf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8">Draw</a> ()</td></tr>
 <tr class="memdesc:a849420297e5c9bf08f073d90b448daf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw all objects.  <br /></td></tr>
 <tr class="separator:a849420297e5c9bf08f073d90b448daf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e9fcfce59367c25eb9c314d2d7bfddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a0e9fcfce59367c25eb9c314d2d7bfddb">FireGun</a> (<a class="el" href="class_c_object.html">CObject</a> *)</td></tr>
-<tr class="memdesc:a0e9fcfce59367c25eb9c314d2d7bfddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fire object's gun.  <br /></td></tr>
-<tr class="separator:a0e9fcfce59367c25eb9c314d2d7bfddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bf0be7ca1092d570e9d5660ad06261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a90bf0be7ca1092d570e9d5660ad06261">FireGun</a> (<a class="el" href="class_c_armed_object.html">CArmedObject</a> *)</td></tr>
+<tr class="memdesc:a90bf0be7ca1092d570e9d5660ad06261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fire object's gun.  <br /></td></tr>
+<tr class="separator:a90bf0be7ca1092d570e9d5660ad06261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fd3688804c59af2cc3957bdd67d12c8"><td class="memItemLeft" align="right" valign="top">const UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a2fd3688804c59af2cc3957bdd67d12c8">GetNumGuards</a> () const</td></tr>
 <tr class="memdesc:a2fd3688804c59af2cc3957bdd67d12c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of guards.  <br /></td></tr>
 <tr class="separator:a2fd3688804c59af2cc3957bdd67d12c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,8 +255,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 
 </div>
 </div>
-<a id="a0e9fcfce59367c25eb9c314d2d7bfddb" name="a0e9fcfce59367c25eb9c314d2d7bfddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e9fcfce59367c25eb9c314d2d7bfddb">&#9670;&#160;</a></span>FireGun()</h2>
+<a id="a90bf0be7ca1092d570e9d5660ad06261" name="a90bf0be7ca1092d570e9d5660ad06261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bf0be7ca1092d570e9d5660ad06261">&#9670;&#160;</a></span>FireGun()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,13 +264,13 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
         <tr>
           <td class="memname">void CObjectManager::FireGun </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_object.html">CObject</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="class_c_armed_object.html">CArmedObject</a> *&#160;</td>
           <td class="paramname"><em>pObj</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a bullet object and a flash particle effect. It is assumed that the object is round and that the bullet appears at the edge of the object in the direction that it is facing and continues moving in that direction. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create a bullet object and a flash particle effect. The bullet and the muzzle flash appear a little beywod the gun muzzle and the bullet proceeds along the view bector with a random deflection to add some variability. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pObj</td><td>Pointer to an object. </td></tr>
   </table>

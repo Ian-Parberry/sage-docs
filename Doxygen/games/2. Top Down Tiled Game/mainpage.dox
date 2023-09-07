@@ -13,7 +13,7 @@ Notice that we are re-using the player and guard sprites from
 <a href="../topdown/index.html">The Top Down Game</a>, but rendering them smaller.
 
 \anchor fig1
-\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=40%
+\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=20%
 
 The remainder of this page is divided into four sections.
 \ref sec2 "Section 2" lists the controls
@@ -283,7 +283,7 @@ but that would mean that even small maps like the one shown in
 into 9 overlapping AABBs as shown in \ref fig4 "Fig. 4".
 
 \anchor fig4
-\image html aabbs.png "Fig. 4: AABBs for the walls." width=40%
+\image html shapes.png "Fig. 4: Bounding shapes." width=40%
 
 These large AABBs are created using function `CTileManager::MakeBoundingBoxes`,
 which is called from `CTileManager::LoadMap` after the map has been loaded.
@@ -293,6 +293,12 @@ of at least two tiles,
 `CTileManager::MakeBoundingBoxesV` for vertical bounding boxes that consist
 of at least two tiles, and `CTileManager::MakeBoundingBoxes1` for bounding
 boxes that consist of a single tile.
+
+In \ref fig4 "Fig. 4" we see that the player now has two bounding
+circles, a small one for collision with bullets
+as in <a href="../topdown/index.html#fig8">The Top-Down Game</a>,
+and a larger one that encompasses the whole sprite for collision with walls.
+Since the guard does not move, they only have the small circle.
 
 
 \anchor sec6
