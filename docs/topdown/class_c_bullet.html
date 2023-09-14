@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae637bdfb5cc53eb0e230754717c9ddda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:ae637bdfb5cc53eb0e230754717c9ddda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94460251d0cf3b2b4f6b8ab482a7b081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_bullet.html#a94460251d0cf3b2b4f6b8ab482a7b081">Move</a> ()</td></tr>
-<tr class="memdesc:a94460251d0cf3b2b4f6b8ab482a7b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move object.  <br /></td></tr>
+<tr class="memdesc:a94460251d0cf3b2b4f6b8ab482a7b081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move bullet.  <br /></td></tr>
 <tr class="separator:a94460251d0cf3b2b4f6b8ab482a7b081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_c_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_c_object.html">CObject</a></td></tr>
 <tr class="memitem:a1b3ba191e57cb19e577230055988b70f inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a1b3ba191e57cb19e577230055988b70f">CObject</a> (<a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>, <a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, const Vector2 &amp;)</td></tr>
@@ -213,7 +213,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 <tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The abstract representation of a bullet object. Bullet objects die in a cloud of smoke when they collide with a wall. </p>
+<div class="textblock"><p>The abstract representation of a bullet object. Bullet objects die in a cloud of smoke when they collide with a wall and a blood spatter when they collide with anything else. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae637bdfb5cc53eb0e230754717c9ddda" name="ae637bdfb5cc53eb0e230754717c9ddda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae637bdfb5cc53eb0e230754717c9ddda">&#9670;&#160;</a></span>CBullet()</h2>
@@ -352,7 +352,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a particle effect to mark the death of the bullet depending on the object type that it collided with. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create a particle effect to mark the death of the bullet depending on the type of object that it collided with. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Object type of impacted object. </td></tr>
   </table>
@@ -383,7 +383,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Move object an amount that depends on its velocity and the frame time. </p>
+<p>Move bullet an amount that depends on its velocity and the frame time. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_object.html#ae33d05b96b8b11fe621e42525a908041">CObject</a>.</p>
 
