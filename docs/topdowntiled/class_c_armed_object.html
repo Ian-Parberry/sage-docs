@@ -130,10 +130,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CArmedObject</b> 
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CObject</b> ()</td></tr>
 <tr class="memdesc:a93a3c3bc7d9a6462ef00e25404d9b0eb inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a93a3c3bc7d9a6462ef00e25404d9b0eb inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33d05b96b8b11fe621e42525a908041 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae33d05b96b8b11fe621e42525a908041">Move</a> ()</td></tr>
+<tr class="memitem:ae33d05b96b8b11fe621e42525a908041 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae33d05b96b8b11fe621e42525a908041">Move</a> ()</td></tr>
 <tr class="memdesc:ae33d05b96b8b11fe621e42525a908041 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move object.  <br /></td></tr>
 <tr class="separator:ae33d05b96b8b11fe621e42525a908041 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42">Draw</a> ()</td></tr>
+<tr class="memitem:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42">Draw</a> ()</td></tr>
 <tr class="memdesc:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw object.  <br /></td></tr>
 <tr class="separator:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cfe2c14ca84c5a06b60f29a57b64e3d inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
@@ -142,6 +142,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CObject</b> ()</t
 <tr class="memitem:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83">GetType</a> () const</td></tr>
 <tr class="memdesc:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
 <tr class="separator:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145e790baad59983ddb26abad3f4fa1b inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">const Vector2 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a145e790baad59983ddb26abad3f4fa1b">GetPos</a> () const</td></tr>
+<tr class="memdesc:a145e790baad59983ddb26abad3f4fa1b inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get position.  <br /></td></tr>
+<tr class="separator:a145e790baad59983ddb26abad3f4fa1b inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -168,10 +171,6 @@ UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = 1</td
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRotSpeed</b> = 0</td></tr>
 <tr class="memdesc:ae5b104d4fc29dd564520a68414f67c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotational speed. <br /></td></tr>
 <tr class="separator:ae5b104d4fc29dd564520a68414f67c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b57ecaefa829ef5442fcfbaee8830d"><td class="memItemLeft" align="right" valign="top"><a id="a83b57ecaefa829ef5442fcfbaee8830d" name="a83b57ecaefa829ef5442fcfbaee8830d"></a>
-Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCenterOffset</b></td></tr>
-<tr class="memdesc:a83b57ecaefa829ef5442fcfbaee8830d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite center offset. <br /></td></tr>
-<tr class="separator:a83b57ecaefa829ef5442fcfbaee8830d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b429611b2cbdf0ec856ddee7fd79f4"><td class="memItemLeft" align="right" valign="top"><a id="a86b429611b2cbdf0ec856ddee7fd79f4" name="a86b429611b2cbdf0ec856ddee7fd79f4"></a>
 Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vGunOffset</b></td></tr>
 <tr class="memdesc:a86b429611b2cbdf0ec856ddee7fd79f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite gun offset. <br /></td></tr>
@@ -190,6 +189,10 @@ Sage::CParticleEngine2D *&#160;</td><td class="memItemRight" valign="bottom"><b>
 <a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSprite</b> = eSprite::Player</td></tr>
 <tr class="memdesc:a11aea2e50bb8c5cde8782b67edf35368 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite type. <br /></td></tr>
 <tr class="separator:a11aea2e50bb8c5cde8782b67edf35368 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1db8fcd4cb1a20095b1f9701d0affaa8 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fScale</b> = 1.0f</td></tr>
+<tr class="memdesc:a1db8fcd4cb1a20095b1f9701d0affaa8 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale. <br /></td></tr>
+<tr class="separator:a1db8fcd4cb1a20095b1f9701d0affaa8 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0219c1e480987fa4f0f126a315bc2398 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
 Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vPos</b></td></tr>
 <tr class="memdesc:a0219c1e480987fa4f0f126a315bc2398 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position. <br /></td></tr>
@@ -200,12 +203,16 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRoll</b> = 0</td>
 <tr class="separator:a2c2b78109c8df0925ed2fb5c5e23a2a4 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b> = 0</td></tr>
-<tr class="memdesc:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounding circle radius. <br /></td></tr>
+<tr class="memdesc:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Damage bounding circle radius. <br /></td></tr>
 <tr class="separator:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1db8fcd4cb1a20095b1f9701d0affaa8 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fScale</b> = 1.0f</td></tr>
-<tr class="memdesc:a1db8fcd4cb1a20095b1f9701d0affaa8 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite scale. <br /></td></tr>
-<tr class="separator:a1db8fcd4cb1a20095b1f9701d0affaa8 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934af5051b7a6c4246c2bd0dd6835791 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
+Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCenterOffset</b></td></tr>
+<tr class="memdesc:a934af5051b7a6c4246c2bd0dd6835791 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite center offset. <br /></td></tr>
+<tr class="separator:a934af5051b7a6c4246c2bd0dd6835791 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c93b735ee7c8515cbfa0decf7e3c08 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCollisionRadius</b> = 0.0f</td></tr>
+<tr class="memdesc:a50c93b735ee7c8515cbfa0decf7e3c08 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision radius. <br /></td></tr>
+<tr class="separator:a50c93b735ee7c8515cbfa0decf7e3c08 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -299,8 +306,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   <table class="params">
     <tr><td class="paramname">obj</td><td>Object type. </td></tr>
     <tr><td class="paramname">spr</td><td>Sprite type. </td></tr>
-    <tr><td class="paramname">p</td><td>Initial position of object. </td></tr>
-    <tr><td class="paramname">d</td><td>Initial orientation of object. </td></tr>
+    <tr><td class="paramname">p</td><td>Initial position. </td></tr>
+    <tr><td class="paramname">d</td><td>Initial orientation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,8 +389,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 </div><div class="memdoc">
 <p>Draw the sprite offset by the center offset. </p>
 
-<p>Reimplemented from <a class="el" href="class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42">CObject</a>.</p>
-
 <p>Reimplemented in <a class="el" href="class_c_guard.html#a41e5204843c2ee44f37f2f55dbbe84e9">CGuard</a>.</p>
 
 </div>
@@ -463,8 +468,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 </table>
 </div><div class="memdoc">
 <p>Move particle effects relative to the end of the gun barrel and performs a step of the particle engine. </p>
-
-<p>Reimplemented from <a class="el" href="class_c_object.html#ae33d05b96b8b11fe621e42525a908041">CObject</a>.</p>
 
 <p>Reimplemented in <a class="el" href="class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279">CGuard</a>, and <a class="el" href="class_c_player.html#a8cdce2b8fd7f5765c19d1d45f9899866">CPlayer</a>.</p>
 

@@ -13,7 +13,7 @@ Notice that we are re-using the player and guard sprites from
 <a href="../topdown/index.html">The Top Down Game</a>, but rendering them smaller.
 
 \anchor fig1
-\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=20%
+\image html screenshot.png "Fig. 1: A screenshot of the Top Down Tiled Game." width=22%
 
 The remainder of this page is divided into four sections.
 \ref sec2 "Section 2" lists the controls
@@ -140,7 +140,17 @@ to build both Release and Debug configurations.
 Run <span style="background-color:#D8E4D8;">`Top Down Tiled Game.exe`</span>
 and do the following: 
 
-UNDER CONSTRUCTION
+<ol>
+<li>
+Use the controls (see \ref sec2 "Section 2") to attack and kill
+the guards on each of the three levels provided. Use God mode (toggled with `G`)
+if you keep getting killed.
+
+<li>
+Repeat the previous step with bounding shapes and NPC state drawn (toggled with `F3`
+and `F4`, respectively). Try to break the collision detection and response by
+doing unexpected thing such as running into corners or shooting into walls.
+</ol>
 
 \anchor sec5
 # 5. Code Breakdown
@@ -154,27 +164,28 @@ the documentation from
 <a href="../blank/index.html">The Blank Game</a>,
 and <a href="../topdown/index.html">The Top Down Game</a>.
 
-Changes from <a href="../topdown/index.html">The Top Down Game</a> include ...
-
-\anchor sec5-1
-## 5.1 The Tile Manager
-
+The most important change from <a href="../topdown/index.html">The Top Down Game</a> is
+the use of a _tile manager_ to read and manage a background image
+drawn with repeating tiles and the initial placement of game objects.
 The tile manager `CTileManager` is declared in `TileManager.h` and defined in `TileManager.cpp`.
 It is derived from 
 <a href="../docs/sage/class_sage_1_1_c_settings.html">`Sage::CSettings`</a>
 and `CCommon`.
-The tile manager's responsibilities include
-reading the current level from a text file
-in <span style="background-color:#D8E4D8;">`Media\Maps`</span> and interpreting it to `CGame`
-to specify the background image and
-initial object positions.
 The tile manager header file `TileManager.h` also includes the a
 declaration for an _object descriptor_ `CObjectDesc` that will be used to
 encapsulate properties of a game object interpreted from the map file for
 transfer to the object manager.
 
-\anchor sec5-1-1
-## 5.1.1 Map File Format
+The tile manager has three main responsibilities:
+reading in a map from a text file
+in <span style="background-color:#D8E4D8;">`Media\Maps`</span> (\ref sec5-1 "Section 5.1"),
+drawing the tiled background (\ref sec5-2 "Section 5.2"),
+and
+performing collision detection and visibility tests
+between game objects the walls specified in the map file (\ref sec5-3 "Section 5.3"),
+
+\anchor sec5-1
+## 5.1 Map Files
 
 The map files consist of upper and lower case letters in which
 each letter represents a background tile and/or the initial placement
@@ -221,8 +232,8 @@ In the next subsection we will see how the tile manager
 uses `CTileManager::m_chMap` to draw the tiled background in
 `CTileManager::Draw`.
 
-\anchor sec5-1-2
-## 5.1.2 Drawing Tiles
+\anchor sec5-2
+## 5.2 Drawing Tiles
 
 \anchor fig2
 \image html tiles.png "Fig. 2: The tiles." width=15%
@@ -267,8 +278,8 @@ sprite as the floor, the second frame as the walls, and the third frame in case 
 is called from `CObjectManager::Draw`,
 which is called from `CGame::RenderFrame`.
 
-\anchor sec5-1-3
-## 5.1.2 Collision Detection With Walls
+\anchor sec5-3
+## 5.3 Collision Detection and Visibility
 
 Collision detection and response for objects colliding
 with walls is done with _axially aligned bounding boxes_
@@ -277,13 +288,15 @@ the principal axes. Although we are in a 2D game, we will use the
 3D bounding box `DirectX::BoundingBox` for convenience, fudging the
 Z dimension as we go. `CTileManager` has a list of AABBs for the walls
 in a private member variable of type `std::vector<DirectX::BoundingBox>`
-called CTileManager::`m_vecWalls`. It is tempting to use an AABB for each wall tile,
+called `CTileManager::m_vecWalls`. It is tempting to use an AABB for each wall tile,
 but that would mean that even small maps like the one shown in
 \ref fig1 "Fig. 1" would need 78 AABBs, whereas these can be collapsed
-into 9 overlapping AABBs as shown in \ref fig4 "Fig. 4".
+into just 9 overlapping AABBs.
+Hit `F3` in <span style="background-color:#D8E4D8;">`Top Down Tiled Game.exe`</span>
+to show the bounding shapes as shown in \ref fig4 "Fig. 4".
 
 \anchor fig4
-\image html shapes.png "Fig. 4: Bounding shapes." width=40%
+\image html shapes.png "Fig. 4: Bounding shapes." width=70%
 
 These large AABBs are created using function `CTileManager::MakeBoundingBoxes`,
 which is called from `CTileManager::LoadMap` after the map has been loaded.
@@ -299,6 +312,17 @@ circles, a small one for collision with bullets
 as in <a href="../topdown/index.html#fig8">The Top-Down Game</a>,
 and a larger one that encompasses the whole sprite for collision with walls.
 Since the guard does not move, they only have the small circle.
+Notice that the guard is unaware of the player in In \ref fig4 "Fig. 4" (left),
+since there is a wall between them.
+\ref fig4 "Fig. 4" (center) shows that one side of the player
+bullet collision circle is visible to the guard, who now shoots at the player.
+\ref fig4 "Fig. 4" (right) shows that both sides of the player
+bullet collision circle are visible to the guard, who continues to shoot at the player.
+`CTileManager::VisibleLeft` and `CTileManager::VisibleRight` are used to
+detect whether one side of the player is visible to a guard.
+These make use of `DirectX::BoundingBox::Intersect`,
+which detects intersection of a `DirectX::BoundingBox` with a triangle.
+`CTileManager::Visible` detects when either side is visible to the guard.
 
 
 \anchor sec6
