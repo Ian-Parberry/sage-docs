@@ -5,7 +5,7 @@
 # 1. Introduction
 
 This game is similar to the 
-<a href="../topdown">Top Down Game</a>
+<a href="../topdown/index.html">Top Down Game</a>
 with the addition of a tiled background that is read from a text map, and
 multiple levels with multiple guards.
 \ref fig1 "Fig. 1" shows one of the levels.
@@ -279,14 +279,14 @@ is called from `CObjectManager::Draw`,
 which is called from `CGame::RenderFrame`.
 
 \anchor sec5-3
-## 5.3 Collision Detection and Visibility
+## 5.3 Collision Detection and Player Visibility
 
 Collision detection and response for objects colliding
 with walls is done with _axially aligned bounding boxes_
 (AABBs for short), which are boxes with their edges aligned with
 the principal axes. Although we are in a 2D game, we will use the
-3D bounding box `DirectX::BoundingBox` for convenience, fudging the
-Z dimension as we go. `CTileManager` has a list of AABBs for the walls
+3D bounding box `DirectX::BoundingBox` for convenience, with all
+Z-coordinates set to zero. `CTileManager` has a list of AABBs for the walls
 in a private member variable of type `std::vector<DirectX::BoundingBox>`
 called `CTileManager::m_vecWalls`. It is tempting to use an AABB for each wall tile,
 but that would mean that even small maps like the one shown in
@@ -296,7 +296,7 @@ Hit `F3` in <span style="background-color:#D8E4D8;">`Top Down Tiled Game.exe`</s
 to show the bounding shapes as shown in \ref fig4 "Fig. 4".
 
 \anchor fig4
-\image html shapes.png "Fig. 4: Bounding shapes." width=70%
+\image html shapes.png "Fig. 4: Bounding shapes." width=25%
 
 These large AABBs are created using function `CTileManager::MakeBoundingBoxes`,
 which is called from `CTileManager::LoadMap` after the map has been loaded.
@@ -307,22 +307,62 @@ of at least two tiles,
 of at least two tiles, and `CTileManager::MakeBoundingBoxes1` for bounding
 boxes that consist of a single tile.
 
+\anchor sec5-3-1
+### 5.3.1 Collision Detection
+
 In \ref fig4 "Fig. 4" we see that the player now has two bounding
 circles, a small one for collision with bullets
 as in <a href="../topdown/index.html#fig8">The Top-Down Game</a>,
 and a larger one that encompasses the whole sprite for collision with walls.
 Since the guard does not move, they only have the small circle.
-Notice that the guard is unaware of the player in In \ref fig4 "Fig. 4" (left),
+The player's large bounding circle has radius stored in `CObject::m_fCollisionRadius`,
+which is only used in `CPlayer` but can be used in other objects if desired.
+`CObject::m_fCollisionRadius` is set to `CObject::m_fScale` multiplied by the
+maximum of the player sprite's width and height, divided by two.
+
+`CObjectManager::BroadPhase` handles
+collision detection and response for the objects against walls.
+For each instance of `CObject` in its object list,
+it constructs an instance `DirectX::BoundingSphere` at the object's
+position with a Z-coordinate of zero and a radius equal to the object's 
+`CObject::m_fCollisionRadius`. Collision of the bounding sphere and
+a wall is detected by passing it to `CTileManager::CollideWithWall`,
+which uses `DirectX::BoundingSphere::Intersects` for each AABB in the
+tile manager's AABB list `CTileManager::m_vecWalls`.
+
+\anchor fig5
+\image html normals.png "Fig. 5: Collision normals and overlap distances." width=50%
+
+If the call to `DirectX::BoundingSphere::Intersects` in
+`CTileManager::CollideWithWall` detects that the bounding sphere and
+a wall AABB overlap, then it computes the collision normal and the overlap
+distance, returning them in call-by-reference parameters `norm` and `d`
+respectively.
+\ref fig5 "Fig. 5" shows the collision normal \f$\hat{n}\f$ and overlap distance \f$d \f$
+for the cases when the bounding sphere overlaps a single vertex (left)
+or a single edge (right) of the bounding box. See `CTileManager::CollideWithWall`
+for more details.
+
+\anchor sec5-3-2
+### 5.3.2 Player Visibility
+
+\anchor fig6
+\image html visibility.png "Fig. 6: Line of sight from guard to player." width=25%
+
+Notice that the guard is unaware of the player in In \ref fig4 "Fig. 4",
 since there is a wall between them.
-\ref fig4 "Fig. 4" (center) shows that one side of the player
-bullet collision circle is visible to the guard, who now shoots at the player.
-\ref fig4 "Fig. 4" (right) shows that both sides of the player
-bullet collision circle are visible to the guard, who continues to shoot at the player.
-`CTileManager::VisibleLeft` and `CTileManager::VisibleRight` are used to
-detect whether one side of the player is visible to a guard.
-These make use of `DirectX::BoundingBox::Intersect`,
+In \ref fig6 "Fig. 6" there is a clear line of sight
+from the center of the guard's head (i.e. `m_vPos`) to the center of the
+player's head, so the guard has rotated to face the player and begins to shoot.
+`CTileManager::Visible` is used in `CGuard::Move` to
+detect whether a line can be drawn between the position `m_vPos` of the player and
+that of the guard without intersecting a wall bounding box.
+This makes use of `DirectX::BoundingBox::Intersect`,
 which detects intersection of a `DirectX::BoundingBox` with a triangle.
-`CTileManager::Visible` detects when either side is visible to the guard.
+The triangle in question is a 3D triangle with one vertex at the
+guard's `m_vPos` with a Z-coordinate of zero, one vertex at the
+player's `m_vPos` also with a Z-coordinate of zero, and one vertex
+player's `m_vPos` with a Z-coordinate of `1.0f`.
 
 
 \anchor sec6

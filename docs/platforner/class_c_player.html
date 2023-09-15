@@ -116,9 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62e8fe5debd9c53dec362c2121fd2706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a62e8fe5debd9c53dec362c2121fd2706">Draw</a> ()</td></tr>
 <tr class="memdesc:a62e8fe5debd9c53dec362c2121fd2706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw.  <br /></td></tr>
 <tr class="separator:a62e8fe5debd9c53dec362c2121fd2706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c60a13a5c8aa0afe9ef2232a2485b67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a9c60a13a5c8aa0afe9ef2232a2485b67">SetSpeed</a> (const float speed)</td></tr>
-<tr class="memdesc:a9c60a13a5c8aa0afe9ef2232a2485b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set speed.  <br /></td></tr>
-<tr class="separator:a9c60a13a5c8aa0afe9ef2232a2485b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c02b1ba4b7b679be28a0d58b335b8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a0c02b1ba4b7b679be28a0d58b335b8ca">Jump</a> ()</td></tr>
 <tr class="memdesc:a0c02b1ba4b7b679be28a0d58b335b8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jump.  <br /></td></tr>
 <tr class="separator:a0c02b1ba4b7b679be28a0d58b335b8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,10 +208,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRoll</b> = 0</td>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b> = 0</td></tr>
 <tr class="memdesc:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision radius. <br /></td></tr>
 <tr class="separator:afb97f8e0ea95db14d0f8dabb006ded9d inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e68296ba2f6d6ed4452b0ac7f42b8c6 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fSpeed</b> = 0</td></tr>
-<tr class="memdesc:a7e68296ba2f6d6ed4452b0ac7f42b8c6 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Speed. <br /></td></tr>
-<tr class="separator:a7e68296ba2f6d6ed4452b0ac7f42b8c6 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac68c743adf45541a381e9abdb42d4c18 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
 Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vVelocity</b></td></tr>
 <tr class="memdesc:ac68c743adf45541a381e9abdb42d4c18 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity. <br /></td></tr>
@@ -335,7 +328,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
 </div><div class="memdoc">
 <p>Create a particle effect for a spray of blood. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">n</td><td>Contact normal. </td></tr>
+    <tr><td class="paramname">norm</td><td>Contact normal. </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,30 +524,6 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   <table class="params">
     <tr><td class="paramname">action</td><td>The action. </td></tr>
     <tr><td class="paramname">d</td><td>The direction of action, defaults to current direction. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9c60a13a5c8aa0afe9ef2232a2485b67" name="a9c60a13a5c8aa0afe9ef2232a2485b67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c60a13a5c8aa0afe9ef2232a2485b67">&#9670;&#160;</a></span>SetSpeed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CPlayer::SetSpeed </td>
-          <td>(</td>
-          <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>speed</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the object's speed, assuming that the object moves in the direction of its view vector. This function will be called in response to device inputs. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">speed</td><td>Speed. </td></tr>
   </table>
   </dd>
 </dl>

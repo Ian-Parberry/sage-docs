@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab0926de034d81b14f0e5e48c0d0ac342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a map.  <br /></td></tr>
 <tr class="separator:ab0926de034d81b14f0e5e48c0d0ac342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329861d19161159afb3753acb415a7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a329861d19161159afb3753acb415a7c0">Draw</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>)</td></tr>
-<tr class="memdesc:a329861d19161159afb3753acb415a7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the map using multi-framed tile sprite.  <br /></td></tr>
+<tr class="memdesc:a329861d19161159afb3753acb415a7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the map with a given tile.  <br /></td></tr>
 <tr class="separator:a329861d19161159afb3753acb415a7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459a0b429dd887031975276591c014fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a459a0b429dd887031975276591c014fe">DrawBoundingBoxes</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>)</td></tr>
 <tr class="memdesc:a459a0b429dd887031975276591c014fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the bounding boxes.  <br /></td></tr>
@@ -121,14 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f8a4b1266dcc6407b0bd64b3c5dd351"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="class_c_object_desc.html">CObjectDesc</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a2f8a4b1266dcc6407b0bd64b3c5dd351">GetObjects</a> () const</td></tr>
 <tr class="memdesc:a2f8a4b1266dcc6407b0bd64b3c5dd351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object descriptorss.  <br /></td></tr>
 <tr class="separator:a2f8a4b1266dcc6407b0bd64b3c5dd351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a0a1dc9c96f9ea3c392a7f79a0c87c"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#ac7a0a1dc9c96f9ea3c392a7f79a0c87c">VisibleLeft</a> (<a class="el" href="class_c_guard.html">CGuard</a> *) const</td></tr>
-<tr class="memdesc:ac7a0a1dc9c96f9ea3c392a7f79a0c87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check visibility from left.  <br /></td></tr>
-<tr class="separator:ac7a0a1dc9c96f9ea3c392a7f79a0c87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd2a1bc1cdb770cba1fbf8bf4fa4fe00"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#acd2a1bc1cdb770cba1fbf8bf4fa4fe00">VisibleRight</a> (<a class="el" href="class_c_guard.html">CGuard</a> *) const</td></tr>
-<tr class="memdesc:acd2a1bc1cdb770cba1fbf8bf4fa4fe00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check visibility from right.  <br /></td></tr>
-<tr class="separator:acd2a1bc1cdb770cba1fbf8bf4fa4fe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c79d883bca8b12c5cf47344344ee44"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a78c79d883bca8b12c5cf47344344ee44">Visible</a> (<a class="el" href="class_c_guard.html">CGuard</a> *) const</td></tr>
-<tr class="memdesc:a78c79d883bca8b12c5cf47344344ee44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check visibility from right.  <br /></td></tr>
+<tr class="memdesc:a78c79d883bca8b12c5cf47344344ee44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Player visibility test.  <br /></td></tr>
 <tr class="separator:a78c79d883bca8b12c5cf47344344ee44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8644a6b4629c784b9d5afd0868eeece8"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a8644a6b4629c784b9d5afd0868eeece8">CollideWithWall</a> (BoundingSphere, Vector2 &amp;, float &amp;) const</td></tr>
 <tr class="memdesc:a8644a6b4629c784b9d5afd0868eeece8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object-wall collision test.  <br /></td></tr>
@@ -224,7 +218,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
 <tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The tile manager is responsible for the tile-based background and matters arising therefrom. See <a href="index.html#sec5">Section 5</a> of the documentation for more details. </p>
+<div class="textblock"><p>The tile manager is responsible for the tile-based background and matters arising therefrom. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2f7173eedcbd2eb767b6b1aebd29c0a5" name="a2f7173eedcbd2eb767b6b1aebd29c0a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f7173eedcbd2eb767b6b1aebd29c0a5">&#9670;&#160;</a></span>CTileManager()</h2>
@@ -300,7 +294,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check whether a bounding sphere collides with one of the wall bounding boxes. If so, compute the collision normal and the overlap distance. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Check whether a bounding sphere collides with one of the wall bounding boxes. If so, compute the collision normal and the overlap distance. This function assumes that if there is any overlap at all, then the sphere overlaps either a single corner point of the bounding box, or if not, then a single edge of the bounding box in the XY plane. This is a reasonable assumption for a 2D game in which objects move only a small distance in each frame. If the sphere overlaps more than one bounding box in the bounding box list, then the first one is used. Therefore this function will need to be called more than once per animation frame. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Bounding sphere of object. </td></tr>
     <tr><td class="paramname">norm</td><td>[out] Collision normal. </td></tr>
@@ -622,56 +616,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true If one side of player is visible to the guard. </dd></dl>
-
-</div>
-</div>
-<a id="ac7a0a1dc9c96f9ea3c392a7f79a0c87c" name="ac7a0a1dc9c96f9ea3c392a7f79a0c87c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7a0a1dc9c96f9ea3c392a7f79a0c87c">&#9670;&#160;</a></span>VisibleLeft()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool CTileManager::VisibleLeft </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_guard.html">CGuard</a> *&#160;</td>
-          <td class="paramname"><em>pGuard</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check whether the left side of the player is visible to a guard. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pGuard</td><td>Pointer to a guard. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true If left side of player is visible to the guard. </dd></dl>
-
-</div>
-</div>
-<a id="acd2a1bc1cdb770cba1fbf8bf4fa4fe00" name="acd2a1bc1cdb770cba1fbf8bf4fa4fe00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd2a1bc1cdb770cba1fbf8bf4fa4fe00">&#9670;&#160;</a></span>VisibleRight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool CTileManager::VisibleRight </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_guard.html">CGuard</a> *&#160;</td>
-          <td class="paramname"><em>pGuard</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check whether the right side of the player is visible to a guard. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pGuard</td><td>Pointer to a guard. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true If right side of player is visible to the guard. </dd></dl>
 
 </div>
 </div>

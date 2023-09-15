@@ -4,20 +4,27 @@
 \anchor section1
 # 1. Introduction
 
-UNDER CONSTRUCTION
+This game is similar to 
+<a href="../topdowntiled/index.html">The Top Down Game</a>
+but there is now gravity pulling the characters down to the bottom
+of the window, so the horizontal walls now act as platforms.
+The player character is now a penguin, as shown in the screenshot in
+\ref fig1 "Fig. 1".
 
 \anchor fig1
-\image html screenshot.png "Fig. 1: A screenshot of the Tiled Platformer." width=50%
+\image html screenshot.png "Fig. 1: A screenshot of The Tiled Platformer." width=50%
 
-The remainder of this page is divided into three sections.
-\ref section2 "Section 2" lists the controls
+The remainder of this page is divided into four sections.
+\ref sec2 "Section 2" lists the controls
 and their corresponding actions,
-\ref section3 "Section 3" is a reminder to install SAGE, the Simple
-Academic Game Engine,
+\ref sec3 "Section 3" tells you how to build it,
+\ref sec4 "Section 4" gives you a list of actions to take in the game to see some of its
+important features,
+\ref sec5 "Section 5" gives a breakdown of the code,
 and
-\ref section4 "Section 4" gives a breakdown of the code for the Tiled Platformer.
+\ref sec6 "Section 6" addresses the question "what next?".
 
-\anchor section2
+\anchor sec2
 # 2. Controls
 
 <center>
@@ -31,6 +38,30 @@ and
       <td><center>-</center></td>
       <td>Help (this document)</td>
     <tr>
+      <td><center>F2</center></td>
+      <td><center>-</center></td>
+      <td>Toggle frame rate display</td>
+    <tr>
+      <td><center>F3</center></td>
+      <td><center>-</center></td>
+      <td>Toggle show bounds</td>
+    <tr>
+      <td><center>A</center></td>
+      <td>Digital pad left</td>
+      <td>Walk left</td>
+    <tr>
+      <td><center>D</center></td>
+      <td>Digital pad right</td>
+      <td>Walk right</td>
+    <tr>
+      <td><center>W</center></td>
+      <td>Digital pad up</td>
+      <td>Jump</td>
+    <tr>
+      <td><center>Backspace</center></td>
+      <td><center>-</center></td>
+      <td>Restart game</td>
+    <tr>
       <td><center>PrtScr</center></td>
       <td><center>-</center></td>
       <td>Save screenshot to a PNG file</td>
@@ -41,32 +72,72 @@ and
   </table>
 </center>
 
-\anchor section3
+\anchor sec3
 # 3. SAGE
 
 This code uses <a href="../sage/index.html">SAGE</a>.
 Make sure that you have followed the
 <a href="../install/index.html">SAGE Installation Instructions</a>.
-Navigate to the folder `3. Tiled Platformer` in your
-copy of the `sage-games` repository.
-Run `checkenv.bat` to verify that you have set the environment
+Navigate to the folder <span style="background-color:#D8E4D8;">`3. Tiled Platformer`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-games`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
 variables correctly.
-Run `Build.bat`. The Release executable file `Tiled Platformer.exe`
-will appear. When you run it you will see something similar to
-\ref fig1 "Fig. 1".
-Use the commands listed in \ref section2 "Section 2" to get
-to the door without dying.
+Open <span style="background-color:#D8E4D8;">`Tiled Platformer.sln`</span>
+ with Visual Studio and build the Release configuration.
+The Release executable file <span style="background-color:#D8E4D8;">`Tiled Platformer.exe`</span>
+will appear. 
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
 
-\anchor section4
-# 4. Code Breakdown
+\anchor sec4
+# 4. Game Play
 
-Open `Tiled Platformer.sln` in Visual Studio and examine the
+Run <span style="background-color:#D8E4D8;">`Tiled Platformer.exe`</span>
+and do the following.
+<ol>
+<li>
+Use the controls (see \ref sec2 "Section 2") to go to the door at the top left
+platform. The game will then restart.
+<li>
+Try jumping into the bottom and sides of a platform to see what happens.
+<li>
+Move the penguin so that the horizontal center of the sprite
+is above the edge of a platform (see \ref fig2 "Fig. 2"). Now move it slightly over the edge of
+the platform by tapping the appropriate key lightly to see the penguin
+slide gracefully off the platform.
+<li>
+Run into the saw blade to the right of the player (see \ref fig1 "Fig. 1") to experience death. 
+Try both walking and jumping onto it.
+See what happens in God mode.
+<li>
+Jump or fall from a high platform to experience death.
+See what happens in God mode.
+</ol>
+
+\anchor fig2
+\image html onedge.png "Fig. 2: The penguin at the edge of a platform." width=15%
+
+\anchor sec5
+# 5. Code Breakdown
+
+Open <span style="background-color:#D8E4D8;">`Tiled Platformer.sln`</span>
+in Visual Studio and examine the
 code in the editor while you read the
-rest of this section, which is divided into subsections.
-
-Changes from <a href="../topdowntiled">The Top Down Tiled Game</a> include ...
+rest of this section.
+This section assumes that you have read and understood
+the documentation from 
+<a href="../sage/index.html">SAGE</a>,
+<a href="../blank/index.html">The Blank Game</a>,
+<a href="../topdown/index.html">The Top Down Game</a>,
+and <a href="../topdowntiled/index.html">The Top Down Tiled Game</a>.
 
 UNDER CONSTRUCTION
+
+\anchor sec6
+# 6. What Next?
+
+You might want to look at <a href="../introphysics/index.html">Physics Games and Toys</a> next.
 
 
 

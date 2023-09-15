@@ -83,38 +83,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Every program has to have a main.  
+<p>The home of WinMain.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;SageWindow.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_game_8h.html">Game.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeeb116aec1e9017291d3924e27a15d31"><td class="memItemLeft" align="right" valign="top">int WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31">wWinMain</a> (_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow)</td></tr>
-<tr class="memdesc:aeeb116aec1e9017291d3924e27a15d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main entry point for this application. <br  />
+<tr class="memitem:a4e25c396385b9a412e9e4c1010076520"><td class="memItemLeft" align="right" valign="top">int WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520">wWinMain</a> (_In_ HINSTANCE hInst, _In_opt_ HINSTANCE hPrevInst, _In_ LPWSTR lpCmdLine, _In_ int nCmdShow)</td></tr>
+<tr class="memdesc:a4e25c396385b9a412e9e4c1010076520"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main entry point for this application. <br  />
   <br /></td></tr>
-<tr class="separator:aeeb116aec1e9017291d3924e27a15d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a0408aaa1bfcd618211c7db3161bf3cce"><td class="memItemLeft" align="right" valign="top"><a id="a0408aaa1bfcd618211c7db3161bf3cce" name="a0408aaa1bfcd618211c7db3161bf3cce"></a>
-static Sage::CWindow&#160;</td><td class="memItemRight" valign="bottom"><b>g_cWindow</b></td></tr>
-<tr class="memdesc:a0408aaa1bfcd618211c7db3161bf3cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window class. <br /></td></tr>
-<tr class="separator:a0408aaa1bfcd618211c7db3161bf3cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5d3820f773c3d2fe533205788478db"><td class="memItemLeft" align="right" valign="top"><a id="a2c5d3820f773c3d2fe533205788478db" name="a2c5d3820f773c3d2fe533205788478db"></a>
-static <a class="el" href="class_c_game.html">CGame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>g_cGame</b></td></tr>
-<tr class="memdesc:a2c5d3820f773c3d2fe533205788478db"><td class="mdescLeft">&#160;</td><td class="mdescRight">The game class. <br /></td></tr>
-<tr class="separator:a2c5d3820f773c3d2fe533205788478db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4e25c396385b9a412e9e4c1010076520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aeeb116aec1e9017291d3924e27a15d31" name="aeeb116aec1e9017291d3924e27a15d31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeb116aec1e9017291d3924e27a15d31">&#9670;&#160;</a></span>wWinMain()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This file should be identical in all Sage games except for commenting out or uncommenting in a single line to activate or deactivate (respectively) the optional debug console, or commenting out a single line of code if you don't want to use Visual Leak Detector (which is not recommended). </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a4e25c396385b9a412e9e4c1010076520" name="a4e25c396385b9a412e9e4c1010076520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e25c396385b9a412e9e4c1010076520">&#9670;&#160;</a></span>wWinMain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,13 +113,13 @@ static <a class="el" href="class_c_game.html">CGame</a>&#160;</td><td class="mem
           <td class="memname">int WINAPI wWinMain </td>
           <td>(</td>
           <td class="paramtype">_In_ HINSTANCE&#160;</td>
-          <td class="paramname"><em>hInstance</em>, </td>
+          <td class="paramname"><em>hInst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">_In_opt_ HINSTANCE&#160;</td>
-          <td class="paramname"><em>hPrevInstance</em>, </td>
+          <td class="paramname"><em>hPrevInst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -150,10 +140,10 @@ static <a class="el" href="class_c_game.html">CGame</a>&#160;</td><td class="mem
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The main entry point for this application. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set things up so that your implementation of <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">CGame::Initialize()</a></code> is called at the correct time during initialization, <code><a class="el" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame.">CGame::ProcessFrame()</a></code> is called as often as possible to compose and render a frame of animation, and <code><a class="el" href="class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer.">CGame::Release()</a></code> is called at the correct time during game shutdown. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hInstance</td><td>Handle to the current instance of this application. </td></tr>
-    <tr><td class="paramname">hPrevInstance</td><td>Unused. </td></tr>
+    <tr><td class="paramname">hInst</td><td>Handle to the current instance of this application. </td></tr>
+    <tr><td class="paramname">hPrevInst</td><td>Unused. </td></tr>
     <tr><td class="paramname">lpCmdLine</td><td>Unused. </td></tr>
     <tr><td class="paramname">nCmdShow</td><td>Nonzero if window is to be shown. </td></tr>
   </table>

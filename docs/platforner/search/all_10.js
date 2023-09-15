@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['setaction_0',['SetAction',['../class_c_player.html#ad6a618699396f16c7f4e2de5bb583fce',1,'CPlayer']]],
-  ['setspeed_1',['SetSpeed',['../class_c_player.html#a9c60a13a5c8aa0afe9ef2232a2485b67',1,'CPlayer']]]
+  ['tilemanager_2ecpp_0',['TileManager.cpp',['../_tile_manager_8cpp.html',1,'']]],
+  ['tilemanager_2eh_1',['TileManager.h',['../_tile_manager_8h.html',1,'']]]
 ];

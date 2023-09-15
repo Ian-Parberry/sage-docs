@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tilemanager_2ecpp_0',['TileManager.cpp',['../_tile_manager_8cpp.html',1,'']]],
-  ['tilemanager_2eh_1',['TileManager.h',['../_tile_manager_8h.html',1,'']]]
+  ['visible_0',['Visible',['../class_c_tile_manager.html#a8c41d88912af57e274ba8be1edf7dd63',1,'CTileManager']]]
 ];
