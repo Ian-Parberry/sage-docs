@@ -123,7 +123,7 @@ add your functionality in overloaded member functions.
 SAGE provides device handlers
 for an X-Box controller, the keyboard, and the mouse (see \ref table-1 "Table 1").
 For efficiency, these handlers are polled, and are not dependent on the Windows
-message passing system. All three components have a `GetState()` function that
+message passing system. All three components have a `GetState` function that
 should be called once per frame to
 capture the current state of the device.
 This state snapshot can then be examined by calling device-specific
@@ -138,19 +138,19 @@ Important `Sage::CKeyboard` public member functions include
 the following.
 See `Sage::CKeyboard` to see how other keyboard tests.
 
-- `Sage::CKeyboard::GetState()`, which must be called once per animation
+- `Sage::CKeyboard::GetState`, which must be called once per animation
 frame to poll the current keyboard state;
-- `Sage::CKeyboard::TriggerDown()`, which returns `true` if a key described by a `WPARAM` was up and went down in the current animation frame.
-- `Sage::CKeyboard::Down()`, which returns `true` if a key described by a `WPARAM`
+- `Sage::CKeyboard::TriggerDown`, which returns `true` if a key described by a `WPARAM` was up and went down in the current animation frame.
+- `Sage::CKeyboard::Down`, which returns `true` if a key described by a `WPARAM`
 is currently down.
 
 Important `Sage::CMouse` public member functions include
 the following.
 See `Sage::CMouse` to see how to get other mouse data.
 
-- `Sage::CMouse::GetState()`, which must be called once per animation
+- `Sage::CMouse::GetState`, which must be called once per animation
 frame to poll the current mouse state;
-- `Sage::CMouse::GetMove()`, which returns a vector describing the mouse
+- `Sage::CMouse::GetMove`, which returns a vector describing the mouse
 motion since the last frame.
 
 Important `Sage::CController` public member functions include
@@ -158,12 +158,12 @@ the following.
 See `Sage::CController` to see how to test other controller buttons and
 controls.
 
-- `Sage::CController::GetState()`, which must be called once per animation
+- `Sage::CController::GetState`, which must be called once per animation
 frame to poll the current controller state;
-- `Sage::CController::IsConnected()`, which returns `true` if a controller is
+- `Sage::CController::IsConnected`, which returns `true` if a controller is
 connected;
-- `Sage::CController::Vibrate()`, which sets the left and right rumble; and
-- `Sage::CController::GetButtonAToggle()`, which returns `true` if button A
+- `Sage::CController::Vibrate`, which sets the left and right rumble; and
+- `Sage::CController::GetButtonAToggle`, which returns `true` if button A
 on the controller was up and went down in the current animation frame.
 
 \anchor sec3-2
@@ -196,18 +196,18 @@ interval, which is the amount of time between frames.
 This will typically vary between 30 frames per second (around 33 milliseconds per frame)
 and over 300 frame per second (around 3 milliseconds per frame).
 SAGE provides two timer classes (see \ref table-2 "Table 2").
-`Sage::CTimer` is a high-accuracy frame timer. It has a function `Sage::CTimer::Tick()`
+`Sage::CTimer` is a high-accuracy frame timer. It has a function `Sage::CTimer::Tick`
 that must be called once per frame to capture a snapshot of the time.
 Then, for example, the current frame time in seconds can be obtained
 as a floating point value
-by calling `Sage::CTimer::GetFrameTime()`.
+by calling `Sage::CTimer::GetFrameTime`.
 
 `Sage::CEventTimer` lets you handle regularly scheduled events such
 as flashing lights or the reloading of a weapon. The events can
 be scheduled with an optional amount of variability.
 To use it, instantiate one instance of `Sage::CEventTimer` for each event,
 providing the delay and optional amount of variability as parameters to
-the constructor. Thereafter, call the event timer's function `Sage::CEventTimer::Triggered()`
+the constructor. Thereafter, call the event timer's function `Sage::CEventTimer::Triggered`
 once per frame. This function will return `true` and reset the event if
 the delay time plus the variability time are greater than the elapsed time
 since the event was last triggered (or the time it was created, if it has never been triggered).
@@ -251,11 +251,11 @@ Loading sounds from `wav` files will be covered in \ref sec3-7 "Section 3.7".
 
 There are three basic functions for playing a sound:
 
-1. `Sage::CSound::Play()` takes a sound index (usually a member of an enumerated type) and a position at which to play the sound (which defaults to the center of the world), and optionally the volume, or volume and pitch.
+1. `Sage::CSound::Play` takes a sound index (usually a member of an enumerated type) and a position at which to play the sound (which defaults to the center of the world), and optionally the volume, or volume and pitch.
 
-2. `Sage::CSound::Loop()` takes a sound index and optionally a position at which to play the sound, and it plays the sound repeatedly until some version of the `Sage::CSound::Stop()` function is called.
+2. `Sage::CSound::Loop` takes a sound index and optionally a position at which to play the sound, and it plays the sound repeatedly until some version of the `Sage::CSound::Stop` function is called.
 
-3. `Sage::CSound::Vary()` takes a sound index, a position at which to play the sound, a coefficient of variability (which defaults to `0.25f`) and plays the sound at a different volume and pitch each time it is called, varying by the coefficient of variability. A base volume and pitch may also be provided.
+3. `Sage::CSound::Vary` takes a sound index, a position at which to play the sound, a coefficient of variability (which defaults to `0.25f`) and plays the sound at a different volume and pitch each time it is called, varying by the coefficient of variability. A base volume and pitch may also be provided.
 
 See `Sage::CSound` for more functions.
 
@@ -286,7 +286,8 @@ such as a character, a wall, or a missile.
 SAGE best practice is to derive your own game object class `CObject` from
 `Sage::CObject`, which provides base functionality to game objects.
 `Sage::CObject` provides stubs for the move and draw virtual functions
-`Sage::CObject::Move` and `Sage::CObject::Draw`, which you should definitely
+`Sage::CObject::Move` and `Sage::CObject::Draw`, which are stubs that
+you should definitely
 override in your implementation of `CObject`.
 
 It is also SAGE best practice to manage your objects with an _object manager_
@@ -302,14 +303,14 @@ then performs collision detection and response between pairs of
 objects in the object list.
 
 When an instance of your game object class `CObject` derived from `Sage::CObject`
-dies in your game, you must call its inherited function `Sage::CObject::MarkForDeletion()`.
-At the end of `Sage::CObjectManager::Move()`, after collision detection
+dies in your game, you must call its inherited function `Sage::CObject::MarkForDeletion`.
+At the end of `Sage::CObjectManager::Move`, after collision detection
 and response, all objects in the object list that have been marked for deletion
 are removed from the object list and `delete`d.
-Your `CObjectManager::Move()` function which over-rides `Sage::CObjectManager::Move()`
-can either call `Sage::CObjectManager::Move()` or perform its own 
+Your `CObjectManager::Move` function which over-rides `Sage::CObjectManager::Move`
+can either call `Sage::CObjectManager::Move` or perform its own 
 object motion and collision
-detection and response, and then call `Sage::CObjectManager::DeleteMarkedObjects()`.
+detection and response, and then call `Sage::CObjectManager::DeleteMarkedObjects`.
 
 \anchor sec3-5
 ## 3.5 Rendering
@@ -355,8 +356,8 @@ Control of the camera is provided by accessing the variables
 in `Sage::CCameraCommon`.
 `Sage::CCamera` is intended only for internal use in SAGE and should
 not be instantiated in your game. The camera can be accessed through the
-renderer using, for example, `Sage::CSpriteRenderer::GetCameraPos()` and
-`Sage::CSpriteRenderer::SetCameraPos()`.
+renderer using, for example, `Sage::CSpriteRenderer::GetCameraPos` and
+`Sage::CSpriteRenderer::SetCameraPos`.
 `Sage::CScreenshotFlag`, which enables screen shotting when
 the player presses the `print screen` button, is also intended only for
  internal use in SAGE and should
@@ -391,14 +392,14 @@ instrumentation, must be drawn last.
 the moment) or in 2D or 2.5D games in which you want or need the capability
 to draw the sprites in any order, with the depth specified by the
 third dimension of a 3D vector. In this case, instead of calling
-`Sage::CSpriteRenderer::Draw()` for each sprite, collect the 3D sprite descriptors in
+`Sage::CSpriteRenderer::Draw` for each sprite, collect the 3D sprite descriptors in
 an instance of `std::vector<Sage::CSpriteDesc3D>` and pass that as
-a parameter to `Sage::CSpriteRenderer::Draw()` which will sort them by depth
+a parameter to `Sage::CSpriteRenderer::Draw` which will sort them by depth
 (in Z-order) before rendering them.
 
 For 2D games in particular,
 `Sage::CSpriteRenderer` includes multiple ways of drawing 2D sprites using
-`Sage::CSpriteRenderer::Draw()` by providing the following parameters.
+`Sage::CSpriteRenderer::Draw` by providing the following parameters.
 
 1. The sprite index (usually a member of an enumerated type),
 a position, and optionally the orientation angle (in radians, measured counter-clockwise from the positive X-axis), which defaults to zero.
@@ -460,8 +461,8 @@ Important sprite properties in `Sage::CSprite` include
 an array `Sage::CSprite::m_pRect` of bounding rectangles for a
 multi-frame sprite contained in a sprite sheet (a single image containing
 multiple frames) and useful reader functions such as
-`Sage::CSprite::GetWidth()` and
-`Sage::CSprite::GetHeight()`
+`Sage::CSprite::GetWidth` and
+`Sage::CSprite::GetHeight`
 to get the width and height (respectively) of the sprite in pixels after it has been loaded.
 
 \anchor spritedesc
@@ -562,14 +563,14 @@ not be instantiated in your game.
 To create a particle in a 2D game,
 fill in a _2D particle descriptor_ `Sage::CParticleDesc2D`
 with the particle properties (including fade in, fade out, scale in, scale out)
-and pass it as a parameter to `Sage::CParticleEngine2D::Create()`. 
-Function `Sage::CParticleEngine2D::Step()` must be called once per frame to 
+and pass it as a parameter to `Sage::CParticleEngine2D::Create`. 
+Function `Sage::CParticleEngine2D::Step` must be called once per frame to 
 animate 2D particles.
 To create a particle in a 3D game,
 fill in a _3D particle descriptor_ `Sage::CParticleDesc3D`
 with the particle properties
-and pass it as a parameter to `Sage::CParticleEngine3D::Create()`. 
-Function `Sage::CParticleEngine3D::Step()` must be called once per frame to 
+and pass it as a parameter to `Sage::CParticleEngine3D::Create`. 
+Function `Sage::CParticleEngine3D::Step` must be called once per frame to 
 animate 3D particles.
 
 ### Important Particle Descriptor Properties
@@ -712,12 +713,12 @@ and `//<` for an in-line comment.
 8. Public member functions that simply return the
 value stored in a private or protected member variables
 start with `Get`, for example,  
-`Sage::CCamera::GetYaw()` returns `Sage::CCamera::m_fYaw`.
+`Sage::CCamera::GetYaw` returns `Sage::CCamera::m_fYaw`.
 
 9. Public member functions that modify the
 values stored in private or protected member variables
 start with `Set`, for example,  
-`Sage::CCamera::SetYaw()` sets `Sage::CCamera::m_fYaw`
+`Sage::CCamera::SetYaw` sets `Sage::CCamera::m_fYaw`
 and recomputes the camera's orientation matrix and view frustum.
 
 \anchor sec5
