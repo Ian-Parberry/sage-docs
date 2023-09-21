@@ -1,7 +1,7 @@
 /**
 \mainpage notitle
 
-\anchor section1
+\anchor sec1
 # 1. Introduction
 
 This game is similar to 
@@ -101,6 +101,7 @@ Use the controls (see \ref sec2 "Section 2") to go to the door at the top left
 platform. The game will then restart.
 <li>
 Try jumping into the bottom and sides of a platform to see what happens.
+Also try hitting the corner of a platform.
 <li>
 Move the penguin so that the horizontal center of the sprite
 is above the edge of a platform (see \ref fig2 "Fig. 2"). Now move it slightly over the edge of
@@ -132,7 +133,26 @@ the documentation from
 <a href="../topdown/index.html">The Top Down Game</a>,
 and <a href="../topdowntiled/index.html">The Top Down Tiled Game</a>.
 
-UNDER CONSTRUCTION
+How does this code differ from that of the 
+<a href="../topdowntiled/index.html">The Top Down Tiled Game</a>?
+Firstly, there are a lot of minor changes to take account of the
+fact that our player sprite doesn't need a center offset
+and that there aren't any NPCs or any shooting. 
+
+`CObject` is used for the door and the saw and `CPlayer`, which is
+derived from `CObject`, is used for the player.
+In `CPlayer::Move`, a constant times the frame time is added
+to `CPlayer::m_vVelocity` to simulate acceleration due to gravity.
+As in <a href="../topdowntiled/index.html">The Top Down Tiled Game</a>'s <a href="../topdowntiled/class_c_bullet.html">`CBullet::Move`</a> function,
+a constant times frame time times `CPlayer::m_vVelocity` is then added
+to `CPlayer::m_vPos`. `CPlayer::CollisionResponse` is now more complicated,
+for example, it sets a Boolean variable `CPlayer::m_bOnGround` to `true` if the
+player is on top of a platform, that is, the collision normal points
+vertically upwards. `CPlayer::m_bOnGround` is set to `false` at the end
+of `CPlayer::Move` (since it may have moved off a platform), then
+corrected in `CPlayer::CollisionResponse` and is used in those functions,
+also in `CPlayer::Draw` to select between the jumping and other player sprites,
+and in `CPlayer::SetAction` to prevent double-jumping.
 
 \anchor sec6
 # 6. What Next?

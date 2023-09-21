@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jump_0',['Jump',['../class_c_player.html#a0c02b1ba4b7b679be28a0d58b335b8ca',1,'CPlayer']]]
+  ['keyboardhandler_0',['KeyboardHandler',['../class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d',1,'CGame']]]
 ];

@@ -118,18 +118,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CObject</b> ()</t
 <tr class="memitem:ae060ffb1aa3bf6148614cf6506074e42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42">Draw</a> ()</td></tr>
 <tr class="memdesc:ae060ffb1aa3bf6148614cf6506074e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw object.  <br /></td></tr>
 <tr class="separator:ae060ffb1aa3bf6148614cf6506074e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd6627cbcf662e12bfc6535aafe32b7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a3bd6627cbcf662e12bfc6535aafe32b7">GetObjectType</a> () const</td></tr>
-<tr class="memdesc:a3bd6627cbcf662e12bfc6535aafe32b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
-<tr class="separator:a3bd6627cbcf662e12bfc6535aafe32b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39ee0bc168e051d1b2497b1259d0b83"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83">GetType</a> () const</td></tr>
+<tr class="memdesc:ab39ee0bc168e051d1b2497b1259d0b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
+<tr class="separator:ab39ee0bc168e051d1b2497b1259d0b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
 <tr class="memdesc:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response.  <br /></td></tr>
 <tr class="separator:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44faca41d39b15a4835dc23a55d61b41"><td class="memItemLeft" align="right" valign="top">const Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a44faca41d39b15a4835dc23a55d61b41">GetViewVector</a> () const</td></tr>
-<tr class="memdesc:a44faca41d39b15a4835dc23a55d61b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute view vector.  <br /></td></tr>
-<tr class="separator:a44faca41d39b15a4835dc23a55d61b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -138,7 +135,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a4eb51a58366c30f1c8e13ab4f04aaad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object type. <br /></td></tr>
 <tr class="separator:a4eb51a58366c30f1c8e13ab4f04aaad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11aea2e50bb8c5cde8782b67edf35368"><td class="memItemLeft" align="right" valign="top"><a id="a11aea2e50bb8c5cde8782b67edf35368" name="a11aea2e50bb8c5cde8782b67edf35368"></a>
-<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSprite</b> = eSprite::PlayerRight</td></tr>
+<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSprite</b> = eSprite::Saw</td></tr>
 <tr class="memdesc:a11aea2e50bb8c5cde8782b67edf35368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite type. <br /></td></tr>
 <tr class="separator:a11aea2e50bb8c5cde8782b67edf35368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0219c1e480987fa4f0f126a315bc2398"><td class="memItemLeft" align="right" valign="top"><a id="a0219c1e480987fa4f0f126a315bc2398" name="a0219c1e480987fa4f0f126a315bc2398"></a>
@@ -188,29 +185,29 @@ static Sage::CParticleEngine2D *&#160;</td><td class="memItemRight" valign="bott
 static <a class="el" href="class_c_tile_manager.html">CTileManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pTileManager</b> = nullptr</td></tr>
 <tr class="memdesc:ab747c9a034e120d8a59493a204a8b2b9 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to tile manager. <br /></td></tr>
 <tr class="separator:ab747c9a034e120d8a59493a204a8b2b9 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds</b> = false</td></tr>
-<tr class="memdesc:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw bounding boxes and circles flag. <br /></td></tr>
-<tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bGodMode</b> = false</td></tr>
-<tr class="memdesc:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">God mode flag. <br /></td></tr>
-<tr class="separator:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
-static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vWorldSize</b> = Vector2::Zero</td></tr>
-<tr class="memdesc:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">World height and width. <br /></td></tr>
-<tr class="separator:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab278f41b93c7393ce87eb0674349e796 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static <a class="el" href="class_c_player.html">CPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPlayer</b> = nullptr</td></tr>
 <tr class="memdesc:ab278f41b93c7393ce87eb0674349e796 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to player character. <br /></td></tr>
 <tr class="separator:ab278f41b93c7393ce87eb0674349e796 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vWorldSize</b></td></tr>
+<tr class="memdesc:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">World height and width. <br /></td></tr>
+<tr class="separator:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bGodMode</b> = false</td></tr>
+<tr class="memdesc:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">God mode flag. <br /></td></tr>
+<tr class="separator:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds</b> = false</td></tr>
+<tr class="memdesc:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw bounding boxes and circles flag. <br /></td></tr>
+<tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af6807f">eGameState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eGameState</b> = eGameState::Loading</td></tr>
 <tr class="memdesc:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game state. <br /></td></tr>
 <tr class="separator:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The abstract representation of an object. <code><a class="el" href="class_c_object_manager.html" title="The object manager.">CObjectManager</a></code> is a friend of this class so that it can access any private members as needed to manage the objects without the need for reader and set functions for each private or protected member variable. This class must contain public member functions <code>move()</code> and <code>draw()</code> to move and draw the object, respectively. </p>
+<div class="textblock"><p>The abstract representation of an object. <code><a class="el" href="class_c_object_manager.html" title="The object manager.">CObjectManager</a></code> is a friend of this class so that it can access any private members as needed to manage the objects without the need for reader and set functions for each private or protected member variable. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1b3ba191e57cb19e577230055988b70f" name="a1b3ba191e57cb19e577230055988b70f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b3ba191e57cb19e577230055988b70f">&#9670;&#160;</a></span>CObject()</h2>
@@ -243,10 +240,10 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create and initialize an object given its sprite type and initial position. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create and initialize an object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>Type of object. </td></tr>
-    <tr><td class="paramname">spr</td><td>Type of sprite. </td></tr>
+    <tr><td class="paramname">obj</td><td>Object type. </td></tr>
+    <tr><td class="paramname">spr</td><td>Sprite type. </td></tr>
     <tr><td class="paramname">p</td><td>Initial position. </td></tr>
   </table>
   </dd>
@@ -294,7 +291,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Response to collision. Move back the overlap distance along the collision normal. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Response to collision, which depends on whether this object and/or the colliding object is static or not. Let's call a non-static object <em>dynamic</em> for now. If both objects are dynamic, then both are est back by half the overlap distance along the collision normal. If one object is static and the other dynamic, then the dynamic one is set back by the full overlap distance. The fourth case (both objects are static) won't happen because static objects don't move and therefore can't collide. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">norm</td><td>Collision normal. </td></tr>
     <tr><td class="paramname">d</td><td>Overlap distance. </td></tr>
@@ -325,47 +322,21 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
 
 </div>
 </div>
-<a id="a3bd6627cbcf662e12bfc6535aafe32b7" name="a3bd6627cbcf662e12bfc6535aafe32b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bd6627cbcf662e12bfc6535aafe32b7">&#9670;&#160;</a></span>GetObjectType()</h2>
+<a id="ab39ee0bc168e051d1b2497b1259d0b83" name="ab39ee0bc168e051d1b2497b1259d0b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39ee0bc168e051d1b2497b1259d0b83">&#9670;&#160;</a></span>GetType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a> CObject::GetObjectType </td>
+          <td class="memname">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a> CObject::GetType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reader function for the object type. </p><dl class="section return"><dt>Returns</dt><dd>Object type. </dd></dl>
-
-</div>
-</div>
-<a id="a44faca41d39b15a4835dc23a55d61b41" name="a44faca41d39b15a4835dc23a55d61b41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44faca41d39b15a4835dc23a55d61b41">&#9670;&#160;</a></span>GetViewVector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Vector2 CObject::GetViewVector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Compute the view vector from the object orientation. </p><dl class="section return"><dt>Returns</dt><dd>The view vector. </dd></dl>
+<p>Reader function for the object type. </p><dl class="section return"><dt>Returns</dt><dd>The object type. </dd></dl>
 
 </div>
 </div>

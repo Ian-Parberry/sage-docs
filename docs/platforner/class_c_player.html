@@ -80,8 +80,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_c_player-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CPlayer Class Reference</div></div>
 </div><!--header-->
@@ -116,9 +116,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62e8fe5debd9c53dec362c2121fd2706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a62e8fe5debd9c53dec362c2121fd2706">Draw</a> ()</td></tr>
 <tr class="memdesc:a62e8fe5debd9c53dec362c2121fd2706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw.  <br /></td></tr>
 <tr class="separator:a62e8fe5debd9c53dec362c2121fd2706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c02b1ba4b7b679be28a0d58b335b8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a0c02b1ba4b7b679be28a0d58b335b8ca">Jump</a> ()</td></tr>
-<tr class="memdesc:a0c02b1ba4b7b679be28a0d58b335b8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Jump.  <br /></td></tr>
-<tr class="separator:a0c02b1ba4b7b679be28a0d58b335b8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a618699396f16c7f4e2de5bb583fce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#ad6a618699396f16c7f4e2de5bb583fce">SetAction</a> (const <a class="el" href="_game_defines_8h.html#a0fa695ac021b50f72dc2656fd68768a1">eAction</a>, const <a class="el" href="_game_defines_8h.html#a31793e4efbb182e74f29154fb352f2a5">eDirection</a>=eDirection::Continue)</td></tr>
 <tr class="memdesc:ad6a618699396f16c7f4e2de5bb583fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set action.  <br /></td></tr>
 <tr class="separator:ad6a618699396f16c7f4e2de5bb583fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,32 +142,25 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~CObject</b> ()</t
 <tr class="memitem:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42">Draw</a> ()</td></tr>
 <tr class="memdesc:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw object.  <br /></td></tr>
 <tr class="separator:ae060ffb1aa3bf6148614cf6506074e42 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd6627cbcf662e12bfc6535aafe32b7 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a3bd6627cbcf662e12bfc6535aafe32b7">GetObjectType</a> () const</td></tr>
-<tr class="memdesc:a3bd6627cbcf662e12bfc6535aafe32b7 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
-<tr class="separator:a3bd6627cbcf662e12bfc6535aafe32b7 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83">GetType</a> () const</td></tr>
+<tr class="memdesc:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object type.  <br /></td></tr>
+<tr class="separator:ab39ee0bc168e051d1b2497b1259d0b83 inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a257ff19b21196bf7a42bbaa36e7126a8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a257ff19b21196bf7a42bbaa36e7126a8">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a257ff19b21196bf7a42bbaa36e7126a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#a257ff19b21196bf7a42bbaa36e7126a8">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
 <tr class="memdesc:a257ff19b21196bf7a42bbaa36e7126a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response.  <br /></td></tr>
 <tr class="separator:a257ff19b21196bf7a42bbaa36e7126a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf24d8769c97c2efb7ef415d52be92b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player.html#aaf24d8769c97c2efb7ef415d52be92b7">BloodSpray</a> (const Vector2 &amp;)</td></tr>
 <tr class="memdesc:aaf24d8769c97c2efb7ef415d52be92b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a spray of blood.  <br /></td></tr>
 <tr class="separator:aaf24d8769c97c2efb7ef415d52be92b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_c_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_c_object.html">CObject</a></td></tr>
-<tr class="memitem:a2cfe2c14ca84c5a06b60f29a57b64e3d inherit pro_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
-<tr class="memdesc:a2cfe2c14ca84c5a06b60f29a57b64e3d inherit pro_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response.  <br /></td></tr>
-<tr class="separator:a2cfe2c14ca84c5a06b60f29a57b64e3d inherit pro_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44faca41d39b15a4835dc23a55d61b41 inherit pro_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">const Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a44faca41d39b15a4835dc23a55d61b41">GetViewVector</a> () const</td></tr>
-<tr class="memdesc:a44faca41d39b15a4835dc23a55d61b41 inherit pro_methods_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute view vector.  <br /></td></tr>
-<tr class="separator:a44faca41d39b15a4835dc23a55d61b41 inherit pro_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a2372a8befe070bc1e747bb65b39f7bac"><td class="memItemLeft" align="right" valign="top"><a id="a2372a8befe070bc1e747bb65b39f7bac" name="a2372a8befe070bc1e747bb65b39f7bac"></a>
-Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pFrameEvent</b> = nullptr</td></tr>
-<tr class="memdesc:a2372a8befe070bc1e747bb65b39f7bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame event timer. <br /></td></tr>
-<tr class="separator:a2372a8befe070bc1e747bb65b39f7bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a76f4a251c62bcbe2e97e3827f2d87335"><td class="memItemLeft" align="right" valign="top"><a id="a76f4a251c62bcbe2e97e3827f2d87335" name="a76f4a251c62bcbe2e97e3827f2d87335"></a>
+UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = 1</td></tr>
+<tr class="memdesc:a76f4a251c62bcbe2e97e3827f2d87335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Health. <br /></td></tr>
+<tr class="separator:a76f4a251c62bcbe2e97e3827f2d87335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e02e563500f530250c2e7932e932358"><td class="memItemLeft" align="right" valign="top"><a id="a9e02e563500f530250c2e7932e932358" name="a9e02e563500f530250c2e7932e932358"></a>
 <a class="el" href="_game_defines_8h.html#a0fa695ac021b50f72dc2656fd68768a1">eAction</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eAction</b> = eAction::Standing</td></tr>
 <tr class="memdesc:a9e02e563500f530250c2e7932e932358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current action. <br /></td></tr>
@@ -183,17 +173,23 @@ Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pFra
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOnGround</b> = false</td></tr>
 <tr class="memdesc:a693b43ac81e0e50161d0bdda1254f356"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if on ground. <br /></td></tr>
 <tr class="separator:a693b43ac81e0e50161d0bdda1254f356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79b70f97276809996a9f6b3171c7173"><td class="memItemLeft" align="right" valign="top"><a id="ac79b70f97276809996a9f6b3171c7173" name="ac79b70f97276809996a9f6b3171c7173"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nHealth</b> = 1</td></tr>
-<tr class="memdesc:ac79b70f97276809996a9f6b3171c7173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Health. <br /></td></tr>
-<tr class="separator:ac79b70f97276809996a9f6b3171c7173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2372a8befe070bc1e747bb65b39f7bac"><td class="memItemLeft" align="right" valign="top"><a id="a2372a8befe070bc1e747bb65b39f7bac" name="a2372a8befe070bc1e747bb65b39f7bac"></a>
+Sage::CEventTimer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pFrameEvent</b> = nullptr</td></tr>
+<tr class="memdesc:a2372a8befe070bc1e747bb65b39f7bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frame event timer. <br /></td></tr>
+<tr class="separator:a2372a8befe070bc1e747bb65b39f7bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="memitem:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d">CollisionResponse</a> (const Vector2 &amp;, float, <a class="el" href="class_c_object.html">CObject</a> *=nullptr)</td></tr>
+<tr class="memdesc:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response.  <br /></td></tr>
+<tr class="separator:a2cfe2c14ca84c5a06b60f29a57b64e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_c_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_object.html">CObject</a></td></tr>
 <tr class="memitem:a4eb51a58366c30f1c8e13ab4f04aaad6 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="_game_defines_8h.html#ad239e8ca5e4743e02612a9edf05a6cc7">eObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eObject</b> = eObject::Unknown</td></tr>
 <tr class="memdesc:a4eb51a58366c30f1c8e13ab4f04aaad6 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object type. <br /></td></tr>
 <tr class="separator:a4eb51a58366c30f1c8e13ab4f04aaad6 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11aea2e50bb8c5cde8782b67edf35368 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSprite</b> = eSprite::PlayerRight</td></tr>
+<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSprite</b> = eSprite::Saw</td></tr>
 <tr class="memdesc:a11aea2e50bb8c5cde8782b67edf35368 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite type. <br /></td></tr>
 <tr class="separator:a11aea2e50bb8c5cde8782b67edf35368 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0219c1e480987fa4f0f126a315bc2398 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
@@ -216,9 +212,6 @@ Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vVelocity</b></t
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bStatic</b> = true</td></tr>
 <tr class="memdesc:a1be2c24796d998aed040fd7021f43550 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is static (does not move). <br /></td></tr>
 <tr class="separator:a1be2c24796d998aed040fd7021f43550 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_static_attribs_class_c_common"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_c_common')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_c_common.html">CCommon</a></td></tr>
 <tr class="memitem:affe2697f28fbe937757db5eaa94c00d3 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRenderer</b> = nullptr</td></tr>
@@ -236,22 +229,22 @@ static Sage::CParticleEngine2D *&#160;</td><td class="memItemRight" valign="bott
 static <a class="el" href="class_c_tile_manager.html">CTileManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pTileManager</b> = nullptr</td></tr>
 <tr class="memdesc:ab747c9a034e120d8a59493a204a8b2b9 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to tile manager. <br /></td></tr>
 <tr class="separator:ab747c9a034e120d8a59493a204a8b2b9 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds</b> = false</td></tr>
-<tr class="memdesc:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw bounding boxes and circles flag. <br /></td></tr>
-<tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bGodMode</b> = false</td></tr>
-<tr class="memdesc:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">God mode flag. <br /></td></tr>
-<tr class="separator:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
-static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vWorldSize</b> = Vector2::Zero</td></tr>
-<tr class="memdesc:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">World height and width. <br /></td></tr>
-<tr class="separator:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab278f41b93c7393ce87eb0674349e796 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static <a class="el" href="class_c_player.html">CPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPlayer</b> = nullptr</td></tr>
 <tr class="memdesc:ab278f41b93c7393ce87eb0674349e796 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to player character. <br /></td></tr>
 <tr class="separator:ab278f41b93c7393ce87eb0674349e796 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vWorldSize</b></td></tr>
+<tr class="memdesc:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">World height and width. <br /></td></tr>
+<tr class="separator:a13a1373a4e7dcbff52788a047f314af1 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bGodMode</b> = false</td></tr>
+<tr class="memdesc:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">God mode flag. <br /></td></tr>
+<tr class="separator:a8c40cb827e6cdf7db561a4759b836da9 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds</b> = false</td></tr>
+<tr class="memdesc:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw bounding boxes and circles flag. <br /></td></tr>
+<tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af6807f">eGameState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eGameState</b> = eGameState::Loading</td></tr>
 <tr class="memdesc:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game state. <br /></td></tr>
@@ -275,7 +268,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create and initialize an player object given its initial position. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create and initialize a player object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Initial position of player. </td></tr>
   </table>
@@ -298,7 +291,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The destructor deletes the event timers created by the constructor. </p>
+<p>The destructor deletes the event timer created by the constructor. </p>
 
 </div>
 </div>
@@ -322,7 +315,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -370,7 +363,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -459,24 +452,6 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
 
 </div>
 </div>
-<a id="a0c02b1ba4b7b679be28a0d58b335b8ca" name="a0c02b1ba4b7b679be28a0d58b335b8ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c02b1ba4b7b679be28a0d58b335b8ca">&#9670;&#160;</a></span>Jump()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CPlayer::Jump </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Vertical jump. This function will be called in response to device inputs. </p>
-
-</div>
-</div>
 <a id="a8cdce2b8fd7f5765c19d1d45f9899866" name="a8cdce2b8fd7f5765c19d1d45f9899866"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cdce2b8fd7f5765c19d1d45f9899866">&#9670;&#160;</a></span>Move()</h2>
 
@@ -520,10 +495,10 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set action. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Set action and direction. If the new action is <code>eAction::Dying</code> and the current action is not <code>eAction::Dying</code>, then restart the frame event and play a death sound. If the new action is not <code>eAction::Jumping</code> or the current action is not <code>eAction::Walking</code>, then change the current action to the new action. If the new direction is not <code>eDirection::Continue</code> then change the current direction to the new direction, otherwise leave it the same. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">action</td><td>The action. </td></tr>
-    <tr><td class="paramname">d</td><td>The direction of action, defaults to current direction. </td></tr>
+    <tr><td class="paramname">action</td><td>The new action. </td></tr>
+    <tr><td class="paramname">d</td><td>The new direction of action, defaults to <code>eDirection::Continue</code>. </td></tr>
   </table>
   </dd>
 </dl>
