@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab0926de034d81b14f0e5e48c0d0ac342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a map.  <br /></td></tr>
 <tr class="separator:ab0926de034d81b14f0e5e48c0d0ac342"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329861d19161159afb3753acb415a7c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a329861d19161159afb3753acb415a7c0">Draw</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>)</td></tr>
-<tr class="memdesc:a329861d19161159afb3753acb415a7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the map with a given tile.  <br /></td></tr>
+<tr class="memdesc:a329861d19161159afb3753acb415a7c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the map using multi-framed tile sprite.  <br /></td></tr>
 <tr class="separator:a329861d19161159afb3753acb415a7c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459a0b429dd887031975276591c014fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_tile_manager.html#a459a0b429dd887031975276591c014fe">DrawBoundingBoxes</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>)</td></tr>
 <tr class="memdesc:a459a0b429dd887031975276591c014fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the bounding boxes.  <br /></td></tr>
@@ -214,11 +214,11 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowState</
 <tr class="separator:a69435ca535bedd9d0c894f8730788fe3 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds</b> = false</td></tr>
-<tr class="memdesc:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show collision circle flag. <br /></td></tr>
+<tr class="memdesc:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw bounding boxes and circles flag. <br /></td></tr>
 <tr class="separator:ab089de087cef73dc61a2a45d33192aab inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The tile manager is responsible for the tile-based background and matters arising therefrom. </p>
+<div class="textblock"><p>The tile manager is responsible for the tile-based background and matters arising therefrom. See <a href="index.html#sec5">Section 5</a> of the documentation for more details. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2f7173eedcbd2eb767b6b1aebd29c0a5" name="a2f7173eedcbd2eb767b6b1aebd29c0a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f7173eedcbd2eb767b6b1aebd29c0a5">&#9670;&#160;</a></span>CTileManager()</h2>
@@ -609,7 +609,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowBounds<
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check whether one side of the player is visible to a guard. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Check whether the player is visible to a guard. What we want is to check whether a line can be drawn between the guard's position and the player's position without overlapping one of the wall AABBs. Unfortunately, since we are using <code>DirectX::BoundingBox</code> for an AABB which does not have an <code>Intersect</code> function for a line, we'll have to use its <code>Intersect</code> function for a 3D triangle whose top edge is the line. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pGuard</td><td>Pointer to a guard. </td></tr>
   </table>

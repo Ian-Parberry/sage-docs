@@ -173,7 +173,7 @@ static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete the sprite descriptor. The renderer needs to be deleted before this destructor runs so it will be done elsewhere. </p>
+<p>Delete the object manager. The renderer needs to be deleted before this destructor runs so it will be done elsewhere. </p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Draw the current frame rate to a hard-coded position in the window using the font specified in <code>GameSettings.xml</code>. </p>
+<p>Draw the current frame rate to a hard-coded position in the window. The frame rate will be drawn in a hard-coded position using the font specified in <code>GameSettings.xml</code>. </p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Poll the keyboard state then respond to the key presses that happened since the last frame. The keys are identified using <a href="https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">virtual-key codes</a>. </p>
+<p>Poll the keyboard state and respond to the key presses that happened since the last frame. The keys are identified using <a href="https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">virtual-key codes</a>. </p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ static Sage::CSpriteRenderer *&#160;</td><td class="memItemRight" valign="bottom
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Process any changes to the current game state. For ths game this means that if the game is in state <code>eGameState::Loading</code> and both the renderer and the sound manager have finished loading (which may or may not be multithreaded), then begin the game. <br  />
+<p>Process any changes to the current game state. If the game is in state <code>eGameState::Loading</code> and both the renderer and the sound manager have finished loading (which may or may not be multithreaded), then begin the game. <br  />
  </p>
 
 </div>

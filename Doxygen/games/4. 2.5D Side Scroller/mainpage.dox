@@ -1,0 +1,106 @@
+/**
+\mainpage notitle 
+
+\anchor sec1
+# 1. Introduction
+
+<em>Ned's Turkey Farm</em> is a simple 2.5D side scroller with graphics, 
+particle effects, and sound in which you pilot a plane and kill crows.
+The crows have some rudimentary state-based AI. If you smack the
+plane into the ground it will emit black smoke.
+The plane moves left just to challenge your preconceptions about
+side scrollers.
+
+\anchor fig1
+\image html screenshot.png "Fig. 1: A screenshot of Ned's Turkey Farm." width=50%
+
+\anchor sec2
+# 2. Controls
+
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td><center>F1</center></td>
+<td>Toggle camera position</td>
+<tr>
+<td><center>A</center></td>
+<td>Strafe left</td>
+<tr>
+<td><center>D</center></td>
+<td>Strafe right</td>
+<tr>
+<td><center>Up arrow</center></td>
+<td>Gain height</td>
+<tr>
+<td><center>Down arrow</center></td>
+<td>Lose height</td>
+<tr>
+<td><center>Left arrow</center></td>
+<td>Move faster</td>
+<tr>
+<td><center>Right arrow</center></td>
+<td>Move slower</td>
+<tr>
+<td><center>Space</center></td>
+<td>Shoot</td>
+<tr>
+<td><center>ESC</center></td>
+<td>Exit</td>
+</table>
+</center>
+
+\anchor sec3
+# 3. SAGE
+
+This code uses <a href="../sage/index.html">SAGE</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>.
+Navigate to the folder <span style="background-color:#D8E4D8;">`3. Tiled Platformer`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-games`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
+variables correctly.
+Open <span style="background-color:#D8E4D8;">`Tiled Platformer.sln`</span>
+ with Visual Studio and build the Release configuration.
+The Release executable file <span style="background-color:#D8E4D8;">`Tiled Platformer.exe`</span>
+will appear. 
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
+
+\anchor sec4
+# 4. Game Play
+
+Run <span style="background-color:#D8E4D8;">`Ned's Turkey Farm.exe`</span>
+and do the following.
+<ol>
+<li>
+Use the controls (see \ref sec2 "Section 2") to ...
+</ol>
+
+\anchor sec5
+# 5. Code Breakdown
+
+Open <span style="background-color:#D8E4D8;">`Ned's Turkey Farm.sln`</span>
+in Visual Studio and examine the
+code in the editor while you read the
+rest of this section.
+This section assumes that you have read and understood
+the documentation from 
+<a href="../sage/index.html">SAGE</a>,
+<a href="../blank/index.html">The Blank Game</a>,
+<a href="../topdown/index.html">The Top Down Game</a>,
+<a href="../topdowntiled/index.html">The Top Down Tiled Game</a>
+and
+<a href="../platformer/index.html">The Tiled Platformer</a>.
+
+How does this code differ from previous games?
+
+\anchor sec6
+# 6. What Next?
+
+You might want to look at <a href="../introphysics/index.html">Physics Games and Toys</a> next.
+
+**/

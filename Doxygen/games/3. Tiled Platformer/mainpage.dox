@@ -157,7 +157,7 @@ and in `CPlayer::SetAction` to prevent double-jumping.
 \anchor sec6
 # 6. What Next?
 
-You might want to look at <a href="../introphysics/index.html">Physics Games and Toys</a> next.
+Next, take a look at the <a href="../ned/index.html">2.5D Side Scroller</a>.
 
 
 
