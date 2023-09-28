@@ -110,9 +110,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f985240f67c8bf03a26f370e67fdb33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a7f985240f67c8bf03a26f370e67fdb33">~CObjectManager</a> ()</td></tr>
 <tr class="memdesc:a7f985240f67c8bf03a26f370e67fdb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a7f985240f67c8bf03a26f370e67fdb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb3edaeac3fa792eee90d556ee972c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a3fb3edaeac3fa792eee90d556ee972c1">Initialize</a> ()</td></tr>
-<tr class="memdesc:a3fb3edaeac3fa792eee90d556ee972c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize.  <br /></td></tr>
-<tr class="separator:a3fb3edaeac3fa792eee90d556ee972c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b1cc8bc4e0d525dccae0d967c81074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_object.html">CObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a74b1cc8bc4e0d525dccae0d967c81074">Create</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, const Vector3 &amp;)</td></tr>
 <tr class="memdesc:a74b1cc8bc4e0d525dccae0d967c81074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new object.  <br /></td></tr>
 <tr class="separator:a74b1cc8bc4e0d525dccae0d967c81074"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee994b178d5774f081865796a03709f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#aee994b178d5774f081865796a03709f2">Move</a> ()</td></tr>
 <tr class="memdesc:aee994b178d5774f081865796a03709f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move all objects.  <br /></td></tr>
 <tr class="separator:aee994b178d5774f081865796a03709f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f13656ff4050c227c8f1fb27803d116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116">Clear</a> ()</td></tr>
+<tr class="memdesc:a5f13656ff4050c227c8f1fb27803d116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear.  <br /></td></tr>
+<tr class="separator:a5f13656ff4050c227c8f1fb27803d116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88ad98fbf0807b925f6b57f9e3c8385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#ab88ad98fbf0807b925f6b57f9e3c8385">DrawBackground</a> ()</td></tr>
 <tr class="memdesc:ab88ad98fbf0807b925f6b57f9e3c8385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw background.  <br /></td></tr>
 <tr class="separator:ab88ad98fbf0807b925f6b57f9e3c8385"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +227,24 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5f13656ff4050c227c8f1fb27803d116" name="a5f13656ff4050c227c8f1fb27803d116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f13656ff4050c227c8f1fb27803d116">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CObjectManager::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clear the object list and initialize the sky and ground descriptors. </p>
+
+</div>
+</div>
 <a id="a89d0d8a25cf5d5e5a774e4385d7de0c0" name="a89d0d8a25cf5d5e5a774e4385d7de0c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89d0d8a25cf5d5e5a774e4385d7de0c0">&#9670;&#160;</a></span>Create() <span class="overload">[1/2]</span></h2>
 
@@ -456,24 +474,6 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a3fb3edaeac3fa792eee90d556ee972c1" name="a3fb3edaeac3fa792eee90d556ee972c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb3edaeac3fa792eee90d556ee972c1">&#9670;&#160;</a></span>Initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CObjectManager::Initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initialize the sky and ground descriptors. </p>
 
 </div>
 </div>

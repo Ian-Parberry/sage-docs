@@ -6,10 +6,8 @@
 
 <em>Ned's Turkey Farm</em> is a simple 2.5D side scroller with graphics, 
 particle effects, and sound in which you pilot a plane and kill crows.
-The crows have some rudimentary state-based AI. If you smack the
-plane into the ground it will emit black smoke.
-The plane moves left just to challenge your preconceptions about
-side scrollers.
+The plane moves leftwards just to challenge your preconceptions about
+side scrollers. \ref fig1 "Fig. 1" shows a screen shot.
 
 \anchor fig1
 \image html screenshot.png "Fig. 1: A screenshot of Ned's Turkey Farm." width=50%
@@ -22,33 +20,33 @@ side scrollers.
 <tr>
 <td><center><b>Key</b></center></td>
 <td><center><b>Action</b></center></td>
-<tr>
-<td><center>F1</center></td>
-<td>Toggle camera position</td>
-<tr>
-<td><center>A</center></td>
-<td>Strafe left</td>
-<tr>
-<td><center>D</center></td>
-<td>Strafe right</td>
-<tr>
-<td><center>Up arrow</center></td>
-<td>Gain height</td>
-<tr>
-<td><center>Down arrow</center></td>
-<td>Lose height</td>
-<tr>
-<td><center>Left arrow</center></td>
-<td>Move faster</td>
-<tr>
-<td><center>Right arrow</center></td>
-<td>Move slower</td>
-<tr>
-<td><center>Space</center></td>
-<td>Shoot</td>
-<tr>
-<td><center>ESC</center></td>
-<td>Exit</td>
+  <tr>
+    <td><center>F1</center></td>
+    <td>Help (this document)</td>
+  <tr>
+    <td><center>F2</center></td>
+    <td>Toggle frame rate display</td>
+  <tr>
+    <td><center>F3</center></td>
+    <td>Show 3D view</td>
+  <tr>
+    <td><center>Up arrow</center></td>
+    <td>Gain height</td>
+  <tr>
+    <td><center>Down arrow</center></td>
+    <td>Lose height</td>
+  <tr>
+    <td><center>Left arrow</center></td>
+    <td>Move faster</td>
+  <tr>
+    <td><center>Right arrow</center></td>
+    <td>Move slower</td>
+  <tr>
+    <td><center>Space</center></td>
+    <td>Shoot</td>
+  <tr>
+    <td><center>ESC</center></td>
+    <td>Exit</td>
 </table>
 </center>
 
@@ -75,10 +73,27 @@ to build both Release and Debug configurations.
 
 Run <span style="background-color:#D8E4D8;">`Ned's Turkey Farm.exe`</span>
 and do the following.
+
 <ol>
 <li>
-Use the controls (see \ref sec2 "Section 2") to ...
+Notice that the background is more 3-dimensional than in previous games.
+If you play for long enough the background loops.
+<li>
+Use the controls (see \ref sec2 "Section 2") to maneuver the plane up and down.
+Notice that the camera pivots down when the plane is below its initial height, and
+moves upwards when the plane is above its initial height.
+<li>
+Use the controls (see \ref sec2 "Section 2") to hunt down the crows and shoot them.
+Notice that they do a pretty good job of avoiding you.
+<li>
+Smack the plane into the ground to see smoke particle effects.
+<li>
+Hold down the `F3` key to move the camera back and across so you can see
+what is really going on in 3D (see \ref fig2 "Fig. 2").
 </ol>
+
+\anchor fig2
+\image html f1.png "Fig. 2: What's really going on." width=60%
 
 \anchor sec5
 # 5. Code Breakdown

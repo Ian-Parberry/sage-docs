@@ -88,7 +88,7 @@ $(function() {
 <div class="contents">
 
 <p>The game class.  
-</p>
+ <a href="class_c_game.html#details">More...</a></p>
 
 <p><code>#include &lt;Game.h&gt;</code></p>
 <div class="dynheader">
@@ -137,9 +137,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a74a75ef02b07f0f785de8aa6e7631b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d">KeyboardHandler</a> ()</td></tr>
 <tr class="memdesc:a74a75ef02b07f0f785de8aa6e7631b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The keyboard handler.  <br /></td></tr>
 <tr class="separator:a74a75ef02b07f0f785de8aa6e7631b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeca1323f12998e4897141599d8ba7550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_game.html#aeca1323f12998e4897141599d8ba7550">ControllerHandler</a> ()</td></tr>
-<tr class="memdesc:aeca1323f12998e4897141599d8ba7550"><td class="mdescLeft">&#160;</td><td class="mdescRight">The controller handler.  <br /></td></tr>
-<tr class="separator:aeca1323f12998e4897141599d8ba7550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b7924e5be62a511e2fc90cc40b7cbb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0">RenderFrame</a> ()</td></tr>
 <tr class="memdesc:a8b7924e5be62a511e2fc90cc40b7cbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render an animation frame.  <br /></td></tr>
 <tr class="separator:a8b7924e5be62a511e2fc90cc40b7cbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +159,16 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ad92a74136e76ce02a0d25f0287ba462f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_game.html#ad92a74136e76ce02a0d25f0287ba462f">ProcessGameState</a> ()</td></tr>
 <tr class="memdesc:ad92a74136e76ce02a0d25f0287ba462f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process game state.  <br /></td></tr>
 <tr class="separator:ad92a74136e76ce02a0d25f0287ba462f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ae857e236f8748ccd71b0e2354938c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c">DrawFrameRateText</a> ()</td></tr>
+<tr class="memdesc:ad2ae857e236f8748ccd71b0e2354938c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw frame rate text to screen.  <br /></td></tr>
+<tr class="separator:ad2ae857e236f8748ccd71b0e2354938c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:aebf03edb5525b616bdefb05d23b9aa36"><td class="memItemLeft" align="right" valign="top"><a id="aebf03edb5525b616bdefb05d23b9aa36" name="aebf03edb5525b616bdefb05d23b9aa36"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bDrawFrameRate</b> = false</td></tr>
+<tr class="memdesc:aebf03edb5525b616bdefb05d23b9aa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the frame rate. <br /></td></tr>
+<tr class="separator:aebf03edb5525b616bdefb05d23b9aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa72162880e7f5fc61ff7f80a8f8c9e"><td class="memItemLeft" align="right" valign="top"><a id="a2aa72162880e7f5fc61ff7f80a8f8c9e" name="a2aa72162880e7f5fc61ff7f80a8f8c9e"></a>
 std::vector&lt; Sage::CSpriteDesc3D &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_stdRenderList</b></td></tr>
 <tr class="memdesc:a2aa72162880e7f5fc61ff7f80a8f8c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render list. <br /></td></tr>
@@ -218,7 +222,9 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
 <tr class="memdesc:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game state. <br /></td></tr>
 <tr class="separator:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The game class is the object-oriented implementation of the game. This class must contain the following public member functions. <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">Initialize()</a></code> does initialization and will be run exactly once at the start of the game. <code><a class="el" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame.">ProcessFrame()</a></code> will be called once per frame to create and render the next animation frame. <code><a class="el" href="class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer.">Release()</a></code> will be called at game exit but before any destructors are run. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4db10c09035dc16b32d6c1ef4cca2143" name="a4db10c09035dc16b32d6c1ef4cca2143"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4db10c09035dc16b32d6c1ef4cca2143">&#9670;&#160;</a></span>~CGame()</h2>
 
@@ -233,7 +239,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete the renderer and the object manager. </p>
+<p>Delete the particle engine, the object manager, and the wait event. The renderer needs to be deleted before this destructor runs so it will be done elsewhere. </p>
 
 </div>
 </div>
@@ -260,33 +266,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clear any old objects out of the object manager and create some new ones. </p>
-
-</div>
-</div>
-<a id="aeca1323f12998e4897141599d8ba7550" name="aeca1323f12998e4897141599d8ba7550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeca1323f12998e4897141599d8ba7550">&#9670;&#160;</a></span>ControllerHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CGame::ControllerHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Poll the XBox controller state and respond to the controls there. </p>
+<p>Call this function to start a new game. This should be re-entrant so that you can restart a new game without having to shut down and restart the program. Clear the particle engine to get rid of any existing particles, delete any old objects out of the object manager and create some new ones. </p>
 
 </div>
 </div>
@@ -485,7 +465,33 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create an average of 4 trees per cell of random types and in random places near the front of the cell. Consecutive trees will be different. </p>
+<p>Create an average of 4 trees per cell of random type and in random places near the front of the cell. Consecutive trees will be different. </p>
+
+</div>
+</div>
+<a id="ad2ae857e236f8748ccd71b0e2354938c" name="ad2ae857e236f8748ccd71b0e2354938c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ae857e236f8748ccd71b0e2354938c">&#9670;&#160;</a></span>DrawFrameRateText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGame::DrawFrameRateText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the current frame rate to a hard-coded position in the window. The frame rate will be drawn in a hard-coded position using the font specified in <code>GameSettings.xml</code>. </p>
 
 </div>
 </div>
@@ -522,7 +528,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the renderer and the object manager, load images and sounds, start the timer, and begin the game. </p>
+<p>Create, initialize, and load the renderer and the audio player. Create the wait event and the object manager. </p>
 
 </div>
 </div>
@@ -548,7 +554,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Poll the keyboard state and respond to the key presses that happened since the last frame. </p>
+<p>Poll the keyboard state and respond to the key presses that happened since the last frame. The keys are identified using <a href="https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">virtual-key codes</a>. </p>
 
 </div>
 </div>
@@ -574,7 +580,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load the sounds for this game. </p>
+<p>Create a media list <code>Sage::CMediaList</code> of <code>eSound</code>. For each sound, insert into the media list a pair consisting of an instance of the sound enumerated type <code>eSound</code> and the corresponding string used in the <code>name</code> field in a <code>&lt;sound&gt;</code> tag in <code>GameSettings.xml</code>. Pass the media list to the sound manager for loading. </p>
 
 </div>
 </div>
@@ -600,7 +606,8 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load the sprites for this game. </p>
+<p>Create a media list <code>Sage::CMediaList</code> of <code>eSprite</code>. For each sprite, insert into the media list a pair consisting of an instance of the sprite enumerated type <code>eSprite</code> and the corresponding string used in the <code>name</code> field in a <code>&lt;sprite&gt;</code> tag in <code>GameSettings.xml</code>. Pass the media list to the renderer for loading. <br  />
+ </p>
 
 </div>
 </div>
@@ -618,7 +625,8 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Handle keyboard input, move the game objects and render them in their new positions and orientations. Notify the audio player at the start of each frame so that it can prevent multiple copies of a sound from starting on the same frame. Notify the timer of the start and end of the frame so that it can calculate frame time. <br  />
+<p>This function will be called regularly to process and render a frame of animation, which involves the following. Handle inputs. Notify the audio player at the start of each frame so that it can prevent multiple copies of a sound from starting on the same frame. <br  />
+ Move the game objects and the camera. Render a frame of animation. <br  />
  </p>
 
 </div>

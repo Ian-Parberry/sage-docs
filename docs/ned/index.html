@@ -79,7 +79,7 @@ $(function() {
 
 <div><div class="contents">
 <div class="textblock"><p><a class="anchor" id="sec1"></a></p><h1>1. Introduction</h1>
-<p><em>Ned's Turkey Farm</em> is a simple 2.5D side scroller with graphics, particle effects, and sound in which you pilot a plane and kill crows. The crows have some rudimentary state-based AI. If you smack the plane into the ground it will emit black smoke. The plane moves left just to challenge your preconceptions about side scrollers.</p>
+<p><em>Ned's Turkey Farm</em> is a simple 2.5D side scroller with graphics, particle effects, and sound in which you pilot a plane and kill crows. The plane moves leftwards just to challenge your preconceptions about side scrollers. <a class="el" href="index.html#fig1">Fig. 1</a> shows a screen shot.</p>
 <p><a class="anchor" id="fig1"></a></p><div class="image">
 <img src="screenshot.png" alt="" width="50%"/>
 <div class="caption">
@@ -89,11 +89,11 @@ Fig. 1: A screenshot of Ned's Turkey Farm.</div></div>
 <tr>
 <td><center><b>Key</b></center> </td><td><center><b>Action</b></center> </td></tr>
 <tr>
-<td><center>F1</center> </td><td>Toggle camera position </td></tr>
+<td><center>F1</center> </td><td>Help (this document) </td></tr>
 <tr>
-<td><center>A</center> </td><td>Strafe left </td></tr>
+<td><center>F2</center> </td><td>Toggle frame rate display </td></tr>
 <tr>
-<td><center>D</center> </td><td>Strafe right </td></tr>
+<td><center>F3</center> </td><td>Show 3D view </td></tr>
 <tr>
 <td><center>Up arrow</center> </td><td>Gain height </td></tr>
 <tr>
@@ -110,10 +110,23 @@ Fig. 1: A screenshot of Ned's Turkey Farm.</div></div>
 </center><p><a class="anchor" id="sec3"></a></p><h1>3. SAGE</h1>
 <p>This code uses <a href="../sage/index.html">SAGE</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>3. Tiled Platformer</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-games</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Tiled Platformer.sln</code></span> with Visual Studio and build the Release configuration. The Release executable file <span style="background-color:#D8E4D8;"><code>Tiled Platformer.exe</code></span> will appear. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="sec4"></a></p><h1>4. Game Play</h1>
-<p>Run <span style="background-color:#D8E4D8;"><code>Ned's Turkey Farm.exe</code></span> and do the following. </p><ol>
+<p>Run <span style="background-color:#D8E4D8;"><code>Ned's Turkey Farm.exe</code></span> and do the following.</p>
+<ol>
 <li>
-Use the controls (see <a class="el" href="index.html#sec2">Section 2</a>) to ... </li>
+Notice that the background is more 3-dimensional than in previous games. If you play for long enough the background loops. </li>
+<li>
+Use the controls (see <a class="el" href="index.html#sec2">Section 2</a>) to maneuver the plane up and down. Notice that the camera pivots down when the plane is below its initial height, and moves upwards when the plane is above its initial height. </li>
+<li>
+Use the controls (see <a class="el" href="index.html#sec2">Section 2</a>) to hunt down the crows and shoot them. Notice that they do a pretty good job of avoiding you. </li>
+<li>
+Smack the plane into the ground to see smoke particle effects. </li>
+<li>
+Hold down the <code>F3</code> key to move the camera back and across so you can see what is really going on in 3D (see <a class="el" href="index.html#fig2">Fig. 2</a>). </li>
 </ol>
+<p><a class="anchor" id="fig2"></a></p><div class="image">
+<img src="f1.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 2: What's really going on.</div></div>
 <p><a class="anchor" id="sec5"></a></p><h1>5. Code Breakdown</h1>
 <p>Open <span style="background-color:#D8E4D8;"><code>Ned's Turkey Farm.sln</code></span> in Visual Studio and examine the code in the editor while you read the rest of this section. This section assumes that you have read and understood the documentation from <a href="../sage/index.html">SAGE</a>, <a href="../blank/index.html">The Blank Game</a>, <a href="../topdown/index.html">The Top Down Game</a>, <a href="../topdowntiled/index.html">The Top Down Tiled Game</a> and <a href="../platformer/index.html">The Tiled Platformer</a>.</p>
 <p>How does this code differ from previous games?</p>
