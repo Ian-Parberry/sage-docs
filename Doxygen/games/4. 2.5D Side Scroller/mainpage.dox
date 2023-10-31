@@ -93,7 +93,7 @@ what is really going on in 3D (see \ref fig2 "Fig. 2").
 </ol>
 
 \anchor fig2
-\image html f1.png "Fig. 2: What's really going on." width=60%
+\image html f3.png "Fig. 2: What's really going on in the game." width=90%
 
 \anchor sec5
 # 5. Code Breakdown
@@ -112,6 +112,54 @@ and
 <a href="../platformer/index.html">The Tiled Platformer</a>.
 
 How does this code differ from previous games?
+
+\anchor sec5-1
+## 5.1 The Third Dimension
+
+<em>Ned's Turkey Farm</em> is a 2.5D game, which means that it is a 3D
+game with 2D sprite art.
+`CRenderer` is derived from `Sage::CSpriteRenderer` and is instantiated with
+
+    Sage::CSpriteRenderer(Sage::eSpriteMode::Unbatched3D)
+    
+whereas previous
+<a href="../sage/index.html">SAGE</a> games
+(<a href="../blank/index.html">The Blank Game</a>,
+<a href="../topdown/index.html">The Top Down Game</a>,
+<a href="../topdowntiled/index.html">The Top Down Tiled Game</a>
+and
+<a href="../platformer/index.html">The Tiled Platformer</a>)
+used
+
+    Sage::CSpriteRenderer(Sage::eSpriteMode::Batched2D)
+
+
+\anchor sec5-2
+## 5.2 The Background
+
+\anchor fig3
+\image html sky.png "Fig. 3: The sky tile." width=60%
+
+\anchor fig4
+\image html ground.png "Fig. 4: The ground tile." width=60%
+
+\anchor fig5
+\image html cell.png "Fig. 5: A single cell in 3D." width=60%
+
+\anchor sec5-3
+## 5.3 Depth Sorting
+
+\anchor fig6
+\image html nodepthsort.png "Fig. 6: Errors in depth sorting." width=60%
+
+In \ref fig6 "Figure 6" (left), the crow's Z coordinate is behind the plane's
+Z coordinate but the plane is drawn first, resulting in the transparent
+pixels of the plane cancelling out the crow's body (see the yellow arrow)
+leaving just its
+head sticking out to the left of the plane.
+In \ref fig6 "Figure 6" (right), the crow's Z coordinate is in front of the plane's
+Z coordinate but the crow is drawn first, resulting in the transparent
+pixels of the crow cancelling out the part of the plane's tail (see the yellow arrow).
 
 \anchor sec6
 # 6. What Next?

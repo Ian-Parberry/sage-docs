@@ -124,12 +124,34 @@ Smack the plane into the ground to see smoke particle effects. </li>
 Hold down the <code>F3</code> key to move the camera back and across so you can see what is really going on in 3D (see <a class="el" href="index.html#fig2">Fig. 2</a>). </li>
 </ol>
 <p><a class="anchor" id="fig2"></a></p><div class="image">
-<img src="f1.png" alt="" width="60%"/>
+<img src="f3.png" alt="" width="90%"/>
 <div class="caption">
-Fig. 2: What's really going on.</div></div>
+Fig. 2: What's really going on in the game.</div></div>
 <p><a class="anchor" id="sec5"></a></p><h1>5. Code Breakdown</h1>
 <p>Open <span style="background-color:#D8E4D8;"><code>Ned's Turkey Farm.sln</code></span> in Visual Studio and examine the code in the editor while you read the rest of this section. This section assumes that you have read and understood the documentation from <a href="../sage/index.html">SAGE</a>, <a href="../blank/index.html">The Blank Game</a>, <a href="../topdown/index.html">The Top Down Game</a>, <a href="../topdowntiled/index.html">The Top Down Tiled Game</a> and <a href="../platformer/index.html">The Tiled Platformer</a>.</p>
 <p>How does this code differ from previous games?</p>
+<p><a class="anchor" id="sec5-1"></a></p><h2>5.1 The Third Dimension</h2>
+<p><em>Ned's Turkey Farm</em> is a 2.5D game, which means that it is a 3D game with 2D sprite art. <code><a class="el" href="class_c_renderer.html" title="The game renderer.">CRenderer</a></code> is derived from <code>Sage::CSpriteRenderer</code> and is instantiated with </p><pre class="fragment">Sage::CSpriteRenderer(Sage::eSpriteMode::Unbatched3D)
+</pre><p> whereas previous <a href="../sage/index.html">SAGE</a> games (<a href="../blank/index.html">The Blank Game</a>, <a href="../topdown/index.html">The Top Down Game</a>, <a href="../topdowntiled/index.html">The Top Down Tiled Game</a> and <a href="../platformer/index.html">The Tiled Platformer</a>) used </p><pre class="fragment">Sage::CSpriteRenderer(Sage::eSpriteMode::Batched2D)
+</pre><p><a class="anchor" id="sec5-2"></a></p><h2>5.2 The Background</h2>
+<p><a class="anchor" id="fig3"></a></p><div class="image">
+<img src="sky.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 3: The sky tile.</div></div>
+<p><a class="anchor" id="fig4"></a></p><div class="image">
+<img src="ground.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 4: The ground tile.</div></div>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
+<img src="cell.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 5: A single cell in 3D.</div></div>
+<p><a class="anchor" id="sec5-3"></a></p><h2>5.3 Depth Sorting</h2>
+<p><a class="anchor" id="fig6"></a></p><div class="image">
+<img src="nodepthsort.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 6: Errors in depth sorting.</div></div>
+<p>In <a class="el" href="index.html#fig6">Figure 6</a> (left), the crow's Z coordinate is behind the plane's Z coordinate but the plane is drawn first, resulting in the transparent pixels of the plane cancelling out the crow's body (see the yellow arrow) leaving just its head sticking out to the left of the plane. In <a class="el" href="index.html#fig6">Figure 6</a> (right), the crow's Z coordinate is in front of the plane's Z coordinate but the crow is drawn first, resulting in the transparent pixels of the crow cancelling out the part of the plane's tail (see the yellow arrow).</p>
 <p><a class="anchor" id="sec6"></a></p><h1>6. What Next?</h1>
 <p>You might want to look at <a href="../introphysics/index.html">Physics Games and Toys</a> next. </p>
 </div></div><!-- PageDoc -->
