@@ -45,6 +45,12 @@ side scrollers. \ref fig1 "Fig. 1" shows a screen shot.
     <td><center>Space</center></td>
     <td>Shoot</td>
   <tr>
+    <td><center>Backspace</center></td>
+    <td>Restart game</td>
+  <tr>
+    <td><center>PrtScr</center></td>
+    <td>Save screenshot to a PNG file</td>
+  <tr>
     <td><center>ESC</center></td>
     <td>Exit</td>
 </table>
@@ -117,8 +123,8 @@ How does this code differ from previous games?
 ## 5.1 The Third Dimension
 
 <em>Ned's Turkey Farm</em> is a 2.5D game, which means that it is a 3D
-game with 2D sprite art.
-`CRenderer` is derived from `Sage::CSpriteRenderer` and is instantiated with
+game with 2D sprite art. It has its own renderer class
+`CRenderer` which is derived from `Sage::CSpriteRenderer` and is instantiated with
 
     Sage::CSpriteRenderer(Sage::eSpriteMode::Unbatched3D)
     
@@ -133,33 +139,85 @@ used
 
     Sage::CSpriteRenderer(Sage::eSpriteMode::Batched2D)
 
+Sprite descriptors are now 3D, that is, 
+<a href="../sage/class_sage_1_1_c_sprite_desc3_d.html">`Sage::CSpriteDesc3D`</a> 
+is used instead of
+<a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a>.
+While `Sage::CSpriteDesc2D::m_vPos` is a 2D vector `Vector2`,
+`Sage::CSpriteDesc3D::m_vPos` is a 3D vector `Vector3`,
+which has a third coordinate for the Z axis.
+The Z axis is at right angles to both the X and Y axes,
+but there are two directions to choose from. If the X axis is along the
+bottom of your screen with positive X to the right and the
+Y axis is along the side of your screen with positive Y upwards, then
+there are two choices for the positive Z axis. It can either point into the
+screen or out of the screen. Either choice is as good as the other but you
+<em>must make sure that all of your code is consistent with this choice</em>.
+
+<a href="../sage/index.html">SAGE</a> uses what is called a <em>left-handed coordinate system</em>.
+Take your left hand and make your thumb point towards positive X,
+your index finger to positive Y, and put your third finger at right angles to them.
+Then your third finger points in the direction of positive Z,
+into the screen
+as shown in \ref fig3 "Figure 3".
+Similarly, using your right hand points your third finger in the
+opposite direction, out of the screen, in what is called a
+<em>right-handed coordinate system</em>.
+
+\anchor fig3
+\image html axes.png "Fig. 3: The principal axes in left-handed coordinate space." width=30%
+
+<a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a>
+has one rotation angle `Sage::CSpriteDesc2D::m_fRoll` which makes sense because
+there is only axis to rotate about, which we now know as the Z axis.
+In 3D there are now three principal axes about which to rotate.
+Rotation about the
+X axis is called <em>pitch</em> and is stored in
+`Sage::CSpriteDesc3D::m_fPitch`, and rotation about the
+Y axis is called <em>yaw</em> and is stored in
+`Sage::CSpriteDesc3D::m_fYaw`.
+
+Recall that in 2D we chose positive angles of rotation to be counterclockwise.
+There is a useful convention for this based on handedness.
+In a left-handed coordinate system take your left hand, make a fist
+with your thumb sticking out and pointing along the positive Z axis. Look at your
+curled fingers from the negative Z side. The direction that they
+curl is a positive angle of rotation along the Z axis. Your can see from
+\ref fig4 "Figure 4" that this is a counterclockwise direction,
+which is consistent with our 2D games.
+You can find the direction of positive rotation about any axis by pointing your
+thumb in the positive direction and viewing the curl of your fingers from
+the negative side of the axis. 
+
+\anchor fig4
+\image html roll.png "Fig. 4: Positive roll in left-handed coordinate space is counterclockwise." width=30%
 
 \anchor sec5-2
 ## 5.2 The Background
 
-\anchor fig3
-\image html sky.png "Fig. 3: The sky tile." width=60%
-
-\anchor fig4
-\image html ground.png "Fig. 4: The ground tile." width=60%
-
 \anchor fig5
-\image html cell.png "Fig. 5: A single cell in 3D." width=60%
+\image html sky.png "Fig. 5: The sky tile." width=60%
+
+\anchor fig6
+\image html ground.png "Fig. 6: The ground tile." width=60%
+
+\anchor fig7
+\image html cell.png "Fig. 7: A single cell in 3D." width=60%
 
 \anchor sec5-3
 ## 5.3 Depth Sorting
 
-\anchor fig6
-\image html nodepthsort.png "Fig. 6: Errors in depth sorting." width=60%
+\anchor fig8
+\image html nodepthsort.png "Fig. 8: Errors in depth sorting." width=60%
 
-In \ref fig6 "Figure 6" (left), the crow's Z coordinate is behind the plane's
+In \ref fig8 "Figure 8" (left), the crow's Z coordinate is behind the plane's
 Z coordinate but the plane is drawn first, resulting in the transparent
-pixels of the plane cancelling out the crow's body (see the yellow arrow)
+pixels of the plane sprite canceling out the crow's body (see the yellow arrow)
 leaving just its
 head sticking out to the left of the plane.
-In \ref fig6 "Figure 6" (right), the crow's Z coordinate is in front of the plane's
+In \ref fig8 "Figure 8" (right), the crow's Z coordinate is in front of the plane's
 Z coordinate but the crow is drawn first, resulting in the transparent
-pixels of the crow cancelling out the part of the plane's tail (see the yellow arrow).
+pixels of the crow sprite canceling out the part of the plane's tail (see the yellow arrow).
 
 \anchor sec6
 # 6. What Next?

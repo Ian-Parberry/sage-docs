@@ -105,6 +105,10 @@ Fig. 1: A screenshot of Ned's Turkey Farm.</div></div>
 <tr>
 <td><center>Space</center> </td><td>Shoot </td></tr>
 <tr>
+<td><center>Backspace</center> </td><td>Restart game </td></tr>
+<tr>
+<td><center>PrtScr</center> </td><td>Save screenshot to a PNG file </td></tr>
+<tr>
 <td><center>ESC</center> </td><td>Exit </td></tr>
 </table>
 </center><p><a class="anchor" id="sec3"></a></p><h1>3. SAGE</h1>
@@ -131,27 +135,39 @@ Fig. 2: What's really going on in the game.</div></div>
 <p>Open <span style="background-color:#D8E4D8;"><code>Ned's Turkey Farm.sln</code></span> in Visual Studio and examine the code in the editor while you read the rest of this section. This section assumes that you have read and understood the documentation from <a href="../sage/index.html">SAGE</a>, <a href="../blank/index.html">The Blank Game</a>, <a href="../topdown/index.html">The Top Down Game</a>, <a href="../topdowntiled/index.html">The Top Down Tiled Game</a> and <a href="../platformer/index.html">The Tiled Platformer</a>.</p>
 <p>How does this code differ from previous games?</p>
 <p><a class="anchor" id="sec5-1"></a></p><h2>5.1 The Third Dimension</h2>
-<p><em>Ned's Turkey Farm</em> is a 2.5D game, which means that it is a 3D game with 2D sprite art. <code><a class="el" href="class_c_renderer.html" title="The game renderer.">CRenderer</a></code> is derived from <code>Sage::CSpriteRenderer</code> and is instantiated with </p><pre class="fragment">Sage::CSpriteRenderer(Sage::eSpriteMode::Unbatched3D)
+<p><em>Ned's Turkey Farm</em> is a 2.5D game, which means that it is a 3D game with 2D sprite art. It has its own renderer class <code><a class="el" href="class_c_renderer.html" title="The game renderer.">CRenderer</a></code> which is derived from <code>Sage::CSpriteRenderer</code> and is instantiated with </p><pre class="fragment">Sage::CSpriteRenderer(Sage::eSpriteMode::Unbatched3D)
 </pre><p> whereas previous <a href="../sage/index.html">SAGE</a> games (<a href="../blank/index.html">The Blank Game</a>, <a href="../topdown/index.html">The Top Down Game</a>, <a href="../topdowntiled/index.html">The Top Down Tiled Game</a> and <a href="../platformer/index.html">The Tiled Platformer</a>) used </p><pre class="fragment">Sage::CSpriteRenderer(Sage::eSpriteMode::Batched2D)
-</pre><p><a class="anchor" id="sec5-2"></a></p><h2>5.2 The Background</h2>
+</pre><p> Sprite descriptors are now 3D, that is, <a href="../sage/class_sage_1_1_c_sprite_desc3_d.html"><code>Sage::CSpriteDesc3D</code></a> is used instead of <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html"><code>Sage::CSpriteDesc2D</code></a>. While <code>Sage::CSpriteDesc2D::m_vPos</code> is a 2D vector <code>Vector2</code>, <code>Sage::CSpriteDesc3D::m_vPos</code> is a 3D vector <code>Vector3</code>, which has a third coordinate for the Z axis. The Z axis is at right angles to both the X and Y axes, but there are two directions to choose from. If the X axis is along the bottom of your screen with positive X to the right and the Y axis is along the side of your screen with positive Y upwards, then there are two choices for the positive Z axis. It can either point into the screen or out of the screen. Either choice is as good as the other but you <em>must make sure that all of your code is consistent with this choice</em>.</p>
+<p><a href="../sage/index.html">SAGE</a> uses what is called a <em>left-handed coordinate system</em>. Take your left hand and make your thumb point towards positive X, your index finger to positive Y, and put your third finger at right angles to them. Then your third finger points in the direction of positive Z, into the screen as shown in <a class="el" href="index.html#fig3">Figure 3</a>. Similarly, using your right hand points your third finger in the opposite direction, out of the screen, in what is called a <em>right-handed coordinate system</em>.</p>
 <p><a class="anchor" id="fig3"></a></p><div class="image">
+<img src="axes.png" alt="" width="30%"/>
+<div class="caption">
+Fig. 3: The principal axes in left-handed coordinate space.</div></div>
+<p><a href="../sage/class_sage_1_1_c_sprite_desc2_d.html"><code>Sage::CSpriteDesc2D</code></a> has one rotation angle <code>Sage::CSpriteDesc2D::m_fRoll</code> which makes sense because there is only axis to rotate about, which we now know as the Z axis. In 3D there are now three principal axes about which to rotate. Rotation about the X axis is called <em>pitch</em> and is stored in <code>Sage::CSpriteDesc3D::m_fPitch</code>, and rotation about the Y axis is called <em>yaw</em> and is stored in <code>Sage::CSpriteDesc3D::m_fYaw</code>.</p>
+<p>Recall that in 2D we chose positive angles of rotation to be counterclockwise. There is a useful convention for this based on handedness. In a left-handed coordinate system take your left hand, make a fist with your thumb sticking out and pointing along the positive Z axis. Look at your curled fingers from the negative Z side. The direction that they curl is a positive angle of rotation along the Z axis. Your can see from <a class="el" href="index.html#fig4">Figure 4</a> that this is a counterclockwise direction, which is consistent with our 2D games. You can find the direction of positive rotation about any axis by pointing your thumb in the positive direction and viewing the curl of your fingers from the negative side of the axis.</p>
+<p><a class="anchor" id="fig4"></a></p><div class="image">
+<img src="roll.png" alt="" width="30%"/>
+<div class="caption">
+Fig. 4: Positive roll in left-handed coordinate space is counterclockwise.</div></div>
+<p><a class="anchor" id="sec5-2"></a></p><h2>5.2 The Background</h2>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
 <img src="sky.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 3: The sky tile.</div></div>
-<p><a class="anchor" id="fig4"></a></p><div class="image">
+Fig. 5: The sky tile.</div></div>
+<p><a class="anchor" id="fig6"></a></p><div class="image">
 <img src="ground.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 4: The ground tile.</div></div>
-<p><a class="anchor" id="fig5"></a></p><div class="image">
+Fig. 6: The ground tile.</div></div>
+<p><a class="anchor" id="fig7"></a></p><div class="image">
 <img src="cell.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 5: A single cell in 3D.</div></div>
+Fig. 7: A single cell in 3D.</div></div>
 <p><a class="anchor" id="sec5-3"></a></p><h2>5.3 Depth Sorting</h2>
-<p><a class="anchor" id="fig6"></a></p><div class="image">
+<p><a class="anchor" id="fig8"></a></p><div class="image">
 <img src="nodepthsort.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 6: Errors in depth sorting.</div></div>
-<p>In <a class="el" href="index.html#fig6">Figure 6</a> (left), the crow's Z coordinate is behind the plane's Z coordinate but the plane is drawn first, resulting in the transparent pixels of the plane cancelling out the crow's body (see the yellow arrow) leaving just its head sticking out to the left of the plane. In <a class="el" href="index.html#fig6">Figure 6</a> (right), the crow's Z coordinate is in front of the plane's Z coordinate but the crow is drawn first, resulting in the transparent pixels of the crow cancelling out the part of the plane's tail (see the yellow arrow).</p>
+Fig. 8: Errors in depth sorting.</div></div>
+<p>In <a class="el" href="index.html#fig8">Figure 8</a> (left), the crow's Z coordinate is behind the plane's Z coordinate but the plane is drawn first, resulting in the transparent pixels of the plane sprite canceling out the crow's body (see the yellow arrow) leaving just its head sticking out to the left of the plane. In <a class="el" href="index.html#fig8">Figure 8</a> (right), the crow's Z coordinate is in front of the plane's Z coordinate but the crow is drawn first, resulting in the transparent pixels of the crow sprite canceling out the part of the plane's tail (see the yellow arrow).</p>
 <p><a class="anchor" id="sec6"></a></p><h1>6. What Next?</h1>
 <p>You might want to look at <a href="../introphysics/index.html">Physics Games and Toys</a> next. </p>
 </div></div><!-- PageDoc -->
