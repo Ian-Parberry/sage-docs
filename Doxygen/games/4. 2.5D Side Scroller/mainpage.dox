@@ -95,11 +95,8 @@ Notice that they do a pretty good job of avoiding you.
 Smack the plane into the ground to see smoke particle effects.
 <li>
 Hold down the `F3` key to move the camera back and across so you can see
-what is really going on in 3D (see \ref fig2 "Fig. 2").
+what is really going on in 3D (see \ref fig7 "Fig. 7").
 </ol>
-
-\anchor fig2
-\image html f3.png "Fig. 2: What's really going on in the game." width=90%
 
 \anchor sec5
 # 5. Code Breakdown
@@ -159,13 +156,13 @@ Take your left hand and make your thumb point towards positive X,
 your index finger to positive Y, and put your third finger at right angles to them.
 Then your third finger points in the direction of positive Z,
 into the screen
-as shown in \ref fig3 "Figure 3".
+as shown in \ref fig2 "Fig. 2".
 Similarly, using your right hand points your third finger in the
 opposite direction, out of the screen, in what is called a
 <em>right-handed coordinate system</em>.
 
-\anchor fig3
-\image html axes.png "Fig. 3: The principal axes in left-handed coordinate space." width=30%
+\anchor fig2
+\image html axes.png "Fig. 2: The principal axes in left-handed coordinate space." width=30%
 
 <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a>
 has one rotation angle `Sage::CSpriteDesc2D::m_fRoll` which makes sense because
@@ -183,26 +180,55 @@ In a left-handed coordinate system take your left hand, make a fist
 with your thumb sticking out and pointing along the positive Z axis. Look at your
 curled fingers from the negative Z side. The direction that they
 curl is a positive angle of rotation along the Z axis. Your can see from
-\ref fig4 "Figure 4" that this is a counterclockwise direction,
+\ref fig3 "Fig. 3" that this is a counterclockwise direction,
 which is consistent with our 2D games.
 You can find the direction of positive rotation about any axis by pointing your
 thumb in the positive direction and viewing the curl of your fingers from
 the negative side of the axis. 
 
-\anchor fig4
-\image html roll.png "Fig. 4: Positive roll in left-handed coordinate space is counterclockwise." width=30%
+\anchor fig3
+\image html roll.png "Fig. 3: Positive roll in left-handed coordinate space is counterclockwise." width=30%
 
 \anchor sec5-2
 ## 5.2 The Background
 
+The background for <em>Ned's Turkey Farm</em> consists of a sky image
+(\ref fig4 "Fig. 4", left) that can be repeated horizontally without
+the join showing (\ref fig4 "Fig. 4", right), and a ground image
+(\ref fig5 "Fig. 5", left) that can be repeated horizontally without
+the join showing (\ref fig5 "Fig. 5", right).
+
+\anchor fig4
+\image html sky.png "Fig. 4: The sky sprite (left) can be tiled (right)." width=60%
+
 \anchor fig5
-\image html sky.png "Fig. 5: The sky tile." width=60%
+\image html ground.png "Fig. 5: The ground sprite (left) can be tiled (right)." width=60%
+
+The sky and ground images are put together in an L shape as shown
+in \ref fig6 "Fig. 6". This is referred to in the code as a <em>cell</em>.
+The sky part of the cell is in the XY plane, that is, at right
+angles to the Z axis. This is the default for sprites when
+yaw and pitch are set to zero.
+The ground part of the cell is in the XZ plane, that is, at right
+angles to the Y axis. We will achieve this by setting its pitch to \f$\pi/2\f$.
 
 \anchor fig6
-\image html ground.png "Fig. 6: The ground tile." width=60%
+\image html cell.png "Fig. 6: A single cell in 3D." width=60%
+
+The background cells are drawn by `CObjectManager::DrawBackground`
+using `CObjectManager::m_cSkyDesc` for the sky 3D sprite descriptor and
+`CObjectManager::m_cGrndDesc` for the ground 3D sprite descriptor.
+Notice that `CObjectManager::m_cGrndDesc.m_fPitch` is set to
+\f$\pi/2\f$ in `CObjectManager::Clear`.
+The number of cells drawn is
+CObjectManager::`m_nNumCells` for the game play area plus
+an extra cell to the left and right for when the camera is
+near the leftmost and rightmost edge of the play area, respectively.
+
+
 
 \anchor fig7
-\image html cell.png "Fig. 7: A single cell in 3D." width=60%
+\image html f3.png "Fig. 7: What's really going on in the game." width=90%
 
 \anchor sec5-3
 ## 5.3 Depth Sorting
@@ -210,12 +236,12 @@ the negative side of the axis.
 \anchor fig8
 \image html nodepthsort.png "Fig. 8: Errors in depth sorting." width=60%
 
-In \ref fig8 "Figure 8" (left), the crow's Z coordinate is behind the plane's
+In \ref fig8 "Fig. 8" (left), the crow's Z coordinate is behind the plane's
 Z coordinate but the plane is drawn first, resulting in the transparent
 pixels of the plane sprite canceling out the crow's body (see the yellow arrow)
 leaving just its
 head sticking out to the left of the plane.
-In \ref fig8 "Figure 8" (right), the crow's Z coordinate is in front of the plane's
+In \ref fig8 "Fig. 8" (right), the crow's Z coordinate is in front of the plane's
 Z coordinate but the crow is drawn first, resulting in the transparent
 pixels of the crow sprite canceling out the part of the plane's tail (see the yellow arrow).
 
