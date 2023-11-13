@@ -37,10 +37,10 @@ side scrollers. \ref fig1 "Fig. 1" shows a screen shot.
     <td>Lose height</td>
   <tr>
     <td><center>Left arrow</center></td>
-    <td>Move faster</td>
+    <td>Move faster (hold down)</td>
   <tr>
     <td><center>Right arrow</center></td>
-    <td>Move slower</td>
+    <td>Move slower (hold down)</td>
   <tr>
     <td><center>Space</center></td>
     <td>Shoot</td>
@@ -94,9 +94,13 @@ Notice that they do a pretty good job of avoiding you.
 <li>
 Smack the plane into the ground to see smoke particle effects.
 <li>
-Hold down the `F3` key to move the camera back and across so you can see
-what is really going on in 3D (see \ref fig7 "Fig. 7").
+Hit the `F3` key to cycle through the draw modes so you can see
+what is really going on in 3D (see \ref fig8 "Fig. 8",
+ \ref fig9 "Fig. 9", and  \ref fig10 "Fig. 10".).
 </ol>
+
+\anchor fig2
+\image html planesmoke.png "Fig. 2: Smoke from a damaged plane." width=30%
 
 \anchor sec5
 # 5. Code Breakdown
@@ -113,8 +117,14 @@ the documentation from
 <a href="../topdowntiled/index.html">The Top Down Tiled Game</a>
 and
 <a href="../platformer/index.html">The Tiled Platformer</a>.
-
-How does this code differ from previous games?
+How does this code differ from those games?
+Most importantly, we must now deal with the third spatial dimension
+(\ref sec5-1 "Section 5.1),
+which means that we must depth-sort our sprites
+(\ref sec5-2 "Section 5.2),
+and make a 3D background which we will wrap at the edges
+to make an infinite repeating game world
+(\ref sec5-3 "Section 5.3).
 
 \anchor sec5-1
 ## 5.1 The Third Dimension
@@ -156,13 +166,13 @@ Take your left hand and make your thumb point towards positive X,
 your index finger to positive Y, and put your third finger at right angles to them.
 Then your third finger points in the direction of positive Z,
 into the screen
-as shown in \ref fig2 "Fig. 2".
+as shown in \ref fig3 "Fig. 3".
 Similarly, using your right hand points your third finger in the
 opposite direction, out of the screen, in what is called a
 <em>right-handed coordinate system</em>.
 
-\anchor fig2
-\image html axes.png "Fig. 2: The principal axes in left-handed coordinate space." width=30%
+\anchor fig3
+\image html axes.png "Fig. 3: The principal axes in left-handed coordinate space." width=30%
 
 <a href="../sage/class_sage_1_1_c_sprite_desc2_d.html">`Sage::CSpriteDesc2D`</a>
 has one rotation angle `Sage::CSpriteDesc2D::m_fRoll` which makes sense because
@@ -180,40 +190,91 @@ In a left-handed coordinate system take your left hand, make a fist
 with your thumb sticking out and pointing along the positive Z axis. Look at your
 curled fingers from the negative Z side. The direction that they
 curl is a positive angle of rotation along the Z axis. Your can see from
-\ref fig3 "Fig. 3" that this is a counterclockwise direction,
+\ref fig4 "Fig. 4" that this is a counterclockwise direction,
 which is consistent with our 2D games.
 You can find the direction of positive rotation about any axis by pointing your
 thumb in the positive direction and viewing the curl of your fingers from
 the negative side of the axis. 
 
-\anchor fig3
-\image html roll.png "Fig. 3: Positive roll in left-handed coordinate space is counterclockwise." width=30%
+\anchor fig4
+\image html roll.png "Fig. 4: Positive roll in left-handed coordinate space is counterclockwise." width=30%
 
 \anchor sec5-2
-## 5.2 The Background
+## 5.2 Depth Sorting
 
-The background for <em>Ned's Turkey Farm</em> consists of a sky image
-(\ref fig4 "Fig. 4", left) that can be repeated horizontally without
-the join showing (\ref fig4 "Fig. 4", right), and a ground image
-(\ref fig5 "Fig. 5", left) that can be repeated horizontally without
-the join showing (\ref fig5 "Fig. 5", right).
+As mentioned in \ref sec5-1 "Section 5.1",
+previous <a href="../sage/index.html">SAGE</a>
+games (<a href="../blank/index.html">The Blank Game</a>,
+<a href="../topdown/index.html">The Top Down Game</a>,
+<a href="../topdowntiled/index.html">The Top Down Tiled Game</a>
+and
+<a href="../platformer/index.html">The Tiled Platformer</a>) use
 
-\anchor fig4
-\image html sky.png "Fig. 4: The sky sprite (left) can be tiled (right)." width=60%
+    Sage::CSpriteRenderer(Sage::eSpriteMode::Batched2D)
+    
+which draws sprites from back to front in the order that their
+`Draw` function is called. In this game we want explicit control of the
+Z axis, which we get by deriving `CRenderer` from
+
+    Sage::CSpriteRenderer(Sage::eSpriteMode::Unbatched3D)
+    
+instead.
+Now sprites must be draw in descending order of their Z coordinate,
+which <a href="../sage/index.html">SAGE</a> will do for you if you
+collect your sprite descriptors into an instance
+of `std::vector<Sage::CSpriteDesc3D>` and pass this as a parameter to
+`Sage::CSpriteRenderer::Draw` which will sort them by depth
+(in Z-order) before rendering them. 
+See <a href="../sage/index.html#sec3-5">the SAGE renderer documentation</a> for more details.
+
+What can go wrong if you don't take advantage of 
+<a href="../sage/index.html">`Sage`</a>'s functionality to sort
+the sprites in this game into descending Z order? 
+<a href="../sage/index.html">`Sage`</a> uses a 
+<a href="https://en.wikipedia.org/wiki/Z-buffering">Z-buffer</a> to
+speed up rendering. Unfortunately, Z-buffers count the transparent pixels
+of the game as having the same depth as non-transparent ones, and therefore
+refuse to draw the pixels behind a transparent one. This can lead to
+sprites disappearing behind the transparent pixels of a sprite
+that was drawn earlier, as in the following examples.
 
 \anchor fig5
-\image html ground.png "Fig. 5: The ground sprite (left) can be tiled (right)." width=60%
+\image html nodepthsort.png "Fig. 5: Errors in depth sorting." width=60%
+
+In \ref fig11 "Fig. 5" (left), the crow's Z coordinate is behind the plane's
+Z coordinate but the plane is drawn first, resulting in the transparent
+pixels of the plane sprite canceling out the crow's body (see the yellow arrow)
+leaving just its
+head sticking out to the left of the plane.
+In \ref fig1 "Fig. 5" (right), the crow's Z coordinate is in front of the plane's
+Z coordinate but the crow is drawn first, resulting in the transparent
+pixels of the crow sprite canceling out the part of the plane's tail (see the yellow arrow).
+
+\anchor sec5-3
+## 5.3 The Background
+
+The background for <em>Ned's Turkey Farm</em> consists of a sky image
+(\ref fig6 "Fig. 6", left) that can be repeated horizontally without
+the join showing (\ref fig6 "Fig. 6", right), and a ground image
+(\ref fig7 "Fig. 7", left) that can be repeated horizontally without
+the join showing (\ref fig7 "Fig. 7", right).
+
+\anchor fig6
+\image html sky.png "Fig. 6: The sky sprite (left) can be tiled (right)." width=60%
+
+\anchor fig7
+\image html ground.png "Fig. 7: The ground sprite (left) can be tiled (right)." width=60%
 
 The sky and ground images are put together in an L shape as shown
-in \ref fig6 "Fig. 6". This is referred to in the code as a <em>cell</em>.
+in \ref fig7 "Fig. 8". This is referred to in the code as a <em>cell</em>.
 The sky part of the cell is in the XY plane, that is, at right
 angles to the Z axis. This is the default for sprites when
 yaw and pitch are set to zero.
 The ground part of the cell is in the XZ plane, that is, at right
 angles to the Y axis. We will achieve this by setting its pitch to \f$\pi/2\f$.
 
-\anchor fig6
-\image html cell.png "Fig. 6: A single cell in 3D." width=60%
+\anchor fig8
+\image html cell.png "Fig. 8: A single cell in 3D." width=60%
 
 The background cells are drawn by `CObjectManager::DrawBackground`
 using `CObjectManager::m_cSkyDesc` for the sky 3D sprite descriptor and
@@ -224,26 +285,45 @@ The number of cells drawn is
 `CCommon::m_nNumCells` for the game play area plus
 an extra cell to the left and right for when the camera is
 near the leftmost and rightmost edge of the play area, respectively.
+`CCommon::m_nNumCells` is set to three, so the game world consists
+of those three cells plus an extra cell at each end
+for when the view frustum is at the edge of a cell. 
+This is shown in \ref fig9 "Fig. 9", which you can see by
+hitting the `F3` key (see \ref sec2 "Section 2" for more keyboard controls).
 
+\anchor fig9
+\image html f3.png "Fig. 9: The 3D game world consists of five cells." width=90%
 
+The player is totally oblivious to this and sees a small portion
+of this world as shown in \ref fig1 "Fig. 1".
+They see the contents of the camera's 
+<a href="https://en.wikipedia.org/wiki/Viewing_frustum"><em>view frustum</em></a>,
+the back face of which is drawn as a back rectangle in
+\ref fig10 "Fig. 10" and \ref fig11 "Fig. 11".
+\ref fig10 "Fig. 10" shows the plane in its initial position to the
+right of the game world with the view frustum allowing a view of the
+background approximately inside the black rectangle.
+Lines are also drawn on the sky background so that you can see
+the boundaries between cells more clearly.
+You can see how the view frustum moves with the plane by
+hitting the `F3` key a second time.
+(To return to the player view as shown in \ref fig1 "Fig. 1",
+hit the `F3` key a third time.)
 
-\anchor fig7
-\image html f3.png "Fig. 7: What's really going on in the game." width=90%
+\anchor fig10
+\image html initial.png "Fig. 10: The 3D game world showing the back of the view frustum when the plane is in the initial position." width=90%
 
-\anchor sec5-3
-## 5.3 Depth Sorting
+\ref fig11 "Fig. 11" shows the plane in its leftmost position one frame
+before being wrapped around to the right of of world to its initial position.
+The trick here is making the objects inside the view frustum
+before wrapping around (\ref fig11 "Fig. 11") also appear in the
+next frame in which the plane wraps around to the right (\ref fig10 "Fig. 10").
+This is done by drawing a second copy of those objects in
+`CObjectManager::GetRenderList`, which as already mentioned, will lead to a
+second plane being drawn out of frustum.
 
-\anchor fig8
-\image html nodepthsort.png "Fig. 8: Errors in depth sorting." width=60%
-
-In \ref fig8 "Fig. 8" (left), the crow's Z coordinate is behind the plane's
-Z coordinate but the plane is drawn first, resulting in the transparent
-pixels of the plane sprite canceling out the crow's body (see the yellow arrow)
-leaving just its
-head sticking out to the left of the plane.
-In \ref fig8 "Fig. 8" (right), the crow's Z coordinate is in front of the plane's
-Z coordinate but the crow is drawn first, resulting in the transparent
-pixels of the crow sprite canceling out the part of the plane's tail (see the yellow arrow).
+\anchor fig11
+\image html prewrap.png "Fig. 11: The 3D game world showing the back of the view frustum when the plane is about to wrap from left to right." width=90%
 
 \anchor sec6
 # 6. What Next?

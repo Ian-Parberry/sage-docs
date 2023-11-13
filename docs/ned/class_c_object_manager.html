@@ -160,6 +160,10 @@ UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nCrowCount</b> = 0<
 Sage::CSpriteDesc3D&#160;</td><td class="memItemRight" valign="bottom"><b>m_cSkyDesc</b></td></tr>
 <tr class="memdesc:a0cbcca158cfe3d1c0b2630e9e3b0bbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sky descriptor. <br /></td></tr>
 <tr class="separator:a0cbcca158cfe3d1c0b2630e9e3b0bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659c3e7b3e8c09f5e94ae09d9a282a84"><td class="memItemLeft" align="right" valign="top"><a id="a659c3e7b3e8c09f5e94ae09d9a282a84" name="a659c3e7b3e8c09f5e94ae09d9a282a84"></a>
+Sage::CSpriteDesc3D&#160;</td><td class="memItemRight" valign="bottom"><b>m_cLinedSkyDesc</b></td></tr>
+<tr class="memdesc:a659c3e7b3e8c09f5e94ae09d9a282a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lined sky descriptor. <br /></td></tr>
+<tr class="separator:a659c3e7b3e8c09f5e94ae09d9a282a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b41ac2ae39673cbe80a9863679b887"><td class="memItemLeft" align="right" valign="top"><a id="a43b41ac2ae39673cbe80a9863679b887" name="a43b41ac2ae39673cbe80a9863679b887"></a>
 Sage::CSpriteDesc3D&#160;</td><td class="memItemRight" valign="bottom"><b>m_cGrndDesc</b></td></tr>
 <tr class="memdesc:a43b41ac2ae39673cbe80a9863679b887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ground descriptor. <br /></td></tr>
@@ -200,6 +204,10 @@ static UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nNumCells</b
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fWorldWidth</b> = 0.0f</td></tr>
 <tr class="memdesc:af6e4d00d509f8e7c1bcdbf8260081132 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">World width. <br /></td></tr>
 <tr class="separator:af6e4d00d509f8e7c1bcdbf8260081132 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c77">eDrawMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eDrawMode</b> = eDrawMode::Playing</td></tr>
+<tr class="memdesc:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw mode. <br /></td></tr>
+<tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af6807f">eGameState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eGameState</b> = eGameState::Loading</td></tr>
 <tr class="memdesc:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game state. <br /></td></tr>
@@ -468,7 +476,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the render list, which is an unordered vector of sprite descriptors. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the render list, which is an unordered vector of sprite descriptors. This function also handles world wrapping, which ensures that whan the camera switches from its leftmost extent to the rightmost extent, then a copy of the objects in its view frustum will also be drawn in the rightmost view frustum. This temporarily draws two copies of the objects in question, but this will be invisible during game play because one of the copies will always be out of the view frustum. You will, however, see them when the camera is pulled back and I apologize in advance for any confusion that this causes. Object positions are also changed at the point of world wrap, which may also cause confusion because this function primarily creates a render list. side effect, </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">renderlist</td><td>[IN, OUT] Render list. </td></tr>
   </table>

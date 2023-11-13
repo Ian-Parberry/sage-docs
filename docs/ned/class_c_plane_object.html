@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CPlaneObject</b> ()</td></tr>
 <tr class="memdesc:ae561e6ca56bdf6439e09720867ae553a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
 <tr class="separator:ae561e6ca56bdf6439e09720867ae553a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8812af9df86a859ff6912d0d62904c94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plane_object.html#a8812af9df86a859ff6912d0d62904c94">CPlaneObject</a> (const Vector3 &amp;p)</td></tr>
-<tr class="memdesc:a8812af9df86a859ff6912d0d62904c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:a8812af9df86a859ff6912d0d62904c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf0090bd721b703218380ae7f6e183a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_plane_object.html#aebf0090bd721b703218380ae7f6e183a">CPlaneObject</a> (const Vector3 &amp;)</td></tr>
+<tr class="memdesc:aebf0090bd721b703218380ae7f6e183a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:aebf0090bd721b703218380ae7f6e183a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad428620da534be5faa919b36e7b714f3"><td class="memItemLeft" align="right" valign="top"><a id="ad428620da534be5faa919b36e7b714f3" name="ad428620da534be5faa919b36e7b714f3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~CPlaneObject</b> ()</td></tr>
 <tr class="memdesc:ad428620da534be5faa919b36e7b714f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -208,6 +208,10 @@ Sage::CSoundDesc&#160;</td><td class="memItemRight" valign="bottom"><b>m_sSoundD
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_c_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_c_object.html">CObject</a></td></tr>
+<tr class="memitem:a91aad9c1c69fff0f5520cf4475c8a426 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
+CSpriteDesc3D *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSpriteDesc</b> = nullptr</td></tr>
+<tr class="memdesc:a91aad9c1c69fff0f5520cf4475c8a426 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to sprite descriptor. <br /></td></tr>
+<tr class="separator:a91aad9c1c69fff0f5520cf4475c8a426 inherit pro_attribs_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10958b3af4548b4f156b18ac44c1ec17 inherit pro_attribs_class_c_object"><td class="memItemLeft" align="right" valign="top">
 Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_vVel</b> = Vector3::Zero</td></tr>
 <tr class="memdesc:a10958b3af4548b4f156b18ac44c1ec17 inherit pro_attribs_class_c_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity. <br /></td></tr>
@@ -265,6 +269,10 @@ static UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nNumCells</b
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fWorldWidth</b> = 0.0f</td></tr>
 <tr class="memdesc:af6e4d00d509f8e7c1bcdbf8260081132 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">World width. <br /></td></tr>
 <tr class="separator:af6e4d00d509f8e7c1bcdbf8260081132 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c77">eDrawMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eDrawMode</b> = eDrawMode::Playing</td></tr>
+<tr class="memdesc:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw mode. <br /></td></tr>
+<tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="memItemLeft" align="right" valign="top">
 static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af6807f">eGameState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eGameState</b> = eGameState::Loading</td></tr>
 <tr class="memdesc:a9d903bcaf258c092ebb5fdaf669ff014 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game state. <br /></td></tr>
@@ -273,8 +281,8 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The plane object is the player object. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8812af9df86a859ff6912d0d62904c94" name="a8812af9df86a859ff6912d0d62904c94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8812af9df86a859ff6912d0d62904c94">&#9670;&#160;</a></span>CPlaneObject()</h2>
+<a id="aebf0090bd721b703218380ae7f6e183a" name="aebf0090bd721b703218380ae7f6e183a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf0090bd721b703218380ae7f6e183a">&#9670;&#160;</a></span>CPlaneObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
