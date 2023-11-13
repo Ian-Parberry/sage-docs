@@ -221,7 +221,7 @@ using `CObjectManager::m_cSkyDesc` for the sky 3D sprite descriptor and
 Notice that `CObjectManager::m_cGrndDesc.m_fPitch` is set to
 \f$\pi/2\f$ in `CObjectManager::Clear`.
 The number of cells drawn is
-CObjectManager::`m_nNumCells` for the game play area plus
+`CCommon::m_nNumCells` for the game play area plus
 an extra cell to the left and right for when the camera is
 near the leftmost and rightmost edge of the play area, respectively.
 
