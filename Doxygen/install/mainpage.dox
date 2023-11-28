@@ -71,7 +71,7 @@ and restart them after creating or changing any environment variable.
 
 Before compiling SAGE you must install and compile 
 the DirectX12 Toolkit.
-Clone or download the source code from
+Clone or download the source code for the DirectX12 Toolkit from
 [https://github.com/Microsoft/DirectXTK12/](https://github.com/Microsoft/DirectXTK12/).
 Open `DirectXTK_Desktop_2022_Win10.sln` in Visual Studio
 and compile in both `Release` and `Debug` configurations
@@ -94,7 +94,8 @@ Make sure that both paths ends in a backslash character.
 
 \anchor sage
 # 4. SAGE
-
+Clone or download the source code fir SAGE from
+[https://github.com/Ian-Parberry/sage/](https://github.com/Ian-Parberry/sage/).
 Navigate to the topmost folder in your copy of the `sage` repository.
 To check that you have done it right so far,
 you will find a batch
@@ -148,7 +149,7 @@ environment variable. This will let you run the batch files `Build.bat`
 as a fast alternative to running Visual Studio.
 See \ref msbuild "Section 2".
 
-3. Clone and download DirectXTK12 from 
+3. Clone or download DirectXTK12 from 
 <a href="https://github.com/Microsoft/DirectXTK12/">GitHub</a>. Build 
 it in both Release and Debug configurations. Set the environment variables `DIRECTXTK12_DIR` and `DIRECTXTK12LIB_DIR`.
 See \ref directxtk12 "Section 3".

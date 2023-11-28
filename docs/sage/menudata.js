@@ -80,4 +80,8 @@ var menudata={children:[
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html"},
 {text:"Functions",url:"globals_func.html"},
-{text:"Macros",url:"globals_defs.html"}]}]}]}
+{text:"Macros",url:"globals_defs.html"}]}]},
+{text:"Important Links",url:"user",children:[
+{text:"SAGE Repository",url:"^https://github.com/Ian-Parberry/sage/"},
+{text:"SAGE Installation Guide",url:"^https://Ian-Parberry.github.io/sage-docs/install/"},
+{text:"SAGE Documentation",url:"^https://Ian-Parberry.github.io/sage-docs/sage/"}]}]}
