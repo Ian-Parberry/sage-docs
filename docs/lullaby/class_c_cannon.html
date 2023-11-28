@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -217,8 +217,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The cannon. </p>
-<p>The cannon is a composite made up of several sprites in Render World and several bodies in Physics World. It represents the player. </p>
+<div class="textblock"><p>The cannon is a composite made up of several sprites in Render World and several bodies in Physics World. It represents the player. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac9d99b276971a961be0f2ecba3c42edb" name="ac9d99b276971a961be0f2ecba3c42edb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9d99b276971a961be0f2ecba3c42edb">&#9670;&#160;</a></span>CreateBarrel()</h2>
@@ -259,8 +258,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a cannon barrel in Physics World. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Cannon barrel's x coordinate in Render World. </td></tr>
@@ -312,8 +309,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a cannon base in Physics World. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Cannon base's x coordinate in Render World. </td></tr>
@@ -365,8 +360,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a cannon wheel in Physics World. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Cannon wheel's x coordinate in Render World. </td></tr>
@@ -412,8 +405,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Apply an impulse in Physics World. </p>
 <p>Deliver an impulse to part of the cannon, which is made up of many bodies in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>Body to apply impulse to. </td></tr>
@@ -438,8 +429,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Make cannon explode. </p>
 <p>Make the cannon explode by destroying the joints, resetting their collision group indices so that they can collide. </p>
 <p>smoke</p>
 
@@ -459,8 +448,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Fire the cannon. </p>
 <p>Create cannonballs in both Render World and Physics World and send them on their way. The tune, the delay to the first note, and the time between notes are hard-coded. Apply a recoil impulse to the cannon in Physics World, stop the wheel motors, and emit a puff of smoke.. <br  />
  </p>
 
@@ -480,8 +467,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get cannon position. </p>
 <p>Reader function for the cannon's position. </p><dl class="section return"><dt>Returns</dt><dd>Cannon position in Render World. </dd></dl>
 
 </div>
@@ -500,8 +485,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Set up a cannon. </p>
 <p>Create a cannon in Physics World and the Object Manager, linking the two representations together. All positions are hard-coded. </p>
 
 </div>
@@ -520,8 +503,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Whether cannon has exploded. </p>
 <p>Determine whether the cannon has exploded already. </p><dl class="section return"><dt>Returns</dt><dd>true If it's dead, Dave. </dd></dl>
 
 </div>
@@ -549,8 +530,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Make cannon parts collide-able in Physics World. </p>
 <p>Reset the collision group index for part of cannon, which is made up of many bodies in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>Body to reset collision group index of. <br  />
@@ -576,8 +555,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Set the motor speed in the wheel joints. </p>
 <p>Start the cannon moving using motors in the wheels. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Speed of cannon. Negative means left, positive means right. </td></tr>

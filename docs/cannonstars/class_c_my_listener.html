@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -88,7 +88,7 @@ $(function() {
 <div class="contents">
 
 <p>My contact listener.  
- <a href="class_c_my_listener.html#details">More...</a></p>
+</p>
 
 <p><code>#include &lt;ContactListener.h&gt;</code></p>
 <div class="dynheader">
@@ -156,9 +156,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
 <tr class="memdesc:a39369fcc0fbf2f2860fda8bab3303adb inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Easter egg! <br /></td></tr>
 <tr class="separator:a39369fcc0fbf2f2860fda8bab3303adb inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>My contact listener. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab5455cfab6455c41e9e4788b2d8e3b4d" name="ab5455cfab6455c41e9e4788b2d8e3b4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5455cfab6455c41e9e4788b2d8e3b4d">&#9670;&#160;</a></span>Count()</h2>
 
@@ -182,8 +180,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Count number of bodies that have sprite type t. </p>
 <p>Count the number of bodies out of *m_pBodyA and *m_pBodyB that have objects have a given sprite type. Returns 0, 1, or 2, of course. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite Type. </td></tr>
@@ -217,8 +213,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Get the collision speed. </p>
 <p>Collision speed is proportional to the magnitude of the relative velocity. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>World point. </td></tr>
@@ -254,8 +248,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Presolve function. </p>
 <p>New Presolve function that renders a colored star at each contact point and plays the appropriate sound, depending on what type of objects are contacting. Box2D will run this before performing relaxation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">c</td><td>Pointer to the contact. </td></tr>

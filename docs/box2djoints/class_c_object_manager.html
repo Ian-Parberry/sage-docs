@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -192,8 +192,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The object manager. </p>
-<p>The object manager is an abstract representation of all of the objects in the game. </p>
+<div class="textblock"><p>The object manager is an abstract representation of all of the objects in the game. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f985240f67c8bf03a26f370e67fdb33" name="a7f985240f67c8bf03a26f370e67fdb33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f985240f67c8bf03a26f370e67fdb33">&#9670;&#160;</a></span>~CObjectManager()</h2>
@@ -209,8 +208,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>The destructor clears the object list, which destructs all of the objects in it. </p>
 
 </div>
@@ -230,8 +227,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reset to initial conditions. </p>
 <p>Delete all of the entities managed by object manager. This involves deleting all of the <a class="el" href="class_c_object.html" title="The game object.">CObject</a> instances pointed to by the object list, then clearing the object list itself. Ditto for the line list. </p>
 
 </div>
@@ -261,8 +256,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create new object. </p>
 <p>Create an object in the object manager. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -323,8 +316,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create new line object. </p>
 <p>Create a line object in object manager. Lines have their own list do that they can be drawn behind the other objects. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b0</td><td>Pointer to first physics body. (The base.) </td></tr>
@@ -354,8 +345,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create world edges. </p>
 <p>Create world edges in Physics World. Place Box2D edge shapes in the Physics World in places that correspond to the bottom, right, and left edges of the screen in Render World. The left and right edges continue upwards for a distance. There is no top to the world. </p>
 
 </div>
@@ -375,8 +364,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Delete the first object of a given sprite type. </p>
 <p>Delete the first object of a given sprite type. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -401,8 +388,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw all objects. </p>
 <p>Draw the game objects using Painter's Algorithm. The background is drawn first, then the game objects are asked to draw themselves in the order that they are in the object list. That is, they are drawn from back to front. The lines are drawn behind the objects. </p>
 
 </div>

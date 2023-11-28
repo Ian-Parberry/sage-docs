@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -190,8 +190,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A system of 5 interlocking nautilus gears. </p>
-<p>A <em>nautilus gear</em> is a gear in the shape of a nautilus shell. The center gear has a revolute joint with a motor. The other gears have variable speed, so they cannot be animated by Box2D. We have to animate them ourselves which means doing a little math. <br  />
+<div class="textblock"><p>A <em>nautilus gear</em> is a gear in the shape of a nautilus shell. The center gear has a revolute joint with a motor. The other gears have variable speed, so they cannot be animated by Box2D. We have to animate them ourselves which means doing a little math. <br  />
  The number and positions of the gears are hard-coded but there is enough storage for any number of them. </p><div class="image">
 <img src="screenshot2.png" alt=""/>
 </div>
@@ -221,8 +220,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -267,8 +264,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create invisible base in Physics World. </p>
 <p>Create an invisible base to attach the largest gear wheel to. The base has no sprite and no shape in Physics World. The latter means it doesn't collide with anything. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -325,8 +320,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create gear wheel in Physics World. </p>
 <p>Create a gear wheel at a given position in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -354,8 +347,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Move gears in synchrony. </p>
 <p>Make the four gears surrounding the center gear rotate in synchrony with the center gear. We use the fact that the radius of a nautilus gear at angle \(\theta\) is \(ae^{b\theta}\), where \(a\) and \(b\) are the maximum and minimum radius of the gear, respectively, and \(d = \ln(b/a)/2\pi\). </p>
 
 </div>
@@ -374,8 +365,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reverse gears. </p>
 <p>Reverse the gears by setting the motor speed on the revolute joint for the first gear. </p>
 
 </div>

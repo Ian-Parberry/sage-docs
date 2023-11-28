@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -183,8 +183,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
 <tr class="separator:a39369fcc0fbf2f2860fda8bab3303adb inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The object manager. </p>
-<p>The object manager is an abstract representation of all of the objects in the game. </p>
+<div class="textblock"><p>The object manager is an abstract representation of all of the objects in the game. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f985240f67c8bf03a26f370e67fdb33" name="a7f985240f67c8bf03a26f370e67fdb33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f985240f67c8bf03a26f370e67fdb33">&#9670;&#160;</a></span>~CObjectManager()</h2>
@@ -200,8 +199,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>The destructor clears the object list, which destructs all of the objects in it. </p>
 
 </div>
@@ -222,8 +219,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Test all crates below height. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">h</td><td>Height in Render World units. </td></tr>
@@ -248,8 +243,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reset to initial conditions. </p>
 <p>Delete all of the entities managed by the object manager. This involves deleting all of the <a class="el" href="class_c_object.html" title="The game object.">CObject</a> instances pointed to by the object list, then clearing the object list itself. </p>
 
 </div>
@@ -269,8 +262,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create background. </p>
 <p>Create world edges in Physics World. Place Box2D edge shapes in the Physics World in places that correspond to the bottom, right, and left edges of the screen in Render World. The left and right edges continue upwards for a distance. There is no top to the world. </p>
 
 </div>
@@ -314,8 +305,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a crate. </p>
 <p>Create a crate in Physics World and Object World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Horizontal coordinate in Physics World units. </td></tr>
@@ -352,8 +341,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create new object. </p>
 <p>Create an object in the object manager. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -378,8 +365,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create a tower of crates. </p>
 <p>Create a tower of crates at a hard-coded location. </p>
 
 </div>
@@ -409,8 +394,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Emit a smoke particle. </p>
 <p>Create a smoke particle using the front particle engine so that it appears in front of the cannon. This particle will scale in and fade out over its lifespan, which is hard-coded. Friction is added to make it slow down horizontally, and upward acceleration is added to make it appear to rise due to the high temperature of an expolosion. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Initial position. </td></tr>
@@ -435,8 +418,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Make sounds for all objects. </p>
 <p>Make collision sounds for all objects. </p>
 
 </div>

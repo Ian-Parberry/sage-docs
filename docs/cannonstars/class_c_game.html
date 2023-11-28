@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -88,7 +88,7 @@ $(function() {
 <div class="contents">
 
 <p>The game class.  
- <a href="class_c_game.html#details">More...</a></p>
+</p>
 
 <p><code>#include &lt;Game.h&gt;</code></p>
 <div class="dynheader">
@@ -209,9 +209,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
 <tr class="memdesc:a39369fcc0fbf2f2860fda8bab3303adb inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Easter egg! <br /></td></tr>
 <tr class="separator:a39369fcc0fbf2f2860fda8bab3303adb inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The game class. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa0b28c798a6198998d018047e96f188e" name="aa0b28c798a6198998d018047e96f188e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0b28c798a6198998d018047e96f188e">&#9670;&#160;</a></span>CGame()</h2>
 
@@ -226,8 +224,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>Create a heads-up display. </p>
 
 </div>
@@ -246,8 +242,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>Delete the HUD, cannon, and stopwatch created in the constructor. Call Render World's Release function to do the required Direct3D cleanup, then delete Render World and the object manager. Also delete Physics World, which MUST be deleted after the object manager because of way things are set up. </p>
 
 </div>
@@ -275,8 +269,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Begin playing the game. </p>
 <p>Clear any old objects out of the object manager and create the edges of the game world, which correspond to the edges of the window. Clear the HUD, set the initial game state, and start the stopwatch. </p>
 
 </div>
@@ -303,8 +295,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create game objects. </p>
 <p>Ask the object manager to create the game objects and ask the cannon and HUD to create themselves. </p>
 
 </div>
@@ -348,8 +338,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Draw win/lose text. </p>
 <p>Tell the player whether they've won or lost by plastering a text banner across the screen. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number of shots fired. </td></tr>
@@ -375,8 +363,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize the game. </p>
 <p>Initialize Render World and the object manager, load images and sounds, start the timer, and begin the game. </p>
 
 </div>
@@ -403,8 +389,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>The keyboard handler. </p>
 <p>Poll the keyboard state and respond to the key presses that happened since the last frame. </p>
 
 </div>
@@ -431,8 +415,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Start loading sounds. </p>
 <p>Load the sounds for this game. </p>
 
 </div>
@@ -459,8 +441,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Start loading sprites. </p>
 <p>Load the sprites for this game. </p>
 
 </div>
@@ -479,8 +459,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Process an animation frame. </p>
 <p>Handle keyboard input, move the game objects and render them in their new positions and orientations. Notify the timer of the start and end of the frame so that it can calculate frame time. Cool the cannon down, move and draw particles, play object collision sounds, play a ticking sound for the stopwatch and do the right thing if the player has won or lost. </p>
 
 </div>
@@ -507,8 +485,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Process game state. </p>
 <p>Take action appropriate to the current game state. </p>
 
 </div>
@@ -535,8 +511,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Process whether player has won or lost. </p>
 <p>Determine whether the player has won or lost, and if so, change the game state, play the appropriate sound, and record the level end time. </p>
 
 </div>
@@ -555,8 +529,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Release the renderer. </p>
 <p>Release all of the DirectX12 objects by deleting the renderer. </p>
 
 </div>
@@ -583,8 +555,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Render an animation frame. </p>
 <p>Ask the object manager to draw the game objects. RenderWorld is notified of the start and end of the frame so that it can let Direct3D do its pipelining jiggery-pokery. Draw the smoke particles from the cannon, the HUD, and any win/lose messages that are appropriate. </p>
 
 </div>

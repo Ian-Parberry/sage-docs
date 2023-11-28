@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -280,8 +280,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A vector field. </p>
-<p>Our vector field consists of an evenly-spaced grid of points. At each point there is a vector and a pressure. The pressure is the magnitude of the vertex at that point. </p>
+<div class="textblock"><p>Our vector field consists of an evenly-spaced grid of points. At each point there is a vector and a pressure. The pressure is the magnitude of the vertex at that point. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa03cf5a8851040bdeb1f5cf8c350647d" name="aa03cf5a8851040bdeb1f5cf8c350647d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa03cf5a8851040bdeb1f5cf8c350647d">&#9670;&#160;</a></span>CVectorField()</h2>
@@ -298,8 +297,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>Create a vector field with a given number of vertices horizontally. The vertices will be spaced out evenly horizontally. The vertical spacing will be the same as the horizontal spacing, and as many rows of vertices as fits into the window will be used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number of vertices across the window. </td></tr>
@@ -324,8 +321,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Clear. </p>
 <p>Set all of the vectors and pressures to zero, and mark all vertices as unoccupied. </p>
 
 </div>
@@ -345,8 +340,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Detonation. </p>
 <p>Add vectors acting outwards from a point. Eight vectors are added, horizontal, vertical,diagonal, and back-diagonal. The magnitude of the diagonal and back-diagonal vectors are divided by sqrt(2). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>A point. </td></tr>
@@ -370,8 +363,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw. </p>
 <p>Draw the vector field points, vectors and pressures as directed by the corresponding Boolean member variables. </p>
 
 </div>
@@ -398,8 +389,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Draw points. </p>
 <p>Draw the vector field points. </p>
 
 </div>
@@ -426,8 +415,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Draw pressures. </p>
 <p>Draw pressures as light and dark squares. </p>
 
 </div>
@@ -454,8 +441,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Draw vectors. </p>
 <p>Draw the vectors as scaled arrows. </p>
 
 </div>
@@ -493,8 +478,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Average pressure around a vertex. </p>
 <p>Compute the average pressure of 8 neighboring vertices weighted by distance. This does not include the center vertex. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>Row number of vertex. </td></tr>
@@ -521,8 +504,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get vector closest to a point. </p>
 <p>Get the vector acting on a point by the vector field. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>A point. </td></tr>
@@ -572,8 +553,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Closest vertex. </p>
 <p>Find the horizontal and vertical indices of the closest vertex. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>A point. </td></tr>
@@ -619,8 +598,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Average vectors around a vertex. </p>
 <p>Compute the average vector of 8 neighboring vertices based on pressure, weighted by distance. This does not include the center vertex. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>Row index of vertex. </td></tr>
@@ -665,8 +642,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Check that indices are for a non-edge vertex. </p>
 <p>A vertex is isInternalVertex if it is in range and not an edge vertex. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>Row index. </td></tr>
@@ -701,8 +676,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Relax pressure at the vertices. </p>
 <p>Relax the pressure at each vertex by lerping it towards the weighted average of the pressures of its neighbors. The weights are Euclidean distances, that is, diagonal neighbors are weighted by \(\sqrt{2}\) while the others are weighted \(1\). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number of iterations of Gauss-Seidel relaxation. </td></tr>
@@ -727,8 +700,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Perform an animation step. </p>
 <p>Relax the pressures, update the vectors, and mark all vertices unoccupied. Vectors at each vertex are lerped with the average of the vectors from its neighbors. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number of iterations of relaxation. </td></tr>
@@ -763,8 +734,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Update pressures around moving object. </p>
 <p>Update the pressures due to a moving point. Pressure increases ahead of the point and decrases behind it. Since each vertex can be updated only once per step, increases are done before decreases. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Position of moving point. </td></tr>
@@ -820,8 +789,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Update pressures around moving object. </p>
 <p>The pressures around a vertex are lerped towards new values. The lerp fraction is hard-coded. Each vertex can be updated only once per step, so make sure that the important ones get done first. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>Row index. </td></tr>

@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -197,8 +197,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Newton's cradle. </p>
-<p>Newton's Cradle has a bunch of balls on strings hanging from a cradle. It's a common executive toy. For those in the know, it demonstrates the conservation of momentum and energy in collisions. </p><div class="image">
+<div class="textblock"><p>Newton's Cradle has a bunch of balls on strings hanging from a cradle. It's a common executive toy. For those in the know, it demonstrates the conservation of momentum and energy in collisions. </p><div class="image">
 <img src="screenshot5.png" alt=""/>
 </div>
  </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -227,8 +226,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>Create the cradle, the balls, the distance joints connecting the former to the latter, and the line objects that represent them. The balls are created in left-to-right order. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate of the center of the cradle in Physics World. </td></tr>
@@ -253,8 +250,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Denstructor. </p>
 <p>Destructor. </p>
 
 </div>
@@ -293,8 +288,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a ball. </p>
 <p>Create a ball bearing object and Physics World body. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -338,8 +331,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create the cradle. </p>
 <p>The cradle except for the bar at the top of the cradle. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -365,8 +356,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Deliver impulse. </p>
 <p>Deliver an impulse to the n leftmost balls. This function assumes that the balls were created in left-to-right order. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number of balls that get the impulse. </td></tr>
@@ -390,8 +379,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Swivel Isaac Newton's eyeballs. </p>
 <p>Move Isaac Newton's eyeballs seivel in the direction of the last ball in the ball list, which is hopefully the rightmost one. </p>
 
 </div>

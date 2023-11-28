@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -239,9 +239,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:acebabe19c76a51e13bb8ce59c5cae602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602">Update</a> ()</td></tr>
 <tr class="memdesc:acebabe19c76a51e13bb8ce59c5cae602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update from angles and radius.  <br /></td></tr>
 <tr class="separator:acebabe19c76a51e13bb8ce59c5cae602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead705a4893efade8e687ec1361902d2"><td class="memItemLeft" align="right" valign="top"><a id="aead705a4893efade8e687ec1361902d2" name="aead705a4893efade8e687ec1361902d2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>PtToAngle</b> (const Vector2 &amp;)</td></tr>
-<tr class="memdesc:aead705a4893efade8e687ec1361902d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point to angle. <br /></td></tr>
+<tr class="memitem:aead705a4893efade8e687ec1361902d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shapes_1_1_c_arc.html#aead705a4893efade8e687ec1361902d2">PtToAngle</a> (const Vector2 &amp;)</td></tr>
+<tr class="memdesc:aead705a4893efade8e687ec1361902d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point to angle.  <br /></td></tr>
 <tr class="separator:aead705a4893efade8e687ec1361902d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -492,6 +491,39 @@ static float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fTimeStep</
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if p is inside the sector defined by this arc. </dd></dl>
+
+</div>
+</div>
+<a id="aead705a4893efade8e687ec1361902d2" name="aead705a4893efade8e687ec1361902d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead705a4893efade8e687ec1361902d2">&#9670;&#160;</a></span>PtToAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CArc::PtToAngle </td>
+          <td>(</td>
+          <td class="paramtype">const Vector2 &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Given a point \(p\), compute a vector from the center of the arc to \(p\) and return the angle from the positive \(X\)-axis to that vector. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>A 2D point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The orientation of the vector from the arc center to p. </dd></dl>
 
 </div>
 </div>

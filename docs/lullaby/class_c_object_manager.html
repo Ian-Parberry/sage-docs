@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -220,8 +220,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Object Manager. </p>
-<p>An abstract representation of all of the objects in the game. </p>
+<div class="textblock"><p>An abstract representation of all of the objects in the game. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abba05e60f1cecc9071d070d3435fa0ce" name="abba05e60f1cecc9071d070d3435fa0ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abba05e60f1cecc9071d070d3435fa0ce">&#9670;&#160;</a></span>CObjectManager()</h2>
@@ -237,8 +236,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>Initialize the sprite descriptors for the pop, start, and smole animations. </p>
 
 </div>
@@ -257,8 +254,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>The destructor clears the object list, which destructs all of the objects in it. </p>
 
 </div>
@@ -278,8 +273,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Whether all balls have rung their bells. </p>
 <p>Test whether all bells have been rung. </p><dl class="section return"><dt>Returns</dt><dd>true if all balls have rung their bells. </dd></dl>
 
 </div>
@@ -298,8 +291,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reset to initial conditions. </p>
 <p>Delete all of the entities managed by the Object Manager. This involves deleting all of the <a class="el" href="class_c_object.html" title="The game object.">CObject</a> instances pointed to by the object list, then clearing the object list itself. </p>
 
 </div>
@@ -337,8 +328,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create bell. </p>
 <p>Create a single bell in both Render World and Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -364,8 +353,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create bells. </p>
 <p>NUMBELLS bells are created in hard-coded positions, and those positions are recorded in array m_vBellPos[NUMBELLS]. Assumes that there are NUMBELLS consecutive bell sprite types starting at eSprite::BellC. </p>
 
 </div>
@@ -395,8 +382,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -421,8 +406,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create the edges of the world. </p>
 <p>Create world edges in Physics World. Place Box2D edge shapes in the Physics World in places that correspond to the bottom, right, and left edges of the screen in Render World. The left and right edges continue upwards for a distance. There is no top to the world. </p>
 
 </div>
@@ -441,8 +424,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw all objects. </p>
 <p>Draw the game objects using Painter's Algorithm. The background is drawn first, then the game objects are asked to draw themselves in the order that they are in the object list. That is, they are drawn from back to front. </p>
 
 </div>
@@ -469,8 +450,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Draw leaves. </p>
 <p>Draw sunflowers consisting of a line for the stem, a flower at the top, and a series of even;y spaced leaves going up the stem, getting smaller with height. </p>
 
 </div>
@@ -500,8 +479,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Elevate flower. </p>
 <p>Manually changes a flower's height in both the Object Manager and Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Flower index. </td></tr>
@@ -537,8 +514,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Emit a smoke particle. </p>
 <p>Create a smoke particle using the front particle engine so that it appears in front of the cannon. This particle will scale in and fade out over its lifespan, which is hard-coded. Friction is added to make it slow down horizontally, and upward acceleration is added to make it appear to rise due to the high temperature of an expolosion. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Initial position. </td></tr>
@@ -571,8 +546,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Emit stars in the wake of each object. </p>
 <p>Emit a star particle behind each ball that is flagged as an emitter of stars. They go into the back particle engine so that the balls are draw on top of them. </p>
 
 </div>
@@ -599,8 +572,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Make balls collide after they have rung their bell. </p>
 <p>Ask all balls to make themselves collidable if their state allows it. </p>
 
 </div>
@@ -627,8 +598,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Remove balls that have collided after a small delay. </p>
 <p>Get rid of cannonballs after they have rung their bell and 10 seconds have elapased since the time they rang it. Play a sound and emit a particle too. </p>
 
 </div>
@@ -647,8 +616,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Animation step. </p>
 <p>Emit stars from the flying cannon balls, make them collide with each other after they hit, and then remove them after a decent interval. </p>
 
 </div>

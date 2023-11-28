@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -100,9 +100,8 @@ Inheritance diagram for CObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a620f81f403f4b7c00ef5afbb15a88de2"><td class="memItemLeft" align="right" valign="top"><a id="a620f81f403f4b7c00ef5afbb15a88de2" name="a620f81f403f4b7c00ef5afbb15a88de2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CObject</b> (Shapes::CShape *, const <a class="el" href="class_c_obj_desc.html">CObjDesc</a> &amp;)</td></tr>
-<tr class="memdesc:a620f81f403f4b7c00ef5afbb15a88de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="memitem:a620f81f403f4b7c00ef5afbb15a88de2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a620f81f403f4b7c00ef5afbb15a88de2">CObject</a> (Shapes::CShape *, const <a class="el" href="class_c_obj_desc.html">CObjDesc</a> &amp;)</td></tr>
+<tr class="memdesc:a620f81f403f4b7c00ef5afbb15a88de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a620f81f403f4b7c00ef5afbb15a88de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ccd58b1e5986b135f836e7077a06fa6"><td class="memItemLeft" align="right" valign="top">const Shapes::CAabb2D &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a2ccd58b1e5986b135f836e7077a06fa6">GetAABB</a> () const</td></tr>
 <tr class="memdesc:a2ccd58b1e5986b135f836e7077a06fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get AABB.  <br /></td></tr>
@@ -162,7 +161,43 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CObjectManager</b></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> is the abstract representation of an object. Notice that <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> has no move or draw functions. Moving and drawing is now handled by <code>CShape</code>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a620f81f403f4b7c00ef5afbb15a88de2" name="a620f81f403f4b7c00ef5afbb15a88de2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620f81f403f4b7c00ef5afbb15a88de2">&#9670;&#160;</a></span>CObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CObject::CObject </td>
+          <td>(</td>
+          <td class="paramtype">Shapes::CShape *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_c_obj_desc.html">CObjDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Pointer to a shape. </td></tr>
+    <tr><td class="paramname">d</td><td>Pointer to an object descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2ccd58b1e5986b135f836e7077a06fa6" name="a2ccd58b1e5986b135f836e7077a06fa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ccd58b1e5986b135f836e7077a06fa6">&#9670;&#160;</a></span>GetAABB()</h2>
 

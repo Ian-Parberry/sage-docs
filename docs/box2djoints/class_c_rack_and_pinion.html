@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -197,8 +197,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Rack and pinion. </p>
-<p>A rack and pinion connected by a prismatic joint in Physics World. A rack and pinion is a type of linear actuator that comprises a pair of gears which convert rotational motion into linear motion. A circular gear called the pinion engages teeth on a linear gear bar called the rack. Rotational motion applied to the pinion causes the rack to move relative to the pinion, thereby translating the rotational motion of the pinion into linear motion. </p><div class="image">
+<div class="textblock"><p>A rack and pinion connected by a prismatic joint in Physics World. A rack and pinion is a type of linear actuator that comprises a pair of gears which convert rotational motion into linear motion. A circular gear called the pinion engages teeth on a linear gear bar called the rack. Rotational motion applied to the pinion causes the rack to move relative to the pinion, thereby translating the rotational motion of the pinion into linear motion. </p><div class="image">
 <img src="screenshot3.png" alt=""/>
 </div>
  </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -227,8 +226,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>Create a rack and a pinion at a given position in Physics World, with a revolute joint for the pinion and a prismatic joint for the rack. The revolute joint has a motor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -273,8 +270,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create an invisible gentry. </p>
 <p>Create an invisible base to attach the pinion to. The base has no sprite and no shape in Physics World. The latter means it doesn't collide with anything. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -319,8 +314,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a pinion. </p>
 <p>Create a pinion at a given position in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -365,8 +358,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a rack. </p>
 <p>Create a rack object at a given position in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -392,8 +383,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reverse the rack when it hits the limits. </p>
 <p>Monitor the pinion offset, and if it is p against the stops, then reverse the direction of the motor on the revolute joint. </p>
 
 </div>
@@ -412,8 +401,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reverse the motor. </p>
 <p>Reverse the pinion by setting the motor speed on the revolute joint. </p>
 
 </div>

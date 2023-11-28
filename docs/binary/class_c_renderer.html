@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -126,8 +126,7 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1d070a99f7c171b34ab867238f374cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Renderer. </p>
-<p>Render world handles the game-specific rendering tasks, relying on the base class to do all of the actual API-specific rendering. </p>
+<div class="textblock"><p>Render world handles the game-specific rendering tasks, relying on the base class to do all of the actual API-specific rendering. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c215b8e26e3ab4f0dc947317afb4792" name="a2c215b8e26e3ab4f0dc947317afb4792"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c215b8e26e3ab4f0dc947317afb4792">&#9670;&#160;</a></span>DrawNixieBits()</h2>
@@ -154,8 +153,6 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw number using nixie tubes. </p>
 <p>Draw a number in binary using nixie tubes in a hard-coded position, with a hard-coded gap between the tubes. Yes, nixie tubes are a thing: <a href="https://en.wikipedia.org/wiki/Nixie_tube">https://en.wikipedia.org/wiki/Nixie_tube</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number to display in binary. </td></tr>
@@ -181,8 +178,6 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw a 2-digit number as text. </p>
 <p>Draw a 2-digit number in a hard-coded position. If the number has more than two digits, the two least-significant ones will be drawn and the rest will be ignored. This function works by printing the number into a text buffer and then using <a class="el" href="class_c_renderer.html" title="The Renderer.">CRenderer</a>'s DrawText function to draw it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>The number to be drawn. </td></tr>
@@ -225,8 +220,6 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Load sprites multithreaded. </p>
 <p>Spawn a thread to load sprites. </p>
 
 </div>
@@ -254,8 +247,6 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Set sprite media list. </p>
 <p>Set sprite media list. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">media</td><td>[out] Media descriptor list. </td></tr>

@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -189,8 +189,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Object Manager. </p>
-<p>An abstract representation of all of the objects in the game. </p>
+<div class="textblock"><p>An abstract representation of all of the objects in the game. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f985240f67c8bf03a26f370e67fdb33" name="a7f985240f67c8bf03a26f370e67fdb33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f985240f67c8bf03a26f370e67fdb33">&#9670;&#160;</a></span>~CObjectManager()</h2>
@@ -206,8 +205,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>The destructor clears the object list, which destructs all of the objects in it. </p>
 
 </div>
@@ -227,8 +224,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Have the balls stopped moving? </p>
 <p>Checks whether all of the balls that are still in play (balls that have fallen to the bottom are not in play) have stopped. </p><dl class="section return"><dt>Returns</dt><dd>true if all balls in play have stopped. </dd></dl>
 
 </div>
@@ -247,8 +242,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reset to initial conditions. </p>
 <p>Delete all of the entities managed by the Object Manager. This involves deleting all of the <a class="el" href="class_c_object.html" title="The game object.">CObject</a> instances pointed to by the object list, then clearing the object list itself. </p>
 
 </div>
@@ -267,8 +260,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create a new ball. </p>
 <p>Place a ball in Physics World and the Object Manager. The initial position and velocity is hard-coded. </p>
 
 </div>
@@ -288,8 +279,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create counter. </p>
 <p>Create the counter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Number of bits of precision. </td></tr>
@@ -324,8 +313,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create object. </p>
 <p>Create an object in the Object Manager and link its Physics World body to it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -350,8 +337,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create the edges of the world. </p>
 <p>Create world edges in Physics World. Place Box2D edge shapes in the Physics World in places that correspond to the bottom, right, and left edges of the screen in Render World. The left and right edges continue upwards for a distance. There is no top to the world. </p>
 
 </div>
@@ -370,8 +355,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw all objects. </p>
 <p>Draw the game objects using Painter's Algorithm. The background is drawn first, then the game objects are asked to draw themselves in the order that they are in the object list. That is, they are drawn from back to front. </p>
 
 </div>
@@ -391,8 +374,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Highlight the nth bit. </p>
 <p>Highlight a bit. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Index of bit. </td></tr>
@@ -417,8 +398,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Test overflow. </p>
 <p>Check for overflow. </p><dl class="section return"><dt>Returns</dt><dd>true if there has been an overflow. </dd></dl>
 
 </div>

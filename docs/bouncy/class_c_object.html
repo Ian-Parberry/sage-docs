@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -144,8 +144,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The game object. </p>
-<p>Game objects are responsible for remembering information about themselves. </p>
+<div class="textblock"><p>Game objects are responsible for remembering information about themselves. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab353b95461709bffbf5ff4de337e9b6f" name="ab353b95461709bffbf5ff4de337e9b6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab353b95461709bffbf5ff4de337e9b6f">&#9670;&#160;</a></span>CObject()</h2>
@@ -172,8 +171,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>This constructor assumes that a Physics World body has already been created for this object. It then has responsibility for deleting it in its destructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -198,8 +195,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>This destructor assumes that Box2D hasn't been shut down yet. </p>
 
 </div>
@@ -219,8 +214,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw object. </p>
 <p>Draw the object using its position and orientation in Physics World. </p>
 
 </div>

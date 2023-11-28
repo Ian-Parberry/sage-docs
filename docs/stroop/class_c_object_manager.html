@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -316,8 +316,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Object Manager. </p>
-<p>An abstract representation of the objects in the game. </p>
+<div class="textblock"><p>An abstract representation of the objects in the game. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3f8f756746cbe9eed0808ad6befabe2e" name="a3f8f756746cbe9eed0808ad6befabe2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f8f756746cbe9eed0808ad6befabe2e">&#9670;&#160;</a></span>AnimateJointExplosion()</h2>
@@ -342,8 +341,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Animate a joint explosion. </p>
 <p>Animate the explosion of a joint using the particle engine and vector field. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Pointer to an object. </td></tr>
@@ -367,8 +364,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reset to initial conditions. </p>
 <p>Reset back to initial conditions. This involves deleting all of the <a class="el" href="class_c_object.html" title="The game object.">CObject</a> instances pointed to by the object list, then clearing the object list itself. </p>
 
 </div>
@@ -396,8 +391,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>V Create word. </p>
 <p>Create new object.</p>
 <p>Create an object of a specified type, enter it into the object list, and return a pointer to it. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -423,8 +416,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create random word. </p>
 <p>Create a word that reads "red", "green", or "blue" pseudorandomly, to be rendered in red, green, or blue chosen pseudorandomly. The initial position of the word is pseudorandmly offset a small amount from the window center line, just above the window so that it is initially out of sight. </p>
 
 </div>
@@ -500,8 +491,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create world edges. </p>
 <p>Create world edges in Physics World. Place Box2D edge shapes in the Physics World in places that correspond to the top, bottom, right, and left edges of the screen in Render World. The left and right edges continue upwards for a distance. There is no top to the world. </p>
 
 </div>
@@ -520,8 +509,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Expire all objects. </p>
 <p>Make the current word's color eWordColor::Black. </p>
 
 </div>
@@ -540,8 +527,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw all objects. </p>
 <p>Draw the game objects using Painter's Algorithm. Draw the eSprite::Background first, then the objects in the object list, then the particles in the particle engine. </p>
 
 </div>
@@ -560,8 +545,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw game text. </p>
 <p>Draw game text appropriate to the game state, including the countdown timer. </p>
 
 </div>
@@ -599,8 +582,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Draw score, which may be negatve. </p>
 <p>Draw a single score. It is assumed that the score is greater than -100 and less than or equal to 100. Bad things happen otherwise. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">d</td><td>[in, out] Sprite descriptor. </td></tr>
@@ -625,8 +606,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw scores. </p>
 <p>Draw scores to the window, hopefully over the top of the dashboard, which we assume has been drawn already. </p>
 
 </div>
@@ -688,8 +667,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Emit a puff of smoke. </p>
 <p>Create a smoke particle using the front particle engine. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>Position in Render World coordinates. </td></tr>
@@ -733,8 +710,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Emit a spark. </p>
 <p>Create a spark particle using the front particle engine. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>Position in Render World coordinates. </td></tr>
@@ -767,8 +742,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Explode old letters. </p>
 <p>Explode any individuals letters left over from old words. </p>
 
 </div>
@@ -795,8 +768,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Explode old words. </p>
 <p>Find all objects in the object list that are not eWordColor::Gray and are older than WORD_EXPLODE_DELAY and trigger a joint explosion if they are in a joint. </p>
 
 </div>
@@ -815,8 +786,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get the height of the current word. </p>
 <p>Get the height of the current word, which is defined to be the average height of the characters in it. </p><dl class="section return"><dt>Returns</dt><dd>Average height of current word in Render World units. </dd></dl>
 
 </div>
@@ -835,8 +804,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get the position of the current word. </p>
 <p>Get the position of the current word in Render World units. This is obtained by averaging the positions of the letters in it. </p><dl class="section return"><dt>Returns</dt><dd>Position of the current word in Render WOrld coordinates. </dd></dl>
 
 </div>
@@ -855,8 +822,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get number of objects. </p>
 <p>Reader function for number of objects in the object list. </p><dl class="section return"><dt>Returns</dt><dd>Number of objects in object list. </dd></dl>
 
 </div>
@@ -883,8 +848,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Load snide comment into character buffers. </p>
 <p>Load a snide comment based on score achieved into the character buffers. </p>
 
 </div>
@@ -903,8 +866,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Make all words explode into characters. </p>
 <p>Make all words explode by resetting their birth time close to the current time. </p>
 
 </div>
@@ -923,8 +884,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Make the current word explode into characters. </p>
 <p>Make the current word explode by resetting its birth time close to the current time. </p>
 
 </div>
@@ -943,8 +902,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initiate shutdown if the game is finished. </p>
 <p>Shutdown process to be called when all of the words have been presented to the player. </p>
 
 </div>
@@ -981,8 +938,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Update all objects. </p>
 <p>Update all of the objects in the object list, explode the old words, move the particles in the particle engine, and update the vector field and the Stroop animation. </p>
 
 </div>

@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -88,7 +88,7 @@ $(function() {
 <div class="contents">
 
 <p>The game class.  
- <a href="class_c_game.html#details">More...</a></p>
+</p>
 
 <p><code>#include &lt;Game.h&gt;</code></p>
 <div class="dynheader">
@@ -253,9 +253,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="memdesc:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw mode. <br /></td></tr>
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The game class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af7200bd66587e10002e7ed9e4a1f930e" name="af7200bd66587e10002e7ed9e4a1f930e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7200bd66587e10002e7ed9e4a1f930e">&#9670;&#160;</a></span>BeginGame()</h2>
 
@@ -278,8 +276,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Begin playing the game. </p>
 <p>Clear any old objects out of the Object Manager and create the edges of the game world, which correspond to the edges of the window. </p>
 
 </div>
@@ -298,8 +294,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Initialize the game. </p>
 <p>Initialize the renderer and the object manager, load images and sounds, start the timer, and begin the game. </p>
 
 </div>
@@ -326,8 +320,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>The keyboard handler. </p>
 <p>Respond to a user keystroke and report back if the user hit the Esc key, indicating that we should shut down. </p><dl class="section return"><dt>Returns</dt><dd>true if the user hits Esc. </dd></dl>
 
 </div>
@@ -354,8 +346,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Load sounds. </p>
 <p>Load the sounds for this game. </p>
 
 </div>
@@ -382,8 +372,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Start loading sprites. </p>
 <p>Load the sprites for this game. </p>
 
 </div>
@@ -402,8 +390,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Process an animation frame. </p>
 <p>Handle keyboard input, move the game objects and render them in their new positions and orientations. Notify the timer of the start and end of the frame so that it can calculate frame time. </p>
 
 </div>
@@ -441,8 +427,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Process a keyboard key. </p>
 <p>Process a color key hit. Play appropriate sound, make the word explode if it's the correct key, add increment to the relevant score. </p>
 
 </div>
@@ -469,8 +453,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Process game state. </p>
 <p>Take action appropriate to the current game state. </p>
 
 </div>
@@ -489,8 +471,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Release the renderer. </p>
 <p>Release all of the DirectX12 objects by deleting the renderer. </p>
 
 </div>
@@ -517,8 +497,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Render an animation frame. </p>
 <p>Ask the Object Manager to draw the game objects. RenderWorld is notified of the start and end of the frame so that it can let Direct3D do its pipelining jiggery-pokery. </p>
 
 </div>

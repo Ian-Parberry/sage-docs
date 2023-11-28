@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -212,8 +212,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The pulley class. </p>
-<p>A pair of objects connected by a pulley joint, with a pair of pulley wheels that are animated in code. </p><div class="image">
+<div class="textblock"><p>A pair of objects connected by a pulley joint, with a pair of pulley wheels that are animated in code. </p><div class="image">
 <img src="screenshot6.png" alt=""/>
 </div>
  </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -248,8 +247,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -295,8 +292,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create the elephant's crate. </p>
 <p>The bucket is the thing on the left that the elephant falls into. It consists of a left side, a right side, and a bottom, all of which are rectangles. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -322,8 +317,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Create an elephant. </p>
 <p>Create an elephant at its spawn point offset by a small pseudorandom amount to make the crate swing a bot. </p>
 
 </div>
@@ -367,8 +360,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create an object. </p>
 <p>Create an object, used for the safe and the elephant. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>Position in Physics World. </td></tr>
@@ -414,8 +405,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Create a pulley wheel. </p>
 <p>The pulley wheels are going to be static objects that we rotate ourselves depending on the positions of the objects that the pulley is attached to. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
@@ -441,8 +430,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Delete an elephant. </p>
 <p>Delete the first elephant, if there is one. </p><dl class="section return"><dt>Returns</dt><dd>true if there was an elephant. </dd></dl>
 
 </div>
@@ -461,8 +448,6 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Rotate the pulley wheels. </p>
 <p>Animate the pulley wheels by setting their orientations to reflect the amount of rope that has gone over them. </p>
 
 </div>

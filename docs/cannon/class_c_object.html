@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -162,8 +162,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
 <tr class="separator:a39369fcc0fbf2f2860fda8bab3303adb inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The game object. </p>
-<p>Game objects are responsible for remembering information about themselves, in particular, their representations in Render World and Physics World. </p>
+<div class="textblock"><p>Game objects are responsible for remembering information about themselves, in particular, their representations in Render World and Physics World. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab353b95461709bffbf5ff4de337e9b6f" name="ab353b95461709bffbf5ff4de337e9b6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab353b95461709bffbf5ff4de337e9b6f">&#9670;&#160;</a></span>CObject()</h2>
@@ -190,8 +189,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>This constructor assumes that a Physics World body has already been created for this object. It then has responsibility for deleting it in its destructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
@@ -216,8 +213,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Destructor. </p>
 <p>This destructor assumes that Box2D hasn't been shut down yet. </p>
 
 </div>
@@ -238,8 +233,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Crate is below a given height. </p>
 <p>If this is a crate, is it below a given height? We only care about crates, so we return true for everything else. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">h</td><td>Height in Render World units. </td></tr>
@@ -264,8 +257,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Draw object in Render World. </p>
 <p>Draw in Render World. Position and orientation must be gotten from Physics World. </p>
 
 </div>
@@ -284,8 +275,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Get sprite type. </p>
 <p>Reader function for sprite type. </p><dl class="section return"><dt>Returns</dt><dd>Sprite type. </dd></dl>
 
 </div>
@@ -304,8 +293,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Make collision sound, if appropriate. </p>
 <p>Kluge collision sounds by querying Physics World to see whether the object's velocity has changed. If the length squared of the change in velocity vector is larger than some arbitrarily chosen value, then conclude that a collision must have occurred, so make a sound. </p>
 
 </div>

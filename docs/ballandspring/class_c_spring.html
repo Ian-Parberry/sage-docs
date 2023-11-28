@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -102,9 +102,8 @@ Inheritance diagram for CSpring:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e4c8b42639420d34f33a6ecce2f3f8d"><td class="memItemLeft" align="right" valign="top"><a id="a1e4c8b42639420d34f33a6ecce2f3f8d" name="a1e4c8b42639420d34f33a6ecce2f3f8d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CSpring</b> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, <a class="el" href="class_c_point.html">CPoint</a> *, <a class="el" href="class_c_point.html">CPoint</a> *, float)</td></tr>
-<tr class="memdesc:a1e4c8b42639420d34f33a6ecce2f3f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="memitem:a1e4c8b42639420d34f33a6ecce2f3f8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_spring.html#a1e4c8b42639420d34f33a6ecce2f3f8d">CSpring</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, <a class="el" href="class_c_point.html">CPoint</a> *, <a class="el" href="class_c_point.html">CPoint</a> *, float)</td></tr>
+<tr class="memdesc:a1e4c8b42639420d34f33a6ecce2f3f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a1e4c8b42639420d34f33a6ecce2f3f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae174db6ec9c8351ab8af98e29fb112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_spring.html#aeae174db6ec9c8351ab8af98e29fb112">draw</a> ()</td></tr>
 <tr class="memdesc:aeae174db6ec9c8351ab8af98e29fb112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw.  <br /></td></tr>
@@ -158,7 +157,57 @@ static <a class="el" href="_game_defines_8h.html#a4f4c86dbcf5b26b3abd6fe271ffe92
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The spring class is the representation of an abstract spring or stick. It has flags that let you choose not to draw it and whether it should be drawn as a spring or a stick. The latter should be set according to the spring's restitution but at this level the two concepts can be independent of one another. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1e4c8b42639420d34f33a6ecce2f3f8d" name="a1e4c8b42639420d34f33a6ecce2f3f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4c8b42639420d34f33a6ecce2f3f8d">&#9670;&#160;</a></span>CSpring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSpring::CSpring </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_point.html">CPoint</a> *&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_c_point.html">CPoint</a> *&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
+    <tr><td class="paramname">p0</td><td>Point at one end of spring. </td></tr>
+    <tr><td class="paramname">p1</td><td>Point at the other end of spring. </td></tr>
+    <tr><td class="paramname">r</td><td>Coefficient of restitution. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aeae174db6ec9c8351ab8af98e29fb112" name="aeae174db6ec9c8351ab8af98e29fb112"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeae174db6ec9c8351ab8af98e29fb112">&#9670;&#160;</a></span>draw()</h2>
 

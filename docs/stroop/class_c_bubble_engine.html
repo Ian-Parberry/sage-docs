@@ -18,7 +18,7 @@ MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_CHTML/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -114,8 +114,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afd49aed999ad016ff8cfd33233336c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A particle engine for bubbles. </p>
-<p>A particle engine with a vector field that is used to alter the speed of all particles. It is intended to be used for bubbles that are blown about by passing objects. </p>
+<div class="textblock"><p>A particle engine with a vector field that is used to alter the speed of all particles. It is intended to be used for bubbles that are blown about by passing objects. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0aad864d30a3b01be88e48ab7261ce3a" name="a0aad864d30a3b01be88e48ab7261ce3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0aad864d30a3b01be88e48ab7261ce3a">&#9670;&#160;</a></span>CBubbleEngine()</h2>
@@ -142,8 +141,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructor. </p>
 <p>Create a Bubble engine with its own vector field and PRNG. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pvf</td><td>Pointer to a vector field. </td></tr>
@@ -169,8 +166,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Animation step. </p>
 <p>Overrides CParticleEngine::step, adding deflection of particle velocity by a vector field. </p>
 
 </div>
