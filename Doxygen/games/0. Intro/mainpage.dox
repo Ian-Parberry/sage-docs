@@ -7,10 +7,10 @@
 These games were made with
 [SAGE](../sage/index.html).
 
-1. [Top-Down Game](../topdown/index.html).
-2. [Top-Down Tiled Game](../topdowntiled/index.html).
-3. [Tiled Platformer](../platformer/index.html).
-4. [2.5D Side Scroller](../ned/index.html).
+1. [Top-Down Game](../topdown/index.html): A top-down shooter.
+2. [Top-Down Tiled Game](../topdowntiled/index.html): A top-down shooter with a tiled background.
+3. [Tiled Platformer](../platformer/index.html): A platformer with a tiled background.
+4. [2.5D Side Scroller](../ned/index.html): A 2D side scroller with control of the Z-depth.
 
 
 

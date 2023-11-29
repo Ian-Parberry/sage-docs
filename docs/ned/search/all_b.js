@@ -42,7 +42,7 @@ var searchData=
   ['m_5fpplayer_39',['m_pPlayer',['../class_c_common.html#ad175f92665c1eca2c4f11926cfda9fde',1,'CCommon']]],
   ['m_5fprenderer_40',['m_pRenderer',['../class_c_common.html#a919f964a406e808c9bceaa73ef7dfcd2',1,'CCommon']]],
   ['m_5fpsmokeevent_41',['m_pSmokeEvent',['../class_c_house_object.html#a5b8f6efa98be2b200860b9954e492d7c',1,'CHouseObject']]],
-  ['m_5fpspritedesc_42',['m_pSpriteDesc',['../class_c_object.html#a91aad9c1c69fff0f5520cf4475c8a426',1,'CObject']]],
+  ['m_5fpspritedesc_42',['m_pSpriteDesc',['../class_c_object.html#a804fa8a97555999391e96f54497d0a73',1,'CObject']]],
   ['m_5fssounddesc_43',['m_sSoundDesc',['../class_c_plane_object.html#ad8474a346057d8fea342714ba9e180e3',1,'CPlaneObject']]],
   ['m_5fstdrenderlist_44',['m_stdRenderList',['../class_c_game.html#a2aa72162880e7f5fc61ff7f80a8f8c9e',1,'CGame']]],
   ['m_5fstduseddepthset_45',['m_stdUsedDepthSet',['../class_c_game.html#a954718b762b9dd4c9afd15f0922dea18',1,'CGame']]],

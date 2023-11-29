@@ -8,7 +8,7 @@ something that you can play with until you are bored.
 These games and toys were made with
 [SAGE](../sage/index.html).
 
-# Hand-coded 2D Physics
+# 1. Hand-coded 2D Physics
 
 @image html bespoke.png width=65%
 
@@ -38,7 +38,7 @@ The following toys and games use hand-coded (bespoke) physics code.
 </ol>
 
 
-# 2D Physics With Box2D
+# 2. 2D Physics With Box2D
 
 @image html box2d.png width=75%
 
@@ -90,7 +90,7 @@ open-source 2D physics library.
   </li>
 </ol>
 
-# 3D Physics With Bullet Physics
+# 3. 3D Physics With Bullet Physics
 
 @image html bullet.png width=80%
 

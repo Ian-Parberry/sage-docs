@@ -8,7 +8,7 @@ var searchData=
   ['getgunmuzzle_5',['GetGunMuzzle',['../class_c_plane_object.html#a9f2c61a8c9ad3fcd54ceaad0c7ffe655',1,'CPlaneObject']]],
   ['getnumcrows_6',['GetNumCrows',['../class_c_object_manager.html#a8dd4d3a87dccfe7b81de1f95430f8e63',1,'CObjectManager']]],
   ['getpos_7',['GetPos',['../class_c_object.html#a1b52d807212ad393bdb1b0c1aa3c4f2b',1,'CObject']]],
-  ['getrenderlist_8',['GetRenderList',['../class_c_object.html#a5b7544299b0bdd1ed403e552da83bca6',1,'CObject::GetRenderList()'],['../class_c_object_manager.html#ac59fc2d0815fc9f56c5ef2c74db4d487',1,'CObjectManager::GetRenderList()']]],
+  ['getrenderlist_8',['GetRenderList',['../class_c_object.html#ac845becc81a387a7f2ec1476709d9083',1,'CObject::GetRenderList()'],['../class_c_object_manager.html#ac59fc2d0815fc9f56c5ef2c74db4d487',1,'CObjectManager::GetRenderList()']]],
   ['getroll_9',['GetRoll',['../class_c_object.html#a6f1b5884c14c3b6881c932ecd522065c',1,'CObject']]],
   ['gettype_10',['GetType',['../class_c_object.html#a0420dbb4720237f87b5334cae793e2ad',1,'CObject']]],
   ['getvel_11',['GetVel',['../class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d',1,'CObject']]],

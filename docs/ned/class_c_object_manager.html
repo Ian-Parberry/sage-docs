@@ -20,6 +20,7 @@ MathJax.Hub.Config({
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="sagedoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -476,7 +477,7 @@ static <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af680
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the render list, which is an unordered vector of sprite descriptors. This function also handles world wrapping, which ensures that whan the camera switches from its leftmost extent to the rightmost extent, then a copy of the objects in its view frustum will also be drawn in the rightmost view frustum. This temporarily draws two copies of the objects in question, but this will be invisible during game play because one of the copies will always be out of the view frustum. You will, however, see them when the camera is pulled back and I apologize in advance for any confusion that this causes. Object positions are also changed at the point of world wrap, which may also cause confusion because this function primarily creates a render list. side effect, </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Get the render list, which is an unordered vector of sprite descriptors. This function also handles world wrapping, which ensures that whan the camera switches from its leftmost extent to the rightmost extent, then a copy of the objects in its view frustum will also be drawn in the rightmost view frustum. This temporarily draws two copies of the objects in question, but this will be invisible during game play because one of the copies will always be out of the view frustum. You will, however, see them when the camera is pulled back and I apologize in advance for any confusion that this causes. Object positions are also changed at the point of world wrap, which may also cause confusion because this function primarily creates a render list. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">renderlist</td><td>[IN, OUT] Render list. </td></tr>
   </table>

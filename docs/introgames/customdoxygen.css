@@ -1,0 +1,17 @@
+/* @group Link Styling */
+
+a {;
+	color: #558445;
+	font-weight: normal;
+	text-decoration: underline dotted;
+}
+
+.contents a:visited {
+	color: black;
+	text-decoration: underline dotted;
+}
+
+a:hover {
+	color: #558445;
+	text-decoration: underline;
+}
