@@ -38,4 +38,15 @@ var menudata={children:[
 {text:"All",url:"globals.html"},
 {text:"Functions",url:"globals_func.html"},
 {text:"Variables",url:"globals_vars.html"},
-{text:"Enumerations",url:"globals_enum.html"}]}]}]}
+{text:"Enumerations",url:"globals_enum.html"}]}]},
+{text:"Repos",url:"user",children:[
+{text:"SAGE",url:"^https://github.com/Ian-Parberry/sage/"},
+{text:"SAGE Games",url:"^https://github.com/Ian-Parberry/sage-games/"},
+{text:"SAGE Physics",url:"^https://github.com/Ian-Parberry/sage-physics/"}]},
+{text:"Install",url:"user",children:[
+{text:"SAGE",url:"^https://Ian-Parberry.github.io/sage-docs/install/"},
+{text:"SAGE Physics",url:"^https://Ian-Parberry.github.io/sage-docs/installphysics/"}]},
+{text:"Docs",url:"user",children:[
+{text:"SAGE",url:"^https://Ian-Parberry.github.io/sage-docs/sage/"},
+{text:"SAGE Games",url:"^https://Ian-Parberry.github.io/sage-docs/introgames/"},
+{text:"SAGE Physics",url:"^https://Ian-Parberry.github.io/sage-docs/introphysics/"}]}]}

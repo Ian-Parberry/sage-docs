@@ -20,7 +20,7 @@ for %%d in (
 ) do (
   <nul set /p =Copy to %%d:
   copy Build.bat %%d /y  >NUL 2>&1
-  if !ERRORLEVEL!==0 (echo succeeded) else (echo succeeded)
+  if !ERRORLEVEL!==0 (echo failed) else (echo succeeded)
 )
 
 pause
