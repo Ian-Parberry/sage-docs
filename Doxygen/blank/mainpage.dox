@@ -229,11 +229,11 @@ for `CGame`, the object-oriented game code.
 commenting in and out a single line of code to
 activate the optional debug console (see \ref section5-1-1 "Section 5.1.1")
 and memory leak detector (see \ref section5-1-2 "Section 5.1.2").
-Function `wWinMain()` sets things up so that your implementation
-of `CGame::Initialize()` is called at the correct time during
-initialization, `CGame::ProcessFrame()` is called as often as possible
+Function `wWinMain` sets things up so that your implementation
+of `CGame::Initialize` is called at the correct time during
+initialization, `CGame::ProcessFrame` is called as often as possible
 to compose and render a frame of animation, and 
-`CGame::Release()` is called at the correct time during 
+`CGame::Release` is called at the correct time during 
 game shutdown. `CGame` will be discussed in more detail in
 \ref section5-2 "Section 5.2".
 The heavy lifting here is done by calling
@@ -275,7 +275,7 @@ or the line:
 std::cout << "This is a test debug output" << std::endl;
 \endcode
 
-inserted into a function such as `CGame::LoadSprites()` will result in the
+inserted into a function such as `CGame::LoadSprites` will result in the
 output shown in the debug console in \ref fig4 "Fig. 4". Your debug text will
 be in red and directions will be in green text.
 
@@ -341,7 +341,7 @@ in `GameDefines.h`.
 ### 5.4.1 CGame: Initialization
 
 As mentioned in \ref section5-1 "Section 5.1",
-`CGame::Initialize()` contains initialization code and will
+`CGame::Initialize` contains initialization code and will
 be called once only when your game starts.
 It creates a DirectXTK12 renderer (an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>)
@@ -351,15 +351,15 @@ to use batched mode sprite renderer from DirectXTK12.
 It then creates an instance of `Sage::CObjectManager<CObject>`
 to manage the game objects (see \ref section5-3 "Section 5.3)
 and saves a pointer to it in member variable `CGame::m_pObjectManager`.
-Finally, it calls `CGame::LoadSprites()` (see \ref section5-4-2 "Section 5.4.2")
-to load the game sprites and `CGame::LoadSounds()` 
+Finally, it calls `CGame::LoadSprites` (see \ref section5-4-2 "Section 5.4.2")
+to load the game sprites and `CGame::LoadSounds` 
 (see \ref section5-4-3 "Section 5.4.3")
 to load the game sounds.
 
 \anchor section5-4-2
 ### 5.4.2 CGame: Loading Sprites 
 
-`CGame::LoadSprites()` loads sprites for the background and the text wheel.
+`CGame::LoadSprites` loads sprites for the background and the text wheel.
 For convenience, the following enumerated type is declared in `GameDefines.h`.
 
 \code{.cpp}
@@ -369,7 +369,7 @@ enum class eSprite{
 \endcode
 
 These will be used to refer to the sprites in the source code.
-`CGame::LoadSprites()` first declares a
+`CGame::LoadSprites` first declares a
 <a href="../sage/class_sage_1_1_c_media_list.html">`Sage::CMediaList`</a>
 of type `eSprite`.
 
@@ -390,7 +390,7 @@ within the source code) and a string (its name in `GameSettings.xml`).
 This string must be identical to the string in the `name` field of a `sprite`
 tag in `GameSettings.xml` (see \ref section4-4-3 "Section 4.4.3").
 It then calls 
-<a href="../sage/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8">`Sage::CSound::LoadMT()`</a>
+<a href="../sage/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8">`Sage::CSound::LoadMT`</a>
 to load the
 sprites asynchronously in a separate thread. 
 (Recall that `CGame` has a pointer to an instance of
@@ -402,9 +402,9 @@ which it inherited from `CCommon`, see \ref section5-2 "Section 5.2").
   m_pRenderer->LoadMT(media);
 \endcode
 
-`CGame::LoadSprites()`
+`CGame::LoadSprites`
 will exit immediately and computation will proceed while the sprites load.
-If you wish to load the sprites synchronously so that `CGame::LoadSprites()`
+If you wish to load the sprites synchronously so that `CGame::LoadSprites`
 returns only after the sprites have been loaded (for example, during debugging),
 use the following instead.
 
@@ -415,7 +415,7 @@ use the following instead.
 \anchor section5-4-3
 ### 5.4.3 CGame: Loading Sounds
 
-`CGame::LoadSounds()` loads sounds.
+`CGame::LoadSounds` loads sounds.
 For convenience, the following enumerated type is declared in `GameDefines.h`.
 
 \code{.cpp}
@@ -425,7 +425,7 @@ enum class eSound{
 \endcode
 
 These will be used to refer to the sounds in the source code.
-`CGame::LoadSounds()` first declares a
+`CGame::LoadSounds` first declares a
 <a href="../sage/class_sage_1_1_c_media_list.html">`Sage::CMediaList`</a>
 of type `eSound`.
 
@@ -446,7 +446,7 @@ within the source code) and a string (its name in `GameSettings.xml`).
 This string must be identical to the string in the `name` field of a `sound`
 tag in `GameSettings.xml` (see \ref section4-4-4 "Section 4.4.4").
 It then calls 
-<a href="../sage/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8">`Sage::CSound::LoadMT()`</a>
+<a href="../sage/class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8">`Sage::CSound::LoadMT`</a>
 to load the
 sounds asynchronously in a separate thread. 
 `CGame` inherits a pointer `m_pSound` to an instance of
@@ -458,9 +458,9 @@ from
   m_pSound->LoadMT(media);
 \endcode
 
-`CGame::LoadSounds()`
+`CGame::LoadSounds`
 will exit immediately and computation will proceed while the sounds load.
-If you wish to load the sounds synchronously so that `CGame::LoadSounds()`
+If you wish to load the sounds synchronously so that `CGame::LoadSounds`
 returns only after the sounds have been loaded (for example, during debugging),
 use the following instead.
 
@@ -472,14 +472,14 @@ use the following instead.
 ### 5.4.4 CGame: The Frame Loop
 
 As mentioned in \ref section5-1 "Section 5.1",
-`CGame::ProcessFrame()` contains code that creates and displays
+`CGame::ProcessFrame` contains code that creates and displays
 the next frame of animation. SAGE will ensure that this function
 will be called repeatedly in a loop that terminates only when the game exits.
 
 \anchor section5-4-4-1
 #### 5.4.4.1 CGame: Frame Loop: The Game State
 
-The behavior of `CGame::ProcessFrame()` will depend on the current
+The behavior of `CGame::ProcessFrame` will depend on the current
 state of the game, which is recorded in `CGame::m_eGameState`,
 which is of type `eGameState`, declared in `GameDefines.h` as:
 
@@ -496,8 +496,8 @@ loading of sprites and sounds is finished.
 \anchor section5-4-4-2
 #### 5.4.4.2 CGame: Frame Loop: The Keyboard Handler
 
-The first thing that `CGame::ProcessFrame()` does is call the keyboard
-handler `CGame::KeyboardHandler()`. `CGame` inherits
+The first thing that `CGame::ProcessFrame` does is call the keyboard
+handler `CGame::KeyboardHandle)`. `CGame` inherits
 from
 <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>
  a pointer `m_pKeyboard` to
@@ -505,7 +505,7 @@ an instance of
 <a href="../sage/class_sage_1_1_c_keyboard.html">`Sage::CKeyboard`</a>
 which provides functions to poll
 the current state of a key on the keyboard.
-`CGame::KeyboardHandler()` first calls: 
+`CGame::KeyboardHandler` first calls: 
 
 \code{.cpp}
 m_pKeyboard->GetState(); 
@@ -534,7 +534,7 @@ can be used as follows:
 
 If the current game state is not `eGameState::Loading`
 (see \ref section5-4-4-1 "Section 5.4.4.1")
-then `CGame::ProcessFrame()` does the following.
+then `CGame::ProcessFrame` does the following.
 `CGame` inherits
 from <a href="../sage/class_sage_1_1_c_component.html">`Sage::CComponent`</a>
 a pointer `m_pSound` to
@@ -542,7 +542,7 @@ an instance of
 <a href="../sage/class_sage_1_1_c_sound.html">`Sage::CSound`</a>,
 which provides functions to play and
 mix sounds asynchronously. Function
-<a href="../sage/class_sage_1_1_c_sound.html#acce2cf44671cf243cd1670853941d4c2">`Sage::CSound::BeginFrame()`</a>
+<a href="../sage/class_sage_1_1_c_sound.html#acce2cf44671cf243cd1670853941d4c2">`Sage::CSound::BeginFrame`</a>
 is then called to notify the sound player that a new animation frame has begun.
 
 \code{.cpp}
@@ -562,7 +562,7 @@ accurately measure time. The motion of all game objects should
 be proportional to frame time, otherwise things would move faster
 on a 60Hz monitor than on a 30Hz monitor.
 References to the timer should be inside a 
-<a href="../sage/class_sage_1_1_c_timer.html#ab24d65d62c636f7b2a09d30380cc4ef0">`Sage::CTimer::Tick()`</a>
+<a href="../sage/class_sage_1_1_c_timer.html#ab24d65d62c636f7b2a09d30380cc4ef0">`Sage::CTimer::Tick`</a>
 functor as follows:
 
 \code{.cpp}
@@ -586,7 +586,7 @@ a sprite descriptor
 that records properties
 of the sprite such as its screen coordinates and angle of orientation.
 Its orientation is stored in `m_pSpriteDesc->m_fRoll` in radians.
-`CGame::ProcessFrame()` does the following once per frame:
+`CGame::ProcessFrame` does the following once per frame:
 
 \code{.cpp}
 m_pSpriteDesc->m_fRoll += 0.125f*XM_2PI*m_pTimer->GetFrameTime();
@@ -598,12 +598,12 @@ rotates once every 8 seconds.
 \anchor section5-4-4-4
 #### 5.4.4.4 CGame: Frame Loop: Rendering
 
-`CGame::ProcessFrame()` then renders an animation frame by calling
-`CGame::RenderFrame()`. All rendering must be done
+`CGame::ProcessFrame` then renders an animation frame by calling
+`CGame::RenderFrame`. All rendering must be done
 between calls to
-<a href="../sage/class_sage_1_1_c_sprite_renderer.html#aa9fdd8301a51b7e7c853ed4a1649ac5e">`Sage::CSpriteRenderer::BeginFrame()`</a>
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#aa9fdd8301a51b7e7c853ed4a1649ac5e">`Sage::CSpriteRenderer::BeginFrame`</a>
 and
-<a href="../sage/class_sage_1_1_c_sprite_renderer.html#a16dbd29c51dc0384d186b39671d8f5d8">`Sage::CSpriteRenderer::EndFrame()`</a>).
+<a href="../sage/class_sage_1_1_c_sprite_renderer.html#a16dbd29c51dc0384d186b39671d8f5d8">`Sage::CSpriteRenderer::EndFrame`</a>).
 (Recall that `CGame` has a pointer to an instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>
 in member variable `m_pRenderer`,
@@ -643,7 +643,7 @@ the game is still loading sounds and sprites,
 that is, if `m_eGameState` is `eGameState::Loading`,
 then we draw the text `Loading...` at the center of the window
 using 
-`Sage::CSpriteRenderer::DrawCenteredText()`:
+`Sage::CSpriteRenderer::DrawCenteredText`:
 
 \code{.cpp}
 m_pRenderer->DrawCenteredText(L"Loading...");
@@ -656,29 +656,29 @@ many more, and/or much larger sprites and sounds,
 particularly if you don't have a solid state hard drive.
 
 Finally, if the `CGame` member variable `m_bDrawFrameRate` is set to
-`true`, which happens in `CGame::KeyboardHandler()` in response to
-the F2 key, then `CGame::DrawFrameRateText()` is called to draw
+`true`, which happens in `CGame::KeyboardHandler` in response to
+the F2 key, then `CGame::DrawFrameRateText` is called to draw
 the frame rate obtained from `m_pTimer->GetFPS()`
 at the top right of the screen.
 
 \anchor section5-4-4-5
 #### 5.4.4.5 CGame: Frame Loop: Process Game State
 
-`CGame::ProcessState()` processes any changes to the game
+`CGame::ProcessState` processes any changes to the game
 state that occurred in the current frame.
 In the Blank Game this is very simple.
 If `m_eGameState` is `eGameState::Loading`, we query the renderer and
 the sound player to see whether they have finished loading,
 that is, `m_pRenderer->Loaded()` returns `true` and
 `m_pSound->Loaded()` returns `true`.
-If so, we call `CGame::BeginGame()`, which sets
+If so, we call `CGame::BeginGame`, which sets
 `m_eGameState` to `eGameState::Playing`,
 clears any old objects from the object manager, and creates an
 instance of `CSprite` for the text wheel at the center of the screen
 and inserts it into the object manager.
 
-Note that `CGame::BeginGame()` is also called from
-`CGame::KeyboardHandler()` in response to the `Backspace`
+Note that `CGame::BeginGame` is also called from
+`CGame::KeyboardHandler` in response to the `Backspace`
 key. Care must be taken here to avoid
 memory leaks and crashes in your own game.
 Recall that Visual Leak Detector (see \ref section4 "Section 4")
@@ -688,13 +688,13 @@ can be used in Debug mode to detect memory leaks.
 ### 5.2.5 CGame: Shutting Down
 
 As mentioned in \ref section5-1 "Section 5.1",
-`CGame::Release()` contains shutdown code and will
+`CGame::Release` contains shutdown code and will
 be called once only when your game shuts down.
 All it needs to do is delete the instance of
 <a href="../sage/class_sage_1_1_c_sprite_renderer.html">`Sage::CSpriteRenderer`</a>),
 which takes care of the details of shutting down DirectX 12.
 It is important that this gets done before the destructor
-`CGame::~CGame()` is called.
+`CGame::~CGame` is called.
 
 \anchor section6
 # 6. What Next?
