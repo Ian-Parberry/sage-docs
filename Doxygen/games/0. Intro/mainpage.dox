@@ -2,6 +2,8 @@
 
 \mainpage notitle
 
+@image html banner.png width=65%
+
 These games were made with
 [SAGE](../sage/index.html).
 
