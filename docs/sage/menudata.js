@@ -82,6 +82,14 @@ var menudata={children:[
 {text:"Functions",url:"globals_func.html"},
 {text:"Macros",url:"globals_defs.html"}]}]},
 {text:"Important Links",url:"user",children:[
-{text:"SAGE Repository",url:"^https://github.com/Ian-Parberry/sage/"},
-{text:"SAGE Installation Guide",url:"^https://Ian-Parberry.github.io/sage-docs/install/"},
-{text:"SAGE Documentation",url:"^https://Ian-Parberry.github.io/sage-docs/sage/"}]}]}
+{text:"SAGE",url:"user",children:[
+{text:"Repository",url:"^https://github.com/Ian-Parberry/sage/"},
+{text:"Installation",url:"^https://Ian-Parberry.github.io/sage-docs/install/"},
+{text:"Documentation",url:"^https://Ian-Parberry.github.io/sage-docs/sage/"}]},
+{text:"SAGE Games",url:"user",children:[
+{text:"Repository",url:"^https://github.com/Ian-Parberry/sage-games/"},
+{text:"Documentation",url:"^https://Ian-Parberry.github.io/sage-docs/introgames/"}]},
+{text:"SAGE Physics",url:"user",children:[
+{text:"Repository",url:"^https://github.com/Ian-Parberry/sage-physics/"},
+{text:"Installation",url:"^https://Ian-Parberry.github.io/sage-docs/installphysics/"},
+{text:"Documentation",url:"^https://Ian-Parberry.github.io/sage-docs/introphysics/"}]}]}]}

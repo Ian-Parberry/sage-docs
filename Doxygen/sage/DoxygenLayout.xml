@@ -38,9 +38,20 @@
     <tab type="examples" visible="yes" title="" intro=""/>
     
     <tab type="user" visible="yes" title="Important Links">
-      <tab type="user" visible="yes" title="SAGE Repository" intro="" url="https://github.com/Ian-Parberry/sage/"/>
-      <tab type="user" visible="yes" title="SAGE Installation Guide" intro="" url="https://Ian-Parberry.github.io/sage-docs/install/"/>
-      <tab type="user" visible="yes" title="SAGE Documentation" intro="" url="https://Ian-Parberry.github.io/sage-docs/sage/"/>
+      <tab type="user" visible="yes" title="SAGE">
+        <tab type="user" visible="yes" title="Repository" intro="" url=  "https://github.com/Ian-Parberry/sage/"/>
+        <tab type="user" visible="yes" title="Installation" intro="" url="https://Ian-Parberry.github.io/sage-docs/install/"/>
+        <tab type="user" visible="yes" title="Documentation" intro="" url="https://Ian-Parberry.github.io/sage-docs/sage/"/>
+      </tab>
+      <tab type="user" visible="yes" title="SAGE Games">
+        <tab type="user" visible="yes" title="Repository" intro="" url="https://github.com/Ian-Parberry/sage-games/"/>
+        <tab type="user" visible="yes" title="Documentation" intro="" url="https://Ian-Parberry.github.io/sage-docs/introgames/"/>
+      </tab>
+      <tab type="user" visible="yes" title="SAGE Physics">
+        <tab type="user" visible="yes" title="Repository" intro="" url="https://github.com/Ian-Parberry/sage-physics/"/>
+        <tab type="user" visible="yes" title="Installation" intro="" url="https://Ian-Parberry.github.io/sage-docs/installphysics/"/>
+        <tab type="user" visible="yes" title="Documentation" intro="" url="https://Ian-Parberry.github.io/sage-docs/introphysics/"/>
+      </tab>
     </tab>
   </navindex>
 
