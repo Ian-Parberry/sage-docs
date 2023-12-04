@@ -367,7 +367,39 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Begin by computing velocities relative to b1. Calculate the relative displacement c and the distance cdotvhat along the normal to common tangent vhat. Calculate d1 and d2, the distances moved back by b1 and b2 (respectively) to their positions at TOI. Calculate time elapsed since TOI, <code>tdelta = d2/s2</code>. Move balls back to their positions at TOI and compute their new velocities. Move both balls after impact using their new velocities and tdelta. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Suppose we call the balls that are colliding \(B_1\) and \(B_2\). In the figure below, \(B_1\) is brown and \(B_2\) is yellow. For now, assume that \(B_1\) is fixed. We'll revisit that later. Suppose \(B_2\) is moving at velocity \(\vec{v}\) along the dotted line in the figure below. Note that \(B_2\) may be approaching or moving away from \(B_1\) (we have drawn it as moving away). This is the first frame in which an overlap occurs between \(B_1\) and \(B_2\).</p>
+<div class="image">
+<img src="circles1.png" alt="" width="35%"/>
+</div>
+<p>The actual collision between \(B_1\) and \(B_2\), assuming that they are rigid bodies, would be between frames. We would expect that the position of \(B_2\) at the time of impact (TOI for short) would be the dotted circle in the following figure. We need to calculate \(d\), the distance that \(B_2\) needs to be moved back to its position at TOI.</p>
+<div class="image">
+<img src="circles2.png" alt="" width="35%"/>
+</div>
+<p>Let \(\vec{c}\) be the vector fom the center of \(B_2\) to the center of \(B_1\), \(\delta\) be the distance between the center of \(B_1\) and the center of \(B_2\) at the time of impact, and \(\theta\) be the angle between \(\vec{c}\) and \(-\vec{v}\), as shown in the next figure.</p>
+<div class="image">
+<img src="circles3.png" alt="" width="35%"/>
+</div>
+<p>By the law of cosines,  </p><p class="formulaDsp">
+\[\delta^2 = d^2 + \left\Vert\vec{c}\right\Vert^2 -
+2d\left\Vert\vec{c}\right\Vert \cos \theta\]
+</p>
+<p>. Since \(\left\Vert\vec{c}\right\Vert = -\hat{v} \cdot \vec{c}\) and \(\left\Vert\vec{c}\right\Vert^2 = \vec{c} \cdot \vec{c}\),  </p><p class="formulaDsp">
+\[
+d^2 + \vec{c} \cdot \vec{c} +
+2d\hat{v} \cdot \vec{c} - \delta^2 = 0.
+\]
+</p>
+<p> This is a quadratic equation in \(d\) whose roots are  </p><p class="formulaDsp">
+\[d = -\hat{v} \cdot \vec{c} \pm \sqrt{(\hat{v} \cdot \vec{c})^2 - 
+\vec{c} \cdot \vec{c} + \delta^2}.\]
+</p>
+<p> We need the first root  </p><p class="formulaDsp">
+\[d = -\hat{v} \cdot \vec{c} + \sqrt{(\hat{v} \cdot \vec{c})^2 - 
+\vec{c} \cdot \vec{c} + \delta^2}.\]
+</p>
+<p> Note that if \((\hat{v} \cdot \vec{c})^2 - 
+\vec{c} \cdot \vec{c} + \delta^2 = 0 \), then there is no collision. This should not happen if we perform this computation only if there is overlap between the two circles, but may happen due to floating point roundoff error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p0</td><td>Pointer to first object. </td></tr>
     <tr><td class="paramname">p1</td><td>Pointer to first object. </td></tr>

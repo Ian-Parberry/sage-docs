@@ -60,7 +60,7 @@ hand-written physics code based on Euler integration.
 </table>
 </center>
 
-\anchor sec3
+\anchor section3
 # 3. Building the Game
 
 This code uses <a href="../sage/index.html">SAGE</a>.
@@ -78,42 +78,144 @@ will appear.
 Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
 to build both Release and Debug configurations. 
 
-\anchor sec4
+\anchor section4
 # 4. Game Play
+
+\anchor section4-1
+## 4.1 Actual Game Play
+
+The aim of the game is to sink the 8-ball while not sinking the cue-ball.
+The initial state of the game is shown in \ref fig1 "Fig. 1",
+with the cue-ball on the base line to the left and the 8-ball on
+the dot at the right. An arrow shows the direction that the cue-ball
+will travel when hit by the imaginary cue, which will happen
+when the player hits the `Space` bar. We can call this vector the
+_impulse vector_.
+Before the initial hit, the
+player can move the cue-ball up and down on the base line by holding down
+the up and down arrow keys. For example, \ref fig2 "Fig. 2" 
+shows the cue-ball moved up along the base line.
 
 \anchor fig2
 \image html ss1.png "Fig. 2: The Pool End Game at the start of a game with the cue ball moved upwards." width=50%
 
+Notice that, as shown in  \ref fig2 "Fig. 2", the impulse vector always
+points to the 8-ball while the cue-ball is moved up or down along the
+base line. The player can rotate the impulse vector by holding down
+the appropriate key (see \ref section2 "Section 2").
+For example \ref fig3 "Fig.3" shows the impulse vector rotated slightly
+counterclockwise from the center of the 8-ball.
+
 \anchor fig3
-\image html ss2.png "Fig. 3: The Pool End Game at the start of a game with the impulse vector rotated countercloskwise." width=50%
+\image html ss2.png "Fig. 3: The Pool End Game at the start of a game with the impulse vector rotated counterclockwise." width=50%
+
+The impulse vector is hidden when the balls are in motion.
+The impulse vector reappears when the balls come to rest,
+pointing to the center of the 8-ball. At this point the
+player can rotate the impulse vector using the same keys as
+before, and shoot using the `Space` bar.
+Eventually (depending on the skill of the player) either the
+cue-ball will go into one of the six pockets at the corners and
+horizontal centers of the table, in which case the player loses
+the game (see \ref fig4 "Fig. 4", right), or the 8-ball goes into
+a pocket while the cue-ball remains on the table,
+in which case the player wins  (see \ref fig4 "Fig. 4", left). 
 
 \anchor fig4
 \image html winlose.png "Fig. 4: The Pool End Game after winning (left) and losing (right)." width=90%
 
-The aim of the game is to sink the 8-ball while not sinking the cue-ball. 
-In addition to being a minigame that you can actually play, the Pool
-End Game allows the player to toggle in and out of Step Mode in which the ball
-advances by 1/30th of a second each time the space bar is pressed and leaves
-a trail of markers as shown below. Step Mode is intended to help the player
-visualize the discrete nature of video game time.
+After a short pause, or when the player hits the `Space` bar, the
+game begins again as shown in \ref fig1 "Fig. 1".
 
-@image html screenshot.png "Step Mode after the space bar has been depressed about 16 times." width=50%
+\anchor section4-2
+## 4.2 Step Mode
+ 
+In addition to being a minigame that you can actually play, the Pool
+End Game allows the player to toggle in and out of _step mode_ in which the ball
+advances by 1/30th of a second each time the space bar is pressed and leaves
+a trail of markers as shown in \ref fig5 "Fig. 5".
+Step Mode is intended to help the player
+visualize the discrete nature of video game time 
+(see \ref section5-1 "Section 5.1").
+When the game is in step mode a pair of footprints will
+appear at the lower left corner of the table, as shown in \ref fig5 "Fig. 5".
+
+\anchor fig5
+@image html screenshot.png "Fig. 5. Step Mode after the space bar has been depressed about 16 times." width=50%
+
+\anchor section4-3
+## 4.3 Collision Mode
 
 The player can also
-toggle in and out of Collision Mode, which displays yellow circles at the
+toggle in and out of _collision mode_, which displays yellow circles at the
 positions of the balls at time of impact with each other and with the rails.
+When the game is in collision mode a small black circle will
+appear at the lower left corner of the table, as shown in \ref fig6 "Fig. 6".
 
-@image html screenshot0.png "Collision Mode." width=50%
+\anchor fig6
+@image html screenshot0.png "Fig. 6. Collision mode." width=50%
 
-Step Mode and Collision Mode
-are mutually exclusive, which means that if the player toggles one
-mode on, then the other mode is switched off. 
+Suppose we number the yellow collision circles from \ref fig6 "Fig. 6",
+as shown in \ref fig7 "Fig. 7". Circles 1 and 2 are from a collision between
+the cue-ball (the left circle) and the 8-ball (the right circle). The
+cue-ball travels up and to the right and collides with the top rail
+at circle 3, rebounding to the position shown.
+At the same time the 8-ball collides with the right rail at circle 4,
+then the bottom rail at circle 5, rebounding to the position shown.
+
+\anchor fig7
+@image html screenshot0a.png "Fig. 7. Collision mode with numbered collisions." width=50%
 
 \anchor section5
 # 5. Code Breakdown
 
+This section assumes that you have fully read and understood the
+documentation for <a href="../sage/index.html">SAGE</a>
+and <a href="../blank/index.html">The Blank Game</a>.
 
-\anchor sec6
+\anchor section5-1
+## 5.1 %CObject
+
+The `CObject` is derived from
+<a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>
+and adds properties and functionality to that are
+required by all objects in this game, which in this case means the
+cue-ball and the 8-ball.
+Function `CObject::Move` gets called once per animation
+frame for each of the balls, resulting the the balls
+skipping across the table in discrete jumps. However,
+if the frame rate is high enough, the human brain will
+interpret the jaggy motion as one continuous sweep.
+Step mode will help you to visualize this
+(see \ref section4-2 "Section 4.2").
+
+\anchor section5-2
+## 5.2 %CObjectManager
+ 
+`CObjectManager` is derived from 
+<a href="../sage/class_sage_1_1_c_object_manager.html">`Sage::CObjectManager`</a>.
+Note that `CObject`
+is provided as a template parameter to `Sage::CObjectManager`,
+which means that its object list will be an array of pointers to `CObject`.
+Therefore, when object member functions are called from the object manager
+virtual functions will be used to elevate the call to the correct derived class.
+
+`CObjectManager`'s most important task in this game is collision detection
+and response. `CObjectManager::BroadPhase` is called once per frame
+and it handles the detection of and response to collisions
+between the balls and other balls, the rails (the horizontal and vertical
+walls near the edges of the table in \ref fig1 "Fig. 1"),
+and the pockets.
+`CObjectManager::BroadPhase` calls `CObjectManager::NarrowPhase` which
+calls `CObjectManager::BallCollide`
+for collision detection and response between the two balls.
+`CObjectManager::BroadPhase` also calls `CObjectManager::RailCollide`
+for detection of and response to collision between
+a ball and a rail, and `CObjectManager::PocketCollide`
+for detection of and response to collision between
+a ball and a pocket.
+
+\anchor section6
 # 6. What Next?
 
 Next, take a look at the <a href="../shapes">Shapes Library</a>.
