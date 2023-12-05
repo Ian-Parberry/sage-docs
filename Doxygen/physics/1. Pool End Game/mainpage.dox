@@ -192,14 +192,6 @@ Step mode will help you to visualize this
 \anchor section5-2
 ## 5.2 %CObjectManager
  
-`CObjectManager` is derived from 
-<a href="../sage/class_sage_1_1_c_object_manager.html">`Sage::CObjectManager`</a>.
-Note that `CObject`
-is provided as a template parameter to `Sage::CObjectManager`,
-which means that its object list will be an array of pointers to `CObject`.
-Therefore, when object member functions are called from the object manager
-virtual functions will be used to elevate the call to the correct derived class.
-
 `CObjectManager`'s most important task in this game is collision detection
 and response. `CObjectManager::BroadPhase` is called once per frame
 and it handles the detection of and response to collisions

@@ -98,7 +98,7 @@ Inheritance diagram for CObjectManager:</div>
  <div class="center">
   <img src="class_c_object_manager.png" usemap="#CObjectManager_map" alt=""/>
   <map id="CObjectManager_map" name="CObjectManager_map">
-<area href="class_c_common.html" title="The common variables class." alt="CCommon" shape="rect" coords="224,0,438,24"/>
+<area href="class_c_common.html" title="The common variables class." alt="CCommon" shape="rect" coords="258,0,377,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -381,9 +381,9 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
 </div>
 <p>By the law of cosines,  </p><p class="formulaDsp">
 \[\delta^2 = d^2 + \left\Vert\vec{c}\right\Vert^2 -
-2d\left\Vert\vec{c}\right\Vert \cos \theta\]
+2d\left\Vert\vec{c}\right\Vert \cos \theta.\]
 </p>
-<p>. Since \(\left\Vert\vec{c}\right\Vert = -\hat{v} \cdot \vec{c}\) and \(\left\Vert\vec{c}\right\Vert^2 = \vec{c} \cdot \vec{c}\),  </p><p class="formulaDsp">
+<p> Since \(\left\Vert\vec{c}\right\Vert = -\hat{v} \cdot \vec{c}\) and \(\left\Vert\vec{c}\right\Vert^2 = \vec{c} \cdot \vec{c}\),  </p><p class="formulaDsp">
 \[
 d^2 + \vec{c} \cdot \vec{c} +
 2d\hat{v} \cdot \vec{c} - \delta^2 = 0.
@@ -398,7 +398,7 @@ d^2 + \vec{c} \cdot \vec{c} +
 \vec{c} \cdot \vec{c} + \delta^2}.\]
 </p>
 <p> Note that if \((\hat{v} \cdot \vec{c})^2 - 
-\vec{c} \cdot \vec{c} + \delta^2 = 0 \), then there is no collision. This should not happen if we perform this computation only if there is overlap between the two circles, but may happen due to floating point roundoff error.</p>
+\vec{c} \cdot \vec{c} + \delta^2 &lt; 0 \), then there is no collision. This should not happen if we perform this computation only if there is overlap between the two circles, but may happen due to floating point roundoff error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p0</td><td>Pointer to first object. </td></tr>
