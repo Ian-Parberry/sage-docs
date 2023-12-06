@@ -149,14 +149,11 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ae2487201156a62dc632609bc42a7d80b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#ae2487201156a62dc632609bc42a7d80b">BroadPhase</a> ()</td></tr>
-<tr class="memdesc:ae2487201156a62dc632609bc42a7d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ball, rail, and pocket collision response for all balls.  <br /></td></tr>
+<tr class="memdesc:ae2487201156a62dc632609bc42a7d80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ball, rail, and pocket collision response.  <br /></td></tr>
 <tr class="separator:ae2487201156a62dc632609bc42a7d80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee7c392319024d71772e2d290a1cc7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d">NarrowPhase</a> (<a class="el" href="class_c_object.html">CObject</a> *, <a class="el" href="class_c_object.html">CObject</a> *)</td></tr>
-<tr class="memdesc:acee7c392319024d71772e2d290a1cc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ball collision response for two balls.  <br /></td></tr>
+<tr class="memdesc:acee7c392319024d71772e2d290a1cc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response for two balls.  <br /></td></tr>
 <tr class="separator:acee7c392319024d71772e2d290a1cc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6546ee17f9764c84d780187b5482b019"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a6546ee17f9764c84d780187b5482b019">BallCollide</a> (<a class="el" href="class_c_object.html">CObject</a> *, <a class="el" href="class_c_object.html">CObject</a> *, float &amp;)</td></tr>
-<tr class="memdesc:a6546ee17f9764c84d780187b5482b019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ball collision response for two balls.  <br /></td></tr>
-<tr class="separator:a6546ee17f9764c84d780187b5482b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7704293d68f5527f323527028ea21398"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object_manager.html#a7704293d68f5527f323527028ea21398">RailCollide</a> (<a class="el" href="class_c_object.html">CObject</a> *)</td></tr>
 <tr class="memdesc:a7704293d68f5527f323527028ea21398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision response for ball with rail.  <br /></td></tr>
 <tr class="separator:a7704293d68f5527f323527028ea21398"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,89 +322,6 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
       </table>
 </div><div class="memdoc">
 <p>Check whether both the cue-ball and the 8-ball have stopped moving. Notice that we can set the velocity vector to the zero vector and expect it to succeed because CObject::move zeros out the velocity of slow-moving objects. </p><dl class="section return"><dt>Returns</dt><dd>true If both balls have stopped moving. </dd></dl>
-
-</div>
-</div>
-<a id="a6546ee17f9764c84d780187b5482b019" name="a6546ee17f9764c84d780187b5482b019"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6546ee17f9764c84d780187b5482b019">&#9670;&#160;</a></span>BallCollide()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CObjectManager::BallCollide </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_c_object.html">CObject</a> *&#160;</td>
-          <td class="paramname"><em>p0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_c_object.html">CObject</a> *&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float &amp;&#160;</td>
-          <td class="paramname"><em>s</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Suppose we call the balls that are colliding \(B_1\) and \(B_2\). In the figure below, \(B_1\) is brown and \(B_2\) is yellow. For now, assume that \(B_1\) is fixed. We'll revisit that later. Suppose \(B_2\) is moving at velocity \(\vec{v}\) along the dotted line in the figure below. Note that \(B_2\) may be approaching or moving away from \(B_1\) (we have drawn it as moving away). This is the first frame in which an overlap occurs between \(B_1\) and \(B_2\).</p>
-<div class="image">
-<img src="circles1.png" alt="" width="35%"/>
-</div>
-<p>The actual collision between \(B_1\) and \(B_2\), assuming that they are rigid bodies, would be between frames. We would expect that the position of \(B_2\) at the time of impact (TOI for short) would be the dotted circle in the following figure. We need to calculate \(d\), the distance that \(B_2\) needs to be moved back to its position at TOI.</p>
-<div class="image">
-<img src="circles2.png" alt="" width="35%"/>
-</div>
-<p>Let \(\vec{c}\) be the vector fom the center of \(B_2\) to the center of \(B_1\), \(\delta\) be the distance between the center of \(B_1\) and the center of \(B_2\) at the time of impact, and \(\theta\) be the angle between \(\vec{c}\) and \(-\vec{v}\), as shown in the next figure.</p>
-<div class="image">
-<img src="circles3.png" alt="" width="35%"/>
-</div>
-<p>By the law of cosines,  </p><p class="formulaDsp">
-\[\delta^2 = d^2 + \left\Vert\vec{c}\right\Vert^2 -
-2d\left\Vert\vec{c}\right\Vert \cos \theta.\]
-</p>
-<p> Since \(\left\Vert\vec{c}\right\Vert = -\hat{v} \cdot \vec{c}\) and \(\left\Vert\vec{c}\right\Vert^2 = \vec{c} \cdot \vec{c}\),  </p><p class="formulaDsp">
-\[
-d^2 + \vec{c} \cdot \vec{c} +
-2d\hat{v} \cdot \vec{c} - \delta^2 = 0.
-\]
-</p>
-<p> This is a quadratic equation in \(d\) whose roots are  </p><p class="formulaDsp">
-\[d = -\hat{v} \cdot \vec{c} \pm \sqrt{(\hat{v} \cdot \vec{c})^2 - 
-\vec{c} \cdot \vec{c} + \delta^2}.\]
-</p>
-<p> We need the first root  </p><p class="formulaDsp">
-\[d = -\hat{v} \cdot \vec{c} + \sqrt{(\hat{v} \cdot \vec{c})^2 - 
-\vec{c} \cdot \vec{c} + \delta^2}.\]
-</p>
-<p> Note that if \((\hat{v} \cdot \vec{c})^2 - 
-\vec{c} \cdot \vec{c} + \delta^2 &lt; 0 \), then there is no collision. This should not happen if we perform this computation only if there is overlap between the two circles, but may happen due to floating point roundoff error.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p0</td><td>Pointer to first object. </td></tr>
-    <tr><td class="paramname">p1</td><td>Pointer to first object. </td></tr>
-    <tr><td class="paramname">s</td><td>[OUT] Collision speed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the two objects collide. </dd></dl>
 
 </div>
 </div>
@@ -595,10 +509,10 @@ d^2 + \vec{c} \cdot \vec{c} +
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Perform collision detection and response for a pair of objects. Play impact sound if they collide. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Ball to ball collision response. Deflect the balls in the appropriate directions and speeds, and play a sound at the point of impact at a volume proportional to the relative speed of at time of impact. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p0</td><td>Pointer to the first object. </td></tr>
-    <tr><td class="paramname">p1</td><td>Pointer to the second object. </td></tr>
+    <tr><td class="paramname">p0</td><td>Pointer to first object. </td></tr>
+    <tr><td class="paramname">p1</td><td>Pointer to first object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -660,7 +574,7 @@ d^2 + \vec{c} \cdot \vec{c} +
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Collision detection and response for ball hitting any rail. Check for a collision and do the necessary housework for reflecting the ball if it hits a rail. If there is a collision, a sound is played at a volume proportional to the speed of collision and panned to the left or right according to where the collision occurred. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Collision detection and response for ball hitting any rail. Check for a collision and do the necessary housework for reflecting the ball if it hits a rail. If there is a collision, a sound is played at a volume proportional to the speed of collision at the point of impact. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>Pointer to a ball object to collide with rails. </td></tr>
   </table>

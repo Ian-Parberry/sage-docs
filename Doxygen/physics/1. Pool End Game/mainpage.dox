@@ -176,11 +176,8 @@ and <a href="../blank/index.html">The Blank Game</a>.
 \anchor section5-1
 ## 5.1 %CObject
 
-The `CObject` is derived from
-<a href="../sage/class_sage_1_1_c_object.html">`Sage::CObject`</a>
-and adds properties and functionality to that are
-required by all objects in this game, which in this case means the
-cue-ball and the 8-ball.
+The `CObject` is the abstract representation of an object, which in this game
+means the cue-ball and the 8-ball.
 Function `CObject::Move` gets called once per animation
 frame for each of the balls, resulting the the balls
 skipping across the table in discrete jumps. However,
@@ -199,13 +196,158 @@ between the balls and other balls, the rails (the horizontal and vertical
 walls near the edges of the table in \ref fig1 "Fig. 1"),
 and the pockets.
 `CObjectManager::BroadPhase` calls `CObjectManager::NarrowPhase` which
-calls `CObjectManager::BallCollide`
-for collision detection and response between the two balls.
+performs collision detection and response between the two balls.
 `CObjectManager::BroadPhase` also calls `CObjectManager::RailCollide`
 for detection of and response to collision between
 a ball and a rail, and `CObjectManager::PocketCollide`
 for detection of and response to collision between
 a ball and a pocket.
+
+\anchor section5-2-1
+### 5.2.1 %CObjectManager::NarrowPhase
+
+Suppose we call the balls that are colliding \f$B_1\f$ and \f$B_2\f$, and
+that they are moving with velocities \f$\vec{v}_1\f$ and \f$\vec{v}_2\f$,
+respectively. Let \f$\vec{v}\f$ be the velocity of \f$B_2\f$ relative to
+\f$B_1\f$, that is \f$\vec{v} = \vec{v}_2 - \vec{v}_1\f$. Suppose that at
+the end of the frame we detect an overlap between \f$B_1\f$ and \f$B_2\f$,
+and that this is the first frame in which an overlap occurs between
+\f$B_1\f$ and \f$B_2\f$. In the figure below \f$B_1\f$ is brown, \f$B_2\f$
+is yellow, and \f$B_2\f$ is moving along the dotted line with velocity
+\f$\vec{v}\f$ relative to \f$B_1\f$. Note that at the time this overlap
+between the balls has been detected, \f$B_2\f$ may be approaching or moving
+away from \f$B_1\f$ (we have drawn it as moving away).  
+
+@image html circles1.png width=35%
+
+The actual time of impact (TOI for short) between \f$B_1\f$ and \f$B_2\f$
+would probably be between animation frames. We would expect that the
+position of \f$B_2\f$ at the TOI would be the dotted circle
+in the following figure. We need to calculate \f$d\f$, the distance that
+\f$B_2\f$ needs to be moved back to its position at TOI.
+
+@image html circles2.png width=35%
+
+Let \f$\vec{c}\f$ be the vector fom the center of \f$B_2\f$ to the center
+of \f$B_1\f$, \f$\delta\f$ be the distance between the center of \f$B_1\f$
+and the center of \f$B_2\f$ at TOI, and \f$\theta\f$ be the angle between
+\f$\vec{c}\f$ and \f$-\vec{v}\f$, as shown in the next figure.
+
+@image html circles3.png width=35%
+
+By the law of cosines, 
+\f[\delta^2 = d^2 + \left\Vert\vec{c}\right\Vert^2 -
+2d\left\Vert\vec{c}\right\Vert \cos \theta.\f]
+Since \f$\left\Vert\vec{c}\right\Vert = -\hat{v} \cdot \vec{c}\f$
+and \f$\left\Vert\vec{c}\right\Vert^2 = \vec{c} \cdot \vec{c}\f$,
+\f[
+d^2 + \vec{c} \cdot \vec{c} +
+2d\hat{v} \cdot \vec{c} - \delta^2 = 0.
+\f]
+This is a quadratic equation in \f$d\f$ whose roots are
+\f[d = -\hat{v} \cdot \vec{c} \pm \sqrt{(\hat{v} \cdot \vec{c})^2 - 
+\vec{c} \cdot \vec{c} + \delta^2}.\f]
+We need the first root
+\f[d = -\hat{v} \cdot \vec{c} + \sqrt{(\hat{v} \cdot \vec{c})^2 - 
+\vec{c} \cdot \vec{c} + \delta^2}.\f]
+Note that if \f$(\hat{v} \cdot \vec{c})^2 - 
+\vec{c} \cdot \vec{c} + \delta^2 < 0 \f$, then there is no collision.
+This should not happen if we perform this computation only if there is
+overlap between the two circles, but may happen due to floating point
+roundoff error. 
+///
+Now we can compute \f$\delta_t = \left\Vert\vec{v}\right\Vert/d\f$,
+the time elapsed since TOI.
+Suppose that at the time the collision was detected \f$B_1\f$ was at
+position \f$\vec{p}_1\f$ and \f$B_2\f$ was at position \f$\vec{p}_2\f$.
+Let \f$\vec{q}_1\f$ be the position of \f$B_1\f$ at TOI, and
+\f$\vec{q}_2\f$ the position of \f$B_2\f$ at TOI. Then, we can
+compute \f$\vec{q}_1 = \vec{p}_1 - \delta_t\vec{v}_1\f$ and
+\f$\vec{q}_2 = \vec{p}_2 - \delta_t\vec{v}_2\f$.
+
+Now we need to compute the velocities of \f$B_1\f$ and \f$B_2\f$ after the
+impact. Let \f$\vec{n}\f$ be the vector from \f$\vec{q}_2\f$ to 
+\f$\vec{q}_1\f$, that is, \f$\vec{n} = \vec{q}_1 - \vec{q}_2\f$. We claim
+that at TOI \f$B_1\f$ and \f$B_2\f$ swap the components of their
+velocity parallel to \f$\vec{n}\f$.
+
+To see this, let \f$b_1 = \vec{v}_1\cdot \hat{n}\f$ and
+\f$b_2 = \vec{v}_2\cdot \hat{n}\f$ be the speeds of \f$B_1\f$ and
+\f$B_2\f$, respectively, before impact. Let \f$a_1\f$ and \f$a_2\f$
+be the speeds of \f$B_1\f$ and \f$B_2\f$, respectively, after impact.
+We claim that \f$a_1 = b_2\f$ and \f$a_2= b_1\f$, assuming a perfectly
+elastic collision between two balls of equal mass \f$m\f$.
+By the Law of Conservation of Kinetic Energy, the kinetic energy in the
+system before impact \f$mb_1^2/2 +mb_2^2/2\f$ is the same as the kinetic
+energy in the system after impact \f$ma_1^2/2 +ma_2^2/2\f$. That is,
+\f[
+mb_1^2/2 +mb_2^2/2 = ma_1^2/2 +ma_2^2/2.
+\f]
+
+Therefore, multiplying both sides of the equation by \f$2/m\f$,
+\f[
+b_1^2 + b_2^2 = a_1^2 + a_2^2.
+\f]
+
+Subtracting \f$b_2^2 + a_2^2 \f$ from both sides:
+\f[
+b_1^2 - a_1^2 = a_2^2 - b_2^2.
+\f]
+
+Therefore,
+\f[
+(b_1 - a_1)(b_1 + a_1) = (a_2 - b_2)(a_2 + b_2). \label{eq1}\tag{Equation 1}
+\f]
+
+We'll come back to this equation  in a moment. Now, by the Law of
+Conservation of Momentum, the amount of momentum in the
+system before impact \f$mb_1 +mb_2\f$ is the same as the momentum
+in the system after impact \f$ma_1 +ma_2\f$. That is,:
+\f[
+mb_1 + mb_2 = ma_1 +m a_2.
+\f]
+
+Therefore, dividing both sides by \f$m\f$:
+\f[
+b_1 + b_2 = a_1 + a_2.\label{eq2}\tag{Equation 2}
+\f]
+
+Subtracting \f$b_2 + a_1\f$ from both sides:
+\f[
+b_1  - a_1 = a_2 - b_2.
+\f]
+
+Substituting this into \f$\ref{eq1}\f$:
+\f[
+b_1 + a_1 = a_2 + b_2,
+\f]
+
+that is,
+\f[
+b_1 - b_2 = a_2 - a_1.\label{eq3}\tag{Equation 3}
+\f]
+
+Therefore, if we add both sides of \f$\ref{eq2}\f$ to \f$\ref{eq3}\f$
+and divide by 2, this implies that \f$b_1 = a_2\f$, as required,
+and if we subtract both sides of \f$\ref{eq3}\f$ from \f$\ref{eq2}\f$,
+this implies that \f$b_2 = a_1\f$, as required.
+
+We have established that at TOI, \f$B_1\f$ and \f$B_2\f$ swap
+the components of their velocity parallel to \f$\vec{n}\f$.  Let
+\f${\vec{v}_1}'\f$ and \f${\vec{v}_2}'\f$  be the velocities of \f$B_1\f$
+and \f$B_2\f$, respectively, after the impact. Then
+\f${\vec{v}_1}' = \vec{v}_1 + (\vec{v} \cdot \hat{n})\hat{n}\f$ and 
+\f${\vec{v}_2}' = \vec{v}_2 - (\vec{v} \cdot \hat{n})\hat{n}\f$.
+
+\f$B_1\f$ and \f$B_2\f$ should have been moving from their positions at
+TOI with those respective new velocities for time \f$\delta_t\f$.
+Their new positions are therefore \f$\vec{q}_1 + \delta_t {\vec{v}_1}\f$
+and \f$\vec{q}_2 + \delta_t {\vec{v}_2}\f$, respectively.
+
+\anchor section5-2-2
+### 5.2.2 %CObjectManager::RailCollide
+ 
+@image html wall.png width=45%
 
 \anchor section6
 # 6. What Next?
