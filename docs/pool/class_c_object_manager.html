@@ -365,7 +365,7 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Collision response for all balls against each other and the rails and the pockets. We do pocket collision for all balls first to remove them from the subsequent calculations. </p>
+<p>Collision detection and response for all balls against each other and the rails and pockets. We do pocket collision for all balls first to remove them from the subsequent calculations. </p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Ball to ball collision response. Deflect the balls in the appropriate directions and speeds, and play a sound at the point of impact at a volume proportional to the relative speed of at time of impact. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Ball to ball collision detection and response. Deflect the balls in the appropriate directions and speeds, and play a sound at the point of impact at a volume proportional to the relative speed of at time of impact. See <a href="index.html#section5-2-1">Section 5.2.1</a> of the documentation for details of the geometry used here. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p0</td><td>Pointer to first object. </td></tr>
     <tr><td class="paramname">p1</td><td>Pointer to first object. </td></tr>
@@ -542,7 +542,7 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Collision and response for ball-in-pocket. Check for a collision and does the necessary housework for disabling a ball that is in a pocket. If there is a collision, a sound is played at a volume proportional to the speed of collision and panned to the left or right according to where the pocket is on the table. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Collision detection and response for ball-in-pocket. Check for a collision and does the necessary housework for disabling a ball that is in a pocket. If there is a collision, a sound is played at a volume proportional to the speed of collision and panned to the left or right according to where the pocket is on the table. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>Pointer to a ball object to collide with pockets. </td></tr>
   </table>
@@ -574,7 +574,7 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Collision detection and response for ball hitting any rail. Check for a collision and do the necessary housework for reflecting the ball if it hits a rail. If there is a collision, a sound is played at a volume proportional to the speed of collision at the point of impact. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Collision detection and response for ball hitting any rail. Check for a collision and do the necessary housework for reflecting the ball if it hits a rail. If there is a collision, a sound is played at a volume proportional to the speed of collision at the point of impact. See <a href="index.html#section5-2-2">Section 5.2.2</a> of the documentation for details of the geometry used here. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">b</td><td>Pointer to a ball object to collide with rails. </td></tr>
   </table>

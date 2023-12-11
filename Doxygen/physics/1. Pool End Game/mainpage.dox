@@ -67,7 +67,7 @@ This code uses <a href="../sage/index.html">SAGE</a>.
 Make sure that you have followed the
 <a href="../install/index.html">SAGE Installation Instructions</a>.
 Navigate to the folder <span style="background-color:#D8E4D8;">`1. Pool End Game`</span> in your
-copy of the <span style="background-color:#D8E4D8;">`Pool End Game`</span> repository.
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
 Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
 to verify that you have set the environment
 variables correctly.
@@ -153,7 +153,7 @@ When the game is in collision mode a small black circle will
 appear at the lower left corner of the table, as shown in \ref fig6 "Fig. 6".
 
 \anchor fig6
-@image html screenshot0.png "Fig. 6. Collision mode." width=50%
+@image html screenshot0.png "Fig. 6. Collision mode after a ball-to-ball collision and 3 ball-to-rail collisions." width=50%
 
 Suppose we number the yellow collision circles from \ref fig6 "Fig. 6",
 as shown in \ref fig7 "Fig. 7". Circles 1 and 2 are from a collision between
@@ -172,12 +172,30 @@ then the bottom rail at circle 5, rebounding to the position shown.
 This section assumes that you have fully read and understood the
 documentation for <a href="../sage/index.html">SAGE</a>
 and <a href="../blank/index.html">The Blank Game</a>.
+The most interesting parts of this code from a game physics
+perspective are the object motion code in `CObject` and the
+collision detection and response code in `CObjectManager`.
+These are covered in \ref section5-1 "Section 5.1" and
+\ref section5-2 "Section 5.2", respectively.
 
 \anchor section5-1
 ## 5.1 %CObject
 
 The `CObject` is the abstract representation of an object, which in this game
 means the cue-ball and the 8-ball.
+`CObject` stores, among other things, an object's position `CObject::m_vPos`
+and velocity vector `CObject::m_vVel`. Don't be distracted by `CObject::m_vOldPos`,
+which is used solely to determine where to drop a circle particle
+in step mode (see \ref section4-2 "Section 4.2").
+`CObject::Move` handles ball motion and `CObject::DeliverImpulse`
+delivers an impulse for when the player hits the cue-ball.
+These are described in \ref section5-1-1 "Section 5.1.1" and
+\ref section5-1-2 "Section 5.1.2", respectively.
+
+
+\anchor section5-1-1
+### 5.1.1 %CObject::Move
+
 Function `CObject::Move` gets called once per animation
 frame for each of the balls, resulting the the balls
 skipping across the table in discrete jumps. However,
@@ -185,6 +203,24 @@ if the frame rate is high enough, the human brain will
 interpret the jaggy motion as one continuous sweep.
 Step mode will help you to visualize this
 (see \ref section4-2 "Section 4.2").
+
+\anchor section5-1-2
+### 5.1.2 %CObject::DeliverImpulse
+
+Function `CObject::DeliverImpulse` for the cue-ball object
+gets called from `CObjectManager::Shoot`, which is called
+from `CGame::KeyboardHandler`
+in response to the player pressing the space bar when all balls are stopped
+and are not in pockets. Rather than messing around with forces, this function
+takes an angle \f$a\f$ and a magnitude `m` and sets the velocity of the
+ball to `m` times the vector with orientation `a`.
+The latter is obtained by calling
+<a href="../sage/_sage_geometry_8h.html#a8326e6cd74f9907292a207381f7e8b6f">`Sage::AngleToVector(a)`</a>.
+`CObjectManager` keeps the current cue orientation in `CObjectManager::m_fCueAngle`
+which it provides as parameter `a` to `CObject::DeliverImpulse`.
+`CObjectManager::m_fCueAngle` is adjusted using `CObjectManager::AdjustCueBall`,
+which is called from `CGame::KeyboardHandler` in response to player
+input (see \ref section2 "Section 2").
 
 \anchor section5-2
 ## 5.2 %CObjectManager
@@ -201,7 +237,10 @@ performs collision detection and response between the two balls.
 for detection of and response to collision between
 a ball and a rail, and `CObjectManager::PocketCollide`
 for detection of and response to collision between
-a ball and a pocket.
+a ball and a pocket. These are covered in
+\ref section5-2-1 "Section 5.2.1",
+\ref section5-2-2 "Section 5.2.2", and
+\ref section5-2-3 "Section 5.2.3", respectively.
 
 \anchor section5-2-1
 ### 5.2.1 %CObjectManager::NarrowPhase
@@ -212,29 +251,24 @@ respectively. Let \f$\vec{v}\f$ be the velocity of \f$B_2\f$ relative to
 \f$B_1\f$, that is \f$\vec{v} = \vec{v}_2 - \vec{v}_1\f$. Suppose that at
 the end of the frame we detect an overlap between \f$B_1\f$ and \f$B_2\f$,
 and that this is the first frame in which an overlap occurs between
-\f$B_1\f$ and \f$B_2\f$. In the figure below \f$B_1\f$ is brown, \f$B_2\f$
+\f$B_1\f$ and \f$B_2\f$. In the \ref fig8 "Fig. 8" \f$B_1\f$ is brown, \f$B_2\f$
 is yellow, and \f$B_2\f$ is moving along the dotted line with velocity
 \f$\vec{v}\f$ relative to \f$B_1\f$. Note that at the time this overlap
 between the balls has been detected, \f$B_2\f$ may be approaching or moving
 away from \f$B_1\f$ (we have drawn it as moving away).  
 
-@image html circles1.png width=35%
+\anchor fig8
+@image html circles3.png "Fig. 8. Ball to ball collision." width=35%
 
 The actual time of impact (TOI for short) between \f$B_1\f$ and \f$B_2\f$
 would probably be between animation frames. We would expect that the
 position of \f$B_2\f$ at the TOI would be the dotted circle
-in the following figure. We need to calculate \f$d\f$, the distance that
+in \ref fig8 "Fig. 8". We need to calculate \f$d\f$, the distance that
 \f$B_2\f$ needs to be moved back to its position at TOI.
-
-@image html circles2.png width=35%
-
 Let \f$\vec{c}\f$ be the vector fom the center of \f$B_2\f$ to the center
 of \f$B_1\f$, \f$\delta\f$ be the distance between the center of \f$B_1\f$
 and the center of \f$B_2\f$ at TOI, and \f$\theta\f$ be the angle between
-\f$\vec{c}\f$ and \f$-\vec{v}\f$, as shown in the next figure.
-
-@image html circles3.png width=35%
-
+\f$\vec{c}\f$ and \f$-\vec{v}\f$, as shown in \ref fig8 "Fig. 8".
 By the law of cosines, 
 \f[\delta^2 = d^2 + \left\Vert\vec{c}\right\Vert^2 -
 2d\left\Vert\vec{c}\right\Vert \cos \theta.\f]
@@ -253,9 +287,9 @@ We need the first root
 Note that if \f$(\hat{v} \cdot \vec{c})^2 - 
 \vec{c} \cdot \vec{c} + \delta^2 < 0 \f$, then there is no collision.
 This should not happen if we perform this computation only if there is
-overlap between the two circles, but may happen due to floating point
+overlap between the two circles, but it may still happen due to floating point
 roundoff error. 
-///
+
 Now we can compute \f$\delta_t = \left\Vert\vec{v}\right\Vert/d\f$,
 the time elapsed since TOI.
 Suppose that at the time the collision was detected \f$B_1\f$ was at
@@ -338,16 +372,73 @@ the components of their velocity parallel to \f$\vec{n}\f$.  Let
 and \f$B_2\f$, respectively, after the impact. Then
 \f${\vec{v}_1}' = \vec{v}_1 + (\vec{v} \cdot \hat{n})\hat{n}\f$ and 
 \f${\vec{v}_2}' = \vec{v}_2 - (\vec{v} \cdot \hat{n})\hat{n}\f$.
-
-\f$B_1\f$ and \f$B_2\f$ should have been moving from their positions at
+\f$B_1\f$ and \f$B_2\f$ will have been moving from their positions at
 TOI with those respective new velocities for time \f$\delta_t\f$.
 Their new positions are therefore \f$\vec{q}_1 + \delta_t {\vec{v}_1}\f$
 and \f$\vec{q}_2 + \delta_t {\vec{v}_2}\f$, respectively.
 
 \anchor section5-2-2
 ### 5.2.2 %CObjectManager::RailCollide
+
+Collision of a ball with a line is easier if we consider only horizontal
+and vertical lines. Fortunately, the rails in the Pool End Game are
+horizontal and vertical. Consider the case of a ball colliding with a
+horizontal line from below. Again, the actual collision occurs between
+frames and overlap between the ball and the line might be detected
+at the end of a frame.
+Suppose that, as show in \ref fig9 "Fig. 9", the yellow ball is
+moving along the dotted line from bottom left to top right
+of the figure at velocity \f$\vec{v} = [v_x, v_y]\f$
+and the collision is detected when it is at position \f$\vec{p} = [p_x, p_y]\f$.
+Further suppose that the horizontal line has equation \f$y = w_y\f$.
+We want to compute the point of impact (POI for short) so that, for example,
+we can play a particle effect or sound effect at POI. 
+From \ref fig9 "Fig. 9", the POI has coordinates
+\f$[p_x - d_1 - d_2, w_y]\f$.
  
-@image html wall.png width=45%
+\anchor fig9
+@image html wall.png "Fig. 9: POI of ball colliding with horizontal line from below." width=40%
+
+Consider the upper right triangle in \ref fig9 "Fig. 9". By observation,
+\f$\tan \theta = (p_y - w_y)/d_2\f$. However, \f$\tan \theta\f$ is
+also equal to \f$v_y/v_x\f$. Therefore, \f$v_y/v_x = (p_y - w_y)/d_2\f$,
+that is, \f$d_2 = (p_y - w_y)v_x/v_y\f$.
+Now consider the lower left triangle in \ref fig9 "Fig. 9". By observation,
+\f$\tan \theta = r/d_1\f$, where \f$r\f$ is the radius of the ball.
+Therefore, \f$v_y/v_x = r/d_1\f$, that is, \f$d_1 = rv_x/v_y\f$.
+Putting these things together, the coordinates of the POI
+are \f$[p_x - (r + p_y - w_y)v_x/v_y, w_y]\f$.
+
+Now consider \ref fig10 "Fig. 10". The gray circle is the position of
+the ball when the collision is detected, the dotted circle is its
+position at TOI, and the yellow circle is its corrected position at the
+end of the frame. The ball will have moved downwards a distance
+equal to its upward travel from TOI, that is \f$p_y - w_y + r\f$.
+The ball's corrected position is therefore
+\f$\vec{p}' = [p_x, 2(w_y - r) - p_y]\f$.
+Similarly, the component of its velocity perpendicular to the line
+gets reversed, so its corrected velocity at the end of the frame
+is \f$[v_x, -v_y]\f$.
+
+\anchor fig10
+@image html wall2.png "Fig. 10: New position and velocity of ball colliding with horizontal line from below." width=40%
+
+This concludes collision of a ball with a horizontal line from below.
+The other three cases needed for this game,
+collision of a ball with a horizontal line from above (the bottom rail),
+collision of a ball with a vertical line from the left (the right rail),
+and
+collision of a ball with a vertical line from the right (the left rail),
+are similar. See the code for `CObjectManager::RailCollide` for more details.
+
+\anchor section5-2-3
+### 5.2.3 %CObjectManager::PocketCollide
+
+Collision of a ball with a pocket is fairly easy. For example, if a ball
+collides with the top and right rails, then it is deemed to have fallen into
+the pocket at the top right of the table. While this is much simpler than
+the behavior of a ball in a real world game of pool, it is sufficient for
+this game.
 
 \anchor section6
 # 6. What Next?
