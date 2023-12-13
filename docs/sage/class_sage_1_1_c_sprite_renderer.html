@@ -290,9 +290,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae48ba4ddcc340359e2556e577660b3cf inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_renderer3_d.html#ae48ba4ddcc340359e2556e577660b3cf">CreateWICTexture</a> (_In_z_ const wchar_t *, <a class="el" href="class_sage_1_1_c_texture_desc.html">CTextureDesc</a> &amp;)</td></tr>
 <tr class="memdesc:ae48ba4ddcc340359e2556e577660b3cf inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a texture from a an image file (does not contain mipmaps).  <br /></td></tr>
 <tr class="separator:ae48ba4ddcc340359e2556e577660b3cf inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e14cfc2d074b1329293a50606e0047 inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_renderer3_d.html#a88e14cfc2d074b1329293a50606e0047">ProcessTexture</a> (_In_ ComPtr&lt; ID3D12Resource &gt;, <a class="el" href="class_sage_1_1_c_texture_desc.html">CTextureDesc</a> &amp;)</td></tr>
-<tr class="memdesc:a88e14cfc2d074b1329293a50606e0047 inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a loaded texture.  <br /></td></tr>
-<tr class="separator:a88e14cfc2d074b1329293a50606e0047 inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6edc4a85a105a3569f1c5383c95c161b inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_renderer3_d.html#a6edc4a85a105a3569f1c5383c95c161b">ProcessTexture</a> (_In_ Microsoft::WRL::ComPtr&lt; ID3D12Resource &gt;, <a class="el" href="class_sage_1_1_c_texture_desc.html">CTextureDesc</a> &amp;)</td></tr>
+<tr class="memdesc:a6edc4a85a105a3569f1c5383c95c161b inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a loaded texture.  <br /></td></tr>
+<tr class="separator:a6edc4a85a105a3569f1c5383c95c161b inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c039ae8dbb3cc5f240e0604dce807ed inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sage_1_1_c_renderer3_d.html#a9c039ae8dbb3cc5f240e0604dce807ed">LoadScreenFont</a> ()</td></tr>
 <tr class="memdesc:a9c039ae8dbb3cc5f240e0604dce807ed inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load screen font.  <br /></td></tr>
 <tr class="separator:a9c039ae8dbb3cc5f240e0604dce807ed inherit pro_methods_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,10 +401,10 @@ std::unique_ptr&lt; SpriteBatch &gt;&#160;</td><td class="memItemRight" valign="
 std::unique_ptr&lt; SpriteFont &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pFont</b></td></tr>
 <tr class="memdesc:a415b1c42e57066840d893c52c622fb09 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text font. <br /></td></tr>
 <tr class="separator:a415b1c42e57066840d893c52c622fb09 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca17012f10a49d0817b39c0d56cebb8e inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">
-std::unique_ptr&lt; DeviceResources &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDeviceResources</b></td></tr>
-<tr class="memdesc:aca17012f10a49d0817b39c0d56cebb8e inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to device resources. <br /></td></tr>
-<tr class="separator:aca17012f10a49d0817b39c0d56cebb8e inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73db1ac7b264c9acd928bfcf64c8c3a4 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">
+std::unique_ptr&lt; DX::DeviceResources &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDeviceResources</b></td></tr>
+<tr class="memdesc:a73db1ac7b264c9acd928bfcf64c8c3a4 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to device resources. <br /></td></tr>
+<tr class="separator:a73db1ac7b264c9acd928bfcf64c8c3a4 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69eb90d302a503a8ab085c2bff714b53 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="memItemLeft" align="right" valign="top">
 ID3D12Device *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pD3DDevice</b> = nullptr</td></tr>
 <tr class="memdesc:a69eb90d302a503a8ab085c2bff714b53 inherit pro_attribs_class_sage_1_1_c_renderer3_d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the D3D device. <br /></td></tr>

@@ -84,10 +84,56 @@ $(function() {
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <p>This project compiles into a library, so there are no keyboard controls here.</p>
 <p><a class="anchor" id="section3"></a></p><h1>3. Building the Library</h1>
-<p>This code uses the DirectX12 Toolkit. Make sure that you have followed the instructions in <a href="../install/index.html#directxtk12">Section 3</a> of the <a href="../install/index.html">SAGE Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>2. Shapes Library</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Shapes.sln</code></span> with Visual Studio and build the Release and Debug configurations. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
+<p>This code uses the DirectX12 Toolkit. Make sure that you have followed the instructions in <a href="../install/index.html#directxtk12">Section 3</a> of the <a href="../install/index.html">SAGE Installation Instructions</a>. Note that this project is independent of <a href="../sage/index.html">SAGE</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>2. Shapes Library</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Shapes.sln</code></span> with Visual Studio and build the Release and Debug configurations. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
 <p>There's no executable file to run here, remember, it just compiles into a library file. If you're interested, the library files are <span style="background-color:#D8E4D8;"><code>x64\Release\Shapes.lib</code></span> and <span style="background-color:#D8E4D8;"><code>x64\Debug\Shapes.lib</code></span>.</p>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p>All of the code in this library is in a namespace called <code>Shapes</code>.</p>
+<p><a class="anchor" id="section5-1"></a></p><h2>5.1 Helper Functions</h2>
+<p><code><a class="el" href="_shape_math_8h.html" title="Handy math functions for the collision module.">ShapeMath.h</a></code> and <code><a class="el" href="_shape_math_8cpp.html" title="Handy math functions for the collision module.">ShapeMath.cpp</a></code> contain some handy helper functions for this project. Since this project is independent of <a href="../sage/index.html">SAGE</a>, some <a href="../sage/index.html">SAGE</a> functions are duplicated here. Of particular interest is <code>FailIf</code>, which will be used inside functions in this project to test a Boolean condition and bail out from the function returning <code>false</code> if the condition is <code>true</code>. </p><pre class="fragment">#define FailIf(x) if(x)return false; 
+</pre><p> This will make our code easier to read when we have multiple failure points within a function.</p>
+<p><a class="anchor" id="section5-2"></a></p><h2>5.2 Axially Aligned Bounding Boxes</h2>
+<p><a class="anchor" id="fig1"></a></p><div class="image">
+<img src="aabb.png" alt="" width="25%"/>
+<div class="caption">
+Fig. 1: AABBs (green) for a circle and an arc.</div></div>
+<p>An <em>axially aligned bounding box</em> (AABB for short) is a minimal-size rectanle that bounds a shape and has its edges parallel to the X and Y axes. For example, <a class="el" href="index.html#fig1">Fig. 1</a> shows the AABB for a circle and an arc. AABBs are used in narrow phase collision detection to quickly and efficiently reject things that are too far apart to collide. Our AABBs are implemented by a class <code><a class="el" href="class_shapes_1_1_c_aabb2_d.html" title="2D Axially Aligned Bounding Box.">Shapes::CAabb2D</a></code>, which has two private member variables of type <code>Vector2</code>, <code>Shapes::CAabb2D::vTopLeft</code> and <code>Shapes::CAabb2D::vBottomRt</code> which store the coordinates of its top left and bottom right corners as shown in <a class="el" href="index.html#fig2">Fig. 2</a>.</p>
+<p><a class="anchor" id="fig2"></a></p><div class="image">
+<img src="corners.png" alt="" width="40%"/>
+<div class="caption">
+Fig. 2: An AABB is defined by its top left and bottom right corners.</div></div>
+<p><a class="anchor" id="section5-2-1"></a></p><h3>5.2.1 Building AABBs</h3>
+<p>AABBs can be built by creating one that encloses a single point using the overloaded assignment operator <code><a class="el" href="class_shapes_1_1_c_aabb2_d.html#a32633ea446b6ac2acb2c69d0fa872b4b" title="Set AABB to point.">Shapes::CAabb2D::operator=()</a></code>, and expanding them to include a new point using <code><a class="el" href="class_shapes_1_1_c_aabb2_d.html#aa1da21e24ab7ae58b7406db9ac930b50" title="Add point to AABB.">Shapes::CAabb2D::operator+=()</a></code>.</p>
+<p><a class="anchor" id="section5-2-2"></a></p><h3>5.2.2 AABB Intersection Tests</h3>
+<p>There are two intersection tests involving AABBs which are implemented by overriding <code>Shapes::operator&amp;&amp;</code>. The first one returns <code>true</code> if two AABBs have non-empty intersection: <a href="_a_a_b_b_8h.html#ae71c3550e2d92b21fd23bc51c34bf4d0"><code>bool operator&amp;&amp;(const CAabb2D&amp;, const CAabb2D&amp;)</code></a>. The best way to think about this is to consider how this function fails, that is, how two AABBs don't intersect. Suppose we have two AABBs \(A\) and \(B\), and that \(A\) has top left corner \([a_l, a_t]\) and bottom right corner \([a_r,a_b]\) and \(B\) has top left corner \([b_l, b_t]\) and bottom right corner \([b_r,b_b]\). One way that \(A\) and \(B\) can be drawn without overlap is for \(A\) to be completely to the left of \(B\), as shown in <a class="el" href="index.html#fig4">Fig. 4</a>, in which case \(a_r &lt; b_l\).</p>
+<p><a class="anchor" id="fig4"></a></p><div class="image">
+<img src="aabbintersect.png" alt="" width="25%"/>
+<div class="caption">
+Fig. 4: AABB intersection test.</div></div>
+<p>Similarly, \(A\) could be completely to the right of \(B\), in which case \(a_l &gt; b_r\); \(A\) could be completely above \(B\), in which case \(a_b &gt; b_t\); or \(A\) could be completely below \(B\), in which case \(a_t &lt; b_b\). These are the only ways that \(A\) can not overlap \(B\). Therefore \(A\) and \(B\) don't intersect iff  </p><p class="formulaDsp">
+\[
+(a_r &lt; b_l) \vee (a_l &gt; b_r) \vee (a_b &gt; b_t) \vee (a_t &lt; b_b),
+\]
+</p>
+<p>That is, using <a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws">De Morgan's Law</a>, \(A\) and \(B\) <em>do</em> intersect iff  </p><p class="formulaDsp">
+\[
+(a_r \geq b_l) \wedge (a_l \leq b_r) \wedge (a_b \leq b_t) \wedge (a_t \geq b_b).
+\]
+</p>
+<p>This AABB intersection test is therefore extremely fast, using at most four floating point comparisons and three logical operations.</p>
+<p>The second AABB intersection test returns <code>true</code> if a point is inside an AABB: <a href="_a_a_b_b_8h.html#a1f0ed51adcd95498db5fe30237772fc1"><code>bool operator&amp;&amp;(const CAabb2D&amp;, const Vector2&amp;)</code></a>. Suppose the AABB has top left point \([u_x, u_y]\), bottom right point \([v_x, v_y]\), and the point to be tested for intersection with it is \(\vec{p} = [p_x, p_y]\), as shown in <a class="el" href="index.html#fig5">Fig. 5</a>.</p>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
+<img src="ptinaabb.png" alt="" width="20%"/>
+<div class="caption">
+Fig. 5: Point in AABB test.</div></div>
+<p>Then \(\vec{p}\) is inside the bounding box iff  </p><p class="formulaDsp">
+\[
+(u_x \leq p_x) \wedge (p_x \leq v_x) \wedge (v_y \leq p_y) \wedge (p_y \leq u_y)
+\]
+</p>
+<p>The point-in-AABB intersection test is also extremely fast, using at most four floating point comparisons and three logical operations.</p>
+<p><a class="anchor" id="section5-3"></a></p><h2>5.3 Shapes and Motion Types</h2>
+<p><a class="anchor" id="section5-4"></a></p><h2>5.4 Collision Detection and Response</h2>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../collisionmath/index.html">Collision Math Toy</a>. </p>
 </div></div><!-- PageDoc -->
