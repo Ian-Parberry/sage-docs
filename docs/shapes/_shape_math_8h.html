@@ -104,7 +104,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4d3eae83cf4dda3b8777573ff6ddf073"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073">Shapes::NormalizeAngle</a> (float)</td></tr>
-<tr class="memdesc:a4d3eae83cf4dda3b8777573ff6ddf073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize angle to [0, 2*pi).  <br /></td></tr>
+<tr class="memdesc:a4d3eae83cf4dda3b8777573ff6ddf073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize angle to \([0, 2\pi)\).  <br /></td></tr>
 <tr class="separator:a4d3eae83cf4dda3b8777573ff6ddf073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f68f34851b9e02cd229796a175ffdf"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf">Shapes::Normalize</a> (Vector2)</td></tr>
 <tr class="memdesc:a56f68f34851b9e02cd229796a175ffdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize a vector, ie. make it unit length.  <br /></td></tr>
@@ -183,18 +183,21 @@ Functions</h2></td></tr>
           <td class="memname">Vector2 Shapes::AngleToVector </td>
           <td>(</td>
           <td class="paramtype">const float&#160;</td>
-          <td class="paramname"><em>a</em></td><td>)</td>
+          <td class="paramname"><em>theta</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get a normalized vector at a given orientation. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Compute a unit vector at an angle measured in radians counterclockwise from the positive X-axis. If \(\vec{v} = [v_x, v_y]\) is a unit vector with tail at the Origin and \(\theta\) is the angle between \(\vec{v}\) and the positive X-axis, then \(\sin \theta = v_y\) and \(\cos \theta = v_x\). Hence, \(\vec{v} = [\cos \theta, \sin \theta]\), as shown below. Therefore, this function returns <code>Vector2(cosf(theta), sinf(theta))</code>. </p><div class="image">
+<img src="AngleToVector.png" alt="" width="220"/>
+</div>
+ <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>Orientation angle. </td></tr>
+    <tr><td class="paramname">theta</td><td>Angle in radians. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Unit vector at orientation a. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Unit vector at angle theta counterclockwise from positive X. </dd></dl>
 
 </div>
 </div>
@@ -213,7 +216,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The DirectXTK doesn't have a function that returns a normalized vector, so here it is. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The DirectXTK doesn't have a function that returns a normalized vector, so here it is. We will now be able to use it in constant declarations, for example, <code>const Vector2 u = v.Normalize()</code>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>A vector. </td></tr>
   </table>
@@ -238,14 +241,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Normalize angle to [0, 2PI).</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Normalize angle to \([0, 2\pi)\). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a</td><td>Angle in radians. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Normalized angle, that is, in the range [0, 2PI). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Normalized angle, that is, in the range \([0, 2\pi)\). </dd></dl>
 
 </div>
 </div>
@@ -274,7 +276,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Find the component of one vector parallel to another. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Find the component of one vector parallel to another. The component of \(\vec{v}_0\) parallel to \(\vec{v}_1\) is \((\vec{v}_0 \cdot \hat{v}_1)\hat{v}_1\). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v0</td><td>Vector whose component we want. </td></tr>
     <tr><td class="paramname">v1</td><td>Vector that the component must be parallel to. </td></tr>
@@ -300,13 +302,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the perpendicular to a given vector in a counterclockwise direction. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Compute the counterclockwise perpendicular of a vector, preserving length. If \(\vec{v} = [v_x, v_y]\), then both dot products \(\vec{v} \cdot [-v_y, v_x]\) and \(\vec{v} \cdot [v_y, -v_x]\) are equal to zero, and therefore both \([-v_y, v_x]\) and \([v_y, -v_x]\) are perpendicular to \(\vec{v}\). The former (drawn in green below) points counterclockwise from \(\vec{v}\) and the latter (drawn in purple below) points clockwise from \(\vec{v}\).</p>
+<div class="image">
+<img src="Perp.png" alt="" width="200"/>
+</div>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td>A vector. </td></tr>
+    <tr><td class="paramname">v</td><td>A vector, not necessarily normalized. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The vector perpendicular to v in a counterclockwise direction. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The counterclockwise perpendicular to v of the same length. </dd></dl>
 
 </div>
 </div>

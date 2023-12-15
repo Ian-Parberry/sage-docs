@@ -31,6 +31,7 @@ Make sure that you have followed the
 instructions in
 <a href="../install/index.html#directxtk12">Section 3</a> of the
 <a href="../install/index.html">SAGE Installation Instructions</a>.
+Note that this project is independent of <a href="../sage/index.html">SAGE</a>.
 Navigate to the folder <span style="background-color:#D8E4D8;">`2. Shapes Library`</span> in your
 copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
 Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
@@ -50,6 +51,117 @@ and <span style="background-color:#D8E4D8;">`x64\Debug\Shapes.lib`</span>.
 
 \anchor section5
 # 5. Code Breakdown
+
+All of the code in this library is in a namespace called `Shapes`.
+
+\anchor section5-1
+## 5.1 Helper Functions
+
+`ShapeMath.h` and `ShapeMath.cpp` contain some handy helper functions
+for this project. Since this project is independent of <a href="../sage/index.html">SAGE</a>, some <a href="../sage/index.html">SAGE</a> functions are duplicated here. Of particular interest is `FailIf`,
+which will be used inside functions in this project to test a Boolean condition and bail out from the function returning `false` if the condition is `true`.
+
+    #define FailIf(x) if(x)return false; 
+
+This will make our code easier to read when we have multiple failure points
+within a function.
+
+\anchor section5-2
+## 5.2 Axially Aligned Bounding Boxes
+
+\anchor fig1
+\image html aabb.png "Fig. 1: AABBs (green) for a circle and an arc." width=25%
+
+An _axially aligned bounding box_ (AABB for short) is a minimal-size
+rectanle that bounds a shape
+and has its edges parallel to the X and Y axes.
+For example, \ref fig1 "Fig. 1" shows the AABB for a circle and an arc.
+AABBs are used in narrow phase collision detection to quickly and efficiently
+reject things that are too far apart to collide.
+Our AABBs are implemented by a class `Shapes::CAabb2D`,
+which has two private member variables of type `Vector2`,
+`Shapes::CAabb2D::vTopLeft` and `Shapes::CAabb2D::vBottomRt` which store
+the coordinates of
+its top left and bottom right corners as shown in \ref fig2 "Fig. 2".
+
+\anchor fig2
+\image html corners.png "Fig. 2: An AABB is defined by its top left and bottom right corners." width=40%
+
+\anchor section5-2-1
+### 5.2.1 Building AABBs
+
+AABBs can be built by creating one that encloses a single point
+using the overloaded assignment operator `Shapes::CAabb2D::operator=()`,
+and expanding them to include a new point using `Shapes::CAabb2D::operator+=()`.
+
+\anchor section5-2-2
+### 5.2.2 AABB Intersection Tests
+
+There are two intersection tests involving AABBs which are implemented
+by overriding `Shapes::operator&&`. The first one returns `true` if two AABBs have
+non-empty intersection:
+<a href="_a_a_b_b_8h.html#ae71c3550e2d92b21fd23bc51c34bf4d0">
+`bool operator&&(const CAabb2D&, const CAabb2D&)`</a>.
+The best way to think about this is to consider how this function fails,
+that is, how two AABBs don't intersect. Suppose we have two AABBs \f$A\f$ and
+\f$B\f$, and that 
+\f$A\f$ has top left corner \f$[a_l, a_t]\f$
+and bottom right corner \f$[a_r,a_b]\f$ and
+\f$B\f$ has top left corner \f$[b_l, b_t]\f$
+and bottom right corner \f$[b_r,b_b]\f$.
+One way that \f$A\f$ and \f$B\f$ can be drawn without overlap
+is for \f$A\f$ to be completely to the left of \f$B\f$, as shown in
+\ref fig4 "Fig. 4", in which case
+\f$a_r < b_l\f$.
+
+\anchor fig4
+\image html aabbintersect.png "Fig. 4: AABB intersection test." width=25%
+
+Similarly, \f$A\f$ could be completely to the right of \f$B\f$, 
+in which case \f$a_l > b_r\f$;
+\f$A\f$ could be completely above \f$B\f$, 
+in which case \f$a_b > b_t\f$; or
+\f$A\f$ could be completely below \f$B\f$, 
+in which case \f$a_t < b_b\f$.
+These are the only ways that \f$A\f$ can not overlap \f$B\f$.
+Therefore \f$A\f$ and \f$B\f$ don't intersect iff
+\f[
+(a_r < b_l) \vee (a_l > b_r) \vee (a_b > b_t) \vee (a_t < b_b),
+\f]
+
+That is, using <a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws">De Morgan's Law</a>,
+\f$A\f$ and \f$B\f$ _do_ intersect iff
+\f[
+(a_r \geq b_l) \wedge (a_l \leq b_r) \wedge (a_b \leq b_t) \wedge (a_t \geq b_b).
+\f]
+
+This AABB intersection test is therefore extremely fast, using at most
+four floating point comparisons and three logical operations.
+
+The second AABB intersection test returns `true` if a point is inside an AABB:
+<a href="_a_a_b_b_8h.html#a1f0ed51adcd95498db5fe30237772fc1">
+`bool operator&&(const CAabb2D&, const Vector2&)`</a>.
+Suppose the AABB has top left point \f$[u_x, u_y]\f$,
+bottom right point \f$[v_x, v_y]\f$, and the point to be
+tested for intersection with it is \f$\vec{p} = [p_x, p_y]\f$,
+as shown in \ref fig5 "Fig. 5".
+
+\anchor fig5
+\image html ptinaabb.png "Fig. 5: Point in AABB test." width=20%
+
+Then \f$\vec{p}\f$ is inside the bounding box iff
+\f[
+(u_x \leq p_x) \wedge (p_x \leq v_x) \wedge (v_y \leq p_y) \wedge (p_y \leq u_y)
+\f]
+
+The point-in-AABB intersection test is also extremely fast, using at most
+four floating point comparisons and three logical operations.
+
+\anchor section5-3
+## 5.3 Shapes and Motion Types
+
+\anchor section5-4
+## 5.4 Collision Detection and Response
 
 \anchor section6
 # 6. What Next?

@@ -132,10 +132,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute a unit vector at an angle measured in radians counterclockwise from the positive X-axis. If \(\vec{v} = [v_x, v_y]\) is a unit vector with tail at the Origin and \(\theta\) is the angle between \(\vec{v}\) and the positive X-axis, then \(\sin \theta = v_y\) and \(\cos \theta = v_x\). Hence, \(\vec{v} = [\cos \theta, \sin \theta]\), as shown below. Therefore, this function returns <code>Vector2(cosf(theta), sinf(theta))</code>. </p><div class="image">
+<p>Compute a unit vector at an angle measured in radians counterclockwise from the positive X-axis. If \(\vec{v} = [v_x, v_y]\) is a unit vector with tail at the Origin and \(\theta\) is the angle between \(\vec{v}\) and the positive X-axis, then \(\sin \theta = v_y\) and \(\cos \theta = v_x\). Hence, \(\vec{v} = [\cos \theta, \sin \theta]\), as shown below. Therefore, this function returns <code>Vector2(cosf(theta), sinf(theta))</code>.</p>
+<div class="image">
 <img src="AngleToVector.png" alt="" width="220"/>
 </div>
- <dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">theta</td><td>Angle in radians. </td></tr>
   </table>
@@ -324,10 +325,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the counterclockwise unit perpendicular to a vector. If \(\vec{v} = [v_x, v_y]\), then both dot products \(\vec{v} \cdot [-v_y, v_x]\) and \(\vec{v} \cdot [v_y, -v_x]\) are equal to zero, and therefore both \([-v_y, v_x]\) and \([v_y, -v_x]\) are perpendicular to \(\vec{v}\). The former (drawn in green below) points counterclockwise from \(\vec{v}\) and the latter (drawn in purple below) points clockwise from \(\vec{v}\). Therefore, this function computes <code>Vector2(-v.y, v.x)</code> and normalizes it before returning it. </p><div class="image">
+<p>Compute the counterclockwise unit perpendicular to a vector. If \(\vec{v} = [v_x, v_y]\), then both dot products \(\vec{v} \cdot [-v_y, v_x]\) and \(\vec{v} \cdot [v_y, -v_x]\) are equal to zero, and therefore both \([-v_y, v_x]\) and \([v_y, -v_x]\) are perpendicular to \(\vec{v}\). The former (drawn in green below) points counterclockwise from \(\vec{v}\) and the latter (drawn in purple below) points clockwise from \(\vec{v}\). Therefore, this function computes <code>Vector2(-v.y, v.x)</code> and normalizes it before returning it.</p>
+<div class="image">
 <img src="Perp.png" alt="" width="200"/>
 </div>
- <dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>A vector, not necessarily normalized. </td></tr>
   </table>
@@ -352,7 +354,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the angle to a vector measured in radians counterclockwise from the positive X-axis. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Compute the angle to a vector measured in radians counterclockwise from the positive X-axis. Suppose \(\theta\) is the angle between a vector \(\vec{v} = [v_x, v_y]\) and the positive X-axis (see the image below). Then \(\tan \theta = v_y/v_x\), that is, \(\theta = \arctan v_y/v_x\). </p><div class="image">
+<img src="atan.png" alt="" width="220"/>
+</div>
+<p> Notice that we use function <code>atan2f(v.y, v.x)</code> instead of <code>atanf(v.y/v.x)</code> to compute the arc tangent because <code>atanf</code> returns an angle in the first quadrant, that is, \([0, \pi/2]\). For example, <code>atanf(-1/-1)</code> is <code>atanf(1)</code>, which returns \(\pi/4\), whereas <code>atan2(-1, -1)</code> returns the correct result, \(-3\pi/4\). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>A vector. </td></tr>
   </table>
