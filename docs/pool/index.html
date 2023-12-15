@@ -191,54 +191,8 @@ d^2 + \vec{c} \cdot \vec{c} +
 <p> Note that if \((\hat{v} \cdot \vec{c})^2 - 
 \vec{c} \cdot \vec{c} + \delta^2 &lt; 0 \), then there is no collision. This should not happen if we perform this computation only if there is overlap between the two circles, but it may still happen due to floating point roundoff error.</p>
 <p>Now we can compute \(\delta_t = \left\Vert\vec{v}\right\Vert/d\), the time elapsed since TOI. Suppose that at the time the collision was detected \(B_1\) was at position \(\vec{p}_1\) and \(B_2\) was at position \(\vec{p}_2\). Let \(\vec{q}_1\) be the position of \(B_1\) at TOI, and \(\vec{q}_2\) the position of \(B_2\) at TOI. Then, we can compute \(\vec{q}_1 = \vec{p}_1 - \delta_t\vec{v}_1\) and \(\vec{q}_2 = \vec{p}_2 - \delta_t\vec{v}_2\).</p>
-<p>Now we need to compute the velocities of \(B_1\) and \(B_2\) after the impact. Let \(\vec{n}\) be the vector from \(\vec{q}_2\) to \(\vec{q}_1\), that is, \(\vec{n} = \vec{q}_1 - \vec{q}_2\). We claim that at TOI \(B_1\) and \(B_2\) swap the components of their velocity parallel to \(\vec{n}\).</p>
-<p>To see this, let \(b_1 = \vec{v}_1\cdot \hat{n}\) and \(b_2 = \vec{v}_2\cdot \hat{n}\) be the speeds of \(B_1\) and \(B_2\), respectively, before impact. Let \(a_1\) and \(a_2\) be the speeds of \(B_1\) and \(B_2\), respectively, after impact. We claim that \(a_1 = b_2\) and \(a_2= b_1\), assuming a perfectly elastic collision between two balls of equal mass \(m\). By the Law of Conservation of Kinetic Energy, the kinetic energy in the system before impact \(mb_1^2/2 +mb_2^2/2\) is the same as the kinetic energy in the system after impact \(ma_1^2/2 +ma_2^2/2\). That is,  </p><p class="formulaDsp">
-\[
-mb_1^2/2 +mb_2^2/2 = ma_1^2/2 +ma_2^2/2.
-\]
-</p>
-<p>Therefore, multiplying both sides of the equation by \(2/m\),  </p><p class="formulaDsp">
-\[
-b_1^2 + b_2^2 = a_1^2 + a_2^2.
-\]
-</p>
-<p>Subtracting \(b_2^2 + a_2^2 \) from both sides:  </p><p class="formulaDsp">
-\[
-b_1^2 - a_1^2 = a_2^2 - b_2^2.
-\]
-</p>
-<p>Therefore,  </p><p class="formulaDsp">
-\[
-(b_1 - a_1)(b_1 + a_1) = (a_2 - b_2)(a_2 + b_2). \label{eq1}\tag{Equation 1}
-\]
-</p>
-<p>We'll come back to this equation in a moment. Now, by the Law of Conservation of Momentum, the amount of momentum in the system before impact \(mb_1 +mb_2\) is the same as the momentum in the system after impact \(ma_1 +ma_2\). That is,:  </p><p class="formulaDsp">
-\[
-mb_1 + mb_2 = ma_1 +m a_2.
-\]
-</p>
-<p>Therefore, dividing both sides by \(m\):  </p><p class="formulaDsp">
-\[
-b_1 + b_2 = a_1 + a_2.\label{eq2}\tag{Equation 2}
-\]
-</p>
-<p>Subtracting \(b_2 + a_1\) from both sides:  </p><p class="formulaDsp">
-\[
-b_1  - a_1 = a_2 - b_2.
-\]
-</p>
-<p>Substituting this into \(\ref{eq1}\):  </p><p class="formulaDsp">
-\[
-b_1 + a_1 = a_2 + b_2,
-\]
-</p>
-<p>that is,  </p><p class="formulaDsp">
-\[
-b_1 - b_2 = a_2 - a_1.\label{eq3}\tag{Equation 3}
-\]
-</p>
-<p>Therefore, if we add both sides of \(\ref{eq2}\) to \(\ref{eq3}\) and divide by 2, this implies that \(b_1 = a_2\), as required, and if we subtract both sides of \(\ref{eq3}\) from \(\ref{eq2}\), this implies that \(b_2 = a_1\), as required.</p>
-<p>We have established that at TOI, \(B_1\) and \(B_2\) swap the components of their velocity parallel to \(\vec{n}\). Let \({\vec{v}_1}&#39;\) and \({\vec{v}_2}&#39;\) be the velocities of \(B_1\) and \(B_2\), respectively, after the impact. Then \({\vec{v}_1}&#39; = \vec{v}_1 + (\vec{v} \cdot \hat{n})\hat{n}\) and \({\vec{v}_2}&#39; = \vec{v}_2 - (\vec{v} \cdot \hat{n})\hat{n}\). \(B_1\) and \(B_2\) will have been moving from their positions at TOI with those respective new velocities for time \(\delta_t\). Their new positions are therefore \(\vec{q}_1 + \delta_t {\vec{v}_1}\) and \(\vec{q}_2 + \delta_t {\vec{v}_2}\), respectively.</p>
+<p>Now we need to compute the velocities of \(B_1\) and \(B_2\) after the impact. Let \(\vec{n}\) be the vector from \(\vec{q}_2\) to \(\vec{q}_1\), that is, \(\vec{n} = \vec{q}_1 - \vec{q}_2\). At TOI \(B_1\) and \(B_2\) swap the components of their velocity parallel to \(\vec{n}\), by the Laws of Conservation of Kinetic Energy and Conservation of Momentum (see <a href="../newton/index.html#section1">here for details</a>).</p>
+<p>Let \({\vec{v}_1}&#39;\) and \({\vec{v}_2}&#39;\) be the velocities of \(B_1\) and \(B_2\), respectively, after the impact. Then \({\vec{v}_1}&#39; = \vec{v}_1 + (\vec{v} \cdot \hat{n})\hat{n}\) and \({\vec{v}_2}&#39; = \vec{v}_2 - (\vec{v} \cdot \hat{n})\hat{n}\). \(B_1\) and \(B_2\) will have been moving from their positions at TOI with those respective new velocities for time \(\delta_t\). Their new positions are therefore \(\vec{q}_1 + \delta_t {\vec{v}_1}\) and \(\vec{q}_2 + \delta_t {\vec{v}_2}\), respectively.</p>
 <p><a class="anchor" id="section5-2-2"></a></p><h3>5.2.2 CObjectManager::RailCollide</h3>
 <p>Collision of a ball with a line is easier if we consider only horizontal and vertical lines. Fortunately, the rails in the Pool End Game are horizontal and vertical. Consider the case of a ball colliding with a horizontal line from below. Again, the actual collision occurs between frames and overlap between the ball and the line might be detected at the end of a frame. Suppose that, as show in <a class="el" href="index.html#fig9">Fig. 9</a>, the yellow ball is moving along the dotted line from bottom left to top right of the figure at velocity \(\vec{v} = [v_x, v_y]\) and the collision is detected when it is at position \(\vec{p} = [p_x, p_y]\). Further suppose that the horizontal line has equation \(y = w_y\). We want to compute the point of impact (POI for short) so that, for example, we can play a particle effect or sound effect at POI. From <a class="el" href="index.html#fig9">Fig. 9</a>, the POI has coordinates \([p_x - d_1 - d_2, w_y]\).</p>
 <p><a class="anchor" id="fig9"></a></p><div class="image">

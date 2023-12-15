@@ -301,73 +301,13 @@ compute \f$\vec{q}_1 = \vec{p}_1 - \delta_t\vec{v}_1\f$ and
 
 Now we need to compute the velocities of \f$B_1\f$ and \f$B_2\f$ after the
 impact. Let \f$\vec{n}\f$ be the vector from \f$\vec{q}_2\f$ to 
-\f$\vec{q}_1\f$, that is, \f$\vec{n} = \vec{q}_1 - \vec{q}_2\f$. We claim
-that at TOI \f$B_1\f$ and \f$B_2\f$ swap the components of their
-velocity parallel to \f$\vec{n}\f$.
+\f$\vec{q}_1\f$, that is, \f$\vec{n} = \vec{q}_1 - \vec{q}_2\f$.
+At TOI \f$B_1\f$ and \f$B_2\f$ swap the components of their
+velocity parallel to \f$\vec{n}\f$,
+by the Laws of Conservation of Kinetic Energy and Conservation
+of Momentum (see <a href="../newton/index.html#section1">here for details</a>).
 
-To see this, let \f$b_1 = \vec{v}_1\cdot \hat{n}\f$ and
-\f$b_2 = \vec{v}_2\cdot \hat{n}\f$ be the speeds of \f$B_1\f$ and
-\f$B_2\f$, respectively, before impact. Let \f$a_1\f$ and \f$a_2\f$
-be the speeds of \f$B_1\f$ and \f$B_2\f$, respectively, after impact.
-We claim that \f$a_1 = b_2\f$ and \f$a_2= b_1\f$, assuming a perfectly
-elastic collision between two balls of equal mass \f$m\f$.
-By the Law of Conservation of Kinetic Energy, the kinetic energy in the
-system before impact \f$mb_1^2/2 +mb_2^2/2\f$ is the same as the kinetic
-energy in the system after impact \f$ma_1^2/2 +ma_2^2/2\f$. That is,
-\f[
-mb_1^2/2 +mb_2^2/2 = ma_1^2/2 +ma_2^2/2.
-\f]
-
-Therefore, multiplying both sides of the equation by \f$2/m\f$,
-\f[
-b_1^2 + b_2^2 = a_1^2 + a_2^2.
-\f]
-
-Subtracting \f$b_2^2 + a_2^2 \f$ from both sides:
-\f[
-b_1^2 - a_1^2 = a_2^2 - b_2^2.
-\f]
-
-Therefore,
-\f[
-(b_1 - a_1)(b_1 + a_1) = (a_2 - b_2)(a_2 + b_2). \label{eq1}\tag{Equation 1}
-\f]
-
-We'll come back to this equation  in a moment. Now, by the Law of
-Conservation of Momentum, the amount of momentum in the
-system before impact \f$mb_1 +mb_2\f$ is the same as the momentum
-in the system after impact \f$ma_1 +ma_2\f$. That is,:
-\f[
-mb_1 + mb_2 = ma_1 +m a_2.
-\f]
-
-Therefore, dividing both sides by \f$m\f$:
-\f[
-b_1 + b_2 = a_1 + a_2.\label{eq2}\tag{Equation 2}
-\f]
-
-Subtracting \f$b_2 + a_1\f$ from both sides:
-\f[
-b_1  - a_1 = a_2 - b_2.
-\f]
-
-Substituting this into \f$\ref{eq1}\f$:
-\f[
-b_1 + a_1 = a_2 + b_2,
-\f]
-
-that is,
-\f[
-b_1 - b_2 = a_2 - a_1.\label{eq3}\tag{Equation 3}
-\f]
-
-Therefore, if we add both sides of \f$\ref{eq2}\f$ to \f$\ref{eq3}\f$
-and divide by 2, this implies that \f$b_1 = a_2\f$, as required,
-and if we subtract both sides of \f$\ref{eq3}\f$ from \f$\ref{eq2}\f$,
-this implies that \f$b_2 = a_1\f$, as required.
-
-We have established that at TOI, \f$B_1\f$ and \f$B_2\f$ swap
-the components of their velocity parallel to \f$\vec{n}\f$.  Let
+Let
 \f${\vec{v}_1}'\f$ and \f${\vec{v}_2}'\f$  be the velocities of \f$B_1\f$
 and \f$B_2\f$, respectively, after the impact. Then
 \f${\vec{v}_1}' = \vec{v}_1 + (\vec{v} \cdot \hat{n})\hat{n}\f$ and 

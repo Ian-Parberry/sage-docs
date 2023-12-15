@@ -1,0 +1,192 @@
+/**
+
+\mainpage notitle
+
+\ref fig1 "Fig. 1" shows a common desktop toy called _Newton's Cradle_
+(<a href="https://commons.wikimedia.org/w/index.php?curid=3717500">attribution</a>).
+Why does it act like this? When the first ball collides with the second
+one, the first ball gets the second ball's velocity, which is zero,
+and the second ball gets the first ball's velocity. The second ball immediately
+collides with the third ball, and so the first ball's velocity is transferred down
+the line to the last ball, which swings out with the first ball's initial velocity.
+
+\anchor fig1
+@image html Newtons_cradle_animation_book_2.gif "Fig. 1. Newton's Cradle." width=30%
+
+Why is it that balls colliding in one dimension like this swap their velocities?
+It's actually a consequence of the Law of Conservation of Kinetic Energy
+and the Law of Conservation of Momentum.
+This is assuming what is called a _perfectly elastic collision_.
+In the real world kinetic energy is lost during a collision and converted to sound and
+heat energy, which means that Newton's Cradle in the real world doesn't continue
+infinitely as shown in \ref fig1 "Fig. 1". Instead, the swings become smaller and
+smaller over time and the behavior of the balls may even become chaotic.
+
+In \ref section1 "Section 1" we will examine what happens in Newton's Cradle
+in a perfect world in which the balls have the same mass and all collisions are perfectly elastic.
+This will be used to compute the transfer of velocities in
+<a href="../pool/index.html">The 8-Ball Pool End Game</a>.
+In \ref section2 "Section 2" we will generalize this to balls of different mass.
+This will be used to compute the transfer of velocities in
+<a href="../shapes/index.html">The Shapes Library</a>.
+
+\anchor section1
+# 1. Collision Between Balls of Equal Mass
+
+Suppose two balls \f$B_1\f$ and \f$B_2\f$ of equal mass move towards each 
+other with speeds \f$u_1\f$ and \f$u_2\f$, respectively, as shown
+in \ref fig2 "Fig. 2", left.
+Suppose their speeds after collision are \f$v_1\f$ and \f$v_2\f$, respectively, as shown
+in \ref fig2 "Fig. 2", right.
+We claim that \f$v_1 = u_2\f$ and \f$v_2= u_1\f$, assuming a perfectly
+elastic collision between two balls of equal mass \f$m \not= 0\f$.
+
+\anchor fig2
+@image html names.png "Fig. 2. Two balls of equal mass before (left) and after (right) collision." width=40%
+
+By the Law of Conservation of Kinetic Energy, the kinetic energy in the
+system before impact \f$mu_1^2/2 +mu_2^2/2\f$ is the same as the kinetic
+energy in the system after impact \f$mv_1^2/2 +mv_2^2/2\f$. That is,
+\f[
+mu_1^2/2 +mu_2^2/2 = mv_1^2/2 +mv_2^2/2.
+\f]
+
+Therefore, multiplying both sides of the equation by \f$2/m\f$,
+\f[
+u_1^2 + u_2^2 = v_1^2 + v_2^2.
+\f]
+
+Subtracting \f$u_2^2 + v_2^2 \f$ from both sides:
+\f[
+u_1^2 - v_1^2 = v_2^2 - u_2^2.
+\f]
+
+Therefore,
+\f[
+(u_1 - v_1)(u_1 + v_1) = (v_2 - u_2)(v_2 + u_2). \label{eq1}\tag{Equation 1}
+\f]
+
+We'll come back to this equation  in a moment. Now, by the Law of
+Conservation of Momentum, the amount of momentum in the
+system before impact \f$mu_1 +mu_2\f$ is the same as the momentum
+in the system after impact \f$mv_1 +mv_2\f$. That is,
+\f[
+mu_1 + mu_2 = mv_1 +m v_2.
+\f]
+
+Therefore, dividing both sides by \f$m\f$:
+\f[
+u_1 + u_2 = v_1 + v_2.\label{eq2}\tag{Equation 2}
+\f]
+
+Subtracting \f$u_2 + v_1\f$ from both sides:
+\f[
+u_1  - v_1 = v_2 - u_2.
+\f]
+
+We can use this to cancel out the \f$(u_1  - v_1)\f$ on the left-hand side
+of \f$\ref{eq1}\f$ with the \f$(v_2 - u_2)\f$ on the right-hand side to give:
+\f[
+u_1 + v_1 = v_2 + u_2,
+\f]
+
+that is, subtracting \f$u_2 + v_1\f$ from both sides
+\f[
+u_1 - u_2 = v_2 - v_1. \label{eq3}\tag{Equation 3}
+\f]
+
+Therefore, if we add both sides of \f$\ref{eq2}\f$ to \f$\ref{eq3}\f$
+and divide by 2, this implies that \f$u_1 = v_2\f$,
+and if we subtract both sides of \f$\ref{eq3}\f$ from \f$\ref{eq2}\f$,
+this implies that \f$u_2 = v_1\f$, as required.
+
+\anchor section2
+# 2. Collision Between Balls of Different Masses
+
+Suppose two balls \f$B_1\f$ and \f$B_2\f$ of masses \f$m_1\f$ and \f$m_2\f$, respectively
+move towards each 
+other with speeds \f$u_1\f$ and \f$u_2\f$, respectively, as shown
+in \ref fig3 "Fig. 3", left.
+Suppose their speeds after collision are \f$v_1\f$ and \f$v_2\f$, respectively, as shown
+in \ref fig3 "Fig. 3", right.
+We claim that
+\f[
+v_1 = \frac{2m_2u_2 + (m_1 - m_2)u_1}{m_1 + m_2}
+\f]
+and
+\f[
+v_2 = \frac{2m_1u_1 + (m_2 - m_1)u_2}{m_1 + m_2}
+\f]
+assuming a perfectly
+elastic collision.
+
+\anchor fig3
+@image html names2.png "Fig. 3. Two balls of unequal mass before (left) and after (right) collision." width=40%
+
+By the Law of Conservation of Kinetic Energy, the kinetic energy in the
+system before impact \f$m_1u_1^2/2 + m_2u_2^2/2\f$ is the same as the kinetic
+energy in the system after impact \f$m_1v_1^2/2 + m_2v_2^2/2\f$. That is,
+\f[
+m_1u_1^2/2 + m_2u_2^2/2 = m_1v_1^2/2 + m_2v_2^2/2.
+\f]
+
+Therefore, multiplying both sides of the equation by \f$2\f$,
+\f[
+m_1u_1^2 + m_2u_2^2 = m_1v_1^2 + m_2v_2^2.
+\f]
+
+Subtracting \f$m_2u_2^2 + m_1v_1^2\f$ from both sides and factoring out the masses:
+\f[
+m_1(u_1^2  - v_1^2) = m_2(v_2^2 - u_2^2).
+\f]
+
+Therefore,
+\f[
+m_1(u_1 - v_1)(u_1 + v_1) = m_2(v_2 - u_2)(v_2 + u_2). \label{eq4}\tag{Equation 4}
+\f]
+
+We'll come back to this equation  in a moment. Now, by the Law of
+Conservation of Momentum, the amount of momentum in the
+system before impact \f$m_1u_1 +m_2u_2\f$ is the same as the momentum
+in the system after impact \f$m_1v_1 +m_2v_2\f$. That is,
+\f[
+m_1u_1 + m_2u_2 = m_1v_1 +m_2 v_2. \label{eq5}\tag{Equation 5}
+\f]
+
+Subtracting \f$m_2u_2 + m_1v_1\f$ from both sides and factoring out the mass:
+\f[
+m_1(u_1  - v_1) = m_2(v_2 - u_2).
+\f]
+
+We can use this to cancel out the \f$m_1(u_1  - v_1)\f$ on the left-hand side
+of \f$\ref{eq4}\f$ with the \f$m_2(v_2 - u_2)\f$ on the right-hand side to give:
+\f[
+u_1 + v_1 = v_2 + u_2,
+\f]
+
+that is, subtracting \f$u_2 + v_1\f$ from both sides
+\f[
+u_1 - u_2 = v_2 - v_1.\label{eq6}\tag{Equation 6}
+\f]
+
+Subtracting \f$m_2\f$ times \f$\ref{eq6}\f$ from \f$\ref{eq5}\f$,
+\f[
+(m_1 - m_2)u_1 + 2m_2u_2 = (m_1 + m_2)v_1,
+\f]
+which implies that (assuming \f$m_1+m_2 \not= 0\f$):
+\f[
+v_1 = \frac{2m_2u_2 + (m_1 - m_2)u_1}{m_1 + m_2}\label{eq7}\tag{Equation 7}
+\f]
+as required.
+
+Adding  \f$m_1\f$ times \f$\ref{eq6}\f$ to \f$\ref{eq5}\f$,
+\f[
+2m_1u_1 + (m_2 - m_1)u_2 = (m_1 + m_2)v_2,
+\f]
+which implies that (assuming \f$m_1+m_2 \not= 0\f$):
+\f[
+v_2 = \frac{2m_1u_1 + (m_2 - m_1)u_2}{m_1 + m_2}\label{eq8}\tag{Equation 8}
+\f]
+as required.
+
+**/
