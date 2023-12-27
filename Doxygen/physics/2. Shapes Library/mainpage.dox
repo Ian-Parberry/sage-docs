@@ -158,10 +158,30 @@ The point-in-AABB intersection test is also extremely fast, using at most
 four floating point comparisons and three logical operations.
 
 \anchor section5-3
-## 5.3 Shapes and Motion Types
+## 5.3 Shape and Motion Types
+
+The Shapes library has four main shapes: 
+point, line segment, circle, and arc.
+There is also a line shape for internal use only.
+Shape types are identified using `Shapes::eShape`, defined in `Shape.h`.
+It also has three motion types,
+static, kinematic, and dynamic.
+
+1. Static shapes neither move nor rotate and are not affected by collisions.
+2. Kinematic shapes do not move but can rotate about a static point. They are not affected by collisions.
+3. Dynamic shapes (currently only circles) can move and rotate fully and are affected by collisions.
+
+Motion types are identified using `Shapes::eMotion`, also defined in `Shape.h`.
 
 \anchor section5-4
-## 5.4 Collision Detection and Response
+## 5.4 Basic Shapes
+
+`Shapes::CShapeCommon`
+`Shapes::CShapeDesc`
+`Shapes::CShape`
+
+\anchor section5-5
+## 5.5 Collision Detection and Response
 
 \anchor section6
 # 6. What Next?

@@ -132,8 +132,17 @@ Fig. 5: Point in AABB test.</div></div>
 \]
 </p>
 <p>The point-in-AABB intersection test is also extremely fast, using at most four floating point comparisons and three logical operations.</p>
-<p><a class="anchor" id="section5-3"></a></p><h2>5.3 Shapes and Motion Types</h2>
-<p><a class="anchor" id="section5-4"></a></p><h2>5.4 Collision Detection and Response</h2>
+<p><a class="anchor" id="section5-3"></a></p><h2>5.3 Shape and Motion Types</h2>
+<p>The Shapes library has four main shapes: point, line segment, circle, and arc. There is also a line shape for internal use only. Shape types are identified using <code><a class="el" href="_shape_8h.html#a709ea6b747b4002fa997395a7e3cb1c7" title="Shape type.">Shapes::eShape</a></code>, defined in <code><a class="el" href="_shape_8h.html" title="Interface for CShapeDesc and CShape.">Shape.h</a></code>. It also has three motion types, static, kinematic, and dynamic.</p>
+<ol type="1">
+<li>Static shapes neither move nor rotate and are not affected by collisions.</li>
+<li>Kinematic shapes do not move but can rotate about a static point. They are not affected by collisions.</li>
+<li>Dynamic shapes (currently only circles) can move and rotate fully and are affected by collisions.</li>
+</ol>
+<p>Motion types are identified using <code><a class="el" href="_shape_8h.html#ab2faf0dd4a4af61cb33b9b071da938d0" title="Shape motion type.">Shapes::eMotion</a></code>, also defined in <code><a class="el" href="_shape_8h.html" title="Interface for CShapeDesc and CShape.">Shape.h</a></code>.</p>
+<p><a class="anchor" id="section5-4"></a></p><h2>5.4 Basic Shapes</h2>
+<p><code><a class="el" href="class_shapes_1_1_c_shape_common.html" title="The shape common variables class.">Shapes::CShapeCommon</a></code> <code><a class="el" href="class_shapes_1_1_c_shape_desc.html" title="Shape Descriptor.">Shapes::CShapeDesc</a></code> <code><a class="el" href="class_shapes_1_1_c_shape.html" title="Shape.">Shapes::CShape</a></code></p>
+<p><a class="anchor" id="section5-5"></a></p><h2>5.5 Collision Detection and Response</h2>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../collisionmath/index.html">Collision Math Toy</a>. </p>
 </div></div><!-- PageDoc -->
