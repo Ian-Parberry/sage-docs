@@ -105,6 +105,8 @@ $(function() {
 <li>CLineSeg()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_line_seg.html#aa2af99a98735c90a1437b70cbdafe12d">Shapes::CLineSeg</a></li>
 <li>CLineSegDesc()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_line_seg_desc.html#ad0460cc5633ce2e8688b88080663ff0c">Shapes::CLineSegDesc</a></li>
 <li>ClosestPt()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_circle.html#a76d809a632ca30a51677baef0f32de43">Shapes::CCircle</a>, <a class="el" href="class_shapes_1_1_c_line.html#a1fac37f6c1e93fb7e68868185948cc5c">Shapes::CLine</a></li>
+<li>CollisionDetected()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_arc.html#addc1b02779585c9e679ceebd8c12bc70">Shapes::CArc</a>, <a class="el" href="class_shapes_1_1_c_circle.html#ab1a4137a899b96412088371599b07e4a">Shapes::CCircle</a>, <a class="el" href="class_shapes_1_1_c_line_seg.html#aecf84e9a601d72f2f21782b14d4b9501">Shapes::CLineSeg</a>, <a class="el" href="class_shapes_1_1_c_point.html#a21aa08e149aa1bc8ef51be3439b856ec">Shapes::CPoint</a>, <a class="el" href="class_shapes_1_1_c_shape.html#a011dd6965d759e490fb65df9bc6de420">Shapes::CShape</a></li>
+<li>CollisionResponse()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_dynamic_circle.html#a9f0b02a5d076cd8900ef3b25e28f5ddc">Shapes::CDynamicCircle</a></li>
 <li>CPoint()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_point.html#a3ed194a5fe114024a4261e6a7c8f26bc">Shapes::CPoint</a></li>
 <li>CPointDesc()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_point_desc.html#aa64b07048b16e045e2edc95d89197659">Shapes::CPointDesc</a></li>
 <li>CShape()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_shape.html#a5babe8711fc3713e988243e9a29c6999">Shapes::CShape</a></li>
@@ -163,8 +165,6 @@ $(function() {
 <li>m_fGravity&#160;:&#160;<a class="el" href="class_shapes_1_1_c_shape_common.html#a4637fadc588fb54651ede2475d204216">Shapes::CShapeCommon</a></li>
 <li>m_fInverseGradient&#160;:&#160;<a class="el" href="class_shapes_1_1_c_line.html#a70a6a3a25392c45404cd2109c5984cd7">Shapes::CLine</a></li>
 <li>m_fMass&#160;:&#160;<a class="el" href="class_shapes_1_1_c_dynamic_circle.html#abc2697066e212ddeb0adadaeae524c6f">Shapes::CDynamicCircle</a></li>
-<li>m_fOldAngle0&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_arc.html#aa00cd4c8ca4d046d2a6748962fddd407">Shapes::CKinematicArc</a></li>
-<li>m_fOldAngle1&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_arc.html#a979c99f1d5a3b83f5079a36f06613e3f">Shapes::CKinematicArc</a></li>
 <li>m_fOrientation&#160;:&#160;<a class="el" href="class_shapes_1_1_c_shape.html#a9476e752773f9d642869e7175d02fe93">Shapes::CShape</a></li>
 <li>m_fRadius&#160;:&#160;<a class="el" href="class_shapes_1_1_c_circle.html#a64ff4e77a79b09367c7e4d4276d1e946">Shapes::CCircle</a>, <a class="el" href="class_shapes_1_1_c_circle_desc.html#a5ea89435b73af04f409eb86423144d59">Shapes::CCircleDesc</a></li>
 <li>m_fRadiusSq&#160;:&#160;<a class="el" href="class_shapes_1_1_c_circle.html#a94ddd651abdaa74efa9877143341dc9e">Shapes::CCircle</a></li>
@@ -182,9 +182,11 @@ $(function() {
 <li>m_vBottomRt&#160;:&#160;<a class="el" href="class_shapes_1_1_c_aabb2_d.html#a72a3723642b6eb8aa5241d82c8d2fbf0">Shapes::CAabb2D</a></li>
 <li>m_vNorm&#160;:&#160;<a class="el" href="class_shapes_1_1_c_contact_desc.html#adf61e411ea3690c43ebcb7d11c1582c3">Shapes::CContactDesc</a></li>
 <li>m_vNormal&#160;:&#160;<a class="el" href="class_shapes_1_1_c_line_seg.html#ace09a1424fcf613b46544670b12d3212">Shapes::CLineSeg</a>, <a class="el" href="class_shapes_1_1_c_line_seg_desc.html#a83f8171012d6e18dae37ac93042c33e0">Shapes::CLineSegDesc</a></li>
-<li>m_vOldPos&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_arc.html#a630a5d43077f27024946d58d42141897">Shapes::CKinematicArc</a>, <a class="el" href="class_shapes_1_1_c_kinematic_circle.html#a1313b63e090e0bdfee6790cee20f9e9e">Shapes::CKinematicCircle</a>, <a class="el" href="class_shapes_1_1_c_kinematic_point.html#abb9f9bd380563b39c576f5e71146dd4a">Shapes::CKinematicPoint</a></li>
-<li>m_vOldPt0&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_line_seg.html#a951e4e5962a02c0d260cb4672d0f8782">Shapes::CKinematicLineSeg</a></li>
-<li>m_vOldPt1&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_line_seg.html#acba714f88445e211a777010926d0e3ef">Shapes::CKinematicLineSeg</a></li>
+<li>m_vOriginalAngle0&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_arc.html#a3f1aa1ca1e99eb9be5236d4826b51c2d">Shapes::CKinematicArc</a></li>
+<li>m_vOriginalAngle1&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_arc.html#a73bd72d70c2a3c60d55a6c7bfc6fa013">Shapes::CKinematicArc</a></li>
+<li>m_vOriginalPos&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_arc.html#a7fc24ea953f791b345e381dd8aaae6f7">Shapes::CKinematicArc</a>, <a class="el" href="class_shapes_1_1_c_kinematic_circle.html#a0ed23b7b4aa67b6da1e11c80a5a3f8fd">Shapes::CKinematicCircle</a>, <a class="el" href="class_shapes_1_1_c_kinematic_point.html#afec78847b94b47f9bed18013f9cd8ef0">Shapes::CKinematicPoint</a></li>
+<li>m_vOriginalPt0&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_line_seg.html#a791bd917c41ed0d0be456a1a3c579231">Shapes::CKinematicLineSeg</a></li>
+<li>m_vOriginalPt1&#160;:&#160;<a class="el" href="class_shapes_1_1_c_kinematic_line_seg.html#ac1809508e1a41f3cafc0a6a98267f287">Shapes::CKinematicLineSeg</a></li>
 <li>m_vPOI&#160;:&#160;<a class="el" href="class_shapes_1_1_c_contact_desc.html#a4e92333b5875339355ddda967bd15f51">Shapes::CContactDesc</a></li>
 <li>m_vPos&#160;:&#160;<a class="el" href="class_shapes_1_1_c_shape.html#a49c47a9ead598a4e65bf72ccaaf33522">Shapes::CShape</a>, <a class="el" href="class_shapes_1_1_c_shape_desc.html#a053a932f0ea79a592d4812a4f49f683d">Shapes::CShapeDesc</a></li>
 <li>m_vPt0&#160;:&#160;<a class="el" href="class_shapes_1_1_c_arc.html#a996b3ce2cf9659c686b31d410d8a5931">Shapes::CArc</a>, <a class="el" href="class_shapes_1_1_c_arc_desc.html#a4109a5195a370bd9ca17dfa29b3f885a">Shapes::CArcDesc</a>, <a class="el" href="class_shapes_1_1_c_line_seg.html#a92bba03405d1cb5a35350aaccaec8299">Shapes::CLineSeg</a>, <a class="el" href="class_shapes_1_1_c_line_seg_desc.html#a8e352be7be37640e7d6f77b04f042d11">Shapes::CLineSegDesc</a></li>
@@ -206,11 +208,9 @@ $(function() {
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>PostCollide()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_dynamic_circle.html#a4e9b5a610666821247e69fab636c8c5f">Shapes::CDynamicCircle</a></li>
 <li>PostCollideDynamic()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_dynamic_circle.html#af3a142affa43efe93c66adee1d13923b">Shapes::CDynamicCircle</a></li>
 <li>PostCollideKinematic()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_dynamic_circle.html#abc54f6b2332e150b79f5567d320d31e3">Shapes::CDynamicCircle</a></li>
 <li>PostCollideStatic()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_dynamic_circle.html#aa04df79ad54d2a8d3693932f5fa4b215">Shapes::CDynamicCircle</a></li>
-<li>PreCollide()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_arc.html#ad38d3f8e37ba770f9e57c0f043e2cfd7">Shapes::CArc</a>, <a class="el" href="class_shapes_1_1_c_circle.html#ad5d75b002c2d67e3995898547000f92f">Shapes::CCircle</a>, <a class="el" href="class_shapes_1_1_c_line_seg.html#a1d654373df250954cb23ec25a75eaac3">Shapes::CLineSeg</a>, <a class="el" href="class_shapes_1_1_c_point.html#a2d8175bef0bb25e46f26c9b013b35204">Shapes::CPoint</a>, <a class="el" href="class_shapes_1_1_c_shape.html#a6fb6991fee8a91cb86f045345b838dec">Shapes::CShape</a></li>
 <li>PtInCircle()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_circle.html#ab9eb06698c6f063e2e78e13cd52405b1">Shapes::CCircle</a></li>
 <li>PtInSector()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_arc.html#a5b848f180396e048613af8919b528052">Shapes::CArc</a></li>
 <li>PtToAngle()&#160;:&#160;<a class="el" href="class_shapes_1_1_c_arc.html#aead705a4893efade8e687ec1361902d2">Shapes::CArc</a></li>

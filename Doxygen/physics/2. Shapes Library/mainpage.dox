@@ -111,11 +111,11 @@ and bottom right corner \f$[a_r,a_b]\f$ and
 and bottom right corner \f$[b_r,b_b]\f$.
 One way that \f$A\f$ and \f$B\f$ can be drawn without overlap
 is for \f$A\f$ to be completely to the left of \f$B\f$, as shown in
-\ref fig4 "Fig. 4", in which case
+\ref fig3 "Fig. 3", in which case
 \f$a_r < b_l\f$.
 
-\anchor fig4
-\image html aabbintersect.png "Fig. 4: AABB intersection test." width=25%
+\anchor fig3
+\image html aabbintersect.png "Fig. 3: AABB intersection test." width=25%
 
 Similarly, \f$A\f$ could be completely to the right of \f$B\f$, 
 in which case \f$a_l > b_r\f$;
@@ -144,10 +144,10 @@ The second AABB intersection test returns `true` if a point is inside an AABB:
 Suppose the AABB has top left point \f$[u_x, u_y]\f$,
 bottom right point \f$[v_x, v_y]\f$, and the point to be
 tested for intersection with it is \f$\vec{p} = [p_x, p_y]\f$,
-as shown in \ref fig5 "Fig. 5".
+as shown in \ref fig4 "Fig. 4".
 
-\anchor fig5
-\image html ptinaabb.png "Fig. 5: Point in AABB test." width=20%
+\anchor fig4
+\image html ptinaabb.png "Fig. 4: Point in AABB test." width=20%
 
 Then \f$\vec{p}\f$ is inside the bounding box iff
 \f[
@@ -182,6 +182,66 @@ Motion types are identified using `Shapes::eMotion`, also defined in `Shape.h`.
 
 \anchor section5-5
 ## 5.5 Collision Detection and Response
+
+Shapes that can collide with other shapes will have a `CollisionDetected` function that
+takes a reference to an instance of 
+the contact descriptor `Shapes::CContactDesc` that has been initialized with a pointer to
+the current shape `m_pShape` and a pointer to the dynamic shape (currently only
+dynamic circles are implemented) `m_pCircle`.
+If the two shapes overlap, `CollisionDetected` will
+fill in the other member variables of the contact descriptor as follows and return `true`.
+The point of intersection (the coordinates of the point at which the shapes first collided,
+which is usually between frames)
+is computed in the 2D vector `m_vPOI`, the normal to the collision is computed in `m_vNorm`,
+the setback distance (the distance that the dynamic shape must be moved back
+along the collision normal to its position at the time of impact)
+is computed in `m_fSetback`, and the collision speed is computed in `m_fSpeed`.
+The main difference between collision detection and response in this
+project as opposed to the previous one
+(<a href="../pool/index.html">The 8-ball Pool End Game</a>)
+is that here the POI will be approximated by the closest point on the shape to the center of the dynamic circle. This is an outrageous fudge, but it looks right in practice
+and is faster to compute than the alternative.
+
+Shape classes will have various intersection functions that detect overlap with other shapes.
+Dynamic shapes (the only shapes that can currently react to a collision)
+They will have a `CollisionResponse` function that takes as parameter a constant reference
+to a contact descriptor provided by some call to a `CollisionDetected` function.
+
+\anchor section5-6
+## 5.6 Lines and Line Segments
+
+\anchor fig5
+\image html inheritance0.png "Fig. 5: Inheritance diagram for lines and line segments." width=15%
+
+
+\anchor section5-6-2
+### 5.6.2 Lines
+
+Lines are implemented as class `Shapes::CLine`, which is for internal use only.
+
+\anchor fig6
+\image html lineline1.png "Fig. 6: Intersection of two nonvertical lines." width=30%
+
+\anchor fig7
+\image html lineline2.png "Fig. 7: Intersection of a line with a vertical line." width=30%
+
+\anchor fig8
+\image html lineclosestpt.png "Fig. 8: Point on a line closest to a point." width=25%
+
+\anchor section5-6-3
+### 5.6.3 Line Segments
+
+Line segments are implemented as class `Shapes::CLineSeg`.
+They are instantiated using the descriptor `Shapes::CLineSegDesc`.
+
+\anchor section5-7
+## 5.7 Points, Circles, and Arcs
+
+\anchor section5-7-1
+### 5.7.1 Points
+
+Points are implemented as class `Shapes::CPoint`.
+They are instantiated using the descriptor `Shapes::CPointDesc`.
 
 \anchor section6
 # 6. What Next?
