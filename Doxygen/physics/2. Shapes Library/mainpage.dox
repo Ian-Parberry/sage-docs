@@ -213,20 +213,98 @@ to a contact descriptor provided by some call to a `CollisionDetected` function.
 \anchor fig5
 \image html inheritance0.png "Fig. 5: Inheritance diagram for lines and line segments." width=15%
 
-
 \anchor section5-6-2
 ### 5.6.2 Lines
 
-Lines are implemented as class `Shapes::CLine`, which is for internal use only.
+Infinite lines are implemented as class `Shapes::CLine`, which is for internal use only.
+`Shapes::CLine` stores a line's gradient \f$m\f$, inverse gradient \f$1/m\f$,
+\f$x\f$-intercept \f$c\f$, and
+\f$y\f$-intercept \f$b\f$.
+A vertical line has gradient \f$m = \infty\f$ (implemented as `float::Inf`),
+\f$1/m = 0\f$, and \f$b = \infty\f$.
+A horizontal line has gradient \f$m = 0\f$,
+\f$1/m = \infty\f$, and \f$c = \infty\f$.
+
+\anchor section5-6-2-1
+#### 5.6.2.1 The Line Constructor
+
+The `Shapes::CLine` constructor takes two parameters, a point \f$\vec{p}\f$ and
+a floating point gradient \f$m\f$, and initializes its member variables
+to represent the line of gradient \f$m\f$ through point \f$\vec{p}=[p_x, p_y]\f$.
+That is, its gradient is  \f$m\f$, its inverse gradient \f$1/m\f$,
+its \f$y\f$-intercept is \f$p_y - p_xm\f$, and its \f$x\f$-intercept is \f$p_x - p_y/m\f$.
+
+\anchor section5-6-2-2
+#### 5.6.2.2 Point of Intersection of Two Lines
+
+`Shapes::CLine::Intersect` computes the point of intersection between two lines.
+If both lines have the same gradient, then there is no point of intersection
+and the function returns `Vector2(Inf, Inf)`.
+Otherwise, if neither lines are vertical,
+and the lines have equations \f$y=m_0x + c_0\f$ and \f$y=m_1x+c_1\f$
+as shown in \ref fig6 "Fig. 6", then the
+\f$x\f$-coordinate of the point of intersection of the lines satisfies the equation
+\f$m_0p_x + c_0 = m_1p_x+c_1\f$, that is, \f$p_x = (c_1 - c_0)/(m_0 - m_1)\f$.
+The \f$y\f$-coordinate of the point of intersection is therefore
+\f$p_y = m_0p_x + c_0 = m_0(c_1 - c_0)/(m_0 - m_1) + c_0\f$.
 
 \anchor fig6
 \image html lineline1.png "Fig. 6: Intersection of two nonvertical lines." width=30%
 
+Otherwise, one of the lines is vertical and the other is not.
+Suppose the first line is vertical and has equation \f$x = c_0\f$,
+and that the second line has equation \f$y=m_1x+c_1\f$.
+Let the point of intersection \f$\vec{p}\f$ have coordinates \f$[p_x, p_y]\f$
+as shown in \ref fig7 "Fig. 7".
+
 \anchor fig7
 \image html lineline2.png "Fig. 7: Intersection of a line with a vertical line." width=30%
 
+Then \f$p_x = c_0\f$ since \f$\vec{p} = [p_x, p_y]\f$ is on the vertical line \f$x = c_0\f$.
+Therefore \f$p_y = m_1 c_0 + c_1\f$ since \f$\vec{p}\f$ is on the line \f$y=m_1x+c_1\f$.
+The case where the second line is vertical and the first line is not vertical is similar.
+
+\anchor section5-6-2-3
+#### 5.6.2.3 Point on Line Closest to Another Point
+
 \anchor fig8
-\image html lineclosestpt.png "Fig. 8: Point on a line closest to a point." width=25%
+\image html lineclosestpt0.png "Fig. 8: Gradient of perpendicular line." width=40%
+
+Let \f$\triangle ABC\f$ be the triangle shown in \ref fig8 "Fig. 8",
+where \f$\overline{AB}\f$ has equation \f$y=m_0x + c_0\f$,
+where \f$\overline{BC}\f$ has equation \f$y=m_1x + c_1\f$,
+and \f$\overline{AC}\f$ lies along the positive \f$X\f$-axis.
+Let \f$\theta = \angle BAC\f$.
+Drop a line perpendicular from \f$B\f$ down to a point \f$D\f$ the \f$X\f$-axis
+(shown in blue in \ref fig8 "Fig. 8"). Then, \f$\tan \theta = d_y/d_x\f$ (also
+shown in blue), that is,
+rise over run, and so \f$m_0 = \tan \theta\f$.
+Notice that \f$\angle BAC = 90^\circ - \theta\f$ (shown in green in \ref fig8 "Fig. 8").
+Therefore, the angle from the positive \f$X\f$-axis to \f$\overline{BC}\f$ is
+\f$90^\circ - \theta\f$ (shown in red in \ref fig8 "Fig. 8").
+Since \f$\overline{AB}\f$ has equation \f$y=m_0x + c_0\f$, by an argument similar to the above,
+\f$m_1 = \tan 90^\circ + \theta\f$.
+Therefore,
+\f[
+m_1 = \tan (90^\circ + \theta)
+= \frac{\sin (90^\circ + \theta)}{\cos (90^\circ + \theta)}
+=- \frac{\cos \theta}{\sin \theta}
+=\frac{-1}{\tan \theta}
+=\frac{-1}{m_0}.
+\f]
+
+Therefore, as shown in \ref fig9 "Fig. 9" the closest point on a line \f$L_0\f$
+with gradient \f$m\f$ to a point \f$\vec{p}\f$
+can be found by computing the point of intersection of the line \f$L_0\f$
+with the line \f$L_1\f$ with gradient \f$-1/m\f$ through point \f$p\f$.
+\f$L_1\f$ is constructed using the `Shapes::CLine` constructor
+(see \ref section5-6-2-1 "Section 5.6.2.1")
+and its point of intersection with \f$L_0\f$ is computed using \f$L_0\f$'s
+`Shapes::CLine::Intersect` function (see \ref section5-6-2-2 "Section 5.6.2.2").
+
+
+\anchor fig9
+\image html lineclosestpt1.png "Fig. 9: Point on line closest to a point." width=27%
 
 \anchor section5-6-3
 ### 5.6.3 Line Segments
