@@ -192,7 +192,7 @@ If the two shapes overlap, `CollisionDetected` will
 fill in the other member variables of the contact descriptor as follows and return `true`.
 The point of intersection (the coordinates of the point at which the shapes first collided,
 which is usually between frames)
-is computed in the 2D vector `m_vPOI`, the normal to the collision is computed in `m_vNorm`,
+is computed in the 2D vector `m_vPOI`, the collision normal is computed in `m_vNorm`,
 the setback distance (the distance that the dynamic shape must be moved back
 along the collision normal to its position at the time of impact)
 is computed in `m_fSetback`, and the collision speed is computed in `m_fSpeed`.
@@ -302,33 +302,242 @@ and its point of intersection with \f$L_0\f$ is computed using \f$L_0\f$'s
 `Shapes::CLine::Intersect` function (see \ref section5-6-2 "Section 5.6.2").
 
 \anchor fig8
-\image html lineclosestpt1.png "Fig. 8: Point on line closest to a point." width=27%
+\image html lineclosestpt1.png "Fig. 8: Point on line closest to a point." width=28%
 
 \anchor section5-7
-## 5.7 Line Segments
+## 5.7 Points
+
+Points are implemented as class `Shapes::CPoint`, derived from `Shapes::CShape`.
+They are instantiated using the descriptor `Shapes::CPointDesc`.
+`Shapes::CPoint` has, in addition to constructors, a collision detection
+function `Shapes::CPoint::CollisionDetected` which, as noted in
+\ref section5-5 "Section 5.5",
+takes as parameter a reference to an instance of `Shapes::CContactDesc`
+initialized with a pointer to a dynamic circle and fills in the POI, collision normal, and
+setback distance.
+
+\anchor fig9
+\image html point0.png "Fig. 9: A slowly moving circle colliding with a point (left) and the POI, impact normal, and setback distance (right)." width=40%
+
+If we assume that the circle and the point are moving relatively slowly, then
+the point will be only a short distance in from the edge of the circle
+when the collision is detected, as shown in \ref fig9 "Fig. 9", left.
+In that figure the circle (in green) has radius \f$r\f$ and center point \f$\vec{p}_1\f$ (blue)
+and it is moving at velocity \f$\vec{v}\f$ rightwards and slightly down (purple)
+towards point \f$\vec{p}_0\f$ (red).
+`Shapes::CPoint::CollisionDetected` computes \f$\vec{p} = \vec{p}_1 - \vec{p}_0\f$,
+the vector from \f$\vec{p}_0\f$ to \f$\vec{p}_1\f$.
+A collision is detected when \f$||\vec{p}|| < r\f$.
+The POI is taken to be the coordinates of \f$\vec{p}_0\f$ at the time the collision
+is detected, the setback distance is taken to be \f$r - || \vec{p} ||\f$,
+the collision normal is taken to be \f$\hat{p}\f$,
+ and the collision speed is \f$||\vec{p}_0 ||\f$.
+These are mostly not the correct values but, as we will see later
+in the <a href="../collisionmath/index.html">Collision Math Toy</a> and the
+<a href="../pinball/index.html">Pinball Game</a>, are usually close enough.
+
+\anchor fig10
+\image html point1.png "Fig. 10: Two instances of a fast moving circle colliding with a point." width=40%
+
+However, if our assumption that the circle and the point are moving relatively slowly is incorrect, then there are a number of things that can go wrong. For example, the circle could
+completely travel through the point without a collision being detected
+(tunneling), or it could travel almost competely through the point as shown in
+\ref fig10 "Fig. 10", left (in which case the circle will be reflected in the wrong direction),
+or \f$\vec{p}_0\f$ could be very close to or equal to \f$\vec{p}_1\f$ as shown in
+\ref fig10 "Fig. 10", right (in which case we may get a divide-by-zero).
+
+\anchor section5-8
+## 5.8 Line Segments
+
+\anchor fig11
+\image html lineseg.png "Fig. 11: Line segment." width=28%
 
 Line segments are implemented as class `Shapes::CLineSeg`, derived from `Shapes::CShape`
 and `Shapes::CLine` (see \ref section5-6 "Section 5.6").
 They are instantiated using the descriptor `Shapes::CLineSegDesc`.
+`Shapes::CLineSeg` stores, in addition to inherited values, the
+coordinates of the end points
+\f$\vec{p}_0\f$ and \f$\vec{p}_1\f$, the corresponding tangent vectors 
+\f$\hat{t}_0\f$ and \f$\hat{t}_1\f$,
+and the counterclockwise normal \f$\hat{n}\f$ from \f$\vec{p}_0\f$,
+noting that we will always enforce the condition that \f$\vec{p}_0\f$
+will always be to the left of, or at the same \f$X\f$-coordinate as \f$\vec{p}_1\f$
+as shown in \ref fig11 "Fig. 11".
+Note that \f$\hat{t}_0 = - \hat{t}_1\f$
+and \f$\hat{t}_0 \cdot \hat{n} = \hat{t}_1 \cdot \hat{n} = 0\f$.
 
-\anchor section5-8
-## 5.8 Points
+`Shapes::CLineSeg` has, in addition to constructors and reader functions, a collision detection
+function `Shapes::CLineSeg::CollisionDetected` which, as noted in
+\ref section5-5 "Section 5.5",
+takes as parameter a reference to an instance of `Shapes::CContactDesc`
+initialized with a pointer to a dynamic circle and fills in the POI, collision normal, and
+setback distance.
+`Shapes::CLineSeg::CollisionDetected` rejects collisions with dynamic circles
+that approach from the ends of the line segment, that is, if the circle center is \f$\vec{p}_2\f$,
+either \f$(\vec{p}_2 - \vec{p}_0)\cdot \hat{t}_0 < 0\f$
+or \f$(\vec{p}_2 - \vec{p}_1)\cdot \hat{t}_1 < 0\f$,
+as shown in \ref fig12 "Fig.12".
 
-Points are implemented as class `Shapes::CPoint`, derived from `Shapes::CShape`.
-They are instantiated using the descriptor `Shapes::CPointDesc`.
+\anchor fig12
+\image html linesegmiss.png "Fig. 12: Rejected collisions of dynamic circle with line segment." width=28%
+
+Otherwise \f$(\vec{p}_2 - \vec{p}_0)\cdot \hat{t}_0 \geq 0\f$
+and \f$(\vec{p}_2 - \vec{p}_1)\cdot \hat{t}_1 \geq 0\f$,
+in which case we take the POI to be the closest point
+on the line segment to \f$p_2\f$,
+as shown in \ref fig13 "Fig.13",
+using a call to `Shapes::CLine::ClosestPt`.
+We then foist the rest of the work to `Shapes::CPoint`, as follows.
+
+    return CPoint(CPointDesc(ClosestPt(p2))).CollisionDetected(c);
+
+where `c` is the contact descriptor for this collision.
+
+\anchor fig13
+\image html lineseghit.png "Fig. 13: Accepted collision of dynamic circle with line segment." width=28%
 
 \anchor section5-9
 ## 5.9 Circles
 
 Circles are implemented as class `Shapes::CCircle`, derived from `Shapes::CShape`.
 They are instantiated using the descriptor `Shapes::CCircleDesc`.
+`Shapes::CCircle` stores, in addition to inherited values, its
+radius `m_fRadius` and the square of the radius `m_fRadiusSq`,
+the purpose of which will become clear in \ref section5-9-1 "Section 5.9.1".
+It also has some useful public member functions, including
+`Shapes::CCircle::PtInCircle` test, a `Shapes::CCircle::ClosestPt` function
+`Shapes::CCircle` also has a collision detection
+function `Shapes::CCircle::CollisionDetected` which, as noted in
+\ref section5-5 "Section 5.5",
+takes as parameter a reference to an instance of `Shapes::CContactDesc`
+initialized with a pointer to a dynamic circle and fills in the POI, collision normal, and
+setback distance.
+
+\anchor section5-9-1
+### 5.9.1 Point in Circle Test
+
+`Shapes::CCircle::PtInCircle`
+checks whether a point \f$\vec{p}_1=[x_1, y_1]\f$ is inside the circle by
+checking whether the distance from \f$\vec{p}_1\f$ to the center of the circle
+\f$\vec{p}_0=[x_0,y_0]\f$ is less than the radius \f$r\f$. That is, whether
+\f[
+\sqrt{(x_0 - x_1)^2 + (y_0 - y_1)^2} < r.
+\f]
+To save doing the potentially costly square-root, we test instead whether
+\f[
+(x_0 - x_1)^2 + (y_0 - y_1)^2 < r^2,
+\f]
+noting that the radius squared is computed and stored in `m_fRadiusSq` in the constructor,
+and that
+`DirectX::SimpleMath::Vector2` has a function `LengthSquared` to compute the square
+of its length.
+
+
+\anchor section5-9-2
+### 5.9.2 Closest Point on Perimeter
+
+\anchor fig14
+\image html closestptoncirc.png "Fig. 14: Point on perimeter closest to a point." width=25%
+
+`Shapes::CCircle::ClosestPt` finds the closest point on the perimeter to the point \f$\vec{p}\f$
+as follows. Suppose the center of the circle is \f$\vec{p}_0\f$. Compute
+\f$\vec{n} = \vec{p}_0 - \vec{p}\f$, the vector from \f$\vec{p}_0\f$ to \f$\vec{p}\f$,
+and normalize it to get \f$\hat{n}\f$. Then the point on the perimeter
+closest to \f$\vec{p}\f$ is \f$\vec{p}_0 + r\hat{n}\f$,
+as shown in \ref fig14 "Fig. 14".
+
+\anchor section5-9-3
+### 5.9.3 Tangents Through a Point
+
+\anchor fig15
+\image html tangent0.png "Fig. 15: Points of intersection on tangent through a point." width=25%
+
+Suppose we wish to find the intersection points \f$\vec{p}_0, \vec{p}_1\f$ of the
+tangents to a
+circle of radius \f$r\f$ and center \f$\vec{u}\f$ through an exterior point \f$\vec{p}\f$.
+Let \f$\vec{v} = \vec{u} - \vec{p}\f$ be the vector from \f$\vec{p}\f$ to \f$\vec{u}\f$.
+Let \f$\hat{v_0}\f$ be the
+unit vector that points along the tangent from \f$\vec{p}\f$ to \f$\vec{p}_0\f$ and
+let \f$\hat{v_1}\f$ be the
+unit vector that points along the tangent from \f$\vec{p}\f$ to \f$\vec{p}_1\f$.
+This is depicted in \ref fig15 "Fig.15".
+
+\anchor fig16
+\image html tangent1.png "Fig. 16: First point of intersection on tangent through a point." width=30%
+
+
+Consider the first of these points \f$\vec{p}_0\f$.
+Consider the triangle with vertices \f$\vec{p}\f$, \f$\vec{p}_0\f$, and \f$\vec{u}\f$
+as shown in \ref fig16 "Fig. 16".
+The length of the hypotenuse \f$d\f$ is equal to the length of the vector \f$\vec{v}\f$
+from \f$\vec{p}\f$ to \f$\vec{u}\f$, that is, \f$d = ||\vec{u} - \vec{p}||\f$.
+Let \f$\delta\f$ be the length of the tangent through \f$\vec{p}\f$ and \f$\vec{p}_0\f$.
+Since the triangle is a right triangle, we know by the Pythagorean Theorem that
+\f$\delta^2 + r^2 = d^2\f$, that is, \f$\delta = d^2 - r^2\f$.
+Also since the triangle is a right triangle, the tan of the angle \f$\theta\f$
+shown in blue in \ref fig16 "Fig.16" is \f$r/\delta\f$, and therefore
+\f$\theta = \arctan (r/\delta)\f$.
+The angle between the positive \f$X\f$-axis and the line between \f$\vec{p}\f$
+and \f$\vec{u}\f$ is \f$\phi = \arctan(v_y/v_x)\f$, shown in green in \ref fig16 "Fig.16".
+Therefore, the angle between the positive \f$X\f$-axis
+and the tangent is \f$\theta + \phi\f$, and
+\f$\hat{v_0} = [\cos(\theta + \phi), \sin(\theta + \phi)]\f$.
+Then to get from point \f$\vec{p}\f$ to point \f$\vec{p}_0\f$ we need to go a
+distance of \f$\delta\f$ in the direction of \f$\hat{v}_0\f$,
+that is, \f$\vec{p}_0 = \vec{p} + \delta \hat{v}_0\f$.
+
+\anchor fig17
+\image html tangent2.png "Fig. 17: Second point of intersection on tangent through a point." width=30%
+
+The computation of the second of these points \f$\vec{p}_1\f$ is similar to the above,
+except that
+\f$\hat{v_1} = [\cos(\theta - \phi), \sin(\theta - \phi)]\f$,
+noting that in \ref fig17 "Fig. 17", \f$\theta\f$ is the positive
+angle between \f$\vec{v}\f$ and \f$\hat{v}_1\f$ and
+\f$\phi\f$ is the positive
+angle between the \f$X\f$-axis and \f$\hat{v}_1\f$.
+
+\anchor section5-9-4
+### 5.9.4 Common Tangents
+
+\anchor fig18
+\image html commontangent.png "Fig. 18: Tangent common to two circles." width=75%
+
+Suppose we wish to compute the line segments
+for the tangents to two circles of radius
+\f$r_0\f$ and \f$r_1\f$, where \f$r_1 < r_0\f$, as shown in \ref fig18 "Fig. 18", left.
+J. Casey, "A sequel to the First Six
+Books of the Elements of Euclid", pp. 31-32, 1888 notes that you can shrink
+both circles by the same amount and maintain exactly the same tangents.
+As observed in \ref fig18 "Fig. 18", right, you can shrink the smaller
+(yellow) circle down to a single point while shrinking the larger (green)
+circle down to radius \f$r_0 - r_1\f$.
+This reduces the problem to that of finding the intersection points of
+the tangents of a circle through an external point, which we can solve
+sing the method of \ref section5-9-3 "Section 5.9.3".
+Suppose the points of intersection are \f$\vec{p}_0, \vec{p}_1\f$ and the
+center of the smaller circle is at position \f$\vec{p}\f$.
+then translating this line segment along the radius through
+\f$p_0\f$ a distance \f$r_1\f$. 
+
+\anchor section5-9-5
+### 5.9.5 Collision Detection
 
 \anchor section5-10
 ## 5.10 Arcs
 
 Arcs are implemented as class `Shapes::CArc`, derived from `Shapes::CCircle`
 (see \ref section5-9 "Section 5.9").
-They are instantiated using the descriptor `Shapes::CCArcDesc`.
+They are instantiated using the descriptor `Shapes::CArcDesc`.
+
+\anchor section5-11
+## 5.11 Kinematic Shapes
+
+\anchor section5-12
+## 5.12 Dynamic Shapes
+
+\anchor section5-13
+## 5.13 Compound Shapes
 
 \anchor section6
 # 6. What Next?

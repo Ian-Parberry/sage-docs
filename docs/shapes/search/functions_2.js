@@ -16,7 +16,7 @@ var searchData=
   ['getnormal_13',['GetNormal',['../class_shapes_1_1_c_line_seg_desc.html#a5d5ea766e3ff8828beb48d654627858e',1,'Shapes::CLineSegDesc::GetNormal()'],['../class_shapes_1_1_c_line_seg.html#a69032d85726e90bde082090d461f3020',1,'Shapes::CLineSeg::GetNormal()']]],
   ['getorientation_14',['GetOrientation',['../class_shapes_1_1_c_compound_shape.html#a46edfd995f6bf8d3575b3f3afc0e5c8e',1,'Shapes::CCompoundShape::GetOrientation()'],['../class_shapes_1_1_c_shape.html#a5f04302f75adf765ee49c7e492811179',1,'Shapes::CShape::GetOrientation() const']]],
   ['getpos_15',['GetPos',['../class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a',1,'Shapes::CShape']]],
-  ['getradius_16',['GetRadius',['../class_shapes_1_1_c_circle.html#a4b614c07e673528f84cb2a3c3c8a7aba',1,'Shapes::CCircle']]],
+  ['getradius_16',['GetRadius',['../class_shapes_1_1_c_circle.html#a4e47f001eba047fe82bf7c314aad42b6',1,'Shapes::CCircle']]],
   ['getrotating_17',['GetRotating',['../class_shapes_1_1_c_shape.html#a6f59c0c25d31ef6223392036ea669ecd',1,'Shapes::CShape']]],
   ['getrotcenter_18',['GetRotCenter',['../class_shapes_1_1_c_compound_shape.html#ad54e85ea891fd18cd485634580ac223c',1,'Shapes::CCompoundShape::GetRotCenter()'],['../class_shapes_1_1_c_shape.html#a722bbf814f0a699f1f31a530224fa93b',1,'Shapes::CShape::GetRotCenter()']]],
   ['getrotspeed_19',['GetRotSpeed',['../class_shapes_1_1_c_compound_shape.html#a66f90f1357a09d845f0a0452814bf088',1,'Shapes::CCompoundShape::GetRotSpeed()'],['../class_shapes_1_1_c_shape.html#a50201fa1d006baa8eccf7b6a6cccfd0d',1,'Shapes::CShape::GetRotSpeed() const']]],
