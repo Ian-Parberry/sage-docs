@@ -28,7 +28,7 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="collidepoint.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign">
    <div id="projectname">The Shapes Library
    </div>
@@ -234,7 +234,7 @@ Fig. 14: Point on perimeter closest to a point.</div></div>
 <img src="tangent0.png" alt="" width="25%"/>
 <div class="caption">
 Fig. 15: Points of intersection on tangent through a point.</div></div>
-<p>Suppose we wish to find the intersection points \(\vec{p}_0, \vec{p}_1\) of the tangents to a circle of radius \(r\) and center \(\vec{u}\) through an exterior point \(\vec{p}\). Let \(\vec{v} = \vec{u} - \vec{p}\) be the vector from \(\vec{p}\) to \(\vec{u}\). Let \(\hat{v_0}\) be the unit vector that points along the tangent from \(\vec{p}\) to \(\vec{p}_0\) and let \(\hat{v_1}\) be the unit vector that points along the tangent from \(\vec{p}\) to \(\vec{p}_1\). This is depicted in <a class="el" href="index.html#fig15">Fig.15</a>.</p>
+<p><code><a class="el" href="class_shapes_1_1_c_circle.html#a8465052c0a6352328832c657b2f147dd" title="Tangents through external point.">Shapes::CCircle::Tangents</a>(const Vector2&amp;, Vector2&amp;, Vector2&amp;)</code> finds the intersection points \(\vec{p}_0, \vec{p}_1\) of the tangents to a circle of radius \(r\) and center \(\vec{u}\) through an exterior point \(\vec{p}\). Let \(\vec{v} = \vec{u} - \vec{p}\) be the vector from \(\vec{p}\) to \(\vec{u}\). Let \(\hat{v_0}\) be the unit vector that points along the tangent from \(\vec{p}\) to \(\vec{p}_0\) and let \(\hat{v_1}\) be the unit vector that points along the tangent from \(\vec{p}\) to \(\vec{p}_1\). This is depicted in <a class="el" href="index.html#fig15">Fig.15</a>.</p>
 <p><a class="anchor" id="fig16"></a></p><div class="image">
 <img src="tangent1.png" alt="" width="30%"/>
 <div class="caption">
@@ -250,11 +250,39 @@ Fig. 17: Second point of intersection on tangent through a point.</div></div>
 <img src="commontangent.png" alt="" width="75%"/>
 <div class="caption">
 Fig. 18: Tangent common to two circles.</div></div>
-<p>Suppose we wish to compute the line segments for the tangents to two circles of radius \(r_0\) and \(r_1\), where \(r_1 &lt; r_0\), as shown in <a class="el" href="index.html#fig18">Fig. 18</a>, left. J. Casey, "A sequel to the First Six
-Books of the Elements of Euclid", pp. 31-32, 1888 notes that you can shrink both circles by the same amount and maintain exactly the same tangents. As observed in <a class="el" href="index.html#fig18">Fig. 18</a>, right, you can shrink the smaller (yellow) circle down to a single point while shrinking the larger (green) circle down to radius \(r_0 - r_1\). This reduces the problem to that of finding the intersection points of the tangents of a circle through an external point, which we can solve sing the method of <a class="el" href="index.html#section5-9-3">Section 5.9.3</a>. Suppose the points of intersection are \(\vec{p}_0, \vec{p}_1\) and the center of the smaller circle is at position \(\vec{p}\). then translating this line segment along the radius through \(p_0\) a distance \(r_1\).</p>
+<p><code><a class="el" href="class_shapes_1_1_c_circle.html#a8465052c0a6352328832c657b2f147dd" title="Tangents through external point.">Shapes::CCircle::Tangents</a>(const CCircle*, CLineSegDesc&amp;, CLineSegDesc&amp;)</code> computes the line segments for the tangents to two circles of radius \(r_0\) and \(r_1\), where \(r_1 &lt; r_0\), as shown in <a class="el" href="index.html#fig18">Fig. 18</a>, left. J. Casey, <em>A sequel to the First Six Books of the Elements of Euclid</em>, pp. 31-32, 1888 notes that you can shrink both circles by the same amount and maintain exactly the same tangents. As observed in <a class="el" href="index.html#fig18">Fig. 18</a>, right, you can shrink the smaller (yellow) circle down to a single point while shrinking the larger (green) circle down to radius \(r_0 - r_1\). This reduces the problem to that of finding the intersection points of the tangents of a circle through an external point, which we can solve using the method of <a class="el" href="index.html#section5-9-3">Section 5.9.3</a>.</p>
+<p><a class="anchor" id="fig19"></a></p><div class="image">
+<img src="commontangent2.png" alt="" width="35%"/>
+<div class="caption">
+Fig. 19: Intersection points of common tangents.</div></div>
+<p>Suppose the points of intersection on the reduced large circle are \(\vec{p}_0, \vec{p}_1\) and its center is at position \(\vec{u}\), as shown in <a class="el" href="index.html#fig19">Fig. 19</a>. Compute \(\vec{n}_0 = \vec{p}_0 - \vec{u}\) and \(\vec{n}_1 = \vec{p}_1 - \vec{u}\) and normalize them to get \(\hat{n}_0\) and \(\hat{n}_1\). Then the points of intersection of the common tangents of the two circles are \(\vec{q}_0 = \vec{p}_0 + r_1 \hat{n}_0\) \(\vec{q}_1 = \vec{p}_1 + r_1 \hat{n}_1\) on the large circle and \(\vec{q}_2 = \vec{p} + r_1 \hat{n}_0\) \(\vec{q}_3 = \vec{p} + r_1 \hat{n}_1\), again as shown in <a class="el" href="index.html#fig19">Fig. 19</a>.</p>
 <p><a class="anchor" id="section5-9-5"></a></p><h3>5.9.5 Collision Detection</h3>
+<p>As we did with line segments (see <a class="el" href="index.html#section5-8">Section 5.8</a>), <code><a class="el" href="class_shapes_1_1_c_circle.html#ac672d4f951692521c85862be7cd1c713" title="Collision detection.">Shapes::CCircle::CollisionDetected</a></code> foists off the work of filling in the collision descriptor <code>c</code> to an instance of <code><a class="el" href="class_shapes_1_1_c_point.html" title="Point shape.">Shapes::CPoint</a></code> for the closest point on the dynamic circle to the center of this circle, as follows. </p><pre class="fragment">return CPoint(ClosestPt(c.m_pCircle-&gt;GetPos())).CollisionDetected(c);
+</pre><p> As before, this is not the correct POI but we will see in later projects that it is close enough.</p>
 <p><a class="anchor" id="section5-10"></a></p><h2>5.10 Arcs</h2>
 <p>Arcs are implemented as class <code><a class="el" href="class_shapes_1_1_c_arc.html" title="Arc shape.">Shapes::CArc</a></code>, derived from <code><a class="el" href="class_shapes_1_1_c_circle.html" title="Circle shape.">Shapes::CCircle</a></code> (see <a class="el" href="index.html#section5-9">Section 5.9</a>). They are instantiated using the descriptor <code><a class="el" href="class_shapes_1_1_c_arc_desc.html" title="Arc descriptor.">Shapes::CArcDesc</a></code>.</p>
+<p><a class="anchor" id="section5-10-1"></a></p><h3>5.10.1 Arc Descriptors</h3>
+<p><a class="anchor" id="fig20"></a></p><div class="image">
+<img src="arcdesc.png" alt="" width="35%"/>
+<div class="caption">
+Fig. 20: Arc angles, points, and tangents.</div></div>
+<p>Arcs are defined by a pair of angles, for example, the angles \(\alpha_0\) and \(\alpha_1\) shown in <a class="el" href="index.html#fig20">Fig. 20</a>. Note that at all times we will ensure that the stored values of these angles in <code><a class="el" href="class_shapes_1_1_c_arc_desc.html" title="Arc descriptor.">Shapes::CArcDesc</a></code> and <code><a class="el" href="class_shapes_1_1_c_arc.html" title="Arc shape.">Shapes::CArc</a></code> always have the property that \(0 \leq \alpha_0, \alpha_1 &lt; 2\pi\). As shown in <a class="el" href="index.html#fig20">Fig. 20</a>, we always store the coordinates of the end points of the arc \(\vec{p}_0\) and \(\vec{p}_1\), respectively, and the tangents to the arc at those points \(\vec{t}_0\) and \(\vec{t}_1\), respectively. To facilitate consistency is maintained when we rotate an arc in <code><a class="el" href="class_shapes_1_1_c_kinematic_arc.html" title="Kinematic arc shape.">Shapes::CKinematicArc</a></code>, the angles, points, and tangents will be stored in private member variables that are updated together automatically using <code>Set</code> functions. This is not formally allowed in our definition of a <a href="../sage/index.html#sec2-2">Descriptor</a>, but as Ralph Waldo Emerson once said, "Consistency is the bugbear of tiny minds."</p>
+<p><a class="anchor" id="fig21"></a></p><div class="image">
+<img src="arcangles.png" alt="" width="35%"/>
+<div class="caption">
+Fig. 21: Angle size determines arc direction.</div></div>
+<p>Note that our definition of arc so far is ambiguous: the arc could be either the smaller or larger portion of a circle. Our code will adopt the convention that the arc counterclockwise from \(\vec{p}_0\) to \(\vec{p}_1\). Therefore, flipping the arc from one portion of a circle to its complement means just swapping the angles and swapping and reversing the direction of the normals. For example, in <a class="el" href="index.html#fig21">Fig. 21</a> (left) we have the case that \(\alpha_0 &lt; \alpha_1\), while in <a class="el" href="index.html#fig21">Fig. 21</a> (right) \(\alpha_0 &gt; \alpha_1\).</p>
+<p><a class="anchor" id="section5-10-2"></a></p><h3>5.10.2 Arc Update</h3>
+<p><a class="anchor" id="fig22"></a></p><div class="image">
+<img src="arcquad.png" alt="" width="40%"/>
+<div class="caption">
+Fig. 22: Arc AABBs.</div></div>
+<p>Function <code><a class="el" href="class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius.">Shapes::CArc::Update</a></code> computes the arc's end points, tangents, and AABB from its center point and angles. The trickiest of these is the AABB. Consider the arc shown in <a class="el" href="index.html#fig22">Fig. 22</a>, left. Since none of what we will call <em>quadrant points</em>, the four points on the extreme left, right, top, and bottom of the circle containing the arc (shown in red), then the AABB of the arc (shown in green) is just the smallest AABB that contains the end points of the arc \(\vec{p}_0\) and \(\vec{p}_1\). <a class="el" href="index.html#fig22">Fig. 22</a>, right, shows three arcs that do overlap one or more of the quadrant points. Clearly, their AABBs must be the smallest AABB that includes their respective end points and whichever quadrant points lie on the arc.</p>
+<p><a class="anchor" id="section5-10-3"></a></p><h3>5.10.3 Point in Sector Test</h3>
+<p><a class="anchor" id="fig23"></a></p><div class="image">
+<img src="arcsector.png" alt="" width="35%"/>
+<div class="caption">
+Fig. 23: The sector of an arc is the light gray area extending out to infinity.</div></div>
 <p><a class="anchor" id="section5-11"></a></p><h2>5.11 Kinematic Shapes</h2>
 <p><a class="anchor" id="section5-12"></a></p><h2>5.12 Dynamic Shapes</h2>
 <p><a class="anchor" id="section5-13"></a></p><h2>5.13 Compound Shapes</h2>

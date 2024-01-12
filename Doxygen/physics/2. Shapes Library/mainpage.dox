@@ -452,7 +452,8 @@ as shown in \ref fig14 "Fig. 14".
 \anchor fig15
 \image html tangent0.png "Fig. 15: Points of intersection on tangent through a point." width=25%
 
-Suppose we wish to find the intersection points \f$\vec{p}_0, \vec{p}_1\f$ of the
+`Shapes::CCircle::Tangents(const Vector2&, Vector2&, Vector2&)`
+finds the intersection points \f$\vec{p}_0, \vec{p}_1\f$ of the
 tangents to a
 circle of radius \f$r\f$ and center \f$\vec{u}\f$ through an exterior point \f$\vec{p}\f$.
 Let \f$\vec{v} = \vec{u} - \vec{p}\f$ be the vector from \f$\vec{p}\f$ to \f$\vec{u}\f$.
@@ -464,7 +465,6 @@ This is depicted in \ref fig15 "Fig.15".
 
 \anchor fig16
 \image html tangent1.png "Fig. 16: First point of intersection on tangent through a point." width=30%
-
 
 Consider the first of these points \f$\vec{p}_0\f$.
 Consider the triangle with vertices \f$\vec{p}\f$, \f$\vec{p}_0\f$, and \f$\vec{u}\f$
@@ -503,25 +503,46 @@ angle between the \f$X\f$-axis and \f$\hat{v}_1\f$.
 \anchor fig18
 \image html commontangent.png "Fig. 18: Tangent common to two circles." width=75%
 
-Suppose we wish to compute the line segments
+`Shapes::CCircle::Tangents(const CCircle*, CLineSegDesc&, CLineSegDesc&)`
+computes the line segments
 for the tangents to two circles of radius
 \f$r_0\f$ and \f$r_1\f$, where \f$r_1 < r_0\f$, as shown in \ref fig18 "Fig. 18", left.
-J. Casey, "A sequel to the First Six
-Books of the Elements of Euclid", pp. 31-32, 1888 notes that you can shrink
+J. Casey, <em>A sequel to the First Six
+Books of the Elements of Euclid</em>, pp. 31-32, 1888 notes that you can shrink
 both circles by the same amount and maintain exactly the same tangents.
 As observed in \ref fig18 "Fig. 18", right, you can shrink the smaller
 (yellow) circle down to a single point while shrinking the larger (green)
 circle down to radius \f$r_0 - r_1\f$.
 This reduces the problem to that of finding the intersection points of
 the tangents of a circle through an external point, which we can solve
-sing the method of \ref section5-9-3 "Section 5.9.3".
-Suppose the points of intersection are \f$\vec{p}_0, \vec{p}_1\f$ and the
-center of the smaller circle is at position \f$\vec{p}\f$.
-then translating this line segment along the radius through
-\f$p_0\f$ a distance \f$r_1\f$. 
+using the method of \ref section5-9-3 "Section 5.9.3".
+
+\anchor fig19
+\image html commontangent2.png "Fig. 19: Intersection points of common tangents." width=35%
+
+Suppose the points of intersection on the reduced large circle are \f$\vec{p}_0, \vec{p}_1\f$ and its
+center is at position \f$\vec{u}\f$, as shown in \ref fig19 "Fig. 19".
+Compute \f$\vec{n}_0 = \vec{p}_0 - \vec{u}\f$
+and \f$\vec{n}_1 = \vec{p}_1 - \vec{u}\f$ and normalize them to get \f$\hat{n}_0\f$
+and \f$\hat{n}_1\f$. Then the points of intersection of the common
+tangents of the two circles are \f$\vec{q}_0 = \vec{p}_0 + r_1 \hat{n}_0\f$
+\f$\vec{q}_1 = \vec{p}_1 + r_1 \hat{n}_1\f$ on the large circle and
+\f$\vec{q}_2 = \vec{p} + r_1 \hat{n}_0\f$
+\f$\vec{q}_3 = \vec{p} + r_1 \hat{n}_1\f$, again
+as shown in \ref fig19 "Fig. 19".
 
 \anchor section5-9-5
 ### 5.9.5 Collision Detection
+
+As we did with line segments (see \ref section5-8 "Section 5.8"),
+`Shapes::CCircle::CollisionDetected`
+foists off the work of filling in the collision descriptor `c` to an instance
+of `Shapes::CPoint` for the closest point on the dynamic circle to the center of
+this circle, as follows.
+
+    return CPoint(ClosestPt(c.m_pCircle->GetPos())).CollisionDetected(c);
+
+As before, this is not the correct POI but we will see in later projects that it is close enough.
 
 \anchor section5-10
 ## 5.10 Arcs
@@ -529,6 +550,63 @@ then translating this line segment along the radius through
 Arcs are implemented as class `Shapes::CArc`, derived from `Shapes::CCircle`
 (see \ref section5-9 "Section 5.9").
 They are instantiated using the descriptor `Shapes::CArcDesc`.
+
+\anchor section5-10-1
+### 5.10.1 Arc Descriptors
+
+\anchor fig20
+\image html arcdesc.png "Fig. 20: Arc angles, points, and tangents." width=35%
+
+Arcs are defined by a pair of angles, for example, the angles \f$\alpha_0\f$
+and \f$\alpha_1\f$ shown in \ref fig20 "Fig. 20". 
+Note that at all times we will ensure that the stored values of these angles in 
+`Shapes::CArcDesc` and `Shapes::CArc` always have the property that
+\f$0 \leq \alpha_0, \alpha_1 < 2\pi\f$.
+As shown in \ref fig20 "Fig. 20", we always store the coordinates of the end points
+of the arc \f$\vec{p}_0\f$ and \f$\vec{p}_1\f$, respectively,
+and the tangents to the arc at those points \f$\vec{t}_0\f$ and \f$\vec{t}_1\f$, respectively.
+To facilitate consistency is maintained when we rotate an arc in `Shapes::CKinematicArc`,
+the angles, points, and tangents will be stored in private member variables that are
+updated together automatically using `Set` functions.
+This is not formally allowed in our definition of a
+<a href="../sage/index.html#sec2-2">Descriptor</a>,
+but as Ralph Waldo Emerson once said, "Consistency is the bugbear of tiny minds."
+
+\anchor fig21
+\image html arcangles.png "Fig. 21: Angle size determines arc direction." width=35%
+
+Note that our definition of arc so far is ambiguous: the arc could 
+be either the smaller or larger portion of a circle.
+Our code will adopt the convention that the arc counterclockwise from \f$\vec{p}_0\f$
+to \f$\vec{p}_1\f$.
+Therefore, flipping the arc from one portion of a circle to its complement
+means just swapping the angles and swapping and reversing the direction of the normals.
+For example, in \ref fig21 "Fig. 21" (left) we have the case that \f$\alpha_0 < \alpha_1\f$,
+while in \ref fig21 "Fig. 21" (right) \f$\alpha_0 > \alpha_1\f$.
+
+\anchor section5-10-2
+### 5.10.2 Arc Update
+
+\anchor fig22
+\image html arcquad.png "Fig. 22: Arc AABBs." width=40%
+
+Function `Shapes::CArc::Update` computes the arc's end points, tangents, and AABB
+from its center point and angles. The trickiest of these is the AABB.
+Consider the arc shown in \ref fig22 "Fig. 22", left.
+Since none of what we will call <em>quadrant points</em>,
+the four points on the extreme left, right, top, and bottom of the
+circle containing the arc (shown in red),
+then the AABB of the arc (shown in green) is just the smallest AABB that contains the
+end points of the arc \f$\vec{p}_0\f$ and \f$\vec{p}_1\f$.
+\ref fig22 "Fig. 22", right, shows three arcs that do overlap one or more
+of the quadrant points. Clearly, their AABBs must be the smallest AABB that includes
+their respective end points and whichever quadrant points lie on the arc.
+
+\anchor section5-10-3
+### 5.10.3 Point in Sector Test
+
+\anchor fig23
+\image html arcsector.png "Fig. 23: The sector of an arc is the light gray area extending out to infinity." width=35%
 
 \anchor section5-11
 ## 5.11 Kinematic Shapes
