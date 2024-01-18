@@ -25,6 +25,6 @@ var searchData=
   ['gettangents_22',['GetTangents',['../class_shapes_1_1_c_arc.html#a67d859f62374bd8685e768889382f8a7',1,'Shapes::CArc::GetTangents()'],['../class_shapes_1_1_c_line_seg.html#a482c5eaae8952906da897b2e49cb2b25',1,'Shapes::CLineSeg::GetTangents()']]],
   ['gettopleft_23',['GetTopLeft',['../class_shapes_1_1_c_aabb2_d.html#a732dfb9fe169a9a7d597cd6ea5788ba7',1,'Shapes::CAabb2D']]],
   ['getuserptr_24',['GetUserPtr',['../class_shapes_1_1_c_shape.html#a712df6c7164d15900bddefc1a16d0136',1,'Shapes::CShape']]],
-  ['getvel_25',['GetVel',['../class_shapes_1_1_c_dynamic_circle.html#ac07da6398f4b16500aeb714a8e0eb96d',1,'Shapes::CDynamicCircle']]],
+  ['getvel_25',['GetVel',['../class_shapes_1_1_c_dynamic_circle.html#a1175766174a320a27bdd8180cd167303',1,'Shapes::CDynamicCircle']]],
   ['getwidth_26',['GetWidth',['../class_shapes_1_1_c_aabb2_d.html#a67228a661c77b123d9a5ea2141330ee8',1,'Shapes::CAabb2D']]]
 ];

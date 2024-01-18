@@ -176,9 +176,23 @@ Motion types are identified using `Shapes::eMotion`, also defined in `Shape.h`.
 \anchor section5-4
 ## 5.4 Basic Shapes
 
-`Shapes::CShapeCommon`
-`Shapes::CShapeDesc`
-`Shapes::CShape`
+`Shapes::CShapeCommon` contains values common to all shapes.
+`Shapes::CShapeDesc` is a shape descriptor.
+`Shapes::CShape` is the base class for all shapes, from which the static shapes
+`Shapes::CPoint` (see \ref section5-7 "Section 5.7"),
+`Shapes::CLineSeg` (see \ref section5-8 "Section 5.8"),
+`Shapes::CCircle` (see \ref section5-9 "Section 5.9"), and
+`Shapes::CArc` (see \ref section5-10 "Section 5.10") are derived.
+`Shapes::CShape` has various protected member variables relating to shapes.
+Of particular interest is
+`Shapes::CShape::m_eMotionType`, which
+is initialized to `Shapes::eMotion::Static`,
+so that the shapes described in \ref section5-7 "Section 5.7"
+through \ref section5-10 "Section 5.10" will be static shapes by default.
+`Shapes::CShape::m_eMotionType` will be changes to `Shapes::eMotion::Kinematic`
+in the constructors of kinematic shapes (see \ref  section5-11 "Section 5.11")
+and to `Shapes::eMotion::Dynamic`
+in the constructors of dynamic shapes (see \ref  section5-12 "Section 5.12").
 
 \anchor section5-5
 ## 5.5 Collision Detection and Response
@@ -577,12 +591,15 @@ but as Ralph Waldo Emerson once said, "Consistency is the bugbear of tiny minds.
 
 Note that our definition of arc so far is ambiguous: the arc could 
 be either the smaller or larger portion of a circle.
-Our code will adopt the convention that the arc counterclockwise from \f$\vec{p}_0\f$
+Our code will adopt the convention that the arc is that part of the perimeter
+of a circle that goes counterclockwise from \f$\vec{p}_0\f$
 to \f$\vec{p}_1\f$.
 Therefore, flipping the arc from one portion of a circle to its complement
 means just swapping the angles and swapping and reversing the direction of the normals.
 For example, in \ref fig21 "Fig. 21" (left) we have the case that \f$\alpha_0 < \alpha_1\f$,
 while in \ref fig21 "Fig. 21" (right) \f$\alpha_0 > \alpha_1\f$.
+For convenience, we will call the former an <em>acute</em> arc
+and the latter an <em>obtuse</em> arc.
 
 \anchor section5-10-2
 ### 5.10.2 Arc Update
@@ -606,13 +623,98 @@ their respective end points and whichever quadrant points lie on the arc.
 ### 5.10.3 Point in Sector Test
 
 \anchor fig23
-\image html arcsector.png "Fig. 23: The sector of an arc is the light gray area extending out to infinity." width=35%
+\image html arcsector.png "Fig. 23: The sector of an arc is the light gray area extending out to infinity." width=30%
+
+Function `Shapes::CArc::PtInSector` determines whether the coordinates
+of a point \f$\vec{p}\f$ lie within the sector of the arc,
+which depends on whether the arc is acute or obtuse
+(refer back to \ref section5-10-1 "Section 5.10.1" for definitions).
+It begins by finding the orientation \f$\alpha\f$ of the vector
+from the center of the arc to \f$\vec{p}\f$.
+Suppose the arc angles are \f$\alpha_0\f$ and \f$\alpha_1\f$.
+If \f$\alpha_0 < \alpha_1\f$, then the arc is acute
+and \f$\vec{p}\f$ is within the sector of the arc iff
+\f$\alpha_0 \leq \alpha \leq \alpha_1\f$ (see \ref fig24 "Fig. 24").
+
+\anchor fig24
+\image html arcptinsector1.png "Fig. 24: Point in sector test for acute arcs." width=15%
+
+Otherwise, the arc is obtuse and 
+\f$\vec{p}\f$ is within the sector of the arc iff
+\f$\alpha_0 \leq \alpha \f$ or
+\f$\alpha \leq \alpha_1\f$ (see \ref fig25 "Fig. 25").
+
+\anchor fig25
+\image html arcptinsector2.png "Fig. 25: Point in sector test for obtuse arcs." width=35%
+
+\anchor section5-10-4
+### 5.10.4 Collision Detection
+
+`Shapes::CArc::CollisionDetected` begins by rejecting the collision if the
+dynamic circle comes from outside the arc sector or is inside the arc circle and
+is approaching in the
+direction opposite a tangent to the arc. This is to avoid overlap with the end
+of the arc as much as possible.
+Otherwise the POI is taken to be the point on the arc closest to the
+center of the dynamic circle, and the 
+work of filling in the collision descriptor `c` is once again foisted off to an instance
+of `Shapes::CPoint` for the POI.
+
+    return CPoint(ClosestPt(c.m_pCircle->GetPos())).CollisionDetected(c);
+
+As before, this is not the correct POI but we will see in later projects that it is close enough.
 
 \anchor section5-11
 ## 5.11 Kinematic Shapes
 
+The Shapes Library includes the following kinematic shapes
+`Shapes::CKinematicPoint`, `Shapes::CKinematicLineSeg`, `Shapes::CKinematicCircle`, and
+`Shapes::CKinematicArc`.
+Each kinematic shape is derived from the corresponding
+static shape described in \ref sec5-10 "Section 5.10" and inherits `Shapes::CShape::m_eMotionType`
+which is set to `Shapes::eMotion::Kinematic` in the constructor.
+Each kinematic shape has additional private
+member variables in which the relevant constructor stores its initial
+position and/or orientation at time of instantiation.
+Every kinematic shape has a `Reset` function that resets its current position
+and orientation to the initial ones and a `Rotate` function
+that takes the coordinates of the center of rotation and an angle by which to rotate. 
+
 \anchor section5-12
 ## 5.12 Dynamic Shapes
+
+The only dynamic shapes implemented so far in the Shapes Library is
+`Shapes::CDynamicCircle`, which is derived from `Shapes::CCircle`
+and has its own descriptor `Shapes::CDynamicCircleDesc`.
+It has private member variables `Shapes::CDynamicCircle::m_vVel`
+for its velocity and `Shapes::CDynamicCircle::m_fMass` for its mass.
+The most interesting part of `Shapes::CDynamicCircle` is its collision response
+functions. Public member function `Shapes::CDynamicCircle::CollisionResponse`
+takes as parameter a const reference to a contact descriptor that describes
+the collision. This is passed to private member functions
+`Shapes::CDynamicCircle::CollisionResponseStatic`,
+`Shapes::CDynamicCircle::CollisionResponseKinematic`, or
+`Shapes::CDynamicCircle::CollisionResponseDynamic`,
+depending on whether the object that this dynamic circle is colliding with
+is, respectively, static, kinematic, or dynamic.
+
+\anchor section5-12-1
+### 5.12.1 Static Shape Collision Reponse
+
+`Shapes::CDynamicCircle::CollisionResponseStatic` computes a dynamic
+circle's response to collision with a static shape.
+
+\anchor section5-12-2
+### 5.12.2 Kinematic Shape Collision Reponse
+
+`Shapes::CDynamicCircle::CollisionResponseKinematic` computes a dynamic
+circle's response to collision with a kinematic shape.
+
+\anchor section5-12-3
+### 5.12.3 Dynamic Shape Collision Reponse
+
+`Shapes::CDynamicCircle::CollisionResponseDynamic` computes a dynamic
+circle's response to collision with a dynamic shape.
 
 \anchor section5-13
 ## 5.13 Compound Shapes
