@@ -10,12 +10,14 @@ There's really no need for you to pay much attention
 to the source code except for the code
 in the [Shapes Library](../shapes/index.html). 
 
-@image html screenshot.png "Ten balls with Show Tracks turned on."
+\anchor fig1
+\image html screenshot.png "Fig. 1: Screen shot." width=60%
 
 You might, however, be interested in the Windows dialog
 box code which uses native Windows API calls.
 
-@image html dialogbox.png "The dialog box containing the controls."
+\anchor fig2
+\image html dialogbox.png "Fig. 2: The dialog box containing the controls." width=50%
 
 ## Dialog Box Controls
 
@@ -23,21 +25,33 @@ The dialog box controls are clustered into named regions as described below.
 
 ### Balls in Play
 
+\anchor fig3
+\image html dialogbox1.png "Fig. 3: Balls in play."
+
 - Launched: The number of balls launched.
 - Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
 - Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
 
 ### Load
 
+\anchor fig4
+\image html dialogbox2.png "Fig. 4: Load."
+
 - FPS: The current number of animation frames per second.
 - Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.
 
 ### Next Ball
 
+\anchor fig5
+\image html dialogbox3.png "Fig. 5: Next Ball."
+
 - Size: The size of the next ball to be launched is controlled by a slider.
 - Speed: The speed of the next ball to be launched is controlled by a slider.
 
 ### Collision Detection and Response
+
+\anchor fig6
+\image html dialogbox4.png "Fig. 6: Collision Detection and Response."
 
 - AABB tests per iteration: The number of AABB overlap tests performed per collision iteration.
 - AABB tests per second: The number of AABB overlap tests performed per second.
@@ -45,6 +59,9 @@ The dialog box controls are clustered into named regions as described below.
 - Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.
 
 ### Quadtree
+
+\anchor fig7
+\image html dialogbox5.png "Fig. 7: Quadtree."
 
 - Active: Toggle the use of quadtrees for space subdivision.
 - Levels: Set the number of levels in the quadtree.
@@ -55,10 +72,25 @@ The dialog box controls are clustered into named regions as described below.
 
 ### Iterations
 
+\anchor fig8
+\image html dialogbox6.png "Fig. 8: Iterations."
+
 - Motion: The number of motion iterations per animation frame.
 - Collision: The number of collision iterations per motion iteration.
 
+### Other
+
+\anchor fig9
+\image html dialogbox7.png "Fig. 9: Other."
+
+- Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.
+- Rotate: Toggle rotation of the kinematic shapes.
+- Help: Show help from web page.
+
 ### Show
+
+\anchor fig10
+\image html dialogbox8.png "Fig. 10: Show."
 
 - Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color.
 - Tracks: Draw a track behind each ball.
@@ -71,13 +103,16 @@ The dialog box controls are clustered into named regions as described below.
 
 ### Launch
 
+\anchor fig11
+\image html dialogbox9.png "Fig. 11: Launch."
+
 - Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.
 
-### Other
+### Buttons
 
-- Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.
-- Rotate: Toggle rotation of the kinematic shapes.
-- Help: Show help from web page.
+\anchor fig12
+\image html dialogbox10.png "Fig. 12: Buttons."
+
 - Clear: Delete all of the balls.
 - Quit: Exit the program.
 

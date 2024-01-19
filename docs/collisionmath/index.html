@@ -80,34 +80,50 @@ $(function() {
 
 <div><div class="contents">
 <div class="textblock"><p>This is a collision detection and response toy. It's driven by a dialog box so there is no keyboard input. It's intended to help you visualize what's going on in the Shapes project by experimenting with various settings. There's really no need for you to pay much attention to the source code except for the code in the <a href="../shapes/index.html">Shapes Library</a>.</p>
-<div class="image">
-<img src="screenshot.png" alt=""/>
+<p><a class="anchor" id="fig1"></a></p><div class="image">
+<img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
-Ten balls with Show Tracks turned on.</div></div>
+Fig. 1: Screen shot.</div></div>
 <p>You might, however, be interested in the Windows dialog box code which uses native Windows API calls.</p>
-<div class="image">
-<img src="dialogbox.png" alt=""/>
+<p><a class="anchor" id="fig2"></a></p><div class="image">
+<img src="dialogbox.png" alt="" width="50%"/>
 <div class="caption">
-The dialog box containing the controls.</div></div>
+Fig. 2: The dialog box containing the controls.</div></div>
 <h2>Dialog Box Controls</h2>
 <p>The dialog box controls are clustered into named regions as described below.</p>
 <h3>Balls in Play</h3>
+<p><a class="anchor" id="fig3"></a></p><div class="image">
+<img src="dialogbox1.png" alt=""/>
+<div class="caption">
+Fig. 3: Balls in play.</div></div>
 <ul>
 <li>Launched: The number of balls launched.</li>
 <li>Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 <li>Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 </ul>
 <h3>Load</h3>
+<p><a class="anchor" id="fig4"></a></p><div class="image">
+<img src="dialogbox2.png" alt=""/>
+<div class="caption">
+Fig. 4: Load.</div></div>
 <ul>
 <li>FPS: The current number of animation frames per second.</li>
 <li>Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.</li>
 </ul>
 <h3>Next Ball</h3>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
+<img src="dialogbox3.png" alt=""/>
+<div class="caption">
+Fig. 5: Next Ball.</div></div>
 <ul>
 <li>Size: The size of the next ball to be launched is controlled by a slider.</li>
 <li>Speed: The speed of the next ball to be launched is controlled by a slider.</li>
 </ul>
 <h3>Collision Detection and Response</h3>
+<p><a class="anchor" id="fig6"></a></p><div class="image">
+<img src="dialogbox4.png" alt=""/>
+<div class="caption">
+Fig. 6: Collision Detection and Response.</div></div>
 <ul>
 <li>AABB tests per iteration: The number of AABB overlap tests performed per collision iteration.</li>
 <li>AABB tests per second: The number of AABB overlap tests performed per second.</li>
@@ -115,6 +131,10 @@ The dialog box containing the controls.</div></div>
 <li>Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.</li>
 </ul>
 <h3>Quadtree</h3>
+<p><a class="anchor" id="fig7"></a></p><div class="image">
+<img src="dialogbox5.png" alt=""/>
+<div class="caption">
+Fig. 7: Quadtree.</div></div>
 <ul>
 <li>Active: Toggle the use of quadtrees for space subdivision.</li>
 <li>Levels: Set the number of levels in the quadtree.</li>
@@ -124,11 +144,29 @@ The dialog box containing the controls.</div></div>
 <li>Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.</li>
 </ul>
 <h3>Iterations</h3>
+<p><a class="anchor" id="fig8"></a></p><div class="image">
+<img src="dialogbox6.png" alt=""/>
+<div class="caption">
+Fig. 8: Iterations.</div></div>
 <ul>
 <li>Motion: The number of motion iterations per animation frame.</li>
 <li>Collision: The number of collision iterations per motion iteration.</li>
 </ul>
+<h3>Other</h3>
+<p><a class="anchor" id="fig9"></a></p><div class="image">
+<img src="dialogbox7.png" alt=""/>
+<div class="caption">
+Fig. 9: Other.</div></div>
+<ul>
+<li>Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.</li>
+<li>Rotate: Toggle rotation of the kinematic shapes.</li>
+<li>Help: Show help from web page.</li>
+</ul>
 <h3>Show</h3>
+<p><a class="anchor" id="fig10"></a></p><div class="image">
+<img src="dialogbox8.png" alt=""/>
+<div class="caption">
+Fig. 10: Show.</div></div>
 <ul>
 <li>Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color.</li>
 <li>Tracks: Draw a track behind each ball.</li>
@@ -140,14 +178,19 @@ The dialog box containing the controls.</div></div>
 <li>Lights: Light up static and kinematic shapes briefly after each collision.</li>
 </ul>
 <h3>Launch</h3>
+<p><a class="anchor" id="fig11"></a></p><div class="image">
+<img src="dialogbox9.png" alt=""/>
+<div class="caption">
+Fig. 11: Launch.</div></div>
 <ul>
 <li>Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.</li>
 </ul>
-<h3>Other</h3>
+<h3>Buttons</h3>
+<p><a class="anchor" id="fig12"></a></p><div class="image">
+<img src="dialogbox10.png" alt=""/>
+<div class="caption">
+Fig. 12: Buttons.</div></div>
 <ul>
-<li>Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.</li>
-<li>Rotate: Toggle rotation of the kinematic shapes.</li>
-<li>Help: Show help from web page.</li>
 <li>Clear: Delete all of the balls.</li>
 <li>Quit: Exit the program.</li>
 </ul>
