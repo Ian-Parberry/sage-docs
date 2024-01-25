@@ -2,8 +2,8 @@ var searchData=
 [
   ['getaabb_0',['GetAABB',['../class_shapes_1_1_c_shape.html#a78deed5e103c5cbd3d85ac7b6f756c26',1,'Shapes::CShape']]],
   ['getandresettestcount_1',['GetAndResetTestCount',['../class_shapes_1_1_c_aabb2_d.html#a8a9a38963e9c95c1595f7b8947b2c969',1,'Shapes::CAabb2D']]],
-  ['getangle0_2',['GetAngle0',['../class_shapes_1_1_c_arc_desc.html#a083f3dfe699299f1cb542293c8053543',1,'Shapes::CArcDesc']]],
-  ['getangle1_3',['GetAngle1',['../class_shapes_1_1_c_arc_desc.html#a89fbe3e4b45a0a49f72c62ca3b557c0f',1,'Shapes::CArcDesc']]],
+  ['getangle0_2',['GetAngle0',['../class_shapes_1_1_c_arc_desc.html#a4ee05491327c657970f2f20af2b4a7e0',1,'Shapes::CArcDesc']]],
+  ['getangle1_3',['GetAngle1',['../class_shapes_1_1_c_arc_desc.html#a8567e5eb15ccd4c1e72c6d553b28fa81',1,'Shapes::CArcDesc']]],
   ['getbottomrt_4',['GetBottomRt',['../class_shapes_1_1_c_aabb2_d.html#a833247f4510203a3b0aa33c2ca3913d6',1,'Shapes::CAabb2D']]],
   ['getcancollide_5',['GetCanCollide',['../class_shapes_1_1_c_shape.html#ac14d3d23930e4d63f5288b8c39ed99e5',1,'Shapes::CShape']]],
   ['getelasticity_6',['GetElasticity',['../class_shapes_1_1_c_shape.html#a8ce4e8fcc672750e2a3857fc1b5fde0d',1,'Shapes::CShape']]],

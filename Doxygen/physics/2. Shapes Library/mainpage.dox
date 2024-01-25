@@ -183,8 +183,10 @@ Motion types are identified using `Shapes::eMotion`, also defined in `Shape.h`.
 `Shapes::CLineSeg` (see \ref section5-8 "Section 5.8"),
 `Shapes::CCircle` (see \ref section5-9 "Section 5.9"), and
 `Shapes::CArc` (see \ref section5-10 "Section 5.10") are derived.
+
 `Shapes::CShape` has various protected member variables relating to shapes.
-Of particular interest is
+Of particular interest are the following.
+
 `Shapes::CShape::m_eMotionType`, which
 is initialized to `Shapes::eMotion::Static`,
 so that the shapes described in \ref section5-7 "Section 5.7"
@@ -193,6 +195,28 @@ through \ref section5-10 "Section 5.10" will be static shapes by default.
 in the constructors of kinematic shapes (see \ref  section5-11 "Section 5.11")
 and to `Shapes::eMotion::Dynamic`
 in the constructors of dynamic shapes (see \ref  section5-12 "Section 5.12").
+
+`Shapes::CShape::m_fElasticity` is the "bounciness" of a collision,
+with `1.0f` means a perfectly elastic collision, `0.5f` means a collision
+in which half the velocities are lost in a collision,
+and values greater than `1.0f` mean that a collision
+imparts extra velocity to the object that it collides with, 
+perhaps by mechanical or electromechanical means, such as a
+bumper in a pinball machine.
+
+`Shapes::CShape::m_bIsSensor`. If this is set to `true` then
+the shape does not react and does not cause any colliding object
+to react to a collision with it. This can be used, for example,
+as a switch to light up lights in a pinball machine.
+
+`Shapes::CShape::m_bCanCollide` is usually set to `true`, meaning that the shape
+can collide with other shapes. Setting it to `false` will temporarily
+turn off collisions until it is set to `true` again.
+This can be used, for example, for a post that sometimes retracts
+below the surface in a pinball machine.
+
+`Shapes::CShape::m_pUser` is a user pointer (that is, a pointer for the use of the programmer) whose aplication will be seen in the <a href="../collisionmath/index.html">Collision Math Toy</a>
+and the <a href="../pinball/index.html">Pinball Machine</a>.
 
 \anchor section5-5
 ## 5.5 Collision Detection and Response
@@ -671,14 +695,25 @@ The Shapes Library includes the following kinematic shapes
 `Shapes::CKinematicPoint`, `Shapes::CKinematicLineSeg`, `Shapes::CKinematicCircle`, and
 `Shapes::CKinematicArc`.
 Each kinematic shape is derived from the corresponding
-static shape described in \ref sec5-10 "Section 5.10" and inherits `Shapes::CShape::m_eMotionType`
+static shape described in \ref section5-10 "Section 5.10" and inherits `Shapes::CShape::m_eMotionType`
 which is set to `Shapes::eMotion::Kinematic` in the constructor.
 Each kinematic shape has additional private
 member variables in which the relevant constructor stores its initial
 position and/or orientation at time of instantiation.
+
 Every kinematic shape has a `Reset` function that resets its current position
 and orientation to the initial ones and a `Rotate` function
-that takes the coordinates of the center of rotation and an angle by which to rotate. 
+that takes the coordinates of the center of rotation and an angle to be
+added to the initial orientation to get the current orientation. 
+`Shapes::CKinematicPoint::Rotate` and `Shapes::CKinematicCircle::Rotate`
+both use a single call to
+`Shapes::RotatePt` to rotate their positions.
+`Shapes::CKinematicArc::Rotate` also changes the arc angle and calls
+`Shapes::CArc::Update` as the last thing.
+`Shapes::CKinematicLineSeg::Rotate` rotates its end points
+(not its position), swaps the points if they are out of order,
+recomputes the position and lastly calls `Shapes::CLineSeg::Update`.
+
 
 \anchor section5-12
 ## 5.12 Dynamic Shapes
@@ -695,29 +730,105 @@ the collision. This is passed to private member functions
 `Shapes::CDynamicCircle::CollisionResponseStatic`,
 `Shapes::CDynamicCircle::CollisionResponseKinematic`, or
 `Shapes::CDynamicCircle::CollisionResponseDynamic`,
-depending on whether the object that this dynamic circle is colliding with
+depending on whether the shape that this dynamic circle is colliding with
 is, respectively, static, kinematic, or dynamic.
 
 \anchor section5-12-1
-### 5.12.1 Static Shape Collision Reponse
+### 5.12.1 Static Shape Collision Response
 
 `Shapes::CDynamicCircle::CollisionResponseStatic` computes a dynamic
-circle's response to collision with a static shape.
+circle's response to collision with a static shape. 
+The dynamic circle is moved along the contact normal by the setback distance.
+If the dynamic circle is moving towards to POI, then its velocity is
+flipped and multiplied by the product of the dynamic circle and the
+static shape's elasticity.
 
 \anchor section5-12-2
-### 5.12.2 Kinematic Shape Collision Reponse
+### 5.12.2 Kinematic Shape Collision Response
+
+\anchor fig26
+\image html kinematiccollide.png "Fig. 26: Kinematic circle (yellow) collides with kinematic shape." width=35%
 
 `Shapes::CDynamicCircle::CollisionResponseKinematic` computes a dynamic
 circle's response to collision with a kinematic shape.
+It first calls `Shapes::CDynamicCircle::CollisionResponseStatic` to modify the
+dynamic circle's position and velocity as if the kinematic shape
+were static. It then gives an extra kick to the
+dynamic circle's velocity from the kinematic shape's rotation
+delivered through the POI (see \ref fig26 "Fig. 26").
+Let \f$\vec{w}\f$ be the vector from the kinematic shape's
+center of rotation to the POI and let \f$\vec{w}_\perp\f$
+be the counterclockwise perpendicular to \f$\vec{w}\f$, computed using
+`Shapes::perp`.
+Suppose the kinematic shape has rotation speed \f$a\f$ rotations
+per second. Then 
+the velocity of the POI at time of impact is \f$2 \pi a \vec{w}_\perp\f$
+(remembering that the length of \f$\vec{w}_\perp\f$ is the radius of rotation).
+Therefore, the velocity of the POI relative to the dynamic circle
+is \f$\vec{v}_1 = 2 \pi a \vec{w}_\perp - \vec{v}\f$, where \f$\vec{v}\f$ is
+the velocity of the dynamic circle.
+Let \f$\vec{v}_2\f$ be the component of \f$\vec{v}_1\f$
+parallel to \f$\vec{u}\f$
+the vector from the POI to the center of the dynamic circle
+shown in red in \ref fig26 "Fig. 26".
+Then the product of \f$\vec{v}_2\f$ times the elasticities of the shapes
+is added to the velocity \f$\vec{v}\f$ of the dynamic circle.
+
 
 \anchor section5-12-3
-### 5.12.3 Dynamic Shape Collision Reponse
+### 5.12.3 Dynamic Shape Collision Response
 
 `Shapes::CDynamicCircle::CollisionResponseDynamic` computes a dynamic
 circle's response to collision with a dynamic shape.
+The code here is similar to the response code in
+<a href="../pool/class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d">NarrowPhase</a> in the <a href="../pool/index.html">Pool End Game</a>,
+with the major change being the fact that the balls may have different
+masses, and so we use the formula from
+<a href="../newton/index.html#section2">Section 2</a>
+of <a href="../newton/index.html">Newtons's Cradle and Friends</a>
+instead of 
+<a href="../newton/index.html#section1">Section 1</a>.
 
 \anchor section5-13
 ## 5.13 Compound Shapes
+
+`Shapes::CCompoundShape` consists of an `std::vector` of shapes
+and some public functions that can be used to rotate the whole
+shape as if it were kinematic. This is mainly for convenience.
+
+\anchor section5-14
+## 5.14 Naked Shapes
+
+\anchor fig27
+\image html nakedlineseg.png "Fig. 26: A naked line segment with no contact (left), a bad contact (middle) and the correct collision with a protected line segment (right)." width=60%
+
+You will notice from the above that collisions that involve a dynamic
+circle colliding with the ends of a line segment
+(\ref section5-8 "Section 5.8") or arc (\ref section5-10-4 "Section 5.10.4") are rejected.
+For example, dynamic circle collide with line segment is done by finding the closest point to the center of the circle on the line through the line segment and rejecting it if it is not on the line segment, as shown in \ref fig27 "Fig.27", left. 
+Even worse, the dynamic circle may move from there so that the POI is
+actually on the line segment, shown in red in \ref fig27 "Fig.27", middle.
+The collision response for the dynamic circle will place it in the
+grey dotted circle with velocity away from the line segment.
+This usually results in a large jump in position so that the
+dynamic circle skims off the edge of the line segment.
+What we really want is for the dynamic circle to bounce off
+the end of the line segment, as shown in \ref fig27 "Fig.27", right.
+For this to happen, the programmer needs to actually place an
+instance of `Shapes::CPoint` there and make sure that collision detection of
+dynamic shapes and points is done before dynamic shapes and line segments or arcs.
+We will call a line segment or arc without instances of
+`Shapes::CPoint` to protects its ends a <em>naked shape</em>.
+
+\anchor fig28
+\image html notnaked.png "Fig. 28: A line segment (black) that shares a point with and is tangent to an arc (blue), and an incorrect guard point (red)." width=30%
+
+However, there are places in which a guard point is unnecessary and may actually
+give incorrect behavior. This includes arcs and line segments that are share
+an end point and are tangent to other arcs or line segments.
+For example, in \ref fig28 "Fig. 28",
+if the red dot is an instance of `Shapes::CPoint` then the green circle
+may bounce off it and recoil leftwards and down instead of rightwards and down.
 
 \anchor section6
 # 6. What Next?
