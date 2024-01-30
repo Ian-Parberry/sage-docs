@@ -1,29 +1,27 @@
 /**
 \mainpage notitle
+\anchor section1
+# 1. Introduction
 
 This is a collision detection and response toy.
 It's driven by a dialog box so there is no keyboard
 input. It's intended
 to help you visualize what's going on in the 
-Shapes project by experimenting with various settings.
-There's really no need for you to pay much attention
-to the source code except for the code
-in the [Shapes Library](../shapes/index.html). 
+in the [Shapes Library](../shapes/index.html) by experimenting with various settings.
 
 \anchor fig1
 \image html screenshot.png "Fig. 1: Screen shot." width=60%
 
-You might, however, be interested in the Windows dialog
-box code which uses native Windows API calls.
+\anchor section2
+# 2. Controls
 
 \anchor fig2
 \image html dialogbox.png "Fig. 2: The dialog box containing the controls." width=50%
 
-## Dialog Box Controls
+The Collision Math Toy is controlled by the dialog box shown in \ref fig2 "Fig. 2",
+which is divided up into regions as described below.
 
-The dialog box controls are clustered into named regions as described below.
-
-### Balls in Play
+## 2.1 Balls in Play
 
 \anchor fig3
 \image html dialogbox1.png "Fig. 3: Balls in play."
@@ -32,7 +30,7 @@ The dialog box controls are clustered into named regions as described below.
 - Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
 - Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
 
-### Load
+## 2.2 Load
 
 \anchor fig4
 \image html dialogbox2.png "Fig. 4: Load."
@@ -40,7 +38,7 @@ The dialog box controls are clustered into named regions as described below.
 - FPS: The current number of animation frames per second.
 - Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.
 
-### Next Ball
+## 2.3 Next Ball
 
 \anchor fig5
 \image html dialogbox3.png "Fig. 5: Next Ball."
@@ -48,7 +46,7 @@ The dialog box controls are clustered into named regions as described below.
 - Size: The size of the next ball to be launched is controlled by a slider.
 - Speed: The speed of the next ball to be launched is controlled by a slider.
 
-### Collision Detection and Response
+## 2.4 Collision Detection and Response
 
 \anchor fig6
 \image html dialogbox4.png "Fig. 6: Collision Detection and Response."
@@ -58,7 +56,7 @@ The dialog box controls are clustered into named regions as described below.
 - Full tests per second: The number of full tests performed per second. These are performed only when AABBs overlap.
 - Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.
 
-### Quadtree
+## 2.5 Quadtree
 
 \anchor fig7
 \image html dialogbox5.png "Fig. 7: Quadtree."
@@ -70,7 +68,7 @@ The dialog box controls are clustered into named regions as described below.
 - Leaf area: The dimension of the rectangle covered by each quadtree leaf.
 - Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.
 
-### Iterations
+## 2.6 Iterations
 
 \anchor fig8
 \image html dialogbox6.png "Fig. 8: Iterations."
@@ -78,7 +76,7 @@ The dialog box controls are clustered into named regions as described below.
 - Motion: The number of motion iterations per animation frame.
 - Collision: The number of collision iterations per motion iteration.
 
-### Other
+## 2.7 Other
 
 \anchor fig9
 \image html dialogbox7.png "Fig. 9: Other."
@@ -87,7 +85,7 @@ The dialog box controls are clustered into named regions as described below.
 - Rotate: Toggle rotation of the kinematic shapes.
 - Help: Show help from web page.
 
-### Show
+## 2.8 Show
 
 \anchor fig10
 \image html dialogbox8.png "Fig. 10: Show."
@@ -101,14 +99,14 @@ The dialog box controls are clustered into named regions as described below.
 - Sectors: Draw arc sectors.
 - Lights: Light up static and kinematic shapes briefly after each collision.
 
-### Launch
+## 2.9 Launch
 
 \anchor fig11
 \image html dialogbox9.png "Fig. 11: Launch."
 
 - Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.
 
-### Buttons
+## 2.10 Buttons
 
 \anchor fig12
 \image html dialogbox10.png "Fig. 12: Buttons."
@@ -116,13 +114,35 @@ The dialog box controls are clustered into named regions as described below.
 - Clear: Delete all of the balls.
 - Quit: Exit the program.
 
+\anchor section3
+# 3. Building the Game
 
-The Simple Academic Game Engine
----------------
+This code uses <a href="../sage/index.html">SAGE</a> and the <a href="../shapes/index.html">Shapes Library</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>
+and the <a href="../shapes/index.html#section3">Shapes Library Build Instructions</a>.
+Navigate to the folder <span style="background-color:#D8E4D8;">`3. Collision Math Toy`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
+variables correctly.
+Open <span style="background-color:#D8E4D8;">`Collision Math Toy.sln`</span>
+ with Visual Studio and build the Release configuration.
+The Release executable file <span style="background-color:#D8E4D8;">`Collision Math Toy.exe`</span>
+will appear. 
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
 
-This code uses <a href="../sage/index.html">SAGE</a>, the Simple Academic Game Engine.
-Other prototype <a href="../introphysics/index.html">physics games and toys</a>  are also available.
+\anchor section4
+# 4. Game Play
 
+\anchor section5
+# 5. Code Breakdown
+
+\anchor section6
+# 6. What Next?
+
+Next, take a look at the <a href="../pinball/index.html">Pinball Game</a>.
 
 **/
 

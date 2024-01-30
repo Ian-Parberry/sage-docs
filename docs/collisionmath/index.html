@@ -79,19 +79,19 @@ $(function() {
 </div>
 
 <div><div class="contents">
-<div class="textblock"><p>This is a collision detection and response toy. It's driven by a dialog box so there is no keyboard input. It's intended to help you visualize what's going on in the Shapes project by experimenting with various settings. There's really no need for you to pay much attention to the source code except for the code in the <a href="../shapes/index.html">Shapes Library</a>.</p>
+<div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
+<p>This is a collision detection and response toy. It's driven by a dialog box so there is no keyboard input. It's intended to help you visualize what's going on in the in the <a href="../shapes/index.html">Shapes Library</a> by experimenting with various settings.</p>
 <p><a class="anchor" id="fig1"></a></p><div class="image">
 <img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 1: Screen shot.</div></div>
-<p>You might, however, be interested in the Windows dialog box code which uses native Windows API calls.</p>
+<p><a class="anchor" id="section2"></a></p><h1>2. Controls</h1>
 <p><a class="anchor" id="fig2"></a></p><div class="image">
 <img src="dialogbox.png" alt="" width="50%"/>
 <div class="caption">
 Fig. 2: The dialog box containing the controls.</div></div>
-<h2>Dialog Box Controls</h2>
-<p>The dialog box controls are clustered into named regions as described below.</p>
-<h3>Balls in Play</h3>
+<p>The Collision Math Toy is controlled by the dialog box shown in <a class="el" href="index.html#fig2">Fig. 2</a>, which is divided up into regions as described below.</p>
+<h2>2.1 Balls in Play</h2>
 <p><a class="anchor" id="fig3"></a></p><div class="image">
 <img src="dialogbox1.png" alt=""/>
 <div class="caption">
@@ -101,7 +101,7 @@ Fig. 3: Balls in play.</div></div>
 <li>Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 <li>Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 </ul>
-<h3>Load</h3>
+<h2>2.2 Load</h2>
 <p><a class="anchor" id="fig4"></a></p><div class="image">
 <img src="dialogbox2.png" alt=""/>
 <div class="caption">
@@ -110,7 +110,7 @@ Fig. 4: Load.</div></div>
 <li>FPS: The current number of animation frames per second.</li>
 <li>Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.</li>
 </ul>
-<h3>Next Ball</h3>
+<h2>2.3 Next Ball</h2>
 <p><a class="anchor" id="fig5"></a></p><div class="image">
 <img src="dialogbox3.png" alt=""/>
 <div class="caption">
@@ -119,7 +119,7 @@ Fig. 5: Next Ball.</div></div>
 <li>Size: The size of the next ball to be launched is controlled by a slider.</li>
 <li>Speed: The speed of the next ball to be launched is controlled by a slider.</li>
 </ul>
-<h3>Collision Detection and Response</h3>
+<h2>2.4 Collision Detection and Response</h2>
 <p><a class="anchor" id="fig6"></a></p><div class="image">
 <img src="dialogbox4.png" alt=""/>
 <div class="caption">
@@ -130,7 +130,7 @@ Fig. 6: Collision Detection and Response.</div></div>
 <li>Full tests per second: The number of full tests performed per second. These are performed only when AABBs overlap.</li>
 <li>Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.</li>
 </ul>
-<h3>Quadtree</h3>
+<h2>2.5 Quadtree</h2>
 <p><a class="anchor" id="fig7"></a></p><div class="image">
 <img src="dialogbox5.png" alt=""/>
 <div class="caption">
@@ -143,7 +143,7 @@ Fig. 7: Quadtree.</div></div>
 <li>Leaf area: The dimension of the rectangle covered by each quadtree leaf.</li>
 <li>Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.</li>
 </ul>
-<h3>Iterations</h3>
+<h2>2.6 Iterations</h2>
 <p><a class="anchor" id="fig8"></a></p><div class="image">
 <img src="dialogbox6.png" alt=""/>
 <div class="caption">
@@ -152,7 +152,7 @@ Fig. 8: Iterations.</div></div>
 <li>Motion: The number of motion iterations per animation frame.</li>
 <li>Collision: The number of collision iterations per motion iteration.</li>
 </ul>
-<h3>Other</h3>
+<h2>2.7 Other</h2>
 <p><a class="anchor" id="fig9"></a></p><div class="image">
 <img src="dialogbox7.png" alt=""/>
 <div class="caption">
@@ -162,7 +162,7 @@ Fig. 9: Other.</div></div>
 <li>Rotate: Toggle rotation of the kinematic shapes.</li>
 <li>Help: Show help from web page.</li>
 </ul>
-<h3>Show</h3>
+<h2>2.8 Show</h2>
 <p><a class="anchor" id="fig10"></a></p><div class="image">
 <img src="dialogbox8.png" alt=""/>
 <div class="caption">
@@ -177,7 +177,7 @@ Fig. 10: Show.</div></div>
 <li>Sectors: Draw arc sectors.</li>
 <li>Lights: Light up static and kinematic shapes briefly after each collision.</li>
 </ul>
-<h3>Launch</h3>
+<h2>2.9 Launch</h2>
 <p><a class="anchor" id="fig11"></a></p><div class="image">
 <img src="dialogbox9.png" alt=""/>
 <div class="caption">
@@ -185,7 +185,7 @@ Fig. 11: Launch.</div></div>
 <ul>
 <li>Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.</li>
 </ul>
-<h3>Buttons</h3>
+<h2>2.10 Buttons</h2>
 <p><a class="anchor" id="fig12"></a></p><div class="image">
 <img src="dialogbox10.png" alt=""/>
 <div class="caption">
@@ -194,8 +194,12 @@ Fig. 12: Buttons.</div></div>
 <li>Clear: Delete all of the balls.</li>
 <li>Quit: Exit the program.</li>
 </ul>
-<h2>The Simple Academic Game Engine </h2>
-<p>This code uses <a href="../sage/index.html">SAGE</a>, the Simple Academic Game Engine. Other prototype <a href="../introphysics/index.html">physics games and toys</a> are also available. </p>
+<p><a class="anchor" id="section3"></a></p><h1>3. Building the Game</h1>
+<p>This code uses <a href="../sage/index.html">SAGE</a> and the <a href="../shapes/index.html">Shapes Library</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../shapes/index.html#section3">Shapes Library Build Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>3. Collision Math Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Collision Math Toy.sln</code></span> with Visual Studio and build the Release configuration. The Release executable file <span style="background-color:#D8E4D8;"><code>Collision Math Toy.exe</code></span> will appear. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
+<p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
+<p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p>Next, take a look at the <a href="../pinball/index.html">Pinball Game</a>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
