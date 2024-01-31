@@ -21,46 +21,52 @@ in the [Shapes Library](../shapes/index.html) by experimenting with various sett
 The Collision Math Toy is controlled by the dialog box shown in \ref fig2 "Fig. 2",
 which is divided up into regions as described below.
 
+\anchor section2-1
 ## 2.1 Balls in Play
 
 \anchor fig3
-\image html dialogbox1.png "Fig. 3: Balls in play."
+\image html dialogbox1.png
 
 - Launched: The number of balls launched.
 - Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
 - Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.
 
+\anchor section2-2
 ## 2.2 Load
 
 \anchor fig4
-\image html dialogbox2.png "Fig. 4: Load."
+\image html dialogbox2.png 
 
 - FPS: The current number of animation frames per second.
 - Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.
 
+\anchor section2-3
 ## 2.3 Next Ball
 
 \anchor fig5
-\image html dialogbox3.png "Fig. 5: Next Ball."
+\image html dialogbox3.png 
 
 - Size: The size of the next ball to be launched is controlled by a slider.
 - Speed: The speed of the next ball to be launched is controlled by a slider.
 
+\anchor section2-4
 ## 2.4 Collision Detection and Response
 
 \anchor fig6
-\image html dialogbox4.png "Fig. 6: Collision Detection and Response."
+\image html dialogbox4.png
 
 - AABB tests per iteration: The number of AABB overlap tests performed per collision iteration.
 - AABB tests per second: The number of AABB overlap tests performed per second.
 - Full tests per second: The number of full tests performed per second. These are performed only when AABBs overlap.
 - Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.
 
+\anchor section2-5
 ## 2.5 Quadtree
 
 \anchor fig7
-\image html dialogbox5.png "Fig. 7: Quadtree."
+\image html dialogbox5.png 
 
+See \ref section5-3 "Section 5.3" for more details on quadtrees.
 - Active: Toggle the use of quadtrees for space subdivision.
 - Levels: Set the number of levels in the quadtree.
 - Nodes: The number of nodes in an active quadtree.
@@ -68,27 +74,30 @@ which is divided up into regions as described below.
 - Leaf area: The dimension of the rectangle covered by each quadtree leaf.
 - Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.
 
+\anchor section2-6
 ## 2.6 Iterations
 
 \anchor fig8
-\image html dialogbox6.png "Fig. 8: Iterations."
+\image html dialogbox6.png 
 
 - Motion: The number of motion iterations per animation frame.
 - Collision: The number of collision iterations per motion iteration.
 
+\anchor section2-7
 ## 2.7 Other
 
 \anchor fig9
-\image html dialogbox7.png "Fig. 9: Other."
+\image html dialogbox7.png 
 
 - Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.
 - Rotate: Toggle rotation of the kinematic shapes.
 - Help: Show help from web page.
 
+\anchor section2-8
 ## 2.8 Show
 
 \anchor fig10
-\image html dialogbox8.png "Fig. 10: Show."
+\image html dialogbox8.png 
 
 - Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color.
 - Tracks: Draw a track behind each ball.
@@ -99,17 +108,20 @@ which is divided up into regions as described below.
 - Sectors: Draw arc sectors.
 - Lights: Light up static and kinematic shapes briefly after each collision.
 
+\anchor section2-9
 ## 2.9 Launch
 
 \anchor fig11
-\image html dialogbox9.png "Fig. 11: Launch."
+\image html dialogbox9.png
 
-- Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.
+- Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the
+\ref section2-3 "Next Ball" region of the dialog box.
 
+\anchor section2-10
 ## 2.10 Buttons
 
 \anchor fig12
-\image html dialogbox10.png "Fig. 12: Buttons."
+\image html dialogbox10.png
 
 - Clear: Delete all of the balls.
 - Quit: Exit the program.
@@ -138,6 +150,134 @@ to build both Release and Debug configurations.
 
 \anchor section5
 # 5. Code Breakdown
+
+\anchor section5-1
+## 5.1 %CObjectManager
+
+\anchor section5-1-1
+### 5.1.1 %CObjectManager::Move
+
+\anchor section5-1-2
+### 5.1.2 %CObjectManager::BroadPhase
+
+\anchor section5-1-3
+### 5.1.3 %CObjectManager::NarrowPhase
+
+\anchor section5-2
+## 5.2 Gates
+
+\anchor fig13
+\image html clip.png "Fig. 13: The clip used to cover up the line segment used in a gate."
+
+Gates are implemented by `CGate`.
+
+\anchor section5-3
+## 5.3 Quadtrees
+
+    void CObjectManager::BroadPhase(std::vector<CShape*> v){
+      for(auto i=v.begin(); i!=v.end(); i++) 
+        for(auto j=next(i, 1); j!=v.end(); j++)
+          NarrowPhase(*i, *j); 
+    } //BroadPhase
+
+If there are \f$n\f$ shapes in the parameter `v`, then the
+number of calls to `NarrowPhase` is:
+
+\f[
+\sum_{i=1}^n \sum_{j=i+1}^n 1 = \sum_{i=1}^n (n-i)
+ = \sum_{i=1}^n n - \sum_{i=1}^n i
+ = n^2 - n(n+1)/2
+ = n(n-1)/2
+ = \theta (n^2).
+\f]
+
+There are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection.
+A <em>quadtree</em> is one of them.
+
+\anchor section5-3-1
+### 5.3.1 Definition
+
+\anchor fig5-3-1-1
+\image html quadtree0.png "Fig. 5.3.1.1: A quadtree of depth 3." width=50%
+
+A <em>quadtree</em> is a full 4-ary tree in which
+each node represents an AABB covering part of the game world.
+That is, it is a tree in which every non-leaf node has
+exactly 4 children and every leaf is at exactly depth \f$d\f$
+from the root, where the <em>depth</em> of a node is the minimum
+number of edges that must be traversed from the node to the root.
+For example, \ref fig5-3-1-1 "Fig. 5.3.1.1" shows the depth
+of the nodes at each level. The <em>depth</em> of a quadtree
+is the depth of its leaves, which is 3 in \ref fig5-3-1-1 "Fig. 5.3.1.1".
+
+\anchor fig5-3-1-2
+\image html quadtree1.png "Fig. 5.3.1.2: A quadtree and its AABBs." width=50%
+
+The root of a quadtree contains an AABB that contains the
+whole of the game world.
+The 4 children of a node subdivide the AABBs of their parent into 4 equal quadrants. For example,
+\ref fig5-3-1-2 "Fig. 2.3.1.2"
+shows the AABBs stored at the nodes of each level of the quadtree.
+
+\anchor section5-3-2
+### 5.3.2 Quadtree Facts
+
+The number of nodes in a quadtree of depth \f$d\f$ is
+\f[
+\sum_{i=0}^d 4^i = \frac{4^{d+1}-1}{3}.
+\f]
+
+For example, the number of nodes in the quadtree shown
+in \ref fig5-3-1-1 "Fig. 5.3.1.1" is (summing by level)
+\f$1 + 4 + 16 + 64 = 85\f$ and
+\f[
+\sum_{i=0}^3 4^i = \frac{4^{4}-1}{3} = 255/3 = 85.
+\f]
+
+The number of leaves in a quadtree of depth \f$d\f$ is \f$4^d\f$.
+For example, the number of leaves in the quadtree shown
+in \ref fig5-3-1-1 "Fig. 5.3.1.1" is
+\f$4^3 = 64\f$.
+
+\anchor section5-3-3
+### 5.3.3 Quadtree Data Structure
+
+\anchor fig5-3-3-1
+\image html quadtree2.png "Fig. 5.3.3.1: The index of each node in the quadtree array." width=50%
+
+\anchor fig5-3-3-2
+\image html quadtree3.png "Fig. 5.3.3.2: The index of each AABB in the quadtree array." width=50%
+
+We can store an \f$n\f$-node quadtree in an array \f$A[n]\f$
+as follows.
+The root node is stored at \f$A[0]\f$.
+The children of the node in \f$A[i]\f$ are
+stored in nodes \f$A[4i+1]\f$, \f$A[4i+2]\f$, \f$A[4i+3]\f$, and \f$A[4i+4]\f$.
+The parent of the node in \f$A[i]\f$ is in node \f$A[\lfloor (i-1)/4 \rfloor]\f$. \ref fig5-3-3-1 "Fig. 5.3.3.1" shows the indices
+into \f$A\f$ for the nodes of a depth 3, 85-node quadtree.
+\ref fig5-3-3-2 "Fig. 5.3.3.2" shows the AABBs labeled with
+the indices
+into \f$A\f$ for the nodes of a depth 3, 85-node quadtree.
+
+\anchor fig5-3-3-3
+\image html quadtree4.png "Fig. 5.3.3.3: The children of the green node at left are the green nodes at right." width=50%
+
+For example, since \f$4 \times 18 = 72\f$, the children of
+the node at \f$A[18]\f$ are at nodes
+\f$A[73]\f$, \f$A[74]\f$, \f$A[75]\f$, and \f$A[76]\f$,
+and since \f$\lfloor 72/4\rfloor = \lfloor 73/4\rfloor = \lfloor 74/4\rfloor = \lfloor 75/4\rfloor = 18\f$, the parent of nodes
+\f$A[73]\f$, \f$A[74]\f$, \f$A[75]\f$, and \f$A[76]\f$
+is in \f$A[18]\f$ 
+(see \ref fig5-3-3-3 "Fig. 5.3.3.3").
+
+\anchor section5-3-4
+### 5.3.4 Quadtree for Collision Detection
+
+\anchor fig5-3-4-1
+\image html quadtree5.png "Fig. 5.3.4.1: A ball bearing in quadtree AABBs." width=50%
+
+\anchor fig5-3-4-2
+\image html quadtree6.png "Fig. 5.3.4.2: A ball bearing in quadtree nodes." width=50%
 
 \anchor section6
 # 6. What Next?

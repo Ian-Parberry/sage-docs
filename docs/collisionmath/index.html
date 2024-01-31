@@ -91,51 +91,46 @@ Fig. 1: Screen shot.</div></div>
 <div class="caption">
 Fig. 2: The dialog box containing the controls.</div></div>
 <p>The Collision Math Toy is controlled by the dialog box shown in <a class="el" href="index.html#fig2">Fig. 2</a>, which is divided up into regions as described below.</p>
-<h2>2.1 Balls in Play</h2>
+<p><a class="anchor" id="section2-1"></a></p><h2>2.1 Balls in Play</h2>
 <p><a class="anchor" id="fig3"></a></p><div class="image">
 <img src="dialogbox1.png" alt=""/>
-<div class="caption">
-Fig. 3: Balls in play.</div></div>
+</div>
 <ul>
 <li>Launched: The number of balls launched.</li>
 <li>Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 <li>Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 </ul>
-<h2>2.2 Load</h2>
+<p><a class="anchor" id="section2-2"></a></p><h2>2.2 Load</h2>
 <p><a class="anchor" id="fig4"></a></p><div class="image">
 <img src="dialogbox2.png" alt=""/>
-<div class="caption">
-Fig. 4: Load.</div></div>
+</div>
 <ul>
 <li>FPS: The current number of animation frames per second.</li>
 <li>Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.</li>
 </ul>
-<h2>2.3 Next Ball</h2>
+<p><a class="anchor" id="section2-3"></a></p><h2>2.3 Next Ball</h2>
 <p><a class="anchor" id="fig5"></a></p><div class="image">
 <img src="dialogbox3.png" alt=""/>
-<div class="caption">
-Fig. 5: Next Ball.</div></div>
+</div>
 <ul>
 <li>Size: The size of the next ball to be launched is controlled by a slider.</li>
 <li>Speed: The speed of the next ball to be launched is controlled by a slider.</li>
 </ul>
-<h2>2.4 Collision Detection and Response</h2>
+<p><a class="anchor" id="section2-4"></a></p><h2>2.4 Collision Detection and Response</h2>
 <p><a class="anchor" id="fig6"></a></p><div class="image">
 <img src="dialogbox4.png" alt=""/>
-<div class="caption">
-Fig. 6: Collision Detection and Response.</div></div>
+</div>
 <ul>
 <li>AABB tests per iteration: The number of AABB overlap tests performed per collision iteration.</li>
 <li>AABB tests per second: The number of AABB overlap tests performed per second.</li>
 <li>Full tests per second: The number of full tests performed per second. These are performed only when AABBs overlap.</li>
 <li>Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.</li>
 </ul>
-<h2>2.5 Quadtree</h2>
+<p><a class="anchor" id="section2-5"></a></p><h2>2.5 Quadtree</h2>
 <p><a class="anchor" id="fig7"></a></p><div class="image">
 <img src="dialogbox5.png" alt=""/>
-<div class="caption">
-Fig. 7: Quadtree.</div></div>
-<ul>
+</div>
+<p>See <a class="el" href="index.html#section5-3">Section 5.3</a> for more details on quadtrees.</p><ul>
 <li>Active: Toggle the use of quadtrees for space subdivision.</li>
 <li>Levels: Set the number of levels in the quadtree.</li>
 <li>Nodes: The number of nodes in an active quadtree.</li>
@@ -143,30 +138,27 @@ Fig. 7: Quadtree.</div></div>
 <li>Leaf area: The dimension of the rectangle covered by each quadtree leaf.</li>
 <li>Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.</li>
 </ul>
-<h2>2.6 Iterations</h2>
+<p><a class="anchor" id="section2-6"></a></p><h2>2.6 Iterations</h2>
 <p><a class="anchor" id="fig8"></a></p><div class="image">
 <img src="dialogbox6.png" alt=""/>
-<div class="caption">
-Fig. 8: Iterations.</div></div>
+</div>
 <ul>
 <li>Motion: The number of motion iterations per animation frame.</li>
 <li>Collision: The number of collision iterations per motion iteration.</li>
 </ul>
-<h2>2.7 Other</h2>
+<p><a class="anchor" id="section2-7"></a></p><h2>2.7 Other</h2>
 <p><a class="anchor" id="fig9"></a></p><div class="image">
 <img src="dialogbox7.png" alt=""/>
-<div class="caption">
-Fig. 9: Other.</div></div>
+</div>
 <ul>
 <li>Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.</li>
 <li>Rotate: Toggle rotation of the kinematic shapes.</li>
 <li>Help: Show help from web page.</li>
 </ul>
-<h2>2.8 Show</h2>
+<p><a class="anchor" id="section2-8"></a></p><h2>2.8 Show</h2>
 <p><a class="anchor" id="fig10"></a></p><div class="image">
 <img src="dialogbox8.png" alt=""/>
-<div class="caption">
-Fig. 10: Show.</div></div>
+</div>
 <ul>
 <li>Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color.</li>
 <li>Tracks: Draw a track behind each ball.</li>
@@ -177,19 +169,17 @@ Fig. 10: Show.</div></div>
 <li>Sectors: Draw arc sectors.</li>
 <li>Lights: Light up static and kinematic shapes briefly after each collision.</li>
 </ul>
-<h2>2.9 Launch</h2>
+<p><a class="anchor" id="section2-9"></a></p><h2>2.9 Launch</h2>
 <p><a class="anchor" id="fig11"></a></p><div class="image">
 <img src="dialogbox9.png" alt=""/>
-<div class="caption">
-Fig. 11: Launch.</div></div>
+</div>
 <ul>
-<li>Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the Next Ball region of the dialog box.</li>
+<li>Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the <a class="el" href="index.html#section2-3">Next Ball</a> region of the dialog box.</li>
 </ul>
-<h2>2.10 Buttons</h2>
+<p><a class="anchor" id="section2-10"></a></p><h2>2.10 Buttons</h2>
 <p><a class="anchor" id="fig12"></a></p><div class="image">
 <img src="dialogbox10.png" alt=""/>
-<div class="caption">
-Fig. 12: Buttons.</div></div>
+</div>
 <ul>
 <li>Clear: Delete all of the balls.</li>
 <li>Quit: Exit the program.</li>
@@ -198,6 +188,80 @@ Fig. 12: Buttons.</div></div>
 <p>This code uses <a href="../sage/index.html">SAGE</a> and the <a href="../shapes/index.html">Shapes Library</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../shapes/index.html#section3">Shapes Library Build Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>3. Collision Math Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Collision Math Toy.sln</code></span> with Visual Studio and build the Release configuration. The Release executable file <span style="background-color:#D8E4D8;"><code>Collision Math Toy.exe</code></span> will appear. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p><a class="anchor" id="section5-1"></a></p><h2>5.1 CObjectManager</h2>
+<p><a class="anchor" id="section5-1-1"></a></p><h3>5.1.1 CObjectManager::Move</h3>
+<p><a class="anchor" id="section5-1-2"></a></p><h3>5.1.2 CObjectManager::BroadPhase</h3>
+<p><a class="anchor" id="section5-1-3"></a></p><h3>5.1.3 CObjectManager::BroadPhase</h3>
+<p><a class="anchor" id="section5-2"></a></p><h2>5.2 Gates</h2>
+<p><a class="anchor" id="fig13"></a></p><div class="image">
+<img src="clip.png" alt=""/>
+<div class="caption">
+Fig. 13: The clip used to cover up the line segment used in a gate.</div></div>
+<p>Gates are implemented by <code><a class="el" href="class_c_gate.html" title="A gate.">CGate</a></code>.</p>
+<p><a class="anchor" id="section5-3"></a></p><h2>5.3 Quadtrees</h2>
+<pre class="fragment">void CObjectManager::BroadPhase(std::vector&lt;CShape*&gt; v){
+  for(auto i=v.begin(); i!=v.end(); i++) 
+    for(auto j=next(i, 1); j!=v.end(); j++)
+      NarrowPhase(*i, *j); 
+} //BroadPhase
+</pre><p> If there are \(n\) shapes in the parameter <code>v</code>, then the number of calls to <code>NarrowPhase</code> is:</p>
+<p class="formulaDsp">
+\[
+\sum_{i=1}^n \sum_{j=i+1}^n 1 = \sum_{i=1}^n (n-i)
+ = \sum_{i=1}^n n - \sum_{i=1}^n i
+ = n^2 - n(n+1)/2
+ = n(n-1)/2
+ = \theta (n^2).
+\]
+</p>
+<p>There are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection. A <em>quadtree</em> is one of them.</p>
+<p><a class="anchor" id="section5-3-1"></a></p><h3>5.3.1 Definition</h3>
+<p><a class="anchor" id="fig5-3-1-1"></a></p><div class="image">
+<img src="quadtree0.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.1.1: A quadtree of depth 3.</div></div>
+<p>A <em>quadtree</em> is a full 4-ary tree in which each node represents an AABB covering part of the game world. That is, it is a tree in which every non-leaf node has exactly 4 children and every leaf is at exactly depth \(d\) from the root, where the <em>depth</em> of a node is the minimum number of edges that must be traversed from the node to the root. For example, <a class="el" href="index.html#fig5-3-1-1">Fig. 5.3.1.1</a> shows the depth of the nodes at each level. The <em>depth</em> of a quadtree is the depth of its leaves, which is 3 in <a class="el" href="index.html#fig5-3-1-1">Fig. 5.3.1.1</a>.</p>
+<p><a class="anchor" id="fig5-3-1-2"></a></p><div class="image">
+<img src="quadtree1.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.1.2: A quadtree and its AABBs.</div></div>
+<p>The root of a quadtree contains an AABB that contains the whole of the game world. The 4 children of a node subdivide the AABBs of their parent into 4 equal quadrants. For example, <a class="el" href="index.html#fig5-3-1-2">Fig. 2.3.1.2</a> shows the AABBs stored at the nodes of each level of the quadtree.</p>
+<p><a class="anchor" id="section5-3-2"></a></p><h3>5.3.2 Quadtree Facts</h3>
+<p>The number of nodes in a quadtree of depth \(d\) is  </p><p class="formulaDsp">
+\[
+\sum_{i=0}^d 4^i = \frac{4^{d+1}-1}{3}.
+\]
+</p>
+<p>For example, the number of nodes in the quadtree shown in <a class="el" href="index.html#fig5-3-1-1">Fig. 5.3.1.1</a> is (summing by level) \(1 + 4 + 16 + 64 = 85\) and  </p><p class="formulaDsp">
+\[
+\sum_{i=0}^3 4^i = \frac{4^{4}-1}{3} = 255/3 = 85.
+\]
+</p>
+<p>The number of leaves in a quadtree of depth \(d\) is \(4^d\). For example, the number of leaves in the quadtree shown in <a class="el" href="index.html#fig5-3-1-1">Fig. 5.3.1.1</a> is \(4^3 = 64\).</p>
+<p><a class="anchor" id="section5-3-3"></a></p><h3>5.3.3 Quadtree Data Structure</h3>
+<p><a class="anchor" id="fig5-3-3-1"></a></p><div class="image">
+<img src="quadtree2.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.3.1: The index of each node in the quadtree array.</div></div>
+<p><a class="anchor" id="fig5-3-3-2"></a></p><div class="image">
+<img src="quadtree3.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.3.2: The index of each AABB in the quadtree array.</div></div>
+<p>We can store an \(n\)-node quadtree in an array \(A[n]\) as follows. The root node is stored at \(A[0]\). The children of the node in \(A[i]\) are stored in nodes \(A[4i+1]\), \(A[4i+2]\), \(A[4i+3]\), and \(A[4i+4]\). The parent of the node in \(A[i]\) is in node \(A[\lfloor (i-1)/4 \rfloor]\). <a class="el" href="index.html#fig5-3-3-1">Fig. 5.3.3.1</a> shows the indices into \(A\) for the nodes of a depth 3, 85-node quadtree. <a class="el" href="index.html#fig5-3-3-2">Fig. 5.3.3.2</a> shows the AABBs labeled with the indices into \(A\) for the nodes of a depth 3, 85-node quadtree.</p>
+<p><a class="anchor" id="fig5-3-3-3"></a></p><div class="image">
+<img src="quadtree4.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.3.3: The children of the green node at left are the green nodes at right.</div></div>
+<p>For example, since \(4 \times 18 = 72\), the children of the node at \(A[18]\) are at nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\), and since \(\lfloor 72/4\rfloor = \lfloor 73/4\rfloor = \lfloor 74/4\rfloor = \lfloor 75/4\rfloor = 18\), the parent of nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\) is in \(A[18]\) (see <a class="el" href="index.html#fig5-3-3-3">Fig. 5.3.3.3</a>).</p>
+<p><a class="anchor" id="section5-3-4"></a></p><h3>5.3.4 Quadtree for Collision Detection</h3>
+<p><a class="anchor" id="fig5-3-4-1"></a></p><div class="image">
+<img src="quadtree5.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.4.1: A ball bearing in quadtree AABBs.</div></div>
+<p><a class="anchor" id="fig5-3-4-2"></a></p><div class="image">
+<img src="quadtree6.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.4.2: A ball bearing in quadtree nodes.</div></div>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../pinball/index.html">Pinball Game</a>. </p>
 </div></div><!-- PageDoc -->
