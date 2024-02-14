@@ -92,34 +92,38 @@ Fig. 1: Screen shot.</div></div>
 Fig. 2: The dialog box containing the controls.</div></div>
 <p>The Collision Math Toy is controlled by the dialog box shown in <a class="el" href="index.html#fig2">Fig. 2</a>, which is divided up into regions as described below.</p>
 <p><a class="anchor" id="section2-1"></a></p><h2>2.1 Balls in Play</h2>
-<p><a class="anchor" id="fig3"></a></p><div class="image">
-<img src="dialogbox1.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-1"></a></p><div class="image">
+<img src="dialogbox1.png" alt="" width="197px"/>
+<div class="caption">
+Fig. 2.1: The Balls in Play region.</div></div>
 <ul>
 <li>Launched: The number of balls launched.</li>
 <li>Overlaps: The number of balls that have position identical to another ball. This will happen if two balls overlap by too much as a result of, say, inaccurate collision-response. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 <li>Strays: The number of balls that have tunneled through the outside walls. This will happen if a small ball is moving quickly and the number of motion and collision iterations is inadequate. Clearly code should be written to exclude this behavior, but it hasn't been implemented so that you can see that it happens.</li>
 </ul>
 <p><a class="anchor" id="section2-2"></a></p><h2>2.2 Load</h2>
-<p><a class="anchor" id="fig4"></a></p><div class="image">
-<img src="dialogbox2.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-2"></a></p><div class="image">
+<img src="dialogbox2.png" alt="" width="61px"/>
+<div class="caption">
+Fig. 2.2: The Load region.</div></div>
 <ul>
 <li>FPS: The current number of animation frames per second.</li>
 <li>Load bar: A rough estimate of the amount of CPU time being used per animation frame as a fraction of the frame time.</li>
 </ul>
 <p><a class="anchor" id="section2-3"></a></p><h2>2.3 Next Ball</h2>
-<p><a class="anchor" id="fig5"></a></p><div class="image">
-<img src="dialogbox3.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-3"></a></p><div class="image">
+<img src="dialogbox3.png" alt="" width="154px"/>
+<div class="caption">
+Fig. 2.3: The Next Ball region.</div></div>
 <ul>
 <li>Size: The size of the next ball to be launched is controlled by a slider.</li>
 <li>Speed: The speed of the next ball to be launched is controlled by a slider.</li>
 </ul>
 <p><a class="anchor" id="section2-4"></a></p><h2>2.4 Collision Detection and Response</h2>
-<p><a class="anchor" id="fig6"></a></p><div class="image">
-<img src="dialogbox4.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-4"></a></p><div class="image">
+<img src="dialogbox4.png" alt="" width="166px"/>
+<div class="caption">
+Fig. 2.4: The Collision Detection and Response region.</div></div>
 <ul>
 <li>AABB tests per iteration: The number of AABB overlap tests performed per collision iteration.</li>
 <li>AABB tests per second: The number of AABB overlap tests performed per second.</li>
@@ -127,9 +131,10 @@ Fig. 2: The dialog box containing the controls.</div></div>
 <li>Collisions per second: The number of actual collisions per second, that is, the number of full tests that indicate an overlap.</li>
 </ul>
 <p><a class="anchor" id="section2-5"></a></p><h2>2.5 Quadtree</h2>
-<p><a class="anchor" id="fig7"></a></p><div class="image">
-<img src="dialogbox5.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-5"></a></p><div class="image">
+<img src="dialogbox5.png" alt="" width="149px"/>
+<div class="caption">
+Fig. 2.5: The Quadtree region.</div></div>
 <p>See <a class="el" href="index.html#section5-3">Section 5.3</a> for more details on quadtrees.</p><ul>
 <li>Active: Toggle the use of quadtrees for space subdivision.</li>
 <li>Levels: Set the number of levels in the quadtree.</li>
@@ -139,46 +144,61 @@ Fig. 2: The dialog box containing the controls.</div></div>
 <li>Max shapes per leaf: The maximum over all leaves of the number of shapes in a leaf.</li>
 </ul>
 <p><a class="anchor" id="section2-6"></a></p><h2>2.6 Iterations</h2>
-<p><a class="anchor" id="fig8"></a></p><div class="image">
-<img src="dialogbox6.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-6"></a></p><div class="image">
+<img src="dialogbox6.png" alt="" width="88px"/>
+<div class="caption">
+Fig. 2.6: The Iterations region.</div></div>
 <ul>
 <li>Motion: The number of motion iterations per animation frame.</li>
 <li>Collision: The number of collision iterations per motion iteration.</li>
 </ul>
 <p><a class="anchor" id="section2-7"></a></p><h2>2.7 Other</h2>
-<p><a class="anchor" id="fig9"></a></p><div class="image">
-<img src="dialogbox7.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-7"></a></p><div class="image">
+<img src="dialogbox7.png" alt="" width="82px"/>
+<div class="caption">
+Fig. 2.7: The Other region.</div></div>
 <ul>
 <li>Mute: Toggle the collision sounds. You will want to check this box when there are more that a few balls in motion.</li>
 <li>Rotate: Toggle rotation of the kinematic shapes.</li>
-<li>Help: Show help from web page.</li>
+<li>Help: Show help (this page).</li>
 </ul>
 <p><a class="anchor" id="section2-8"></a></p><h2>2.8 Show</h2>
-<p><a class="anchor" id="fig10"></a></p><div class="image">
-<img src="dialogbox8.png" alt=""/>
-</div>
+<p><a class="anchor" id="fig2-8-1"></a></p><div class="image">
+<img src="dialogbox8.png" alt="" width="213px"/>
+<div class="caption">
+Fig. 2.8.1: The Show region.</div></div>
+<p><a class="anchor" id="fig2-8-2"></a></p><div class="image">
+<img src="show.png" alt="" width="95%"/>
+<div class="caption">
+Fig. 2.8.2: Show (a) Hit points and Tracks, (b) Tangents, (c) AABBs, (d) Reticles, (e) Velocity, and (f) Sectors.</div></div>
 <ul>
-<li>Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color.</li>
-<li>Tracks: Draw a track behind each ball.</li>
-<li>Tangents: Draw tangents to arcs and line segments.</li>
-<li>AABBs: Draw AABBs for the collision shapes. If quadtrees are active, then also draw the quadtree grid.</li>
-<li>Reticles: Draw a spinning reticle at each point of impact of a ball. The reticle color, and style will vary with the type of collision and its rotation speed will vary with the collision speed.</li>
-<li>Velocity: Draw an arrow on each ball in the direction of travel with size proportional to speed.</li>
-<li>Sectors: Draw arc sectors.</li>
-<li>Lights: Light up static and kinematic shapes briefly after each collision.</li>
+<li>Hit points: Draw a colored dot at each point of impact of a ball with a static or kinematic shape. The dot color will be the same as the ball color. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(a) shows an orange dot where the orange ball collides with the vertical black line. The hit point dots will persist for a few seconds then fade away.</li>
+<li>Tracks: Draw a track behind each ball. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(a) shows the track behind the orange ball shortly after it collides with the vertical black line. The tracks will persist for a few seconds then fade away.</li>
+<li>Tangents: Draw tangents to arcs and line segments. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(b) shows tangents to two line segments and an arc.</li>
+<li>AABBs: Draw AABBs for the collision shapes. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(c) shows the AABBs for two arcs and a circle. If quadtrees are active, then also draw the quadtree grid (see <a class="el" href="index.html#section5-3">Section 5.3</a>).</li>
+<li>Reticles: Draw a spinning reticle at each point of impact of a ball. The reticle color and style will vary with the type of collision and its rotation speed will vary with the collision speed. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(d) shows two reticles, the upper one in blue and magenta with the straight edges for a collision between a blue ball and a magenta ball and the lower one in magenta for a collision between the magenta ball and the black line.</li>
+<li>Velocity: Draw an arrow on each ball in the direction of travel with size proportional to speed. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(e) shows arrows whose direction and size depend on the velocity of the ball that it is attached to.</li>
+<li>Sectors: Draw the interior part of arc sectors. For example, <a class="el" href="index.html#fig2-8-2">Fig. 2.8.2</a>(f) shows the interior sectors of two arcs.</li>
+<li>Lights: Light up static and kinematic shapes briefly after each collision. For example, <a class="el" href="index.html#fig2-8-3">Fig. 2.8.3</a> shows an arc (and an associated sprite) light up when hit by a ball, and <a class="el" href="index.html#fig2-8-4">Fig. 2.8.4</a> shows a guard point light up when hit by a ball.</li>
 </ul>
+<p><a class="anchor" id="fig2-8-3"></a></p><div class="image">
+<img src="arclit.gif" alt="" width="100px"/>
+<div class="caption">
+Fig. 2.8.3: Ball colliding with arc with Show Lights set.</div></div>
+<p><a class="anchor" id="fig2-8-4"></a></p><div class="image">
+<img src="pointlit.gif" alt="" width="100px"/>
+<div class="caption">
+Fig. 2.8.4: Ball colliding with point with Show Lights set.</div></div>
 <p><a class="anchor" id="section2-9"></a></p><h2>2.9 Launch</h2>
 <p><a class="anchor" id="fig11"></a></p><div class="image">
-<img src="dialogbox9.png" alt=""/>
+<img src="dialogbox9.png" alt="" width="108px"/>
 </div>
 <ul>
 <li>Launch: The launch button will launch the number of balls entered into the edit box beside it. The balls will have pseudo-random colors and a size and speed determined by the sliders in the <a class="el" href="index.html#section2-3">Next Ball</a> region of the dialog box.</li>
 </ul>
 <p><a class="anchor" id="section2-10"></a></p><h2>2.10 Buttons</h2>
 <p><a class="anchor" id="fig12"></a></p><div class="image">
-<img src="dialogbox10.png" alt=""/>
+<img src="dialogbox10.png" alt="" width="89px"/>
 </div>
 <ul>
 <li>Clear: Delete all of the balls.</li>
@@ -191,7 +211,7 @@ Fig. 2: The dialog box containing the controls.</div></div>
 <p><a class="anchor" id="section5-1"></a></p><h2>5.1 CObjectManager</h2>
 <p><a class="anchor" id="section5-1-1"></a></p><h3>5.1.1 CObjectManager::Move</h3>
 <p><a class="anchor" id="section5-1-2"></a></p><h3>5.1.2 CObjectManager::BroadPhase</h3>
-<p><a class="anchor" id="section5-1-3"></a></p><h3>5.1.3 CObjectManager::BroadPhase</h3>
+<p><a class="anchor" id="section5-1-3"></a></p><h3>5.1.3 CObjectManager::NarrowPhase</h3>
 <p><a class="anchor" id="section5-2"></a></p><h2>5.2 Gates</h2>
 <p><a class="anchor" id="fig13"></a></p><div class="image">
 <img src="clip.png" alt=""/>
@@ -207,15 +227,15 @@ Fig. 13: The clip used to cover up the line segment used in a gate.</div></div>
 </pre><p> If there are \(n\) shapes in the parameter <code>v</code>, then the number of calls to <code>NarrowPhase</code> is:</p>
 <p class="formulaDsp">
 \[
-\sum_{i=1}^n \sum_{j=i+1}^n 1 = \sum_{i=1}^n (n-i)
- = \sum_{i=1}^n n - \sum_{i=1}^n i
- = n^2 - n(n+1)/2
+\sum_{i=1}^{n - 1} \sum_{j=i+1}^n 1 = \sum_{i=1}^{n - 1} (n-i)
+ = \sum_{i=1}^{n - 1} n - \sum_{i=1}^{n - 1} i
+ = n(n-1) - n(n-1)/2
  = n(n-1)/2
  = \theta (n^2).
 \]
 </p>
 <p>There are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection. A <em>quadtree</em> is one of them.</p>
-<p><a class="anchor" id="section5-3-1"></a></p><h3>5.3.1 Definition</h3>
+<p><a class="anchor" id="section5-3-1"></a></p><h3>5.3.1 Quadtree Definition</h3>
 <p><a class="anchor" id="fig5-3-1-1"></a></p><div class="image">
 <img src="quadtree0.png" alt="" width="50%"/>
 <div class="caption">
@@ -253,7 +273,7 @@ Fig. 5.3.3.2: The index of each AABB in the quadtree array.</div></div>
 <div class="caption">
 Fig. 5.3.3.3: The children of the green node at left are the green nodes at right.</div></div>
 <p>For example, since \(4 \times 18 = 72\), the children of the node at \(A[18]\) are at nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\), and since \(\lfloor 72/4\rfloor = \lfloor 73/4\rfloor = \lfloor 74/4\rfloor = \lfloor 75/4\rfloor = 18\), the parent of nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\) is in \(A[18]\) (see <a class="el" href="index.html#fig5-3-3-3">Fig. 5.3.3.3</a>).</p>
-<p><a class="anchor" id="section5-3-4"></a></p><h3>5.3.4 Quadtree for Collision Detection</h3>
+<p><a class="anchor" id="section5-3-4"></a></p><h3>5.3.4 Quadtrees for Collision Detection</h3>
 <p><a class="anchor" id="fig5-3-4-1"></a></p><div class="image">
 <img src="quadtree5.png" alt="" width="50%"/>
 <div class="caption">
@@ -262,6 +282,10 @@ Fig. 5.3.4.1: A ball bearing in quadtree AABBs.</div></div>
 <img src="quadtree6.png" alt="" width="50%"/>
 <div class="caption">
 Fig. 5.3.4.2: A ball bearing in quadtree nodes.</div></div>
+<p><a class="anchor" id="fig5-3-4-3"></a></p><div class="image">
+<img src="quadtree7.png" alt="" width="90%"/>
+<div class="caption">
+Fig. 5.3.4.3: Quadtree leaf areas for a quadtree with, from left to right, 2, 3, 4, and 5 levels.</div></div>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../pinball/index.html">Pinball Game</a>. </p>
 </div></div><!-- PageDoc -->
