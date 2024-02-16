@@ -1,5 +1,6 @@
 /**
 \mainpage notitle
+
 \anchor section1
 # 1. Introduction
 
@@ -171,20 +172,32 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
+UNDER CONSTRUCTION
+
 \anchor section5
 # 5. Code Breakdown
+
+UNDER CONSTRUCTION
 
 \anchor section5-1
 ## 5.1 %CObjectManager
 
+UNDER CONSTRUCTION
+
 \anchor section5-1-1
 ### 5.1.1 %CObjectManager::Move
+
+UNDER CONSTRUCTION
 
 \anchor section5-1-2
 ### 5.1.2 %CObjectManager::BroadPhase
 
+UNDER CONSTRUCTION
+
 \anchor section5-1-3
 ### 5.1.3 %CObjectManager::NarrowPhase
+
+UNDER CONSTRUCTION
 
 \anchor section5-2
 ## 5.2 Gates
@@ -194,8 +207,12 @@ to build both Release and Debug configurations.
 
 Gates are implemented by `CGate`.
 
+UNDER CONSTRUCTION
+
 \anchor section5-3
 ## 5.3 Quadtrees
+
+UNDER CONSTRUCTION
 
     void CObjectManager::BroadPhase(std::vector<CShape*> v){
       for(auto i=v.begin(); i!=v.end(); i++) 
@@ -295,6 +312,8 @@ is in \f$A[18]\f$
 
 \anchor section5-3-4
 ### 5.3.4 Quadtrees for Collision Detection
+
+UNDER CONSTRUCTION
 
 \anchor fig5-3-4-1
 \image html quadtree5.png "Fig. 5.3.4.1: A ball bearing in quadtree AABBs." width=50%

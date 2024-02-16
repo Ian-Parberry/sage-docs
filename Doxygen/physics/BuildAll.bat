@@ -1,4 +1,4 @@
-:: Run doxygen in all folders by running the copy of Build.bat there..
+:: Run doxygen in all folders by running the copy of Build.bat there.
 
 @echo off
 

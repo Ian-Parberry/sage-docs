@@ -1,12 +1,58 @@
 /**
 \mainpage notitle
 
+\anchor section1
+# 1. Introduction
+
+This library lets you draw Box2D bodies using circles and lines so you can check that they line up correctly with your sprites.
+
+\anchor section2
+# 2. Keyboard Controls
+
+This project compiles into a library, so there are no keyboard
+controls here.
+
+\anchor section3
+# 3. Building the Library
+
+This code uses <a href="../sage/index.html">SAGE</a>
+and <a href="https://github.com/erincatto/Box2D">Box2D</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>
+and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>.
+Navigate to the folder <span style="background-color:#D8E4D8;">`6. Box2D Render Library`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
+variables correctly.
+Open <span style="background-color:#D8E4D8;">`Box2D Renderer.sln`</span>
+ with Visual Studio and build the Release configuration.
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
+
+\anchor section4
+# 4. Game Play
+
+There's no executable file to run here, remember, it just compiles into a library file. If you're interested, the library files are
+<span style="background-color:#D8E4D8;">`x64\Release\Box2D Renderer.lib`</span>
+and <span style="background-color:#D8E4D8;">`x64\Debug\Box2D Renderer.lib`</span>.
+
+\anchor section5
+# 5. Code Breakdown
+
 This library consists of a simple class `CBox2DRenderer` that
 will help you draw Box2D bodies using circles and lines in
 <a href="../sage/index.html">SAGE</a>.
-To use it you only need to call `CBox2DRenderer::Drawb2Body()` with a pointer to
-an instance of `b2Body`. Read the rest of code to learn how
+To use it you only need to either instantiate or derive your renderer class from `CBox2DRenderer` and then
+call `CBox2DRenderer::Drawb2Body` with a pointer to
+an instance of `b2Body` to draw its `b2Shape`s using lines and circles. 
+Read the rest of code to learn how
 to access the parts that make up a `b2Body`.
+
+\anchor section6
+# 6. What Next?
+
+Next, take a look at the <a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>.
 
 **/
 

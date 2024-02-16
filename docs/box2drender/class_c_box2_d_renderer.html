@@ -244,7 +244,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPRS</b> = 0.0f</t
 <p>Draw a Box2D chain shape using lines. Assumes that <code>eSprite::Line</code> exists and has been loaded. This function is a stub that has not yet been implemented. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Pointer to a Box2D chain shape. </td></tr>
-    <tr><td class="paramname">vPos</td><td>Position in Physics World. </td></tr>
   </table>
   </dd>
 </dl>
@@ -373,8 +372,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPRS</b> = 0.0f</t
 <p>Draw a Box2D shape using lines. This is just a <code>switch</code> statement that calls one of <a class="el" href="class_c_box2_d_renderer.html#a27bffa19f07ff1fc2ce6f57b7ce453ca" title="Draw Box2D edge shape.">Drawb2Circle()</a>, <a class="el" href="class_c_box2_d_renderer.html#acad2f701a4e81603807eeddde804832d" title="Draw Box2D shape.">Drawb2Edge()</a>, <a class="el" href="class_c_box2_d_renderer.html#a0a857d95767db7deff6621cc2dfb1aee" title="Draw Box2D polygon shape.">Drawb2Polygon()</a>, or <a class="el" href="class_c_box2_d_renderer.html#a0251e67acc5fb4339426c356e1db6170" title="Draw Box2D chain shape.">Drawb2Chain()</a> depending on the shape's type. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Pointer to a Box2D shape. </td></tr>
-    <tr><td class="paramname">vPos</td><td>Position in Physics World. </td></tr>
-    <tr><td class="paramname">theta</td><td>Orientation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -406,7 +403,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPRS</b> = 0.0f</t
 </div><div class="memdoc">
 <p>Convert a vector in Physics World to the corresponding vector in Render World by multiplying by m_fPRS, the Physics World to Render World scale value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>Physics World vector. </td></tr>
+    <tr><td class="paramname">v</td><td>Physics World vector. </td></tr>
   </table>
   </dd>
 </dl>

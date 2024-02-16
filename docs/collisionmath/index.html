@@ -207,19 +207,26 @@ Fig. 2.8.4: Ball colliding with point with Show Lights set.</div></div>
 <p><a class="anchor" id="section3"></a></p><h1>3. Building the Game</h1>
 <p>This code uses <a href="../sage/index.html">SAGE</a> and the <a href="../shapes/index.html">Shapes Library</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../shapes/index.html#section3">Shapes Library Build Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>3. Collision Math Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Collision Math Toy.sln</code></span> with Visual Studio and build the Release configuration. The Release executable file <span style="background-color:#D8E4D8;"><code>Collision Math Toy.exe</code></span> will appear. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-1"></a></p><h2>5.1 CObjectManager</h2>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-1-1"></a></p><h3>5.1.1 CObjectManager::Move</h3>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-1-2"></a></p><h3>5.1.2 CObjectManager::BroadPhase</h3>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-1-3"></a></p><h3>5.1.3 CObjectManager::NarrowPhase</h3>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-2"></a></p><h2>5.2 Gates</h2>
 <p><a class="anchor" id="fig13"></a></p><div class="image">
 <img src="clip.png" alt=""/>
 <div class="caption">
 Fig. 13: The clip used to cover up the line segment used in a gate.</div></div>
 <p>Gates are implemented by <code><a class="el" href="class_c_gate.html" title="A gate.">CGate</a></code>.</p>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-3"></a></p><h2>5.3 Quadtrees</h2>
-<pre class="fragment">void CObjectManager::BroadPhase(std::vector&lt;CShape*&gt; v){
+<p>UNDER CONSTRUCTION </p><pre class="fragment">void CObjectManager::BroadPhase(std::vector&lt;CShape*&gt; v){
   for(auto i=v.begin(); i!=v.end(); i++) 
     for(auto j=next(i, 1); j!=v.end(); j++)
       NarrowPhase(*i, *j); 
@@ -274,6 +281,7 @@ Fig. 5.3.3.2: The index of each AABB in the quadtree array.</div></div>
 Fig. 5.3.3.3: The children of the green node at left are the green nodes at right.</div></div>
 <p>For example, since \(4 \times 18 = 72\), the children of the node at \(A[18]\) are at nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\), and since \(\lfloor 72/4\rfloor = \lfloor 73/4\rfloor = \lfloor 74/4\rfloor = \lfloor 75/4\rfloor = 18\), the parent of nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\) is in \(A[18]\) (see <a class="el" href="index.html#fig5-3-3-3">Fig. 5.3.3.3</a>).</p>
 <p><a class="anchor" id="section5-3-4"></a></p><h3>5.3.4 Quadtrees for Collision Detection</h3>
+<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="fig5-3-4-1"></a></p><div class="image">
 <img src="quadtree5.png" alt="" width="50%"/>
 <div class="caption">

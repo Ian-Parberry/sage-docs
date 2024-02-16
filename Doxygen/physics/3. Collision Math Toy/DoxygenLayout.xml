@@ -37,21 +37,21 @@
     </tab>
     <tab type="examples" visible="yes" title="" intro=""/>
     
-    <tab type="user" visible="yes" title="Repos">
+    <tab type="user" visible="yes" title="Repos" title="" url="index.html">
       <tab type="user" visible="yes" title="SAGE" intro="" url=  "https://github.com/Ian-Parberry/sage/"/>
       <tab type="user" visible="yes" title="SAGE Games" intro="" url="https://github.com/Ian-Parberry/sage-games/"/>
       <tab type="user" visible="yes" title="SAGE Physics" intro="" url="https://github.com/Ian-Parberry/sage-physics/"/>
     </tab>
     
-    <tab type="user" visible="yes" title="Install">
-      <tab type="user" visible="yes" title="SAGE" intro="" url="https://Ian-Parberry.github.io/sage-docs/install/"/>
-      <tab type="user" visible="yes" title="SAGE Physics" intro="" url="https://Ian-Parberry.github.io/sage-docs/installphysics/"/>
+    <tab type="user" visible="yes" title="Install" title="" url="index.html">
+      <tab type="user" visible="yes" title="SAGE" intro="" url="https://Ian-Parberry.github.io/sage-docs/install/index.html"/>
+      <tab type="user" visible="yes" title="SAGE Physics" intro="" url="https://Ian-Parberry.github.io/sage-docs/installphysics/index.html"/>
     </tab>
     
-    <tab type="user" visible="yes" title="Docs">
-      <tab type="user" visible="yes" title="SAGE" intro="" url="https://Ian-Parberry.github.io/sage-docs/sage/"/>
-      <tab type="user" visible="yes" title="SAGE Games" intro="" url="https://Ian-Parberry.github.io/sage-docs/introgames/"/>
-      <tab type="user" visible="yes" title="SAGE Physics" intro="" url="https://Ian-Parberry.github.io/sage-docs/introphysics/"/>
+    <tab type="user" visible="yes" title="Docs" title="" url="index.html">
+      <tab type="user" visible="yes" title="SAGE" intro="" url="https://Ian-Parberry.github.io/sage-docs/sage/index.html"/>
+      <tab type="user" visible="yes" title="SAGE Games" intro="" url="https://Ian-Parberry.github.io/sage-docs/introgames/index.html"/>
+      <tab type="user" visible="yes" title="SAGE Physics" intro="" url="https://Ian-Parberry.github.io/sage-docs/introphysics/index.html"/>
     </tab>
   </navindex>
 
