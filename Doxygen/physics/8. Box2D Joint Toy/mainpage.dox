@@ -1,25 +1,82 @@
 /**
 \mainpage notitle
 
+\anchor section1
+# 1. Introduction
+
 The Box2D Joint Toy demonstrates
 revolute, gear, prismatic, wheel, distance, and pulley joints.
 It is divided into 7 levels.
-The enter key advances to the next level and the backspace key restarts the
-current level. The effect of hitting the space bar varies from level to level.
 This code demo has no sound.
 
-The Levels
-----------
+\anchor section2
+# 2. Keyboard Controls
 
-### 1. The Windmill
+<center>
+<table>
+<tr>
+<td><center><b>Key</b></center></td>
+<td><center><b>Action</b></center></td>
+<tr>
+<td><center>F1</center></td>
+<td>Help (this document)</td>
+<tr>
+<td><center>F2</center></td>
+<td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only"</td>
+<tr>
+<td><center>Backspace</center></td>
+<td>Reset current level</td>
+<tr>
+<td><center>Enter</center></td>
+<td>Advance to next level</td>
+<tr>
+<td><center>Space</center></td>
+<td>Do an interesting thing (see \ref section4-1 "Section 4.1" to \ref section4-7 "Section 4.7")</td>
+<tr>
+<td><center>PrtScr (hold down)</center></td>
+<td>Save screenshot to a PNG file</td>
+<tr>
+<td><center>Esc</center></td>
+<td>Quit game and close the window</td>
+</table>
+</center>
+
+\anchor section3
+# 3. Building the Game
+
+This code uses <a href="../sage/index.html">SAGE</a>
+and <a href="https://github.com/erincatto/Box2D">Box2D</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>
+and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>.
+Navigate to the folder <span style="background-color:#D8E4D8;">`8. Box2D Joint Toy`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
+variables correctly.
+Open <span style="background-color:#D8E4D8;">`Box2D Joint Toy.sln`</span>
+ with Visual Studio and build the Release configuration.
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
+
+\anchor section4
+# 4. Game Play
+
+\anchor section4-1
+## 4.1 The Windmill
+
+\anchor fig4-1
+\image html screenshot0.png "Fig. 4.1: The windmill."
 
 A windmill with a revolute joint connecting the vanes to the body.
 The revolute joint has a motor. 
 The space bar reverses the motor's direction of rotation. 
 
-@image html screenshot0.png
+\anchor section4-2
+## 4.2 Gears
 
-### 2. Gears
+\anchor fig4-2
+\image html screenshot1.png "Fig. 4.2: The gears."
 
 A system of 9 interlocked gears constructed using revolute and
 gear joints.The largest
@@ -28,9 +85,11 @@ gear joints. The space bar reverses the motor's direction of
 rotation. The 4 square gears
 mesh perfectly the same way that round gears do.
 
-@image html screenshot1.png
+\anchor section4-3
+## 4.3 Nautilus Gears
 
-### 3. Nautilus Gears
+\anchor fig4-3
+\image html screenshot2.png "Fig. 4.3: The nautilus gears."
 
 A system of 5 <em>nautilus gears</em>, which are gears
 in the shape of a nautilus shell. The center gear has a revolute joint with a motor. 
@@ -38,9 +97,11 @@ The other gears have variable speed, so they cannot be animated by Box2D.
 We have to animate them ourselves which means doing a little math.  
 The space bar reverses the motor's direction of rotation.
 
-@image html screenshot2.png
+\anchor section4-4
+## 4.4 Rack-and-Pinion
 
-### 4. Rack-and-Pinion
+\anchor fig4-4
+\image html screenshot3.png "Fig. 4.4: The rack-and-pinion."
 
 A <em>rack-and-pinion</em> consists of a round gear called a <em>pinion</em>
 connected to a toothed rod called a <em>rack</em>.
@@ -50,64 +111,91 @@ revolute joint with a motor.
 The rack is connected to the pinion using a gear joint and a prismatic joint.
 The space bar reverses the motor's direction of rotation.
 
-@image html screenshot3.png
+\anchor section4-5
+## 4.5 Car
 
-### 5. Car
+\anchor fig4-5
+\image html screenshot4.png "Fig. 4.5: The car."
 
 A car drives autonomously back and forth over a pair of ramps. 
 The car is constructed using a pair of wheel joints that
 have motors. The space bar reverses the motors' directions of rotation.
 
-@image html screenshot4.png
+\anchor section4-6
+## 4.6 Newton's Cradle
 
-### 6. Newton's Cradle
+\anchor fig4-6
+\image html screenshot5.png "Fig. 4.6: Newton's cradle."
 
-Distance joints are used to construct a Newton's Cradle with 6 balls.
+Distance joints are used to construct a 2D
+<a href="../newton/index.html">Newton's Cradle</a>
+with 6 balls.
 When the balls are stopped, hitting the space bar will lift and release
 from 1 to 5 balls in sequence.
 After that it should behave like a real Newton's Cradle.
 When the balls are in motion, the space bar stops them.
 
-@image html screenshot5.png
+\anchor section4-7
+## 4.7 Elephant Drop
 
-### 7. Elephant Drop
+\anchor fig4-7
+\image html screenshot6.png "Fig. 4.7: The elephant drop."
 
 A pulley joint is used to lift a safe when an elephant is dropped
 into a wooden cradle. The pulley wheels and ropes are animated in code.
+When the elephant is not present, the space bar makes it drop in from above.
+When the elephant is present, the space bar makes it disappear.
 
-@image html screenshot6.png
+\anchor section5
+# 5. Code Breakdown
 
-Keyboard Controls
------------------
+UNDER CONSTRUCTION 
 
-<center>
-<table>
-<tr>
-<td><center><b>Key</b></center></td>
-<td><center><b>Action</b></center></td>
-<tr>
-<td>F1</td>
-<td>Help (this document)</td>
-<tr>
-<td>Backspace</td>
-<td>Reset current level</td>
-<tr>
-<td>Enter</td>
-<td>Advance to next level</td>
-<tr>
-<td>Space</td>
-<td>Do an interesting thing</td>
-<tr>
-<td>PrtScr (hold down)</td>
-<td>Save screenshot to a PNG file</td>
-</table>
-</center>
+\anchor section5-1
+## 5.1 The Windmill
 
-The Simple Academic Game Engine
----------------
+UNDER CONSTRUCTION 
 
-This code uses <a href="../sage/index.html">SAGE</a>, the Simple Academic Game Engine.
-Other prototype <a href="../introphysics/index.html">physics games and toys</a>  are also available.
+\anchor section5-2
+## 5.2 Gears
+
+UNDER CONSTRUCTION 
+
+\anchor section5-3
+## 5.3 Nautilus Gears
+
+\anchor fig5-3-1
+\image html Nautilus2-342-96.gif "Fig. 5.3.1: The nautilus gears." width=25%
+
+UNDER CONSTRUCTION 
+
+\anchor section5-4
+## 5.4 Rack-and-Pinion
+
+UNDER CONSTRUCTION 
+
+\anchor fig5-4-1
+\image html rackandpinion.gif "Fig. 5.4.1: The rack-and-pinion." width=50%
+
+\anchor section5-5
+## 5.5 Car
+
+UNDER CONSTRUCTION 
+
+\anchor section5-6
+## 5.6 Newton's Cradle
+
+UNDER CONSTRUCTION 
+
+\anchor section5-7
+## 5.7 Elephant Drop
+
+UNDER CONSTRUCTION 
+
+\anchor section6
+# 6. What Next?
+
+Next, take a look at the <a href="../cannon/index.html">Box2D Cannon Game</a>.
 
 
 **/

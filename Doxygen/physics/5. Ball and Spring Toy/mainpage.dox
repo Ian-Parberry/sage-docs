@@ -46,6 +46,9 @@ the center of the window.
 <tr>
 <td><center>PrtScr (hold down)</center></td>
 <td>Save screenshot to a PNG file</td>
+<tr>
+<td><center>Esc</center></td>
+<td>Quit game and close the window</td>
 </table>
 </center>
 

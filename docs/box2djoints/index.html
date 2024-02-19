@@ -79,61 +79,99 @@ $(function() {
 </div>
 
 <div><div class="contents">
-<div class="textblock"><p>The Box2D Joint Toy demonstrates revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. The enter key advances to the next level and the backspace key restarts the current level. The effect of hitting the space bar varies from level to level. This code demo has no sound.</p>
-<h2>The Levels </h2>
-<h3>1. The Windmill</h3>
-<p>A windmill with a revolute joint connecting the vanes to the body. The revolute joint has a motor. The space bar reverses the motor's direction of rotation.</p>
-<div class="image">
-<img src="screenshot0.png" alt=""/>
-</div>
-<h3>2. Gears</h3>
-<p>A system of 9 interlocked gears constructed using revolute and gear joints.The largest gear has a motor and the others are driven by their gear joints. The space bar reverses the motor's direction of rotation. The 4 square gears mesh perfectly the same way that round gears do.</p>
-<div class="image">
-<img src="screenshot1.png" alt=""/>
-</div>
-<h3>3. Nautilus Gears</h3>
-<p>A system of 5 <em>nautilus gears</em>, which are gears in the shape of a nautilus shell. The center gear has a revolute joint with a motor. The other gears have variable speed, so they cannot be animated by Box2D. We have to animate them ourselves which means doing a little math. <br  />
- The space bar reverses the motor's direction of rotation.</p>
-<div class="image">
-<img src="screenshot2.png" alt=""/>
-</div>
-<h3>4. Rack-and-Pinion</h3>
-<p>A <em>rack-and-pinion</em> consists of a round gear called a <em>pinion</em> connected to a toothed rod called a <em>rack</em>. When the pinion rotates, the rack moves horizontally. The pinion has a revolute joint with a motor. The rack is connected to the pinion using a gear joint and a prismatic joint. The space bar reverses the motor's direction of rotation.</p>
-<div class="image">
-<img src="screenshot3.png" alt=""/>
-</div>
-<h3>5. Car</h3>
-<p>A car drives autonomously back and forth over a pair of ramps. The car is constructed using a pair of wheel joints that have motors. The space bar reverses the motors' directions of rotation.</p>
-<div class="image">
-<img src="screenshot4.png" alt=""/>
-</div>
-<h3>6. Newton's Cradle</h3>
-<p>Distance joints are used to construct a Newton's Cradle with 6 balls. When the balls are stopped, hitting the space bar will lift and release from 1 to 5 balls in sequence. After that it should behave like a real Newton's Cradle. When the balls are in motion, the space bar stops them.</p>
-<div class="image">
-<img src="screenshot5.png" alt=""/>
-</div>
-<h3>7. Elephant Drop</h3>
-<p>A pulley joint is used to lift a safe when an elephant is dropped into a wooden cradle. The pulley wheels and ropes are animated in code.</p>
-<div class="image">
-<img src="screenshot6.png" alt=""/>
-</div>
-<h2>Keyboard Controls </h2>
+<div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
+<p>The Box2D Joint Toy demonstrates revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound.</p>
+<p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
 <td><center><b>Key</b></center> </td><td><center><b>Action</b></center> </td></tr>
 <tr>
-<td>F1 </td><td>Help (this document) </td></tr>
+<td><center>F1</center> </td><td>Help (this document) </td></tr>
 <tr>
-<td>Backspace </td><td>Reset current level </td></tr>
+<td><center>F2</center> </td><td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only" </td></tr>
 <tr>
-<td>Enter </td><td>Advance to next level </td></tr>
+<td><center>Backspace</center> </td><td>Reset current level </td></tr>
 <tr>
-<td>Space </td><td>Do an interesting thing </td></tr>
+<td><center>Enter</center> </td><td>Advance to next level </td></tr>
 <tr>
-<td>PrtScr (hold down) </td><td>Save screenshot to a PNG file </td></tr>
+<td><center>Space</center> </td><td>Do an interesting thing (see <a class="el" href="index.html#section4-1">Section 4.1</a> to <a class="el" href="index.html#section4-7">Section 4.7</a>) </td></tr>
+<tr>
+<td><center>PrtScr (hold down)</center> </td><td>Save screenshot to a PNG file </td></tr>
+<tr>
+<td><center>Esc</center> </td><td>Quit game and close the window </td></tr>
 </table>
-</center><h2>The Simple Academic Game Engine </h2>
-<p>This code uses <a href="../sage/index.html">SAGE</a>, the Simple Academic Game Engine. Other prototype <a href="../introphysics/index.html">physics games and toys</a> are also available. </p>
+</center><p><a class="anchor" id="section3"></a></p><h1>3. Building the Game</h1>
+<p>This code uses <a href="../sage/index.html">SAGE</a> and <a href="https://github.com/erincatto/Box2D">Box2D</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>8. Box2D Joint Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Box2D Joint Toy.sln</code></span> with Visual Studio and build the Release configuration. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
+<p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
+<p><a class="anchor" id="section4-1"></a></p><h2>4.1 The Windmill</h2>
+<p><a class="anchor" id="fig4-1"></a></p><div class="image">
+<img src="screenshot0.png" alt=""/>
+<div class="caption">
+Fig. 4.1: The windmill.</div></div>
+<p>A windmill with a revolute joint connecting the vanes to the body. The revolute joint has a motor. The space bar reverses the motor's direction of rotation.</p>
+<p><a class="anchor" id="section4-2"></a></p><h2>4.2 Gears</h2>
+<p><a class="anchor" id="fig4-2"></a></p><div class="image">
+<img src="screenshot1.png" alt=""/>
+<div class="caption">
+Fig. 4.2: The gears.</div></div>
+<p>A system of 9 interlocked gears constructed using revolute and gear joints.The largest gear has a motor and the others are driven by their gear joints. The space bar reverses the motor's direction of rotation. The 4 square gears mesh perfectly the same way that round gears do.</p>
+<p><a class="anchor" id="section4-3"></a></p><h2>4.3 Nautilus Gears</h2>
+<p><a class="anchor" id="fig4-3"></a></p><div class="image">
+<img src="screenshot2.png" alt=""/>
+<div class="caption">
+Fig. 4.3: The nautilus gears.</div></div>
+<p>A system of 5 <em>nautilus gears</em>, which are gears in the shape of a nautilus shell. The center gear has a revolute joint with a motor. The other gears have variable speed, so they cannot be animated by Box2D. We have to animate them ourselves which means doing a little math. <br  />
+ The space bar reverses the motor's direction of rotation.</p>
+<p><a class="anchor" id="section4-4"></a></p><h2>4.4 Rack-and-Pinion</h2>
+<p><a class="anchor" id="fig4-4"></a></p><div class="image">
+<img src="screenshot3.png" alt=""/>
+<div class="caption">
+Fig. 4.4: The rack-and-pinion.</div></div>
+<p>A <em>rack-and-pinion</em> consists of a round gear called a <em>pinion</em> connected to a toothed rod called a <em>rack</em>. When the pinion rotates, the rack moves horizontally. The pinion has a revolute joint with a motor. The rack is connected to the pinion using a gear joint and a prismatic joint. The space bar reverses the motor's direction of rotation.</p>
+<p><a class="anchor" id="section4-5"></a></p><h2>4.5 Car</h2>
+<p><a class="anchor" id="fig4-5"></a></p><div class="image">
+<img src="screenshot4.png" alt=""/>
+<div class="caption">
+Fig. 4.5: The car.</div></div>
+<p>A car drives autonomously back and forth over a pair of ramps. The car is constructed using a pair of wheel joints that have motors. The space bar reverses the motors' directions of rotation.</p>
+<p><a class="anchor" id="section4-6"></a></p><h2>4.6 Newton's Cradle</h2>
+<p><a class="anchor" id="fig4-6"></a></p><div class="image">
+<img src="screenshot5.png" alt=""/>
+<div class="caption">
+Fig. 4.6: Newton's cradle.</div></div>
+<p>Distance joints are used to construct a 2D <a href="../newton/index.html">Newton's Cradle</a> with 6 balls. When the balls are stopped, hitting the space bar will lift and release from 1 to 5 balls in sequence. After that it should behave like a real Newton's Cradle. When the balls are in motion, the space bar stops them.</p>
+<p><a class="anchor" id="section4-7"></a></p><h2>4.7 Elephant Drop</h2>
+<p><a class="anchor" id="fig4-7"></a></p><div class="image">
+<img src="screenshot6.png" alt=""/>
+<div class="caption">
+Fig. 4.7: The elephant drop.</div></div>
+<p>A pulley joint is used to lift a safe when an elephant is dropped into a wooden cradle. The pulley wheels and ropes are animated in code. When the elephant is not present, the space bar makes it drop in from above. When the elephant is present, the space bar makes it disappear.</p>
+<p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-1"></a></p><h2>5.1 The Windmill</h2>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-2"></a></p><h2>5.2 Gears</h2>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-3"></a></p><h2>5.3 Nautilus Gears</h2>
+<p><a class="anchor" id="fig5-3-1"></a></p><div class="image">
+<img src="Nautilus2-342-96.gif" alt="" width="25%"/>
+<div class="caption">
+Fig. 5.3.1: The nautilus gears.</div></div>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-4"></a></p><h2>5.4 Rack-and-Pinion</h2>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="fig5-4-1"></a></p><div class="image">
+<img src="rackandpinion.gif" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.4.1: The rack-and-pinion.</div></div>
+<p><a class="anchor" id="section5-5"></a></p><h2>5.5 Car</h2>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-6"></a></p><h2>5.6 Newton's Cradle</h2>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-7"></a></p><h2>5.7 Elephant Drop</h2>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p>Next, take a look at the <a href="../cannon/index.html">Box2D Cannon Game</a>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

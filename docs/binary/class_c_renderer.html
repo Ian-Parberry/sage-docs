@@ -100,9 +100,8 @@ Inheritance diagram for CRenderer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adde9bcc5dd6fae0e5988e5eac510592f"><td class="memItemLeft" align="right" valign="top"><a id="adde9bcc5dd6fae0e5988e5eac510592f" name="adde9bcc5dd6fae0e5988e5eac510592f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CRenderer</b> (const UINT, const float)</td></tr>
-<tr class="memdesc:adde9bcc5dd6fae0e5988e5eac510592f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="memitem:adde9bcc5dd6fae0e5988e5eac510592f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_renderer.html#adde9bcc5dd6fae0e5988e5eac510592f">CRenderer</a> (const UINT, const float)</td></tr>
+<tr class="memdesc:adde9bcc5dd6fae0e5988e5eac510592f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:adde9bcc5dd6fae0e5988e5eac510592f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac638a41a1fc91575185523c658c1eba8"><td class="memItemLeft" align="right" valign="top"><a id="ac638a41a1fc91575185523c658c1eba8" name="ac638a41a1fc91575185523c658c1eba8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadSprites</b> ()</td></tr>
@@ -128,7 +127,43 @@ Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Render world handles the game-specific rendering tasks, relying on the base class to do all of the actual API-specific rendering. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="adde9bcc5dd6fae0e5988e5eac510592f" name="adde9bcc5dd6fae0e5988e5eac510592f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adde9bcc5dd6fae0e5988e5eac510592f">&#9670;&#160;</a></span>CRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CRenderer::CRenderer </td>
+          <td>(</td>
+          <td class="paramtype">const UINT&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>fPRS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>index of the line sprite. </td></tr>
+    <tr><td class="paramname">fPRS</td><td>Physics World to Render World scale value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c215b8e26e3ab4f0dc947317afb4792" name="a2c215b8e26e3ab4f0dc947317afb4792"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c215b8e26e3ab4f0dc947317afb4792">&#9670;&#160;</a></span>DrawNixieBits()</h2>
 
@@ -203,7 +238,12 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If there is overflow, flash the warning led on and off. Otherwise just draw it unlit. </p>
+<p>If there is overflow, flash the warning led on and off. Otherwise just draw it unlit. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bOflo</td><td>true if there is overflow. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

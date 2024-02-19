@@ -52,8 +52,8 @@ and
       <td>PrtScr (hold down)</td>
       <td>Save screenshot to a PNG file</td>
     <tr>
-      <td>Esc</td>
-      <td>Quit game and exit</td>
+      <td><center>Esc</center></td>
+      <td>Quit game and close the window</td>
   </table>
 </center>
 

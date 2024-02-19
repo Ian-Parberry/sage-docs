@@ -103,9 +103,8 @@ Inheritance diagram for CLineObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afc634eac802a5f216db6d3548c4379f2"><td class="memItemLeft" align="right" valign="top"><a id="afc634eac802a5f216db6d3548c4379f2" name="afc634eac802a5f216db6d3548c4379f2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CLineObject</b> (b2Body *, b2Vec2, bool, b2Body *, b2Vec2, bool)</td></tr>
-<tr class="memdesc:afc634eac802a5f216db6d3548c4379f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="memitem:afc634eac802a5f216db6d3548c4379f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_line_object.html#afc634eac802a5f216db6d3548c4379f2">CLineObject</a> (b2Body *, b2Vec2, bool, b2Body *, b2Vec2, bool)</td></tr>
+<tr class="memdesc:afc634eac802a5f216db6d3548c4379f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:afc634eac802a5f216db6d3548c4379f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9890f4025ed04ae53d5d6792f058b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_line_object.html#ac9890f4025ed04ae53d5d6792f058b31">draw</a> ()</td></tr>
 <tr class="memdesc:ac9890f4025ed04ae53d5d6792f058b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw line.  <br /></td></tr>
@@ -196,7 +195,71 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A line object differs from an ordinary object in that it is associated with two bodies in Physics World instead of just one. The line goes from an anchor on one body to an anchor on another body. AN anchor is just a vector offset from the center of the body in Physics World. The anchors may or may not rotate with their associated bodies. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="afc634eac802a5f216db6d3548c4379f2" name="afc634eac802a5f216db6d3548c4379f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc634eac802a5f216db6d3548c4379f2">&#9670;&#160;</a></span>CLineObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CLineObject::CLineObject </td>
+          <td>(</td>
+          <td class="paramtype">b2Body *&#160;</td>
+          <td class="paramname"><em>b0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b2Vec2&#160;</td>
+          <td class="paramname"><em>d0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>r0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b2Body *&#160;</td>
+          <td class="paramname"><em>b1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">b2Vec2&#160;</td>
+          <td class="paramname"><em>d1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>r1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b0</td><td>Pointer to body 0. </td></tr>
+    <tr><td class="paramname">d0</td><td>Anchor point for body 0. </td></tr>
+    <tr><td class="paramname">r0</td><td>True if body 0 rotates. </td></tr>
+    <tr><td class="paramname">b1</td><td>Pointer to body 1. </td></tr>
+    <tr><td class="paramname">d1</td><td>Anchor point for body 1. </td></tr>
+    <tr><td class="paramname">r1</td><td>True if body 1 rotates. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac9890f4025ed04ae53d5d6792f058b31" name="ac9890f4025ed04ae53d5d6792f058b31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9890f4025ed04ae53d5d6792f058b31">&#9670;&#160;</a></span>draw()</h2>
 

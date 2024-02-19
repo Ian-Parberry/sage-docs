@@ -2,6 +2,12 @@
 
 \mainpage notitle
 
+\anchor section1
+# 1. Introduction
+
+\anchor fig1
+\image html screenshot.png "Fig. 1: Screen shot." width=60%
+
 The Cannon Lullaby Toy plays the first seven notes
 of the classic lullaby "Twinkle Twinkle Little Star" 
 using a cannon and three bells. 
@@ -15,17 +21,8 @@ about 45 degrees. "Twinkle Twinkle Little Star" is hard-coded
 as "CCGGAAG" played at about three beats per second, but this is pretty easy to change
 in the code.
 
-@image html screenshot.png
-
-The tricky bit is figuring out how to get the cannonballs to 
-the right places at the right times
-when they are all fired from the cannon simultaneously.
-No worries though, it's not as hard as it might seem provided you
-grok relative velocity and the formulae \f$s=ut+at^2/f\f$ and
-\f$v=u+at\f$.
-
-Keyboard Controls
------------------
+\anchor section2
+# 2. Keyboard Controls
 
 <center>
 <table>
@@ -33,49 +30,88 @@ Keyboard Controls
 <td><center><b>Key</b></center></td>
 <td><center><b>Action</b></center></td>
 <tr>
-<td>F1</td>
-<td>Help (this document)</td>
+<td><center>F1</center></td>
+<td>Help (this document)</td><tr>
+<td><center>F2</center></td>
+<td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only"</td>
 <tr>
-<td>1</td>
+<td><center>1</center></td>
 <td>Left flower up </td>
 <tr>
-<td>2</td>
+<td><center>2</center></td>
 <td>Left flower down</td>
 <tr>
-<td>3</td>
+<td><center>3</center></td>
 <td>Center flower up </td>
 <tr>
-<td>4</td>
+<td><center>4</center></td>
 <td>Center flower down</td>
 <tr>
-<td>5</td>
+<td><center>5</center></td>
 <td>Right flower up </td>
 <tr>
-<td>6</td>
+<td><center>6</center></td>
 <td>Right flower down</td>
 <tr>
-<td>Space</td>
+<td><center>Space</center></td>
 <td>Fire cannon</td>
 <tr>
-<td>Left arrow</td>
+<td><center>Left arrow</center></td>
 <td>Move cannon left</td>
 <tr>
-<td>Right arrow</td>
+<td><center>Right arrow</center></td>
 <td>Move cannon right</td>
 <tr>
-<td>S</td>
+<td><center>S</center></td>
 <td>Stop cannon</td>
 <tr>
-<td>PrtScr (hold down)</td>
+<td><center>PrtScr (hold down)</center></td>
 <td>Save screenshot to a PNG file</td>
+<tr>
+<td><center>Esc</center></td>
+<td>Quit game and close the window</td>
 </table>
 </center>
 
-The Simple Academic Game Engine
----------------
+\anchor section3
+# 3. Building the Game
 
-This code uses <a href="../sage/index.html">SAGE</a>, the Simple Academic Game Engine.
-Other prototype <a href="../introphysics/index.html">physics games and toys</a>  are also available.
+This code uses <a href="../sage/index.html">SAGE</a>
+and <a href="https://github.com/erincatto/Box2D">Box2D</a>.
+Make sure that you have followed the
+<a href="../install/index.html">SAGE Installation Instructions</a>
+and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>.
+Navigate to the folder <span style="background-color:#D8E4D8;">`14. Cannon Lullaby Toy`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
+Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
+to verify that you have set the environment
+variables correctly.
+Open <span style="background-color:#D8E4D8;">`Cannon Lullaby Toy.sln`</span>
+ with Visual Studio and build the Release configuration.
+Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
+to build both Release and Debug configurations. 
+
+\anchor section4
+# 4. Game Play
+
+UNDER CONSTRUCTION
+
+\anchor section5
+# 5. Code Breakdown
+
+The tricky bit is figuring out how to get the cannonballs to 
+the right places at the right times
+when they are all fired from the cannon simultaneously.
+No worries though, it's not as hard as it might seem provided you
+grok parabolas, relative velocity and the formulae \f$s=ut+at^2/2\f$ and
+\f$v=u+at\f$.
+
+UNDER CONSTRUCTION
+
+\anchor section6
+# 6. What Next?
+
+Next, take a look at the <a href="../bulletblocks/index.html">Bullet Physics Block Toy</a>.
 
 **/
 
