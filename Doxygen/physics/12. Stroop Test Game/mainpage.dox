@@ -9,9 +9,18 @@ The Stroop Test Game makes the classical Stroop Test into a
 game with completely gratuitous and totally unnecessary 
 sound, physics and visual effects. 
 
-
 \anchor fig1
 \image html screenshot.png "Fig. 1: Screen shot." width=60%
+
+The remainder of this page is divided into five sections.
+\ref section2 "Section 2" lists the controls
+and their corresponding actions,
+\ref section3 "Section 3" tells you how to build it,
+\ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
+important features,
+\ref section5 "Section 5" gives a breakdown of the code,
+and
+\ref section6 "Section 6" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
