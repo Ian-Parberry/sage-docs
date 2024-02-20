@@ -227,7 +227,15 @@ Fig. 13: The clip used to cover up the line segment used in a gate.</div></div>
 <p>Gates are implemented by <code><a class="el" href="class_c_gate.html" title="A gate.">CGate</a></code>.</p>
 <p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-3"></a></p><h2>5.3 Quadtrees</h2>
-<p>UNDER CONSTRUCTION </p><pre class="fragment">void CObjectManager::BroadPhase(std::vector&lt;CShape*&gt; v){
+<p>UNDER CONSTRUCTION</p>
+<p>You might be tempted to use the following naive implementation of a broad phase collision detection and response function which calls <code>NarrowPhase</code> once for each pair of shapes in an <code>std::vector</code> of pointers to <code>CShape</code>. </p><pre class="fragment">void CObjectManager::BroadPhase(std::vector&lt;CShape*&gt; v){
+  for(auto i: v) 
+    for(auto j: v)
+      if(i != j)
+        NarrowPhase(*i, *j); 
+} //BroadPhase
+</pre><p> We call this function <em>naive</em> because <code>NarrowPhase</code> is actually called twice for each pair of <code>CShape</code>s. Instead, we change the second <code>for</code> loop to iterate through the shapes <em>following</em> the one chosen in the first <code>for</code> loop.</p>
+<p><a class="anchor" id="naivebroadphase"></a></p><pre class="fragment">void CObjectManager::BroadPhase(std::vector&lt;CShape*&gt; v){
   for(auto i=v.begin(); i!=v.end(); i++) 
     for(auto j=next(i, 1); j!=v.end(); j++)
       NarrowPhase(*i, *j); 
@@ -239,10 +247,10 @@ Fig. 13: The clip used to cover up the line segment used in a gate.</div></div>
  = \sum_{i=1}^{n - 1} n - \sum_{i=1}^{n - 1} i
  = n(n-1) - n(n-1)/2
  = n(n-1)/2
- = \theta (n^2).
+ = \Theta (n^2).
 \]
 </p>
-<p>There are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection. A <em>quadtree</em> is one of them.</p>
+<p>You can see that we have halved the number of calls to <code>NarrowPhase</code> which is a pretty good speed-up in practice. However, \(\Theta(n^2)\) is pretty bad when you consider that there can be only \(O(n)\) collisions at any one time between \(n\) objects. Fortunately, there are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection. A <em>quadtree</em> is one of them.</p>
 <p><a class="anchor" id="section5-3-1"></a></p><h3>5.3.1 Quadtree Definition</h3>
 <p><a class="anchor" id="fig5-3-1-1"></a></p><div class="image">
 <img src="quadtree0.png" alt="" width="50%"/>
@@ -281,25 +289,50 @@ Fig. 5.3.3.2: The index of each AABB in the quadtree array.</div></div>
 <div class="caption">
 Fig. 5.3.3.3: The children of the green node at left are the green nodes at right.</div></div>
 <p>For example, since \(4 \times 18 = 72\), the children of the node at \(A[18]\) are at nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\), and since \(\lfloor 72/4\rfloor = \lfloor 73/4\rfloor = \lfloor 74/4\rfloor = \lfloor 75/4\rfloor = 18\), the parent of nodes \(A[73]\), \(A[74]\), \(A[75]\), and \(A[76]\) is in \(A[18]\) (see <a class="el" href="index.html#fig5-3-3-3">Fig. 5.3.3.3</a>).</p>
+<p>As mentioned in <a class="el" href="index.html#section2-8">Section 2.8</a>, selecting Show AABBs from the dialog box will draw the leaf node areas of the AABB in magenta as shown in <a class="el" href="index.html#fig5-3-3-4">Fig. 5.3.3.4</a>.</p>
+<p><a class="anchor" id="fig5-3-3-4"></a></p><div class="image">
+<img src="quadtree7.png" alt="" width="80%"/>
+<div class="caption">
+Fig. 5.3.3.4: Quadtree leaf areas for a quadtree with, from left to right, 2, 3, 4, and 5 levels.</div></div>
 <p><a class="anchor" id="section5-3-4"></a></p><h3>5.3.4 Quadtrees for Collision Detection</h3>
-<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="fig5-3-4-1"></a></p><div class="image">
-<img src="quadtree5.png" alt="" width="50%"/>
+<img src="quadtree5.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 5.3.4.1: A ball bearing in quadtree AABBs.</div></div>
+Fig. 5.3.4.1: Four ball bearings in a the areas covered by quadtree nodes.</div></div>
+<p>Consider the areas covered by the nodes of the quadtree of depth 3 shown in <a class="el" href="index.html#fig5-3-4-1">Fig. 5.3.4.1</a> with four colored balls drawn at their places in the game world.</p>
+<ul>
+<li>The depth 3 (leaf) node areas of the quadtree are shown in the bottom right rectangle of <a class="el" href="index.html#fig5-3-4-1">Fig. 5.3.4.1</a> with indices 21&ndash;84. There are four ball bearings shown there. The red ball has its AABB completely in leaf 21, the green ball has its AABB completely in leaf 34, the yellow ball has its AABB overlap leaves 34, 45, 36, and 47, and the blue ball has its AABB completely in leaf 72.</li>
+<li>The depth 2 node areas of the quadtree are shown in the bottom left rectangle of <a class="el" href="index.html#fig5-3-4-1">Fig. 5.3.4.1</a> with indices 5&ndash;20. The red ball has its AABB completely in node 5, the green ball has its AABB completely in node 8, the yellow ball has its AABB overlap nodes 8 and 11, and the blue ball has its AABB completely in node 17.</li>
+<li>The depth 1 node areas of the quadtree are shown in the top right rectangle of <a class="el" href="index.html#fig5-3-4-1">Fig. 5.3.4.1</a> with indices 1&ndash;4. The red ball has its AABB completely in node 1, the green ball has its AABB completely in node 1, the yellow ball has its AABB overlap nodes 1 and 2, and the blue ball has its AABB completely in node 4.</li>
+<li>The depth 0 node (root) area of the quadtree is shown in the top left rectangle of <a class="el" href="index.html#fig5-3-4-1">Fig. 5.3.4.1</a> with index 0. All of the balls have their AABBs completely within node 0, as expected.</li>
+</ul>
 <p><a class="anchor" id="fig5-3-4-2"></a></p><div class="image">
-<img src="quadtree6.png" alt="" width="50%"/>
+<img src="quadtree6.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 5.3.4.2: A ball bearing in quadtree nodes.</div></div>
-<p><a class="anchor" id="fig5-3-4-3"></a></p><div class="image">
-<img src="quadtree7.png" alt="" width="90%"/>
-<div class="caption">
-Fig. 5.3.4.3: Quadtree leaf areas for a quadtree with, from left to right, 2, 3, 4, and 5 levels.</div></div>
-<p>Suppose our game world has dimensions \(N \times N\) and has \(n\) shapes in it. We begin by building the quadtree structure of depth \(\lceil \log_4 N\rceil\). This takes time \(O(N)\). On each broad phase iteration, we delete the shapes in the quadtree and reinsert them at their new positions. This takes \( \log N\) time per shape, which gives a total of \(O(n \log N)\). If there are \(m\) non-empty leaves each of which has at most \(k\) shapes in it, then each iteration of broad phase makes at most \(O(mk^2\) calls to narrow phase. Assume that each call to narrow phase takes time \(O(1)\). The running time of broad phase is therefore \(O(m \log N + mk^2)\). If we assume that on average shapes are somewhst widely distributed, that is, \(m = \theta(n)\) and \(k = O(1)\), then  </p><p class="formulaDsp">
+Fig. 5.3.4.2: Four ball bearings in a quadtree.</div></div>
+<p><a class="anchor" id="section5-3-5"></a></p><h3>5.3.5 Quadtrees Analysis</h3>
+<p>Suppose our game world has dimensions \(N \times N\) and has \(n\) shapes in it. We begin by building the quadtree structure of depth \(\lceil \log_4 N\rceil\). This takes time \(O(N)\). On each broad phase iteration, we delete the shapes in the quadtree and reinsert them at their new positions. This takes \( \log N\) time per shape, which gives total time of \(O(n \log N)\). If there are \(m\) non-empty leaves each of which has at most \(k\) shapes in it, then each iteration of broad phase makes at most \(O(mk^2)\) calls to narrow phase. Assume that each call to narrow phase takes time \(O(1)\). The running time of broad phase is therefore \(O(m \log N + mk^2)\). If we assume that on average shapes are somewhst widely distributed, that is, \(m = \theta(n)\) and \(k = O(1)\), then  </p><p class="formulaDsp">
 \[
 O(m \log N + mk^2) = O(n \log N + n) = O(n \log N).
 \]
 </p>
+<p>If we take \(N\) to be constant for the duration of gameplay and gradually increase the number of shapes \(n\) over time, then the asymptotic time complexity will be \(O(n)\), which is much better than the <a class="el" href="index.html#naivebroadphase">brute force</a> \(\Theta ( n^2 )\) broad phase collision detection and response algorithm. Most importantly though, is this true in practice for reasonable values of \(n\), \(N\), \(m\), and \(k\)?</p>
+<p>Suppose we measure the number of AABB tests performed by the brute force method and by quadtrees. Each measurement records 60 seconds of motion, gathering data 60 times per second. The quadtree has 4 levels, and each leaf covers 60 × 44 pixels. The moving circles have a diameter of 42 pixels, so at most \(k=4\) balls can be in a leaf.</p>
+<p><a class="anchor" id="fig5-3-5-1"></a></p><div class="image">
+<img src="qtest0.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.5.1: Number of intersection tests for up to 32 balls.</div></div>
+<p><a class="el" href="index.html#fig5-3-5-1">Fig. 5.3.5.1</a> shows the number of AABB intersection tests used during broad phase collision detection and response for \(2 \leq n \leq 32\) balls, with the brute force figures in red and the quadtree figures in green. Note that the quadtree method very quickly becomes more efficient than the brute force method with quadtrees winning by a factor of 5 for \(n=32\) balls.</p>
+<p><a class="anchor" id="fig5-3-5-2"></a></p><div class="image">
+<img src="qtest2.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.5.2: Number of intersection tests for up to 10 balls in more detail.</div></div>
+<p>Since the far left of <a class="el" href="index.html#fig5-3-5-1">Fig. 5.3.5.1</a> is hard to read, it is resonable to ask where the two graphs cross, that is, for which value of \(n\) does quadtrees become more efficient. <a class="el" href="index.html#fig5-3-5-2">Fig. 5.3.5.2</a> shows the results for up to 10 balls in more detail, from which we can see that quadtrees become more efficient for 6 balls or more.</p>
+<p><a class="anchor" id="fig5-3-5-3"></a></p><div class="image">
+<img src="qtest1.png" alt="" width="50%"/>
+<div class="caption">
+Fig. 5.3.5.3: Line fitting for quadtree implementation.</div></div>
+<p>We made the claim above that for reasonable values of \(N\), \(k\), and \(m\), quadtree collision detection and response runs in time \(O(n)\). <a class="el" href="index.html#fig5-3-5-3">Fig. 5.3.5.3</a> shows the result of curve-fitting our results to a linear function using Microsoft Excel. It reports that the number of AABB intersection tests is slightly less than 3 times the number of balls with certainty \(R^2 = 0.996\), which is pretty close to linear in \(n\).</p>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../pinball/index.html">Pinball Game</a>. </p>
 </div></div><!-- PageDoc -->
