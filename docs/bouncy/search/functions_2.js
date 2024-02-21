@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['draw_0',['draw',['../class_c_object.html#ada3a757db19644b3df85fbdf04b899fb',1,'CObject::draw()'],['../class_c_object_manager.html#a96016db3387938f667512e3ab63e2d21',1,'CObjectManager::draw()']]]
+  ['draw_0',['Draw',['../class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42',1,'CObject::Draw()'],['../class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8',1,'CObjectManager::Draw()']]]
 ];

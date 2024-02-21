@@ -106,10 +106,32 @@ Fig. 1: Screen shot.</div></div>
 </center><p><a class="anchor" id="section3"></a></p><h1>3. Building the Game</h1>
 <p>This code uses <a href="../sage/index.html">SAGE</a> and <a href="https://github.com/erincatto/Box2D">Box2D</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>7. Box2D Bouncy Things Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Bouncy Things Toy.sln</code></span> with Visual Studio and build the Release configuration. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
-<p>The space bar drops a large number of balls and boxes that you can watch fall to the bottom of the screen and bounce around in a most satisfactory manner. This will work until the window is approximately full.</p>
+<p>The space bar drops a large number of balls and boxes that you can watch fall to the bottom of the screen and bounce around in a most satisfactory manner. This will work until the window is approximately full. Using the <code>F2</code> key (see <a class="el" href="index.html#section2">Section 2</a>) you can toggle between drawing sprites (<a class="el" href="index.html#fig1">Fig. 1</a>), sprites and shape outlines (<a class="el" href="index.html#fig2">Fig. 2</a>, left), and shapes only (<a class="el" href="index.html#fig2">Fig. 2</a>, right). Adding a line drawing option to the code lets us ensure that the collision shapes in Box2D line up properly with the outlines of the sprites.</p>
+<p><a class="anchor" id="fig2"></a></p><div class="image">
+<img src="screenshot2.png" alt="" width="80%"/>
+<div class="caption">
+Fig. 2: Screen shots with sprites and shapes (left), and shapes only (right).</div></div>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
-<p>UNDER CONSTRUCTION</p>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section5-1"></a></p><h2>5.1 Render World and Physics World</h2>
+<p>The Box2D manual makes it clear that Physics World units should not be pixels, otherwise the stability of the equation solver may be called into doubt. We chose to scale up from Render World to Physics World by dividing by a factor of 10, which is set by changing the value of <code>fPRV</code> in <span style="background-color:#D8E4D8;"><code><a class="el" href="_game_defines_8h.html" title="Game specific defines.">GameDefines.h</a></code></span>. </p><pre class="fragment">const float fPRV = 10.0f;
+</pre><p> <span style="background-color:#D8E4D8;"><code><a class="el" href="_game_defines_8h.html" title="Game specific defines.">GameDefines.h</a></code></span> also has some useful functions <code>PW2RW</code> to convert Physics World measurements to Render World for various types, for example, </p><pre class="fragment">inline float PW2RW(float x){return x*fPRV;};
+</pre><p> functions <code>RW2PW</code> to convert Render World measurements to Physics World for various types, for example, </p><pre class="fragment">inline float RW2PW(float x){return x/fPRV;};
+</pre><p> <a class="anchor" id="section5-2"></a></p><h2>5.2 Creating and Maintaining Physics World</h2>
+<p>Physics World is created in <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">CGame::Initialize</a></code> and is accessible through a pointer <code><a class="el" href="class_c_common.html#a3e867eb301b34599b66099460254a302" title="Pointer to Box2D Physics World.">CCommon::m_pPhysicsWorld</a></code>. When creating the Box2D Physics World you need to specify the gravity as a parameter. There is nothing special about choosing the number 100 in the line of code below - it was chosen by experimenting until it "looked right". </p><pre class="fragment">m_pPhysicsWorld = new b2World(RW2PW(0, -100));
+</pre><p> Physics World gets updated once per frame in <code><a class="el" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame.">CGame::ProcessFrame</a></code>. The three parameters are the frame time, the number of move iterations, and the number of collision detection and response iterations. The latter two parameters are somewhat arbitrarily chosen defaults. </p><pre class="fragment">m_pPhysicsWorld-&gt;Step(m_pTimer-&gt;GetFrameTime(), 4, 2);
+</pre><p> <a class="anchor" id="section5-3"></a></p><h2>5.3 Objects and Physics Bodies</h2>
+<pre class="fragment">b2Body* m_pBody = nullptr;
+
+CObject(eSprite, b2Body*);
+</pre><p> <a class="anchor" id="section5-3-1"></a></p><h2>5.3.1 Creating Physics Bodies</h2>
+<p><code><a class="el" href="class_c_object_manager.html#a6f1c59cb864e7d520447a67e78603381" title="Create a crate.">CObjectManager::CreateCrate</a></code> and <code><a class="el" href="class_c_object_manager.html#a702edb152f20a3c2a975a5395e188c37" title="Create a ball.">CObjectManager::CreateBall</a></code>.</p>
+<p><a class="anchor" id="section5-3-2"></a></p><h2>5.3.2 Destroying Physics Bodies</h2>
+<pre class="fragment">m_pPhysicsWorld-&gt;DestroyBody(m_pBody);
+</pre><p> <a class="anchor" id="section5-3-3"></a></p><h2>5.3.3 Object Drawing Using Physics Bodies</h2>
+<pre class="fragment">const float a = m_pBody-&gt;GetAngle(); 
+const b2Vec2 v = m_pBody-&gt;GetPosition();
+m_pRenderer-&gt;Draw(m_eSpriteType, PW2RW(v), a);
+</pre><p> <a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../box2djoints/index.html">Box2D Joint Toy</a>. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

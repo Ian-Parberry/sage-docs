@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['clear_0',['clear',['../class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf',1,'CObjectManager']]],
+  ['clear_0',['Clear',['../class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116',1,'CObjectManager']]],
   ['cobject_1',['CObject',['../class_c_object.html#ab353b95461709bffbf5ff4de337e9b6f',1,'CObject']]],
   ['cobjectmanager_2',['CObjectManager',['../class_c_object_manager.html#abba05e60f1cecc9071d070d3435fa0ce',1,'CObjectManager']]],
   ['createball_3',['CreateBall',['../class_c_object_manager.html#a702edb152f20a3c2a975a5395e188c37',1,'CObjectManager']]],

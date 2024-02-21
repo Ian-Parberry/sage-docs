@@ -78,11 +78,86 @@ The space bar drops a large number of balls and boxes that
 you can watch fall to the bottom of the screen
 and bounce around in a most satisfactory manner.
 This will work until the window is approximately full.
+Using the `F2` key (see \ref section2 "Section 2")
+you can toggle between drawing
+sprites (\ref fig1 "Fig. 1"),
+sprites and shape outlines (\ref fig2 "Fig. 2", left),
+and shapes only (\ref fig2 "Fig. 2", right).
+Adding a line drawing option to the code lets us ensure that
+the collision shapes in Box2D line up properly with the outlines
+of the sprites.
+
+\anchor fig2
+\image html screenshot2.png "Fig. 2: Screen shots with sprites  and shapes (left), and shapes only (right)." width=80%
 
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION
+\anchor section5-1
+## 5.1 Render World and Physics World
+
+The Box2D manual makes it clear that Physics World units should
+not be pixels, otherwise the stability of the equation solver
+may be called into doubt. We chose to scale up from Render World
+to Physics World by dividing by a factor of 10, which is set
+by changing the value of `fPRV` in <span style="background-color:#D8E4D8;">`GameDefines.h`</span>.
+    
+    const float fPRV = 10.0f;
+    
+<span style="background-color:#D8E4D8;">`GameDefines.h`</span> also
+has some useful functions `PW2RW` to convert Physics World
+measurements to Render World for various types, for example,
+
+    inline float PW2RW(float x){return x*fPRV;};
+
+functions `RW2PW` to convert Render World
+measurements to Physics World for various types, for example,
+
+    inline float RW2PW(float x){return x/fPRV;};
+
+\anchor section5-2
+## 5.2 Creating and Maintaining Physics World
+
+Physics World is created in `CGame::Initialize` and is accessible
+through a pointer `CCommon::m_pPhysicsWorld`. When creating the
+Box2D Physics World you need to specify the gravity as a parameter.
+There is nothing special about choosing the number 100 in the
+line of code below - it was chosen by experimenting until
+it "looked right".
+
+    m_pPhysicsWorld = new b2World(RW2PW(0, -100));
+
+Physics World gets updated once per frame in `CGame::ProcessFrame`.
+The three parameters are the frame time, the number of move
+iterations, and the number of collision detection and
+response iterations. The latter two parameters
+are somewhat arbitrarily chosen defaults.
+
+    m_pPhysicsWorld->Step(m_pTimer->GetFrameTime(), 4, 2);
+
+\anchor section5-3
+## 5.3 Objects and Physics Bodies
+
+    b2Body* m_pBody = nullptr;
+    
+    CObject(eSprite, b2Body*);
+
+\anchor section5-3-1
+## 5.3.1 Creating Physics Bodies
+
+`CObjectManager::CreateCrate` and `CObjectManager::CreateBall`.
+
+\anchor section5-3-2
+## 5.3.2 Destroying Physics Bodies
+
+    m_pPhysicsWorld->DestroyBody(m_pBody);
+
+\anchor section5-3-3
+## 5.3.3 Object Drawing Using Physics Bodies
+
+    const float a = m_pBody->GetAngle(); 
+    const b2Vec2 v = m_pBody->GetPosition();
+    m_pRenderer->Draw(m_eSpriteType, PW2RW(v), a);
 
 \anchor section6
 # 6. What Next?
