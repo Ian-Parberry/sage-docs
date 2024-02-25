@@ -16,7 +16,7 @@ UNDER CONSTRUCTION
 ## 2.1 Congruent Circles
 
 \anchor fig2-1
-@image html triangle.png "Fig. 2.1. Three touching unit circles." width=15%
+@image html triangle.png "Fig. 2.1. Three touching unit circles." width=20%
 
 Consider contacts between circles of equal radius (called _congruent_ circles).
 Since the centers of three touching circles form an equilateral triangle
@@ -26,7 +26,7 @@ This is called the <em>2D congruent kissing number</em> \f$k_2 = 6\f$.
 Therefore between \f$n\f$ congruent circles there can be at most \f$3n\f$ contacts.
 
 \anchor fig2-2
-@image html hex.png "Fig. 2.2. The yellow circle is touching six green circles." width=25%
+@image html hex.png "Fig. 2.2. The yellow circle is touching six green circles." width=30%
 
 \anchor section2-2
 ## 2.2 Non-Congruent Circles
@@ -98,7 +98,7 @@ satisfies \f$h^2 + 1 = 2^2\f$, that is
 \f$h = \sqrt{3}\f$.
 
 \anchor fig3-3
-@image html icosahedron1.png "Fig. 3.3." width=55%
+@image html icosahedron1.png "Fig. 3.3. Finding the distance between two pentagons in an icosahedron." width=55%
 
 The center \f$\vec{c}\f$ of the icosahedron aligns vertically with the
 centers of the two pentagons, as shown in \ref fig3-4 "Fig. 3.4." (left).
@@ -114,7 +114,7 @@ r_0 = \frac{1}{\sin \pi/5} \approx 1.7.
 \f]
 
 \anchor fig3-4
-@image html icosahedron3.png "Fig. 3.4." width=75%
+@image html icosahedron3.png "Fig. 3.4. Finding the radius of a pentagon within an icosahedron." width=75%
 
 The radius \f$r\f$ of an icosahedron of side 2 is the length
 of the hypotenuse of a right triangle with sides \f$r_0\f$ and \f$\sqrt{3}/2\f$
@@ -129,7 +129,7 @@ which means that we can move the outside 12 spheres around while still touching 
 center one.
 
 \anchor fig3-5
-@image html icosahedron4.png "Fig. 3.5." width=45%
+@image html icosahedron4.png "Fig. 3.5. Finding the radius of an icosahedron." width=45%
 
 Mathematician David Gregory (1659--1708) thought he could use that slop to fit in a 13th sphere. Sir Isaac Newton disagreed. Naturally Newton was right and
 Gregory was wrong, but we had to wait a couple of
