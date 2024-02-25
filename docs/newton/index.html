@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.7"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Newton&#39;s Cradle and Friends: Main Page</title>
+<title>Kissing Numbers: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,9 +30,8 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="sage-physics.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Newton&#39;s Cradle and Friends
+   <div id="projectname">Kissing Numbers
    </div>
-   <div id="projectbrief">Post-Collision Velocities in One Dimension</div>
   </td>
  </tr>
  </tbody>
@@ -79,143 +78,69 @@ $(function() {
 </div>
 
 <div><div class="contents">
-<div class="textblock"><p><a class="el" href="index.html#fig1">Fig. 1</a> shows a common desktop toy called <em>Newton's Cradle</em> (<a href="https://commons.wikimedia.org/w/index.php?curid=3717500">attribution</a>). Why does it act like this? When the first ball collides with the second one, the first ball gets the second ball's velocity, which is zero, and the second ball gets the first ball's velocity. The second ball immediately collides with the third ball, and so the first ball's velocity is transferred down the line to the last ball, which swings out with the first ball's initial velocity.</p>
-<p><a class="anchor" id="fig1"></a></p><div class="image">
-<img src="Newtons_cradle_animation_book_2.gif" alt="" width="30%"/>
+<div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section2"></a></p><h1>2. 2D Kissing Numbers</h1>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section2-1"></a></p><h2>2.1 Congruent Circles</h2>
+<p><a class="anchor" id="fig2-1"></a></p><div class="image">
+<img src="triangle.png" alt="" width="15%"/>
 <div class="caption">
-Fig. 1. Newton's Cradle.</div></div>
-<p>Why is it that balls colliding in one dimension like this swap their velocities? It's actually a consequence of the Law of Conservation of Kinetic Energy and the Law of Conservation of Momentum. This is assuming what is called a <em>perfectly elastic collision</em>. In the real world kinetic energy is lost during a collision and converted to sound and heat energy, which means that Newton's Cradle in the real world doesn't continue infinitely as shown in <a class="el" href="index.html#fig1">Fig. 1</a>. Instead, the swings become smaller and smaller over time and the behavior of the balls may even become chaotic.</p>
-<p>In <a class="el" href="index.html#section1">Section 1</a> we will examine what happens in Newton's Cradle in a perfect world in which the balls have the same mass and all collisions are perfectly elastic. This will be used to compute the transfer of velocities in <a href="../pool/index.html">The 8-Ball Pool End Game</a>. In <a class="el" href="index.html#section2">Section 2</a> we will generalize this to balls of different mass. This will be used to compute the transfer of velocities in <a href="../shapes/index.html">The Shapes Library</a>.</p>
-<p><a class="anchor" id="section1"></a></p><h1>1. Collision Between Balls of Equal Mass</h1>
-<p>Suppose two balls \(B_1\) and \(B_2\) of equal mass move towards each other with speeds \(u_1\) and \(u_2\), respectively, as shown in <a class="el" href="index.html#fig2">Fig. 2</a>, left. Suppose their speeds after collision are \(v_1\) and \(v_2\), respectively, as shown in <a class="el" href="index.html#fig2">Fig. 2</a>, right. We claim that \(v_1 = u_2\) and \(v_2= u_1\), assuming a perfectly elastic collision between two balls of equal mass \(m \not= 0\).</p>
-<p><a class="anchor" id="fig2"></a></p><div class="image">
-<img src="names.png" alt="" width="40%"/>
+Fig. 2.1. Three touching unit circles.</div></div>
+<p>Consider contacts between circles of equal radius (called <em>congruent</em> circles). Since the centers of three touching circles form an equilateral triangle whose internal angles are all \(60^{\circ}\) (see <a class="el" href="index.html#fig2-1">Fig. 2.1</a>), each circle can contact at most \(360^{\circ}/60^{\circ} = 6\) others (see <a class="el" href="index.html#fig2-2">Fig. 2.2</a>). This is called the <em>2D congruent kissing number</em> \(k_2 = 6\). Therefore between \(n\) congruent circles there can be at most \(3n\) contacts.</p>
+<p><a class="anchor" id="fig2-2"></a></p><div class="image">
+<img src="hex.png" alt="" width="25%"/>
 <div class="caption">
-Fig. 2. Two balls of equal mass before (left) and after (right) collision.</div></div>
-<p>By the Law of Conservation of Kinetic Energy, the kinetic energy in the system before impact \(mu_1^2/2 +mu_2^2/2\) is the same as the kinetic energy in the system after impact \(mv_1^2/2 +mv_2^2/2\). That is,  </p><p class="formulaDsp">
-\[
-mu_1^2/2 +mu_2^2/2 = mv_1^2/2 +mv_2^2/2.
-\]
-</p>
-<p>Therefore, multiplying both sides of the equation by \(2/m\),  </p><p class="formulaDsp">
-\[
-u_1^2 + u_2^2 = v_1^2 + v_2^2.
-\]
-</p>
-<p>Subtracting \(u_2^2 + v_2^2 \) from both sides:  </p><p class="formulaDsp">
-\[
-u_1^2 - v_1^2 = v_2^2 - u_2^2.
-\]
-</p>
-<p>Therefore,  </p><p class="formulaDsp">
-\[
-(u_1 - v_1)(u_1 + v_1) = (v_2 - u_2)(v_2 + u_2). \label{eq1}\tag{Equation 1}
-\]
-</p>
-<p>We'll come back to this equation in a moment. Now, by the Law of Conservation of Momentum, the amount of momentum in the system before impact \(mu_1 +mu_2\) is the same as the momentum in the system after impact \(mv_1 +mv_2\). That is,  </p><p class="formulaDsp">
-\[
-mu_1 + mu_2 = mv_1 +m v_2.
-\]
-</p>
-<p>Therefore, dividing both sides by \(m\):  </p><p class="formulaDsp">
-\[
-u_1 + u_2 = v_1 + v_2.\label{eq2}\tag{Equation 2}
-\]
-</p>
-<p>Subtracting \(u_2 + v_1\) from both sides:  </p><p class="formulaDsp">
-\[
-u_1  - v_1 = v_2 - u_2.
-\]
-</p>
-<p>We can use this to cancel out the \((u_1  - v_1)\) on the left-hand side of \(\ref{eq1}\) with the \((v_2 - u_2)\) on the right-hand side to give:  </p><p class="formulaDsp">
-\[
-u_1 + v_1 = v_2 + u_2,
-\]
-</p>
-<p>that is, subtracting \(u_2 + v_1\) from both sides  </p><p class="formulaDsp">
-\[
-u_1 - u_2 = v_2 - v_1. \label{eq3}\tag{Equation 3}
-\]
-</p>
-<p>Therefore, if we add both sides of \(\ref{eq2}\) to \(\ref{eq3}\) and divide by 2, this implies that \(u_1 = v_2\), and if we subtract both sides of \(\ref{eq3}\) from \(\ref{eq2}\), this implies that \(u_2 = v_1\), as required.</p>
-<p><a class="anchor" id="section2"></a></p><h1>2. Collision Between Balls of Different Masses</h1>
-<p>Suppose two balls \(B_1\) and \(B_2\) of masses \(m_1\) and \(m_2\), respectively move towards each other with speeds \(u_1\) and \(u_2\), respectively, as shown in <a class="el" href="index.html#fig3">Fig. 3</a>, left. Suppose their speeds after collision are \(v_1\) and \(v_2\), respectively, as shown in <a class="el" href="index.html#fig3">Fig. 3</a>, right. We claim that  </p><p class="formulaDsp">
-\[
-v_1 = \frac{2m_2u_2 + (m_1 - m_2)u_1}{m_1 + m_2}
-\]
-</p>
-<p> and  </p><p class="formulaDsp">
-\[
-v_2 = \frac{2m_1u_1 + (m_2 - m_1)u_2}{m_1 + m_2}
-\]
-</p>
-<p> assuming a perfectly elastic collision.</p>
-<p><a class="anchor" id="fig3"></a></p><div class="image">
-<img src="names2.png" alt="" width="40%"/>
+Fig. 2.2. The yellow circle is touching six green circles.</div></div>
+<p><a class="anchor" id="section2-2"></a></p><h2>2.2 Non-Congruent Circles</h2>
+<p>The 2D non-congruent kissing number \(\kappa_2\) is also 6. Suppose that we have \(n\) circles of possibly different radii that have \(m\) contact points. Notice that \(k_2 \leq \kappa_2 \leq 2m/n\). Create a graph on \(n\) vertices by placing a vertex at the center of each circle and connecting each pair of vertices with an edge when the corresponding pair of circles are touching (<a class="el" href="index.html#fig2-3">Fig. 2.3</a>). Each edge is completely contained within the two contacting circles and it crosses the circle boundaries at the contact point (<a class="el" href="index.html#fig2-3">Fig. 2.3</a>, center). This graph is therefore planar and has \(m\) edges. A <em>face</em> in a planar graph is an area bounded by edges. The outside of the graph also counts as a face. <a class="el" href="index.html#fig2-3">Fig. 2.3</a> (left) shows 8 noncongruent circles with 11 contact points. <a class="el" href="index.html#fig2-3">Fig. 2.3</a> (right) shows the corresponding planar graph, which has 8 vertices, 11 edges, and 5 faces.</p>
+<p><a class="anchor" id="fig2-3"></a></p><div class="image">
+<img src="graph.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 3. Two balls of unequal mass before (left) and after (right) collision.</div></div>
-<p>By the Law of Conservation of Kinetic Energy, the kinetic energy in the system before impact \(m_1u_1^2/2 + m_2u_2^2/2\) is the same as the kinetic energy in the system after impact \(m_1v_1^2/2 + m_2v_2^2/2\). That is,  </p><p class="formulaDsp">
+Fig. 2.3. Constructing a planar graph from non-congruent circles.</div></div>
+<p>Euler showed that for planar graphs the number of vertices \(n\) plus the number of faces \(f\) minus the number of edges \(m\) is always equal to 2. That is, \(n-m+f=2\), known as the <em>Euler characteristic</em> of a planar graph. Since every face has at least 3 edges and every edge is in at most 2 faces, \(f \leq 2m/3\). Therefore, by the Euler characteristic, \(n-m/3 \geq 2\), that is, \(m \leq 3n - 6\). Hence, \(\kappa_2 = 2m/n \leq 6\). Since \(\kappa_2 \geq k_2\) and \(k_2 = 6\) (see <a class="el" href="index.html#section2-1">Section 2.1</a>), we can conclude that \(\kappa_2 \geq  6\), completing the proof that \(\kappa_2 = 6\). Therefore between \(n\) non-congruent circles there can be at most \(3n\) contacts.</p>
+<p><a class="anchor" id="section3"></a></p><h1>3. 3D Kissing Numbers</h1>
+<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section3-1"></a></p><h2>3.1 Congruent Spheres</h2>
+<p><a class="anchor" id="fig3-1"></a></p><div class="image">
+<img src="icosahedron0.png" alt="" width="35%"/>
+<div class="caption">
+Fig. 3.1. Twelve congruent spheres touching a center sphere (yellow) in three layers.</div></div>
+<p>In 3D we can start with a single sphere surrounded by 6 spheres all in a plane, then stack 3 spheres on top and three spheres below in 3 layers as shown in <a class="el" href="index.html#fig3-1">Fig. 3.1</a>. This gives us a 3D kissing number of 12. Or so it seems. It turns out that the spheres don't fit together as tightly in 3D as they did in 2D. Suppose we remove the yellow sphere at the center in <a class="el" href="index.html#fig3-1">Fig. 3.1</a>. If we join the centers of the outside spheres we get an <em>icosahedron</em>, an example of which is shown in <a class="el" href="index.html#fig3-2">Fig. 3.2</a>, left. An icosahedron is made up of 20 equilateral triangles as shown in <a class="el" href="index.html#fig3-2">Fig. 3.2</a>, right.</p>
+<p><a class="anchor" id="fig3-2"></a></p><div class="image">
+<img src="icosahedron2.png" alt="" width="55%"/>
+<div class="caption">
+Fig. 3.2. An icosahedron (left) and its triangulation (right).</div></div>
+<p>Let's take the smallest icosahedron that we can make out of 12 unit spheres, that is, one whose edge length is 2. (since then we can fit a unit-radius sphere centered at each end of the edge without them overlapping). Let \(\vec{c}\) be the center of the icosahedron, that is, the point that is equidistant from all vertices. The <em>radius</em> of the icosahedron is the distance from \(\vec{c}\) to any vertex \(\vec{p}\) as show in <a class="el" href="index.html#fig3-3">Fig. 3.3</a> (left). Examining <a class="el" href="index.html#fig3-3">Fig. 3.3</a> more closely, we see that \(\vec{c}\) is equidistant from a pair of regular pentagons of side 2 in the horizontal plane. These pentagons are distance \(\sqrt{3}\) apart. To see this, note that the front face of the icosahedron is an equilateral triangle of side 2 in the vertical plane. Therefore, if we draw a vertical line from the lower vertex of that triangle to a point midway along its base as shown in <a class="el" href="index.html#fig3-3">Fig. 3.3</a> (right) then, by the Theorem of Pythagoras, the height of the front triangle \(h\) satisfies \(h^2 + 1 = 2^2\), that is \(h = \sqrt{3}\).</p>
+<p><a class="anchor" id="fig3-3"></a></p><div class="image">
+<img src="icosahedron1.png" alt="" width="55%"/>
+<div class="caption">
+Fig. 3.3.</div></div>
+<p>The center \(\vec{c}\) of the icosahedron aligns vertically with the centers of the two pentagons, as shown in <a class="el" href="index.html#fig3-4">Fig. 3.4.</a> (left). The center of a pentagon divides it into 5 sectors, each of which has two edges of length equal to its radius, the third edge is of course of length 2, and the angle between the two radiuses is \(2 \pi/5\), as shown in <a class="el" href="index.html#fig3-4">Fig. 3.4.</a> (center). The radius \(r_0\) of a regular pentagon of side 2 is therefore given by \(\sin \pi/5 = 1/r_0\) (<a class="el" href="index.html#fig3-4">Fig. 3.4.</a>, right). Therefore,  </p><p class="formulaDsp">
 \[
-m_1u_1^2/2 + m_2u_2^2/2 = m_1v_1^2/2 + m_2v_2^2/2.
+r_0 = \frac{1}{\sin \pi/5} \approx 1.7.
 \]
 </p>
-<p>Therefore, multiplying both sides of the equation by \(2\),  </p><p class="formulaDsp">
+<p><a class="anchor" id="fig3-4"></a></p><div class="image">
+<img src="icosahedron3.png" alt="" width="75%"/>
+<div class="caption">
+Fig. 3.4.</div></div>
+<p>The radius \(r\) of an icosahedron of side 2 is the length of the hypotenuse of a right triangle with sides \(r_0\) and \(\sqrt{3}/2\) (see <a class="el" href="index.html#fig3-5">Fig. 3.5</a>). By the Theorem of Pythagoras,  </p><p class="formulaDsp">
 \[
-m_1u_1^2 + m_2u_2^2 = m_1v_1^2 + m_2v_2^2.
+r = \sqrt{r_0^2 + 3/4} \approx 1.91.
 \]
 </p>
-<p>Subtracting \(m_2u_2^2 + m_1v_1^2\) from both sides and factoring out the masses:  </p><p class="formulaDsp">
-\[
-m_1(u_1^2  - v_1^2) = m_2(v_2^2 - u_2^2).
-\]
-</p>
-<p>Therefore,  </p><p class="formulaDsp">
-\[
-m_1(u_1 - v_1)(u_1 + v_1) = m_2(v_2 - u_2)(v_2 + u_2). \label{eq4}\tag{Equation 4}
-\]
-</p>
-<p>We'll come back to this equation in a moment. Now, by the Law of Conservation of Momentum, the amount of momentum in the system before impact \(m_1u_1 +m_2u_2\) is the same as the momentum in the system after impact \(m_1v_1 +m_2v_2\). That is,  </p><p class="formulaDsp">
-\[
-m_1u_1 + m_2u_2 = m_1v_1 +m_2 v_2. \label{eq5}\tag{Equation 5}
-\]
-</p>
-<p>Subtracting \(m_2u_2 + m_1v_1\) from both sides and factoring out the mass:  </p><p class="formulaDsp">
-\[
-m_1(u_1  - v_1) = m_2(v_2 - u_2).
-\]
-</p>
-<p>We can use this to cancel out the \(m_1(u_1  - v_1)\) on the left-hand side of \(\ref{eq4}\) with the \(m_2(v_2 - u_2)\) on the right-hand side to give:  </p><p class="formulaDsp">
-\[
-u_1 + v_1 = v_2 + u_2,
-\]
-</p>
-<p>that is, subtracting \(u_2 + v_1\) from both sides  </p><p class="formulaDsp">
-\[
-u_1 - u_2 = v_2 - v_1.\label{eq6}\tag{Equation 6}
-\]
-</p>
-<p>Subtracting \(m_2\) times \(\ref{eq6}\) from \(\ref{eq5}\),  </p><p class="formulaDsp">
-\[
-(m_1 - m_2)u_1 + 2m_2u_2 = (m_1 + m_2)v_1,
-\]
-</p>
-<p> which implies that (assuming \(m_1+m_2 \not= 0\)):  </p><p class="formulaDsp">
-\[
-v_1 = \frac{2m_2u_2 + (m_1 - m_2)u_1}{m_1 + m_2}\label{eq7}\tag{Equation 7}
-\]
-</p>
-<p> as required.</p>
-<p>Adding \(m_1\) times \(\ref{eq6}\) to \(\ref{eq5}\),  </p><p class="formulaDsp">
-\[
-2m_1u_1 + (m_2 - m_1)u_2 = (m_1 + m_2)v_2,
-\]
-</p>
-<p> which implies that (assuming \(m_1+m_2 \not= 0\)):  </p><p class="formulaDsp">
-\[
-v_2 = \frac{2m_1u_1 + (m_2 - m_1)u_2}{m_1 + m_2}\label{eq8}\tag{Equation 8}
-\]
-</p>
-<p> as required. </p>
+<p> Therefore the center sphere can have radius at most \(0.91\). In order to fit in a center sphere of unit radius we have to loosen up the enclosing icosahedron slightly, which means that we can move the outside 12 spheres around while still touching the center one.</p>
+<p><a class="anchor" id="fig3-5"></a></p><div class="image">
+<img src="icosahedron4.png" alt="" width="45%"/>
+<div class="caption">
+Fig. 3.5.</div></div>
+<p>Mathematician David Gregory (1659&ndash;1708) thought he could use that slop to fit in a 13th sphere. Sir Isaac Newton disagreed. Naturally Newton was right and Gregory was wrong, but we had to wait a couple of centuries until Schütte, van der Waerden, and and Leech were able to prove that the 3D congruent kissing number \(k_3 = 12\).</p>
+<blockquote class="doxtable">
+<p>&zwj;Schütte, K. and van der Waerden, B. L., Das Problem der dreizehn Kugeln, Math. Ann. 125 (1953), 325–334. </p>
+</blockquote>
+<p><a class="anchor" id="section3-1"></a></p><h2>3.2 Non-Congruent Spheres</h2>
+<p>UNDER CONSTRUCTION </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
