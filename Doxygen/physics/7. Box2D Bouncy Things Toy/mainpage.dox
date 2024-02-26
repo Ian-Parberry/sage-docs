@@ -6,9 +6,13 @@
 # 1. Introduction
 
 This is a simple toy that lets you see how easy it is to get started with Box2D.
- The next few code demos will drill down into Box2D more deeply,
+It does not have sound, so don't worry when you don't hear any.
+The next few code demos after this one
+will drill down into Box2D more deeply,
 so don't be concerned if you don't fully understand all of the code here. 
-This code demo does not have sound.
+We do however recommend that you briefly examine the Box2D manual (which should be in the folder in which you installed Box2D from GitHub)
+before reading the code and documentation for this toy.
+\ref fig1 "Fig. 1" shows a screen shot with some balls and boxes bouncing around inside the window.
 
 \anchor fig1
 \image html screenshot.png "Fig. 1: Screen shot." width=60%
@@ -52,7 +56,6 @@ and
 </table>
 </center>
 
-
 \anchor section3
 # 3. Building the Game
 
@@ -74,11 +77,19 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-The space bar drops a large number of balls and boxes that
+For a full list of keyboard commands see \ref section2 "Section 2".
+The space bar drops a collection of balls and boxes that
 you can watch fall to the bottom of the screen
 and bounce around in a most satisfactory manner.
-This will work until the window is approximately full.
-Using the `F2` key (see \ref section2 "Section 2")
+Notice that they are created outside the window and enter
+from above, and that they may overlap at first before
+squeezing out. This is happily provided by Box2D without
+and need for code on our part.
+You can do this repeatedly or even hold
+the space bar down until the window is approximately full,
+at which time no further objects will be created.
+The `Backspace` key will delete all objects.
+Using the `F2` key
 you can toggle between drawing
 sprites (\ref fig1 "Fig. 1"),
 sprites and shape outlines (\ref fig2 "Fig. 2", left),
@@ -88,17 +99,39 @@ the collision shapes in Box2D line up properly with the outlines
 of the sprites.
 
 \anchor fig2
-\image html screenshot2.png "Fig. 2: Screen shots with sprites  and shapes (left), and shapes only (right)." width=80%
+\image html screenshot2.png "Fig. 2: Screen shots with sprites  and shapes (left), and shapes only (right)." width=90%
 
 \anchor section5
 # 5. Code Breakdown
 
+There are three important things to notice in this code,
+and each is covered in a separate section below.
+\ref section5-1 "Section 5.1" introduces the concepts
+of _Physics World_ and _Render World_, the importance
+of keeping their scales different, and the method we use
+to ensure that scaling in the code is readable and maintainable.
+\ref section5-2 "Section 5.2" shows you where and how Physics World
+is created in the code, and a function that must be called once per
+frame to maintain it.
+\ref section5-3 "Section 5.3" shows you how the code
+manages game objects with their Render World
+sprites and their Physics World bodies.
+
 \anchor section5-1
 ## 5.1 Render World and Physics World
 
+Lets define _Render World_ to be the world that you see
+in \ref fig1 "Fig. 1",
+made up of sprites and images, with units measured in pixels.
+_Physics World_ is the world inside the physics engine,
+made up of floating point number and vectors, with
+its own units.
 The Box2D manual makes it clear that Physics World units should
-not be pixels, otherwise the stability of the equation solver
-may be called into doubt. We chose to scale up from Render World
+_not_ be pixels, otherwise the stability of the equation solver
+may be called into doubt.
+(What equation solver you may ask? Remember the
+<a href="../ballandspring/index.html">Ball and Spring Toy</a>.)
+We choose to scale from Render World
 to Physics World by dividing by a factor of 10, which is set
 by changing the value of `fPRV` in <span style="background-color:#D8E4D8;">`GameDefines.h`</span>.
     
@@ -114,6 +147,21 @@ functions `RW2PW` to convert Render World
 measurements to Physics World for various types, for example,
 
     inline float RW2PW(float x){return x/fPRV;};
+
+What can possibly go wrong? Your physics code might actually work perfectly even if you ignore this advice. That's probably because it is simple code without much interaction. But as your game or toy becomes more and more complicated you may find that Box2D becomes unstable. This is a property of all physics engines, not just Box2D.
+What do I mean by unstable? Lets just say that things will start to look weird. For example, you may have a bouncing cannonball
+as shown in \ref fig3 "Fig. 3". The one shown in \ref fig3 "Fig. 3"
+has a perfectly elastic bounce, but yours may not. You want it to
+eventually stop bouncing and come to rest, but it never completely does, instead it continues
+twitching as shown in \ref fig4 "Fig. 4".
+That's just one example of the weird behavior that you will see
+if you don't rescale your Physics units.
+
+\anchor fig3
+\image html image14.gif "Fig. 3: A bouncing cannonball."
+
+\anchor fig4
+\image html image15.gif "Fig. 4: An unstable cannonball that should be still."
 
 \anchor section5-2
 ## 5.2 Creating and Maintaining Physics World
@@ -138,31 +186,156 @@ are somewhat arbitrarily chosen defaults.
 \anchor section5-3
 ## 5.3 Objects and Physics Bodies
 
+Game objects are represented by an object class `CObject`,
+which is managed by class `CObjectManager`. `CObject`
+keeps a pointer to the Box2D body associated with the object.
+
     b2Body* m_pBody = nullptr;
+
+`CObject::b2Body` is initialized by the `CObject` constructor
+`CObject::CObject` as follows:
     
     CObject(eSprite, b2Body*);
+    
+This puts the onus on the code creating the object to first
+construct its body. This is the subject of 
+\ref section5-3-1 "Section 5.3.1".
+\ref section5-3-2 "Section 5.3.2" shows the proper way of
+deleting physics bodies (no, you don't just `delete` them).
+\ref section5-3-3 "Section 5.3.3" shows how to interrogate
+physics bodies so that their sprites can be drawn in the correct position and orientation.
 
 \anchor section5-3-1
 ## 5.3.1 Creating Physics Bodies
 
-`CObjectManager::CreateCrate` and `CObjectManager::CreateBall`.
+`CObjectManager::CreateCrate` and `CObjectManager::CreateBall`
+are called from `CGame::CreateObjects` to create the crates and
+balls as seen in \ref fig1 "Fig. 1".
+`CGame::CreateObjects` is called from `CGame::KeyboardHandler`
+in response to the `VK_SPACE` key.
+
+`CObjectManager::CreateCrate` takes two parameters `x` and `y`, which are the coordinates of the center of the object in Physics World coordinates. It first creates a Box2D body definition
+`bd` and sets its `type` field to `b2_dynamicBody` and its position
+to `[x, y]`.
+
+    b2BodyDef bd; 
+    bd.type = b2_dynamicBody;
+    bd.position.Set(x, y);
+    
+Then it gets the width `w` and height `h`  of the crate in Render World
+by calling `Sage::CSpriteRenderer::GetSize` on the sprite type `eSprite::Crate`.
+
+    float w, h;
+    m_pRenderer->GetSize(eSprite::Crate, w, h);
+
+Next we create a Box2D _shape_ for the crate.
+A rectangle in Box2D is a special instance of `b2PolygonShape`,
+which handily has a special function for creating a rectangle shape
+called `b2PolygonShape::SetAsBox`. This takes as parameters
+the _half width_ and _half height_ of a rectangle.
+According to the Box2D manual this is to make it consistent
+with Box2D circle shapes which are created using the circle's
+radius (i.e. half width). I always seem to forget this
+so that the rectangles drawn in sprite and line mode
+do not align as shown in \ref fig5 "Fig. 5". Compare this
+with the correct version in \ref fig2 "Fig. 2" (left).
+
+    b2PolygonShape s;
+    s.SetAsBox(RW2PW(w - 2.0f)/2.0f, RW2PW(h - 2.0f)/2.0f);
+  
+\anchor fig5
+\image html bigbox.png "Fig. 5: Physics World boxes when you forget to use half widths and half height." width=50% 
+
+Note that we have subtracted two pixels from the Render World
+width and height before converting to Physics World units.
+This is because Box2D keeps a narrow border area around
+each shape to keep it away from other shapes. The sprite
+therefore needs to be a couple of pixels wider and taller than
+the shape. For example, \ref fig6 "Fig. 6" (left)
+shows the tiny gaps around a box created with
+
+    s.SetAsBox(RW2PW(w)/2.0f, RW2PW(h)/2.0f);
+
+and \ref fig6 "Fig. 6" (right)
+shows the smaller or non-existent gap around a box created with  the correct parameters.
+
+    s.SetAsBox(RW2PW(w - 2.0f)/2.0f, RW2PW(h - 2.0f)/2.0f);
+
+\anchor fig6
+\image html gap.png "Fig. 6: Physics World boxes without (left) and with (right) a 2 pixel size decrease." 
+
+
+Next we need a Box2D _fixture_ which is used to attach a Box2D shape to a Box2D body. We declare a Box2D fixture definition
+`b2FixtureDef` called `fd` and set its `shape` field to be a pointer to the box shape `s` created above, its `density` field to `1.0f`
+and its `restitution` field `restitution` to `0.3f`. The restitution is a measure of how bouncy a fixture is. Setting it to `1.0f` means a perfectly elastic collision. The value `0.3f` was chosen by playing with it until it looked right. 
+
+    b2FixtureDef fd;
+    fd.shape = &s;
+    fd.density = 1.0f;
+    fd.restitution = 0.3f;
+
+Next we ask Box2D to create a body using the body definition `bd`
+by calling `b2World::CreateBody` which returns a pointer to the `b2Body` created. We save this in a local variable `pCrate`.
+
+    b2Body* pCrate = m_pPhysicsWorld->CreateBody(&bd);
+
+Next we add a fixture to the body using the fixture definition `fd` created above.
+
+    pCrate->CreateFixture(&fd);
+
+Finally we create an instance of `CObject` and append it at the end of the object manager's object list `CObjectManager::m_stdList`.
+Notice that the body definition, shape, and fixture definitions
+are all variables local to `CObjectManager::CreateCrate`.
+There is no need to save them. All we need is a pointer to the
+`b2Body`.
+
+    m_stdList.push_back(new CObject(eSprite::Crate, pCrate));
+
+`CObjectManager::CreateBall` is similar except that is uses an
+instance of `b2CircleShape` instead of `b2PolygonShape`.
+
+    b2CircleShape s;
+    s.m_radius = RW2PW(m_pRenderer->GetWidth(eSprite::Ball)/2.0f);
+
+`CObjectManager` also has a function `CObjectManager::CreateWorldEdges` to create edges at the left, right, and bottom of the window,
+the first two of which extend above the window in order to catch objects that bounce above the top of the window.
+It too is similar to the above but uses three instances of
+`b2EdgeShape`, one each for the left, right, and bottom of the window.
 
 \anchor section5-3-2
 ## 5.3.2 Destroying Physics Bodies
 
+Physics bodies are destroyed in the `CObject` destructor `CObject::~CObject`:
+
     m_pPhysicsWorld->DestroyBody(m_pBody);
+
+This is called from `CObjectManager::Clear` and the `CObjectManager` destructor `CObjectManager::~CObjectManager`.
 
 \anchor section5-3-3
 ## 5.3.3 Object Drawing Using Physics Bodies
+
+When not using a physics engine `CObject` would normally
+have a position variable `Vector2 m_vPos` and an
+orientation variable `float m_fRoll` and would be drawn using
+a call to `Sage::CSpriteRenderer::Draw` such as
+
+    m_pRenderer->Draw(m_eSpriteType, m_vPos, m_fRoll);
+
+Instead, `CObject::Draw` uses `b2Body::GetPosition` to get the position from Box2D and `b2Body::GetAngle` to get the orientation:
 
     const float a = m_pBody->GetAngle(); 
     const b2Vec2 v = m_pBody->GetPosition();
     m_pRenderer->Draw(m_eSpriteType, PW2RW(v), a);
 
+Notice the use of `PW2RW` to convert Physics World units to Render World units (see \ref section5-1 "Section 5.1").
+
 \anchor section6
 # 6. What Next?
 
 Next, take a look at the <a href="../box2djoints/index.html">Box2D Joint Toy</a>.
+You may want to examine what the Box2D manual (which should be in the folder in which you installed Box2D from GitHub)
+says about the functions and structures used in this toy
+before you do this.
 
 **/
 

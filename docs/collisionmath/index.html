@@ -80,7 +80,7 @@ $(function() {
 
 <div><div class="contents">
 <div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
-<p>This is a collision detection and response toy. It's driven by a dialog box so there is no keyboard input. It's intended to help you visualize what's going on in the in the <a href="../shapes/index.html">Shapes Library</a> by experimenting with various settings.</p>
+<p>This is a collision detection and response toy intended to help you visualize what's going on in the in the <a href="../shapes/index.html">Shapes Library</a> by experimenting with various settings and measurements using a dialog box. <a class="el" href="index.html#fig1">Fig. 1</a> shows a screenshot of the toy before any balls are launched. Balls are launched from the bottom right corner and travel vertically before hitting the arc in the top right corner and entering the main play area. There are various shapes to collide with, including line segments, points, arcs, and circles. Two objects, the convex arc at the top left corner and the pinball bumper at the middle right, have an <a href="../shapes/index.html#section5-4">elasticity</a> greater than <code>1.0f</code>, that is, they increase the velocity of balls that collide with them. Some of the line segments and arcs have motion type <a href="../shapes/index.html#section5-3"><code>Shapes::eMotion::Kinematic</code></a>, although they start out with rotational velocity zero until you select the Rotate checkbox in the <a class="el" href="index.html#section2-7">Other</a> area of the <a class="el" href="index.html#section2">dialog box</a> controls, at which time they will have a constant but non-zero rotational velocity.</p>
 <p><a class="anchor" id="fig1"></a></p><div class="image">
 <img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
@@ -250,7 +250,7 @@ Fig. 13: The clip used to cover up the line segment used in a gate.</div></div>
  = \Theta (n^2).
 \]
 </p>
-<p>You can see that we have halved the number of calls to <code>NarrowPhase</code> which is a pretty good speed-up in practice. However, \(\Theta(n^2)\) is pretty bad when you consider that there can be only \(O(n)\) collisions at any one time between \(n\) objects. Fortunately, there are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection. A <em>quadtree</em> is one of them.</p>
+<p>You can see that we have halved the number of calls to <code>NarrowPhase</code> which is a pretty good speed-up in practice. However, \(\Theta(n^2)\) is pretty bad when you consider that there can be only \(O(n)\) collisions between \(n\) bounding spheres at any one time (see <a href="../kappa/index.html">Kissing Numbers</a>). Fortunately, there are many space partitioning data structures and algorithms that can be used to speed up broad phase collision detection. A <em>quadtree</em> is one of them.</p>
 <p><a class="anchor" id="section5-3-1"></a></p><h3>5.3.1 Quadtree Definition</h3>
 <p><a class="anchor" id="fig5-3-1-1"></a></p><div class="image">
 <img src="quadtree0.png" alt="" width="50%"/>
