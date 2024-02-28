@@ -1,0 +1,113 @@
+/**
+
+\mainpage notitle
+
+Computer animation is a matter of composing and showing
+a series of images called _frames_ as fast as the hardware
+can compute and display them. For each animation
+frame we must move the objects according to their velocity,
+acceleration, and the time since the last frame was shown.
+If the frames are rendered fast enough, then the human visual
+system interprets this as smooth motion.
+
+\anchor fig1
+@image html fast.gif "Fig. 1. Gif animation at full speed."
+
+For example, \ref fig1 "Fig. 1" is an animated gif shown at full speed that appears to show a smoothly bouncing cannonball.
+It is actually made up to 10 individual frames, each showing
+the cannonball in a different place.
+
+\anchor fig2
+@image html slow.gif "Fig. 2. Gif animation slowed down."
+
+\ref fig2 "Fig. 2" shows the animation from \ref fig1 "Fig. 1"
+slowed down so that you can see the individual frames.
+\ref fig3 "Fig. 3" shows the individual frames side-by-side
+(of course, this forms a parabola).
+
+\anchor fig3
+@image html frames.png "Fig. 3. Gif animation individual frames." width=50%
+
+\ref fig4 "Fig. 4" shows a time line in which each numbered tick mark shows the time at which a new animation frame is rendered to the screen. The time between tick marks is used to compute where the objects will be when the next frame is rendered. The time marked
+"Now" with a red arrow is the current time, when frame \f$i\f$
+has been rendered and we need to compose frame \f$i+1\f$.
+We will have stored the
+acceleration \f$\vec{a}_i\f$, velocity \f$\vec{v}_i\f$, and
+position \f$\vec{s}_i\f$, from the previous frame, and we
+can guess that \f$\Delta t\f$, the time between frames,
+will be the same as the previous frame. Lets assume that the
+acceleration remains constant. Then we can compute
+\f$\vec{s}_{i+1} = vec{s}_i \Delta t\f$ and
+\f$\vec{v}_{i+1} = vec{v}_i \Delta t\f$
+ready for when the next frame must be rendered at time \f$i+1\f$.
+
+\anchor fig4
+@image html timeline.png "Fig. 4. Animation time line by frame." width=60%
+
+Our game objects will typically be represented by a class called `CObject` which will have member variables for storing things such
+as the object's position, orientation, velocity, and sprite (in 2D)
+or mesh (in 3D). Suppose its position is stored in a member
+variable `m_vPos`, its velocity in a member variable `m_vVel`, and
+its acceleration in a member variable `m_vAccel`.
+Using <a href="../sage/index.html">SAGE</a>
+we can get the frame time and store it in a local floating point variable called `t`, say. `CObject` typically has a `Move`
+function similar to this:
+
+    void CObject::Move(){
+      m_vPos += m_vVel*t;
+      m_vVel += m_vAccel*t;
+    } //Move
+
+So why have we called this Euler Integration? What has integration
+got to do with it? Suppose we have an object that starts at rest, then falls under gravity for 30 seconds with a frame time of \f$t=1\f$ second. Let \f$s_i\f$
+be the change in position in frame \f$i\f$.
+Then its position after 30 seconds is
+\f[
+s = \sum_{i=0}^{30} s_i = \sum_{i=0}^{30} v_i t =
+ \sum_{i=0}^{30} 9.8i t.
+\f]
+
+\ref fig5 "Fig. 5" shows the change in position per frame. The horizontal axis shows the frame number, and the vertical axis shows the distance moved in that frame. Note that the distance moved per frame increases over time because its velocity is also changing over time because of acceleration due to gravity.
+
+\anchor fig5
+@image html integrate.png "Fig. 5. Change in position per frame with 1 second frames." width=70%
+
+The position of the object after 30 seconds is then the area in green in \ref fig5 "Fig. 5". If we decrease the frame time \f$t\f$
+and add more columns the graph will become more and more continuous.
+For example, \ref fig6 "Fig. 6" uses a frame time of \f$t=0.5\f$
+and uses \f$30/t = 60\f$ frames, so that
+\f[
+s = \sum_{i=0}^{30/t} s_i = \sum_{i=0}^{30/t} v_i t 
+= \sum_{i=0}^{30/t} 9.8i t.
+\f]
+
+\anchor fig6
+@image html integrate2.png "Fig. 6. Change in position per frame with 0.5 second frames." width=70%
+
+The position of the object in the real world is the area
+shown in green in \ref fig7 "Fig. 7",
+\f[
+s = \lim_{t\to 0} \sum_{i=0}^{30/t} 9.8 it = \int_{0}^{30} 9.8t \,dt.
+\f]
+
+\anchor fig7
+@image html integrate3.png "Fig. 7. Change in position per frame with frame time approaching zero." width=70%
+
+Since the indefinite integral
+\f[
+\int 9.8t \,dt = 4.5 t^2 + c
+\f]
+this tells us that the final position of the object in the real world
+is \f$4.5\times 30^2 = 4050\f$.
+In contrast, the sum of the green areas in
+\ref fig5 "Fig. 5" is \f$4557\f$,
+and that of
+\ref fig6 "Fig. 6" is \f$4483.5\f$.
+This is not the same as the real world, but that doesn't
+matter. The effect of gravity in the game world doesn't
+have to be exactly the same as the effect in the real world.
+In fact, we usually and up tweaking the acceleration
+due to gravity from 9.8 m/sec/sec to whatever "looks right".
+
+
+**/

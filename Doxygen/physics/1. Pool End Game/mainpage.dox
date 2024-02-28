@@ -214,6 +214,8 @@ frame for each of the balls, resulting the the balls
 skipping across the table in discrete jumps. However,
 if the frame rate is high enough, the human brain will
 interpret the jaggy motion as one continuous sweep.
+See <a href="../integration/index.html">Euler Integration</a>
+for the full explanation.
 Step mode will help you to visualize this
 (see \ref section4-2 "Section 4.2").
 
