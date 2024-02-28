@@ -5,12 +5,26 @@
 \anchor section1
 # 1. Introduction
 
-UNDER CONSTRUCTION
+Suppose we surround our game objects by bounding circles (the circle of smallest radius that surrounds the object's sprite) in 2D and bounding spheres (the smallest sphere that surrounds the vertices in the object's mesh) in 3D.
+It has been shown that every configuration of \f$n\f$ non-overlapping
+circles and every configuration of \f$n\f$ non-overlapping
+spheres can have at most \f$O(n)\f$ contact points.
+This implies that broad-phase collision detection and response need
+only process \f$O(n)\f$ collisions per animation frame.
+This is shown in the next two sections by the use of a
+concept called the _kissing number_. Section \ref section2 "Section 2"
+proves bounds on 2D kissing numbers, and Section \ref section3 "Section 3"
+proves bounds on 3D kissing numbers. 
 
 \anchor section2
 # 2. 2D Kissing Numbers
 
-UNDER CONSTRUCTION
+This section is divided into two subsections.
+As a starting point,
+\ref section2-1 "Section 2.1" considers the possible
+number of contacts between \f$n\f$ circles of the same radius.
+\ref section2-2 "Section 2.2" extends this result to \f$n\f$ circles
+that may have different radii.
 
 \anchor section2-1
 ## 2.1 Congruent Circles
@@ -55,7 +69,12 @@ Therefore between \f$n\f$ non-congruent circles there can be at most \f$3n\f$ co
 \anchor section3
 # 3. 3D Kissing Numbers
 
-UNDER CONSTRUCTION
+This section is divided into two subsections.
+As a starting point,
+\ref section3-1 "Section 3.1" considers the possible
+number of contacts between \f$n\f$ spheres of the same radius.
+\ref section3-2 "Section 3.2" extends this result to \f$n\f$ spheres
+that may have different radii.
 
 \anchor section3-1
 ## 3.1 Congruent Spheres
@@ -139,10 +158,62 @@ were able to prove that the 3D congruent kissing number \f$k_3 = 12\f$.
 
 > Schütte, K. and van der Waerden, B. L., Das Problem der dreizehn Kugeln, Math. Ann. 125 (1953), 325–334.
 
-\anchor section3-1
+\anchor section3-2
 ## 3.2 Non-Congruent Spheres
 
-UNDER CONSTRUCTION
+Suppose we have \f$n\f$ non-congruent spheres 
+numbered \f$S_0, S_1, \ldots, S_{n-1}\f$
+such that their radii are in nondecreasng order, that is,
+\f$S_i\f$ has radius \f$r_i\f$ and \f$r_0 \leq r_1 \leq \cdots \leq r_{n-1}\f$.
+Let's try to count the total number of contacts \f$m\f$.
+For \f$0 \leq i < n\f$, let \f$m_i\f$ be the number of spheres \f$S_j\f$ that are
+touching \f$S_i\f$ and are either (a) smaller than \f$S_j\f$, or 
+(b) the same size as \f$S_j\f$ and \f$i < j\f$. 
+Then,
+\f[
+m = \sum_{i=0}^{n-1}m_i,
+\f]
+noting that each contact is
+counted once because (b) breaks the tie between congruent spheres. 
+
+\anchor fig3-6
+@image html 3dnoncongruent-clr.png "Fig. 3.6. Replace non-congruent spheres (left) with congruent spheres (right) after removing smaller spheres (center)." width=65%
+
+Consider an individual sphere \f$S_i\f$. For example,
+\ref fig3-6 "Fig. 3.6" (left) shows a sphere \f$S_i\f$
+with \f$m_i = 6\f$ since \f$S_i\f$ touches 6 spheres, 
+2 of which are larger, 3 of which are smaller,
+and one of which is congruent. Disregard the smaller spheres, 
+as shown in \ref fig3-6 "Fig. 3.6" (center).
+Replace each of the larger spheres with congruent spheres that have the
+same respective contact points. Note that \f$m_i\f$ is unchanged
+through all of these steps.
+For example, \f$m_i = 3\f$ in all three of the configurations 
+shown in \ref fig3-6 "Fig. 3.6".
+\f$S_i\f$ is now surrounded by \f$m_i\f$ congruent spheres.
+Therefore, \f$m_i \leq k_3\f$, which means that
+\f[
+m = \sum_{i=0}^{n-1}m_i \leq \sum_{i=0}^{n-1} k_3 = nk_3.
+\f]
+Hence the total number of contacts \f$m \leq 12n\f$ and the
+average kissing number \f$\kappa_3 = 2m/n \leq 2k_3 = 24\f$.
+The above proof is from a paper by Kuperberg and Schramm:
+
+> Greg Kuperberg and Oded Schramm, "Average kissing numbers for non-congruent sphere packings", _Mathematical Research Letters_, pp. 339-344.
+
+They then go on to show using a stronger argument that
+\f$\kappa_3 < 4(2+\sqrt{3}) \approx 14.928\f$ and
+\f$\kappa_3 \geq 666/53 \approx 12.566\f$
+The best upper bound for \f$\kappa_3\f$ known to the author at present is
+\f$\kappa_3 \leq 13.955\f$ by Glazyrin:
+
+> Alexey Glazyrin, "Contact graphs of ball packings", arXiv preprint arXiv:1707.02526.
+
+The best lower bound for \f$\kappa_3\f$ known to the author at present is
+\f$\kappa_3 \geq 7656/607 \approx 12.613\f$ by 
+Eppstein, Kuperberg, and Ziegler:
+
+> David Eppstein, Greg Kuperberg, and Günter M Ziegler, "Fat 4-polytopes and fatter 3-spheres." _Pure and Applied Mathematics_, 253 (2003), 239-266.
 
 
 
