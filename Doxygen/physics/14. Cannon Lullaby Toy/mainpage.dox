@@ -106,8 +106,14 @@ to build both Release and Debug configurations.
 
 UNDER CONSTRUCTION
 
+\anchor fig2
+\image html moves.png "Fig. 2: " width=60%
+
 \anchor section5
 # 5. Code Breakdown
+
+\anchor fig3
+\image html notes.png "Fig. 3: " width=30%
 
 The tricky bit is figuring out how to get the cannonballs to 
 the right places at the right times
@@ -115,6 +121,15 @@ when they are all fired from the cannon simultaneously.
 No worries though, it's not as hard as it might seem provided you
 grok parabolas, relative velocity and the formulae \f$s=ut+at^2/2\f$ and
 \f$v=u+at\f$.
+
+\anchor fig4
+\image html parabola1.png "Fig. 4: Source and destination points, initial velocity, and parabola." width=38%
+
+\anchor fig5
+\image html parabola2.png "Fig. 5: Project a point above the source level wiyh the destination." width=38%
+
+\anchor fig6
+\image html parabola3.png "Fig. 6: Translate so that the source is at the origin." width=42%
 
 UNDER CONSTRUCTION
 

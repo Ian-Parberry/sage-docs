@@ -80,9 +80,6 @@ to build both Release and Debug configurations.
 
 UNDER CONSTRUCTION
 
-\anchor section5
-# 5. Code Breakdown
-
 \anchor fig2
 \image html zero-one.png "Fig. 2: Single bit counter showing a 0 (left) and a 1 (right)." width=40%
 
@@ -93,7 +90,17 @@ the image on the
 left of \ref fig2 "Fig. 2" represents a 0, and the image on the right
 of \ref fig2 "Fig. 2" represents a 1.
 
-UNDER CONSTRUCTION
+\anchor fig3
+\image html frames.png "Fig. 3: " width=60%
+
+\anchor section5
+# 5. Code Breakdown
+
+\anchor fig4
+\image html bitadd.png "Fig. 4: " width=12%
+
+\anchor fig5
+\image html add.png "Fig. 5: " width=35%
 
 \anchor section6
 # 6. What Next?

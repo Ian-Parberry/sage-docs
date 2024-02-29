@@ -123,8 +123,28 @@ Fig. 1: Screen shot.</div></div>
 <p>This code uses <a href="../sage/index.html">SAGE</a> and <a href="https://github.com/erincatto/Box2D">Box2D</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>14. Cannon Lullaby Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Cannon Lullaby Toy.sln</code></span> with Visual Studio and build the Release configuration. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
 <p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="fig2"></a></p><div class="image">
+<img src="moves.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 2: </div></div>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p><a class="anchor" id="fig3"></a></p><div class="image">
+<img src="notes.png" alt="" width="30%"/>
+<div class="caption">
+Fig. 3: </div></div>
 <p>The tricky bit is figuring out how to get the cannonballs to the right places at the right times when they are all fired from the cannon simultaneously. No worries though, it's not as hard as it might seem provided you grok parabolas, relative velocity and the formulae \(s=ut+at^2/2\) and \(v=u+at\).</p>
+<p><a class="anchor" id="fig4"></a></p><div class="image">
+<img src="parabola1.png" alt="" width="38%"/>
+<div class="caption">
+Fig. 4: Source and destination points, initial velocity, and parabola.</div></div>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
+<img src="parabola2.png" alt="" width="38%"/>
+<div class="caption">
+Fig. 5: Project a point above the source level wiyh the destination.</div></div>
+<p><a class="anchor" id="fig6"></a></p><div class="image">
+<img src="parabola3.png" alt="" width="42%"/>
+<div class="caption">
+Fig. 6: Translate so that the source is at the origin.</div></div>
 <p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../bulletblocks/index.html">Bullet Physics Block Toy</a>. </p>
