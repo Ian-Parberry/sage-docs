@@ -84,7 +84,7 @@ $(function() {
 <img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 1: Screen shot.</div></div>
-<p>The Cannon Lullaby Toy plays the first seven notes of the classic lullaby "Twinkle Twinkle Little Star" using a cannon and three bells. The cannonballs leave trails of stars so that their parabolic trajectories are clearly visible. You can see how these trajectories change when you move the cannon or change the height of the flowers (however, the cannon will break if you drive it over the edge of the platform). The cannon barrel is fixed at about 45 degrees. "Twinkle Twinkle Little Star" is hard-coded as "CCGGAAG" played at about three beats per second, but this is pretty easy to change in the code.</p>
+<p>The Cannon Lullaby Toy has three sunflowers, each of which plays a different note when struck by a ball launched from a cannon. The cannon fires seven balls simultaneously at different velocities so that the sunflowers play the first seven notes of the classic lullaby "Twinkle Twinkle Little Star". The cannonballs leave trails of stars so that their parabolic trajectories are clearly visible. You can see how these trajectories change when you move the cannon or change the height of the flowers (however, the cannon will break if you drive it over the edge of the platform). The cannon barrel is fixed at about 45 degrees. "Twinkle Twinkle Little Star" is hard-coded as "CCGGAAG" played at about three beats per second, but this is pretty easy to change in the code.</p>
 <p>The remainder of this page is divided into five sections. <a class="el" href="index.html#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="index.html#section3">Section 3</a> tells you how to build it, <a class="el" href="index.html#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="index.html#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="index.html#section6">Section 6</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
@@ -95,23 +95,23 @@ Fig. 1: Screen shot.</div></div>
 <tr>
 <td><center>F2</center> </td><td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only" </td></tr>
 <tr>
-<td><center>1</center> </td><td>Left flower up  </td></tr>
+<td><center>1</center> </td><td>Left flower up (tap or hold down) </td></tr>
 <tr>
-<td><center>2</center> </td><td>Left flower down </td></tr>
+<td><center>2</center> </td><td>Left flower down (tap or hold down) </td></tr>
 <tr>
-<td><center>3</center> </td><td>Center flower up  </td></tr>
+<td><center>3</center> </td><td>Center flower up (tap or hold down) </td></tr>
 <tr>
-<td><center>4</center> </td><td>Center flower down </td></tr>
+<td><center>4</center> </td><td>Center flower down (tap or hold down) </td></tr>
 <tr>
-<td><center>5</center> </td><td>Right flower up  </td></tr>
+<td><center>5</center> </td><td>Right flower up (tap or hold down) </td></tr>
 <tr>
-<td><center>6</center> </td><td>Right flower down </td></tr>
+<td><center>6</center> </td><td>Right flower down (tap or hold down) </td></tr>
 <tr>
 <td><center>Space</center> </td><td>Fire cannon </td></tr>
 <tr>
-<td><center>Left arrow</center> </td><td>Move cannon left </td></tr>
+<td><center>Left arrow</center> </td><td>Start cannon moving left </td></tr>
 <tr>
-<td><center>Right arrow</center> </td><td>Move cannon right </td></tr>
+<td><center>Right arrow</center> </td><td>Start cannon moving right </td></tr>
 <tr>
 <td><center>S</center> </td><td>Stop cannon </td></tr>
 <tr>
@@ -122,30 +122,58 @@ Fig. 1: Screen shot.</div></div>
 </center><p><a class="anchor" id="section3"></a></p><h1>3. Building the Game</h1>
 <p>This code uses <a href="../sage/index.html">SAGE</a> and <a href="https://github.com/erincatto/Box2D">Box2D</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>14. Cannon Lullaby Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Cannon Lullaby Toy.sln</code></span> with Visual Studio and build the Release configuration. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
-<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="fig2"></a></p><div class="image">
 <img src="moves.png" alt="" width="60%"/>
 <div class="caption">
-Fig. 2: </div></div>
+Fig. 2: The flowers can be moved up and down and the cannon back and forth.</div></div>
+<p>Using the keyboard commands in <a class="el" href="index.html#section2">Section 2</a>, move the flowers up and down and move the cannon horizontally to a new position (see <a class="el" href="index.html#fig2">Fig. 2</a>). Verify by experiment that the cannonballs always hit the correct sunflowers at the correct time to play "Twinkle Twinkle Little Star".</p>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
+<p><a class="anchor" id="section5-1"></a></p><h2>5.1 Creating the Physics Bodies</h2>
 <p><a class="anchor" id="fig3"></a></p><div class="image">
+<img src="shapes.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 3: The toy (top) overlaid with shapes (middle) and shapes only (bottom).</div></div>
+<p><a class="el" href="index.html#fig3">Fig. 3</a> show the toy drawn in regular mode with sprites (top), with sprites overlaid with Physics World shapes (middle), and with shapes only (bottom).</p>
+<p><a class="anchor" id="section5-2"></a></p><h2>5.2 Firing the Cannonballs</h2>
+<p><a class="anchor" id="fig4"></a></p><div class="image">
 <img src="notes.png" alt="" width="30%"/>
 <div class="caption">
-Fig. 3: </div></div>
-<p>The tricky bit is figuring out how to get the cannonballs to the right places at the right times when they are all fired from the cannon simultaneously. No worries though, it's not as hard as it might seem provided you grok parabolas, relative velocity and the formulae \(s=ut+at^2/2\) and \(v=u+at\).</p>
-<p><a class="anchor" id="fig4"></a></p><div class="image">
+Fig. 4: Three sunfowers and their notes when struck.</div></div>
+<p>The tricky bit is figuring out how to get the cannonballs to the right places at the right times when they are all fired from the cannon simultaneously. No worries though, it's not as hard as it might seem provided you grok parabolas, relative velocity and the formula \(v=u+at\).</p>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
 <img src="parabola1.png" alt="" width="38%"/>
 <div class="caption">
-Fig. 4: Source and destination points, initial velocity, and parabola.</div></div>
-<p><a class="anchor" id="fig5"></a></p><div class="image">
+Fig. 5: Source and destination points, initial velocity, and parabola.</div></div>
+<p>As shown in <a class="el" href="index.html#fig5">Fig. 5</a>, we need to find the velocity \(\vec{v} = [v_x, v_y]\) such that a cannonball fired from \(\vec{p}_0 = [x_0, y_0]\) will arrive at \(\vec{p}_1 = [x_1, y_1]\) in time \(t\), for some reasonable \(t &gt; 0\). Clearly, \(v_x = (x_1 - x_0)/t\). The best way to find \(v_y\) is to use relative velocity.</p>
+<p><a class="anchor" id="fig6"></a></p><div class="image">
 <img src="parabola2.png" alt="" width="38%"/>
 <div class="caption">
-Fig. 5: Project a point above the source level wiyh the destination.</div></div>
-<p><a class="anchor" id="fig6"></a></p><div class="image">
+Fig. 6: Project a point above the source level with the destination.</div></div>
+<p>Let \(\vec{p}_2 = [x_0, y_1]\) be the point above \(\vec{p}_0\) and level with \(\vec{p}_1\), as shown in <a class="el" href="index.html#fig6">Fig. 6</a>. Consider a point \(\vec{p}\) moving vertically from \(\vec{p}_0\) to \(\vec{p}_2\) at constant speed \((y_1 - y_0)/t\). It leaves \(\vec{p}_0\) at the same time as the cannonball, and arrives at \(\vec{p}_2\) at time \(t\), which is when the cannonball arrives at point \(\vec{p}_1\). Relative to \(\vec{p}\) the cannonball is fired at vertical speed \(v_y - (y_1 - y_0)/t\) and moves on a parabola a horizontal distance of \(x_1 - x_0\).</p>
+<p><a class="anchor" id="fig7"></a></p><div class="image">
 <img src="parabola3.png" alt="" width="42%"/>
 <div class="caption">
-Fig. 6: Translate so that the source is at the origin.</div></div>
-<p>UNDER CONSTRUCTION</p>
+Fig. 7: Translate so that the source is at the origin.</div></div>
+<p>Suppose we translate everything so that \(p_0\) is at the origin \([0,0]\), as shown in <a class="el" href="index.html#fig7">Fig. 7</a>. The cannonball reaches the midpoint of this parabola ( \(p_3\) in <a class="el" href="index.html#fig7">Fig. 7</a>) at time \(t/2\), at which time the vertical component of its velocity is zero. <br  />
+ Using the equation \(v = u+at\),  </p><p class="formulaDsp">
+\[
+\vec{v}_y - (y_1 - y_0)/t - gt/2 = 0,
+\]
+</p>
+<p> where \(g\) is the absolute value of acceleration due to gravity. That is,  </p><p class="formulaDsp">
+\[
+\vec{v}_y = (y_1 - y_0)/t + gt/2.
+\]
+</p>
+<p> Therefore,  </p><p class="formulaDsp">
+\[
+\vec{v} = [(x_1 - x_0)/t, (y_1 - y_0)/t + gt/2] = (p_1 - p_0)/t +[0, gt/2].
+\]
+</p>
+<p>This is reflected in the following code in <code><a class="el" href="class_c_cannon.html#a95c26459f89c945f58675a4b26eb787d" title="Fire the cannon.">CCannon::Fire</a></code>: </p><pre class="fragment">b2Vec2 v = (1.0f/t)*(p1 - p0); 
+v.y += m_fGravity*t/2.0f;
+</pre><p> (Note: the multiplication by <code>1.0f/t</code> is because Box2D does not have a <code>b2Vec2</code> divide-by-float operation). The static member variable <code>m_fGravity</code> inherited from <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code> holds the value of \(g\) in the above formulae. Since <code><a class="el" href="class_c_game.html" title="The game class.">CGame</a></code> is also derived from <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code>, this ensures that the line </p><pre class="fragment">m_pPhysicsWorld = new b2World(b2Vec2(0, -m_fGravity));
+</pre><p> in <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">CGame::Initialize</a></code> sets the gravity in Physics World to the same value.</p>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../bulletblocks/index.html">Bullet Physics Block Toy</a>. </p>
 </div></div><!-- PageDoc -->

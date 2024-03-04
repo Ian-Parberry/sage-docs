@@ -8,9 +8,12 @@
 \anchor fig1
 \image html screenshot.png "Fig. 1: Screen shot." width=60%
 
-The Cannon Lullaby Toy plays the first seven notes
-of the classic lullaby "Twinkle Twinkle Little Star" 
-using a cannon and three bells. 
+The Cannon Lullaby Toy has three sunflowers, each of which plays
+a different note when struck by a ball launched from a cannon.
+The cannon fires seven balls simultaneously at different
+velocities so that the sunflowers
+play the first seven notes
+of the classic lullaby "Twinkle Twinkle Little Star". 
 The cannonballs leave trails of stars so that
 their parabolic trajectories are clearly visible. 
 You can see how these trajectories change when you move the cannon 
@@ -18,8 +21,7 @@ or change the height of the flowers (however, the cannon will break if you
 drive it over the edge of the platform). 
 The cannon barrel is fixed at
 about 45 degrees. "Twinkle Twinkle Little Star" is hard-coded
-as "CCGGAAG" played at about three beats per second, but this is pretty easy to change
-in the code.
+as "CCGGAAG" played at about three beats per second, but this is pretty easy to change in the code.
 
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the controls
@@ -46,31 +48,31 @@ and
 <td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only"</td>
 <tr>
 <td><center>1</center></td>
-<td>Left flower up </td>
+<td>Left flower up (tap or hold down)</td>
 <tr>
 <td><center>2</center></td>
-<td>Left flower down</td>
+<td>Left flower down (tap or hold down)</td>
 <tr>
 <td><center>3</center></td>
-<td>Center flower up </td>
+<td>Center flower up (tap or hold down)</td>
 <tr>
 <td><center>4</center></td>
-<td>Center flower down</td>
+<td>Center flower down (tap or hold down)</td>
 <tr>
 <td><center>5</center></td>
-<td>Right flower up </td>
+<td>Right flower up (tap or hold down)</td>
 <tr>
 <td><center>6</center></td>
-<td>Right flower down</td>
+<td>Right flower down (tap or hold down)</td>
 <tr>
 <td><center>Space</center></td>
 <td>Fire cannon</td>
 <tr>
 <td><center>Left arrow</center></td>
-<td>Move cannon left</td>
+<td>Start cannon moving left</td>
 <tr>
 <td><center>Right arrow</center></td>
-<td>Move cannon right</td>
+<td>Start cannon moving right</td>
 <tr>
 <td><center>S</center></td>
 <td>Stop cannon</td>
@@ -104,34 +106,93 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-UNDER CONSTRUCTION
-
 \anchor fig2
-\image html moves.png "Fig. 2: " width=60%
+\image html moves.png "Fig. 2: The flowers can be moved up and down and the cannon back and forth." width=60%
+
+Using the keyboard commands in \ref section2 "Section 2",
+move the flowers up and down and move the cannon horizontally
+to a new position (see \ref fig2 "Fig. 2"). 
+Verify by experiment that the cannonballs always hit the correct
+sunflowers at the correct time to play "Twinkle Twinkle Little Star".
 
 \anchor section5
 # 5. Code Breakdown
 
+\anchor section5-1
+## 5.1 Creating the Physics Bodies
+
 \anchor fig3
-\image html notes.png "Fig. 3: " width=30%
+\image html shapes.png "Fig. 3: The toy (top) overlaid with shapes (middle) and shapes only (bottom)." width=60%
+
+\ref fig3 "Fig. 3" show the toy drawn in regular mode with sprites (top),
+with sprites overlaid with Physics World shapes (middle), and with shapes
+only (bottom).
+
+\anchor section5-2
+## 5.2 Firing the Cannonballs
+
+\anchor fig4
+\image html notes.png "Fig. 4: Three sunfowers and their notes when struck." width=30%
 
 The tricky bit is figuring out how to get the cannonballs to 
 the right places at the right times
 when they are all fired from the cannon simultaneously.
 No worries though, it's not as hard as it might seem provided you
-grok parabolas, relative velocity and the formulae \f$s=ut+at^2/2\f$ and
+grok parabolas, relative velocity and the formula
 \f$v=u+at\f$.
 
-\anchor fig4
-\image html parabola1.png "Fig. 4: Source and destination points, initial velocity, and parabola." width=38%
-
 \anchor fig5
-\image html parabola2.png "Fig. 5: Project a point above the source level wiyh the destination." width=38%
+\image html parabola1.png "Fig. 5: Source and destination points, initial velocity, and parabola." width=38%
+
+As shown in \ref fig5 "Fig. 5", we need to
+find the velocity \f$\vec{v} = [v_x, v_y]\f$ such that a cannonball fired from \f$\vec{p}_0 = [x_0, y_0]\f$ will arrive at \f$\vec{p}_1 = [x_1, y_1]\f$ in time \f$t\f$, for some reasonable \f$t > 0\f$.   Clearly, \f$v_x = (x_1 - x_0)/t\f$. 
+The best way to find \f$v_y\f$ is to use relative velocity. 
 
 \anchor fig6
-\image html parabola3.png "Fig. 6: Translate so that the source is at the origin." width=42%
+\image html parabola2.png "Fig. 6: Project a point above the source level with the destination." width=38%
 
-UNDER CONSTRUCTION
+Let \f$\vec{p}_2 = [x_0, y_1]\f$ be the point above \f$\vec{p}_0\f$
+and level with \f$\vec{p}_1\f$, as shown in \ref fig6 "Fig. 6".
+Consider a point \f$\vec{p}\f$ moving vertically from \f$\vec{p}_0\f$
+to \f$\vec{p}_2\f$ at constant speed \f$(y_1 - y_0)/t\f$.
+It leaves \f$\vec{p}_0\f$ at the same time as the cannonball, and arrives at \f$\vec{p}_2\f$ at time \f$t\f$, which is when the cannonball arrives at point \f$\vec{p}_1\f$.
+Relative to \f$\vec{p}\f$ the cannonball is fired at vertical speed
+\f$v_y - (y_1 - y_0)/t\f$ and moves on a parabola a horizontal distance of
+\f$x_1 - x_0\f$.
+
+\anchor fig7
+\image html parabola3.png "Fig. 7: Translate so that the source is at the origin." width=42%
+
+Suppose we translate everything so that \f$p_0\f$ is at the origin \f$[0,0]\f$,
+as shown in \ref fig7 "Fig. 7".
+The cannonball reaches the midpoint of this parabola (\f$p_3\f$
+in \ref fig7 "Fig. 7") at time \f$t/2\f$,
+at which time the vertical component of its velocity is zero.  
+Using the equation \f$v = u+at\f$,
+\f[
+\vec{v}_y - (y_1 - y_0)/t - gt/2 = 0,
+\f]
+where \f$g\f$ is the absolute value of acceleration due to gravity. That is,
+\f[
+\vec{v}_y = (y_1 - y_0)/t + gt/2.
+\f]
+Therefore,
+\f[
+\vec{v} = [(x_1 - x_0)/t, (y_1 - y_0)/t + gt/2] = (p_1 - p_0)/t +[0, gt/2].
+\f]
+
+This is reflected in the following code in `CCannon::Fire`:
+
+    b2Vec2 v = (1.0f/t)*(p1 - p0); 
+    v.y += m_fGravity*t/2.0f;
+
+(Note: the multiplication by `1.0f/t` is because Box2D does not have a `b2Vec2` divide-by-float operation).
+The static member variable `m_fGravity` inherited from `CCommon` holds the value of \f$g\f$ in the above formulae. Since `CGame` is also derived from `CCommon`, this ensures that
+the line
+
+    m_pPhysicsWorld = new b2World(b2Vec2(0, -m_fGravity));
+
+in `CGame::Initialize` sets the gravity in Physics World to the same value.
 
 \anchor section6
 # 6. What Next?
