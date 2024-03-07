@@ -128,33 +128,40 @@ Fig. 1: Screen shot.</div></div>
 Fig. 2: The flowers can be moved up and down and the cannon back and forth.</div></div>
 <p>Using the keyboard commands in <a class="el" href="index.html#section2">Section 2</a>, move the flowers up and down and move the cannon horizontally to a new position (see <a class="el" href="index.html#fig2">Fig. 2</a>). Verify by experiment that the cannonballs always hit the correct sunflowers at the correct time to play "Twinkle Twinkle Little Star".</p>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
-<p><a class="anchor" id="section5-1"></a></p><h2>5.1 Creating the Physics Bodies</h2>
 <p><a class="anchor" id="fig3"></a></p><div class="image">
 <img src="shapes.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 3: The toy (top) overlaid with shapes (middle) and shapes only (bottom).</div></div>
-<p><a class="el" href="index.html#fig3">Fig. 3</a> show the toy drawn in regular mode with sprites (top), with sprites overlaid with Physics World shapes (middle), and with shapes only (bottom).</p>
-<p><a class="anchor" id="section5-2"></a></p><h2>5.2 Firing the Cannonballs</h2>
+<p><a class="el" href="index.html#fig3">Fig. 3</a> shows the toy drawn in regular mode with sprites (top), with sprites overlaid with Physics World shapes (middle), and with shapes only (bottom). The edges of the world and the ledge that the cannon sits on are created in <code><a class="el" href="class_c_object_manager.html#a9cd9848b67155361f36449fb69d3b98e" title="Create the edges of the world.">CObjectManager::CreateWorldEdges</a></code>. A pointer to a Physics body to which the edge shapes are attached is stored in <code><a class="el" href="class_c_object_manager.html#a00f0ee5bec30201f70720fb47c8a5ef2" title="Pointer to body for world edges and ledge.">CObjectManager::m_pEdges</a></code> only so that they can be drawn to the window when called for (see <a class="el" href="index.html#fig3">Fig. 3</a>). The Physics World circle shapes for the flowers are created in <code><a class="el" href="class_c_object_manager.html#a75a23e62a316f4b34eff8a11dd4219c9" title="Create bells.">CObjectManager::CreateBells</a></code>, which calls <code><a class="el" href="class_c_object_manager.html#a94042b0c4aa931c057ea2e0cf7cb1c3d" title="Create bell.">CObjectManager::CreateBell</a></code> once for each bell. The Physics World shapes for the cannon are created in <code><a class="el" href="class_c_cannon.html#a6e84fcf3a92d95f5b226c7567bf3662b" title="Create a cannon base in Physics World.">CCannon::CreateBase</a></code>, <code><a class="el" href="class_c_cannon.html#ac9d99b276971a961be0f2ecba3c42edb" title="Create a cannon barrel in Physics World.">CCannon::CreateBarrel</a></code>, and <code><a class="el" href="class_c_cannon.html#a7d038475a4063ed61cb18b69ca72d975" title="Create a cannon wheel in Physics World.">CCannon::CreateWheel</a></code>, which are called from <code><a class="el" href="class_c_cannon.html#afa758cc6bae9a6dec2ea8b1ee3f049ea" title="Set up a cannon.">CCannon::Initialize</a></code>. The Physics World bodies for the cannonballs are created in <code><a class="el" href="class_c_cannon.html#a95c26459f89c945f58675a4b26eb787d" title="Fire the cannon.">CCannon::Fire</a></code>, which is called from <code><a class="el" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler.">CGame::KeyboardHandler</a></code> in response to the <code>VK_SPACE</code> key (see <a class="el" href="index.html#section2">Section 2</a> for more keyboard controls).</p>
 <p><a class="anchor" id="fig4"></a></p><div class="image">
+<img src="overlap.png" alt="" width="20%"/>
+<div class="caption">
+Fig. 4: The cannonballs initially overlap.</div></div>
+<p><code><a class="el" href="class_c_cannon.html#a95c26459f89c945f58675a4b26eb787d" title="Fire the cannon.">CCannon::Fire</a></code> creates an instance of <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> for each cannonball which includes a pointer to a new Physics World body with a circle shape attached to it. One cannonball is created for each note and all are initially placed at the same spot in front of the cannon. For example, <a class="el" href="index.html#fig4">Fig. 4</a> shows the cannonballs a few seconds after they have been created. This means that Box2D will have to be informed that the cannonballs do not collide with each other, which we achieve by setting their fixture definition group index <code>filter.groupIndex</code> equal to <code>-1</code>. Each cannonball will have a different velocity so that they impact with the right flower at the right time to play the lullaby. There is a contact listener class <code><a class="el" href="class_c_my_listener.html" title="My contact listener.">CMyListener</a></code> whose presolve function <code><a class="el" href="class_c_my_listener.html#a9cfe3dcfe49fbe4a73ba722a524b7123" title="Presolve function.">CMyListener::PreSolve</a></code> ensures that the flowers play, from left to right, the notes C, G, and A, as shown in <a class="el" href="index.html#fig5">Fig. 5</a>.</p>
+<p><a class="anchor" id="fig5"></a></p><div class="image">
 <img src="notes.png" alt="" width="30%"/>
 <div class="caption">
-Fig. 4: Three sunfowers and their notes when struck.</div></div>
-<p>The tricky bit is figuring out how to get the cannonballs to the right places at the right times when they are all fired from the cannon simultaneously. No worries though, it's not as hard as it might seem provided you grok parabolas, relative velocity and the formula \(v=u+at\).</p>
-<p><a class="anchor" id="fig5"></a></p><div class="image">
+Fig. 5: Three sunfowers and their notes when struck.</div></div>
+<p><code><a class="el" href="class_c_cannon.html#a95c26459f89c945f58675a4b26eb787d" title="Fire the cannon.">CCannon::Fire</a></code> has a local character array <code>notes</code> set to the sequence of notes to play, and another local variable <code>n</code> which is automatically set to the number of notes. To change the lullaby, simply change the <code>notes</code> string, although you are limited to the notes C, G, and A unless you add more sounds and, if necessary, more flowers to the code. </p><pre class="fragment">char notes[] = "CCGGAAG"; 
+const size_t n = strlen(notes);
+</pre><p> It also has a constant <code>DELAY</code>, which is a delay time in seconds before the first note is played, and <code>TICK</code>, which is a constant delay time between notes in seconds. These can be changed to reasonable values sufficiently greater than zero. </p><pre class="fragment">const float DELAY = 2.8f;
+const float TICK = 0.33f;
+</pre><p> The time to impact for ball number <code>i</code> is then: </p><pre class="fragment">const float t = DELAY + i*TICK;
+</pre><p> <a class="anchor" id="fig6"></a></p><div class="image">
 <img src="parabola1.png" alt="" width="38%"/>
 <div class="caption">
-Fig. 5: Source and destination points, initial velocity, and parabola.</div></div>
-<p>As shown in <a class="el" href="index.html#fig5">Fig. 5</a>, we need to find the velocity \(\vec{v} = [v_x, v_y]\) such that a cannonball fired from \(\vec{p}_0 = [x_0, y_0]\) will arrive at \(\vec{p}_1 = [x_1, y_1]\) in time \(t\), for some reasonable \(t &gt; 0\). Clearly, \(v_x = (x_1 - x_0)/t\). The best way to find \(v_y\) is to use relative velocity.</p>
-<p><a class="anchor" id="fig6"></a></p><div class="image">
+Fig. 6: Source and destination points, initial velocity, and parabola.</div></div>
+<p>As shown in <a class="el" href="index.html#fig6">Fig. 6</a>, we need to find the velocity \(\vec{v} = [v_x, v_y]\) such that a cannonball fired from \(\vec{p}_0 = [x_0, y_0]\) will arrive at \(\vec{p}_1 = [x_1, y_1]\) in time \(t\), for some reasonable \(t &gt; 0\). Clearly, \(v_x = (x_1 - x_0)/t\). The best way to find \(v_y\) is to use relative velocity.</p>
+<p><a class="anchor" id="fig7"></a></p><div class="image">
 <img src="parabola2.png" alt="" width="38%"/>
 <div class="caption">
-Fig. 6: Project a point above the source level with the destination.</div></div>
-<p>Let \(\vec{p}_2 = [x_0, y_1]\) be the point above \(\vec{p}_0\) and level with \(\vec{p}_1\), as shown in <a class="el" href="index.html#fig6">Fig. 6</a>. Consider a point \(\vec{p}\) moving vertically from \(\vec{p}_0\) to \(\vec{p}_2\) at constant speed \((y_1 - y_0)/t\). It leaves \(\vec{p}_0\) at the same time as the cannonball, and arrives at \(\vec{p}_2\) at time \(t\), which is when the cannonball arrives at point \(\vec{p}_1\). Relative to \(\vec{p}\) the cannonball is fired at vertical speed \(v_y - (y_1 - y_0)/t\) and moves on a parabola a horizontal distance of \(x_1 - x_0\).</p>
-<p><a class="anchor" id="fig7"></a></p><div class="image">
+Fig. 7: Project a point above the source level with the destination.</div></div>
+<p>Let \(\vec{p}_2 = [x_0, y_1]\) be the point above \(\vec{p}_0\) and level with \(\vec{p}_1\), as shown in <a class="el" href="index.html#fig7">Fig. 7</a>. Consider a point \(\vec{p}\) moving vertically from \(\vec{p}_0\) to \(\vec{p}_2\) at constant speed \((y_1 - y_0)/t\). It leaves \(\vec{p}_0\) at the same time as the cannonball, and arrives at \(\vec{p}_2\) at time \(t\), which is when the cannonball arrives at point \(\vec{p}_1\). Relative to \(\vec{p}\) the cannonball is fired at vertical speed \(v_y - (y_1 - y_0)/t\) and moves on a parabola a horizontal distance of \(x_1 - x_0\).</p>
+<p><a class="anchor" id="fig8"></a></p><div class="image">
 <img src="parabola3.png" alt="" width="42%"/>
 <div class="caption">
-Fig. 7: Translate so that the source is at the origin.</div></div>
-<p>Suppose we translate everything so that \(p_0\) is at the origin \([0,0]\), as shown in <a class="el" href="index.html#fig7">Fig. 7</a>. The cannonball reaches the midpoint of this parabola ( \(p_3\) in <a class="el" href="index.html#fig7">Fig. 7</a>) at time \(t/2\), at which time the vertical component of its velocity is zero. <br  />
+Fig. 8: Translate so that the source is at the origin.</div></div>
+<p>Suppose we translate everything so that \(p_0\) is at the origin \([0,0]\), as shown in <a class="el" href="index.html#fig8">Fig. 8</a>. The cannonball reaches the midpoint of this parabola ( \(p_3\) in <a class="el" href="index.html#fig8">Fig. 8</a>) at time \(t/2\), at which time the vertical component of its velocity is zero. <br  />
  Using the equation \(v = u+at\),  </p><p class="formulaDsp">
 \[
 \vec{v}_y - (y_1 - y_0)/t - gt/2 = 0,
@@ -173,7 +180,7 @@ Fig. 7: Translate so that the source is at the origin.</div></div>
 <p>This is reflected in the following code in <code><a class="el" href="class_c_cannon.html#a95c26459f89c945f58675a4b26eb787d" title="Fire the cannon.">CCannon::Fire</a></code>: </p><pre class="fragment">b2Vec2 v = (1.0f/t)*(p1 - p0); 
 v.y += m_fGravity*t/2.0f;
 </pre><p> (Note: the multiplication by <code>1.0f/t</code> is because Box2D does not have a <code>b2Vec2</code> divide-by-float operation). The static member variable <code>m_fGravity</code> inherited from <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code> holds the value of \(g\) in the above formulae. Since <code><a class="el" href="class_c_game.html" title="The game class.">CGame</a></code> is also derived from <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code>, this ensures that the line </p><pre class="fragment">m_pPhysicsWorld = new b2World(b2Vec2(0, -m_fGravity));
-</pre><p> in <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">CGame::Initialize</a></code> sets the gravity in Physics World to the same value.</p>
+</pre><p> in <code><a class="el" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">CGame::Initialize</a></code> sets the gravity in Physics World to the same value. Finally, we use <code>b2Body</code>'s <code>SetLinearVelocity</code> function to set each cannonball's velocity to <code>v</code> as described above.</p>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../bulletblocks/index.html">Bullet Physics Block Toy</a>. </p>
 </div></div><!-- PageDoc -->

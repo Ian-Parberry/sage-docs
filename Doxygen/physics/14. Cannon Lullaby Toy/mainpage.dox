@@ -118,41 +118,69 @@ sunflowers at the correct time to play "Twinkle Twinkle Little Star".
 \anchor section5
 # 5. Code Breakdown
 
-\anchor section5-1
-## 5.1 Creating the Physics Bodies
-
 \anchor fig3
 \image html shapes.png "Fig. 3: The toy (top) overlaid with shapes (middle) and shapes only (bottom)." width=60%
 
-\ref fig3 "Fig. 3" show the toy drawn in regular mode with sprites (top),
+\ref fig3 "Fig. 3" shows the toy drawn in regular mode with sprites (top),
 with sprites overlaid with Physics World shapes (middle), and with shapes
 only (bottom).
-
-\anchor section5-2
-## 5.2 Firing the Cannonballs
+The edges of the world and the ledge that the cannon sits on are created in `CObjectManager::CreateWorldEdges`. A pointer to a Physics body to which the edge shapes are attached is stored in `CObjectManager::m_pEdges` only so that they can be drawn to the window when called for (see \ref fig3 "Fig. 3").
+The Physics World circle shapes for the flowers are created in
+`CObjectManager::CreateBells`, which calls ` CObjectManager::CreateBell` once for each bell.
+The Physics World shapes for the cannon are created in
+`CCannon::CreateBase`,
+`CCannon::CreateBarrel`, and
+`CCannon::CreateWheel`,
+which are called from `CCannon::Initialize`.
+The Physics World bodies for the cannonballs are created in `CCannon::Fire`, which is called from `CGame::KeyboardHandler` in response to the `VK_SPACE` key
+(see \ref section2 "Section 2" for more keyboard controls).
 
 \anchor fig4
-\image html notes.png "Fig. 4: Three sunfowers and their notes when struck." width=30%
+\image html overlap.png "Fig. 4: The cannonballs initially overlap." width=20%
 
-The tricky bit is figuring out how to get the cannonballs to 
-the right places at the right times
-when they are all fired from the cannon simultaneously.
-No worries though, it's not as hard as it might seem provided you
-grok parabolas, relative velocity and the formula
-\f$v=u+at\f$.
+`CCannon::Fire` creates an instance of `CObject` for each cannonball which includes a pointer to
+a new Physics World body with a circle shape attached to it.
+One cannonball is created for each note and all are initially placed at the same spot in front of the cannon. For example, \ref fig4 "Fig. 4" shows the cannonballs a few seconds after they have been created.
+This means that Box2D will have to be informed
+that the cannonballs do not collide with each other, which we achieve
+by setting their fixture definition group index `filter.groupIndex` equal to `-1`.
+Each cannonball will have a different velocity so that they impact
+with the right flower at the right time to play the lullaby.
+There is a contact listener class `CMyListener` whose presolve function
+`CMyListener::PreSolve` ensures that the flowers play,
+from left to right, the notes C, G, and A, as shown in \ref fig5 "Fig. 5".
 
 \anchor fig5
-\image html parabola1.png "Fig. 5: Source and destination points, initial velocity, and parabola." width=38%
+\image html notes.png "Fig. 5: Three sunfowers and their notes when struck." width=30%
 
-As shown in \ref fig5 "Fig. 5", we need to
+`CCannon::Fire` has a local character array `notes` set to the sequence of notes to play, and another local variable `n` which is automatically set to the number of notes. To change the lullaby, simply change the `notes` string, although you are limited to the notes C, G, and A unless you add more sounds and, if necessary, more flowers to the code.
+
+    char notes[] = "CCGGAAG"; 
+    const size_t n = strlen(notes);
+
+It also has a constant `DELAY`, which is a delay time in seconds before the first note
+is played, and `TICK`, which is a constant delay time between notes in seconds.
+These can be changed to reasonable values sufficiently greater than zero.
+    
+    const float DELAY = 2.8f;
+    const float TICK = 0.33f;
+
+The time to impact for ball number `i` is then:
+
+    const float t = DELAY + i*TICK;
+
+\anchor fig6
+\image html parabola1.png "Fig. 6: Source and destination points, initial velocity, and parabola." width=38%
+
+As shown in \ref fig6 "Fig. 6", we need to
 find the velocity \f$\vec{v} = [v_x, v_y]\f$ such that a cannonball fired from \f$\vec{p}_0 = [x_0, y_0]\f$ will arrive at \f$\vec{p}_1 = [x_1, y_1]\f$ in time \f$t\f$, for some reasonable \f$t > 0\f$.   Clearly, \f$v_x = (x_1 - x_0)/t\f$. 
 The best way to find \f$v_y\f$ is to use relative velocity. 
 
-\anchor fig6
-\image html parabola2.png "Fig. 6: Project a point above the source level with the destination." width=38%
+\anchor fig7
+\image html parabola2.png "Fig. 7: Project a point above the source level with the destination." width=38%
 
 Let \f$\vec{p}_2 = [x_0, y_1]\f$ be the point above \f$\vec{p}_0\f$
-and level with \f$\vec{p}_1\f$, as shown in \ref fig6 "Fig. 6".
+and level with \f$\vec{p}_1\f$, as shown in \ref fig7 "Fig. 7".
 Consider a point \f$\vec{p}\f$ moving vertically from \f$\vec{p}_0\f$
 to \f$\vec{p}_2\f$ at constant speed \f$(y_1 - y_0)/t\f$.
 It leaves \f$\vec{p}_0\f$ at the same time as the cannonball, and arrives at \f$\vec{p}_2\f$ at time \f$t\f$, which is when the cannonball arrives at point \f$\vec{p}_1\f$.
@@ -160,13 +188,13 @@ Relative to \f$\vec{p}\f$ the cannonball is fired at vertical speed
 \f$v_y - (y_1 - y_0)/t\f$ and moves on a parabola a horizontal distance of
 \f$x_1 - x_0\f$.
 
-\anchor fig7
-\image html parabola3.png "Fig. 7: Translate so that the source is at the origin." width=42%
+\anchor fig8
+\image html parabola3.png "Fig. 8: Translate so that the source is at the origin." width=42%
 
 Suppose we translate everything so that \f$p_0\f$ is at the origin \f$[0,0]\f$,
-as shown in \ref fig7 "Fig. 7".
+as shown in \ref fig8 "Fig. 8".
 The cannonball reaches the midpoint of this parabola (\f$p_3\f$
-in \ref fig7 "Fig. 7") at time \f$t/2\f$,
+in \ref fig8 "Fig. 8") at time \f$t/2\f$,
 at which time the vertical component of its velocity is zero.  
 Using the equation \f$v = u+at\f$,
 \f[
@@ -193,6 +221,8 @@ the line
     m_pPhysicsWorld = new b2World(b2Vec2(0, -m_fGravity));
 
 in `CGame::Initialize` sets the gravity in Physics World to the same value.
+Finally, we use `b2Body`'s `SetLinearVelocity` function to set each
+cannonball's velocity to `v` as described above.
 
 \anchor section6
 # 6. What Next?
