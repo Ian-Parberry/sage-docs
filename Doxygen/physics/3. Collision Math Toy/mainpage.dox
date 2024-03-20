@@ -146,8 +146,8 @@ For example, \ref fig11 "Fig. 11"(e) shows arrows whose direction and size depen
 - Sectors: Draw the interior part of arc sectors.
 For example, \ref fig11 "Fig. 11"(f) shows the interior sectors of two arcs.
 - Lights: Light up static and kinematic shapes briefly after each collision.
-For example, \ref fig12 "Fig. 12" shows an arc (and an associated sprite) light up when hit by a ball,
-and \ref fig2-8-4 "Fig. 2.8.4" shows a guard point light up when hit by a ball.
+For example, \ref fig12 "Fig. 12" shows an arc (and an associated sprite) light up when hit by a ball, 
+and \ref fig13 "Fig. 13" shows a guard point light up when hit by a ball.
 
 \anchor fig12
 \image html arclit.gif "Fig. 12: Ball colliding with arc with Show Lights set." width=100px
