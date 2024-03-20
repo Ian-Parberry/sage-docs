@@ -146,7 +146,8 @@ For example, \ref fig2-8-2 "Fig. 2.8.2"(e) shows arrows whose direction and size
 - Sectors: Draw the interior part of arc sectors.
 For example, \ref fig2-8-2 "Fig. 2.8.2"(f) shows the interior sectors of two arcs.
 - Lights: Light up static and kinematic shapes briefly after each collision.
-For example, \ref fig2-8-3 "Fig. 2.8.3" shows an arc (and an associated sprite) light up when hit by a ball, and \ref fig2-8-4 "Fig. 2.8.4" shows a guard point light up when hit by a ball.
+For example, \ref fig2-8-3 "Fig. 2.8.3" shows an arc (and an associated sprite) light up when hit by a ball,
+and \ref fig2-8-4 "Fig. 2.8.4" shows a guard point light up when hit by a ball.
 
 \anchor fig2-8-3
 \image html arclit.gif "Fig. 2.8.3: Ball colliding with arc with Show Lights set." width=100px
@@ -335,7 +336,7 @@ The reason for doing more than one collision iteration per frame is because coll
 For example, consider a 2D simulation of <a href="../newton/index.html">Newton's Cradle</a> with four
 circles numbered 1 through 4 that touch in a straight line.
 Suppose that circle 4 has been moved so that it overlaps
-circle 3, as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1(a)". 
+circle 3, as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1"(a). 
 Now suppose that the object manager has these shapes in ascending order, that is, Shape 1, then 2, then 3, then 4.
 \ref bruteforcebroadphase "Brute force broad phase" collision detection and response will call narrow phase for the
 following unordered pairs of circles.
@@ -344,18 +345,18 @@ However, only the last one (in red) will detect a collision.
 > (1, 2), (1,3), (1, 4), (2, 3), (2, 4), <span style="color: red;">(3, 4)</span>
 
 The response will be to move circle 3 to the right where it
-overlaps circle 2 as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1(b)".
+overlaps circle 2 as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1"(b).
 This won't be caught until the next iteration.
 
 > (1, 2), (1,3), (1, 4), <span style="color: red;">(2, 3)</span>, (2, 4), (3, 4)
 
 The response will be to move circle 2 to the right where it
-overlaps circle 1 as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1(c)".
+overlaps circle 1 as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1"(c).
 Again, this won't be caught until the next iteration.
 
 > <span style="color: red;">(1, 2)</span>, (1,3), (1, 4), (2, 3), (2, 4), (3, 4)
 
-The response will be to move circle 1 to the right as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1(d)".
+The response will be to move circle 1 to the right as shown in \ref fig5-2-2-1 "Fig. 5.2.2.1"(d).
 
 Of course, you can argue that these collisions can usually be safely postponed until the next frame, but then you risk instability.
 It's best to handle as many as possible in the current frame.
@@ -390,7 +391,7 @@ Functions such as `CObjectManager::NarrowPhase` that have only a pointer `pShape
 
     CObject* pObj = (CObject*)(pCirc->GetUserPtr());
 
-`CObjectManager::NarrowPhase` uses this to, for example, change the sprite of an object involved in a collision from an unlit sprite to a lit sprite as shown in \ref fig2-8-3 "Fig. 2.8.3.
+`CObjectManager::NarrowPhase` uses this to, for example, change the sprite of an object involved in a collision from an unlit sprite to a lit sprite as shown in \ref fig2-8-3 "Fig. 2.8.3".
 
 \anchor section5-3
 ## 5.3 Gates
