@@ -19,7 +19,7 @@ var searchData=
   ['m_5fflasthittime_16',['m_fLastHitTime',['../class_c_object.html#afa9693e6f5b689b74ef5c7edc7a03836',1,'CObject']]],
   ['m_5fnciterations_17',['m_nCIterations',['../class_c_common.html#a96ee6607f3899e75245d6847d49ca8f3',1,'CCommon']]],
   ['m_5fnmiterations_18',['m_nMIterations',['../class_c_common.html#a48deca1b01b176202d98e3e73bd39a28',1,'CCommon']]],
-  ['m_5fnscore_19',['m_nScore',['../class_c_object.html#a182d7382cd46ab16ae0329b5640826c4',1,'CObject::m_nScore'],['../class_c_common.html#a895fca9c2d0bec1d4696fb807973b540',1,'CCommon::m_nScore'],['../class_c_obj_desc.html#a184ffa779ebd6eb3573480cb89759f5a',1,'CObjDesc::m_nScore']]],
+  ['m_5fnscore_19',['m_nScore',['../class_c_common.html#a895fca9c2d0bec1d4696fb807973b540',1,'CCommon::m_nScore'],['../class_c_obj_desc.html#a184ffa779ebd6eb3573480cb89759f5a',1,'CObjDesc::m_nScore'],['../class_c_object.html#a182d7382cd46ab16ae0329b5640826c4',1,'CObject::m_nScore']]],
   ['m_5fpcurballshape_20',['m_pCurBallShape',['../class_c_game.html#a72ff9ab19901825f1e52ce2aa2bbc66c',1,'CGame']]],
   ['m_5fpflipper_21',['m_pFlipper',['../class_c_flipper.html#ab7edc874d7f4568e5600f8b117310014',1,'CFlipper']]],
   ['m_5fpleftflipper_22',['m_pLeftFlipper',['../class_c_object_manager.html#a02d5363ba501004972eb23610bc334b5',1,'CObjectManager']]],

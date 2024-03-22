@@ -31,9 +31,6 @@ and
 <td><center>F1</center></td>
 <td>Help (this document)</td>
 <tr>
-<td><center>F2</center></td>
-<td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only"</td>
-<tr>
 <td><center>Backspace</center></td>
 <td>Reset current level</td>
 <tr>
@@ -72,94 +69,167 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
+This toy has 7 levels. As mentioned in \ref section2 "Section 2",
+the `Enter` key advances to the next level and the `Backspace` key resets
+the current level to the initial conditions.
+The levels are as follows:
+the windmill (\ref section4-1 "Section 4.1"),
+round and square gears (\ref section4-2 "Section 4.2"),
+nautilus gears (\ref section4-3 "Section 4.3"),
+rack-and-pinion (\ref section4-4 "Section 4.4"),
+car (\ref section4-5 "Section 4.5"),
+Newton's cradle (\ref section4-6 "Section 4.6"), and
+elephant drop (\ref section4-7 "Section 4.7").
+In every level the `Space` bar does an interesting things. These are
+described more detail in the subsections below.
+
+
 \anchor section4-1
 ## 4.1 The Windmill
 
-\anchor fig4-1
-\image html screenshot0.png "Fig. 4.1: The windmill."
+\anchor fig1
+\image html l1.png "Fig. 1: The windmill." width=60%
 
 A windmill with a revolute joint connecting the vanes to the body.
-The revolute joint has a motor. 
-The space bar reverses the motor's direction of rotation. 
+The revolute joint has a motor (see \ref fig1 "Fig. 1"). 
+The `Space` bar reverses the motor's direction of rotation. 
+Notice that the vanes take a while to spin up to full speed,
+and when the direction of the motor is reversed they slowly spin down
+to zero before spinning up in the opposite direction. This is a property
+of motors in Box2D and will depend of the mass of the body being rotated.
 
 \anchor section4-2
 ## 4.2 Gears
 
-\anchor fig4-2
-\image html screenshot1.png "Fig. 4.2: The gears."
+\anchor fig2
+\image html l2.png "Fig. 2: The gears." width=60%
 
 A system of 9 interlocked gears constructed using revolute and
-gear joints.The largest
+gear joints (see \ref fig2 "Fig. 2").
+The largest
 gear has a motor and the others are driven by their
-gear joints. The space bar reverses the motor's direction of
-rotation. The 4 square gears
+gear joints. The `Space` bar reverses the motor's direction of
+rotation. Notice that the gears take a while to spin up to full speed,
+and when the direction of the motor is reversed they slowly spin down
+to zero before spinning up in the opposite direction.
+Notice also how the teeth of the gears appear to mesh.
+However, if you look closely you will see that they do not
+mesh exactly. This is because we are not computing the physics of the teeth,
+we are simply rotating the gears at the right speeds assuming that the
+sprites are drawn with teeth that mesh correctly.
+The 4 square gears
 mesh perfectly the same way that round gears do.
+They are cheating in a way - they require no extra code over and
+above what is necessary for ordinary round gears.
 
 \anchor section4-3
 ## 4.3 Nautilus Gears
 
-\anchor fig4-3
-\image html screenshot2.png "Fig. 4.3: The nautilus gears."
+\anchor fig3
+\image html l3.png "Fig. 3: The nautilus gears." width=60%
 
 A system of 5 <em>nautilus gears</em>, which are gears
-in the shape of a nautilus shell. The center gear has a revolute joint with a motor. 
+in the shape of a nautilus shell (see \ref fig3 "Fig. 3").
+The center gear has a revolute joint with a motor. 
 The other gears have variable speed, so they cannot be animated by Box2D.
-We have to animate them ourselves which means doing a little math.  
-The space bar reverses the motor's direction of rotation.
+We have to animate them ourselves which means doing a little math,
+which we will cover in \ref section5-3 "Section 5.3".  The `Space` bar reverses the motor's direction of rotation. Notice that the gears take a while to spin up to full speed,
+and when the direction of the motor is reversed they slowly spin down
+to zero before spinning up in the opposite direction.
 
 \anchor section4-4
 ## 4.4 Rack-and-Pinion
 
-\anchor fig4-4
-\image html screenshot3.png "Fig. 4.4: The rack-and-pinion."
+\anchor fig4
+\image html l4.png "Fig. 4: The rack-and-pinion." width=60%
 
 A <em>rack-and-pinion</em> consists of a round gear called a <em>pinion</em>
-connected to a toothed rod called a <em>rack</em>.
+connected to a toothed rod called a <em>rack</em> (see \ref fig4 "Fig. 4").
 When the pinion rotates, the rack moves horizontally. 
 The pinion has a
 revolute joint with a motor. 
 The rack is connected to the pinion using a gear joint and a prismatic joint.
-The space bar reverses the motor's direction of rotation.
+The `Space` bar reverses the motor's direction of rotation.
+Notice that the pinion takes a while to spin up to full speed,
+and when the direction of the motor is reversed it slowly spins down
+to zero before spinning up in the opposite direction.
+Also notice the sudden stop when the pinion reaches its extreme
+left and right positions.
 
 \anchor section4-5
 ## 4.5 Car
 
-\anchor fig4-5
-\image html screenshot4.png "Fig. 4.5: The car."
+\anchor fig5
+\image html l5.png "Fig. 5: The car." width=60%
 
-A car drives autonomously back and forth over a pair of ramps. 
+A car drives autonomously back and forth over a pair of ramps
+(see \ref fig5 "Fig. 5"). 
 The car is constructed using a pair of wheel joints that
-have motors. The space bar reverses the motors' directions of rotation.
+have motors. The `Space` bar reverses the motors' directions of rotation.
+Notice that the car takes a while to get to full speed,
+and when the direction of the motors is reversed it slows down
+to zero before speeding up in the opposite direction.
+Also notice the suspension that makes the car bounce when
+it goes over the ramps.
+If you are fast with the `Space` bar you may be able to get
+the car stuck. If you do, reset it with the `Backspace` key.
 
 \anchor section4-6
 ## 4.6 Newton's Cradle
 
-\anchor fig4-6
-\image html screenshot5.png "Fig. 4.6: Newton's cradle."
+\anchor fig6
+\image html l6.png "Fig. 6: Newton's cradle." width=60%
 
 Distance joints are used to construct a 2D
 <a href="../newton/index.html">Newton's Cradle</a>
-with 6 balls.
-When the balls are stopped, hitting the space bar will lift and release
+with 6 balls (see \ref fig6 "Fig. 6").
+When the balls are stopped, hitting the `Space` bar will lift and release
 from 1 to 5 balls in sequence.
 After that it should behave like a real Newton's Cradle.
-When the balls are in motion, the space bar stops them.
+\ref fig7 "Fig. 7" shows a screen shot with one ball raised (left),
+and the result after the collision (right).
+\ref fig8 "Fig. 8" shows a screen shot with two balls raised (left),
+and the result after the collision (right).
+When the balls are in motion, the `Space` bar stops them.
+
+\anchor fig7
+\image html newton1.png "Fig. 7: Newton's cradle with 1 ball raised (left) and after collision (right)." width=80%
+
+\anchor fig8
+\image html newton2.png "Fig. 8: Newton's cradle with 2 balls raised (left) and after collision (right)." width=80%
 
 \anchor section4-7
 ## 4.7 Elephant Drop
 
-\anchor fig4-7
-\image html screenshot6.png "Fig. 4.7: The elephant drop."
+\anchor fig9
+\image html l7.png "Fig. 9: The elephant drop before (left) and after (right) the elephant is dropped." width=80%
 
 A pulley joint is used to lift a safe when an elephant is dropped
-into a wooden cradle. The pulley wheels and ropes are animated in code.
-When the elephant is not present, the space bar makes it drop in from above.
-When the elephant is present, the space bar makes it disappear.
+into a wooden cradle (see \ref fig9 "Fig. 9"). The pulley wheels and ropes are animated in code.
+When the elephant is not present, the `Space` bar makes it drop in from above.
+When the elephant is present, the `Space` bar makes it disappear.
+You can make the elephant appear and disappear at any point in the cradle's
+travel, not just when it is at the top or bottom.
+Notice that in \ref fig9 "Fig. 9" (right) the cradle is not immediately
+below the left rim of the pulley wheel above so that the rope from
+the pulley to the cradle is not vertical, whereas that portion of the
+rope is perfectly vertical in \ref fig9 "Fig. 9" (left).
+This is because the elephant
+is not dropped exactly above the center of the cradle, causing it to
+rock from side to side as it falls.
 
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION 
+The most interesting portions of the code for
+each of the levels is described in the following subsections:
+the windmill (\ref section5-1 "Section 5.1"),
+round and square gears (\ref section5-2 "Section 5.2"),
+nautilus gears (\ref section5-3 "Section 5.3"),
+rack-and-pinion (\ref section5-4 "Section 5.4"),
+car (\ref section5-5 "Section 5.5"), and
+Newton's cradle (\ref section5-6 "Section 5.6"),
+elephant drop (\ref section5-7 "Section 5.7").
 
 \anchor section5-1
 ## 5.1 The Windmill
