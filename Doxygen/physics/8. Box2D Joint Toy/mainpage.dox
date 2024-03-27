@@ -31,6 +31,9 @@ and
 <td><center>F1</center></td>
 <td>Help (this document)</td>
 <tr>
+<td><center>F2</center></td>
+<td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only"</td>
+<tr>
 <td><center>Backspace</center></td>
 <td>Reset current level</td>
 <tr>
