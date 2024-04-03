@@ -98,19 +98,18 @@ Inheritance diagram for CCommon:</div>
  <div class="center">
   <img src="class_c_common.png" usemap="#CCommon_map" alt=""/>
   <map id="CCommon_map" name="CCommon_map">
-<area href="class_c_car.html" title="A car consisting of a body and two wheels." alt="CCar" shape="rect" coords="119,56,228,80"/>
-<area href="class_c_game.html" title="The game class." alt="CGame" shape="rect" coords="119,112,228,136"/>
-<area href="class_c_gear.html" title="A system of interlocking gears." alt="CGear" shape="rect" coords="119,168,228,192"/>
-<area href="class_c_line_object.html" title="A line in object manager." alt="CLineObject" shape="rect" coords="119,224,228,248"/>
-<area href="class_c_nautilus_gear.html" title="A system of 5 interlocking nautilus gears." alt="CNautilusGear" shape="rect" coords="119,280,228,304"/>
-<area href="class_c_newtons_cradle.html" title="Newton&#39;s cradle." alt="CNewtonsCradle" shape="rect" coords="119,336,228,360"/>
-<area href="class_c_object.html" title="The game object." alt="CObject" shape="rect" coords="119,392,228,416"/>
-<area href="class_c_object_manager.html" title="The object manager." alt="CObjectManager" shape="rect" coords="119,448,228,472"/>
-<area href="class_c_pulley.html" title="The pulley class." alt="CPulley" shape="rect" coords="119,504,228,528"/>
-<area href="class_c_rack_and_pinion.html" title="Rack and pinion." alt="CRackAndPinion" shape="rect" coords="119,560,228,584"/>
-<area href="class_c_ramp.html" title="Some platforms and ramps." alt="CRamp" shape="rect" coords="119,616,228,640"/>
-<area href="class_c_sir_isaac_newton.html" title="Sir Isaac Newton." alt="CSirIsaacNewton" shape="rect" coords="119,672,228,696"/>
-<area href="class_c_windmill.html" title="The windmill class." alt="CWindmill" shape="rect" coords="119,728,228,752"/>
+<area href="class_c_game.html" title="The game class." alt="CGame" shape="rect" coords="0,56,109,80"/>
+<area href="class_c_level.html" title="Stub class for a level." alt="CLevel" shape="rect" coords="357,56,466,80"/>
+<area href="class_c_line_object.html" title="A line object." alt="CLineObject" shape="rect" coords="476,56,585,80"/>
+<area href="class_c_object.html" title="The game object." alt="CObject" shape="rect" coords="595,56,704,80"/>
+<area href="class_c_sir_isaac_newton.html" title="Sir Isaac Newton." alt="CSirIsaacNewton" shape="rect" coords="714,56,823,80"/>
+<area href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels." alt="CCarAndBridge" shape="rect" coords="0,112,109,136"/>
+<area href="class_c_gear.html" title="A system of interlocking gears." alt="CGear" shape="rect" coords="119,112,228,136"/>
+<area href="class_c_nautilus_gear.html" title="A system of 5 interlocking nautilus gears." alt="CNautilusGear" shape="rect" coords="238,112,347,136"/>
+<area href="class_c_newtons_cradle.html" title="Newton&#39;s cradle." alt="CNewtonsCradle" shape="rect" coords="357,112,466,136"/>
+<area href="class_c_pulley.html" title="The pulley class." alt="CPulley" shape="rect" coords="476,112,585,136"/>
+<area href="class_c_rack_and_pinion.html" title="Rack and pinion." alt="CRackAndPinion" shape="rect" coords="595,112,704,136"/>
+<area href="class_c_windmill.html" title="The windmill class." alt="CWindmill" shape="rect" coords="714,112,823,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,42 +123,10 @@ static b2World *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPhysic
 static CBox2DRenderer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRenderer</b> = nullptr</td></tr>
 <tr class="memdesc:a7ccc00814ee468536930f48a7d7934da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the renderer. <br /></td></tr>
 <tr class="separator:a7ccc00814ee468536930f48a7d7934da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ecfc2b5378ac9cc103605dca52011b3" id="r_a2ecfc2b5378ac9cc103605dca52011b3"><td class="memItemLeft" align="right" valign="top"><a id="a2ecfc2b5378ac9cc103605dca52011b3" name="a2ecfc2b5378ac9cc103605dca52011b3"></a>
-static <a class="el" href="class_c_object_manager.html">CObjectManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pObjectManager</b> = nullptr</td></tr>
-<tr class="memdesc:a2ecfc2b5378ac9cc103605dca52011b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the object manager. <br /></td></tr>
-<tr class="separator:a2ecfc2b5378ac9cc103605dca52011b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1c3fc4ca62e3948690496db3143544" id="r_afe1c3fc4ca62e3948690496db3143544"><td class="memItemLeft" align="right" valign="top"><a id="afe1c3fc4ca62e3948690496db3143544" name="afe1c3fc4ca62e3948690496db3143544"></a>
-static <a class="el" href="class_c_windmill.html">CWindmill</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWindmill</b> = nullptr</td></tr>
-<tr class="memdesc:afe1c3fc4ca62e3948690496db3143544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to windmill. <br /></td></tr>
-<tr class="separator:afe1c3fc4ca62e3948690496db3143544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54266672cbd1f21d583c8f34e797c160" id="r_a54266672cbd1f21d583c8f34e797c160"><td class="memItemLeft" align="right" valign="top"><a id="a54266672cbd1f21d583c8f34e797c160" name="a54266672cbd1f21d583c8f34e797c160"></a>
-static <a class="el" href="class_c_gear.html">CGear</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pGear</b> = nullptr</td></tr>
-<tr class="memdesc:a54266672cbd1f21d583c8f34e797c160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to gear system. <br /></td></tr>
-<tr class="separator:a54266672cbd1f21d583c8f34e797c160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69dd8074c850e60bd091fe6797ae066e" id="r_a69dd8074c850e60bd091fe6797ae066e"><td class="memItemLeft" align="right" valign="top"><a id="a69dd8074c850e60bd091fe6797ae066e" name="a69dd8074c850e60bd091fe6797ae066e"></a>
-static <a class="el" href="class_c_nautilus_gear.html">CNautilusGear</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pNautilusGear</b> = nullptr</td></tr>
-<tr class="memdesc:a69dd8074c850e60bd091fe6797ae066e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to Nautilus gear system. <br /></td></tr>
-<tr class="separator:a69dd8074c850e60bd091fe6797ae066e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31c3df9a5ea5623202417802f093a81" id="r_ae31c3df9a5ea5623202417802f093a81"><td class="memItemLeft" align="right" valign="top"><a id="ae31c3df9a5ea5623202417802f093a81" name="ae31c3df9a5ea5623202417802f093a81"></a>
-static <a class="el" href="class_c_rack_and_pinion.html">CRackAndPinion</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRackAndPinion</b> = nullptr</td></tr>
-<tr class="memdesc:ae31c3df9a5ea5623202417802f093a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to rack-and-pinion. <br /></td></tr>
-<tr class="separator:ae31c3df9a5ea5623202417802f093a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36ba262689a544c51ccc5a70a96c2d7" id="r_ad36ba262689a544c51ccc5a70a96c2d7"><td class="memItemLeft" align="right" valign="top"><a id="ad36ba262689a544c51ccc5a70a96c2d7" name="ad36ba262689a544c51ccc5a70a96c2d7"></a>
-static <a class="el" href="class_c_car.html">CCar</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCar</b> = nullptr</td></tr>
-<tr class="memdesc:ad36ba262689a544c51ccc5a70a96c2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to car. <br /></td></tr>
-<tr class="separator:ad36ba262689a544c51ccc5a70a96c2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6a352b359e2cda9d34ff50e178d0b4" id="r_afe6a352b359e2cda9d34ff50e178d0b4"><td class="memItemLeft" align="right" valign="top"><a id="afe6a352b359e2cda9d34ff50e178d0b4" name="afe6a352b359e2cda9d34ff50e178d0b4"></a>
-static <a class="el" href="class_c_ramp.html">CRamp</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRamp</b> = nullptr</td></tr>
-<tr class="memdesc:afe6a352b359e2cda9d34ff50e178d0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to ramp. <br /></td></tr>
-<tr class="separator:afe6a352b359e2cda9d34ff50e178d0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd802c133eccc708ef9b2bcdf81b93ac" id="r_acd802c133eccc708ef9b2bcdf81b93ac"><td class="memItemLeft" align="right" valign="top"><a id="acd802c133eccc708ef9b2bcdf81b93ac" name="acd802c133eccc708ef9b2bcdf81b93ac"></a>
-static <a class="el" href="class_c_newtons_cradle.html">CNewtonsCradle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pNewtonsCradle</b> = nullptr</td></tr>
-<tr class="memdesc:acd802c133eccc708ef9b2bcdf81b93ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to Newton's Cradle. <br /></td></tr>
-<tr class="separator:acd802c133eccc708ef9b2bcdf81b93ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941c1529c83ab07669e06022901848e3" id="r_a941c1529c83ab07669e06022901848e3"><td class="memItemLeft" align="right" valign="top"><a id="a941c1529c83ab07669e06022901848e3" name="a941c1529c83ab07669e06022901848e3"></a>
-static <a class="el" href="class_c_pulley.html">CPulley</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPulley</b> = nullptr</td></tr>
-<tr class="memdesc:a941c1529c83ab07669e06022901848e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to pulley system. <br /></td></tr>
-<tr class="separator:a941c1529c83ab07669e06022901848e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fff59625307e47fceea41221bdb1270" id="r_a6fff59625307e47fceea41221bdb1270"><td class="memItemLeft" align="right" valign="top"><a id="a6fff59625307e47fceea41221bdb1270" name="a6fff59625307e47fceea41221bdb1270"></a>
+static <a class="el" href="class_c_level.html">CLevel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLevel</b> = nullptr</td></tr>
+<tr class="memdesc:a6fff59625307e47fceea41221bdb1270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to current level. <br /></td></tr>
+<tr class="separator:a6fff59625307e47fceea41221bdb1270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9092d7365776f514e6f9815c98459cfc" id="r_a9092d7365776f514e6f9815c98459cfc"><td class="memItemLeft" align="right" valign="top"><a id="a9092d7365776f514e6f9815c98459cfc" name="a9092d7365776f514e6f9815c98459cfc"></a>
 static <a class="el" href="_game_defines_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eCurLevel</b> = eLevel::Windmill</td></tr>
 <tr class="memdesc:a9092d7365776f514e6f9815c98459cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current level. <br /></td></tr>

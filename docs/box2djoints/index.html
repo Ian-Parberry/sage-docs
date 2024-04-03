@@ -82,14 +82,15 @@ $(function() {
 
 <div><div class="contents">
 <div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
-<p>The Box2D Joint Toy demonstrates revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound.</p>
-<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The Box2D Joint Toy demonstrates some important Box2D joints, including revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound. The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
 <td><center><b>Key</b></center> </td><td><center><b>Action</b></center> </td></tr>
 <tr>
 <td><center>F1</center> </td><td>Help (this document) </td></tr>
+<tr>
+<td><center>F2</center> </td><td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only" </td></tr>
 <tr>
 <td><center>Backspace</center> </td><td>Reset current level </td></tr>
 <tr>
@@ -104,7 +105,7 @@ $(function() {
 </center><p><a class="anchor" id="section3"></a></p><h1>3. Building the Game</h1>
 <p>This code uses <a href="../sage/index.html">SAGE</a> and <a href="https://github.com/erincatto/Box2D">Box2D</a>. Make sure that you have followed the <a href="../install/index.html">SAGE Installation Instructions</a> and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>. Navigate to the folder <span style="background-color:#D8E4D8;"><code>8. Box2D Joint Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository. Run <span style="background-color:#D8E4D8;"><code>checkenv.bat</code></span> to verify that you have set the environment variables correctly. Open <span style="background-color:#D8E4D8;"><code>Box2D Joint Toy.sln</code></span> with Visual Studio and build the Release configuration. Alternatively, run <span style="background-color:#D8E4D8;"><code>Build.bat</code></span> to build both Release and Debug configurations.</p>
 <p><a class="anchor" id="section4"></a></p><h1>4. Game Play</h1>
-<p>This toy has 7 levels. As mentioned in <a class="el" href="#section2">Section 2</a>, the <code>Enter</code> key advances to the next level and the <code>Backspace</code> key resets the current level to the initial conditions. The levels are as follows: the windmill (<a class="el" href="#section4-1">Section 4.1</a>), round and square gears (<a class="el" href="#section4-2">Section 4.2</a>), nautilus gears (<a class="el" href="#section4-3">Section 4.3</a>), rack-and-pinion (<a class="el" href="#section4-4">Section 4.4</a>), car (<a class="el" href="#section4-5">Section 4.5</a>), Newton's cradle (<a class="el" href="#section4-6">Section 4.6</a>), and elephant drop (<a class="el" href="#section4-7">Section 4.7</a>). In every level the <code>Space</code> bar does an interesting things. These are described more detail in the subsections below.</p>
+<p>This toy has 7 levels. As mentioned in <a class="el" href="#section2">Section 2</a>, the <code>Enter</code> key advances to the next level and the <code>Backspace</code> key resets the current level to the initial conditions. The levels are as follows: the windmill (<a class="el" href="#section4-1">Section 4.1</a>), round and square gears (<a class="el" href="#section4-2">Section 4.2</a>), nautilus gears (<a class="el" href="#section4-3">Section 4.3</a>), rack-and-pinion (<a class="el" href="#section4-4">Section 4.4</a>), car and bridge (<a class="el" href="#section4-5">Section 4.5</a>), Newton's cradle (<a class="el" href="#section4-6">Section 4.6</a>), and elephant drop (<a class="el" href="#section4-7">Section 4.7</a>). In every level the <code>Space</code> bar does an interesting things. These are described more detail in the subsections below.</p>
 <p><a class="anchor" id="section4-1"></a></p><h2>4.1 The Windmill</h2>
 <p><a class="anchor" id="fig1"></a></p><div class="image">
 <img src="l1.png" alt="" width="60%"/>
@@ -129,7 +130,7 @@ Fig. 3: The nautilus gears.</div></div>
 <div class="caption">
 Fig. 4: The rack-and-pinion.</div></div>
 <p>A <em>rack-and-pinion</em> consists of a round gear called a <em>pinion</em> connected to a toothed rod called a <em>rack</em> (see <a class="el" href="#fig4">Fig. 4</a>). When the pinion rotates, the rack moves horizontally. The pinion has a revolute joint with a motor. The rack is connected to the pinion using a gear joint and a prismatic joint. The <code>Space</code> bar reverses the motor's direction of rotation. Notice that the pinion takes a while to spin up to full speed, and when the direction of the motor is reversed it slowly spins down to zero before spinning up in the opposite direction. Also notice the sudden stop when the pinion reaches its extreme left and right positions.</p>
-<p><a class="anchor" id="section4-5"></a></p><h2>4.5 Car</h2>
+<p><a class="anchor" id="section4-5"></a></p><h2>4.5 Car and Bridge</h2>
 <p><a class="anchor" id="fig5"></a></p><div class="image">
 <img src="l5.png" alt="" width="60%"/>
 <div class="caption">
@@ -156,29 +157,93 @@ Fig. 8: Newton's cradle with 2 balls raised (left) and after collision (right).<
 Fig. 9: The elephant drop before (left) and after (right) the elephant is dropped.</div></div>
 <p>A pulley joint is used to lift a safe when an elephant is dropped into a wooden cradle (see <a class="el" href="#fig9">Fig. 9</a>). The pulley wheels and ropes are animated in code. When the elephant is not present, the <code>Space</code> bar makes it drop in from above. When the elephant is present, the <code>Space</code> bar makes it disappear. You can make the elephant appear and disappear at any point in the cradle's travel, not just when it is at the top or bottom. Notice that in <a class="el" href="#fig9">Fig. 9</a> (right) the cradle is not immediately below the left rim of the pulley wheel above so that the rope from the pulley to the cradle is not vertical, whereas that portion of the rope is perfectly vertical in <a class="el" href="#fig9">Fig. 9</a> (left). This is because the elephant is not dropped exactly above the center of the cradle, causing it to rock from side to side as it falls.</p>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
-<p>The most interesting portions of the code for each of the levels is described in the following subsections: the windmill (<a class="el" href="#section5-1">Section 5.1</a>), round and square gears (<a class="el" href="#section5-2">Section 5.2</a>), nautilus gears (<a class="el" href="#section5-3">Section 5.3</a>), rack-and-pinion (<a class="el" href="#section5-4">Section 5.4</a>), car (<a class="el" href="#section5-5">Section 5.5</a>), and Newton's cradle (<a class="el" href="#section5-6">Section 5.6</a>), elephant drop (<a class="el" href="#section5-7">Section 5.7</a>).</p>
+<p>Each of the levels has its own class, each of which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>. <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code> contains code and data that will be used by most of the levels. Some of its functions are stubs. A pointer to a class representing the current level is maintained in <code><a class="el" href="class_c_common.html#a6fff59625307e47fceea41221bdb1270" title="Pointer to current level.">CCommon::m_pLevel</a></code>, which is of type <code>CLevel*</code>. Many of <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>'s member functions are <code>virtual</code> so that they can be overridden in any particular level class if desired. Most importantly, <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code> has an <code>std::vector</code> of pointers to <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> for you to store your objects, and function <code><a class="el" href="class_c_level.html#a3e9208196a9e58b60f70dc1da3e7da55" title="Draw objects in level.">CLevel::Draw</a></code> to draw the objects in in (although of course this may be overridden in derived classes) and a function stub <code><a class="el" href="class_c_level.html#ae0da64b3cc6ab4bd9e9a046ecd4730f6" title="Perform action for level.">CLevel::Action</a></code> to perform the "interesting action" in response to the space bar (see <a class="el" href="#section2">Section 2</a>).</p>
+<p>The most interesting portions of the code for each of the level classes is described in the following subsections: the windmill (<a class="el" href="#section5-1">Section 5.1</a>), round and square gears (<a class="el" href="#section5-2">Section 5.2</a>), nautilus gears (<a class="el" href="#section5-3">Section 5.3</a>), rack-and-pinion (<a class="el" href="#section5-4">Section 5.4</a>), car and bridge (<a class="el" href="#section5-5">Section 5.5</a>), and Newton's cradle (<a class="el" href="#section5-6">Section 5.6</a>), and elephant drop (<a class="el" href="#section5-7">Section 5.7</a>).</p>
 <p><a class="anchor" id="section5-1"></a></p><h2>5.1 The Windmill</h2>
-<p>UNDER CONSTRUCTION</p>
-<p><a class="anchor" id="section5-2"></a></p><h2>5.2 Gears</h2>
-<p>UNDER CONSTRUCTION</p>
-<p><a class="anchor" id="section5-3"></a></p><h2>5.3 Nautilus Gears</h2>
+<p>The windmill level is implemented in class <code><a class="el" href="class_c_windmill.html" title="The windmill class.">CWindmill</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>. The <code><a class="el" href="class_c_windmill.html" title="The windmill class.">CWindmill</a></code> constructor calls <code><a class="el" href="class_c_windmill.html#a658ebd2a0abedde6cc955dcc03a7528e" title="Create the fan.">CWindmill::CreateFan</a></code> to create an instance of <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> for the fan, which is drawn using the sprite shown in <a class="el" href="#fig10">Figure 10</a> (right); and calls <code><a class="el" href="class_c_windmill.html#abfa2e977d445601d55cd701f6ec1a2b4" title="Create the base.">CWindmill::CreateBase</a></code> to create an instance of <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> for the base, which is drawn using the sprite shown in <a class="el" href="#fig10">Figure 10</a> (left).</p>
+<p><a class="anchor" id="fig10"></a></p><div class="image">
+<img src="windmillspr.png" alt="" width="30%"/>
+<div class="caption">
+Fig. 10: The windmill sprites for the base (left), and the fan (right).</div></div>
+<p><code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> has a pointer to a Box2D body <code><a class="el" href="class_c_object.html#aeadfd2ce9573fc0c40c24b622db49287" title="Physics World body.">CObject::m_pBody</a></code> of type <code>b2Body*</code>. <code><a class="el" href="class_c_windmill.html#a658ebd2a0abedde6cc955dcc03a7528e" title="Create the fan.">CWindmill::CreateFan</a></code> declares a body definition <code>bd</code> and sets its <code>type</code> and <code>position</code> fields. It then declares an instance of <code>b2CircleShape</code> called <code>s</code> and sets its radius to half the width of the sprite in <a class="el" href="#fig10">Figure 10</a> (right), translated from Render World to Physics World coordinates. It then declares a fixture definition <code>fd</code> and sets its shape to <code>s</code> and its density somewhat arbitrarily to <code>0.1f</code>. It then creates a Physics World body for the fan by calling </p><pre class="fragment">m_pPhysicsWorld-&gt;CreateBody(&amp;bd)
+</pre><p> and saving the pointer to the Box2D body returned in a local variable <code>pBody</code>. The instance of <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> for the fan is then created by calling </p><pre class="fragment">new CObject(eSprite::WindmillFan, pBody)
+</pre><p> and pushing the pointer returned at the back of the inherited object list <code><a class="el" href="class_c_level.html#aa1afeb5070203a0694b4f2cdb38f0e5a" title="Object pointers.">CLevel::m_stdObject</a></code>. Finally, the fixture for the shape is attached to the body by calling </p><pre class="fragment">pBody-&gt;CreateFixture(&amp;fd);
+</pre><p> although this could be called before the instance of <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> was created.</p>
+<p><a class="anchor" id="fig11"></a></p><div class="image">
+<img src="windmill.png" alt="" width="80%"/>
+<div class="caption">
+Fig. 11: The windmill level drawn with Box2D bodies in black on top of sprites (left), and bodies only (right).</div></div>
+<p><code><a class="el" href="class_c_windmill.html#abfa2e977d445601d55cd701f6ec1a2b4" title="Create the base.">CWindmill::CreateBase</a></code>, on the other hand, creates an instance of <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> with a pointer to a Box2D body that does not have a fixture attached to it. This results in the sprite for the windmill base being drawn as in <a class="el" href="#fig11">Fig. 11</a> (left), but it does not participate in Box2D collision detection and response and is not drawn when only Box2D bodies are drawn as in <a class="el" href="#fig11">Fig. 11</a> (right). As far as Box2D is concerned, then, the world consists of two bodies, one of which is a circle and the other of which is essentially the empty body.</p>
+<p>Returning to the <code><a class="el" href="class_c_windmill.html" title="The windmill class.">CWindmill</a></code> constructor, after calling <code><a class="el" href="class_c_windmill.html#a658ebd2a0abedde6cc955dcc03a7528e" title="Create the fan.">CWindmill::CreateFan</a></code> and <code><a class="el" href="class_c_windmill.html#abfa2e977d445601d55cd701f6ec1a2b4" title="Create the base.">CWindmill::CreateBase</a></code> and saving the <code>b2Body</code> pointers in local variables <code>pFan</code> and <code>pBase</code>, respectively, it declares a <em>revolute joint</em> definition <code>wd</code>. The word <em>revolute</em> is a synonym for <em>rotation</em>. A revolute joint, then, allows two bodies to rotate about a single point. If both bodies are dynamic, then the two bodies rotate freely, but in our case the body for the windmill base is given type <code>b2_staticBody</code> in <code><a class="el" href="class_c_windmill.html#abfa2e977d445601d55cd701f6ec1a2b4" title="Create the base.">CWindmill::CreateBase</a></code>, which results in the windmill fan rotating about its center in the expected way. Various fields of the revolute joint definition <code>wd</code> are filled in, including pointers to the two bodies from <code>pFan</code> and <code>pBase</code>, a motor speed and the maximum torque to be applied. Recall from <a class="el" href="#section4-1">Section 4.1</a> that the fan slowly spins up to speed. The rate at which it does so depends upon the fan's mass (which depends on its shape and density) and the motor's torque. Setting the torque ususally requires a certain amount of try-it-and-see before you arrive at an appropriate value.</p>
+<p>The revolute joint is created from the description in <code>wd</code> by calling </p><pre class="fragment">m_pPhysicsWorld-&gt;CreateJoint(&amp;wd)
+</pre><p> Unfortunately <code>b2World::CreateJoint</code> returns a pointer to a <code>b2Joint</code>, which is a base class from which all Box2D joints are derived. It's up to us to cast this pointer to the correct type as follows: </p><pre class="fragment">m_pJoint = (b2RevoluteJoint*)m_pPhysicsWorld-&gt;CreateJoint(&amp;wd);
+</pre><p> We save this pointer in <code><a class="el" href="class_c_windmill.html#afe12248e8fa4a60525617e3f9bf2e1d2" title="Pointer to revolute joint.">CWindmill::m_pJoint</a></code> because we will need to use it in <code><a class="el" href="class_c_windmill.html#ac153ffb7094b02714d2a8c01cffee3a0" title="Reverse motor.">CWindmill::Action</a></code> to change the motor speed in response to the space bar in <code><a class="el" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler.">CGame::KeyboardHandler</a></code>. This is easily done as follows using <code>b2RevoluteJoint</code>'s <code>GetMotorSpeed</code> and <code>SetMotorSpeed</code> functions. </p><pre class="fragment">void CWindmill::Action(){
+  m_pJoint-&gt;SetMotorSpeed(-m_pJoint-&gt;GetMotorSpeed());
+} //Action
+</pre><p> A little care must be taken when leaving a level to ensure that there are no memory leaks. <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code> has a virtual destructor <code><a class="el" href="class_c_level.html#a3b8e82b76bd3571633860e5150b2cf90" title="Default constructor.">CLevel::~CLevel</a></code> that <code>delete</code>s all of the objects in the object list <code><a class="el" href="class_c_level.html#aa1afeb5070203a0694b4f2cdb38f0e5a" title="Object pointers.">CLevel::m_stdObject</a></code>. In turn the <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> destructor <code><a class="el" href="class_c_object.html#a93a3c3bc7d9a6462ef00e25404d9b0eb" title="Destructor.">CObject::~CObject</a></code> calls </p><pre class="fragment">m_pPhysicsWorld-&gt;DestroyBody(m_pBody)
+</pre><p> to destroy the Box2D body associated with the object. This assumes that the Box2D Physics World pointed to by <code>m_pPhysicsWorld</code> still exists. This implies that the <code><a class="el" href="class_c_game.html" title="The game class.">CGame</a></code> destructor <code><a class="el" href="class_c_game.html#a4db10c09035dc16b32d6c1ef4cca2143" title="Destructor.">CGame::~CGame</a></code> must <code>delete</code> the current level before it <code>delete</code>s Physics World. This is handled as follows. </p><pre class="fragment">CGame::~CGame(){
+  delete m_pRenderer;
+  delete m_pLevel;
+  delete m_pPhysicsWorld;
+} //destructor
+</pre><p><a class="anchor" id="section5-2"></a></p><h2>5.2 Gears</h2>
+<p>The Gear level is implemented in class <code><a class="el" href="class_c_gear.html" title="A system of interlocking gears.">CGear</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>. It may come as a surprise that if you use <code>F2</code> to draw the Physics World bodies, then you will see a collection of small non-overlapping circles as shown in <a class="el" href="#fig12">Fig. 12</a>, whereas in sprite mode you see gears of different size as shown in <a class="el" href="#fig2">Fig. 2</a> happily rotating at the right speeds.</p>
+<p><a class="anchor" id="fig12"></a></p><div class="image">
+<img src="gears.png" alt="" width="40%"/>
+<div class="caption">
+Fig. 12: The gear level drawn with Box2D bodies.</div></div>
+<p>This brings us to what I call the First Law of Computer Graphics:</p>
+<blockquote class="doxtable">
+<p>&zwj;If it looks right, it is right. </p>
+</blockquote>
+<p>and also what might be called the First Corollary of Computer Animation:</p>
+<blockquote class="doxtable">
+<p>&zwj;The things that you see on the screen don't actually interact - they are just drawn that way. </p>
+</blockquote>
+<p>In this case it might <em>look</em> as if the gears mesh in such a way that the teeth of one gear pushed against the teeth of the next gear, but that really isn't so. All we need to do is make sure that the center of each gear is in the correct place, and that gears that should "contact" rotate at the correct relative speeds (and of course that the sprites have the correct number and shape of teeth for their size).</p>
+<p><a class="anchor" id="fig13"></a></p><div class="image">
+<img src="gear0.png" alt="" width="55%"/>
+<div class="caption">
+Fig. 13: The five round gears.</div></div>
+<p>Consider the five round gears in <a class="el" href="#fig2">Fig. 2</a>. As seen in <a class="el" href="#fig13">Fig. 13</a>, we can number them 0 through 4. Note that gears 2 and 3 have the same diameter, but gears 0, 1, and differ from them and each other.</p>
+<p><a class="anchor" id="fig14"></a></p><div class="image">
+<img src="gear1.png" alt="" width="30%"/>
+<div class="caption">
+Fig. 14: The five round gears drawn so that they appear to mesh.</div></div>
+<p>These are drawn as shown in <a class="el" href="#fig14">Fig. 14</a> positioned and oriented so that their teeth appear to mesh together. As we animated the gears we just need to make sure that they stay that way. The largest, gear 0, will have a motor, and the others will rotate at the required speeds and directions. The relative speeds of rotation are proportional to the radii of the gears involved, which can be found by counting the teeth, as in <a class="el" href="#fig15">Fig. 15</a>.</p>
+<p><a class="anchor" id="fig15"></a></p><div class="image">
+<img src="gear2.png" alt="" width="12%"/>
+<div class="caption">
+Fig. 15: A gear with 12 teeth.</div></div>
+<p>The relative directions of rotation flip from one gear to the next. For example, the largest gear in <a class="el" href="#fig16">Fig. 16</a> is driven clockwise by a motor in a clockwise direction as indicated by the black arrows, while the other gears rotate in the directions indicated by the gray dotted arrows.</p>
+<p><a class="anchor" id="fig16"></a></p><div class="image">
+<img src="gear3.png" alt="" width="45%"/>
+<div class="caption">
+Fig. 16: Directions of rotation.</div></div>
+<p>The code for the creation of the gears and their revolute joints is very similar to the code for the rotating fan in the Windmill level (see <a class="el" href="#section5-3">Section 5.3</a>). Pointers to the revolute joints are stored in an <code>std::vector</code> of <code>b2RevoluteJoint</code> pointers <code><a class="el" href="class_c_gear.html#ac81f2f16024ed7aa30727b5c5436b6df" title="Revolute joint pointers.">CGear::m_stdJoint</a></code> by the <code><a class="el" href="class_c_gear.html" title="A system of interlocking gears.">CGear</a></code> constructor <code><a class="el" href="class_c_gear.html#a4680074b02a91cb020dfd1ff52d7e02b" title="Constructor.">CGear::CGear</a></code>. <code><a class="el" href="class_c_gear.html#af12c96fe877fae11de927c21fe5f0507" title="Create gear joint.">CGear::CreateGearJoint</a></code> creates a gear joint that joins the revolute joints pointed to by <code>m_stdJoint[i]</code> and <code>m_stdJoint[j]</code>, with gear ratio <code>r</code>, where the unsigned integers <code>i</code>, <code>j</code>, and the floating point value <code>r</code> are parameters. It does this by declaring a gear joint definition <code>gd</code> and filling in fields for the ratio, pointers to two revolute joints, and pointers to the corresponding two Box2D bodies. The gear joint is then created by calling </p><pre class="fragment">m_pPhysicsWorld-&gt;CreateJoint(&amp;gd);
+</pre><p> There is no need to save the joint pointer returned since it does not have any properties that we want to change, and it will be destroyed when the two revolute joints are destroyed.</p>
+<p>Then, for example, the <code><a class="el" href="class_c_gear.html" title="A system of interlocking gears.">CGear</a></code> constructor <code><a class="el" href="class_c_gear.html#a4680074b02a91cb020dfd1ff52d7e02b" title="Constructor.">CGear::CGear</a></code> makes the four following function calls for the gear joints joining gears 0 to 1, 2 to 2, 1 to 3, and 3 to 4. The third parameter in each case the ratio of the number of teeth in the second gear to the number of teeth in the first gear, noting that gear 0 has 33 teeth, gear 1 and 4 have 18 teeth, and gears 2 and 3 have 12 teeth. </p><pre class="fragment">CreateGearJoint(0, 1, 18.0f/33.0f); 
+CreateGearJoint(1, 2, 12.0f/18.0f);
+CreateGearJoint(1, 3, 12.0f/18.0f);
+CreateGearJoint(3, 4, 18.0f/12.0f);
+</pre><p><a class="anchor" id="section5-3"></a></p><h2>5.3 Nautilus Gears</h2>
+<p>The Nautilus Gear level is implemented in class <code><a class="el" href="class_c_nautilus_gear.html" title="A system of 5 interlocking nautilus gears.">CNautilusGear</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
 <p><a class="anchor" id="fig5-3-1"></a></p><div class="image">
 <img src="Nautilus2-342-96.gif" alt="" width="25%"/>
 <div class="caption">
 Fig. 5.3.1: The nautilus gears.</div></div>
-<p>UNDER CONSTRUCTION</p>
 <p><a class="anchor" id="section5-4"></a></p><h2>5.4 Rack-and-Pinion</h2>
-<p>UNDER CONSTRUCTION</p>
+<p>The Rack-and-Pinion level is implemented in class <code><a class="el" href="class_c_rack_and_pinion.html" title="Rack and pinion.">CRackAndPinion</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
 <p><a class="anchor" id="fig5-4-1"></a></p><div class="image">
 <img src="rackandpinion.gif" alt="" width="50%"/>
 <div class="caption">
 Fig. 5.4.1: The rack-and-pinion.</div></div>
-<p><a class="anchor" id="section5-5"></a></p><h2>5.5 Car</h2>
-<p>UNDER CONSTRUCTION</p>
+<p><a class="anchor" id="section5-5"></a></p><h2>5.5 Car and Bridge</h2>
+<p>The Car and Bridge level is implemented in class <code><a class="el" href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels.">CCarAndBridge</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
 <p><a class="anchor" id="section5-6"></a></p><h2>5.6 Newton's Cradle</h2>
-<p>UNDER CONSTRUCTION</p>
+<p>The Newton's Cradle level is implemented in class <code><a class="el" href="class_c_newtons_cradle.html" title="Newton&#39;s cradle.">CNewtonsCradle</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
 <p><a class="anchor" id="section5-7"></a></p><h2>5.7 Elephant Drop</h2>
-<p>UNDER CONSTRUCTION</p>
+<p>The Elephant Drop level is implemented in class <code><a class="el" href="class_c_pulley.html" title="The pulley class.">CPulley</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
 <p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
 <p>Next, take a look at the <a href="../cannon/index.html">Box2D Cannon Game</a>. </p>
 </div></div><!-- PageDoc -->

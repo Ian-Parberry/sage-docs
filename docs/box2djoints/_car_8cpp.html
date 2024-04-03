@@ -82,18 +82,24 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Car.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Code for the car class <a class="el" href="class_c_car.html" title="A car consisting of a body and two wheels.">CCar</a>.  
+<p>Code for the car class <a class="el" href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels.">CCarAndBridge</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_car_8h.html">Car.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_game_defines_8h.html">GameDefines.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_object_manager_8h.html">ObjectManager.h</a>&quot;</code><br />
 <code>#include &quot;Box2DRenderer.h&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abede07222f9ce9162eeddd409b917842" id="r_abede07222f9ce9162eeddd409b917842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abede07222f9ce9162eeddd409b917842">RemapPoints</a> (b2Vec2 p[], int n, int w, int h)</td></tr>
+<tr class="memdesc:abede07222f9ce9162eeddd409b917842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to translate an array of points from Artist World (measured in pixels from top left) to Physics WOrld (measured in Physics World units from bottom left).  <br /></td></tr>
+<tr class="separator:abede07222f9ce9162eeddd409b917842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a25bc1f93aaaaa7a46f58fa4c0980df16" id="r_a25bc1f93aaaaa7a46f58fa4c0980df16"><td class="memItemLeft" align="right" valign="top"><a id="a25bc1f93aaaaa7a46f58fa4c0980df16" name="a25bc1f93aaaaa7a46f58fa4c0980df16"></a>
@@ -101,6 +107,47 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_SPEED<
 <tr class="memdesc:a25bc1f93aaaaa7a46f58fa4c0980df16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default car speed. <br /></td></tr>
 <tr class="separator:a25bc1f93aaaaa7a46f58fa4c0980df16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="abede07222f9ce9162eeddd409b917842" name="abede07222f9ce9162eeddd409b917842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abede07222f9ce9162eeddd409b917842">&#9670;&#160;</a></span>RemapPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemapPoints </td>
+          <td>(</td>
+          <td class="paramtype">b2Vec2</td>          <td class="paramname"><span class="paramname"><em>p</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>w</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Array of 2D points. </td></tr>
+    <tr><td class="paramname">n</td><td>Number of points in a. </td></tr>
+    <tr><td class="paramname">w</td><td>Double the distance to move the points in X direction. </td></tr>
+    <tr><td class="paramname">h</td><td>Double the distance to move the points in Y direction. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

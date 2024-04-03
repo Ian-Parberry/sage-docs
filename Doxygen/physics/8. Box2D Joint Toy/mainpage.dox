@@ -4,11 +4,10 @@
 \anchor section1
 # 1. Introduction
 
-The Box2D Joint Toy demonstrates
+The Box2D Joint Toy demonstrates some important Box2D joints, including
 revolute, gear, prismatic, wheel, distance, and pulley joints.
 It is divided into 7 levels.
 This code demo has no sound.
-
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the controls
 and their corresponding actions,
@@ -80,12 +79,11 @@ the windmill (\ref section4-1 "Section 4.1"),
 round and square gears (\ref section4-2 "Section 4.2"),
 nautilus gears (\ref section4-3 "Section 4.3"),
 rack-and-pinion (\ref section4-4 "Section 4.4"),
-car (\ref section4-5 "Section 4.5"),
+car and bridge (\ref section4-5 "Section 4.5"),
 Newton's cradle (\ref section4-6 "Section 4.6"), and
 elephant drop (\ref section4-7 "Section 4.7").
 In every level the `Space` bar does an interesting things. These are
 described more detail in the subsections below.
-
 
 \anchor section4-1
 ## 4.1 The Windmill
@@ -160,7 +158,7 @@ Also notice the sudden stop when the pinion reaches its extreme
 left and right positions.
 
 \anchor section4-5
-## 4.5 Car
+## 4.5 Car and Bridge
 
 \anchor fig5
 \image html l5.png "Fig. 5: The car." width=60%
@@ -224,56 +222,278 @@ rock from side to side as it falls.
 \anchor section5
 # 5. Code Breakdown
 
+Each of the levels has its own class, each of which is derived from
+`CLevel`. `CLevel` contains code and data that will be used by
+most of the levels. Some of its functions are stubs.
+A pointer to a class representing the current level
+is maintained in `CCommon::m_pLevel`, which is of type `CLevel*`.
+Many of `CLevel`'s member functions are `virtual` so that they
+can be overridden in any particular level class if desired.
+Most importantly, `CLevel` has an `std::vector` of pointers to
+`CObject` for you to store your objects, and
+function `CLevel::Draw` to draw the objects in in
+(although of course this may be overridden in derived classes)
+and a function stub `CLevel::Action` to perform the "interesting action"
+in response to the space bar
+(see \ref section2 "Section 2").
+
 The most interesting portions of the code for
-each of the levels is described in the following subsections:
+each of the level classes is described in the following subsections:
 the windmill (\ref section5-1 "Section 5.1"),
 round and square gears (\ref section5-2 "Section 5.2"),
 nautilus gears (\ref section5-3 "Section 5.3"),
 rack-and-pinion (\ref section5-4 "Section 5.4"),
-car (\ref section5-5 "Section 5.5"), and
+car and bridge (\ref section5-5 "Section 5.5"), and
 Newton's cradle (\ref section5-6 "Section 5.6"),
+and
 elephant drop (\ref section5-7 "Section 5.7").
 
 \anchor section5-1
 ## 5.1 The Windmill
 
-UNDER CONSTRUCTION 
+The windmill level is implemented in class `CWindmill`, which is
+derived from `CLevel`.
+The `CWindmill` constructor calls `CWindmill::CreateFan` to create
+an instance of `CObject` for the fan, which is drawn using the
+sprite shown in \ref fig10 "Figure 10" (right);
+and calls `CWindmill::CreateBase`
+to create an instance of `CObject` for the base, which is drawn using the
+sprite shown in \ref fig10 "Figure 10" (left).
+
+
+\anchor fig10
+\image html windmillspr.png "Fig. 10: The windmill sprites for the base (left), and the fan (right)." width=30%
+
+`CObject` has a pointer to a Box2D body `CObject::m_pBody`
+of type `b2Body*`.
+`CWindmill::CreateFan` declares a body definition `bd`
+and sets its `type` and `position` fields.
+It then declares an instance of `b2CircleShape` called `s` and sets its
+radius to half the width of the sprite in \ref fig10 "Figure 10" (right),
+translated from Render World to Physics World coordinates.
+It then declares a fixture definition `fd` and sets its shape to `s`
+and its density somewhat arbitrarily to `0.1f`.
+It then creates a Physics World body for the fan by calling
+
+    m_pPhysicsWorld->CreateBody(&bd)
+
+and saving the pointer to the Box2D body returned in a local
+variable `pBody`.
+The instance of `CObject` for the fan is then created by calling
+
+    new CObject(eSprite::WindmillFan, pBody)
+
+and pushing the pointer returned at the back of the inherited object list
+`CLevel::m_stdObject`. 
+Finally, the fixture for the shape is attached to the body by
+calling
+
+    pBody->CreateFixture(&fd);
+
+although this could be called before the instance of `CObject` was created.
+
+\anchor fig11
+\image html windmill.png "Fig. 11: The windmill level drawn with Box2D bodies in black on top of sprites (left), and bodies only (right)." width=80%
+
+`CWindmill::CreateBase`, on the other hand, creates an instance of `CObject`
+with a pointer to a Box2D body that does not have a fixture attached to it.
+This results in the sprite for the windmill base being drawn as
+in \ref fig11 "Fig. 11" (left), but it does not participate in
+Box2D collision detection and response and is not drawn when
+only Box2D bodies are drawn as in \ref fig11 "Fig. 11" (right).
+As far as Box2D is concerned, then, the world consists of two bodies,
+one of which is a circle and the other of which is essentially the empty body.
+
+Returning to the `CWindmill` constructor,
+after calling `CWindmill::CreateFan` and `CWindmill::CreateBase`
+and saving the `b2Body` pointers in local variables
+`pFan` and `pBase`, respectively, it declares a
+_revolute joint_ definition `wd`. The word _revolute_ is a synonym
+for _rotation_. A revolute joint, then, allows two bodies to rotate
+about a single point. If both bodies are dynamic, then the two 
+bodies rotate freely, but in our case the body for the windmill base
+is given type `b2_staticBody` in  `CWindmill::CreateBase`, which
+results in the windmill fan rotating about its center in the expected way.
+Various fields of the revolute joint definition `wd` are filled in,
+including pointers to the two bodies from `pFan` and `pBase`,
+a motor speed and the maximum torque to be applied.
+Recall from \ref section4-1 "Section 4.1" that the fan slowly
+spins up to speed. The rate at which it does so depends
+upon the fan's mass (which depends on its shape and density)
+and the motor's torque. Setting the torque ususally requires
+a certain amount of try-it-and-see before you arrive at an
+appropriate value.
+
+The revolute joint is created from the description in `wd`
+by calling
+
+    m_pPhysicsWorld->CreateJoint(&wd)
+
+Unfortunately `b2World::CreateJoint` returns a pointer to a `b2Joint`,
+which is a base class from which all Box2D joints are derived.
+It's up to us to cast this pointer to the correct
+type as follows:
+
+    m_pJoint = (b2RevoluteJoint*)m_pPhysicsWorld->CreateJoint(&wd);
+
+We save this pointer in `CWindmill::m_pJoint` because we
+will need to use it in  `CWindmill::Action` to change the
+motor speed in response to the space bar in  `CGame::KeyboardHandler`.
+This is easily done as follows using `b2RevoluteJoint`'s 
+`GetMotorSpeed` and `SetMotorSpeed` functions.
+
+    void CWindmill::Action(){
+      m_pJoint->SetMotorSpeed(-m_pJoint->GetMotorSpeed());
+    } //Action
+
+A little care must be taken when leaving a level to
+ensure that there are no memory leaks.
+`CLevel` has a virtual destructor `CLevel::~CLevel` that `delete`s
+all of the objects in the object list `CLevel::m_stdObject`.
+In turn the `CObject` destructor `CObject::~CObject` calls
+
+    m_pPhysicsWorld->DestroyBody(m_pBody)
+
+to destroy the Box2D body associated with the object. This assumes
+that the Box2D Physics World pointed to by `m_pPhysicsWorld`
+still exists. This implies that the `CGame` destructor
+`CGame::~CGame` must `delete` the current level before it
+`delete`s Physics World. This is handled as follows.
+
+    CGame::~CGame(){
+      delete m_pRenderer;
+      delete m_pLevel;
+      delete m_pPhysicsWorld;
+    } //destructor
+
 
 \anchor section5-2
 ## 5.2 Gears
 
-UNDER CONSTRUCTION 
+The Gear level is implemented in class `CGear`, which is
+derived from `CLevel`.
+It may come as a surprise that if you use `F2` to draw the
+Physics World bodies, then you will see a collection
+of small non-overlapping circles as shown in \ref fig12 "Fig. 12",
+whereas in sprite mode you see gears of different size
+as shown in \ref fig2 "Fig. 2" happily rotating at the right speeds.
+
+\anchor fig12
+\image html gears.png "Fig. 12: The gear level drawn with Box2D bodies." width=40%
+
+This brings us to what I call the First Law of Computer Graphics:
+
+> If it looks right, it is right.
+
+and also what might be called the First Corollary of Computer Animation:
+
+> The things that you see on the screen don't actually interact - they are just drawn that way.
+
+In this case it might _look_ as if the gears mesh in such a way that the teeth
+of one gear pushed against the teeth of the next gear, but that really isn't
+so. All we need to do is make sure that the center of each gear
+is in the correct place, and that gears that should "contact" rotate at
+the correct relative speeds (and of course that the sprites have the correct number and shape of teeth for their size).
+
+\anchor fig13
+\image html gear0.png "Fig. 13: The five round gears." width=55%
+
+Consider the five round gears in \ref fig2 "Fig. 2".
+As seen in \ref fig13 "Fig. 13", we can number them
+0 through 4. Note that gears 2 and 3 have the same diameter, but gears 0, 1, and
+differ from them and each other. 
+
+\anchor fig14
+\image html gear1.png "Fig. 14: The five round gears drawn so that they appear to mesh." width=30%
+
+These are drawn as shown in \ref fig14 "Fig. 14" positioned and oriented
+so that their teeth
+appear to mesh together.
+As we animated the gears we just need to make sure that they stay that way.
+The largest, gear 0, will have a motor, and the others will rotate
+at the required speeds and directions.
+The relative speeds of rotation are proportional to the radii of the
+gears involved, which can be found by counting the teeth, as in \ref fig15 "Fig. 15".
+
+\anchor fig15
+\image html gear2.png "Fig. 15: A gear with 12 teeth." width=12%
+
+The relative directions of rotation flip from one gear to the next.
+For example, the largest gear in \ref fig16 "Fig. 16" is driven
+clockwise by a motor in a clockwise direction as indicated by the
+black arrows, while the other gears rotate in the directions indicated by the gray dotted arrows.
+
+\anchor fig16
+\image html gear3.png "Fig. 16: Directions of rotation." width=45%
+
+The code for the creation of the gears and their revolute joints is
+very similar to the code for the rotating fan in the
+Windmill level (see \ref section5-3 "Section 5.3"). 
+Pointers to the revolute joints are stored in an `std::vector` of
+`b2RevoluteJoint` pointers `CGear::m_stdJoint` by the `CGear` constructor `CGear::CGear`.
+`CGear::CreateGearJoint` creates a gear joint
+that joins the revolute joints pointed to by `m_stdJoint[i]` and `m_stdJoint[j]`,
+with gear ratio `r`, where the unsigned integers `i`, `j`, and the floating point value `r` are parameters.
+It does this by declaring a gear joint definition `gd` and filling
+in fields for the ratio, pointers to two revolute joints, and pointers to the corresponding two Box2D bodies.
+The gear joint is then created by calling
+
+    m_pPhysicsWorld->CreateJoint(&gd);
+
+There is no need to save the joint pointer returned since it does not have any properties that we want to change, and it will be
+destroyed when the two revolute joints are destroyed.
+
+Then, for example, the `CGear` constructor `CGear::CGear` makes the four
+following function calls for the gear joints joining gears
+0 to 1, 2 to 2, 1 to 3, and 3 to 4.
+The third parameter in each case the ratio of the number of
+teeth in the second gear to the number of teeth in the first gear,
+noting that gear 0 has 33 teeth, gear 1 and 4 have 18 teeth, and gears 2 and 3 have 12 teeth.
+
+    CreateGearJoint(0, 1, 18.0f/33.0f); 
+    CreateGearJoint(1, 2, 12.0f/18.0f);
+    CreateGearJoint(1, 3, 12.0f/18.0f);
+    CreateGearJoint(3, 4, 18.0f/12.0f);
+
 
 \anchor section5-3
 ## 5.3 Nautilus Gears
 
+
+The Nautilus Gear level is implemented in class `CNautilusGear`, which is
+derived from `CLevel`.
+
 \anchor fig5-3-1
 \image html Nautilus2-342-96.gif "Fig. 5.3.1: The nautilus gears." width=25%
-
-UNDER CONSTRUCTION 
+ 
 
 \anchor section5-4
 ## 5.4 Rack-and-Pinion
 
-UNDER CONSTRUCTION 
+
+The Rack-and-Pinion level is implemented in class `CRackAndPinion`, which is
+derived from `CLevel`. 
 
 \anchor fig5-4-1
 \image html rackandpinion.gif "Fig. 5.4.1: The rack-and-pinion." width=50%
 
 \anchor section5-5
-## 5.5 Car
+## 5.5 Car and Bridge
 
-UNDER CONSTRUCTION 
+The Car and Bridge level is implemented in class `CCarAndBridge`, which is
+derived from `CLevel`.
 
 \anchor section5-6
 ## 5.6 Newton's Cradle
 
-UNDER CONSTRUCTION 
+The Newton's Cradle level is implemented in class `CNewtonsCradle`, which is
+derived from `CLevel`. 
 
 \anchor section5-7
 ## 5.7 Elephant Drop
 
-UNDER CONSTRUCTION 
+The Elephant Drop level is implemented in class `CPulley`, which is
+derived from `CLevel`. 
 
 \anchor section6
 # 6. What Next?

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['_7ecgame_0',['~CGame',['../class_c_game.html#a4db10c09035dc16b32d6c1ef4cca2143',1,'CGame']]],
-  ['_7ecnewtonscradle_1',['~CNewtonsCradle',['../class_c_newtons_cradle.html#aa928fa0c29cce130265d767f01c6ab7f',1,'CNewtonsCradle']]],
-  ['_7ecobject_2',['~CObject',['../class_c_object.html#a93a3c3bc7d9a6462ef00e25404d9b0eb',1,'CObject']]],
-  ['_7ecobjectmanager_3',['~CObjectManager',['../class_c_object_manager.html#a7f985240f67c8bf03a26f370e67fdb33',1,'CObjectManager']]]
+  ['wwinmain_0',['wWinMain',['../_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31',1,'Main.cpp']]]
 ];
