@@ -463,8 +463,20 @@ noting that gear 0 has 33 teeth, gear 1 and 4 have 18 teeth, and gears 2 and 3 h
 The Nautilus Gear level is implemented in class `CNautilusGear`, which is
 derived from `CLevel`.
 
-\anchor fig5-3-1
-\image html Nautilus2-342-96.gif "Fig. 5.3.1: The nautilus gears." width=25%
+\anchor fig17
+\image html Nautilus2-342-96.gif "Fig. 17: Animation of two nautilus gears." width=25%
+
+\anchor fig18
+\image html nautilus1.png "Fig. 18: Nautilus gear equation." width=40%
+
+\anchor fig19
+\image html nautilus2.png "Fig. 19: Two nautilus gears." width=55%
+
+\anchor fig20
+\image html Nautilus256-96.gif "Fig. 20: Animation of five nautilus gears." width=35%
+
+\anchor fig21
+\image html nautilus4.png "Fig. 21: Initial position and orientation of five nautilus gears." width=27%
  
 
 \anchor section5-4
@@ -474,14 +486,27 @@ derived from `CLevel`.
 The Rack-and-Pinion level is implemented in class `CRackAndPinion`, which is
 derived from `CLevel`. 
 
-\anchor fig5-4-1
-\image html rackandpinion.gif "Fig. 5.4.1: The rack-and-pinion." width=50%
+\anchor fig22
+\image html rackandpinion.gif "Fig. 22: The rack-and-pinion." width=50%
+
+\anchor fig23
+\image html shape-rack.png "Fig. 23: The Rack-and-Pinion shapes." width=40%
 
 \anchor section5-5
 ## 5.5 Car and Bridge
 
+
+\anchor fig24
+\image html carbg.png "Fig. 24: Background image for the Car and Bridge." width=50%
+
 The Car and Bridge level is implemented in class `CCarAndBridge`, which is
 derived from `CLevel`.
+
+\anchor fig25
+\image html shape-car.png "Fig. 25: The Car and Bridge shapes." width=40%
+
+\anchor fig26
+\image html car.png "Fig. 26: Degrees of freedom for the car and its wheels." width=25%
 
 \anchor section5-6
 ## 5.6 Newton's Cradle
@@ -489,11 +514,23 @@ derived from `CLevel`.
 The Newton's Cradle level is implemented in class `CNewtonsCradle`, which is
 derived from `CLevel`. 
 
+\anchor fig27
+\image html shape-newton.png "Fig. 27: The Newton's Cradle shapes." width=40%
+
+\anchor fig28
+\image html newton3.png "Fig. 28: Ball wobble." width=15%
+
 \anchor section5-7
 ## 5.7 Elephant Drop
 
 The Elephant Drop level is implemented in class `CPulley`, which is
 derived from `CLevel`. 
+
+\anchor fig29
+\image html elephant.png "Fig. 29: Direction of motion for Elephant Drop." width=40%
+
+\anchor fig30
+\image html shape-elephant.png "Fig. 30: The Elephant Drop shapes." width=40%
 
 \anchor section6
 # 6. What Next?
