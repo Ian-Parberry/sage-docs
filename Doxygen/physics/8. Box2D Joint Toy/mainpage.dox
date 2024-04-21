@@ -461,7 +461,12 @@ noting that gear 0 has 33 teeth, gear 1 and 4 have 18 teeth, and gears 2 and 3 h
 
 
 The Nautilus Gear level is implemented in class `CNautilusGear`, which is
-derived from `CLevel`.
+derived from `CLevel`. A _nautilus shell_ is the shell from the <a href="https://en.wikipedia.org/wiki/Nautilus">cephalopod family _Nautilidae_</a>.
+A _nautilus gear_ is made from a cross-section of a nautilus shell, two of which are shown in \ref fig17 "Fig. 17".
+The cross-section consists of a series of cells of increasing size that spiral out from a center point.
+In \ref fig17 "Fig. 17" the left-hand shell rotates about that point with constant angular velocity,
+while the right-hand shell rotates around its central point with angular velocity that increases and decreases over time so that the teeth appear to mesh.
+Remember that our task here is not to compute how the teeth mesh, but merely to draw the right-hand gear at an orientation that makes appear that it meshes with the left-hand gear.
 
 \anchor fig17
 \image html Nautilus2-342-96.gif "Fig. 17: Animation of two nautilus gears." width=25%
