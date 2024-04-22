@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['left_0',['LEFT',['../_nautilus_gear_8cpp.html#a08e9e19b88c4004c6d1daa0ed765c569',1,'NautilusGear.cpp']]],
-  ['level_2ecpp_1',['Level.cpp',['../_level_8cpp.html',1,'']]],
-  ['level_2eh_2',['Level.h',['../_level_8h.html',1,'']]],
-  ['lineobject_2ecpp_3',['LineObject.cpp',['../_line_object_8cpp.html',1,'']]],
-  ['lineobject_2eh_4',['LineObject.h',['../_line_object_8h.html',1,'']]],
-  ['loadsprites_5',['LoadSprites',['../class_c_game.html#a7c1fa6038d453a578371caa9f01e2388',1,'CGame']]]
+  ['level_2ecpp_0',['Level.cpp',['../_level_8cpp.html',1,'']]],
+  ['level_2eh_1',['Level.h',['../_level_8h.html',1,'']]],
+  ['lineobject_2ecpp_2',['LineObject.cpp',['../_line_object_8cpp.html',1,'']]],
+  ['lineobject_2eh_3',['LineObject.h',['../_line_object_8h.html',1,'']]],
+  ['loadsprites_4',['LoadSprites',['../class_c_game.html#a7c1fa6038d453a578371caa9f01e2388',1,'CGame']]]
 ];
