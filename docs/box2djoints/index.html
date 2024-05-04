@@ -123,7 +123,7 @@ Fig. 2: The gears.</div></div>
 <img src="l3.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 3: The nautilus gears.</div></div>
-<p>A system of 5 <em>nautilus gears</em>, which are gears in the shape of a nautilus shell (see <a class="el" href="#fig3">Fig. 3</a>). The center gear has a revolute joint with a motor. The other gears have variable speed, so they cannot be animated by Box2D. We have to animate them ourselves which means doing a little math, which we will cover in <a class="el" href="#section5-3">Section 5.3</a>. The <code>Space</code> bar reverses the motor's direction of rotation. Notice that the gears take a while to spin up to full speed, and when the direction of the motor is reversed they slowly spin down to zero before spinning up in the opposite direction.</p>
+<p>A pair of <em>nautilus gears</em>, which are gears in the shape of a nautilus shell (see <a class="el" href="#fig3">Fig. 3</a>). The left gear has a revolute joint with a motor. The right gear has variable speed, so they cannot be animated by Box2D. We have to animate it ourselves which means doing a little math, which we will cover in <a class="el" href="#section5-3">Section 5.3</a>. The <code>Space</code> bar reverses the motor's direction of rotation. Notice that the gears take a while to spin up to full speed, and when the direction of the motor is reversed they slowly spin down to zero before spinning up in the opposite direction.</p>
 <p><a class="anchor" id="section4-4"></a></p><h2>4.4 Rack-and-Pinion</h2>
 <p><a class="anchor" id="fig4"></a></p><div class="image">
 <img src="l4.png" alt="" width="60%"/>
@@ -227,28 +227,49 @@ CreateGearJoint(1, 2, 12.0f/18.0f);
 CreateGearJoint(1, 3, 12.0f/18.0f);
 CreateGearJoint(3, 4, 18.0f/12.0f);
 </pre><p><a class="anchor" id="section5-3"></a></p><h2>5.3 Nautilus Gears</h2>
-<p>The Nautilus Gear level is implemented in class <code><a class="el" href="class_c_nautilus_gear.html" title="A system of 5 interlocking nautilus gears.">CNautilusGear</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
+<p>The Nautilus Gear level is implemented in class <code><a class="el" href="class_c_nautilus_gear.html" title="A pair of interlocking nautilus gears.">CNautilusGear</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>. A <em>nautilus shell</em> is the shell from the <a href="https://en.wikipedia.org/wiki/Nautilus">cephalopod family <em>Nautilidae</em></a>. A <em>nautilus gear</em> is made from a cross-section of a nautilus shell, two of which are shown in <a class="el" href="#fig17">Fig. 17</a>. The cross-section consists of a series of cells of increasing size that spiral out from a center point. In <a class="el" href="#fig17">Fig. 17</a> the left-hand shell rotates about that point with constant angular velocity, while the right-hand shell rotates around its central point with angular velocity that increases and decreases over time so that the teeth appear to mesh. Remember that our task here is not to compute how the teeth mesh, but merely to draw the right-hand gear at an orientation that makes appear that it meshes with the left-hand gear.</p>
 <p><a class="anchor" id="fig17"></a></p><div class="image">
 <img src="Nautilus2-342-96.gif" alt="" width="25%"/>
 <div class="caption">
 Fig. 17: Animation of two nautilus gears.</div></div>
+<p>Suppose we have a nautilus gear of maximum radius \(a\) and minimum radius \(b\), as shown in <a class="el" href="#fig18">Fig. 18</a> (left). The radius of a nautilus gear at angle \(\theta\) measured counterclockwise from the positive \(x\)-axis (see <a class="el" href="#fig18">Fig. 18</a>, right) is \(ce^{d\theta}\) for some constants \(c, d\) that depend on the particular nautilus shell in question and \(e \approx 2.71828\) is the base of the natural logarithm. Since the radius at angle zero is \(b\), \(b = ce^0\), that is, \(c = b\). Since the radius at angle \(2 \pi\) is \(a\), \(a = be^{2 d\pi}\). That is, taking the natural logarithm of both sides, \(d = \ln (a/b)/2 \pi\). Examining our nautilus gear sprite in an image editor, we find that \(a=98\) and \(b=34\) pixels.</p>
 <p><a class="anchor" id="fig18"></a></p><div class="image">
 <img src="nautilus1.png" alt="" width="40%"/>
 <div class="caption">
 Fig. 18: Nautilus gear equation.</div></div>
+<p>We thus begin our code for <code><a class="el" href="class_c_nautilus_gear.html#ab6280edc601ff8ca4fa98045970c95e9" title="Move gears in synchrony.">CNautilusGear::Move</a></code> with \(\theta_0\), \(a\), \(b\), and \(d\). Variable <code>theta0</code> holds \(\theta_0\), which is the opposite of the gear's orientation (from the gear's perspective, when it rotates through angle \(\theta\) it is as if the world has rotated through angle \(-\theta\)). <code><a class="el" href="class_c_nautilus_gear.html" title="A pair of interlocking nautilus gears.">CNautilusGear</a></code> has constant member variables for \(a, b, d\). </p><pre class="fragment">const float a = 98.0f; 
+const float b = 34.0f; 
+const float d = 0.5f*logf(a/b)/b2_pi; 
+</pre><p> Since the fixed distance between the gear centers is \(a+b\) (<a class="el" href="#fig19">Fig. 19</a>, left), and \(be^{d\theta_0} + be^{d\theta_1}\) (<a class="el" href="#fig19">Fig. 19</a>, right), we can deduce that:</p>
+<p class="formulaDsp">
+\[
+be^{d\theta_0} + be^{d\theta_1} = a+b
+\]
+</p>
+<p>which implies that, dividing both sides by \(b\) then subtracting \(e^{d\theta_1}\) from both sides:  </p><p class="formulaDsp">
+\[
+e^{d\theta_1} = a/b+1 - e^{d\theta_0}
+\]
+</p>
+<p> and so, taking the natural logarithm of both sides and dividing by \(d\),  </p><p class="formulaDsp">
+\[
+\theta_1 = \ln(a/b + 1 - e^{d\theta_0})/d.
+\]
+</p>
 <p><a class="anchor" id="fig19"></a></p><div class="image">
 <img src="nautilus2.png" alt="" width="55%"/>
 <div class="caption">
 Fig. 19: Two nautilus gears.</div></div>
-<p><a class="anchor" id="fig20"></a></p><div class="image">
-<img src="Nautilus256-96.gif" alt="" width="35%"/>
-<div class="caption">
-Fig. 20: Animation of five nautilus gears.</div></div>
-<p><a class="anchor" id="fig21"></a></p><div class="image">
-<img src="nautilus4.png" alt="" width="27%"/>
-<div class="caption">
-Fig. 21: Initial position and orientation of five nautilus gears.</div></div>
-<p><a class="anchor" id="section5-4"></a></p><h2>5.4 Rack-and-Pinion</h2>
+<p>Since the right-hand gear starts out at an orientation of \(\pi\), its orientation is now \(\pi - \theta_1\). The code for <code><a class="el" href="class_c_nautilus_gear.html#ab6280edc601ff8ca4fa98045970c95e9" title="Move gears in synchrony.">CNautilusGear::Move</a></code> is then: </p><pre class="fragment">void CNautilusGear::Move(){
+  float theta0 = -m_stdObject[0]-&gt;GetBody()-&gt;GetAngle(); //left gear angle
+  const float b2_2pi = 2.0f*b2_pi; //2 times pi in Physics World
+  theta0 -= (UINT)floor(theta0/b2_2pi)*b2_2pi; //normalize theta0 to be in [0, 2pi]
+  const float theta1 = logf(a/b + 1.0f - expf(d*theta0))/d; //angle for right gear
+
+  b2Body* pBody = m_stdObject[1]-&gt;GetBody(); //body of right gear
+  pBody-&gt;SetTransform(pBody-&gt;GetPosition(), b2_pi - theta1); //orient right gear
+} //Move
+</pre><p><a class="anchor" id="section5-4"></a></p><h2>5.4 Rack-and-Pinion</h2>
 <p>The Rack-and-Pinion level is implemented in class <code><a class="el" href="class_c_rack_and_pinion.html" title="Rack and pinion.">CRackAndPinion</a></code>, which is derived from <code><a class="el" href="class_c_level.html" title="Stub class for a level.">CLevel</a></code>.</p>
 <p><a class="anchor" id="fig22"></a></p><div class="image">
 <img src="rackandpinion.gif" alt="" width="50%"/>

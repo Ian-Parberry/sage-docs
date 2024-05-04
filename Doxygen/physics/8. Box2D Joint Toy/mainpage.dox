@@ -129,11 +129,11 @@ above what is necessary for ordinary round gears.
 \anchor fig3
 \image html l3.png "Fig. 3: The nautilus gears." width=60%
 
-A system of 5 <em>nautilus gears</em>, which are gears
+A pair of <em>nautilus gears</em>, which are gears
 in the shape of a nautilus shell (see \ref fig3 "Fig. 3").
-The center gear has a revolute joint with a motor. 
-The other gears have variable speed, so they cannot be animated by Box2D.
-We have to animate them ourselves which means doing a little math,
+The left gear has a revolute joint with a motor. 
+The right gear has variable speed, so they cannot be animated by Box2D.
+We have to animate it ourselves which means doing a little math,
 which we will cover in \ref section5-3 "Section 5.3".  The `Space` bar reverses the motor's direction of rotation. Notice that the gears take a while to spin up to full speed,
 and when the direction of the motor is reversed they slowly spin down
 to zero before spinning up in the opposite direction.
@@ -459,25 +459,78 @@ noting that gear 0 has 33 teeth, gear 1 and 4 have 18 teeth, and gears 2 and 3 h
 \anchor section5-3
 ## 5.3 Nautilus Gears
 
-
 The Nautilus Gear level is implemented in class `CNautilusGear`, which is
-derived from `CLevel`.
+derived from `CLevel`. A _nautilus shell_ is the shell from the <a href="https://en.wikipedia.org/wiki/Nautilus">cephalopod family _Nautilidae_</a>.
+A _nautilus gear_ is made from a cross-section of a nautilus shell, two of which are shown in \ref fig17 "Fig. 17".
+The cross-section consists of a series of cells of increasing size that spiral out from a center point.
+In \ref fig17 "Fig. 17" the left-hand shell rotates about that point with constant angular velocity,
+while the right-hand shell rotates around its central point with angular velocity that increases and decreases over time so that the teeth appear to mesh.
+Remember that our task here is not to compute how the teeth mesh, but merely to draw the right-hand gear at an orientation that makes appear that it meshes with the left-hand gear.
 
 \anchor fig17
 \image html Nautilus2-342-96.gif "Fig. 17: Animation of two nautilus gears." width=25%
 
+Suppose we have a nautilus gear of maximum radius \f$a\f$ and
+minimum radius \f$b\f$, as shown in \ref fig18 "Fig. 18" (left).
+The radius of 
+a nautilus gear at angle \f$\theta\f$ measured counterclockwise from
+the positive \f$x\f$-axis (see \ref fig18 "Fig. 18", right)
+is \f$ce^{d\theta}\f$
+for some constants \f$c, d\f$ that depend on the particular nautilus shell in question
+and \f$e \approx 2.71828\f$ is the base of the natural logarithm.
+Since the radius at angle zero is \f$b\f$, \f$b = ce^0\f$, that is, \f$c = b\f$.
+Since the radius at angle \f$2 \pi\f$ is \f$a\f$, \f$a = be^{2 d\pi}\f$.
+That is, taking the natural logarithm of both sides,
+\f$d = \ln (a/b)/2 \pi\f$. Examining our nautilus gear sprite in an image editor,
+we find that \f$a=98\f$ and \f$b=34\f$ pixels.
+
 \anchor fig18
 \image html nautilus1.png "Fig. 18: Nautilus gear equation." width=40%
+
+We thus begin our code for `CNautilusGear::Move`
+with \f$\theta_0\f$, \f$a\f$, \f$b\f$, and \f$d\f$.
+Variable `theta0` holds \f$\theta_0\f$, which is the opposite of the gear's orientation
+(from the gear's perspective, when it rotates through angle \f$\theta\f$ it is as if
+the world has rotated through angle \f$-\theta\f$).
+`CNautilusGear` has constant member variables for \f$a, b, d\f$.
+
+    const float a = 98.0f; 
+    const float b = 34.0f; 
+    const float d = 0.5f*logf(a/b)/b2_pi; 
+
+Since the fixed distance between the gear centers is \f$a+b\f$ (\ref fig19 "Fig. 19", left),
+and \f$be^{d\theta_0} + be^{d\theta_1}\f$ (\ref fig19 "Fig. 19", right),
+we can deduce that: 
+
+\f[
+be^{d\theta_0} + be^{d\theta_1} = a+b
+\f]
+
+which implies that, dividing both sides by \f$b\f$ then subtracting \f$e^{d\theta_1}\f$ from both sides:
+\f[
+e^{d\theta_1} = a/b+1 - e^{d\theta_0}
+\f]
+and so, taking the natural logarithm of both sides and dividing by \f$d\f$,
+\f[
+\theta_1 = \ln(a/b + 1 - e^{d\theta_0})/d.
+\f]
 
 \anchor fig19
 \image html nautilus2.png "Fig. 19: Two nautilus gears." width=55%
 
-\anchor fig20
-\image html Nautilus256-96.gif "Fig. 20: Animation of five nautilus gears." width=35%
+Since the right-hand gear starts out at an orientation of \f$\pi\f$,
+its orientation is now \f$\pi - \theta_1\f$. The code for `CNautilusGear::Move` is then:
 
-\anchor fig21
-\image html nautilus4.png "Fig. 21: Initial position and orientation of five nautilus gears." width=27%
- 
+    void CNautilusGear::Move(){
+      float theta0 = -m_stdObject[0]->GetBody()->GetAngle(); //left gear angle
+      const float b2_2pi = 2.0f*b2_pi; //2 times pi in Physics World
+      theta0 -= (UINT)floor(theta0/b2_2pi)*b2_2pi; //normalize theta0 to be in [0, 2pi]
+      const float theta1 = logf(a/b + 1.0f - expf(d*theta0))/d; //angle for right gear
+
+      b2Body* pBody = m_stdObject[1]->GetBody(); //body of right gear
+      pBody->SetTransform(pBody->GetPosition(), b2_pi - theta1); //orient right gear
+    } //Move
+
 
 \anchor section5-4
 ## 5.4 Rack-and-Pinion

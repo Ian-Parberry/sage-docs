@@ -90,7 +90,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A system of 5 interlocking nautilus gears.  
+<p>A pair of interlocking nautilus gears.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;NautilusGear.h&gt;</code></p>
@@ -136,9 +136,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac5273af54879e56385b66180328a6a02" id="r_ac5273af54879e56385b66180328a6a02"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5273af54879e56385b66180328a6a02">CreateBase</a> (float, float)</td></tr>
 <tr class="memdesc:ac5273af54879e56385b66180328a6a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create invisible base.  <br /></td></tr>
 <tr class="separator:ac5273af54879e56385b66180328a6a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab19e41f30d4fda51440cb1902782e4e" id="r_aab19e41f30d4fda51440cb1902782e4e"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab19e41f30d4fda51440cb1902782e4e">CreateGear</a> (float, float, <a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, bool)</td></tr>
-<tr class="memdesc:aab19e41f30d4fda51440cb1902782e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create gear.  <br /></td></tr>
-<tr class="separator:aab19e41f30d4fda51440cb1902782e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553e402655a93ca0e97f2049ebaaa124" id="r_a553e402655a93ca0e97f2049ebaaa124"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553e402655a93ca0e97f2049ebaaa124">CreateGear</a> (float, float, <a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, b2BodyType)</td></tr>
+<tr class="memdesc:a553e402655a93ca0e97f2049ebaaa124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create gear.  <br /></td></tr>
+<tr class="separator:a553e402655a93ca0e97f2049ebaaa124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -146,6 +146,18 @@ Private Attributes</h2></td></tr>
 b2RevoluteJoint *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pJoint</b> = nullptr</td></tr>
 <tr class="memdesc:af074e75a8de5b0f7fdc9592cca87081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ptr to center gear revolute joint. <br /></td></tr>
 <tr class="separator:af074e75a8de5b0f7fdc9592cca87081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e3410158f083f660e62ec33ad1af01" id="r_a12e3410158f083f660e62ec33ad1af01"><td class="memItemLeft" align="right" valign="top"><a id="a12e3410158f083f660e62ec33ad1af01" name="a12e3410158f083f660e62ec33ad1af01"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 98.0f</td></tr>
+<tr class="memdesc:a12e3410158f083f660e62ec33ad1af01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum radius in Render World units, from image. <br /></td></tr>
+<tr class="separator:a12e3410158f083f660e62ec33ad1af01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1448a7a8d9afb631e754889d45dfcf6b" id="r_a1448a7a8d9afb631e754889d45dfcf6b"><td class="memItemLeft" align="right" valign="top"><a id="a1448a7a8d9afb631e754889d45dfcf6b" name="a1448a7a8d9afb631e754889d45dfcf6b"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>b</b> = 34.0f</td></tr>
+<tr class="memdesc:a1448a7a8d9afb631e754889d45dfcf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum radius in Render World units, from image. <br /></td></tr>
+<tr class="separator:a1448a7a8d9afb631e754889d45dfcf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b009ccef558e3931b0d71f2b318894" id="r_ad2b009ccef558e3931b0d71f2b318894"><td class="memItemLeft" align="right" valign="top"><a id="ad2b009ccef558e3931b0d71f2b318894" name="ad2b009ccef558e3931b0d71f2b318894"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><b>d</b> = 0.5f*logf(<a class="el" href="#a12e3410158f083f660e62ec33ad1af01">a</a>/<a class="el" href="#a1448a7a8d9afb631e754889d45dfcf6b">b</a>)/b2_pi</td></tr>
+<tr class="memdesc:ad2b009ccef558e3931b0d71f2b318894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Denominator for computing orientation. <br /></td></tr>
+<tr class="separator:ad2b009ccef558e3931b0d71f2b318894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -189,7 +201,8 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <em>nautilus gear</em> is a gear in the shape of a nautilus shell. The center gear has a revolute joint with a motor. The other gears have variable speed, so they cannot be animated by Box2D. We have to animate them ourselves which means doing a little math. The number and positions of the gears are hard-coded but since we use <code>std::vector</code> for storage, it is fairly easy to add more if you want them. </p>
+<div class="textblock"><p>A <em>nautilus gear</em> is a gear in the shape of a nautilus shell. This level will animate a pair of nautilus gears. The left gear has a revolute joint with a motor. The right gear has variable speed, so it cannot be animated by Box2D. We have to animate it ourselves which means doing a little math. <br  />
+ </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0bf55e596af190056172a60202b42bb9" name="a0bf55e596af190056172a60202b42bb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bf55e596af190056172a60202b42bb9">&#9670;&#160;</a></span>Action()</h2>
@@ -213,7 +226,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reverse the gears by setting the motor speed on the revolute joint for the first gear. </p>
+<p>Reverse the gears by setting the motor speed on the revolute joint for the left gear. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_level.html#ae0da64b3cc6ab4bd9e9a046ecd4730f6">CLevel</a>.</p>
 
@@ -256,8 +269,8 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 
 </div>
 </div>
-<a id="aab19e41f30d4fda51440cb1902782e4e" name="aab19e41f30d4fda51440cb1902782e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab19e41f30d4fda51440cb1902782e4e">&#9670;&#160;</a></span>CreateGear()</h2>
+<a id="a553e402655a93ca0e97f2049ebaaa124" name="a553e402655a93ca0e97f2049ebaaa124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553e402655a93ca0e97f2049ebaaa124">&#9670;&#160;</a></span>CreateGear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +296,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>dynamic</em></span>&#160;)</td>
+          <td class="paramtype">b2BodyType</td>          <td class="paramname"><span class="paramname"><em>bt</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -297,11 +310,11 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
     <tr><td class="paramname">y</td><td>Y coordinate in Physics World units. </td></tr>
     <tr><td class="paramname">t</td><td>Sprite type of the gear wheel. </td></tr>
-    <tr><td class="paramname">dynamic</td><td>true if this is to be rotated by Box2D, false if we're going to take care of it ourselves. </td></tr>
+    <tr><td class="paramname">bt</td><td>Box2D body type. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the cog wheel body in Physics World. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the gear body in Physics World. </dd></dl>
 
 </div>
 </div>
@@ -327,7 +340,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Make the four gears surrounding the center gear rotate in synchrony with the center gear. We use the fact that the radius of a nautilus gear at angle \(\theta\) is \(ae^{b\theta}\), where \(a\) and \(b\) are the maximum and minimum radius of the gear, respectively, and \(d = \ln(b/a)/2\pi\). </p>
+<p>Make the right gear rotate in synchrony with the left gear. Assumes that the left gear was created first. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_level.html#ad35cb55ec0815766f028013beed590b3">CLevel</a>.</p>
 

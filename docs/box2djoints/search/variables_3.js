@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['g_5fcgame_0',['g_cGame',['../_main_8cpp.html#a2c5d3820f773c3d2fe533205788478db',1,'Main.cpp']]],
-  ['g_5fcwindow_1',['g_cWindow',['../_main_8cpp.html#a0408aaa1bfcd618211c7db3161bf3cce',1,'Main.cpp']]]
+  ['fprv_0',['fPRV',['../_game_defines_8h.html#aee0dc808cc6946286d66f0ca97148552',1,'GameDefines.h']]]
 ];

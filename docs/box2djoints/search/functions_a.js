@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['processframe_0',['ProcessFrame',['../class_c_game.html#aec83638cb2fdd94ef098132eb59617d8',1,'CGame']]],
-  ['processstate_1',['ProcessState',['../class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d',1,'CGame']]],
-  ['pw2rw_2',['PW2RW',['../_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d',1,'PW2RW(float x):&#160;GameDefines.h'],['../_game_defines_8h.html#aa20271ccdd26e2e14196a8d3a19e48e1',1,'PW2RW(const b2Vec2 &amp;v):&#160;GameDefines.h']]]
+  ['release_0',['Release',['../class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797',1,'CGame']]],
+  ['remappoints_1',['RemapPoints',['../_car_8cpp.html#abede07222f9ce9162eeddd409b917842',1,'Car.cpp']]],
+  ['renderframe_2',['RenderFrame',['../class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0',1,'CGame']]],
+  ['resetballs_3',['ResetBalls',['../class_c_newtons_cradle.html#a7defc695cf5a90c521f6cad9b4e4c918',1,'CNewtonsCradle']]],
+  ['rw2pw_4',['RW2PW',['../_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf',1,'RW2PW(float x):&#160;GameDefines.h'],['../_game_defines_8h.html#a26d3c658ea31ebc061926ef3e4e79b5c',1,'RW2PW(int x):&#160;GameDefines.h'],['../_game_defines_8h.html#a2bc81de2fd51033eefca1e363d23f6ea',1,'RW2PW(int x, int y):&#160;GameDefines.h'],['../_game_defines_8h.html#a3a0abe52d4421b76e7708eb333442a3f',1,'RW2PW(const Vector2 &amp;v):&#160;GameDefines.h']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['left_0',['LEFT',['../_nautilus_gear_8cpp.html#a08e9e19b88c4004c6d1daa0ed765c569',1,'NautilusGear.cpp']]]
+  ['g_5fcgame_0',['g_cGame',['../_main_8cpp.html#a2c5d3820f773c3d2fe533205788478db',1,'Main.cpp']]],
+  ['g_5fcwindow_1',['g_cWindow',['../_main_8cpp.html#a0408aaa1bfcd618211c7db3161bf3cce',1,'Main.cpp']]]
 ];
