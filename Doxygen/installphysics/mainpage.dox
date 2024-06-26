@@ -22,7 +22,7 @@ radio button on the `CMake` Install Options dialog box when it appears.
 Then clone or download the source code for Box2D from
 [https://github.com/erincatto/Box2D](https://github.com/erincatto/Box2D).
 Run `Build.bat`, which will open `Box2D.sln` in Visual Studio.
-Build it in both Debug and Release configurations for the `x64` platform.
+Build the project `box2d` in both Debug and Release configurations for the `x64` platform.
 Finally, create an environment variable `BOX2D_DIR` and set it to
 folder into which you cloned or downloaded Box2D. Mine is set to
 `C:\Users\ian\Documents\GitHub\Box2D\`.

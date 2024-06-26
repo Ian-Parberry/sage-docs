@@ -232,10 +232,15 @@ can be overridden in any particular level class if desired.
 Most importantly, `CLevel` has an `std::vector` of pointers to
 `CObject` for you to store your objects, and
 function `CLevel::Draw` to draw the objects in in
-(although of course this may be overridden in derived classes)
-and a function stub `CLevel::Action` to perform the "interesting action"
+(although of course this may be overridden in derived classes),
+a function stub `CLevel::Action` to perform the "interesting action"
 in response to the space bar
-(see \ref section2 "Section 2").
+(see \ref section2 "Section 2"),
+and a function stub `CLevel::Move` that will be used in \ref section5-3 "Section 5.3",
+\ref section5-4 "Section 5.4", and \ref section5-5 "Section 5.5" to implement
+things that are not supported in Box2D.
+`CLevel::Move` or a function derivde from it will be called from `CGame::ProcessFrame`
+once per animation frame.
 
 The most interesting portions of the code for
 each of the level classes is described in the following subsections:
@@ -470,6 +475,13 @@ Remember that our task here is not to compute how the teeth mesh, but merely to 
 \anchor fig17
 \image html Nautilus2-342-96.gif "Fig. 17: Animation of two nautilus gears." width=25%
 
+Since Box2D does not directly support nautilus gears,
+`CNautilusGear` will override `CLevel::Move` with a function `CNautilusGear::Move`
+that computes the orientation of the second gear from the orientation of the first gear.
+Recall that this function will be called once per animation frame from `CGame::ProcessFrame`.
+Up until now, the function call `m_pLevel->Move()` in `CGame::ProcessFrame` defaults to
+`CLevel::Move`, which does nothing.
+Before we write code for `CNautilusGear::Move` we will need to derive some mathematics about nautilus gears.
 Suppose we have a nautilus gear of maximum radius \f$a\f$ and
 minimum radius \f$b\f$, as shown in \ref fig18 "Fig. 18" (left).
 The radius of 
@@ -531,35 +543,147 @@ its orientation is now \f$\pi - \theta_1\f$. The code for `CNautilusGear::Move` 
       pBody->SetTransform(pBody->GetPosition(), b2_pi - theta1); //orient right gear
     } //Move
 
+The `CNautilusGear` constructor `CNautilusGear::CNautilusGear` calls `CNautilusGear::CreateGear`
+once for each gear to create it in the correct position and orientationas shown in
+\ref fig19 "Fig. 19", left. It then creates a revolute joint that connects the left gear to a
+null background, and enables its motor. This is similar to the `CGear` constructor
+`CGear::CGear` we saw in \ref section5-3 "Section 5.3" except that it does not connect the
+nautilus gears with a Box2D gear joint. If `CNautilusGear::Move` were not called from 
+`CGame::ProcessFrame` (for example, if you comment out the call to `m_pLevel->Move()`),
+then the left gear would rotate but the right gear would not.
 
 \anchor section5-4
 ## 5.4 Rack-and-Pinion
 
-
 The Rack-and-Pinion level is implemented in class `CRackAndPinion`, which is
 derived from `CLevel`. 
+Its constructor `CRackAndPinion::CRackAndPinion` calls `CRackAndPinion::CreateRack` to create
+the rack (the horizontal part of \ref fig22 "Fig. 22"),
+`CRackAndPinion::CreatePinion` to create the pinion,
+(the round gear in \ref fig22 "Fig. 22")
+and `CRackAndPinion::CreateBase` to create a null physics body for the background.
+It also creates a revolute joint for the pinion and stores
+a pointer to it in `CRackAndPinion::m_pRevoluteJoint`.
 
 \anchor fig22
 \image html rackandpinion.gif "Fig. 22: The rack-and-pinion." width=50%
 
+The horizontal motion of the rack is constrained by a <em>prismatic joint</em> that lets
+you set the direction of motion and the limits of travel. 
+First we create a prismatic joint definition
+
+    b2PrismaticJointDef pjd;
+
+A call to
+
+    pjd.Initialize(pBase, pRack, pRack->GetPosition(), b2Vec2(1.0f, 0.0f));
+
+specifies pointers to the base body `pBase` and the rack `pRack`, the rack's initial
+position `pRack->GetPosition()`, and the unit direction vector pointing the positive X direction.
+Note that here and elsewhere it is important to create Box2D bodies in their initial
+positions and orientations, in contrast to graphics objects that can be creates at the origin
+and translated/rotated to their initial places.
+We then specify an upper and lower translation limit and enable limits.
+
+    pjd.lowerTranslation = -m_fLimit;
+    pjd.upperTranslation = m_fLimit;
+    pjd.enableLimit = true;
+
+We can then create and save the prismatic joint.
+
+    m_pPrismaticJoint = (b2PrismaticJoint*)m_pPhysicsWorld->CreateJoint(&pjd);
+
+A gear joint is used
+in order for the rack to move in synchrony with the pinion.
+W saw gear joints being used to connect revolute joints
+in `\ref section5-2 "Section 5.2".
+Here a gear joint will be used to connect a revolute joint (for the pinion)
+with a prismatic joint (for the rack)
+using the pointers `CRackAndPinion::m_pRevoluteJoint` and `CRackAndPinion::m_pPrismaticJoint`
+created above.
+To do this we create a gear joint definition
+    
+    b2GearJointDef gd;
+
+set its ratio field to \f$\pi\f$ divided by half the width of the rack sprite
+
+    gd.ratio = b2_pi/w2;
+
+where we define
+    
+    const float w = m_pRenderer->GetWidth(eSprite::Rack);
+    const float w2 = RW2PW(w)/2.0f;
+
+and set its joint pointers
+
+    gd.joint1 = m_pRevoluteJoint;
+    gd.joint2 = m_pPrismaticJoint;
+
+and provide pointers to the respective physics bodies
+
+    gd.bodyA = pPinion;
+    gd.bodyB = pRack;
+
+We then go ahead and create the gear joint with a call to
+
+    m_pPhysicsWorld->CreateJoint(&gd);
+
+There is no need to save the joint pointer so we don't.
+
+Recall again that the
+pinion does not actually engage with and move the rack: the Box2D joints merely coordinate the
+position of the rack with the orientation of the pinion. The teeth are not present in the Box2D
+representation of the rack and pinion as shown in \ref fig23 "Fig. 23".
+It is up to us to create sprites with the
+teeth in the right places to create the illusion of a rack and pinion.
+
 \anchor fig23
 \image html shape-rack.png "Fig. 23: The Rack-and-Pinion shapes." width=40%
+
+`CRackAndPinion::Action` is called from the keyboard handler in response to the space bar,
+overriding the default `CLevel::Action`. It merely reverses the direction of motion of the
+motor on the revolute joint by negating its motor speed.
+
+    void CRackAndPinion::Action(){
+      m_pRevoluteJoint->SetMotorSpeed(-m_pRevoluteJoint->GetMotorSpeed());
+    } //Action
+
+Although the prismatic joint's limits will prevent the rack from sliding too far to
+the left or right, we will need to add code to reverse the motor when either limit is reached.
+`CRackAndPinion::Move` is the perfect place to do this.
+It compares the prismatic
+joint position from `m_pPrismaticJoint->GetJointTranslation()` and the sign of the motor speed
+with the corresponding limit and negates the motor speed when the limit is reached.
 
 \anchor section5-5
 ## 5.5 Car and Bridge
 
 
+The Car and Bridge level is implemented in class `CCarAndBridge`, which is
+derived from `CLevel`. 
+Most of what you see in the screenshot shown in \ref fig5 "Fig. 5"
+is baked into the background image shown in \ref fig24 "Fig. 24".
+The actual shapes in Box2D are shown in \ref fig25 "Fig. 25".
+
 \anchor fig24
 \image html carbg.png "Fig. 24: Background image for the Car and Bridge." width=50%
-
-The Car and Bridge level is implemented in class `CCarAndBridge`, which is
-derived from `CLevel`.
 
 \anchor fig25
 \image html shape-car.png "Fig. 25: The Car and Bridge shapes." width=40%
 
+Much of the code for `CCarAndBridge` is similar to the code that we have seen in previous levels,
+including the use of `CCarAndBridge::Move` to reverse the car wheel motors when it nears the edge of the window.
+However, the wheels are not connected to the rest of the car using revolute joints.
+Instead we use <em>wheel joints</em> that allow the wheels to both rotate and
+move up and down as shown in \ref fig26 "Fig. 26".
+
 \anchor fig26
 \image html car.png "Fig. 26: Degrees of freedom for the car and its wheels." width=25%
+
+This is done by creating an instance of `b2WheelJointDef`, setting and enabling its various motor-related
+fields, together with spring damping and stiffness values for the vertical motion.
+Finally, its `collideConnected` field is set to `false` so that Box2D will not respond to
+collisions between the wheels and the car body.
 
 \anchor section5-6
 ## 5.6 Newton's Cradle
