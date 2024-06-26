@@ -59,8 +59,8 @@ begin by
 hitting the Window key on your keyboard and typing "Environment".
 Click on `Edit the system environment variables`.
 The `Environment Variables` dialog box should appear. 
-Click on the `New` or `Edit` button and fill in the
-name and value fields.
+Click on the `New` or `Edit` button on the `User variables` field and fill in the
+name and value in the pop-up dialog box that then appears.
 
 __Important Note__: Visual Studio only reads the contents of environment
 variables on startup, so make your you quit all instances of Visual Studio
@@ -89,7 +89,7 @@ and set it to the name of the folder in which you installed DirectXTK 12.
 On my computer this is `C:\Users\ian\Documents\GitHub\DXTK12\`.
 Then create a Windows environment variable `DIRECTXTK12LIB_DIR`
 and set it to the name of the library folder for DirectXTK 12.
-On my computer this is `C:\Users\ian\Documents\GitHub\DXTK12\Bin\Desktop_2019_Win10\`.
+On my computer this is `C:\Users\ian\Documents\GitHub\DXTK12\Bin\Desktop_2022_Win10\`.
 Make sure that both paths ends in a backslash character.
 
 \anchor sage
@@ -123,15 +123,17 @@ If a build fails, run `testenv.bat` and try building in Visual Studio instead.
 
 We strongly recommend that you install Visual Leak Detector from
 [https://kinddragon.github.io/vld/](https://kinddragon.github.io/vld/).
-Click on `Releases` and run the latest installer.
-You will need to set an environment variable `VLD_DIR` that SAGE
+Click on `Download Installer` and run it.
+The installer offers to set environment variables for you, but for SAGE you should
+ignire that and instead (or in addition to)
+set an environment variable `VLD_DIR` that SAGE
 will use to find the header and library folders for Visual Leak Detector.
 The default is
-`C:\Program Files (x86)\Visual Leak Detector` (unless you opted to install
+`C:\Program Files (x86)\Visual Leak Detector\` (unless you opted to install
 it in a different location).
+
 Visual Leak Detector detects memory leaks but only works when
 your game is compiled in `Debug` mode.
-
 Alternately, if you don't want Visual Leak Detector to detect memory
 leaks, simply comment out the line `#include <vld.h>` from the file
 `Main.cpp` in any SAGE games.
