@@ -5,7 +5,23 @@
 \anchor section1
 # 1. Introduction
 
-The aim of the Cannon Game is to use a cannon to knock down a tower of crates. 
+The Cannon Game demonstrates how to make a simple minigame using Box2D
+building on concepts from 
+the <a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>
+and the
+<a href="../box2djoints/index.html">Box2D Joint Toy</a>.
+It consists of a cannon resting on a stone wall, a stack of crates,
+and a heads-up display consisting of a temperature gauge and a stopwatch,
+as shown in \ref fig1 "Fig. 1".
+The remainder of this page is divided into five sections.
+\ref section2 "Section 2" lists the controls
+and their corresponding actions,
+\ref section3 "Section 3" tells you how to build it,
+\ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
+important features,
+\ref section5 "Section 5" gives a breakdown of the code,
+and
+\ref section6 "Section 6" addresses the question "what next?".
 
 \anchor fig1
 \image html screenshot.png "Fig. 1: Screen shot." width=60%
@@ -88,18 +104,28 @@ to build both Release and Debug configurations.
 You must get all of the crates below a line approximately at the horizon to win.
 If you win, you'll see a text message telling you how many shots you used
 and how much time you took. There's a HUD at top left of the window
-with a guage that tells you the cannon's current temperature and the
+with a gauge that tells you the cannon's current temperature and the
 maximum temperature experienced so far. Firing the cannon increases the
 temperature and it cools over the next few seconds. 
 If the cannon overheats, then it explodes and
 you lose. You have 60 seconds to knock down the tower. There's a
-stopwatch to the right of the temperature guage so you can see how much
+stopwatch to the right of the temperature gauge so you can see how much
 time is left.
 
 \anchor section5
 # 5. Code Breakdown
 
 UNDER CONSTRUCTION
+
+
+\anchor fig2
+\image html shapes.png "Fig. 2: Shapes." width=60%
+
+\anchor fig3
+\image html ballpos1.png "Fig. 3: Initial position of cannonball." width=15%
+
+\anchor fig4
+\image html ballpos0.png "Fig. 4: Initial position of cannonball with rotation." width=50%
 
 \anchor section6
 # 6. What Next?
