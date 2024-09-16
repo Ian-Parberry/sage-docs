@@ -658,7 +658,6 @@ with the corresponding limit and negates the motor speed when the limit is reach
 \anchor section5-5
 ## 5.5 Car and Bridge
 
-
 The Car and Bridge level is implemented in class `CCarAndBridge`, which is
 derived from `CLevel`. 
 Most of what you see in the screenshot shown in \ref fig5 "Fig. 5"
@@ -690,24 +689,106 @@ collisions between the wheels and the car body.
 
 The Newton's Cradle level is implemented in class `CNewtonsCradle`, which is
 derived from `CLevel`. 
+Its constructor `CNewtonsCradle::CNewtonsCradle` calls `CNewtonsCradle::Create`
+to create the balls and their joints. \ref fig27 "Fig 27" shows that each ball has
+a circle shape (compare to \ref fig6 "Fig. 6"). `CNewtonsCradle::Create` calls
+`CNewtonsCradle::CreateBall` once for each ball in a `for`-loop, then calls
+`CNewtonsCradle::CreateCradle` to create the empty background. Finally
+`CNewtonsCradle::Create` creates the lines for the strings joining the
+balls to the cradle by calling `CLevel::CreateLine` once for each ball, then
+creates a <em>distance joint</em> by filling in an instance of
+`b2DistanceJointDef` with the positions of the ends of the strings and calling
+`m_pPhysicsWorld->CreateJoint` for each ball.
 
 \anchor fig27
 \image html shape-newton.png "Fig. 27: The Newton's Cradle shapes." width=40%
 
+
+`CNewtonsCradle::ResetBalls` resets the balls to their initial positions with
+zero velocity. It does this by deleting the balls, lines, and joints and
+re-creating them by calling `CNewtonsCradle::Create` used above in the constructor.
+`CNewtonsCradle::CreateBall` deserves a little examination.
+Almost all of the code there should be familiar except for the last two lines.
+When these are executed the local variable `pBody` points to an instance
+of `b2Body` representing the newly created ball. The call to
+
+    pBody->SetAngularDamping(12.0f);
+
+makes sure that the ball does not rotate about its connection point to its distance
+joint, which if you examine the code closely will be found at the top of the ball.
+Failure to set the angular damping to a high enough level will result in
+balls wobbling as shown in \ref fig28 "Fig. 28". Finally, the call to
+
+    pBody->SetLinearDamping(0.1f);
+
+mimics the effect of the balls slowing down due to air friction.
+
 \anchor fig28
 \image html newton3.png "Fig. 28: Ball wobble." width=15%
+
+The only interesting thing left is `CNewtonsCradle::Action`, which either
+stops the balls with a call to `CNewtonsCradle::ResetBalls` if they are moving
+or applies an impulse to the requisite number of them
+(see \ref section4-6 "Section 4.6" for a reminder)
+by calling `pBody->ApplyLinearImpulse` to apply a horizontal impulse through
+the center of each ball body.
+
 
 \anchor section5-7
 ## 5.7 Elephant Drop
 
 The Elephant Drop level is implemented in class `CPulley`, which is
 derived from `CLevel`. 
+As shown in \ref fig9 "Fig. 9" (left), the level starts with an empty cradle
+connected to a heavy safe via two pulley wheels and a rope. 
+Handily, Box2D includes a joint called `b2b2PulleyJoint` that connects a point
+on an instance of `b2Body` to another point on a second instance of `b2Body`.
+Here the first body will be the wooden cradle on the left side of 
+\ref fig9 "Fig. 9" (left), and the second body will be the safe on the
+right side of \ref fig9 "Fig. 9" (left).
+The pulley joint is created in the `CPulley` constructor by
+filling in an instance of `b2PulleyJointDef` and using
+
+    m_pJoint = (b2PulleyJoint*)m_pPhysicsWorld->CreateJoint;
+
+to save a pointer to the created joint in `CPulley::m_pJoint`.
+
+There will be three bodies with attached shapes (see \ref fig29 "Fig. 29"),
+large rectangles 
+for the elephant and the safe body respectively, and three narrow overlapping
+rectangles for the crate body.
+It is a little tedious to get the initial positions of everything lined up
+correctly, but you can read the rest of the code for yourself if you wish.
 
 \anchor fig29
-\image html elephant.png "Fig. 29: Direction of motion for Elephant Drop." width=40%
+\image html shape-elephant.png "Fig. 29: The Elephant Drop shapes." width=40%
+
+Unfortunately Box2D's pulley joint `b2PulleyJoint` does not have the concept of pulley
+wheels, just the positions of the ropes suspending the bodies
+attached to the joint. It is up to us to animate the pulley
+wheels in the correct directions as shown in \ref fig30 "Fig. 30".
+Fortunately `b2PulleyJoint` has a member function `GetCurrentLengthA`
+that returns the length of the left-hand portion of the rope. From
+this we can deduce how far each pulley wheel must rotate.
 
 \anchor fig30
-\image html shape-elephant.png "Fig. 30: The Elephant Drop shapes." width=40%
+\image html elephant.png "Fig. 30: Direction of motion for Elephant Drop." width=40%
+
+For example, if a call to the pulley joint's `GetCurrentLengthA`
+function reveals that the rope has moved distance \f$d\f$
+around the circumference of a pulley wheel of radius \f$r\f$ (see
+\ref fig31 "Fig. 31") and the angle subtended by that segment is \f$\theta\f$,
+then \f$\theta = 2 \pi d/c\f$, where \f$c= 2 \pi r\f$ is the circumference of the circle,
+and hence
+\f$\theta = d/r\f$.
+
+\anchor fig31
+\image html angle.png "Fig. 31: Angle from distance around the circumference." width=12%
+
+This calculation is carried out in `CPulley::Move`.
+The orientation of each pulley wheel is then set by calling their `b2Body`'s
+`SetTransform` function with \f$\theta\f$ as the orientation parameter
+and the the body's current position as the position parameter.
 
 \anchor section6
 # 6. What Next?
