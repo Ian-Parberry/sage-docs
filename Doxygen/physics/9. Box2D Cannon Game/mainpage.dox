@@ -101,31 +101,248 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
+\anchor fig2
+\image html win.png "Fig. 2: The win screen." width=60%
+
+\anchor fig3
+\image html lose.png "Fig. 3: The exploding cannon." width=60%
+
 You must get all of the crates below a line approximately at the horizon to win.
 If you win, you'll see a text message telling you how many shots you used
-and how much time you took. There's a HUD at top left of the window
+and how much time you took (see \ref fig2 "Fig. 2"). There's a HUD at top left of the window
 with a gauge that tells you the cannon's current temperature and the
-maximum temperature experienced so far. Firing the cannon increases the
+maximum temperature experienced so far  (see \ref fig4 "Fig. 4"). Firing the cannon increases the
 temperature and it cools over the next few seconds. 
-If the cannon overheats, then it explodes and
-you lose. You have 60 seconds to knock down the tower. There's a
+If the cannon overheats, then it will explode when next fired and
+you lose  (see \ref fig3 "Fig. 3"). 
+You have 60 seconds in which to knock down the tower. There's a
 stopwatch to the right of the temperature gauge so you can see how much
-time is left.
+time is remaining.
+
+\anchor fig4
+\image html tempgauge.png "Fig. 4: The temperature gauge." width=25%
+
+\anchor fig5
+\image html clock.gif "Fig. 5: The stopwatch." width=130
+
+
 
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION
+By now you should have enough experience with Box2D in 
+the <a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>
+and the
+<a href="../box2djoints/index.html">Box2D Joint Toy</a>
+to understand most of the code in the Box2D Cannon Game, the shapes for
+which are shown in \ref fig6 "Fig. 6". Two interesting things remain, however,
+implementation of the cannon, and the generation of collision sounds
+(recall that neither the <a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>
+nor the
+<a href="../box2djoints/index.html">Box2D Joint Toy</a>
+had any audio. Each of these will be addressed in a separate section below.
 
+\anchor fig6
+\image html shapes.png "Fig. 6: Box2D shapes for the Cannon Game." width=60%
 
-\anchor fig2
-\image html shapes.png "Fig. 2: Shapes." width=60%
+\anchor section5-1
+## 5.1 The Cannon
 
-\anchor fig3
-\image html ballpos1.png "Fig. 3: Initial position of cannonball." width=15%
+The cannon is implemented in `CCannon`. The three most important cannon tasks are
+creating it, firing it, and making it explode. Each of these is covered
+in a separate subsection below.
 
-\anchor fig4
-\image html ballpos0.png "Fig. 4: Initial position of cannonball with rotation." width=50%
+\anchor section5-1-1
+### 5.1.1 Creating the Cannon
+
+The objects, physics bodies, and
+joints that make up the cannon are created in the `CCannon` constructor
+`CCannon::CCannon`.
+The cannon consists of four objects, a triangular base, a polygonal barrel, and
+two wheels (see, for example,
+\ref fig1 "Fig. 1", \ref fig3 "Fig. 3", and \ref fig6 "Fig. 6"). 
+The barrel is attached to the top of the triangular base using a
+revolute joint. The wheels are attached to the bottom of the base using
+wheel joints.
+
+The constructor creates the cannon base by calling
+`CCannon::CreateBase`, which returns a pointer to the cannon base body in Box2D
+that the constructor then saves in `CCannon::m_pBase`. It then calls
+`CCannon::CreateBarrel`, which returns a pointer to the cannon barrel body in Box2D
+that the constructor then saves in `CCannon::m_pBarrel`.
+Next, it calls
+`CCannon::CreateWheel` twice, once for each wheel, saving the
+pointers to the Box2D bodies returned in `CCannon::m_pWheel1`
+and `CCannon::m_pWheel2`.
+
+Each of the functions `CCannon::CreateBase`, `CCannon::CreateBarrel`,
+and `CCannon::CreateWheel` take three parameters, the horizontal
+and vertical coordinates of the physics bodies in world space,
+and a collision index.
+The base and the barrel shapes are `b2PolygonShape`s,
+which we have no met before, and the wheel shapes are
+are of course `b2CircleShape`s which we have.
+For example, to create the triangle shape for the base shown in \ref fig6 "Fig. 6"
+we declare the following array of vertices, where `w2` and `h2`
+are, respectively, half the width and half the height of the triangle sprite:
+
+    b2Vec2 vertices[3];
+    vertices[0].Set(-w2, -h2);
+    vertices[1].Set(w2, -h2);
+    vertices[2].Set(0.0f, h2);
+
+and we create the `b2PolygonShape` as follows:
+
+    b2PolygonShape shape;
+    shape.Set(vertices, 3);
+
+The collision index parameter mentioned above is used to set the
+`fd.filter.groupIndex` field
+the `b2FixtureDef`
+in each of `CCannon::CreateBase`, `CCannon::CreateBarrel`,
+and `CCannon::CreateWheel`. You will notice that this is always `-42`
+in the constructor code. This ensures that all fixtures attached to
+Box2D bodies in this program that have this group index (in our
+case, only the cannon parts) cannot (because of the negative sign)
+collide with each other.
+We will revisit this in \ref section5-1-3 "Section 5.1.3".
+
+The constructor then creates a wheel joint for each wheel,
+saving pointers to them in `CCannon::m_pWheelJoint1` and `CCannon::m_pWheelJoint1`.
+This process should already be familiar to you
+from <a href="../box2djoints/index.html#section5-5">the car</a>
+in the Box2D Joint Toy.
+Next it creates a revolute joint between the cannon case and barrel.
+The process of creating a revolute joint should be familiar
+to you from the
+and the <a href="../box2djoints/index.html#section5-1">the windmill</a>
+in the Box2D Joint Toy.
+However, we want the barrel to be restricted to pointing 
+horizontally to the right or upwards at a maximum angle of \f$45^\circ\f$
+as shown in \ref fig7 "Fig. 7".
+This is achieved by setting the 
+hitherto unused `lowerAngle` field of
+the instance of `b2RevoluteJointDef` used to create the
+revolute joint to `-b2_pi/4.0f` and the `upperAngle` field to `0.0f`,
+not forgetting to also set `enableLimit` to `true` to activate them.
+
+\anchor fig7
+\image html elevation.png "Fig. 7: Minimum (left) and maximum (right) cannon elevation." width=25%
+
+Lastly, the `CCannon` constructor creates the objects for the cannon parts
+with the appropriate sprites and pointers to Box2D bodies.
+
+\anchor section5-1-2
+### 5.1.2 Firing the Cannon
+
+To fire a cannonball means creating one a short distance away from the
+muzzle of the cannon and giving it an impulse in the direction that the
+muzzle is facing. For example, if the cannon is pointing horizontally
+to the right, the cannon barrel has width \f$w_0\f$,
+the cannonball has width \f$w_1\f$, and we wish it to be created
+a small non-zero distance \f$\delta\f$ in front of the cannon muzzle
+as shown in \ref fig8 "Fig. 8",
+then the center of the cannonball must be created at horizontal distance
+\f$(w_0 + w_1)/2 + \delta\f$ from the center of the cannon barrel
+and given a horizontal impulse.
+
+\anchor fig8
+\image html ballpos1.png "Fig. 8: Initial position of cannonball." width=15%
+
+If the cannon barrel is rotated, then the vector from the center of
+the cannon barrel to the center of the cannonball must be rotated by the same
+amount as shown in \ref fig9 "Fig. 9". The impulse given to the
+cannonball must be in the direction of this vector.
+
+\anchor fig9
+\image html ballpos0.png "Fig. 9: Initial position of cannonball with rotation." width=50%
+
+When the player indicates that they want to fire the cannon by
+depressing the space bar (see \ref section2 "Section 2"),
+`CGame::KeyboardHandler` calls `CCannon::Fire`,
+which uses an instance of `b2BodyDef` to create a body for the cannonball object
+as follows: 
+
+    b2BodyDef bd;
+    bd.type = b2_dynamicBody;
+    b2Vec2 v = m_pBarrel->GetPosition() +
+      b2Mul(b2Rot(m_pBarrel->GetAngle()), b2Vec2(RW2PW(w + 4), 0.0f)); 
+    bd.position.Set(v.x, v.y);
+
+Here, `b2Vec2(RW2PW(w + 4), 0.0f)` is the horizontal vector
+from the center of the barrel to the center of the cannonball,
+where `w` is half the width of the barrel plus half the width of
+the cannonball and \f$\delta\f$ is \f$4\f$ in \ref fig8 "Fig.8". Then,
+
+  b2Rot(m_pBarrel->GetAngle()), b2Vec2(RW2PW(w + 4), 0.0f)
+
+describes the rotation of this vector by the barrel's
+angle which is obtained by calling `m_pBarrel->GetAngle())`.
+The call to `b2Mul` applies that rotation to that vector, which is added
+to the cannon barrel's position obtained by calling `m_pBarrel->GetPosition()`
+to give the initial position of the cannonball in Physics World which
+is stored temporarily in local variable `v` and used to set the
+cannonball body's initial position by calling `bd.position.Set(v.x, v.y)`.
+
+The impulse to the cannonball from the launch is applied to
+the cannonball body using `b2Body::ApplyLinearImpulse`,
+and an impulse in the opposite direction is applied to the
+cannon barrel to make the cannon recoil.
+
+\anchor section5-1-3
+### 5.1.3 Exploding the Cannon
+
+As mentioned in \ref section4 "Section 4",
+we need to make the cannon explode in interesting ways. This is achieved
+by breaking the joints between the bodies that make up the cannon
+and giving them random impulses so that they fly across the screen as
+shown in \ref fig3 "Fig. 3". This is implemented in `CCannon::Explode`,
+which first makes the cannon bodies
+able to collide with each other by calling
+`CCannon::MakeCollide` for each body, which sets the group
+index for every fixture attached to the body (in principle there may be more that one)
+to zero. Supper `b` points to an instance of `b2Body`. Then,
+
+    b2Filter f = b->GetFixtureList()->GetFilterData();
+
+gets `b`'s collision filter data into `f`,
+
+    f.groupIndex = 0;
+
+sets its group index to `0` so that it can collide with all other fixtures
+with group index `0` (i.e. those attached to cannon bodies), and
+
+    b->GetFixtureList()->SetFilterData(f);
+
+loads the updated filter data from `f` back into the body pointed to by `b`.
+The joints are destroyed by calling
+
+    m_pPhysicsWorld->DestroyJoint(m_pWheelJoint1);
+    m_pPhysicsWorld->DestroyJoint(m_pWheelJoint2);
+    m_pPhysicsWorld->DestroyJoint(m_pBarrelJoint);
+
+and impulses are applied to the cannon bodies using `b2Body::ApplyLinearImpulse`
+much in the same way as impulses were applied to the cannonball and cannon barrel above.
+
+\anchor section5-2
+## 5.2 Collision Sounds
+
+The sounds made by objects colliding in this game are totally
+kluged. We will see a better way of doing this in the
+<a href="../cannonstars/index.html">Box2D Cannon Game With Stars</a>.
+In the current game `CObject::MakeCollisionSound` is called once per
+object per animation frame. 
+This function gets the object's current velocity by calling
+its body's `GetLinearVelocityFromWorldPoint(b2Vec2(0, 0))` function
+and comparing it to its velocity in the previous frame which was
+stored in `CObject::m_b2vOldV`. If the difference between these vectors
+has "large enough" magnitude, then a collision sound is played.
+Currently the cannon barrel makes a clang
+when colliding with anything and everything else makes a
+thump when colliding with anything. Finer control over which objects
+make what sounds when colliding with which objects is possible
+here but we will put it off until the <a href="../cannonstars/index.html">Box2D Cannon Game With Stars</a>.
+
 
 \anchor section6
 # 6. What Next?
