@@ -77,12 +77,12 @@ and <a href="https://github.com/erincatto/Box2D">Box2D</a>.
 Make sure that you have followed the
 <a href="../install/index.html">SAGE Installation Instructions</a>
 and the <a href="../installphysics/index.html">Box2D Installation Instructions</a>.
-Navigate to the folder <span style="background-color:#D8E4D8;">`9. Box2D Cannon Game`</span> in your
+Navigate to the folder <span style="background-color:#D8E4D8;">`10. Box2D Cannon Game with Stars`</span> in your
 copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository.
 Run <span style="background-color:#D8E4D8;">`checkenv.bat`</span>
 to verify that you have set the environment
 variables correctly.
-Open <span style="background-color:#D8E4D8;">`Box2D Cannon Game.sln`</span>
+Open <span style="background-color:#D8E4D8;">`Box2D Cannon Game with Stars.sln`</span>
  with Visual Studio and build the Release configuration.
 Alternatively, run <span style="background-color:#D8E4D8;">`Build.bat`</span>
 to build both Release and Debug configurations. 
@@ -101,12 +101,125 @@ almost identical to that of the
 [Box2D Cannon Game](../cannon/index.html) except that the kluged code
 for playing collision sounds has been removed and code for a Box2D
 <em>contact listener</em> has been added.
+In order to use a Box2D contact listener you must derive a class from
+`b2ContactListener` and override its `PreSolve` function
+
+    void PreSolve(b2Contact*, const b2Manifold*);
+
+which will be called by Box2D once per physics iteration
+after collisions (called _contacts_ in Box2D) have been calculated.
+Our contact listener is called `CMyListener`.
+The first parameter of `CMyListener::PreSolve` is a pointer
+to a _contact_, which contains information about the fixtures involved in
+the collision.
+The second parameter of `CMyListener::PreSolve` is a pointer
+to a _contact manifold_, which contains information about the collision itself.
+Our parameters are named as follows:
+
+    void CMyListener::PreSolve(b2Contact* pContact, const b2Manifold* pManifold);
+
+Getting the information that we need to play sounds
+and place stars (mainly the coordinates of the point or points of contact,
+the types of the objects colliding, and the speed of collision)
+is a little obscure. Keep in mind that in the code described below,
+that we will follow Box2D's convention of referring to the fixtures, bodies,
+and objects colliding as fixture/body/object A, and fixture/body/object B.
+
+Note that in Box2D there can be either one point of contact
+(for example, a circle colliding with a polygon
+as in \ref fig2 "Fig. 2", left)
+or two points of contact
+(for example, a polygon edge colliding with a polygon edge
+as in \ref fig2 "Fig. 2", right).
 
 \anchor fig2
-\image html manifoldpt.png "Fig. 2: Stars at collision points." width=20%
+\image html 1or2pts.png "Fig. 2: There can be one (left) or two (right) contact points." width=30%
 
-\anchor fig3
-\image html bounce.png "Fig. 3: Collisions recorded per frame." width=60%
+The first thing you need to do is convert the `b2Manifold` to an instance of
+`b2WorldManifold`, which has the coordinates of the contacts in world space.
+
+    b2WorldManifold wm;
+    pContact->GetWorldManifold(&wm);
+
+Next, you need to get the _point_state_ of the contact point or points,
+a member of an enumerated type `b2PointState` that can be one of four
+values: `b2_nullState` (point not in use). 
+`b2_addState` (collision point is new)
+`b2_persistState`  (collision point was previously reported)
+`b2_removeState` (previously reported collision point has been removed).
+We declare two local variables to hold these point states.
+There are two variables because we will need one for the
+point states before the collision and one for the point state
+after it. We will call these `state1` and `state2`, respectively.
+Both local variables need to be an array of size two, with
+one entry for each possible contact point.
+We get these values by calling `b2GetPointStates` as follows.
+
+    b2PointState state1[2], state2[2];
+    b2GetPointStates(state1, state2, pManifold, pContact->GetManifold());
+
+Note that the point states in `state1` are either `b2_persistState`,
+`b2_removeState`, or `b2_nullState`; whereas the point states in `state2`
+are either `b2_persistState`, `b2_addState`, or `b2_nullState`.
+When we see a point state of `b2_addState` in `state2`, we are ready
+to make a sound and create a star particle.
+The contact point in Physics World Space is `wm.points[0]`.
+That's the point at which we will play the sound and create
+the star in Render World space. 
+We can get pointers to the colliding bodies by calling
+
+    m_pBodyA = pContact->GetFixtureA()->GetBody(); 
+    m_pBodyB = pContact->GetFixtureB()->GetBody(); 
+
+The velocity of the first body is obtained by calling
+
+    m_pBodyA->GetLinearVelocityFromWorldPoint(p);
+
+where `p` is an arbitrary point (and similarly for the second body).
+The speed of collision, which is used to set the sound volume
+for the collision sounds, is then the magnitude of the difference
+between these vectors multiplied by a scale factor.
+
+We also need to get the sprite type `eSprite` of each colliding
+body so that we can change the sound emitted and the color of the
+star depending on what type of objects are colliding.
+This seems impossible at first since this code is being executed
+by Box2D, which is a precompiled library that has no idea about
+your code for types and classes.
+Fortunately, Box2D has a provision for this.
+The Box2D body class `m_userData` has a field `m_userData`
+of type `b2BodyUserData`, which has a single field `pointer`
+of type `uintptr_t`, which is an unsigned 64-bit integer.
+We can use this to store a pointer to a newly created object
+in the Box2D body as follows. Suppose `t` is of type `eSprite`
+and `p` is a pointer to its `b2Body`. To create the
+object, call
+ 
+    CObject* pObj = new CObject(t, p);
+
+The user data field in the body pointed to by `p` is set to `pObj` as follows:
+
+    p->GetUserData().pointer = (uintptr_t)pObj;
+
+Returning to the contact listener code,
+we get a pointer to the object of body A by calling `b2Body::GetUserData` and
+type-casting the pointer field back to a pointer to `CObject`.
+
+  CObject* objA = (CObject*)m_pBodyA->GetUserData().pointer;
+
+I hope I don't have to explain to you how dangerous this is.
+After all, a bug in your code could set the user data field to just about
+any garbage, resulting in a bad pointer when it is cast to `CObject*`.
+All I can see is _be_careful_ when doing this.
+We can get the sprite type of body A by calling 
+`CObject::GetSpriteType`.
+
+We now have all the information that we need to play collision
+sounds and create stars at the contact points, keeping in mind
+that the pair of colliding objects can be in any order.
+To make a particular sound when a ball collides with anything,
+you must allow for the possibility that object A is the ball (and object B is not),
+and object B is the ball (and object A is not).
 
 \anchor section6
 # 6. What Next?

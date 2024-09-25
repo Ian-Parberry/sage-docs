@@ -5,12 +5,28 @@
 \anchor section1
 # 1. Introduction
 
+\anchor fig1
+\image html card.png "Fig. 1: Example of a card used in the Stroop Test." width=30%
+
+The _Stroop Test_ 
+is used as a measure of attention in standardized psychological tests.
+The participant is presented
+with a series of words randomly chosen from "red", "green", and "blue".
+These words are randomly colored either red, green, or blue, which
+means that the colors don't necessarily match the words.
+The participant has to say the word, _not_ the color it is drawn in.
+For example, the word "blue" in \ref fig1 "Fig. 1"
+is colored green, but the participant must say "blue".
+This is harder than it sounds.
+Studies have shown that participants take longer to complete the test than they
+would to recognize just words and colors alone. 
 The Stroop Test Game makes the classical Stroop Test into a
 game with completely gratuitous and totally unnecessary 
-sound, physics and visual effects. 
+audiovisual effects including sound, particle effects, and physics (see
+\ref fig2 "Fig. 2").
 
-\anchor fig1
-\image html screenshot.png "Fig. 1: Screen shot." width=60%
+\anchor fig2
+\image html bang.png "Fig. 2: Screen shot." width=60%
 
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the controls
@@ -87,18 +103,72 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-The player is presented with a sequence of words colored either red, green, or blue
-and is required to hit one of three keys depending on the color of the current word.
-The catch is that the words are the English words "red", "green", and "blue",
-which may or may not actually match their color.
-If the player hits the key corresponding to the word's actual color
-(the left arrow for red words, the up arrow
-for green words, and the right arrow for blue words),
-then it explodes into individual letters that in turn explode
-individually into little copies of themselves which shrink down to nothing and vanish.
-Any missed words descend to the bottom where they bounce around and eventually explode
-in their own time. Explosions generate clouds of smoke and collisions generate bubbles
-that blow about in the wind created by explosions and passing words.
+\anchor fig3
+\image html word.png "Fig. 3: A colored color word dropping from the top of the window." width=60%
+
+After a few explanatory pages have been displayed
+the main part of the game begins and a series of colored words
+drops from the top of the window, passing through horizontal regions marked
+_excellent_, _good_, and _fair_ at the left of the window. The player
+must hit a key (see \ref section2 "Section 2") corresponding to the word
+(not its color) before the word falls to the bottom of the window and goes
+out of play, at
+which time it turns black and spawns a cloud of bubbles.
+Only one word will be in play at a time and
+that word will be the only one that is red, green, or blue (see \ref fig3 "Fig. 3").
+If the player manages to hit the correct key before the word
+goes out of play, then the word will explode, generating a smoke cloud
+and a spray of letters in all directions.
+The bubbles, which are totally gratuitous except
+for serving as a distraction to the player, drift generally upwards and
+are blown about by passing words and by explosions.
+
+At the bottom of the window is a score bar that keeps track
+of, from left to right,
+the number of words dropped,
+the number exploded in the _excellent_ region,
+the number exploded in the _good_ region,
+the number exploded in the _fair_ region,
+the number that the player got wrong (hitting the wrong key).
+the number that the player missed (not hitting a key before the word goes out of play),
+and a somewhat dubious score (which can be negative) computed from these statistics. 
+As you might expect, you get more points for correctly exploding a word
+in the _excellent_ region than you do for exploding a word in the
+_good_ region, which in turn gives you more points than you
+do for exploding a word in the _fair_ region. This means that you
+must be both fast and accurate to get a high score.
+Out-of-play words at the bottom of the screen will eventually explode but
+do not contribute to the score. These unexpected explosions are yet another
+distraction to the player, as is the fact that the image of John Ridley Stroop
+(the inventor of the Stroop test)
+at the right of the window moves its eyes to follow the current word in play.
+
+The bubbles mentioned in the previous paragraph are
+blown about by a _vector field_.
+We place evenly spaced grid points throughout the play area,
+and at each point we store a floating point _pressure_ and a
+vector (hence the name _vector field_). Pressure is increased in front of a falling word and reduced behind it.
+For example \ref fig4 "Fig. 4" shows in various shades of brown, with
+darker shades indicating higher pressure.
+
+\anchor fig4
+\image html pressure.png "Fig. 4: Air pressure (darker means higher pressure)." width=60%
+
+The vectors point from grid points with higher pressure
+towards a nearby area with lower pressure, as shown in \ref fig5 "Fig. 5".
+The magnitude of each vector is proportional to the pressure difference.
+
+\anchor fig5
+\image html arrows.png "Fig. 5: Arrows from high pressure to low pressure." width=60%
+
+The grid points are also shown with the vectors in  \ref fig6 "Fig. 6".
+
+\anchor fig6
+\image html dots.png "Fig. 6: Vector field points." width=60%
+
+These effects are not intended for use in the game - they are just there to show programmers
+what is going on behind the scenes. They can be toggled on an off using
+the function keys listed in \ref section2 "Section 2".
 
 \anchor section5
 # 5. Code Breakdown

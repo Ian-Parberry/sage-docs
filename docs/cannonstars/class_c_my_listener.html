@@ -246,19 +246,19 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bEasterEgg</
         <tr>
           <td class="memname">void CMyListener::PreSolve </td>
           <td>(</td>
-          <td class="paramtype">b2Contact *</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+          <td class="paramtype">b2Contact *</td>          <td class="paramname"><span class="paramname"><em>pContact</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const b2Manifold *</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+          <td class="paramtype">const b2Manifold *</td>          <td class="paramname"><span class="paramname"><em>pManifold</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>New Presolve function that renders a colored star at each contact point and plays the appropriate sound, depending on what type of objects are contacting. Box2D will run this before performing relaxation. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>Pointer to the contact. </td></tr>
-    <tr><td class="paramname">m</td><td>Pointer to the old contact manifold as it was before this contact. </td></tr>
+    <tr><td class="paramname">pContact</td><td>Pointer to the contact. </td></tr>
+    <tr><td class="paramname">pManifold</td><td>Pointer to the old contact manifold as it was before this contact. </td></tr>
   </table>
   </dd>
 </dl>
