@@ -173,7 +173,93 @@ the function keys listed in \ref section2 "Section 2".
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION
+This section is divided into four subsections, one for each of the
+most important physics-oriented parts of the code.
+\ref section5-1 "Section 5.1" describes the _vector field_ used to create the wind that blows the bubbles around,
+\ref section5-2 "Section 5.2" describes the _bubble engine_ which manages the bubbles,
+\ref section5-3 "Section 5.3" describes the John Stroop caricature, and
+\ref section5-4 "Section 5.4" describes how the colored words are created, maintained, and destroyed.
+
+\anchor section5-1
+## 5.1 The Vector Field
+
+The vector field shown in \ref fig5 "Fig. 5" is implemented in `CVectorField`. The field points,
+called _vertices_,
+shown in \ref fig6 "Fig. 6" are stored there in a 2D array
+of instances `CVertex`. A single instance of `CVectorField` is created in
+`CGame::Initialize` and a pointer to that instance is stored in `CCommon::m_pVectorField`
+for common use. `CVertex` maintains a vector `CVertex::m_vVector` for the wind direction at a vertex
+and a floating point `CVertex::m_fPressure` for the air pressure at a vertex.
+
+`CVectorField::Update` is called once per letter from `CObjectManager::Update`,
+with parameters describing the letter's position and velocity in Physics World.
+`CObjectManager::Update` is called once per animation frame from `CGame::ProcessFrame`.
+`CVectorField::Update` finds the vertex closest to the letter using 
+`CVectorField::GetClosestVertex`. It then updates the pressure at that vertex
+by calling the private version of `CVectorField::Update`.
+Air pressures are also drastically changed at vertices close to an
+explosion when `CVectorField::Detonate`, which is called from
+`CObjectManager::AnimateJointExplosion` when a word explodes due to user input
+or `CObjectManager::ExplodeOldWords` expiration, and 
+from `ExplodeOldLetters` when expired letters themselves explode.
+Vectors and pressures are smoothed out by calling `CVectorField::Step`
+once per frame from `CObjectManager::Update`.
+
+\anchor section5-2
+## 5.2 The Bubble Engine
+
+The bubbles emitted when the words collide with the bottom edge (for example, see \ref fig2 "Fig. 2")
+are managed by a _bubble engine_.
+The bubble engine is implemented in `CBubbleEngine`, which is a specialized particle engine
+derived from
+<a href="../sage/index.html#sec3-8">`Sage::Sage::CParticleEngine2D`</a>.
+A single instance of `CBubbleEngine` is created in
+`CGame::Initialize` and a pointer to that instance is stored in `CCommon::m_pBubbleEngine` for common use.
+Its constructor `CBubbleEngine::CBubbleEngine` takes a pointer to an instance of `CVectorField`
+which is stores in `CBubbleEngine::m_pVectorField`.
+`CBubbleEngine` has a function `CBubbleEngine::Step`
+that is called once per animation from from `CGame::ProcessFrame`.
+`CBubbleEngine::Step` iterates through a list of bubbles and adds to the velocity
+of each bubble a constant times the vector stored in the closest grid
+point in the vector field pointed to by `CBubbleEngine::m_pVectorField`
+(see  \ref section5-1 "Section 5.1").
+
+\anchor section5-3
+## 5.3 The John Stroop Caricature
+
+The caricature of John Stroop with swivelling eyeballs is implemented in `CStroop`.
+The shape outlining his head is a simple list of `b2EdgeShape` created in the constructor `CStroop::CStroop`.
+It would be tempting to use `b2PolygonShape` instead, but unfortunately Box2D
+only allows a small number of vertices, and additionally the polygon must be convex,
+which as \ref fig7 "Fig. 7" shows, John Stroop's head is definitely not.
+`CStroop::CStroop` has a local array `v2Stroop` with `NUMPOINTS = 46` points
+that were read from the sprite image using an image editor.
+
+\anchor fig7
+\image html shapes.png "Fig. 7: Shapes in Physics World overlaying the sprites." width=60%
+
+\anchor section5-4
+## 5.4 The Words
+
+Each letter of the colored words is implemented as an instance of `CObject`.
+These are managed by an instance of `CObjectManager`.
+`CObjectManager::CreateWorldEdges` creates
+the Physics World shapes for the world edges at the left and right
+sides of the window and at the top of the score bar as shown in \ref fig7 "Fig. 7".
+Compare this to \ref fig3 "Fig. 3" for example.
+The shapes for each word are created in `CObjectManager::CreateWord`.
+As you can see in in \ref fig7 "Fig. 7", each letter is a `b2PolygonShape` set using
+`b2PolygonShape::SetAsBox`. The letters are connected in sequence using `b2WeldJoint`s.
+`CObjectManager::CreateWord` is called from `CObjectManager::CreateRandomWord`,
+which is called periodically from `CGame::ProcessState` when the game state `CCommon::m_eGameState`
+is `eGameState::Playing`.
+`CGame::ProcessState` is called from `CGame::ProcessFrame`, which is
+automatically called once per animation frame.
+Word explosion is handled by `CObjectManager::ExplodeOldWords`,
+which destroys the joints between the letters and 
+applies an impulse to each letter (we have already seen something similar in the
+<a href="../cannon/index.html#section5-1-3">Cannon Game</a> when the cannon explodes).
+
 
 \anchor section6
 # 6. What Next?
