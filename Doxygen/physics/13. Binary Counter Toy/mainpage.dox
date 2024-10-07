@@ -9,7 +9,7 @@ This toy uses Box2D to implement a 5-bit gravity-driven ripple-carry counter tha
 counts from zero to \f$2^5 - 1 = 31\f$. 
 
 \anchor fig1
-\image html screenshot.png "Fig. 1: Screen shot." width=60%
+\image html screenshot.png "Fig. 1: Screen shot in the initial configuration (zero)." width=60%
 
 There is an LED readout for the number of balls released and
 an array of nixie tubes showing that number in binary.
@@ -47,7 +47,7 @@ and
 <td>Reset</td>
 <tr>
 <td><center>Space</center></td>
-<td>Increment the counter</td>
+<td>Release the next ball to increment the counter</td>
 <tr>
 <td><center>PrtScr (hold down)</center></td>
 <td>Save screenshot to a PNG file</td>
@@ -78,7 +78,6 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-UNDER CONSTRUCTION
 
 \anchor fig2
 \image html zero-one.png "Fig. 2: Single bit counter showing a 0 (left) and a 1 (right)." width=40%
@@ -87,20 +86,96 @@ The key to this toy is the single-bit counter shown in \ref fig2 "Fig. 2".
 Bits that are 1 are represented by soccer balls. Bits that are
 zero are represented by the lack of a soccer ball. For example,
 the image on the
-left of \ref fig2 "Fig. 2" represents a 0, and the image on the right
-of \ref fig2 "Fig. 2" represents a 1.
+left of \ref fig3 "Fig. 2" represents a 0, and the image on the right
+of \ref fig3 "Fig. 2" represents a 1.
 
 \anchor fig3
-\image html frames.png "Fig. 3: " width=60%
+\image html labels.png "Fig. 3: Labelled screen shot." width=60%
+
+\ref fig3 "Fig. 3" shows the parts of the binary counter toy. 
+There are five bits, which means that the counter can count from zero to \f$2^5 - 1 = 31\f$.
+Each bit is represented by a copy of the device from \ref fig2 "Fig. 2" (left).
+arranged from right to left, top to bottom. That means that the least
+significant bit (the one representing \f$2^0=1\f$) is at top right (\ref fig3 "Fig. 3"(a))
+and the most significant bit (representing \f$2^4 = 16\f$)
+is at bottom left (\ref fig3 "Fig. 3"(b)). 
+The current value of the counter can be read
+off from right to left using the soccer balls in binary, 
+from left to right in the binary counter display (\ref fig3 "Fig. 3"(c)),
+and in decimal in the binary counter display (see \ref fig3 "Fig. 3"(d)).
+Any attempt to count to \f$32\f$ will result in the overflow light
+(see \ref fig3 "Fig. 3"(e)) flashing red.
+
+\anchor fig4
+\image html count512.gif "Fig. 4: Rest states while counting."
+
+\ref fig4 "Fig. 4" shows an animation of the rest states, that is,
+the screen shown when the balls have come to rest and the game is
+waiting for the user to release the next ball
+(see \ref section2 "Section 2" for keyboard controls).
+Pay attention to the soccer balls,
+the binary counter, and the decimal counter (refer back to \ref fig3 "Fig. 3" is necessary).
+Let's look a little closer at what happens to a single bit when incrementing from 0 to 1,
+then incrementing from 1 to 0 resulting in a carry bit. This is shown in
+\ref fig5 "Fig. 5".
+
+\anchor fig5
+\image html frames.png "Fig. 5: Actions when incrementing a single bit twice." width=90%
+
+\ref fig5 "Fig 5"(a) shows a single zero bit.
+When a ball is released (either a carry from the previous bit or, if it's the least significant
+bit, then from the top of window when the user hits the increment key 
+as described in \ref section2 "Section 2"), it
+falls onto the top right platform and rolls right as shown in \ref fig5 "Fig 5"(b)
+and gets trapped in the pit shown in \ref fig5 "Fig 5"(c).
+The bit has now been incremented from 0 to 1.
+Now we show what happens when we increment from 1 to 0. The next ball
+again enters from top right, but this time it rolls over the ball in the pit
+and down the slope on the left of \ref fig5 "Fig 5"(d).
+It hits the lower platform in \ref fig5 "Fig 5"(e) and rolls right, having
+been deflected by the slope.
+This ball hits the vertical leg holding up a swing arm
+at the bottom of the pit containing the previous ball and exits the
+toy to the right of \ref fig5 "Fig 5"(f), ending up with a collection of balls at
+the bottom of the window.
+The previous ball is released in \ref fig5 "Fig 5"(f) and rolls to the left in
+\ref fig5 "Fig 5"(g) on the lower platform, which is in fact the upper platform of the next bit adder.
+This is the carry bit. Meanwhile, when released of the weight of the carry ball,
+the swing arm returns to its initial position in \ref fig5 "Fig 5"(h).
+
 
 \anchor section5
 # 5. Code Breakdown
 
-\anchor fig4
-\image html bitadd.png "Fig. 4: " width=12%
+\anchor section5-1
+## 5.1 The Theory
 
-\anchor fig5
-\image html add.png "Fig. 5: " width=35%
+Let \f$x\f$ and \f$y\f$ be single bits. When \f$x\f$ and \f$y\f$ are added together,
+the result is the exclusive-or \f$z = x \oplus y\f$ and the carry bit is the conjunction
+\f$x \wedge y\f$. This gives us the single-bit adder shown in \ref fig6 "Fig. 6".
+
+\anchor fig6
+\image html bitadd.png "Fig. 7: Single bit adder." width=9%
+
+Now suppose we wish to increment the binary number \f$x_4x_3x_2x_1x_0\f$ to
+get the result \f$z_4z_3z_2z_1z_0\f$ and an overflow bit.
+We simply cascade five single bit adders
+with the carry from one going to the input
+of the next as shown in \ref fig8 "Fig. 8".
+
+\anchor fig8
+\image html add.png "Fig. 8: Ripple-carry increment." width=30%
+
+This should be familiar to you if you have taken an elementary hardware or computer organization class.
+
+\anchor section5-2
+## 5.2 The Shapes
+
+\anchor fig9
+\image html bitshape1.png "Fig. 9: Shapes for single bit adder at 0." 
+
+\anchor fig10
+\image html bitshape2.png "Fig. 10: Shapes for single bit adder at 1." 
 
 \anchor section6
 # 6. What Next?
