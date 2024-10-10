@@ -4,24 +4,22 @@
 \anchor section1
 # 1. Introduction
 
+\anchor fig1
+\image html all.gif "Fig. 1: Screen shot of bodies made up from springs and sticks."
+
 The Ball and Spring Toy applies Verlet integration and Gauss-Seidel 
 Relaxation to bodies made up of balls connected by springs
 and sticks. The bodies fall under gravity and you can apply
 a random impulse to them to see how they react
 The types of bodies available are chains
 of length 2, 3, and 4; wheels of size 4, 5, and 6;
-and a ragdoll robot. For each body type except the ragdoll
+and a ragdoll robot (see \ref fig1 "Fig. 1"). 
+For each body type except the ragdoll
 robot you are given two bodies, one with springs and one
-with sticks. \ref fig1 "Fig. 1" shows a pair of wheels
-of size 5 (that is, they have 5 balls on their circumferences).
-The one on the left is made with springs, which is shown deformed
-after the application of an impulse. The one on the right is
-made up of sticks and does not deform under impulse. The ragdoll robot
+with sticks.
+The ragdoll robot
 has some primitive AI that attempts to make it stand up and move to
 the center of the window.
-
-\anchor fig1
-\image html screenshot.png "Fig. 1: Screen shot." width=60%
 
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the controls
@@ -62,7 +60,6 @@ and
 </table>
 </center>
 
-
 \anchor section3
 # 3. Building the Game
 
@@ -84,12 +81,88 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-UNDER CONSTRUCTION
+As described in \ref section2 "Section 2", use the keyboard to select various bodies
+and watch how they respond to random impulses. Note that the bodies made from
+springs will deform when they hit the edges of the window but the bodies made from
+wood will not (see \ref fig2 "Fig. 2" for an example). 
+If you apply an impulse to the ragdoll robot and let it lie on
+the bottom of the window for a second or two as shown in \ref fig3 "Fig. 3",
+then it will attempt to self-right and move to the center
+of the window by applying impulses to parts of its body.
+
+\anchor fig2
+\image html deform.png "Fig. 2: Deformation of bodies with springs." width=50%
+
+\anchor fig3
+\image html robot.png "Fig. 3: The robot at rest." width=50%
 
 \anchor section5
 # 5. Code Breakdown
 
 UNDER CONSTRUCTION
+
+\anchor section5-1
+## 5.1 Verlet Integration
+
+\anchor fig4
+\image html verlet.png "Fig. 4: Verlet integration." width=55%
+
+\anchor section5-2
+## 5.2 Jacobi-Gauss-Seidel Integration
+
+\anchor fig5
+\image html stick0.png "Fig. 5: A stick represented by two points."  width=25%
+
+\anchor fig6
+\image html stick1.png "Fig. 6: A deformed stick."  width=25%
+
+\anchor fig7
+\image html 2stick0.png "Fig. 7: Two joined sticks with three points."  width=25%
+
+\anchor fig8
+\image html 2stick1.png "Fig. 8: Two deformed joined sticks."  width=25%
+
+\anchor fig9
+\image html 2stick2.png "Fig. 9: Attempt to repair deformed joined sticks."  width=35%
+
+\anchor section5-3
+## 5.3 Code Organization
+
+\anchor fig10
+\image html block0.png "Fig. 10: Block diagram for object manager, springs, and points."  width=40%
+
+\anchor fig11
+\image html block1.png "Fig. 11: Block diagram for bodies, springs, and points."  width=40%
+
+\anchor section5-4
+## 5.4 Bodies
+
+\anchor section5-4-1
+### 5.4.1 Chains
+
+\anchor fig12
+\image html chain.png "Fig. 12: A chain made of sticks (left) and springs (right)."  width=50%
+
+\anchor section5-4-2
+### 5.4.2 Wheels
+
+\anchor fig13
+\image html wheel.png "Fig. 12: A wheel made of sticks (left) and springs (right)."  width=40%
+
+\anchor section5-4-3
+### 5.4.3 Ragdoll Robot
+
+\anchor fig14
+\image html robot0.png "Fig. 13: Woody the ragdoll robot."  width=15%
+
+\anchor fig15
+\image html robot-deform.png "Fig. 15: Woody the ragdoll robot under deformation."  width=60%
+
+\anchor fig16
+\image html robopoint.png "Fig. 16: Points that make up Woody the ragdoll robot."  width=35%
+
+\anchor fig17
+\image html roboconstraint.png "Fig. 17: Sticks (left) and springs (right) that make up Woody the ragdoll robot."  width=45%
 
 \anchor section6
 # 6. What Next?

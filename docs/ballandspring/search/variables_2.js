@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['hip_5fdrop_0',['HIP_DROP',['../_ragdoll_8cpp.html#a41c247a828e63e80955e979cc1d221e9',1,'Ragdoll.cpp']]],
-  ['hip_5flen_1',['HIP_LEN',['../_ragdoll_8cpp.html#ae021452261de1575895605a7ba85816b',1,'Ragdoll.cpp']]]
+  ['m_5fecollisionsnd_0',['m_eCollisionSnd',['../class_c_point.html#a4e4dcecedc53b1cd0ac904107f67d69d',1,'CPoint']]],
+  ['m_5fecurrentbody_1',['m_eCurrentBody',['../class_c_common.html#adc2d73b853724bb66aa435b519234587',1,'CCommon']]],
+  ['m_5fegamestate_2',['m_eGameState',['../class_c_game.html#a6d6d7b949d4a47b7c5d03c9dbf4be6fd',1,'CGame']]],
+  ['m_5fespritetype_3',['m_eSpriteType',['../class_c_point.html#aa2847fa82ef9c1eeb3d0576c69efad68',1,'CPoint::m_eSpriteType'],['../class_c_spring.html#a85996d6181d23fa658cd55d872817c2a',1,'CSpring::m_eSpriteType']]],
+  ['m_5ffangle_4',['m_fAngle',['../class_c_point.html#a66dea653ddf0cf586182aa8e06f76010',1,'CPoint::m_fAngle'],['../class_c_spring.html#aad20f63c0e9b5dcf3af9dc3daa60ed16',1,'CSpring::m_fAngle']]],
+  ['m_5ffdelay_5',['m_fDelay',['../class_c_ragdoll.html#a6d48e5881b8bc5b346dc19eba52e9b02',1,'CRagdoll']]],
+  ['m_5ffradius_6',['m_fRadius',['../class_c_point.html#a32656c11a76023c739a8547cef88b22c',1,'CPoint']]],
+  ['m_5ffrestitution_7',['m_fRestitution',['../class_c_spring.html#a7acd8bd0f964ef7153be89f229d4aa83',1,'CSpring']]],
+  ['m_5ffrestlength_8',['m_fRestLength',['../class_c_spring.html#afec43cdb96391c667b46d2fd87ce1c38',1,'CSpring']]],
+  ['m_5ffxscale_9',['m_fXScale',['../class_c_point.html#a31d7e186e8560f694b9b86d00074c729',1,'CPoint']]],
+  ['m_5ffyscale_10',['m_fYScale',['../class_c_point.html#a42f0bbe3733b7d4db991f4a80d10ab33',1,'CPoint']]],
+  ['m_5fpcurbody0_11',['m_pCurBody0',['../class_c_object_manager.html#a1f3a003358be82b3cfeb291fc6007cb3',1,'CObjectManager']]],
+  ['m_5fpcurbody1_12',['m_pCurBody1',['../class_c_object_manager.html#a589930afa5e6806120d064c97a13e435',1,'CObjectManager']]],
+  ['m_5fpobjectmanager_13',['m_pObjectManager',['../class_c_common.html#a2ecfc2b5378ac9cc103605dca52011b3',1,'CCommon']]],
+  ['m_5fprenderer_14',['m_pRenderer',['../class_c_common.html#affe2697f28fbe937757db5eaa94c00d3',1,'CCommon']]],
+  ['m_5fpv0_15',['m_pV0',['../class_c_spring.html#a899230f6c668cf791ed8281ebbde0f34',1,'CSpring']]],
+  ['m_5fpv1_16',['m_pV1',['../class_c_spring.html#a6d231d63db5e01e1989e5c1e770fd521',1,'CSpring']]],
+  ['m_5fstdpt_17',['m_stdPt',['../class_c_body.html#a9b89ebfe9757a77243e239eeddd58e3c',1,'CBody::m_stdPt'],['../class_c_object_manager.html#a93d091841532abff81e83a3e2662aa71',1,'CObjectManager::m_stdPt']]],
+  ['m_5fstdspr_18',['m_stdSpr',['../class_c_body.html#a43877301c1dd716fcd21216ff18e4e1f',1,'CBody::m_stdSpr'],['../class_c_object_manager.html#a4fb3f395f4f75b97ab44a20b82c94a86',1,'CObjectManager::m_stdSpr']]],
+  ['m_5fvoldpos_19',['m_vOldPos',['../class_c_point.html#a970726d8fff843c2f77f7db6f6dfa0f5',1,'CPoint']]],
+  ['m_5fvpos_20',['m_vPos',['../class_c_point.html#aa6bd2afc43e0fb7aff6c09cc867f2b59',1,'CPoint']]]
 ];

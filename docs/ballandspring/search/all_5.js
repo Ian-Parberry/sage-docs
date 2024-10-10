@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['g_5fcgame_0',['g_cGame',['../_main_8cpp.html#a2c5d3820f773c3d2fe533205788478db',1,'Main.cpp']]],
-  ['g_5fcwindow_1',['g_cWindow',['../_main_8cpp.html#a0408aaa1bfcd618211c7db3161bf3cce',1,'Main.cpp']]],
-  ['game_2ecpp_2',['Game.cpp',['../_game_8cpp.html',1,'']]],
-  ['game_2eh_3',['Game.h',['../_game_8h.html',1,'']]],
-  ['gamedefines_2eh_4',['GameDefines.h',['../_game_defines_8h.html',1,'']]],
-  ['getpos_5',['GetPos',['../class_c_point.html#aea50825b47f6f95af8d7994c0816cb72',1,'CPoint']]],
-  ['getradius_6',['GetRadius',['../class_c_point.html#a7f7b9afef771c3d2191602bbf7bac0a4',1,'CPoint']]]
+  ['felbow_0',['fElbow',['../_ragdoll_8cpp.html#ad18e65995589b69f71717c11ff320af7',1,'Ragdoll.cpp']]],
+  ['ffeet_1',['fFeet',['../_ragdoll_8cpp.html#a9a0c6429b383c505c6453610a88f4906',1,'Ragdoll.cpp']]],
+  ['fhipht_2',['fHipHt',['../_ragdoll_8cpp.html#a8d6d4b7031069632f88cc1e9d5f29e5c',1,'Ragdoll.cpp']]],
+  ['fhipw_3',['fHipW',['../_ragdoll_8cpp.html#ade62fa81257fd3542e77f75f38f66e6e',1,'Ragdoll.cpp']]],
+  ['flimb_4',['fLimb',['../_ragdoll_8cpp.html#adcbbabea72e30625b6415c3f710cfcce',1,'Ragdoll.cpp']]],
+  ['fneck_5',['fNeck',['../_ragdoll_8cpp.html#a9477a135b12cc5de33f4951881abdf60',1,'Ragdoll.cpp']]],
+  ['fshldrht_6',['fShldrHt',['../_ragdoll_8cpp.html#aa456c2b04430b54bd8c7e8233e604cdd',1,'Ragdoll.cpp']]],
+  ['fshldrw_7',['fShldrW',['../_ragdoll_8cpp.html#a259f8cc652bf9083af0b29167f52b563',1,'Ragdoll.cpp']]],
+  ['ftorso_8',['fTorso',['../_ragdoll_8cpp.html#af91da45f60d6d32b7649a3e74442394c',1,'Ragdoll.cpp']]]
 ];
