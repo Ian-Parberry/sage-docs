@@ -7,16 +7,17 @@
 
 This toy uses Box2D to implement a 5-bit gravity-driven ripple-carry counter that 
 counts from zero to \f$2^5 - 1 = 31\f$. 
-
-\anchor fig1
-\image html screenshot.png "Fig. 1: Screen shot in the initial configuration (zero)." width=60%
-
 There is an LED readout for the number of balls released and
 an array of nixie tubes showing that number in binary.
 It takes a few seconds for the carry to ripple down after the release of a new ball,
 after which the current binary number represented by the soccer balls
 is read aloud and the corresponding soccer balls (or lack of them)
-highlighted by a spinning reticle.
+highlighted by a spinning reticle. \ref fig1 "Fig. 1" shows the counter in its
+initial state, that is, at value zero.
+
+\anchor fig1
+\image html screenshot.png "Fig. 1: Screen shot in the initial configuration (zero)." width=60%
+
 
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the controls
@@ -139,7 +140,7 @@ at the bottom of the pit containing the previous ball and exits the
 toy to the right of \ref fig5 "Fig 5"(f), ending up with a collection of balls at
 the bottom of the window.
 The previous ball is released in \ref fig5 "Fig 5"(f) and rolls to the left in
-\ref fig5 "Fig 5"(g) on the lower platform, which is in fact the upper platform of the next bit adder.
+\ref fig5 "Fig 5"(g) on the lower platform, which is in fact the upper platform of the next bit counter.
 This is the carry bit. Meanwhile, when released of the weight of the carry ball,
 the swing arm returns to its initial position in \ref fig5 "Fig 5"(h).
 
@@ -147,35 +148,55 @@ the swing arm returns to its initial position in \ref fig5 "Fig 5"(h).
 \anchor section5
 # 5. Code Breakdown
 
-\anchor section5-1
-## 5.1 The Theory
-
 Let \f$x\f$ and \f$y\f$ be single bits. When \f$x\f$ and \f$y\f$ are added together,
 the result is the exclusive-or \f$z = x \oplus y\f$ and the carry bit is the conjunction
-\f$x \wedge y\f$. This gives us the single-bit adder shown in \ref fig6 "Fig. 6".
+\f$x \wedge y\f$. This gives us the single-bit counter shown in \ref fig6 "Fig. 6".
 
 \anchor fig6
-\image html bitadd.png "Fig. 7: Single bit adder." width=9%
+\image html bitadd.png "Fig. 6: Single bit counter." width=9%
+
+Our single bit counter consists of two rectangular _blocks_ (_primary_ and _secondary_), a triangular _ramp_,
+a rectangular _swing arm_, and two rectangular _legs_,
+and three revolute joints as shown in \ref fig7 "Fig. 7".
+There is a revolute joint at the center of the swing arm connecting
+it to the null background, and a revolute joint at the top of each leg
+joining it to one of the two ends of the swing arm.
+It is implemented in code by `CBitCounter`.
+Its constructor `CBitCounter::CBitCounter` takes as parameters the coordinates
+of its center in render world coordinates and a Boolean variable
+that is true if this is the last (i.e. null) bit counter.
+It uses `CBitCounter::CreateRamp` to create the ramp and `CBitCounter::CreateBlock`
+to create the blocks, swing arm, and legs.
+
+\anchor fig7
+\image html bitshape1.png "Fig. 7: Shapes and joints for single bit counter."  width=35%
 
 Now suppose we wish to increment the binary number \f$x_4x_3x_2x_1x_0\f$ to
 get the result \f$z_4z_3z_2z_1z_0\f$ and an overflow bit.
-We simply cascade five single bit adders
+We simply cascade five single bit counters
 with the carry from one going to the input
 of the next as shown in \ref fig8 "Fig. 8".
-
-\anchor fig8
-\image html add.png "Fig. 8: Ripple-carry increment." width=30%
-
 This should be familiar to you if you have taken an elementary hardware or computer organization class.
 
-\anchor section5-2
-## 5.2 The Shapes
+\anchor fig8
+\image html add.png "Fig. 8: Ripple-carry counter with 5 bits." width=30%
+
+Our ripple-carry increment will be constructed from five single-bit counters as shown in
+\ref fig7 "Fig. 7" spaced out vertically and shifted to
+the left so that the carry from one becomes the input to the next. 
+Its left leg
+will rest on the primary block of the single bit counter below it so that
+the ball can rest on it when the it has value 1 as
+shown in \ref fig8 "Fig. 9".
+There will be a sixth sentinel single bit counter that consists of just the primary block.
 
 \anchor fig9
-\image html bitshape1.png "Fig. 9: Shapes for single bit adder at 0." 
+\image html bitshape2.png "Fig. 9: Shapes for single bit counter at 1." 
 
-\anchor fig10
-\image html bitshape2.png "Fig. 10: Shapes for single bit adder at 1." 
+Our counter is implemented as an instance of `CCounter`, which stores
+an array of pointers to instances of `CBitCounter` created in its constructor. 
+An instance of `CCounter` is created in `CObjectManager::CreateCounter`
+which is called from `CGame::BeginGame`.
 
 \anchor section6
 # 6. What Next?

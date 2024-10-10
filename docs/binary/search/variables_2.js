@@ -11,7 +11,7 @@ var searchData=
   ['m_5fncurbit_8',['m_nCurBit',['../class_c_game.html#a401d1c608ce3e0c86aae10dee87f41e7',1,'CGame']]],
   ['m_5fncurnum_9',['m_nCurNum',['../class_c_common.html#ac894eb2c0784fabf951853ac60091861',1,'CCommon']]],
   ['m_5fnmaxnumber_10',['m_nMaxNumber',['../class_c_object_manager.html#aba559dd19b026cae9f1daed842cf78d1',1,'CObjectManager']]],
-  ['m_5fnnumbits_11',['m_nNumBits',['../class_c_counter.html#a9cf09be9e87f8bc3b60be2a9662caef2',1,'CCounter']]],
+  ['m_5fnnumbits_11',['m_nNumBits',['../class_c_counter.html#a585a31312f842849300f2a2ce54fe6c9',1,'CCounter']]],
   ['m_5fparm_12',['m_pArm',['../class_c_bit_counter.html#a3a3b632a4ae11be22d9b3b64b07f3da0',1,'CBitCounter']]],
   ['m_5fpbitcounter_13',['m_pBitCounter',['../class_c_counter.html#a9ec8bbc811afd4719d97c3a4639af5e0',1,'CCounter']]],
   ['m_5fpbody_14',['m_pBody',['../class_c_object.html#aeadfd2ce9573fc0c40c24b622db49287',1,'CObject']]],

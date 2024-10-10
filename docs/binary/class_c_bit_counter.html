@@ -179,7 +179,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A single-bit counter in Physics World, consisting of two blocks, a ramp, a swing-arm, and two legs. </p>
+<div class="textblock"><p>A single-bit counter in Physics World, consisting of two blocks, a triangular ramp, a swing-arm, and two legs. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a966655d68d0c450d9f3a19965e29bfad" name="a966655d68d0c450d9f3a19965e29bfad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a966655d68d0c450d9f3a19965e29bfad">&#9670;&#160;</a></span>CBitCounter()</h2>
@@ -200,15 +200,15 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>last</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bIsLast</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A bit-counter consists of a rempt, a ledge, a block, an arm, and two legs. All except the last one, that is. The last one is just a ledge. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>A bit-counter consists of a rempt, a ledge, a block, an arm, and two legs. All except the last one, that is. The last one is just the main block. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X-coordinate in Render World. </td></tr>
     <tr><td class="paramname">y</td><td>Y-coordinate in Render World. </td></tr>
-    <tr><td class="paramname">last</td><td>True if this is the last bit-counter. </td></tr>
+    <tr><td class="paramname">bIsLast</td><td>True if this is the last bit-counter. </td></tr>
   </table>
   </dd>
 </dl>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['cbitcounter_0',['CBitCounter',['../class_c_bit_counter.html',1,'CBitCounter'],['../class_c_bit_counter.html#a966655d68d0c450d9f3a19965e29bfad',1,'CBitCounter::CBitCounter()']]],
   ['ccommon_1',['CCommon',['../class_c_common.html',1,'']]],
-  ['ccounter_2',['CCounter',['../class_c_counter.html',1,'CCounter'],['../class_c_counter.html#a6a66faeff78c78bb0afe47688ec84150',1,'CCounter::CCounter()']]],
+  ['ccounter_2',['CCounter',['../class_c_counter.html',1,'CCounter'],['../class_c_counter.html#a1d90cd431b598179dd85bc7a6e48c577',1,'CCounter::CCounter()']]],
   ['cgame_3',['CGame',['../class_c_game.html',1,'']]],
   ['clear_4',['clear',['../class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf',1,'CObjectManager']]],
   ['cmylistener_5',['CMyListener',['../class_c_my_listener.html',1,'']]],
@@ -17,7 +17,7 @@ var searchData=
   ['counter_2eh_14',['Counter.h',['../_counter_8h.html',1,'']]],
   ['createball_15',['CreateBall',['../class_c_object_manager.html#a5daaf88f390ec1fae3b4c2da5f38a6f5',1,'CObjectManager']]],
   ['createblock_16',['CreateBlock',['../class_c_bit_counter.html#a2f2d4c2fe8c17ffe43a331101a9bc940',1,'CBitCounter']]],
-  ['createcounter_17',['CreateCounter',['../class_c_object_manager.html#a7d9795f747f62b60125e51190b8cce08',1,'CObjectManager']]],
+  ['createcounter_17',['CreateCounter',['../class_c_object_manager.html#aa2d13426f50a3bb1768245ea68e5d844',1,'CObjectManager']]],
   ['createobject_18',['CreateObject',['../class_c_object_manager.html#a03f151795235b557e169fb7c76ada512',1,'CObjectManager']]],
   ['createramp_19',['CreateRamp',['../class_c_bit_counter.html#aee754ea7f63dbb5a76ef261362d7227f',1,'CBitCounter']]],
   ['createworldedges_20',['CreateWorldEdges',['../class_c_object_manager.html#a9cd9848b67155361f36449fb69d3b98e',1,'CObjectManager']]],
