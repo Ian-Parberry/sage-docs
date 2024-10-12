@@ -5,7 +5,7 @@
 # 1. Introduction
 
 \anchor fig1
-\image html all.gif "Fig. 1: Screen shot of bodies made up from springs and sticks."
+\image html all.gif "Fig. 1: Bodies made up from springs and sticks."
 
 The Ball and Spring Toy applies Verlet integration and Gauss-Seidel 
 Relaxation to bodies made up of balls connected by springs
@@ -99,70 +99,244 @@ of the window by applying impulses to parts of its body.
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION
+The most important parts of this code are
+Verlet integration (\ref section5-1 "Section 5.1"),
+Jacobi-Gauss-Seidel relaxation (\ref section5-2 "Section 5.2"),
+and bodies made up of points, sticks, and springs (\ref section5-3 "Section 5.3").
 
 \anchor section5-1
 ## 5.1 Verlet Integration
 
+Loup Verlet developed the concept that is now called _Verlet integration_ for use in particle physics simulation.
+There are mathematical reasons for using Verlet integration instead of Euler integration when simulating systems of particles.
+One useful feature of Verlet integration is that it is easy to incorporate constraints, which
+means that Verlet integration makes it easier to code soft-body animation.
+
+Let \f$\vec{s}_i\f$ be the position of a point at the end of frame \f$i\f$,
+\f$\vec{v}_i\f$ its velocity, and \f$\vec{a}_i\f$ its acceleration,
+and \f$t_i\f$ be the fixed frame duration.
+Suppose we know \f$\vec{a}_i\f$, \f$\vec{s}_i\f$, \f$\vec{s}_{i-1}\f$ 
+and want to compute \f$\vec{s}_{i+1}\f$. 
+Let \f$\delta_i = \vec{s}_i - \vec{s}_{i-1}\f$,
+the distance moved in frame \f$i\f$.
+The distance to be moved in frame \f$i+1\f$ is
+\f[\delta_{i+1} = \vec{v}_i t_i + \vec{a}_i t_i^2/2.\f]
+Now, \f$\delta_i\f$ is a good approximation to \f$\vec{v}_i t_i\f$,
+and therefore
+\f[
+\delta_{i+1} = \delta_i + \vec{a}_i t_i^2/2.
+\f]
+Since \f$\vec{s}_{1+1} = \vec{s}_i + \delta_{i+1}\f$,
+substituting for \f$\delta_{i+1}\f$,
+\f[
+\vec{s}_{i+1} = \vec{s}_i +\delta_i + \vec{a}_i t_i^2/2.
+\f]
+Substituting for \f$\delta_i\f$, we get
+\f[
+\vec{s}_{i+1} = \vec{s}_i + (\vec{s}_i - \vec{s}_{i-1}) + \vec{a}_i t_i^2/2,
+\f]
+that is, 
+\anchor equation1
+\f[
+\vec{s}_{i+1} = 2\vec{s}_i - \vec{s}_{i-1} + \vec{a}_i t_i^2/2.
+\tag{1}
+\f] 
+This shows us how to compute \f$\vec{s}_{i+1}\f$
+given \f$\vec{a}_i\f$, \f$\vec{s}_i\f$, and \f$\vec{s}_{i-1}\f$.
+Notice that there is no need to store velocity.
+We can even fake a kind of friction in the \f$Z\f$ direction
+using 
+\f[
+\vec{s}_{i+1} = 1.99\vec{s}_i - 0.99\vec{s}_{i-1} + \vec{a}_i t_i^2/2.
+\f] 
+
+Recall that in the <a href="../shapes/index.html">Shapes Library</a>,
+the class <a href="../shapes/class_shapes_1_1_c_dynamic_circle.html">CDynamicCircle</a> has a private member variable
+`m_vVec` that stores its velocity vector \f$\vec{v}_i\f$ in frame \f$i+1\f$.
+This is used in its <a href="../shapes/class_shapes_1_1_c_dynamic_circle.html#ae637ccb409188baa680df552ff20051b">`move`</a>
+function to compute its new position using the equation
+\anchor equation2
+\f[
+\vec{s}_{i+1} = \vec{s}_i + t_i\vec{v}_i.
+\tag{2}
+\f]
+This method is commonly referred to as _Euler integration_.
+Contrast this with \ref equation1 "Equation (1)" above for Verlet integration.
+\ref fig4 "Fig 4." summarizes the differences between Verlet and
+Euler integration.
+
 \anchor fig4
 \image html verlet.png "Fig. 4: Verlet integration." width=55%
 
+We can optimize \ref equation1 "Equation (1)"
+by assuming that \f$t_i\f$ is a constant
+(in fact we can make it equal to \f$1\f$),
+ignoring the division by 2 and increasing \f$\vec{a}_i\f$
+to compensate, ending up with
+\f[
+\vec{s}_{i+1} = 2\vec{s}_i - \vec{s}_{i-1} + \vec{a}_i,
+\f]
+or, if there is no acceleration,
+\anchor equation3
+\f[
+\vec{s}_{i+1} = 2\vec{s}_i - \vec{s}_{i-1}.
+\tag{3}
+\f]
+
+We implement this in class `CPoint` which has two private
+member variables `CPoint::m_vPos` and `CPoint::m_vOldPos`.
+`CPoint::move` computes the new value of `CPoint::m_vPos`
+as follows:
+
+    const Vector2 vTemp = m_vPos;
+    m_vPos += m_vPos - m_vOldPos; 
+    m_vOldPos = vTemp;
+
+Notice that the second line of the above code implements
+\ref equation3 "Equation (3)".
+It uses only four floating point additions, whereas
+\ref equation2 "Equation (2)" requires four floating point additions and
+two floating point multiplications. 
+Acceleration due to gravity is then faked by:
+
+    m_vPos.y -= 0.2f;
+
 \anchor section5-2
-## 5.2 Jacobi-Gauss-Seidel Integration
+## 5.2 Jacobi-Gauss-Seidel Relaxation
+
+We mentioned in the previous section
+that Verlet integration makes it easy to enforce constraints on points.
+We can model a stick by applying Verlet integration to two points at its ends.
+The constraint is that the distance between the points must remain constant.
+We can move the stick by
+moving each point independently, then trying to correct their positions
+to satisfy the distance constraint
+(before rendering) if they are the wrong distance apart.
 
 \anchor fig5
-\image html stick0.png "Fig. 5: A stick represented by two points."  width=25%
+\image html stick0.png "Fig. 5: A stick represented by two points."  width=20%
 
 \anchor fig6
-\image html stick1.png "Fig. 6: A deformed stick."  width=25%
+\image html stick1.png "Fig. 6: The vector from one point to the other."  width=20%
+
+Suppose we have a stick of length \f$d\f$ whose end points are
+at positions \f$\vec{p}_0\f$
+and \f$\vec{p}_1\f$ after they have been moved independently
+as shown in \ref fig5 "Fig. 5".
+Let \f$\vec{v} = \vec{p}_0 - \vec{p}_1\f$ be the vector from \f$\vec{p}_1\f$
+to \f$\vec{p}_0\f$ as shown in \ref fig6 "Fig. 6" and
+let us suppose that \f$\Vert \vec{v} \Vert \not= d\f$.
+We will displace the end points along the stick by an equal
+amount so that the distance between them is \f$d\f$.
 
 \anchor fig7
-\image html 2stick0.png "Fig. 7: Two joined sticks with three points."  width=25%
+\image html stick2.png "Fig. 7: Correcting the length of the stick."  width=20%
+
+Define
+\anchor equation4
+\f[
+c = 1 - d/\Vert\vec{v}\Vert
+\tag{4}
+\f].
+Let the new end points of the stick be
+\f$\vec{s}_0 = \vec{p}_0 - c\vec{v}/2\f$ and
+\f$\vec{s}_1 = \vec{p}_1 + c\vec{v}/2\f$ as shown in \ref fig6 "Fig. 6".
+The length of this stick is then
+\f$\Vert\vec{s}_0 - \vec{s}_1\Vert = \Vert\vec{v}\Vert -(1-d/\Vert\vec{v}\Vert)\Vert\vec{v}\Vert = d\f$.
+This process is called _relaxation_.
 
 \anchor fig8
-\image html 2stick1.png "Fig. 8: Two deformed joined sticks."  width=25%
+\image html 2stick0.png "Fig. 8: Two joined sticks with three points."  width=45%
+
+Now suppose that we have two sticks with one end point in common
+such that they can freely rotate about this point.
+Suppose one stick has end points \f$p_0\f$ and \f$p_1\f$,
+and the other stick has end points \f$p_1\f$ and \f$p_2\f$
+as shown in \ref fig8 "Fig. 8", left.
+Further suppose that both sticks have the wrong length and
+need to be corrected
+as shown in \ref fig8 "Fig. 8", right.
+We could try relaxing one stick and then the other,
+but the result will be wrong as shown in \ref fig9 "Fig. 9".
+The shared point \f$\vec{p}_1\f$ will be first moved to the green
+point in \ref fig9 "Fig. 9", left,
+then to the purple point in \ref fig9 "Fig. 9", right.
+As we see in  in \ref fig9 "Fig. 9" right, the purple point
+is not on the stick with end points \f$p_1\f$ and \f$p_2\f$.
 
 \anchor fig9
-\image html 2stick2.png "Fig. 9: Attempt to repair deformed joined sticks."  width=35%
+\image html 2stick1.png "Fig. 9: Sequential relaxation gives the wrong result."  width=45%
+
+However, if we repeatedly relax first one stick then the other,
+the end points will eventually get very close to where they need to be.
+This was independently discovered by the mathematicians
+<a href="https://en.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi">Jacobi</a>,
+<a href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss">Gauss</a>,
+and <a href="https://en.wikipedia.org/wiki/Philipp_Ludwig_von_Seidel">Seidel</a>, 
+thus the name _Jacobi-Gauss-Seidel_ relaxation_.
+Rather than checking for closeness (which would be
+computationally very expensive), we will just do a small
+fixed number of iterations and hope for the best.
+
+Furthermore, we can implement springs as well as sticks by
+replacing \ref equation4 "Equation (4)" with
+\anchor equation5
+\f[
+c = r(1 - d/\Vert\vec{v}\Vert)
+\tag{5}
+\f]
+where \f$0 < r \leq 1\f$ is called the _restitution_,
+which is a measure of the stiffness of the spring,
+where a stick has restitution 1.
+
+In our code each point will be implemented as an instance of `CPoint`.
+`CPoint::move` moves the point using
+Verlet integration (see \ref section5-1 "Section 5.1")
+Each spring will be implemented as an instance of
+`CSpring`.
+`CSpring::Relax` performs one iteration of _Jacobi-Gauss-Seidel_ relaxation
+using \ref equation5 "Equation (5)".
+Sticks will be instances of `CSpring`
+with private member variable `CSpring::m_fRestitution` = 1.
 
 \anchor section5-3
-## 5.3 Code Organization
+## 5.3 Bodies
+
+A _body_ is a collection of points and
+springs connecting those points. It will
+be represented as an instance of `CBody`, which has
+member variables made up of pointers to instances
+of `CSpring` and `CPoint`. There are three kinds of body,
+each of which is derived from `CBody`.
+`CChain` is a chain of connected points, as in
+\ref fig10 "Fig. 10". Note that there are two instances of
+`CBody` drawn there, one made up of sticks and the other springs.
+Successive levels show chains of 2, 3, and 4 points.
+`CChain` consists of just a constructor that puts the points
+in the right position and connects them with sticks or springs as required.
 
 \anchor fig10
-\image html block0.png "Fig. 10: Block diagram for object manager, springs, and points."  width=40%
+\image html chain.png "Fig. 10: Three-point chains made of sticks (left) and springs (right)."  width=50%
+
+`CWheel` is a circle of points connected to a central point which
+acts as a hub. Successive levels show wheels that are square,
+pentagonal, and hexagonal. \ref fig11 "Fig. 11" shows a pentagonal wheel.
+`CWheel` consists of just a constructor that puts the points
+in the right position and connects them with sticks or springs as required.
 
 \anchor fig11
-\image html block1.png "Fig. 11: Block diagram for bodies, springs, and points."  width=40%
+\image html wheel.png "Fig. 11: Pentagonal wheel made of sticks (left) and springs (right)."  width=40%
 
-\anchor section5-4
-## 5.4 Bodies
-
-\anchor section5-4-1
-### 5.4.1 Chains
+Finally, Woody the ragdoll robot (see \ref fig12 "Fig. 12")
+is an instance of `CRagdoll`
+made up of both sticks and springs.
+In addition to the constructor, `CRagdoll` has various functions
+that implement the rule-based AI that makes it jump back onto its
+feet after it has fallen (see \ref fig3 "Fig. 3"). 
 
 \anchor fig12
-\image html chain.png "Fig. 12: A chain made of sticks (left) and springs (right)."  width=50%
+\image html robot0.png "Fig. 12: Woody the ragdoll robot."  width=15%
 
-\anchor section5-4-2
-### 5.4.2 Wheels
-
-\anchor fig13
-\image html wheel.png "Fig. 12: A wheel made of sticks (left) and springs (right)."  width=40%
-
-\anchor section5-4-3
-### 5.4.3 Ragdoll Robot
-
-\anchor fig14
-\image html robot0.png "Fig. 13: Woody the ragdoll robot."  width=15%
-
-\anchor fig15
-\image html robot-deform.png "Fig. 15: Woody the ragdoll robot under deformation."  width=60%
-
-\anchor fig16
-\image html robopoint.png "Fig. 16: Points that make up Woody the ragdoll robot."  width=35%
-
-\anchor fig17
-\image html roboconstraint.png "Fig. 17: Sticks (left) and springs (right) that make up Woody the ragdoll robot."  width=45%
 
 \anchor section6
 # 6. What Next?
