@@ -89,25 +89,34 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-UNDER CONSTRUCTION
+Do I have to tell you how to play
+<a href="https://en.wikipedia.org/wiki/Pinball">pinball</a>?
+Refer back to \ref section2 "Section 2" to see the flipper and
+ball launch keys.
 
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION
+This code uses the
+<a href="../shapes/index.html">Shapes Library</a>
+and some code from the 
+<a href="../collisionmath/index.html">Collision Math Toy</a>
+to make a rudimentary pinball game.
+The most challenging part of the code is
+the creation of the shapes in the play area
+as shown in \ref fig1 "Fig. 1", right.
+This is done in `CGame::BeginGame` by calling
+`CObjectManager::MakeWorldEdges` to make various static edges and arcs,
+and `CObjectManager::MakeShapes` to make the other various shapes,
+which in turn calls
+`CObjectManager::MakeBumper`,
+`CObjectManager::MakeBollard`,
+`CObjectManager::MakeFlipper`,
+`CObjectManager::MakeThingL`,
+`CObjectManager::MakeThingR`,
+and
+`CObjectManager::MakeShape`. 
 
-
-\anchor fig2
-\image html flipper0.png "Fig. 2: Flipper orientations at consecutive frames." width=40%
-
-\anchor fig3
-\image html flipper1.png "Fig. 3: Flipper shapes." width=40%
-
-\anchor fig4
-\image html flipleft.png "Fig. 4: Orientation of left flipper when it is down (left) and up (right)." width=35%
-
-\anchor fig5
-\image html flipright.png "Fig. 5: Orientation of right flipper when it is down (left) and up (right)." width=35%
 
 \anchor section6
 # 6. What Next?
