@@ -195,9 +195,13 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-UNDER CONSTRUCTION
-
-It is important to keep in mind that the settings in this toy can be set to values that make bad things happen. More about that in a moment.
+Use the dialog box controls described in \ref section2 "Section 2"
+to explore collision detection and response of dynamic
+circles colliding with other shapes from the 
+<a href="../shapes/index.html">Shapes Library</a>.
+It is important to keep in mind that the settings in this toy can be set to values that make bad things happen, in particular, balls may escape
+from the play area and balls may be co-located, that is,
+drawn on top of one another.
 
 \anchor section5
 # 5. Code Breakdown
@@ -396,20 +400,38 @@ Functions such as `CObjectManager::NarrowPhase` that have only a pointer `pShape
 \anchor section5-3
 ## 5.3 Gates
 
+A _gate_ (see \ref fig17 "Fig. 17") allows balls
+to pass in one direction only, and are reflected back otherwise.
+
 \anchor fig17
 \image html clip.png "Fig. 17: The clip used to cover up the line segment used in a gate."
 
-Gates are implemented by `CGate`.
-
-UNDER CONSTRUCTION
+Gates are implemented as an instance of `CGate`.
+`CGate` has a pointer `m_pLineSeg` to an instance of
+<a href="../shapes/index.html#section5-8">`Shapes::CLineSeg`</a>
+and has a function `CGate::NarrowPhase` to do narrow-phase
+collision detection and response allowing
+balls to pass only in the direction of the
+normal to the line segment.
 
 \anchor section5-4
 ## 5.4 Quadtrees
 
-UNDER CONSTRUCTION
-
-
-
+Quadtrees are a data structure used to speed up
+broad-phase collision detection and response.
+This section is divided into 5 subsections.
+\ref section5-4-1 "Section 5.4.1"
+gives the formal definition of a quadtree as an abstract data type.
+\ref section5-4-2 "Section 5.4.2" lists some
+useful facts about quadtrees.
+\ref section5-4-3 "Section 5.4.3" describes
+the implementation of the quadtree abstract data type
+as the quadtree data structure.
+\ref section5-4-4 "Section 5.4.4" describes
+how quadtrees are used for collision detection.
+\ref section5-4-5 "Section 5.4.5" contains
+an analysis of the running time of broad-phase
+collision detection using quadtrees  compared to he brute-force method.
 
 \anchor section5-4-1
 ### 5.4.1 Quadtree Definition
