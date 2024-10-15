@@ -4,21 +4,13 @@
 \anchor section1
 # 1. Introduction
 
+\anchor fig1
+\image html all.gif "Fig. 1: Screen shots of various objects." width=60%
+
 A simple 3D toy using 
 [Bullet Physics](https://pybullet.org/wordpress/) consisting of various
-things that you can knock over by throwing soccer
-balls at them. With enough patience and perseverance you can
-push everything off the edge of the world. Shapes and models
-are rendered using `GeometricPrimitive` and `Model` from
-DirectXTK12. The models are input using the built-in 
-function `Model::CreateFromSDKMESH` which requires that the
-models be in SDKMESH format. The 3D models are from
-[free3d.com](https://free3d.com/) and were converted
-from OBJ format using `DirectXMesh`. 
-
-\anchor fig1
-\image html screenshot.png "Fig. 1: Screen shots of various objects." width=95%
-
+things (see \ref fig1 "Fig. 1") that you can knock over by throwing soccer
+balls at them.
 The remainder of this page is divided into five sections.
 \ref section2 "Section 2" lists the controls
 and their corresponding actions,
@@ -93,20 +85,201 @@ to build both Release and Debug configurations.
 \anchor section4
 # 4. Game Play
 
-UNDER CONSTRUCTION
+\anchor fig2
+\image html fallen.png "Fig. 2: Knock over the stack of boxes." width=60%
+
+Navigate around the world using the controls in \ref section2 "Section 2" and
+launch soccer balls to knock down the pile of of creates as shown in \ref fig2 "Fig. 2".
+With enough patience and perseverance you can
+push everything in in \ref fig1 "Fig. 1" off the edge of the world.
 
 \anchor section5
 # 5. Code Breakdown
 
-UNDER CONSTRUCTION
+
+Shapes and models
+are rendered using `DirectX::GeometricPrimitive` and `DirectX::Model`.
+The latter is loaded using
+function `Model::CreateFromSDKMESH` which requires that the
+models be in SDKMESH format. The 3D models are from
+[free3d.com](https://free3d.com/) and were converted
+from OBJ format using `DirectXMesh`. 
+Collision detection and response is handled by [Bullet Physics](https://pybullet.org/wordpress/).
+
+`DirectX::GeometricPrimitive` requires the use of 
+<a href="https://en.wikipedia.org/wiki/Quaternion">quaternions</a> to specify orientation,
+more specifically `DirectX::SimpleMath::Quaternion`.
+Bullet Physics uses `btQuaternion`. We provide a method for casting
+instance of `DirectX::SimpleMath::Quaternion` to an instance of `btQuaternion`
+as a version of `RW2PW` in <span style="background-color:#D8E4D8;">`GameDefines.h`</span>,
+and the reverse as an instance of `PW2RW`.
+
+\anchor section5-1
+##5.1 Shapes
+
+The game world contains a few convex polygons from
+DirectXTK12's
+`GeometricPrimitive`. These polygons consist of a list of vertices and a list
+of edges joining them to form a triangle mesh.
+The _circumradius_ of a convex polygon mesh is the radius of the sphere that passes
+through all vertices.
+The _inradius_ of a convex polygon mesh is the radius of the largest sphere that
+can fit inside the polygon. 
+This is the height of the center of the polygon when one face rests on the ground.
+
+\anchor section5-1-1
+###5.1.1 The Regular Tetrahedron
+
+The tetrahedron object is an instance of `CObject` created in
+`CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
+`CInstanceDesc` has useful parameters for the object instance to be created including its
+orientation `CInstanceDesc::m_qOrientation` and scale `CInstanceDesc::m_fScale`.
+
+The tetrahedron mesh is created
+in `CRenderer::UploadPrimitiveMesh` by calling `DirectX::GeometricPrimitive::CreateTetrahedron`.
+`CRenderer::UploadPrimitiveMesh` is called from `CRenderer::LoadGeometricPrimitives`,
+which is called from `CGame::Initialize`.
+The default polygon mesh created by `DirectX::GeometricPrimitive::CreateTetrahedron` has circumradius 1.
+The Cartesian coordinates of the vertices of a regular tetrahedron of circumradius 1 are
+\f[
+(-\sqrt{2}/3, \sqrt{2}/\sqrt{3}, -1/3)\\
+(2\sqrt{2}/3, 0, -1/3)\\
+(-\sqrt{2}/3, -\sqrt{2}/\sqrt{3}, -1/3)\\
+(0, 0, 1)
+\f]
+Its edge length is therefore \f$2 \sqrt{2}/\sqrt{3}\f$.
+The inradius of a tetrahedron of edge length \f$1\f$ is
+\f$1/2\sqrt{6}\f$.
+The inradius of the tetrahedron created by `DirectX::GeometricPrimitive::CreateTetrahedron`
+is therefore \f$2 \sqrt{2}/\sqrt{3}\f$ divided by \f$2\sqrt{6}\f$,
+that is, \f$1/3\f$.
+
+We ask `DirectX::GeometricPrimitive::CreateTetrahedron` to create a polygon mesh of circumradius
+`CCommon::m_fTetrahedronSize`, which is a constant set to `16.0f`.
+This will have an inradius of `CCommon::m_fTetrahedronSize/3`.
+Therefore the scale and vertical height of the tetrahedron
+object instance descriptor `CGame::CreateObjects` are
+`m_fTetrahedronSize` and
+`m_fTetrahedronSize/3.0f`, respectively.
+
+\anchor fig3
+\image html tetrahedron.png "Fig. 3: The tetrahedron in its initial orientation." width=40%
+
+The tetrahedron mesh created by `DirectX::GeometricPrimitive::CreateTetrahedron`
+has default orientation is shown in \ref fig3 "Fig. 3", whereas we
+want its initial orientation to be with one face flat on the ground
+as shown in the appropriate frame of \ref fig1 "Fig. 1".
+This can be fixed by rotating it by \f$\pi/2\f$ around its X-axis.
+We also rotate it \f$\pi\f$ around the Y-axis so that an edge faces the camera.
+Therefore the `m_qOrientation` field of the instance
+descriptor used to create the tetrahedron object in `CGame::CreateObjects` is
+`DirectX::SimpleMath::Quaternion::CreateFromYawPitchRoll(XM_PI, -XM_PIDIV2, 0)`.
+
+\anchor section5-1-2
+###5.1.2 The Regular Dodecahedron
+
+The dodecahedron object is an instance of `CObject` created in
+`CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
+`CInstanceDesc` has useful parameters for the object instance to be created including its
+orientation `CInstanceDesc::m_qOrientation` and scale `CInstanceDesc::m_fScale`.
+
+The dodecahedron mesh is created
+in `CRenderer::UploadPrimitiveMesh` by calling `DirectX::GeometricPrimitive::CreateDodecahedron`.
+`CRenderer::UploadPrimitiveMesh` is called from `CRenderer::LoadGeometricPrimitives`,
+which is called from `CGame::Initialize`.
+The default polygon mesh created by `DirectX::GeometricPrimitive::CreateDodecahedron` has circumradius \f$1\f$.
+The Cartesian coordinates of the vertices of a regular dodecahedron of circumradius \f$\sqrt{3}\f$ are
+\f[
+(0, \pm \phi, \pm 1/\phi)\\
+(\pm 1, \pm 1, \pm 1)\\
+(\pm 1/\phi, 0, \pm \phi)\\
+(\pm \phi, \pm 1/\phi, 0)
+\f]
+where \f$\phi = (\sqrt{5} + 1)/2\f$.
+Its edge length is \f$2/\phi = \sqrt{5} - 1\f$.
+The Cartesian coordinates of the vertices of a regular dodecahedron of circumradius \f$1\f$
+can be obtained by multiplying these points by \f$1/\sqrt{3}\f$.
+This will have edge length \f$(\sqrt{5} - 1)/\sqrt{3}\f$.
+
+The inradius of a dodecahedron of edge length \f$1\f$ is
+\f$\sqrt{250+110\sqrt{5}}/40\f$.
+The inradius of the dodecahedron created by `DirectX::GeometricPrimitive::CreateDodecahedron`
+is therefore \f$\sqrt{250+110\sqrt{5}}/40\f$ divided by \f$(\sqrt{5} - 1)/\sqrt{3}\f$,
+that is, \f$\sqrt{750+330\sqrt{5}}/40(\sqrt{5}-1)\f$.
+
+We ask `DirectX::GeometricPrimitive::CreateDodecahedron` to create a polygon mesh of circumradius
+`CCommon::m_fDodecahedronSize`, which is a constant set to `16.0f`.
+This will have an inradius of `CCommon::m_fDodecahedronSize/3`.
+Therefore the scale and vertical height of the dodecahedron
+object instance descriptor `CGame::CreateObjects` are
+`m_fDodecahedronSize` and
+`m_fDodecahedronSize*sqrtf(750.0f + 
+  330.0f*sqrtf(5))/(40.0f*(sqrtf(5) - 1.0f));`, respectively.
+
+\anchor fig4
+\image html dodecahedron.png "Fig. 4: The dodecahedron in its initial orientation." width=40%
+
+The dodecahedron mesh created by `DirectX::GeometricPrimitive::CreateDodecahedron`
+has default orientation is shown in \ref fig4 "Fig. 4", whereas we
+want its initial orientation to be with one face flat on the ground
+as shown in the appropriate frame of \ref fig1 "Fig. 1".
+This can be fixed by rotating it around its Z-axis by one half the _dihedral angle_,
+which is the angle between two adjacent faces.
+The dihedral angle of a regular dodecahedron is 
+\f$2 \arctan \phi = \pi - \arctan(2)\f$.
+Therefore the `m_qOrientation` field of the instance
+descriptor used to create the dodecahedron object in `CGame::CreateObjects` is
+`DirectX::SimpleMath::Quaternion::CreateFromAxisAngle(Vector3::UnitZ, (XM_PI - atanf(2.0f))/2.0f)`.
+
+\anchor section5-1-3
+###5.1.3 The Regular Icosahedron
+
+The icosahedron object is an instance of `CObject` created in
+`CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
+`CInstanceDesc` has useful parameters for the object instance to be created including its
+orientation `CInstanceDesc::m_qOrientation` and scale `CInstanceDesc::m_fScale`.
+
+The icosahedron mesh is created
+in `CRenderer::UploadPrimitiveMesh` by calling `DirectX::GeometricPrimitive::CreateIcosahedron`.
+`CRenderer::UploadPrimitiveMesh` is called from `CRenderer::LoadGeometricPrimitives`,
+which is called from `CGame::Initialize`.
+The default polygon mesh created by `DirectX::GeometricPrimitive::CreateIcosahedron` has circumradius \f$1\f$.
+The Cartesian coordinates of the vertices of a regular icosahedron of circumradius \f$\sqrt{\phi + 2}\f$ are
+\f[
+(0, \pm 2, \pm \phi)\\
+(\pm 1, \pm \phi, )\\
+(\pm 1/\phi, 0, \pm \phi)\\
+(\pm \phi, 0, \pm \phi)
+\f]
+where \f$\phi = (\sqrt{5} + 1)/2\f$.
+
+The inradius of the icosacahedron created by `DirectX::GeometricPrimitive::CreateIcosahedron`
+is equal to \f$1\f$.
+Therefore the scale and vertical height of the icosacahedron
+object instance descriptor `CGame::CreateObjects` are both equal to
+`m_IcosahedronSize`.
+
+\anchor fig5
+\image html icosahedron.png "Fig. 5: The icosahedron in its initial orientation." width=40%
+
+The icosacahedron mesh created by `DirectX::GeometricPrimitive::CreateIcosahedron`
+has default orientation is shown in \ref fig5 "Fig. 5", whereas we
+want its initial orientation to be with one face flat on the ground
+as shown in the appropriate frame of \ref fig1 "Fig. 1".
+This can be fixed by rotating it around its X-axis by one half the _dihedral angle_,
+which is the angle between two adjacent faces.
+The dihedral angle of a regular icosacahedron is 
+\f$\pi - \arccos(\sqrt{5}/3)\f$.
+Therefore the `m_qOrientation` field of the instance
+descriptor used to create the icosacahedron object in `CGame::CreateObjects` is
+`DirectX::SimpleMath::Quaternion::CreateFromAxisAngle(Vector3::UnitX, (XM_PI - acosf(sqrtf(5)/3.0f)/2.0f)`.
 
 \anchor section6
 # 6. What Next?
 
 This 3D toy is pretty rudimentary. Here is a To Do list of things that I need to get around to doing. 
 
-+ The polygonal shapes are not placed correctly. In particular, the dodecahedron needs to be rotated.
-+ Add the ability to use a convex hull for collisions on the models. I've gotten it working on the geometric primitives, but that's only because I save a local copy of the vertices. I've tried to access the vertices in a `Model`, but there seems to be no local copy. I can either override the DirectXTK12 function that loads from an `sdkmesh` or bite the bullet and write an `obj` file loader (saving a local copy of the vertex buffer in either). 
++ Add the ability to use a convex hull for collisions on the models. I've gotten it working on the geometric primitives, but that's only because I save a local copy of the vertices. I've tried to access the vertices in a `Model`, but there seems to be no local copy. I can either override the DirectX function that loads from an `sdkmesh` or bite the bullet and write an `obj` file loader (saving a local copy of the vertex buffer in either). 
 + An `obj` file reader might be a good idea anyway. While you might prefer to shop a game with models in `sdkmesh` format, it might be better if we could use `obj`s in class.
 + Add in the rest of the geometric primitives that DirectXTK12 provides, including cylinders and cones.
 + Use Bullet joints to make a table out of 4 cylinders and a block with bounding boxes around each part. Have the table come apart after enough hits.

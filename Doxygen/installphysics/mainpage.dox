@@ -16,16 +16,22 @@ for <a href="../install/index.html">installing SAGE</a>.
 
 Some SAGE physics games require that you install a 2D physics
 engine called Box2D. First you
-must install `CMake` from [https://cmake.org/](https://cmake.org/).
-Make sure that you click the "Add CMake to the system PATH for the current user"
-radio button on the `CMake` Install Options dialog box when it appears.
+must install <span style="background-color:#D8E4D8;">`CMake`</span>
+from [https://cmake.org/](https://cmake.org/).
+Make sure that you click the 
+<span style="background-color:#D8E4D8;">"Add CMake to the system PATH for the current user"</span>
+radio button on the <span style="background-color:#D8E4D8;">`CMake`</span>
+Install Options dialog box when it appears.
 Then clone or download the source code for Box2D from
 [https://github.com/erincatto/Box2D](https://github.com/erincatto/Box2D).
-Run `Build.bat`, which will open `Box2D.sln` in Visual Studio.
-Build the project `box2d` in both Debug and Release configurations for the `x64` platform.
+Run <span style="background-color:#D8E4D8;">`Build.bat`</span
+>, which will open <span style="background-color:#D8E4D8;">`Box2D.sln`</span>
+in Visual Studio.
+Build the project <span style="background-color:#D8E4D8;">`box2d`</span>
+ in both Debug and Release configurations for the `x64` platform.
 Finally, create an environment variable `BOX2D_DIR` and set it to
 folder into which you cloned or downloaded Box2D. Mine is set to
-`C:\Users\ian\Documents\GitHub\Box2D\`.
+<span style="background-color:#D8E4D8;">`C:\Users\ian\Documents\GitHub\Box2D\`</span>.
 
 \anchor bullet
 # 2. Bullet Physics
@@ -34,33 +40,46 @@ Some SAGE physics games require that you install a 3D physics
 engine called Bullet Physics.
 Clone or download the source code for Bullet Physics from
 [https://github.com/bullet3/bullet3](https://github.com/bullet3/bullet3).
-Run `build_visual_studio_vr_pybullet_double.bat`. This will create `0_Bullet3Solution.sln`, which is a solution file for an older version of Visual Studio.
-Open `0_Bullet3Solution.sln` in Visual Studio.
+Run <span style="background-color:#D8E4D8;">`build_visual_studio_vr_pybullet_double.bat`</span>.
+This will create <span style="background-color:#D8E4D8;">`0_Bullet3Solution.sln`</span>,
+which is a solution file for an older version of Visual Studio.
+Open <span style="background-color:#D8E4D8;">`0_Bullet3Solution.sln`</span> in Visual Studio.
 It will ask you to retarget all of the projects in the solution. Click OK.
 
-In the Visual Studio Solution Explorer, select the projects `BulletCollision`, `BulletDynamics`, and `LinearMath`.
-Right-click on one of them and select Properties.
+In the <span style="background-color:#D8E4D8;">Visual Studio Solution Explorer</span>,
+select the projects <span style="background-color:#D8E4D8;">`BulletCollision`</span>,
+<span style="background-color:#D8E4D8;">`BulletDynamics`</span>,
+and <span style="background-color:#D8E4D8;">`LinearMath`</span>
+(Note: not `Bullet3Collision` and
+`Bullet3Dynamics`).
+Right-click on one of them and select <span style="background-color:#D8E4D8;">Properties</span>.
 We have to change some settings to make it compatible with the rest of our code before we build it.
 Firstly we need to change the precision from `double` to `float`.
 In the Property pages (see \ref fig2 "Fig. 2")
-for `All Configurations` of the platform `x64` select
-`C/C++` then `Preprocessor` in the left pane and `Preprocessor Definitions`
-in the right pane. Delete the string `BT_USE_DOUBLE_PRECISION;` and click OK.
+for <span style="background-color:#D8E4D8;">`All Configurations`</span> of the platform `x64` select
+<span style="background-color:#D8E4D8;">`C/C++`</span> then
+<span style="background-color:#D8E4D8;">`Preprocessor`</span> in the left pane and
+<span style="background-color:#D8E4D8;">`Preprocessor Definitions`</span>
+in the right pane. Delete the string <span style="background-color:#D8E4D8;">`BT_USE_DOUBLE_PRECISION;`</span>
+and click OK.
 This is shown in \ref fig2 "Fig. 2".
 
 \anchor fig2
 \image html bulletfloat.png "Fig 2. Bullet preprocessor definitions." width=60%
 
-Secondly, we need to change the run-time library to `Multi-threaded DLL`. 
+Secondly, we need to change the run-time library to 
+<span style="background-color:#D8E4D8;">`Multi-threaded DLL`</span>. 
 This is done as follows. On the same page as above,
 select the Release configuration of the platform `x64`.
 Next, select
-`C/C++` then `Code Generation` in the left pane and `Runtime Library`
-in the right pane. Select `Multi-threaded DLL (/MD)` from the
+<span style="background-color:#D8E4D8;">`C/C++`</span> then
+<span style="background-color:#D8E4D8;">`Code Generation`</span> in the left pane and
+<span style="background-color:#D8E4D8;">`Runtime Library`</span>
+in the right pane. Select <span style="background-color:#D8E4D8;">`Multi-threaded DLL (/MD)`</span> from the
 drop-down menu beside it.
 This is shown in \ref fig3 "Fig. 3".
 Do the same for the Debug configuration of the platform `x64`,
-but in this case select `Multi-threaded Debug DLL (/MDd)`
+but in this case select <span style="background-color:#D8E4D8;">`Multi-threaded Debug DLL (/MDd)`</span>
 from the drop-down menu.
 
 \anchor fig3
@@ -70,7 +89,7 @@ Build the three projects mentioned above
 in both Debug and Release configurations for the `x64` platform.
 Finally, create an environment variable `BULLET_DIR` and set it to
 folder into which you cloned or downloaded Bullet Physics. Mine is set to
-`C:\Users\ian\Documents\GitHub\bullet3\`.
+<span style="background-color:#D8E4D8;">`C:\Users\ian\Documents\GitHub\bullet3\`</span>.
 
 
 **/
