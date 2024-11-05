@@ -253,26 +253,111 @@ The Cartesian coordinates of the vertices of a regular icosahedron of circumradi
 \f]
 where \f$\phi = (\sqrt{5} + 1)/2\f$.
 
-The inradius of the icosacahedron created by `DirectX::GeometricPrimitive::CreateIcosahedron`
+The inradius of the icosahedron created by `DirectX::GeometricPrimitive::CreateIcosahedron`
 is equal to \f$1\f$.
-Therefore the scale and vertical height of the icosacahedron
+Therefore the scale and vertical height of the icosahedron
 object instance descriptor `CGame::CreateObjects` are both equal to
 `m_IcosahedronSize`.
 
 \anchor fig5
 \image html icosahedron.png "Fig. 5: The icosahedron in its initial orientation." width=40%
 
-The icosacahedron mesh created by `DirectX::GeometricPrimitive::CreateIcosahedron`
+The icosahedron mesh created by `DirectX::GeometricPrimitive::CreateIcosahedron`
 has default orientation is shown in \ref fig5 "Fig. 5", whereas we
 want its initial orientation to be with one face flat on the ground
 as shown in the appropriate frame of \ref fig1 "Fig. 1".
 This can be fixed by rotating it around its X-axis by one half the _dihedral angle_,
 which is the angle between two adjacent faces.
-The dihedral angle of a regular icosacahedron is 
+The dihedral angle of a regular icosahedron is 
 \f$\pi - \arccos(\sqrt{5}/3)\f$.
 Therefore the `m_qOrientation` field of the instance
-descriptor used to create the icosacahedron object in `CGame::CreateObjects` is
+descriptor used to create the icosahedron object in `CGame::CreateObjects` is
 `DirectX::SimpleMath::Quaternion::CreateFromAxisAngle(Vector3::UnitX, (XM_PI - acosf(sqrtf(5)/3.0f)/2.0f)`.
+
+\anchor section5-1-4
+###5.1.4 The Teapot
+
+\anchor fig6
+\image html teapot.png "Fig. 6: The teapot." width=40%
+
+Amusingly, the geometric primitives provided by DirectX include the teapot
+(commonly known as the <a href="https://en.wikipedia.org/wiki/Utah_teapot">Utah teapot</a>).
+Our teapot is shown in \ref fig6 "Fig. 6".
+
+
+The teapot object is an instance of `CObject` created in
+`CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
+`CInstanceDesc` has useful parameters for the object instance to be created including its
+orientation `CInstanceDesc::m_qOrientation` and scale `CInstanceDesc::m_fScale`.
+
+The teapot mesh is created
+in `CRenderer::UploadPrimitiveMesh` by calling `DirectX::GeometricPrimitive::CreateTeapot`.
+`CRenderer::UploadPrimitiveMesh` is called from `CRenderer::LoadGeometricPrimitives`,
+which is called from `CGame::Initialize`.
+
+\anchor section5-2
+##5.2 Bullet Physics
+
+\anchor section5-2-1
+###5.2.1 Bullet Physics Units
+
+Bullet Physics has its own scalar `btScalar`, which will be equivalent to a `float` if
+you followed the 
+<a href="../installphysics/index.html#section2">installation instructions</a> carefully.
+If you left `BT_USE_DOUBLE_PRECISION` set to `true`, then `btScalar` will be a `double`,
+which will lead to unnecessary compiler warnings about implicit type casting.
+It also has a 3D vector `btVector3` equivalent to `DirectX::SimpleMath::Vector3`,
+and a quaternion type `btQuaternion` equivalent to `DirectX::SimpleMath::Quaternion`.
+<span style="background-color:#D8E4D8;">`GameDefines.h`</span> contains the
+appropriate `PW2RW` and `RW2PW` functions to cast and scale to and from physics world and
+render world, respectively.
+
+\anchor section5-2-2
+###5.2.2 Bullet Physics Core Objects
+
+`CCommon` contains a pointer to the Bullet physics world.
+
+    static btDiscreteDynamicsWorld* m_pPhysicsWorld;
+
+It also has pointers to other useful Bullet Physics objects,
+a _default collision configuration_,
+a _collision dispatcher_,
+a _broad phase interface_, and
+a _sequential impulse constraint solver_.
+
+    static btDefaultCollisionConfiguration* m_pConfig;
+    static btCollisionDispatcher* m_pDispatcher;
+    static btBroadphaseInterface* m_pBroadphase;
+    static btSequentialImpulseConstraintSolver* m_pSolver;
+
+These common variables are initialized in `CGame::InitBulletPhysics`, where the gravity is also
+set to a hard-coded and somewhat arbitrary value. `CGame::InitBulletPhysics` is called by `CGame::Initialize`
+which also performs other initialization tasks such as loading primitives and sounds and creating
+the renderer and the object manager.
+
+\anchor section5-2-3
+###5.2.3 Bullet Physics Bodies
+
+Each object in our 3D world will be represented by an instance of `CObject`.
+The `CObject` constructor `CObject::CObject` takes as parameters `t`, a member of the
+enumerated type `eObject`
+(defined in <span style="background-color:#D8E4D8;">`GameDefines.h`</span>) indicating the object type,
+and `d` a `const` reference to an instance of `CInstanceDesc` filled in with
+the desired properties of this object instance. It proceeds as follows.
+A local pointer `pShape` to an instance of `btCollisionShape` is declared, then set in a
+`switch` statement. If the object is a model, then an instance of `btBoxShape`
+for an AABB of the model is used for the shape.
+If the object is a sphere, then an instance of `btSphereShape` is used for the shape.
+If the object is a box or a plane, an instance of `btBoxShape`
+is used for the shape. The default, which means that the object is a regular
+\ref section5-1-1 "tetrahedron",
+\ref section5-1-2 "dodecahedron", 
+\ref section5-1-3 "icosahedron", 
+or a \ref section5-1-4 "teapot",
+then the convex hull of the object created by `CObject::ComputeConvexHull` is used for the shape.
+The remainder of the `CObject::CObject` code creates a physics body for the shape and
+sets various important attributes. This body is then added to Physics World
+by calling `btDiscreteDynamicsWorld::addRigidBody`.
 
 \anchor section6
 # 6. What Next?

@@ -119,9 +119,8 @@ Inheritance diagram for CGame:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4db10c09035dc16b32d6c1ef4cca2143" id="r_a4db10c09035dc16b32d6c1ef4cca2143"><td class="memItemLeft" align="right" valign="top"><a id="a4db10c09035dc16b32d6c1ef4cca2143" name="a4db10c09035dc16b32d6c1ef4cca2143"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>~CGame</b> ()</td></tr>
-<tr class="memdesc:a4db10c09035dc16b32d6c1ef4cca2143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="memitem:a4db10c09035dc16b32d6c1ef4cca2143" id="r_a4db10c09035dc16b32d6c1ef4cca2143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4db10c09035dc16b32d6c1ef4cca2143">~CGame</a> ()</td></tr>
+<tr class="memdesc:a4db10c09035dc16b32d6c1ef4cca2143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a4db10c09035dc16b32d6c1ef4cca2143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4349adf43d0dc02d80ad06ca1d77411c" id="r_a4349adf43d0dc02d80ad06ca1d77411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4349adf43d0dc02d80ad06ca1d77411c">Initialize</a> ()</td></tr>
 <tr class="memdesc:a4349adf43d0dc02d80ad06ca1d77411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the game.  <br /></td></tr>
@@ -254,7 +253,26 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCollisionSo
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The game class encapsulates our game/toy/whatever. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4db10c09035dc16b32d6c1ef4cca2143" name="a4db10c09035dc16b32d6c1ef4cca2143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db10c09035dc16b32d6c1ef4cca2143">&#9670;&#160;</a></span>~CGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGame::~CGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The destructor deletes the object manager, the Bullet collision shapes, the collision configuration, the collision dispatcher, the broad phase, the sequential impulse constraint solver, and the physics world, </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af7200bd66587e10002e7ed9e4a1f930e" name="af7200bd66587e10002e7ed9e4a1f930e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7200bd66587e10002e7ed9e4a1f930e">&#9670;&#160;</a></span>BeginGame()</h2>
 
@@ -381,7 +399,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCollisionSo
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Initialize the Bullet Physics engine. </p>
+<p>Initialize the Bullet Physics engine. Create a default collision configuration, a collision dispatcher, a default broad phase, and a sequential impulse constraint solver. These are then used to create the physics world, which is a discrete dynamics world. The gravity is set to a hard-coded value. </p>
 
 </div>
 </div>
@@ -399,7 +417,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCollisionSo
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the renderer, the physics engine, and the step timer. </p>
+<p>Create and initialize the renderer. Load geometric primitives and models. Initialize the sound manager and load the sounds. Create the object manager and create and initialize the step timer. Initialize the physics engine and set its tick callback to <code><a class="el" href="_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Callback function for the end of a physics tick.">myTickCallback()</a></code>. Set the camera's initial position and begin the game. </p>
 
 </div>
 </div>
