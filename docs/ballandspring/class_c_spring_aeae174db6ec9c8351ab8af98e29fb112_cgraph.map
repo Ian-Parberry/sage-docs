@@ -1,0 +1,7 @@
+<map id="CSpring::draw" name="CSpring::draw">
+<area shape="rect" id="Node000001" title="Draw." alt="" coords="5,31,110,57"/>
+<area shape="rect" id="Node000002" href="$class_c_point.html#aea5e639f39c26e97dc03c944f6002e1f" title="Draw." alt="" coords="166,5,263,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,33,150,26,151,32,111,38"/>
+<area shape="rect" id="Node000003" href="$class_c_point.html#aea50825b47f6f95af8d7994c0816cb72" title="Get position." alt="" coords="158,56,271,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,50,143,55,142,60,110,55"/>
+</map>

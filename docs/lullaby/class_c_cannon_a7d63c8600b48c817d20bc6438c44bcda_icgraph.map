@@ -1,0 +1,9 @@
+<map id="CCannon::MakeCollide" name="CCannon::MakeCollide">
+<area shape="rect" id="Node000001" title="Make cannon parts collide&#45;able in Physics World." alt="" coords="522,5,679,32"/>
+<area shape="rect" id="Node000002" href="$class_c_cannon.html#ab60ba1a492265b1318103ad995e059f5" title="Make cannon explode." alt="" coords="343,5,474,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="507,21,475,21,475,16,507,16"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="327,21,295,21,295,16,327,16"/>
+<area shape="rect" id="Node000004" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>

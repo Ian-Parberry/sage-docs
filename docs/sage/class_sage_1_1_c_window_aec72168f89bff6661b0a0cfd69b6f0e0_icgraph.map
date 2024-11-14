@@ -1,0 +1,5 @@
+<map id="Sage::CWindow::InitGameWindow" name="Sage::CWindow::InitGameWindow">
+<area shape="rect" id="Node000001" title="Initialize the game window." alt="" coords="229,5,453,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_window.html#adfe2944a5e50b1df557bb0babbc5eb9c" title="WinMain." alt="" coords="5,5,181,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,21,181,21,181,16,213,16"/>
+</map>

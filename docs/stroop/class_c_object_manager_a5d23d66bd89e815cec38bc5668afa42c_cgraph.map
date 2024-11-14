@@ -1,0 +1,31 @@
+<map id="CObjectManager::ExplodeOldLetters" name="CObjectManager::ExplodeOldLetters">
+<area shape="rect" id="Node000001" title="Explode old letters." alt="" coords="5,241,200,284"/>
+<area shape="rect" id="Node000002" href="$class_c_vector_field.html#ac8380c325eb531cb67dc4542b9d40bce" title="Detonation." alt="" coords="267,47,424,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,239,166,167,203,125,246,90,270,77,272,82,249,94,207,129,170,170,119,243"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#ad337c35f788cc01cfdc9b7537592b915" title="Create new particle." alt="" coords="491,148,689,175"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="118,239,170,183,206,155,247,134,284,123,323,117,401,116,474,126,534,141,533,146,473,131,400,121,323,122,285,128,249,138,209,159,174,187,122,243"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a97be97ade1cf2ab9a3996b36e6a84da2" title="Emit a puff of smoke." alt="" coords="248,148,443,175"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="138,239,189,211,247,184,267,177,269,182,249,189,191,216,141,243"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a3f335cac0e6ad03c358163815c031889" title="Emit a spark." alt="" coords="251,199,440,225"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="200,240,263,226,264,232,201,245"/>
+<area shape="rect" id="Node000008" href="$class_c_object.html#a7eab694272ef4b421312338f2d8337bf" title="Get birth time." alt="" coords="268,249,422,276"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="200,260,253,260,253,265,200,265"/>
+<area shape="rect" id="Node000009" href="$class_c_object.html#a1a57a4765d943e7cd00709b46ac1a276" title="Get color." alt="" coords="281,300,410,327"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="201,280,266,294,265,299,200,286"/>
+<area shape="rect" id="Node000010" href="$class_c_object.html#aec88820ab7532259ce4f6ed5acffd20e" title=" " alt="" coords="285,351,406,377"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="141,282,191,310,249,336,271,344,269,349,247,341,189,315,138,287"/>
+<area shape="rect" id="Node000012" href="$class_c_object.html#aaa8e01de1643e10f7ff340dda8526287" title="&lt; Get velocity." alt="" coords="265,401,426,428"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="124,283,177,335,212,363,249,387,262,393,260,398,246,392,208,368,174,339,121,286"/>
+<area shape="rect" id="Node000013" href="$class_c_object.html#a123480f836ada04b508a4781c646fc79" title="&lt; Get position." alt="" coords="287,452,404,479"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="118,283,138,317,168,359,205,402,249,438,274,450,272,455,246,442,202,406,164,363,134,320,113,286"/>
+<area shape="rect" id="Node000003" href="$class_c_vector_field.html#a475e7a103eb142fe969b97a6f5d0d9cd" title="Closest vertex." alt="" coords="505,5,675,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="424,47,490,38,490,43,425,52"/>
+<area shape="rect" id="Node000004" href="$class_c_vector_field.html#a8756bfccbe7821de3826d0542f48441a" title="Check that indices are for a non&#45;edge vertex." alt="" coords="737,35,895,77"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="425,58,689,57,721,57,722,62,689,63,425,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="676,35,722,41,721,46,676,40"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="443,159,476,159,476,164,443,164"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="413,195,507,176,508,181,414,201"/>
+<area shape="rect" id="Node000011" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="554,401,626,428"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="407,374,539,402,538,407,406,379"/>
+<area shape="poly" id="edge16_Node000013_Node000011" title=" " alt="" coords="404,451,538,423,539,428,405,456"/>
+</map>

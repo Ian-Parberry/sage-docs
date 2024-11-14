@@ -1,0 +1,17 @@
+<map id="Sage::CSettings" name="Sage::CSettings">
+<area shape="rect" id="Node000001" title="Settings." alt="" coords="119,5,236,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_object_manager.html" title="A basic object manager." alt="" coords="5,80,163,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,44,110,82,106,77,150,40"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_settings_manager.html" title="Settings manager." alt="" coords="187,88,354,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,40,258,86,255,90,202,44"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sound.html" title="The Sound Player." alt="" coords="150,171,256,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,128,215,172,211,169,248,125"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_window.html" title="The window class." alt="" coords="280,171,397,197"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="293,125,330,169,326,172,289,128"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_mouse.html" title="The mouse handler." alt="" coords="210,245,318,272"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="317,210,279,247,275,243,313,206"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_renderer3_d.html" title="The renderer." alt="" coords="342,245,482,272"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="364,207,401,243,398,247,360,210"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_sprite_renderer.html" title="The sprite renderer class." alt="" coords="334,320,490,347"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="415,288,415,320,409,320,409,288"/>
+</map>

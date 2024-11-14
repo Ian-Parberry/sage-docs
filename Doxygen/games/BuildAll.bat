@@ -1,4 +1,4 @@
-:: Run doxygen in all folders by running the copy of Build.bat there..
+:: Run doxygen in all folders by running the copy of Build.bat there.
 
 @echo off
 
@@ -7,6 +7,7 @@ for %%d in (
   "1. Top Down Game"
   "2. Top Down Tiled Game"
   "3. Tiled Platformer"
+  "4. 2.5D Side Scroller"
 ) do (
   cd %%d 
   call Build.bat nopause

@@ -1,0 +1,12 @@
+<map id="CPulley" name="CPulley">
+<area shape="rect" id="Node000001" title="The pulley class." alt="" coords="56,172,123,199"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,142,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,123,90,171,85,172,76,124"/>
+<area shape="rect" id="Node000003" href="$class_c_level.html" title="Stub class for a level." alt="" coords="166,81,229,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,120,107,173,103,169,169,116"/>
+<area shape="rect" id="Node000005" href="$class_c_common.html" title="The common variables class." alt="" coords="182,172,266,199"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="180,122,175,135,177,147,187,159,200,169,196,173,183,163,172,149,170,134,175,120"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="139,5,256,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="200,47,200,81,195,81,195,47"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="237,158,240,145,238,133,229,121,218,111,221,107,233,117,243,131,245,145,242,159"/>
+</map>

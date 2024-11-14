@@ -1,0 +1,31 @@
+<map id="LineSeg.h" name="LineSeg.h">
+<area shape="rect" id="Node000001" title="Interface for CLineSegDesc, CLineSeg, and CKinematicLineSeg." alt="" coords="386,5,465,32"/>
+<area shape="rect" id="Node000002" href="$_line_8h.html" title="Interface for CLine." alt="" coords="398,80,454,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="428,33,428,64,423,64,423,33"/>
+<area shape="rect" id="Node000003" href="$_circle_8h.html" title="Interface for CCircleDesc, CCircle, and CKinematicCircle." alt="" coords="392,155,459,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,107,428,139,423,139,423,107"/>
+<area shape="rect" id="Node000004" href="$_shape_8h.html" title="Interface for CShapeDesc and CShape." alt="" coords="391,229,460,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="428,182,428,214,423,214,423,182"/>
+<area shape="rect" id="Node000005" href="$_a_a_b_b_8h.html" title="Interface for the AABB class CAabb2D." alt="" coords="284,304,352,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="408,259,351,297,348,293,405,254"/>
+<area shape="rect" id="Node000012" href="$_shape_math_8h.html" title="Handy math functions for the collision module." alt="" coords="376,304,475,331"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="428,257,428,288,423,288,423,257"/>
+<area shape="rect" id="Node000013" href="$_shape_common_8h.html" title="Interface for the class CShapeCommon." alt="" coords="499,304,622,331"/>
+<area shape="poly" id="edge16_Node000004_Node000013" title=" " alt="" coords="450,254,525,294,522,299,448,259"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,379,89,405"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="284,331,104,378,103,373,282,325"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="112,379,203,405"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="291,334,200,374,198,369,289,329"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="227,379,307,405"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="311,333,286,368,282,365,307,330"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="331,379,408,405"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="329,330,354,365,350,368,325,333"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="433,379,538,405"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="348,329,443,370,441,375,346,334"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="563,379,664,405"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="353,325,365,328,548,372,547,378,364,333,352,330"/>
+<area shape="poly" id="edge12_Node000012_Node000008" title=" " alt="" coords="399,334,310,374,308,369,397,329"/>
+<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="418,333,391,368,386,365,414,330"/>
+<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="438,330,468,365,464,369,434,333"/>
+<area shape="poly" id="edge15_Node000012_Node000011" title=" " alt="" coords="459,329,567,370,566,375,457,334"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Sage::CCamera::MoveTo" name="Sage::CCamera::MoveTo">
+<area shape="rect" id="Node000001" title="Move to new position." alt="" coords="210,47,379,73"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a55305308c8c1f94f63897a2ca2b39a22" title="Constructor." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,47,162,42,163,36,195,42"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#acfb173389d223b51774f5c0500a88aad" title="Set camera position." alt="" coords="5,72,162,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,78,163,84,162,78,194,73"/>
+</map>

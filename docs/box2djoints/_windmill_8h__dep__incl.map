@@ -1,0 +1,7 @@
+<map id="Windmill.h" name="Windmill.h">
+<area shape="rect" id="Node000001" title="Interface for the windmill class CWindmill." alt="" coords="61,5,143,32"/>
+<area shape="rect" id="Node000002" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,80,87,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,46,58,81,54,78,81,43"/>
+<area shape="rect" id="Node000003" href="$_windmill_8cpp.html" title="Code for the windmill class CWindmill." alt="" coords="111,80,208,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,43,152,78,147,81,119,46"/>
+</map>

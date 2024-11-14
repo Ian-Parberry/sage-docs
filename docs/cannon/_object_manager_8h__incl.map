@@ -1,0 +1,28 @@
+<map id="ObjectManager.h" name="ObjectManager.h">
+<area shape="rect" id="Node000001" title="Interface for the object manager CObjectManager." alt="" coords="263,5,384,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="105,80,163,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,35,178,78,176,73,289,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,135,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="304,35,177,109,107,149,104,144,174,104,301,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="520,80,630,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="368,30,518,73,516,78,366,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="158,155,286,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="315,34,279,82,240,142,235,140,274,78,311,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="408,229,554,256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="343,30,402,79,434,114,460,153,472,184,479,213,474,215,467,186,456,156,430,117,399,83,340,34"/>
+<area shape="rect" id="Node000007" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="288,80,358,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="326,33,326,64,321,64,321,33"/>
+<area shape="rect" id="Node000011" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="361,155,446,181"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="337,31,372,79,398,139,393,141,368,81,333,34"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="288,107,130,152,128,147,287,102"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="307,109,254,147,251,143,304,105"/>
+<area shape="rect" id="Node000008" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="270,229,382,256"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="326,107,328,214,323,214,321,107"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="339,105,380,142,377,146,335,109"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="204,304,312,331"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="316,258,282,294,278,291,312,255"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="336,304,452,331"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="340,255,374,291,370,294,336,258"/>
+<area shape="poly" id="edge13_Node000011_Node000006" title=" " alt="" coords="419,180,458,217,454,221,415,184"/>
+<area shape="poly" id="edge14_Node000011_Node000008" title=" " alt="" coords="392,184,352,221,349,217,388,180"/>
+</map>

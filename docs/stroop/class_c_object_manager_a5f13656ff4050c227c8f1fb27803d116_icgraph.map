@@ -1,0 +1,18 @@
+<map id="CObjectManager::Clear" name="CObjectManager::Clear">
+<area shape="rect" id="Node000001" title="Reset to initial conditions." alt="" coords="839,81,997,108"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="607,31,749,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="836,80,744,61,745,55,837,75"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#abba05e60f1cecc9071d070d3435fa0ce" title="Constructor." alt="" coords="565,81,791,108"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="823,97,791,97,791,92,823,92"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a7f985240f67c8bf03a26f370e67fdb33" title="Destructor." alt="" coords="586,132,770,175"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="846,115,769,134,767,129,845,110"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,5,517,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="591,38,518,30,518,25,591,33"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="354,56,507,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="591,55,508,64,507,59,591,50"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="328,33,296,37,295,32,327,28"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="337,61,295,56,296,51,338,56"/>
+</map>

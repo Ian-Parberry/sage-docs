@@ -1,0 +1,7 @@
+<map id="Shapes::CLineSegDesc::SetEndPts" name="Shapes::CLineSegDesc::SetEndPts">
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,35,393,77"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_line_seg_desc.html#ae48eac1e080a3bd32320d52ac2d40756" title="Constructor." alt="" coords="14,5,175,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,46,175,40,176,35,217,40"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_circle.html#a616d43f7672951a423a4d53c616e3770" title="Common tangents." alt="" coords="5,72,184,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,72,184,76,184,71,216,66"/>
+</map>

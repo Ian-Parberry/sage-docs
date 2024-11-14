@@ -1,0 +1,16 @@
+<map id="CBox2DRenderer::PW2RW" name="CBox2DRenderer::PW2RW">
+<area shape="rect" id="Node000001" title="Physics World to Render World." alt="" coords="795,60,979,87"/>
+<area shape="rect" id="Node000002" href="$class_c_box2_d_renderer.html#a6ad6b6804f284b9faf6fed3f22c06bbf" title="Draw Box2D body." alt="" coords="5,35,213,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="842,56,797,39,747,26,671,15,593,10,440,11,300,22,190,37,189,32,300,17,439,6,594,5,672,10,748,21,798,34,844,51"/>
+<area shape="rect" id="Node000003" href="$class_c_box2_d_renderer.html#a27bffa19f07ff1fc2ce6f57b7ce453ca" title="Draw Box2D edge shape." alt="" coords="530,35,741,62"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="780,66,741,62,742,56,780,60"/>
+<area shape="rect" id="Node000005" href="$class_c_box2_d_renderer.html#acad2f701a4e81603807eeddde804832d" title="Draw Box2D shape." alt="" coords="532,86,739,112"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="780,87,740,91,739,86,780,82"/>
+<area shape="rect" id="Node000006" href="$class_c_box2_d_renderer.html#a0a857d95767db7deff6621cc2dfb1aee" title="Draw Box2D polygon shape." alt="" coords="523,136,747,163"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="838,96,748,127,704,138,703,133,747,122,836,91"/>
+<area shape="rect" id="Node000004" href="$class_c_box2_d_renderer.html#ac38bbdd8f79c713ed9d8c8670dceb2e8" title="Draw Box2D shape." alt="" coords="261,60,475,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="514,63,476,66,475,61,514,57"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="245,64,213,61,213,56,245,59"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="516,90,475,87,476,81,516,85"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="552,135,522,127,407,90,409,85,524,122,554,130"/>
+</map>

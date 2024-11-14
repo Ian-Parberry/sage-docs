@@ -1,0 +1,37 @@
+<map id="ObjectManager.cpp" name="ObjectManager.cpp">
+<area shape="rect" id="Node000001" title="Code for CObjectManager." alt="" coords="335,5,469,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="140,80,318,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,35,274,76,272,71,371,30"/>
+<area shape="rect" id="Node000003" href="$_object_manager_8h.html" title="Interface for CObjectManager." alt="" coords="342,80,462,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="405,33,405,64,399,64,399,33"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="486,80,611,107"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="429,30,511,70,508,75,426,35"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,63,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="342,107,83,157,78,158,77,153,81,152,341,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="83,304,212,331"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="351,110,303,126,249,151,198,186,176,207,158,231,147,259,146,289,141,289,142,258,153,228,172,203,195,182,247,147,301,121,350,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="548,155,658,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="438,105,555,146,553,151,436,110"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="434,379,580,405"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="410,106,432,154,463,228,489,303,504,363,499,364,483,305,458,229,428,156,406,108"/>
+<area shape="rect" id="Node000008" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="316,155,386,181"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="395,109,371,144,366,141,391,106"/>
+<area shape="rect" id="Node000011" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="389,304,474,331"/>
+<area shape="poly" id="edge20_Node000003_Node000011" title=" " alt="" coords="406,107,430,289,425,289,401,108"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="316,175,283,181,246,191,210,208,179,231,161,259,153,289,148,288,156,257,175,228,207,203,245,186,282,176,315,170"/>
+<area shape="rect" id="Node000009" href="$_contact_listener_8h.html" title="Interface for my Box2D contact listeners." alt="" coords="189,229,314,256"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="335,184,283,222,280,218,332,180"/>
+<area shape="poly" id="edge19_Node000008_Node000011" title=" " alt="" coords="360,181,420,289,415,291,356,183"/>
+<area shape="rect" id="Node000012" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="295,379,408,405"/>
+<area shape="poly" id="edge18_Node000008_Node000012" title=" " alt="" coords="354,182,354,364,349,364,349,182"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="235,259,179,297,176,293,232,254"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="192,453,308,480"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="254,257,253,438,247,438,249,257"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="284,254,387,295,385,300,282,259"/>
+<area shape="poly" id="edge17_Node000009_Node000012" title=" " alt="" coords="262,255,337,364,332,367,258,258"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="446,329,485,366,482,370,443,333"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="419,333,378,370,374,366,416,329"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="335,408,282,446,279,442,332,404"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="332,453,440,480"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="360,405,376,438,371,440,355,407"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CBullet::DeathFX" name="CBullet::DeathFX">
+<area shape="rect" id="Node000001" title="Death special effects." alt="" coords="235,5,359,32"/>
+<area shape="rect" id="Node000002" href="$class_c_bullet.html#a13e3d4589c8e5f7b6099f71341236f8b" title="Collision response." alt="" coords="5,5,187,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,21,187,21,187,16,219,16"/>
+</map>

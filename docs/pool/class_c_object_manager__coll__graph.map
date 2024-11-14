@@ -1,0 +1,14 @@
+<map id="CObjectManager" name="CObjectManager">
+<area shape="rect" id="Node000001" title="The object manager." alt="" coords="166,81,285,108"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="229,175,313,201"/>
+<area shape="poly" id="edge4_Node000004_Node000001" title=" " alt="" coords="241,121,267,173,262,175,236,123"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,37,201,78,199,83,112,42"/>
+<area shape="rect" id="Node000005" href="$class_c_object.html" title="The game object." alt="" coords="99,253,168,280"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="83,47,133,253,128,254,78,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="167,5,284,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,47,228,81,223,81,223,47"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,163,242,149,226,109,231,107,247,147,255,161"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="236,212,158,255,155,250,234,207"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="129,238,132,205,143,171,156,151,172,133,204,106,208,111,175,137,160,154,148,173,137,206,135,238"/>
+</map>

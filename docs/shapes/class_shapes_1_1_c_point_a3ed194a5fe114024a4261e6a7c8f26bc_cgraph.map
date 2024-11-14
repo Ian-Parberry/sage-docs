@@ -1,0 +1,10 @@
+<map id="Shapes::CPoint::CPoint" name="Shapes::CPoint::CPoint">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="215,5,429,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,33,199,29,199,35,167,38"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="236,56,408,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,50,221,56,220,61,167,55"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="477,31,669,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="430,27,462,30,461,35,429,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="408,58,461,53,462,58,408,63"/>
+</map>

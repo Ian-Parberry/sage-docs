@@ -1,0 +1,41 @@
+<map id="CDialogBox::DlgProc" name="CDialogBox::DlgProc">
+<area shape="rect" id="Node000001" title="Dialog box procedure." alt="" coords="5,259,152,285"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="233,5,391,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,257,92,215,114,156,149,94,172,66,198,42,217,31,220,35,201,46,176,70,154,97,119,159,97,217,85,259"/>
+<area shape="rect" id="Node000003" href="$class_c_dialog_box.html#adbcaef1a681b3b5f6e43fda31a897db6" title="Get number from an edit box." alt="" coords="229,56,395,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,257,97,223,122,179,155,132,176,111,198,92,213,84,216,89,201,97,179,115,159,135,126,181,102,226,87,259"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a1b59a173eb45d6d60073d6d556fff7be" title="Get quadtree level count." alt="" coords="213,360,410,403"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,284,144,314,201,346,215,352,213,357,198,350,142,319,97,288"/>
+<area shape="rect" id="Node000006" href="$class_c_dialog_box.html#ad204873072080d264d24ee70058e8349" title="Get value from slider." alt="" coords="219,157,404,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="96,256,141,224,199,194,218,186,220,191,201,198,144,229,99,260"/>
+<area shape="rect" id="Node000007" href="$class_c_dialog_box.html#a2072d3a7a6eddb9e0d3dc6909e67c8a3" title="Initialize check boxes." alt="" coords="216,107,408,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="87,256,130,201,162,169,198,143,210,137,213,142,201,148,165,173,134,204,91,260"/>
+<area shape="rect" id="Node000009" href="$class_c_dialog_box.html#adef9d20153055e2a1e04b0db85400d02" title="Initialize edit boxes." alt="" coords="223,259,400,285"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="152,269,208,269,208,275,152,275"/>
+<area shape="rect" id="Node000010" href="$class_c_dialog_box.html#a58b2303f8fb8258a336a64d4b6cc2eef" title="Initialize radio buttons." alt="" coords="214,309,410,336"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="144,283,233,303,232,308,143,289"/>
+<area shape="rect" id="Node000011" href="$class_c_dialog_box.html#aedc1cf77da384ddee9b7915c5ed0b931" title="Initialize all spin controls." alt="" coords="216,208,408,235"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="143,255,232,236,233,241,144,261"/>
+<area shape="rect" id="Node000013" href="$class_c_object_manager.html#a92401549bf943c5af2edb6dd88ca5304" title="Reset the quadtree." alt="" coords="202,427,422,453"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="90,284,131,347,163,383,201,412,212,418,209,423,198,417,160,387,127,350,85,287"/>
+<area shape="rect" id="Node000018" href="$class_c_object_manager.html#a331c3db85903c158f818c9ac705a14ff" title="Start or stop kinematic shapes rotating." alt="" coords="200,477,424,504"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="87,285,100,321,124,370,157,421,178,444,201,463,209,468,206,472,198,467,174,447,153,424,119,373,96,323,82,287"/>
+<area shape="rect" id="Node000019" href="$class_c_dialog_box.html#ac3be68fa38c7f663755c8ea05ae6cba1" title="Set an edit box." alt="" coords="229,528,394,555"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="85,285,96,330,117,392,152,458,174,488,201,514,216,523,213,528,198,518,170,492,147,461,112,394,91,331,80,286"/>
+<area shape="rect" id="Node000005" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="488,368,641,395"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="411,379,473,379,473,384,411,384"/>
+<area shape="rect" id="Node000008" href="$class_c_dialog_box.html#aabadc320a5452abccdf439a9835f4e7b" title="Set check box." alt="" coords="476,107,654,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="408,117,460,117,460,123,408,123"/>
+<area shape="rect" id="Node000012" href="$class_c_dialog_box.html#a9f81ef1d87e19acbee78287603864916" title="Init a spin control." alt="" coords="472,208,657,235"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="408,219,456,219,456,224,408,224"/>
+<area shape="poly" id="edge14_Node000013_Node000005" title=" " alt="" coords="374,423,423,412,490,396,492,401,425,417,375,429"/>
+<area shape="rect" id="Node000014" href="$class_c_quad_tree.html#a92b7c5fde589cc97e7b803406cb44434" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="501,419,628,445"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="422,434,485,432,486,437,422,439"/>
+<area shape="rect" id="Node000015" href="$class_c_quad_tree.html#a9a3b1aff4515dd638c7343f17fafd711" title="Initialize for a given depth and area." alt="" coords="492,469,637,496"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="396,451,478,465,477,471,395,457"/>
+<area shape="rect" id="Node000017" href="$class_c_quad_tree.html#a7bfafc26e36377087ffac07f0bce97cd" title="Insert shape at place in tree." alt="" coords="500,544,629,571"/>
+<area shape="poly" id="edge17_Node000013_Node000017" title=" " alt="" coords="396,451,425,463,441,473,451,484,474,506,521,534,518,539,470,510,447,487,437,477,423,468,394,456"/>
+<area shape="rect" id="Node000016" href="$class_c_quad_tree.html#a88f2b8deae87509f1b4736f6e06a0583" title="Initialize AABBs in all nodes." alt="" coords="705,469,863,496"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="637,480,690,480,690,485,637,485"/>
+<area shape="poly" id="edge18_Node000017_Node000017" title=" " alt="" coords="528,545,521,535,526,525,540,519,565,517,591,520,605,526,602,531,589,525,565,523,542,525,529,529,526,535,532,542"/>
+</map>

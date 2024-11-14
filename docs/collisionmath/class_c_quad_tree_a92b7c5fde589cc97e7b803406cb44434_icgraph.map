@@ -1,0 +1,17 @@
+<map id="CQuadTree::Clear" name="CQuadTree::Clear">
+<area shape="rect" id="Node000001" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="831,31,958,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a92401549bf943c5af2edb6dd88ca5304" title="Reset the quadtree." alt="" coords="562,5,781,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="815,38,781,34,782,29,816,32"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a07299e1ef6e4467ebd770c7742586c58" title="Update the quadtree." alt="" coords="560,56,783,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="816,56,783,59,783,54,815,50"/>
+<area shape="rect" id="Node000003" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="360,5,506,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="546,21,506,21,506,16,546,16"/>
+<area shape="rect" id="Node000004" href="$class_c_dialog_box.html#af607613321e58a633ee6c9f222f18b4b" title="Constructor." alt="" coords="136,5,305,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="344,21,305,21,305,16,344,16"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="353,56,512,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="544,72,513,72,513,67,544,67"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="141,56,300,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="338,72,300,72,300,67,338,67"/>
+<area shape="rect" id="Node000008" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="125,72,88,72,88,67,125,67"/>
+</map>

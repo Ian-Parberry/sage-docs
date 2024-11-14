@@ -1,0 +1,7 @@
+<map id="Shapes::CLine::ClosestPt" name="Shapes::CLine::ClosestPt">
+<area shape="rect" id="Node000001" title="Get closest point on line." alt="" coords="5,31,179,57"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_line.html#a526a9994d90fbcf54dd7a21fbb8d0165" title="Constructor." alt="" coords="235,5,384,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,31,219,26,220,32,179,37"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_line.html#aa8ec141c06ee78d7d3c54b560692cc20" title="Get intersection point with line." alt="" coords="227,56,393,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,51,212,55,211,61,179,57"/>
+</map>

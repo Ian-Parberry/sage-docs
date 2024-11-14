@@ -1,0 +1,28 @@
+<map id="CCarAndBridge::CCarAndBridge" name="CCarAndBridge::CCarAndBridge">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,208,217,235"/>
+<area shape="rect" id="Node000002" href="$class_c_car_and_bridge.html#a96b7a38bf7cfe00da2b5317fd3cf2f82" title="Create bridge from platforms &amp; ramps." alt="" coords="265,107,461,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,205,313,137,315,142,147,210"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="1044,208,1116,235"/>
+<area shape="poly" id="edge16_Node000001_Node000004" title=" " alt="" coords="217,219,1028,219,1028,224,217,224"/>
+<area shape="rect" id="Node000008" href="$class_c_car_and_bridge.html#a4db9efe1d2f774542cea2954e518bd98" title="Create the car." alt="" coords="533,297,713,324"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="192,233,528,291,527,297,191,238"/>
+<area shape="rect" id="Node000003" href="$class_c_car_and_bridge.html#aa38bdb36606b46841766abf36917f664" title="Create a platform." alt="" coords="786,5,995,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,104,440,75,508,48,575,33,643,24,770,15,771,20,644,29,576,39,510,53,442,79,388,109"/>
+<area shape="poly" id="edge9_Node000002_Node000004" title=" " alt="" coords="429,103,509,92,649,78,707,74,761,73,814,79,869,91,929,112,997,143,1032,167,1060,194,1056,198,1028,171,994,148,927,117,867,96,813,84,761,79,707,79,649,84,509,97,430,109"/>
+<area shape="rect" id="Node000005" href="$class_c_car_and_bridge.html#a547b14b8365f7d3991facb6b91959282" title="Create a down ramp." alt="" coords="509,107,737,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="462,117,494,117,494,123,462,123"/>
+<area shape="rect" id="Node000007" href="$class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="518,157,729,184"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="436,131,537,151,536,156,435,137"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="966,30,997,49,1027,82,1049,120,1065,159,1075,192,1070,194,1060,161,1044,123,1023,85,994,53,963,35"/>
+<area shape="rect" id="Node000006" href="$_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="840,157,941,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="698,131,826,156,825,161,697,137"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="942,181,1029,205,1028,210,940,187"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="729,168,825,168,825,173,729,173"/>
+<area shape="poly" id="edge15_Node000008_Node000004" title=" " alt="" coords="702,294,995,237,1028,230,1029,236,996,243,703,299"/>
+<area shape="rect" id="Node000009" href="$class_c_car_and_bridge.html#aeb3f15eac9bd996e6c32d4f1c5c41821" title="Create the car body." alt="" coords="785,309,996,336"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="714,312,770,315,770,320,714,317"/>
+<area shape="rect" id="Node000010" href="$class_c_car_and_bridge.html#af0bba8bae33a656fb6e1eb839093b037" title="Create a wheel." alt="" coords="792,360,989,387"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="684,322,816,353,815,358,683,327"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="950,306,994,288,1026,267,1053,243,1057,247,1029,271,997,293,952,311"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="973,357,994,346,1018,324,1038,299,1065,248,1070,250,1042,302,1022,328,997,350,976,362"/>
+</map>

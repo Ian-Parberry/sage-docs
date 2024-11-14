@@ -1,0 +1,7 @@
+<map id="Sage::CSound::SetListenerPos" name="Sage::CSound::SetListenerPos">
+<area shape="rect" id="Node000001" title="Set listener position." alt="" coords="257,31,460,57"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a2712eca572f424f42bf8d5bbc2480f3e" title="Set listener to camera pos and orientation." alt="" coords="17,5,197,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,35,197,30,198,25,241,30"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sound.html#a01cad4589a84b31f34a1d0c7f98be76e" title="Set listener position." alt="" coords="5,56,209,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="241,58,210,62,209,56,241,53"/>
+</map>

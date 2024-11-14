@@ -1,0 +1,38 @@
+<map id="Sage::CLoadingThread&lt; t &gt;" name="Sage::CLoadingThread&lt; t &gt;">
+<area shape="rect" id="Node000001" title="A thread class for loading images and sounds." alt="" coords="1276,265,1458,292"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html" title="The sprite renderer class." alt="" coords="989,215,1146,241"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1161,241,1284,262,1284,267,1160,246"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html" title="The renderer." alt="" coords="727,97,866,124"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="845,128,1035,212,1033,217,843,133"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="418,5,546,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="563,29,632,44,704,64,771,94,769,99,702,69,631,49,562,34"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_component.html" title="The component accessor." alt="" coords="414,267,550,293"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="563,260,574,253,582,243,586,234,590,223,598,211,635,181,676,157,753,122,755,127,679,161,638,186,602,215,595,225,591,236,587,246,578,257,566,264"/>
+<area shape="rect" id="Node000013" href="$class_sage_1_1_c_sprite.html" title="The sprite." alt="" coords="745,231,848,257"/>
+<area shape="poly" id="edge14_Node000013_Node000005" title=" " alt="" coords="566,268,744,247,745,253,566,273"/>
+<area shape="rect" id="Node000015" href="$class_sage_1_1_c_sound.html" title="The Sound Player." alt="" coords="744,327,850,353"/>
+<area shape="poly" id="edge19_Node000015_Node000005" title=" " alt="" coords="566,293,744,327,743,333,565,298"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_camera_common.html" title="The camera common variables class." alt="" coords="398,165,566,192"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="542,158,599,143,726,118,727,124,601,148,543,163"/>
+<area shape="rect" id="Node000012" href="$class_sage_1_1_c_camera.html" title="A basic camera." alt="" coords="739,180,854,207"/>
+<area shape="poly" id="edge12_Node000012_Node000006" title=" " alt="" coords="582,181,739,188,738,193,582,186"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_window.html" title="The window class." alt="" coords="424,56,540,83"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="557,72,703,89,731,94,730,99,703,95,556,78"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_window_desc.html" title="The window descriptor." alt="" coords="182,288,329,315"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="264,273,282,233,308,184,343,135,387,92,423,76,425,80,390,97,347,138,313,187,287,235,269,275"/>
+<area shape="poly" id="edge17_Node000015_Node000008" title=" " alt="" coords="345,305,743,334,743,339,344,310"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_settings_manager.html" title="Settings manager." alt="" coords="172,364,339,391"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="304,354,322,341,337,325,353,294,360,265,360,236,357,207,355,179,356,151,366,122,387,93,403,80,422,72,425,77,406,85,391,97,371,124,362,152,360,179,362,207,365,235,365,265,358,296,342,328,326,345,307,358"/>
+<area shape="poly" id="edge18_Node000015_Node000009" title=" " alt="" coords="315,393,389,408,478,419,548,422,617,414,702,389,741,372,774,352,777,356,744,376,704,395,618,419,548,427,478,424,388,413,314,398"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_settings.html" title="Settings." alt="" coords="5,364,123,391"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="138,375,172,375,172,380,138,380"/>
+<area shape="rect" id="Node000011" href="$class_sage_1_1_c_screenshot_flag.html" title="Screenshot flag." alt="" coords="402,107,562,133"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="578,110,600,109,727,107,727,113,600,115,578,116"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="870,200,989,215,989,221,870,205"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="864,241,965,237,989,235,989,241,965,243,864,247"/>
+<area shape="rect" id="Node000014" href="$class_sage_1_1_c_texture_desc.html" title="The texture descriptor." alt="" coords="411,216,554,243"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="570,231,745,239,745,244,569,236"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="865,330,1275,286,1276,291,866,335"/>
+<area shape="rect" id="Node000016" href="$class_sage_1_1_c_playable_sound_desc.html" title="The playable sound descriptor." alt="" coords="389,372,576,399"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="591,384,647,380,702,372,765,351,767,356,704,377,647,386,591,389"/>
+</map>

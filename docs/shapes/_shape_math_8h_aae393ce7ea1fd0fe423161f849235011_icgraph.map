@@ -1,0 +1,12 @@
+<map id="Shapes::AngleToVector" name="Shapes::AngleToVector">
+<area shape="rect" id="Node000001" title="Normal vector from orientation." alt="" coords="416,64,573,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="529,51,517,45,495,43,473,45,462,49,459,55,465,62,460,65,454,55,458,46,472,39,495,37,519,40,532,46"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="215,64,368,91"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="401,80,368,80,368,75,401,75"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_arc.html#ac448e5b08ef96a604212c8863982e0be" title="Constructor." alt="" coords="15,5,157,32"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="227,62,135,35,136,30,228,57"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_kinematic_arc.html#a6a54feb32d20c5758452cb8599643210" title="Reset orientation." alt="" coords="5,56,167,99"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="200,80,167,80,167,75,200,75"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_kinematic_arc.html#a9a6914c653b5c9fd5d84c628b3d304cd" title="Rotate." alt="" coords="5,123,167,165"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="234,99,155,125,153,120,232,93"/>
+</map>

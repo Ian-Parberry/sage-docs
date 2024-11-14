@@ -1,0 +1,21 @@
+<map id="CGame" name="CGame">
+<area shape="rect" id="Node000001" title="The game class." alt="" coords="92,263,159,289"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,47,86,134,96,186,109,238,120,261,115,264,104,240,90,187,81,134,72,48"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html" title="The object manager." alt="" coords="163,81,282,108"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="114,37,199,78,196,83,112,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="166,5,283,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,43,170,61,153,83,135,132,126,183,125,229,127,262,122,263,120,229,121,183,130,130,149,80,166,57,187,39"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="226,47,226,81,220,81,221,47"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="163,172,248,199"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,212,139,264,135,260,182,209"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html" title="The renderer." alt="" coords="253,263,337,289"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="212,213,224,237,238,250,256,260,253,264,235,254,219,240,207,215"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="262,167,288,157,303,146,306,136,301,127,272,111,274,106,305,123,312,135,308,150,291,162,264,172"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="258,256,239,241,222,220,210,201,214,198,227,217,243,237,261,252"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,172,416,199"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="342,215,330,240,311,264,307,260,326,237,337,213"/>
+<area shape="rect" id="Node000007" href="$class_c_mesh_desc.html" title="Mesh descriptor." alt="" coords="441,172,535,199"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="448,208,324,265,321,260,446,203"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="198,121,191,133,191,152,199,170,194,173,185,153,186,131,194,118"/>
+</map>

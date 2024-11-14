@@ -1,0 +1,9 @@
+<map id="Sage::CScreenshotFlag" name="Sage::CScreenshotFlag">
+<area shape="rect" id="Node000001" title="Screenshot flag." alt="" coords="65,5,225,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_keyboard.html" title="The keyboard handler." alt="" coords="5,80,130,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,45,83,82,79,78,118,41"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html" title="The renderer." alt="" coords="154,80,293,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,41,212,78,208,82,168,45"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html" title="The sprite renderer class." alt="" coords="145,155,302,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,122,226,154,221,154,221,122"/>
+</map>

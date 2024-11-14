@@ -1,0 +1,9 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,31,159,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="225,5,384,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,33,210,27,210,32,159,38"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c" title="Draw frame rate text to screen." alt="" coords="207,56,402,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,50,192,54,191,59,159,55"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42" title="Draw object." alt="" coords="450,5,558,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,16,434,16,434,21,384,21"/>
+</map>

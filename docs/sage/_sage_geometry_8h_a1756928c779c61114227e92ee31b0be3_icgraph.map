@@ -1,0 +1,8 @@
+<map id="Sage::VectorToAngle" name="Sage::VectorToAngle">
+<area shape="rect" id="Node000001" title="Convert vector to angle." alt="" coords="414,29,557,56"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="519,16,508,10,486,8,465,10,454,15,451,20,456,27,452,30,446,21,450,11,464,5,486,3,509,5,522,12"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a3d5154f12a86d5a1ea274e464e7e8095" title="Draw 2D line." alt="" coords="210,21,366,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="399,45,366,45,366,40,399,40"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#a0191ebd603d2a41c8e4b3b9fa53496b5" title="Draw AABB." alt="" coords="5,21,162,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,45,162,45,162,40,194,40"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="CWheel::CWheel" name="CWheel::CWheel">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,31,129,57"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="180,5,318,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,33,164,28,165,33,130,38"/>
+<area shape="rect" id="Node000004" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="177,56,322,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,50,161,54,161,60,129,55"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="370,31,533,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="319,25,355,29,354,34,318,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="322,58,354,54,355,59,323,63"/>
+</map>

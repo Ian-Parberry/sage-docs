@@ -1,0 +1,32 @@
+<map id="Object.cpp" name="Object.cpp">
+<area shape="rect" id="Node000001" title="Code for the game object class CObject." alt="" coords="310,5,394,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,184,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,34,155,78,154,73,309,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="208,80,314,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="338,35,290,72,287,68,334,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="259,229,405,256"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,33,337,214,332,214,348,32"/>
+<area shape="rect" id="Node000005" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="655,80,726,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="395,26,641,79,640,84,394,32"/>
+<area shape="rect" id="Node000011" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="980,229,1092,256"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="395,18,561,23,671,31,788,42,903,59,1006,83,1050,97,1089,113,1120,132,1143,153,1149,164,1150,175,1138,195,1116,212,1088,225,1086,221,1113,207,1134,191,1145,174,1144,166,1139,156,1117,136,1086,118,1048,102,1004,88,902,64,788,48,671,36,561,29,394,23"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="429,229,578,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="655,100,596,107,528,118,467,134,444,145,430,156,425,172,432,189,447,205,467,219,464,223,444,209,427,192,419,173,426,153,442,140,465,129,527,113,595,101,654,95"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="550,155,679,181"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="679,109,640,146,637,142,675,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="703,155,830,181"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="706,105,744,142,741,146,702,109"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="854,155,954,181"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="727,104,853,147,851,152,725,109"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="978,155,1107,181"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="727,99,967,148,965,154,726,105"/>
+<area shape="poly" id="edge10_Node000005_Node000011" title=" " alt="" coords="726,91,820,92,939,99,998,107,1051,118,1093,133,1122,153,1128,163,1129,173,1120,192,1101,210,1078,224,1075,220,1098,205,1115,189,1124,172,1123,165,1118,156,1091,138,1049,123,997,112,939,105,820,97,726,97"/>
+<area shape="rect" id="Node000013" href="$_common_8h.html" title="Interface for the comon variables class CCommon." alt="" coords="440,155,525,181"/>
+<area shape="poly" id="edge12_Node000005_Node000013" title=" " alt="" coords="656,110,534,152,532,147,654,105"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="826,304,934,331"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1010,259,922,299,920,295,1008,254"/>
+<area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="457,184,373,225,371,220,455,179"/>
+<area shape="poly" id="edge14_Node000013_Node000006" title=" " alt="" coords="489,181,498,214,493,215,484,183"/>
+<area shape="poly" id="edge16_Node000013_Node000011" title=" " alt="" coords="526,177,538,179,771,212,965,232,964,238,771,217,537,184,525,182"/>
+<area shape="poly" id="edge13_Node000013_Node000012" title=" " alt="" coords="518,179,832,296,830,301,516,184"/>
+</map>

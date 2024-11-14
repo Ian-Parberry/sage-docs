@@ -1,0 +1,17 @@
+<map id="CGame::KeyboardHandler" name="CGame::KeyboardHandler">
+<area shape="rect" id="Node000001" title="The keyboard handler." alt="" coords="5,81,180,108"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="264,56,406,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,83,248,76,248,81,180,88"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#abe0aca27076ca4be480d729ff5fb5cbd" title="Apply impulse to the current bodies." alt="" coords="228,107,442,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="180,101,212,105,212,110,180,106"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="492,5,647,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,53,489,33,490,38,401,58"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="490,56,648,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,67,475,67,475,72,406,72"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a0115e10e9f8d6c4f644989b96fe69675" title="Create a pair of bodies." alt="" coords="696,56,893,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="648,67,680,67,680,72,648,72"/>
+<area shape="rect" id="Node000007" href="$class_c_body.html#aa48fb617d00afe323683e60953ea1ce3" title="Deliver impulse to body." alt="" coords="491,107,647,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="443,117,475,117,475,123,443,123"/>
+<area shape="rect" id="Node000008" href="$class_c_point.html#a585dc9938563cbf5d3b2902ae09e286c" title="Deliver an impulse." alt="" coords="716,107,873,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="648,117,700,117,700,123,648,123"/>
+</map>

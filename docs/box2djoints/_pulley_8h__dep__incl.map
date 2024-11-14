@@ -1,0 +1,7 @@
+<map id="Pulley.h" name="Pulley.h">
+<area shape="rect" id="Node000001" title="Interface for the pulley class CPulley." alt="" coords="64,5,132,32"/>
+<area shape="rect" id="Node000002" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,80,87,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,46,57,81,53,78,78,43"/>
+<area shape="rect" id="Node000003" href="$_pulley_8cpp.html" title="Code for the pulley class CPulley." alt="" coords="111,80,192,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,43,144,78,140,81,114,46"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Sage::CRenderer3D::LoadTexture" name="Sage::CRenderer3D::LoadTexture">
+<area shape="rect" id="Node000001" title="Load texture." alt="" coords="5,72,153,115"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#a9b5ba084a5b9514c595f099e580c98fa" title="Load texture from file." alt="" coords="201,72,348,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,91,185,91,185,96,153,96"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#a4214e252e5c0a151cd0e3da9e8a67acd" title="Load a texture from a DirectDraw surface file (contains mipmaps)." alt="" coords="411,5,558,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="343,69,400,51,401,56,344,74"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_renderer3_d.html#ae48ba4ddcc340359e2556e577660b3cf" title="Load a texture from a an image file (does not contain mipmaps)." alt="" coords="411,72,558,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="348,91,396,91,396,96,348,96"/>
+<area shape="rect" id="Node000006" href="$_sage_helpers_8h.html#a582d5fa5fcf803b10013316c19696a96" title="Make wide file name from a narrow one." alt="" coords="396,163,573,189"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="332,113,435,154,433,159,330,118"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_renderer3_d.html#a6edc4a85a105a3569f1c5383c95c161b" title="Process a loaded texture." alt="" coords="621,39,769,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="559,36,606,43,605,49,558,41"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="558,79,605,71,606,77,559,84"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="449,164,443,154,447,144,461,138,485,136,510,139,523,145,521,150,508,144,485,141,463,143,451,148,448,153,453,161"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Sage::CTimer::TicksToSeconds" name="Sage::CTimer::TicksToSeconds">
+<area shape="rect" id="Node000001" title="Convert ticks to seconds." alt="" coords="251,31,458,57"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_timer.html#a253daf5d5f2fb68c7584f9edf20dead1" title="Get time in seconds since last Tick." alt="" coords="5,5,203,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,35,203,31,203,26,235,29"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_timer.html#a1becbcef7f16d527fa8fa8162f7c22b8" title="Get current time in seconds." alt="" coords="24,56,184,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,59,185,64,184,59,235,53"/>
+</map>

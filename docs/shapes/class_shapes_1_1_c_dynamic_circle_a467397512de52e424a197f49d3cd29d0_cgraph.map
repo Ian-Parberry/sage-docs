@@ -1,0 +1,9 @@
+<map id="Shapes::CDynamicCircle::CollisionResponseDynamic" name="Shapes::CDynamicCircle::CollisionResponseDynamic">
+<area shape="rect" id="Node000001" title="Collision response for dynamic shape." alt="" coords="5,23,196,65"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="244,5,416,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,31,228,27,229,33,196,36"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="244,56,416,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,52,229,56,228,61,196,57"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="464,56,656,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="416,67,448,67,448,72,416,72"/>
+</map>

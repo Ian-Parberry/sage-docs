@@ -1,0 +1,5 @@
+<map id="CObjectManager::Shoot" name="CObjectManager::Shoot">
+<area shape="rect" id="Node000001" title="Shoot the cue ball." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#afa2a19510290dcf323fdba42697bcd06" title="Deliver an impulse." alt="" coords="215,5,379,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+</map>

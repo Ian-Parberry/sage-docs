@@ -1,0 +1,26 @@
+<map id="CDialogBox" name="CDialogBox">
+<area shape="rect" id="Node000001" title="The dialog box class." alt="" coords="429,353,520,380"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="457,96,594,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="543,136,547,146,558,190,564,227,561,263,546,305,525,334,499,355,495,351,521,330,542,303,556,262,558,227,552,191,541,147,538,137"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html" title="The object manager." alt="" coords="120,187,240,213"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="462,130,230,189,229,183,461,124"/>
+<area shape="rect" id="Node000008" href="$class_c_gate.html" title="A gate." alt="" coords="266,353,326,380"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="518,138,500,176,475,215,435,259,391,299,317,355,314,351,388,295,432,256,471,212,496,173,513,136"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="277,96,424,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="392,129,424,153,452,185,470,231,478,279,480,322,479,353,473,353,475,322,473,279,465,232,447,188,421,157,388,133"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="325,135,279,165,222,189,220,184,276,160,322,130"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="254,277,338,304"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,308,445,350,443,355,340,313"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="238,279,217,269,198,255,185,235,179,214,184,213,190,233,202,252,220,265,240,274"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="299,319,299,353,293,353,293,319"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="264,187,437,213"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="353,229,345,255,334,268,321,279,317,275,330,264,340,252,348,228"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="198,225,222,251,262,274,260,279,219,255,194,228"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,96,123,123"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="94,130,165,184,162,188,91,135"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="250,355,213,336,196,322,182,305,173,282,170,256,174,214,180,214,175,256,178,280,187,303,200,319,216,332,253,350"/>
+<area shape="rect" id="Node000009" href="$class_c_quad_tree.html" title="A quadtree." alt="" coords="146,96,235,123"/>
+<area shape="poly" id="edge13_Node000006_Node000009" title=" " alt="" coords="190,139,184,186,179,186,185,138"/>
+<area shape="rect" id="Node000010" href="$class_c_quad_tree_node.html" title="Quadtree node." alt="" coords="131,5,250,32"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="193,48,193,95,188,95,188,48"/>
+</map>

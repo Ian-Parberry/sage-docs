@@ -1,0 +1,7 @@
+<map id="CBitCounter" name="CBitCounter">
+<area shape="rect" id="Node000001" title="Single&#45;bit counter." alt="" coords="94,80,187,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,42,131,78,127,81,93,45"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="166,5,250,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,45,154,81,150,78,184,42"/>
+</map>

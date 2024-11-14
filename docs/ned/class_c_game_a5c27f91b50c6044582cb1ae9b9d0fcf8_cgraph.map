@@ -1,0 +1,5 @@
+<map id="CGame::CreateTrees" name="CGame::CreateTrees">
+<area shape="rect" id="Node000001" title="Create trees." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ada6461972d9c863a3fa7cdfb95bf7e32" title="Create new object." alt="" coords="200,5,400,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
+</map>

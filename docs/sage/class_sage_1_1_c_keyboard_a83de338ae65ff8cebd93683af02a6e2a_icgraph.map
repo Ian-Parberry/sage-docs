@@ -1,0 +1,15 @@
+<map id="Sage::CKeyboard::Trigger" name="Sage::CKeyboard::Trigger">
+<area shape="rect" id="Node000001" title="Check for key changing state." alt="" coords="492,107,664,133"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_keyboard.html#a99ad6d9adcf213a8336d7cf130b4aeec" title="Check for any key changing state." alt="" coords="255,5,427,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="543,100,496,72,443,46,408,35,410,30,445,42,499,68,545,96"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_keyboard.html#ae9f9bbaf1b0d7012672307bde4ba884f" title="Check for any key going down." alt="" coords="238,56,444,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="497,105,406,86,407,81,498,100"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_keyboard.html#afa172e4d3f693fdc01b723df869e13cf" title="Check for key going down." alt="" coords="238,107,444,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="476,123,445,123,445,117,476,117"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_keyboard.html#a21b64073ca1796d1f4f09757f836c1fa" title="Check for any key going up." alt="" coords="246,157,436,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="498,140,407,159,406,154,497,135"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_keyboard.html#a174d43fca9f0db2a73823b0032d7735a" title="Check for key going up." alt="" coords="246,208,436,235"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="545,144,499,172,445,198,410,210,408,205,443,194,496,168,543,140"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_keyboard.html#ad8c9a823c7eebe930c7bd59e244f8748" title="Poll the keyboard state." alt="" coords="5,56,190,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="222,72,190,72,190,67,222,67"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="CObject::GetSpriteType" name="CObject::GetSpriteType">
+<area shape="rect" id="Node000001" title="&lt; Get velocity." alt="" coords="803,35,963,61"/>
+<area shape="rect" id="Node000002" href="$class_c_my_listener.html#a16059fcc24fbb1600a89a23ebfab9404" title="Count number of bodies that have sprite type t." alt="" coords="588,5,727,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="787,38,727,30,727,25,788,33"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5d23d66bd89e815cec38bc5668afa42c" title="Explode old letters." alt="" coords="560,56,755,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="788,63,756,67,755,62,787,58"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a388377227dfb9471bb095d770c10ab35" title="Update all objects." alt="" coords="343,64,512,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="545,80,513,80,513,75,545,75"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,64,295,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,80,295,80,295,75,328,75"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,64,88,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,80,88,80,88,75,120,75"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Shapes::CCircle::ClosestPt" name="Shapes::CCircle::ClosestPt">
+<area shape="rect" id="Node000001" title="Closest point on circle." alt="" coords="268,35,451,61"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_arc.html#a65f524c9e4e17ec42dc6fa4f64ee2a71" title="Collision detection." alt="" coords="5,5,220,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,38,220,34,220,29,252,33"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_circle.html#ac672d4f951692521c85862be7cd1c713" title="Collision detection." alt="" coords="25,56,200,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,63,201,70,200,64,252,58"/>
+</map>

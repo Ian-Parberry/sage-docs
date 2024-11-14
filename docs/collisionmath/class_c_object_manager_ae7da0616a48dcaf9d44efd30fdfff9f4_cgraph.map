@@ -1,0 +1,5 @@
+<map id="CObjectManager::GetQTMaxLeafSize" name="CObjectManager::GetQTMaxLeafSize">
+<area shape="rect" id="Node000001" title="Get maximum number of objects in a leaf." alt="" coords="5,5,197,48"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a759cd8e1f022d3ff24ed91f026e77a00" title="Get maximum number of shapes in a leaf." alt="" coords="245,13,438,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,24,229,24,229,29,197,29"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="CGame::ControllerHandler" name="CGame::ControllerHandler">
+<area shape="rect" id="Node000001" title="The controller handler." alt="" coords="5,157,181,184"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a90bf0be7ca1092d570e9d5660ad06261" title="Fire armed object&#39;s gun." alt="" coords="229,107,402,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,154,238,135,239,140,156,159"/>
+<area shape="rect" id="Node000008" href="$class_c_player.html#a8b8147d61d72e129e8c4528c6a37ee7f" title="Set movement direction." alt="" coords="237,157,394,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="181,168,221,168,221,173,181,173"/>
+<area shape="rect" id="Node000009" href="$class_c_player.html#a63d6cf5fb542447cb233bdd65893d271" title="Set rotational velocity." alt="" coords="238,208,392,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="156,182,239,201,238,207,154,187"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7f49b5b7c0da33dc53401a26aa865f39" title="Create new object." alt="" coords="468,5,634,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="336,104,386,73,449,42,469,34,471,39,451,46,388,77,338,108"/>
+<area shape="rect" id="Node000004" href="$class_c_armed_object.html#a185e736cf8b66fd1bf48723a5247d77a" title=" " alt="" coords="452,56,650,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="380,103,470,84,471,89,382,109"/>
+<area shape="rect" id="Node000005" href="$class_c_armed_object.html#a0093f706ad2801801dd414ba797ad16e" title="Get gun offset." alt="" coords="454,107,649,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="402,117,438,117,438,123,402,123"/>
+<area shape="rect" id="Node000006" href="$class_c_armed_object.html#aad443c44e76a89026a2e8b02271d1242" title="Compute view vector." alt="" coords="450,157,652,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="382,131,471,151,470,156,380,137"/>
+<area shape="rect" id="Node000007" href="$class_c_player.html#a372b933d030cd0ae3bc375d9770b345f" title="Set the vulnerable flag." alt="" coords="473,208,629,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="379,132,403,143,419,156,428,169,437,182,451,194,463,200,460,204,449,198,433,186,424,172,415,160,401,148,377,136"/>
+</map>

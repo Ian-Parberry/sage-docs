@@ -1,0 +1,27 @@
+<map id="CStroop" name="CStroop">
+<area shape="rect" id="Node000001" title="A caricature of John Ridley Stroop with swivelling eyeballs." alt="" coords="266,81,335,108"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="257,172,341,199"/>
+<area shape="poly" id="edge16_Node000004_Node000001" title=" " alt="" coords="265,119,254,133,253,143,257,152,276,169,273,173,252,155,247,144,249,131,261,116"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="432,5,550,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="445,40,333,83,332,78,443,36"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="47,263,166,289"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="418,31,337,50,295,65,255,84,206,113,170,140,142,174,115,224,109,243,108,262,103,262,104,243,110,222,137,171,166,137,203,109,252,79,293,60,335,45,417,26"/>
+<area shape="rect" id="Node000006" href="$class_c_vector_field.html" title="A vector field." alt="" coords="437,263,534,289"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="496,47,508,223,508,239,497,263,492,261,503,238,503,223,491,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,35,266,79,264,85,126,40"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="68,48,59,87,53,135,54,188,59,213,68,237,76,250,88,260,84,264,72,254,63,240,54,215,49,188,47,135,53,86,62,47"/>
+<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="157,23,252,40,302,57,348,79,393,109,424,138,448,174,475,222,482,242,487,262,481,263,477,244,470,224,444,177,420,142,390,113,346,84,300,62,251,46,156,28"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="317,158,322,147,323,138,320,128,309,110,314,107,325,126,328,137,327,149,322,160"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="282,212,267,228,248,241,208,258,168,269,166,264,207,253,246,236,263,224,278,208"/>
+<area shape="poly" id="edge11_Node000006_Node000004" title=" " alt="" coords="319,208,352,236,388,249,438,262,436,267,387,255,349,241,316,212"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="111,247,118,233,128,221,151,210,183,201,256,189,256,194,184,206,152,215,131,225,122,236,116,249"/>
+<area shape="poly" id="edge8_Node000004_Node000006" title=" " alt="" coords="424,260,377,241,342,221,314,201,317,197,345,217,379,236,426,255"/>
+<area shape="rect" id="Node000008" href="$class_c_bubble_engine.html" title="A particle engine for bubbles." alt="" coords="430,353,541,380"/>
+<area shape="poly" id="edge15_Node000008_Node000006" title=" " alt="" coords="488,305,488,353,483,353,483,305"/>
+<area shape="rect" id="Node000007" href="$class_c_vertex.html" title="A vertex in a vector field." alt="" coords="562,172,630,199"/>
+<area shape="poly" id="edge12_Node000006_Node000007" title=" " alt="" coords="576,212,544,241,510,264,507,260,541,237,573,208"/>
+<area shape="poly" id="edge13_Node000004_Node000008" title=" " alt="" coords="414,353,360,330,335,312,314,291,302,268,296,242,295,199,300,199,301,242,307,266,319,288,339,308,363,325,416,348"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="558,263,728,289"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="623,303,587,332,533,355,531,350,584,327,619,299"/>
+</map>

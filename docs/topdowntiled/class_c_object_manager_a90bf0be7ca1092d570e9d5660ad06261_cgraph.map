@@ -1,0 +1,11 @@
+<map id="CObjectManager::FireGun" name="CObjectManager::FireGun">
+<area shape="rect" id="Node000001" title="Fire armed object&#39;s gun." alt="" coords="5,81,179,108"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a97512c70c9395658c59e2ce9dc84cf60" title="Create new object." alt="" coords="245,5,411,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,78,226,41,252,34,253,39,228,47,128,83"/>
+<area shape="rect" id="Node000003" href="$class_c_armed_object.html#a0093f706ad2801801dd414ba797ad16e" title="Get gun offset." alt="" coords="230,56,426,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,83,214,79,215,84,179,88"/>
+<area shape="rect" id="Node000004" href="$class_c_armed_object.html#aad443c44e76a89026a2e8b02271d1242" title="Compute view vector." alt="" coords="227,107,429,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,101,212,105,211,110,179,107"/>
+<area shape="rect" id="Node000005" href="$class_c_player.html#a372b933d030cd0ae3bc375d9770b345f" title="Set the vulnerable flag." alt="" coords="250,157,406,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="128,106,228,143,253,150,252,155,226,148,126,111"/>
+</map>

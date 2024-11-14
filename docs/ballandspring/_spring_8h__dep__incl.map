@@ -1,0 +1,36 @@
+<map id="Spring.h" name="Spring.h">
+<area shape="rect" id="Node000001" title="Interface for the spring class CSpring." alt="" coords="266,5,335,32"/>
+<area shape="rect" id="Node000002" href="$_body_8h.html" title="Interface for the body class CBody." alt="" coords="222,80,283,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,47,263,81,258,78,281,44"/>
+<area shape="rect" id="Node000015" href="$_spring_8cpp.html" title="Code for the spring class CSpring." alt="" coords="306,80,390,107"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="319,44,342,78,338,81,315,47"/>
+<area shape="rect" id="Node000003" href="$_body_8cpp.html" title="Code for the body class CBody." alt="" coords="109,229,184,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,118,201,136,182,156,163,195,152,230,147,228,158,193,178,153,197,132,218,114"/>
+<area shape="rect" id="Node000004" href="$_chain_8h.html" title="Interface for the chain class CChain." alt="" coords="51,155,117,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="210,116,115,156,113,152,208,111"/>
+<area shape="rect" id="Node000007" href="$_object_manager_8h.html" title="Interface for the object manager CObjectManager." alt="" coords="192,155,312,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="255,122,255,154,250,154,250,122"/>
+<area shape="rect" id="Node000012" href="$_ragdoll_8h.html" title="Interface for the ragdoll class CRagdoll." alt="" coords="337,155,413,181"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="288,113,355,152,352,156,285,117"/>
+<area shape="rect" id="Node000013" href="$_wheel_8h.html" title="Interface for the wheel class CWheel." alt="" coords="447,155,516,181"/>
+<area shape="poly" id="edge16_Node000002_Node000013" title=" " alt="" coords="298,106,447,153,445,158,297,111"/>
+<area shape="rect" id="Node000005" href="$_chain_8cpp.html" title="Code for the chain class CChain." alt="" coords="5,229,86,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="73,196,55,230,50,228,68,194"/>
+<area shape="rect" id="Node000006" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="414,229,549,256"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="133,175,414,226,413,232,132,181"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="223,193,167,231,164,226,220,188"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="307,184,442,226,440,231,306,189"/>
+<area shape="rect" id="Node000008" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="209,229,276,256"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="251,197,247,229,242,229,246,196"/>
+<area shape="rect" id="Node000011" href="$_ragdoll_8cpp.html" title="Code for the ragdoll class CRagdoll." alt="" coords="300,229,391,256"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="282,189,331,227,328,231,279,193"/>
+<area shape="rect" id="Node000009" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="152,304,233,331"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="228,270,203,305,199,302,223,267"/>
+<area shape="rect" id="Node000010" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="256,304,331,331"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="262,267,287,302,283,305,258,270"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="407,188,464,226,461,231,404,193"/>
+<area shape="poly" id="edge15_Node000012_Node000011" title=" " alt="" coords="366,197,353,230,348,228,362,195"/>
+<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="484,197,484,229,479,229,479,197"/>
+<area shape="rect" id="Node000014" href="$_wheel_8cpp.html" title="Code for the wheel class CWheel." alt="" coords="573,229,656,256"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="519,187,593,226,590,231,516,191"/>
+</map>

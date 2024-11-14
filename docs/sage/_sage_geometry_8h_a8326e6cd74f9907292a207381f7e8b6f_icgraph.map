@@ -1,0 +1,6 @@
+<map id="Sage::AngleToVector" name="Sage::AngleToVector">
+<area shape="rect" id="Node000001" title="Convert angle to vector." alt="" coords="210,29,353,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="315,16,303,10,281,8,261,10,250,15,247,20,252,27,248,30,242,21,246,11,259,5,281,3,305,5,318,12"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#acad1b13eba6b74a86015a1488124d02d" title="Draw circle." alt="" coords="5,21,162,64"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="194,45,162,45,162,40,194,40"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="ArmedObject.h" name="ArmedObject.h">
+<area shape="rect" id="Node000001" title="Interface for the armed game object class CArmedObject." alt="" coords="190,5,298,32"/>
+<area shape="rect" id="Node000002" href="$_armed_object_8cpp.html" title="Code for the game object class CArmedObject." alt="" coords="5,80,128,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,41,99,82,97,77,198,36"/>
+<area shape="rect" id="Node000003" href="$_guard_8h.html" title="Interface for the guard object class CGuard." alt="" coords="152,80,219,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,46,197,81,193,78,222,43"/>
+<area shape="rect" id="Node000006" href="$_object_manager_8h.html" title="Interface for the object manager classCObjectManager." alt="" coords="242,80,363,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="266,43,294,78,290,81,262,46"/>
+<area shape="rect" id="Node000010" href="$_player_8h.html" title="Interface for the player object class CPlayer." alt="" coords="386,80,456,107"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="290,36,391,77,389,82,288,41"/>
+<area shape="rect" id="Node000004" href="$_guard_8cpp.html" title="Code for the guard object class CGuard." alt="" coords="130,155,211,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,123,176,155,170,154,177,122"/>
+<area shape="rect" id="Node000005" href="$_object_manager_8cpp.html" title="Code for the the object manager class CObjectManager." alt="" coords="235,155,370,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="220,113,283,152,281,156,217,117"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="268,117,195,156,192,152,265,112"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="305,122,305,154,300,154,300,122"/>
+<area shape="rect" id="Node000007" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="394,155,462,181"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="338,112,407,152,405,156,336,117"/>
+<area shape="rect" id="Node000008" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="336,229,418,256"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="413,196,388,230,384,227,408,193"/>
+<area shape="rect" id="Node000009" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="441,229,516,256"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="447,193,472,227,468,230,443,196"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="373,111,212,157,211,152,371,106"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="389,117,325,156,322,152,386,113"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="426,122,429,154,424,155,421,123"/>
+<area shape="rect" id="Node000011" href="$_player_8cpp.html" title="Code for the player object class CPlayer." alt="" coords="486,155,570,181"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="454,113,511,152,508,156,451,118"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="CCommon" name="CCommon">
+<area shape="rect" id="Node000001" title="The common variables class." alt="" coords="225,5,310,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html" title="The game class." alt="" coords="142,80,209,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,44,193,82,190,78,238,40"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html" title="The game object." alt="" coords="233,80,302,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,48,270,80,265,80,265,48"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html" title="The object manager." alt="" coords="326,80,446,107"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="302,38,367,77,364,82,299,43"/>
+<area shape="rect" id="Node000004" href="$class_c_crow_object.html" title="Crow object." alt="" coords="5,155,106,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="219,114,94,157,92,152,217,109"/>
+<area shape="rect" id="Node000005" href="$class_c_dead_crow_object.html" title="Dead crow object." alt="" coords="130,155,261,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="246,120,210,156,206,152,242,116"/>
+<area shape="rect" id="Node000006" href="$class_c_house_object.html" title="The house object." alt="" coords="286,155,393,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="293,116,329,152,325,156,289,120"/>
+<area shape="rect" id="Node000007" href="$class_c_plane_object.html" title="The plane object." alt="" coords="418,155,520,181"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="318,110,434,152,433,157,316,115"/>
+</map>

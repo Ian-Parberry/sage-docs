@@ -1,0 +1,9 @@
+<map id="Sage::CSound::Load" name="Sage::CSound::Load">
+<area shape="rect" id="Node000001" title="Load sounds." alt="" coords="5,35,148,61"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a405c088e6d79ea9ec8defe43f847ecf5" title="Initialize." alt="" coords="198,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,35,183,30,183,35,148,40"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_settings_manager.html#ad1b3843d3ed095861945d846b255bc92" title="Load game settings." alt="" coords="196,56,363,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,56,181,60,180,66,147,61"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_settings_manager.html#a8a7ac51ac63186bf2b1a26996d2b100b" title="Set window size information." alt="" coords="411,56,578,99"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="363,75,395,75,395,80,363,80"/>
+</map>

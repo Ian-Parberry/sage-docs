@@ -1,0 +1,19 @@
+<map id="CPlaneObject" name="CPlaneObject">
+<area shape="rect" id="Node000001" title="The plane object." alt="" coords="110,81,213,108"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="188,180,272,207"/>
+<area shape="poly" id="edge9_Node000004_Node000001" title=" " alt="" coords="177,120,192,146,219,178,215,181,188,150,172,123"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html" title="The game object." alt="" coords="115,279,184,305"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,264,158,108,164,108,154,264"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,180,113,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,216,140,277,136,280,79,220"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="212,220,162,280,158,277,208,217"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html" title="The object manager." alt="" coords="211,279,331,305"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="237,221,248,254,263,277,258,279,243,256,232,223"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html" title="The game renderer." alt="" coords="249,81,333,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="280,123,264,149,241,181,237,178,259,147,275,120"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="213,5,369,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="294,47,294,81,288,81,288,47"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="257,265,233,208,238,206,262,263"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="330,172,487,215"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="399,230,380,257,357,272,332,282,330,277,354,267,376,253,394,227"/>
+</map>

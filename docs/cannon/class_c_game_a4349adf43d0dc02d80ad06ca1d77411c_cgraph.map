@@ -1,0 +1,9 @@
+<map id="CGame::Initialize" name="CGame::Initialize">
+<area shape="rect" id="Node000001" title="Initialize the game." alt="" coords="5,56,128,83"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a2b8445af848995e021ae59ae2e12be2c" title="Start loading sounds." alt="" coords="176,5,322,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,53,183,34,184,39,118,58"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a7c1fa6038d453a578371caa9f01e2388" title="Start loading sprites." alt="" coords="177,56,320,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,67,162,67,162,72,128,72"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="213,107,285,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,81,199,103,197,109,117,86"/>
+</map>

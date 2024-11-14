@@ -1,0 +1,11 @@
+<map id="CObject::PlayCollisionSounds" name="CObject::PlayCollisionSounds">
+<area shape="rect" id="Node000001" title="Play collision sounds." alt="" coords="5,31,203,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a12127eafa7e46b55b7471fd2462144a6" title="Contact type test." alt="" coords="251,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,30,235,26,235,32,203,35"/>
+<area shape="rect" id="Node000004" href="$class_c_object.html#a249c5ff817d96d5fb4e86173cf1d8def" title="Get object type." alt="" coords="254,56,399,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,53,239,57,238,62,203,58"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#a3bd6627cbcf662e12bfc6535aafe32b7" title=" " alt="" coords="450,5,614,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,16,434,16,434,21,402,21"/>
+<area shape="rect" id="Node000005" href="$_game_defines_8h.html#ae7ffbe2c87a0231198fe2dc135dc0c3e" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="496,56,568,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="399,67,480,67,480,72,399,72"/>
+</map>

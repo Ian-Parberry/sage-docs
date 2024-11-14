@@ -1,0 +1,22 @@
+<map id="CGate" name="CGate">
+<area shape="rect" id="Node000001" title="A gate." alt="" coords="230,96,290,123"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The object manager." alt="" coords="338,187,457,213"/>
+<area shape="poly" id="edge9_Node000005_Node000001" title=" " alt="" coords="257,138,259,150,264,161,274,169,292,176,338,187,337,192,290,181,272,174,260,164,254,152,252,138"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="240,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,47,269,97,265,94,292,44"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="322,44,360,121,393,185,388,188,355,124,317,47"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="195,277,280,304"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,262,240,208,248,146,254,123,259,124,253,147,245,209,241,262"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="294,284,338,274,359,264,377,251,388,233,394,213,399,215,393,235,381,255,361,269,340,279,296,290"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,187,179,213"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="127,219,218,274,215,279,124,224"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="323,212,292,222,263,239,250,258,242,278,237,276,245,255,260,235,289,217,322,207"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="369,96,487,123"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="421,138,404,187,399,185,416,136"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="510,96,658,123"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="545,132,425,188,423,184,543,127"/>
+<area shape="rect" id="Node000008" href="$class_c_quad_tree.html" title="A quadtree." alt="" coords="681,96,770,123"/>
+<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="667,129,445,189,444,183,666,124"/>
+<area shape="rect" id="Node000009" href="$class_c_quad_tree_node.html" title="Quadtree node." alt="" coords="666,5,785,32"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="728,48,728,95,723,95,723,48"/>
+</map>

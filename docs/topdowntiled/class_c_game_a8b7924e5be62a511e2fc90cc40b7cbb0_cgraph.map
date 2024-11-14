@@ -1,0 +1,11 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,60,159,87"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="225,35,384,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,62,210,56,210,61,159,67"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c" title="Draw frame rate text to screen." alt="" coords="207,85,402,112"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,79,192,83,191,88,159,85"/>
+<area shape="rect" id="Node000003" href="$class_c_tile_manager.html#a329861d19161159afb3753acb415a7c0" title="Draw the map using multi&#45;framed tile sprite." alt="" coords="477,5,618,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,36,461,26,462,32,384,41"/>
+<area shape="rect" id="Node000004" href="$class_c_tile_manager.html#a459a0b429dd887031975276591c014fe" title="Draw the bounding boxes." alt="" coords="450,56,645,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="384,55,435,61,434,66,383,60"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="CCrowObject::Move" name="CCrowObject::Move">
+<area shape="rect" id="Node000001" title="Move depending on time and speed." alt="" coords="5,81,146,108"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#ae33d05b96b8b11fe621e42525a908041" title="Move me." alt="" coords="209,31,318,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,78,196,59,198,64,129,83"/>
+<area shape="rect" id="Node000004" href="$class_c_crow_object.html#a67ed3be858eba35a91ecdfacc9698145" title="Artificial intelligence." alt="" coords="194,107,334,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,101,179,106,178,111,146,107"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#aab4afcc6bc3d0db1ef1cce8110899601" title="Kill me." alt="" coords="408,5,526,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="319,35,392,25,393,31,319,40"/>
+<area shape="rect" id="Node000005" href="$class_c_crow_object.html#aefc639111c29fee8d02b06e66699d003" title="Ai for avoiding plane." alt="" coords="382,56,552,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,103,395,84,397,90,321,109"/>
+<area shape="rect" id="Node000008" href="$class_c_common.html#a0c01cce335a8dec3058c19f5f8e48dec" title="Wrap horizontal distance." alt="" coords="808,132,930,159"/>
+<area shape="poly" id="edge11_Node000004_Node000008" title=" " alt="" coords="318,131,382,143,494,151,605,153,792,148,792,153,605,158,493,156,382,148,317,137"/>
+<area shape="rect" id="Node000009" href="$class_c_crow_object.html#a584f8df1134f7a7efb6d2768757b5f21" title="Ai for cruising along." alt="" coords="383,107,551,133"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="334,117,367,117,367,123,334,123"/>
+<area shape="rect" id="Node000010" href="$class_c_object.html#a1b52d807212ad393bdb1b0c1aa3c4f2b" title="Get position." alt="" coords="406,208,528,235"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="287,132,331,159,383,187,412,200,410,204,381,192,328,163,285,136"/>
+<area shape="rect" id="Node000006" href="$class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d" title="Get velocity." alt="" coords="622,56,738,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="553,67,607,67,607,72,553,72"/>
+<area shape="rect" id="Node000007" href="$class_c_crow_object.html#a6d1b7679437e8d5d0a84d5e0bdb420cc" title="Change state." alt="" coords="600,107,760,133"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="527,81,607,100,605,105,526,86"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="761,128,792,132,792,138,760,133"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="552,117,585,117,585,123,552,123"/>
+</map>

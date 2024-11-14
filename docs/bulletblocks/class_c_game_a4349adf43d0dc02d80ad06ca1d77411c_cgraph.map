@@ -1,0 +1,41 @@
+<map id="CGame::Initialize" name="CGame::Initialize">
+<area shape="rect" id="Node000001" title="Initialize the game." alt="" coords="5,283,128,309"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="195,56,337,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,281,174,160,237,92,241,96,178,163,80,284"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#a59772cac4c768f86382e2f85ad45783f" title="Initialize Bullet Physics engine." alt="" coords="180,173,352,200"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="80,280,121,245,174,210,188,203,190,208,177,214,124,249,84,284"/>
+<area shape="rect" id="Node000008" href="$class_c_renderer.html#a1903d70355e94931f4df67ce1ecb3232" title="Initialize." alt="" coords="196,224,336,251"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="111,280,175,260,200,253,202,258,176,265,113,285"/>
+<area shape="rect" id="Node000009" href="$class_c_renderer.html#a38d5e7055814cac465c9a55bf07415ec" title="Load meshes." alt="" coords="176,275,356,317"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="128,293,160,293,160,299,128,299"/>
+<area shape="rect" id="Node000017" href="$class_c_renderer.html#afe8c1a1261fc05d137a563878ec2f87c" title="Load model from file." alt="" coords="188,341,344,368"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="113,307,176,327,202,334,200,339,175,332,111,312"/>
+<area shape="rect" id="Node000018" href="$class_c_game.html#a2b8445af848995e021ae59ae2e12be2c" title="Load sounds." alt="" coords="193,392,339,419"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="84,308,124,343,177,378,190,384,188,389,174,382,121,347,80,312"/>
+<area shape="rect" id="Node000019" href="$_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Physics tick callback." alt="" coords="208,468,324,495"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="78,308,118,364,146,398,177,429,222,458,219,463,174,433,142,401,114,367,74,311"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="433,5,591,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,53,429,33,430,38,335,58"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="433,56,591,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="338,67,417,67,417,72,338,72"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a47c6139224ca0bc1b7aae523e90534c3" title="Create an object." alt="" coords="668,31,835,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="591,58,653,52,654,57,592,64"/>
+<area shape="rect" id="Node000006" href="$class_c_renderer.html#a66e1f431af58e6f988a327491827c641" title="Get model extents." alt="" coords="672,81,831,108"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="592,75,657,82,657,87,591,80"/>
+<area shape="rect" id="Node000010" href="$class_c_renderer.html#abbe355c9503eb3acddaff29dbe92cc91" title="Begin resource upload." alt="" coords="422,107,603,149"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="339,272,354,261,365,248,371,236,377,211,383,185,390,172,402,159,407,156,410,160,406,163,395,175,388,187,382,212,376,238,369,251,358,265,342,276"/>
+<area shape="rect" id="Node000011" href="$class_c_renderer.html#ab67329c56a69f157393aa65ca227261d" title="End resource upload." alt="" coords="406,173,618,200"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="334,272,354,260,369,248,377,235,387,222,403,210,414,204,417,208,405,214,391,226,382,238,373,251,358,265,337,277"/>
+<area shape="rect" id="Node000012" href="$class_c_renderer.html#a6d9127dde4e0605c05692a38637d75b0" title="Upload box mesh to GPU." alt="" coords="418,224,606,251"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="356,272,403,260,436,252,438,257,405,265,357,277"/>
+<area shape="rect" id="Node000013" href="$class_c_renderer.html#a899ae7050f8e06f2b3d92222058acb65" title="Upload default effect to GPU." alt="" coords="424,275,600,317"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="357,293,409,293,409,299,357,299"/>
+<area shape="rect" id="Node000014" href="$class_c_renderer.html#a0f2f67f2761adb5dac12588ed5962d5f" title="Upload geometric primitive mesh to GPU." alt="" coords="404,341,620,368"/>
+<area shape="poly" id="edge13_Node000009_Node000014" title=" " alt="" coords="357,315,405,327,438,335,436,340,403,332,356,320"/>
+<area shape="rect" id="Node000015" href="$class_c_renderer.html#aa524b7deae0d0ee69564eebcc070f165" title="Upload sphere mesh to GPU." alt="" coords="409,392,615,419"/>
+<area shape="poly" id="edge14_Node000009_Node000015" title=" " alt="" coords="337,315,358,327,373,341,382,354,391,366,405,378,417,384,414,388,403,382,387,370,377,357,369,344,354,332,334,320"/>
+<area shape="rect" id="Node000016" href="$class_c_renderer.html#ae8c4d4161857c1b1df2257db71af7f3c" title="Upload texture to GPU." alt="" coords="424,443,600,469"/>
+<area shape="poly" id="edge15_Node000009_Node000016" title=" " alt="" coords="342,316,358,327,369,341,376,354,382,380,388,405,394,417,406,429,412,433,409,437,402,433,390,420,383,407,377,381,371,356,365,344,354,331,339,320"/>
+<area shape="rect" id="Node000020" href="$class_c_object.html#a588546a4912cee64af7b31d6c1d6ffff" title="Add a contact." alt="" coords="439,493,585,520"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="324,485,424,495,423,500,323,490"/>
+</map>

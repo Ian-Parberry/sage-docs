@@ -1,0 +1,7 @@
+<map id="RackAndPinion.h" name="RackAndPinion.h">
+<area shape="rect" id="Node000001" title="Interface for the rack and pinion class CRackAndPinion." alt="" coords="52,5,174,32"/>
+<area shape="rect" id="Node000002" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,80,87,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,45,59,81,56,78,89,42"/>
+<area shape="rect" id="Node000003" href="$_rack_and_pinion_8cpp.html" title="Code for the rack and pinion class CRackAndPinion." alt="" coords="111,80,248,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,42,170,78,166,81,133,45"/>
+</map>

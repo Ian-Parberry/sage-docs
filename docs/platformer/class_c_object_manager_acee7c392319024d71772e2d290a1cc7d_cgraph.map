@@ -1,0 +1,5 @@
+<map id="CObjectManager::NarrowPhase" name="CObjectManager::NarrowPhase">
+<area shape="rect" id="Node000001" title="Narrow phase collision detection and response." alt="" coords="5,5,212,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d" title="Collision response." alt="" coords="260,5,446,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,16,244,16,244,21,212,21"/>
+</map>

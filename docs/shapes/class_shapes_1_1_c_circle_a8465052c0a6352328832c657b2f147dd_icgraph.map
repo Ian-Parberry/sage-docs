@@ -1,0 +1,7 @@
+<map id="Shapes::CCircle::Tangents" name="Shapes::CCircle::Tangents">
+<area shape="rect" id="Node000001" title="Tangents through external point." alt="" coords="232,31,410,57"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_circle.html#aead9bbd3657c5f5b9618ea400f30aed0" title="Common tangent." alt="" coords="9,5,180,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,35,180,31,181,26,216,30"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_circle.html#a616d43f7672951a423a4d53c616e3770" title="Common tangents." alt="" coords="5,56,184,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,58,185,62,184,57,216,53"/>
+</map>

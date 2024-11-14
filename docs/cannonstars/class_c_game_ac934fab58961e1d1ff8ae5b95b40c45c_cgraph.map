@@ -1,0 +1,7 @@
+<map id="CGame::ProcessWinLose" name="CGame::ProcessWinLose">
+<area shape="rect" id="Node000001" title="Process whether player has won or lost." alt="" coords="5,43,179,69"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a999bd0acd093ba701a7f24b865aa0fd5" title="Test all crates below height." alt="" coords="227,5,408,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,42,211,38,212,43,179,47"/>
+<area shape="rect" id="Node000003" href="$class_c_cannon.html#a2dd70c0ca912532f46bb0234d3928eb2" title="Whether cannon has exploded." alt="" coords="254,72,380,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,65,239,72,238,78,178,70"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="Shapes::CArc::CArc" name="Shapes::CArc::CArc">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,164,147,191"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="195,164,348,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,175,179,175,179,180,147,180"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="396,252,613,279"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,189,343,214,397,238,419,245,418,250,395,243,340,219,295,194"/>
+<area shape="rect" id="Node000005" href="$_shape_math_8h.html#aae393ce7ea1fd0fe423161f849235011" title="Normal vector from orientation." alt="" coords="426,76,583,103"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="295,161,340,137,395,113,418,105,419,110,397,117,343,141,297,166"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="902,99,1074,126"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="278,162,294,134,320,99,354,64,395,38,432,24,469,14,547,4,626,5,704,16,777,32,843,51,945,90,943,95,841,57,776,37,703,21,626,11,548,9,471,19,433,29,397,43,357,68,324,102,299,137,282,165"/>
+<area shape="rect" id="Node000007" href="$_shape_math_8h.html#a42ba6241a99c1dcd508a892de306416a" title="Perpendicular vector." alt="" coords="456,202,554,228"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="349,187,440,202,439,207,348,193"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_arc.html#a5df47e5d99c3d84d7c34cceb3c124288" title="Point in sector test." alt="" coords="418,303,591,330"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="286,190,331,239,362,266,397,289,411,295,408,300,395,293,359,270,327,243,282,193"/>
+<area shape="rect" id="Node000011" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="398,127,612,154"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="348,163,402,154,403,159,349,168"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="661,190,854,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="566,249,613,238,689,218,690,223,614,243,567,254"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="465,78,458,68,463,58,479,52,505,50,533,52,547,59,545,64,531,57,505,55,480,57,467,62,464,67,470,74"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="465,203,458,193,463,183,479,177,505,175,533,178,547,184,545,189,531,183,505,180,480,182,467,187,464,192,470,200"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_arc.html#a68cd1094cdde528977fd84e172483c0e" title="Point to angle." alt="" coords="672,271,843,298"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="591,303,656,294,657,300,592,308"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="784,268,852,226,911,179,960,135,963,139,915,183,855,231,787,273"/>
+<area shape="rect" id="Node000010" href="$_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073" title="Normalize angle to ." alt="" coords="905,271,1070,298"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="844,282,890,282,890,287,844,287"/>
+<area shape="poly" id="edge13_Node000010_Node000010" title=" " alt="" coords="949,272,942,262,947,252,962,246,988,244,1016,247,1030,254,1028,259,1014,252,988,250,964,252,950,256,947,262,953,269"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="567,152,614,163,690,183,689,188,613,168,566,157"/>
+</map>

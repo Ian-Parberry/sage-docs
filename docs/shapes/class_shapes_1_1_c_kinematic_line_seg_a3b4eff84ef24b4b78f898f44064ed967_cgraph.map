@@ -1,0 +1,23 @@
+<map id="Shapes::CKinematicLineSeg::Rotate" name="Shapes::CKinematicLineSeg::Rotate">
+<area shape="rect" id="Node000001" title="Rotate." alt="" coords="5,72,194,115"/>
+<area shape="rect" id="Node000002" href="$_shape_math_8h.html#a655b44b1455600fa7b31101f5ee0109d" title="Rotate point." alt="" coords="269,29,394,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,70,253,57,254,62,195,75"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="246,80,418,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="194,91,231,91,231,96,194,96"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_line_seg.html#a9d7855e89e954f47465461997da75dee" title="Update other properties from the end points." alt="" coords="242,156,422,183"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="168,113,275,148,273,153,166,118"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="293,31,286,21,291,11,306,5,332,3,360,5,374,12,372,17,359,10,332,8,307,10,294,15,291,20,297,27"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="735,105,928,132"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="418,86,545,85,688,91,751,99,750,105,687,96,545,90,418,92"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="470,105,687,132"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="400,153,495,133,496,138,401,158"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="492,156,665,183"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="422,167,477,167,477,172,422,172"/>
+<area shape="rect" id="Node000008" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="512,231,645,257"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="379,181,518,223,516,228,378,186"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="472,281,686,308"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="350,181,401,224,435,247,471,267,488,274,486,279,469,272,432,252,398,228,346,185"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="688,116,720,116,720,121,688,121"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="537,232,530,222,535,212,552,206,579,204,608,207,624,213,622,218,607,212,579,209,553,211,538,216,535,221,542,229"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="661,278,686,267,725,239,760,206,811,143,815,147,763,210,728,243,689,272,663,283"/>
+</map>

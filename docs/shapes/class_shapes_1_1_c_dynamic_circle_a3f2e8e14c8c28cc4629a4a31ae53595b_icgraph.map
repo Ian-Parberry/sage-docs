@@ -1,0 +1,5 @@
+<map id="Shapes::CDynamicCircle::CollisionResponseKinematic" name="Shapes::CDynamicCircle::CollisionResponseKinematic">
+<area shape="rect" id="Node000001" title="Collision response for kinematic shape." alt="" coords="223,5,419,48"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_dynamic_circle.html#a9f0b02a5d076cd8900ef3b25e28f5ddc" title="Collision response." alt="" coords="5,5,175,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,29,175,29,175,24,207,24"/>
+</map>

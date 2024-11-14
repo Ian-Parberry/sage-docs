@@ -1,0 +1,20 @@
+<map id="Shapes::CLineSeg::CLineSeg" name="Shapes::CLineSeg::CLineSeg">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,56,201,83"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="253,5,424,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,53,258,33,259,38,169,58"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_line_seg.html#a9d7855e89e954f47465461997da75dee" title="Update other properties from the end points." alt="" coords="249,81,429,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,77,233,81,233,86,201,83"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="742,31,935,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,12,552,10,695,16,758,25,757,30,694,21,552,15,425,17"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="477,31,694,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="407,78,502,58,503,64,408,83"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="500,81,672,108"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="429,92,484,92,484,97,429,97"/>
+<area shape="rect" id="Node000007" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="520,156,652,183"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="386,106,525,148,523,154,385,111"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="478,207,693,233"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="357,107,408,149,442,172,478,192,495,199,493,204,476,197,439,177,405,153,353,111"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="695,41,727,41,727,47,695,47"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="544,157,537,147,542,137,559,131,586,129,615,132,631,139,629,144,614,137,586,135,560,137,545,141,542,147,549,154"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="668,204,693,192,732,165,767,132,818,69,822,72,770,135,735,169,696,197,670,209"/>
+</map>

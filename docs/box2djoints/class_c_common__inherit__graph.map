@@ -1,0 +1,27 @@
+<map id="CCommon" name="CCommon">
+<area shape="rect" id="Node000001" title="The common variables class." alt="" coords="477,5,561,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html" title="The game class." alt="" coords="296,80,363,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="473,40,364,82,362,77,471,35"/>
+<area shape="rect" id="Node000003" href="$class_c_level.html" title="Stub class for a level." alt="" coords="386,80,449,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="490,44,437,82,434,77,487,39"/>
+<area shape="rect" id="Node000011" href="$class_c_line_object.html" title="A line object." alt="" coords="472,80,566,107"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="522,48,522,80,516,80,516,48"/>
+<area shape="rect" id="Node000012" href="$class_c_object.html" title="The game object." alt="" coords="590,80,659,107"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="551,39,607,77,604,82,548,43"/>
+<area shape="rect" id="Node000013" href="$class_c_sir_isaac_newton.html" title="Sir Isaac Newton." alt="" coords="683,80,808,107"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="573,35,707,77,705,82,572,40"/>
+<area shape="rect" id="Node000004" href="$class_c_car_and_bridge.html" title="A car consisting of a body and two wheels." alt="" coords="5,155,118,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="372,110,119,159,118,154,371,105"/>
+<area shape="rect" id="Node000005" href="$class_c_gear.html" title="A system of interlocking gears." alt="" coords="141,155,200,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="372,111,202,160,200,155,371,106"/>
+<area shape="rect" id="Node000006" href="$class_c_nautilus_gear.html" title="A pair of interlocking nautilus gears." alt="" coords="225,155,332,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="381,117,304,156,302,152,379,112"/>
+<area shape="rect" id="Node000007" href="$class_c_newtons_cradle.html" title="Newton&#39;s cradle." alt="" coords="357,155,478,181"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="420,122,420,154,415,154,415,122"/>
+<area shape="rect" id="Node000008" href="$class_c_pulley.html" title="The pulley class." alt="" coords="502,155,570,181"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="452,113,517,152,514,156,449,117"/>
+<area shape="rect" id="Node000009" href="$class_c_rack_and_pinion.html" title="Rack and pinion." alt="" coords="594,155,716,181"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="464,106,614,151,612,157,463,111"/>
+<area shape="rect" id="Node000010" href="$class_c_windmill.html" title="The windmill class." alt="" coords="740,155,821,181"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="464,105,598,129,729,152,740,154,739,160,728,157,597,135,463,110"/>
+</map>

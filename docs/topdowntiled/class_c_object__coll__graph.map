@@ -1,0 +1,22 @@
+<map id="CObject" name="CObject">
+<area shape="rect" id="Node000001" title="The game object." alt="" coords="207,81,276,108"/>
+<area shape="rect" id="Node000009" href="$class_c_armed_object.html" title="The armed object." alt="" coords="142,157,250,184"/>
+<area shape="poly" id="edge11_Node000009_Node000001" title=" " alt="" coords="228,122,206,158,201,156,224,120"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="188,5,295,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,47,244,81,239,81,239,47"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="202,332,286,359"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,317,265,299,265,284,265,220,259,158,244,109,249,108,264,157,271,220,271,284,271,301,263,319"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html" title="The object manager." alt="" coords="246,431,365,457"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="261,371,282,405,298,429,294,432,278,408,257,374"/>
+<area shape="rect" id="Node000006" href="$class_c_tile_manager.html" title="Tile manager." alt="" coords="57,431,159,457"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="236,374,226,392,211,409,187,424,161,434,159,430,184,419,208,405,221,389,231,372"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="289,418,274,392,251,361,256,358,278,389,294,416"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="364,324,521,367"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="431,382,410,409,388,423,365,432,363,428,386,418,406,405,427,379"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="100,415,102,402,107,389,127,370,151,358,201,346,202,351,153,363,130,375,112,392,107,403,105,415"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,332,123,359"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="73,373,85,405,100,429,96,432,80,408,68,374"/>
+<area shape="rect" id="Node000008" href="$class_c_player.html" title="The player object." alt="" coords="164,233,233,260"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="200,275,204,299,215,316,229,330,226,334,211,319,200,301,194,276"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="200,199,201,233,196,233,194,199"/>
+</map>

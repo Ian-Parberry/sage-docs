@@ -1,0 +1,9 @@
+<map id="Sage::CRenderer3D::CreateDDSTexture" name="Sage::CRenderer3D::CreateDDSTexture">
+<area shape="rect" id="Node000001" title="Load a texture from a DirectDraw surface file (contains mipmaps)." alt="" coords="405,39,552,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#a9b5ba084a5b9514c595f099e580c98fa" title="Load texture from file." alt="" coords="210,39,357,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="389,63,358,63,358,57,389,57"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#aef2c9196aae92e3118adf7755f9b9b8d" title="Load sprite." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,48,162,42,162,37,195,43"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_renderer3_d.html#a9b1dc200216ae36d3548646a5bfd3644" title="Load texture." alt="" coords="10,72,157,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="195,77,158,84,157,78,194,72"/>
+</map>

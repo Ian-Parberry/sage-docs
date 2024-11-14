@@ -1,0 +1,13 @@
+<map id="CBitCounter::GetPos" name="CBitCounter::GetPos">
+<area shape="rect" id="Node000001" title="Get position." alt="" coords="991,5,1136,32"/>
+<area shape="rect" id="Node000002" href="$class_c_counter.html#ac52825445e09d60b88940d3e6d43b7d7" title="Get position of a single&#45;bit counter." alt="" coords="814,5,943,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="975,21,943,21,943,16,975,16"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a1861a3895a26122191076e2ddc44ef4d" title="Highlight the nth bit." alt="" coords="567,5,766,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="798,21,766,21,766,16,798,16"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aabf31702371eea403862b171cb4a53c7" title="Process saying the current number in binary." alt="" coords="343,5,519,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="552,21,520,21,520,16,552,16"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="327,21,296,21,296,16,327,16"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>

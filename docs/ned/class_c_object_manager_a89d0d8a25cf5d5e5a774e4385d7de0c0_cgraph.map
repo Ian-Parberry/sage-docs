@@ -1,0 +1,7 @@
+<map id="CObjectManager::Create" name="CObjectManager::Create">
+<area shape="rect" id="Node000001" title="Create new object." alt="" coords="5,31,172,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a1b52d807212ad393bdb1b0c1aa3c4f2b" title="Get position." alt="" coords="220,5,341,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,30,204,26,204,31,173,36"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d" title="Get velocity." alt="" coords="222,56,338,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,52,207,57,206,62,172,58"/>
+</map>

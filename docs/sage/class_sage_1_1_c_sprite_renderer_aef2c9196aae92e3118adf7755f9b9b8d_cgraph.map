@@ -1,0 +1,17 @@
+<map id="Sage::CSpriteRenderer::Load" name="Sage::CSpriteRenderer::Load">
+<area shape="rect" id="Node000001" title="Load sprite." alt="" coords="5,43,162,85"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite.html#af6302c78aa016f0c4a815a9be1dd89f7" title="Get texture descriptor." alt="" coords="210,21,416,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,51,194,47,195,52,163,57"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#a9b5ba084a5b9514c595f099e580c98fa" title="Load texture from file." alt="" coords="239,72,386,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,71,224,79,223,85,162,77"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_renderer3_d.html#a4214e252e5c0a151cd0e3da9e8a67acd" title="Load a texture from a DirectDraw surface file (contains mipmaps)." alt="" coords="479,5,626,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="386,70,463,49,465,54,387,76"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_renderer3_d.html#ae48ba4ddcc340359e2556e577660b3cf" title="Load a texture from a an image file (does not contain mipmaps)." alt="" coords="479,72,626,115"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="387,91,463,91,463,96,387,96"/>
+<area shape="rect" id="Node000007" href="$_sage_helpers_8h.html#a582d5fa5fcf803b10013316c19696a96" title="Make wide file name from a narrow one." alt="" coords="464,163,641,189"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="378,113,498,155,496,160,376,118"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_renderer3_d.html#a6edc4a85a105a3569f1c5383c95c161b" title="Process a loaded texture." alt="" coords="689,39,837,81"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="627,36,674,43,673,49,626,41"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="626,79,673,71,674,77,627,84"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="517,164,511,154,515,144,529,138,553,136,578,139,591,145,589,150,576,144,553,141,531,143,519,148,516,153,521,161"/>
+</map>

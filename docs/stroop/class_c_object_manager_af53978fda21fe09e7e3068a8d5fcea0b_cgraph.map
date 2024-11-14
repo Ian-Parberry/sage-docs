@@ -1,0 +1,5 @@
+<map id="CObjectManager::DrawScores" name="CObjectManager::DrawScores">
+<area shape="rect" id="Node000001" title="Draw scores." alt="" coords="5,5,205,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a3b4205aa162bdc5e95810373b1ea57a2" title="Draw score, which may be negatve." alt="" coords="253,5,445,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,16,237,16,237,21,205,21"/>
+</map>

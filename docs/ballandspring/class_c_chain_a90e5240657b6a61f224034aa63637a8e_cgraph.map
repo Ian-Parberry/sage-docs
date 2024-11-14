@@ -1,0 +1,10 @@
+<map id="CChain::CChain" name="CChain::CChain">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,31,123,57"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="174,5,312,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,33,158,28,159,33,124,38"/>
+<area shape="rect" id="Node000004" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="171,56,316,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,50,156,54,155,60,123,55"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="364,31,527,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,25,349,29,348,34,312,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="316,58,348,54,349,59,317,63"/>
+</map>

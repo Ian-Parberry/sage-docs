@@ -1,0 +1,11 @@
+<map id="CObject" name="CObject">
+<area shape="rect" id="Node000001" title="The game object." alt="" coords="214,155,284,181"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,157,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,111,221,152,218,156,123,116"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="181,80,317,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,122,252,154,246,154,246,122"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="342,80,426,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="348,117,274,156,271,152,346,112"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="297,5,470,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="386,48,386,80,381,80,381,48"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="CWindmill::CWindmill" name="CWindmill::CWindmill">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,56,155,83"/>
+<area shape="rect" id="Node000002" href="$class_c_windmill.html#abfa2e977d445601d55cd701f6ec1a2b4" title="Create the base." alt="" coords="203,5,361,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,53,210,34,212,39,137,58"/>
+<area shape="rect" id="Node000003" href="$class_c_windmill.html#a658ebd2a0abedde6cc955dcc03a7528e" title="Create the fan." alt="" coords="207,56,357,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,67,191,67,191,72,155,72"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="409,81,481,108"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="136,81,203,92,305,97,394,95,394,100,304,102,202,97,135,86"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,78,394,84,393,89,357,84"/>
+</map>

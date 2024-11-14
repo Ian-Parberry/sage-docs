@@ -1,0 +1,5 @@
+<map id="CVectorField::GetClosestVertex" name="CVectorField::GetClosestVertex">
+<area shape="rect" id="Node000001" title="Closest vertex." alt="" coords="5,5,176,48"/>
+<area shape="rect" id="Node000002" href="$class_c_vector_field.html#a8756bfccbe7821de3826d0542f48441a" title="Check that indices are for a non&#45;edge vertex." alt="" coords="224,5,381,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,24,208,24,208,29,176,29"/>
+</map>

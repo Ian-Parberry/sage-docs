@@ -1,0 +1,7 @@
+<map id="CMyListener::GetBall" name="CMyListener::GetBall">
+<area shape="rect" id="Node000001" title="Get a pointer to a ball&#39;s body in Physics World." alt="" coords="5,31,152,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#aaa8e01de1643e10f7ff340dda8526287" title="Get sprite type." alt="" coords="200,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,32,184,28,184,33,152,37"/>
+<area shape="rect" id="Node000003" href="$_contact_listener_8cpp.html#a0e6d621f314360837e514aa64b5491d6" title=" " alt="" coords="249,56,311,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,51,233,61,233,66,152,56"/>
+</map>

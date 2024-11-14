@@ -1,0 +1,32 @@
+<map id="CGame::ProcessState" name="CGame::ProcessState">
+<area shape="rect" id="Node000001" title="Process game state." alt="" coords="5,222,159,248"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="215,196,358,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,223,199,218,200,223,159,228"/>
+<area shape="rect" id="Node000012" href="$class_c_game.html#a17a3d799d2345ef90a12d7e4d97afb70" title="Set score descriptor." alt="" coords="207,247,366,274"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="159,242,191,246,191,251,159,247"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="414,144,617,171"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="348,193,438,173,439,178,349,198"/>
+<area shape="rect" id="Node000011" href="$class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006" title="Create shapes for world edges." alt="" coords="671,296,864,339"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="350,221,657,290,655,296,349,226"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="918,170,1105,196"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="525,142,547,116,579,84,619,52,664,29,721,10,768,3,815,9,871,29,913,54,948,88,977,124,998,155,993,158,973,127,944,92,909,59,869,33,814,14,768,8,722,15,666,34,622,57,583,88,551,120,529,146"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a8ec3facaf9550165947643f51e5265c7" title="Make a bollard." alt="" coords="668,43,867,70"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="539,142,595,111,664,79,686,72,688,77,666,84,597,116,541,146"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#ae1c594c6824929eb9ba84f336045ae3d" title="Make a bumper." alt="" coords="665,94,870,120"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="585,141,682,121,684,127,586,146"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#abaa1d5ffeaee29261db5eae35a03487c" title="Make a flipper." alt="" coords="668,144,867,171"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="618,155,653,155,653,160,618,160"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a3c7fbcf613ac5cc2836d5e789ad4be20" title="Make a thing (left)." alt="" coords="668,195,867,222"/>
+<area shape="poly" id="edge11_Node000003_Node000009" title=" " alt="" coords="586,169,684,189,682,194,585,174"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#a08f704845cf30b46b8a59a3ce49d5419" title="Make a thing (right)." alt="" coords="667,246,868,272"/>
+<area shape="poly" id="edge13_Node000003_Node000010" title=" " alt="" coords="541,169,597,200,666,231,688,239,686,244,664,236,595,205,539,174"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="1153,223,1349,250"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1075,194,1173,217,1172,222,1074,200"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="840,68,871,79,934,117,985,157,982,161,931,122,869,84,838,73"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="829,118,870,130,961,161,960,166,869,135,828,124"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="868,165,902,169,902,174,867,171"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="867,195,902,192,902,197,868,201"/>
+<area shape="poly" id="edge14_Node000010_Node000004" title=" " alt="" coords="828,243,869,231,960,200,961,205,870,236,829,248"/>
+<area shape="poly" id="edge16_Node000011_Node000004" title=" " alt="" coords="843,293,868,282,930,244,981,205,984,209,933,248,871,287,845,298"/>
+<area shape="poly" id="edge17_Node000011_Node000005" title=" " alt="" coords="863,299,1152,250,1153,255,864,304"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CObjectManager::MakeThingR" name="CObjectManager::MakeThingR">
+<area shape="rect" id="Node000001" title="Make a thing (right)." alt="" coords="5,5,207,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="255,5,442,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,16,239,16,239,21,207,21"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="490,5,686,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="442,16,474,16,474,21,442,21"/>
+</map>

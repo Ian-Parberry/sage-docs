@@ -1,0 +1,10 @@
+<map id="CGear::CreateGear" name="CGear::CreateGear">
+<area shape="rect" id="Node000001" title="Create gear." alt="" coords="389,31,523,57"/>
+<area shape="rect" id="Node000002" href="$class_c_gear.html#a7d2ac0668cf57a7bbad5f8f755b7853f" title="Create round gears." alt="" coords="160,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,37,340,32,340,27,374,31"/>
+<area shape="rect" id="Node000004" href="$class_c_gear.html#ae731dccef3566be87a7fd9568bc526ed" title="Create square gears." alt="" coords="159,56,341,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="374,57,342,61,341,55,373,51"/>
+<area shape="rect" id="Node000003" href="$class_c_gear.html#a4680074b02a91cb020dfd1ff52d7e02b" title="Constructor." alt="" coords="5,31,111,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,35,112,40,111,34,145,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="143,58,111,54,112,48,144,53"/>
+</map>

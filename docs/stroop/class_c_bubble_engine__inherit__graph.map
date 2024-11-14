@@ -1,0 +1,5 @@
+<map id="CBubbleEngine" name="CBubbleEngine">
+<area shape="rect" id="Node000001" title="A particle engine for bubbles." alt="" coords="35,80,146,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,176,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,48,93,80,88,80,88,48"/>
+</map>

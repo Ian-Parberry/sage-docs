@@ -1,0 +1,25 @@
+<map id="SageController.h" name="SageController.h">
+<area shape="rect" id="Node000001" title="Interface for the controller class CController." alt="" coords="444,5,563,32"/>
+<area shape="rect" id="Node000002" href="$_sage_component_includes_8h.html" title="A bunch of includes needed wherever you derive from CComponent." alt="" coords="325,80,504,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="478,44,431,82,428,78,475,40"/>
+<area shape="rect" id="Node000012" href="$_sage_controller_8cpp.html" title="Code for the controller class CController." alt="" coords="528,80,660,107"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="533,40,580,78,577,82,529,44"/>
+<area shape="rect" id="Node000003" href="$_sage_component_8cpp.html" title="Code for the component class CComponent." alt="" coords="5,155,149,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,113,137,157,136,151,340,108"/>
+<area shape="rect" id="Node000004" href="$_sage_event_timer_8cpp.html" title="Code for the event timer class CEventTimer." alt="" coords="173,155,317,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="372,116,276,156,274,152,370,111"/>
+<area shape="rect" id="Node000005" href="$_sage_loading_thread_8h.html" title="Header for the class CLoadingThread." alt="" coords="341,155,488,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="417,122,417,154,412,154,412,122"/>
+<area shape="rect" id="Node000010" href="$_sage_object_8cpp.html" title="Code for the base game object class CObject." alt="" coords="512,155,626,181"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="456,111,543,152,541,156,454,116"/>
+<area shape="rect" id="Node000011" href="$_sage_sound_8cpp.html" title="Code for the Audio Player class CSound." alt="" coords="650,155,763,181"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="481,108,656,151,655,157,480,114"/>
+<area shape="rect" id="Node000006" href="$_sage_sprite_renderer_8h.html" title="Interface for the sprite renderer CSpriteRenderer." alt="" coords="340,229,489,256"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="417,197,417,229,412,229,412,197"/>
+<area shape="rect" id="Node000007" href="$_sage_particle_engine_8h.html" title="Interface for the particle engine class CParticleEngine." alt="" coords="252,304,398,331"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="389,268,342,306,339,302,385,264"/>
+<area shape="rect" id="Node000009" href="$_sage_sprite_renderer_8cpp.html" title="Code for the sprite renderer CSpriteRenderer." alt="" coords="422,304,585,331"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="443,264,490,302,487,306,440,268"/>
+<area shape="rect" id="Node000008" href="$_sage_particle_engine_8cpp.html" title="Code for the particle engine class CParticleEngine." alt="" coords="245,379,405,405"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="328,346,328,378,322,378,322,346"/>
+</map>

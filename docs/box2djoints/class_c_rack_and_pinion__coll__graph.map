@@ -1,0 +1,10 @@
+<map id="CRackAndPinion" name="CRackAndPinion">
+<area shape="rect" id="Node000001" title="Rack and pinion." alt="" coords="5,172,127,199"/>
+<area shape="rect" id="Node000002" href="$class_c_level.html" title="Stub class for a level." alt="" coords="82,81,144,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,122,87,133,72,173,67,171,82,131,90,119"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="150,172,235,199"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="107,124,107,136,111,147,128,163,151,174,149,178,125,168,106,149,102,137,102,124"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="54,5,171,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,47,115,81,110,81,110,47"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="185,158,172,134,158,121,142,111,145,106,161,117,176,130,189,156"/>
+</map>

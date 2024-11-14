@@ -1,0 +1,10 @@
+<map id="SageCamera.h" name="SageCamera.h">
+<area shape="rect" id="Node000001" title="Code for the base camera class CCamera." alt="" coords="116,5,224,32"/>
+<area shape="rect" id="Node000002" href="$_sage_camera_common_8h.html" title="Interface for the camera common variables class CCameraCommon." alt="" coords="5,80,167,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,35,114,72,110,68,154,31"/>
+<area shape="rect" id="Node000004" href="$_sage_sprite_desc_8h.html" title="Interface for the sprite descriptor classes." alt="" coords="190,80,318,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,31,230,68,226,72,183,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="103,155,237,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,105,146,142,142,146,99,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="241,109,198,146,194,142,238,105"/>
+</map>

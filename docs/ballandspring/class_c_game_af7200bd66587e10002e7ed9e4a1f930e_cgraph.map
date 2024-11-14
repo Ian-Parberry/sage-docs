@@ -1,0 +1,9 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="197,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,32,181,28,182,33,148,38"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="196,56,354,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,50,180,55,180,60,148,56"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a0115e10e9f8d6c4f644989b96fe69675" title="Create a pair of bodies." alt="" coords="402,56,598,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,67,386,67,386,72,354,72"/>
+</map>

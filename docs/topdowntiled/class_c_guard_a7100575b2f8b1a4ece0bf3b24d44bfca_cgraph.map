@@ -1,0 +1,7 @@
+<map id="CGuard::CollisionResponse" name="CGuard::CollisionResponse">
+<area shape="rect" id="Node000001" title="Collision response." alt="" coords="5,31,189,57"/>
+<area shape="rect" id="Node000002" href="$class_c_armed_object.html#a2fb8a2d0fa6c8ddd0fd89a2cf505b0c2" title="Death special effects." alt="" coords="237,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,31,221,27,221,33,189,36"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83" title="Get object type." alt="" coords="257,56,384,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,52,242,58,242,63,188,57"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Shapes::CCircle::CCircle" name="Shapes::CCircle::CCircle">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,56,175,83"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="223,5,440,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,53,249,33,250,38,158,58"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="224,56,438,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,67,208,67,208,72,175,72"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="246,107,417,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="158,81,250,100,249,106,157,86"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="488,56,680,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,30,500,50,499,55,401,35"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="439,67,473,67,473,72,439,72"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="401,103,499,84,500,89,402,109"/>
+</map>

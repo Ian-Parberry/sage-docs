@@ -1,0 +1,5 @@
+<map id="CObject::GetSpriteType" name="CObject::GetSpriteType">
+<area shape="rect" id="Node000001" title="Get sprite type." alt="" coords="192,5,352,32"/>
+<area shape="rect" id="Node000002" href="$class_c_my_listener.html#a2a986fa6c7612556dac57f1a9d0800fb" title="Count number of bodies that have sprite type t." alt="" coords="5,5,144,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,21,144,21,144,16,176,16"/>
+</map>

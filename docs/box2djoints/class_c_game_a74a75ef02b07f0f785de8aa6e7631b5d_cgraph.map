@@ -1,0 +1,9 @@
+<map id="CGame::KeyboardHandler" name="CGame::KeyboardHandler">
+<area shape="rect" id="Node000001" title="The keyboard handler." alt="" coords="5,31,180,57"/>
+<area shape="rect" id="Node000002" href="$class_c_level.html#ae0da64b3cc6ab4bd9e9a046ecd4730f6" title="Perform action for level." alt="" coords="245,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,230,24,230,30,181,36"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="228,56,370,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,52,212,56,212,61,180,57"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a63a5d4b70909b82e245628336838cad2" title="Create current level." alt="" coords="418,56,562,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="370,67,403,67,403,72,370,72"/>
+</map>

@@ -1,0 +1,67 @@
+<map id="CGame::ProcessFrame" name="CGame::ProcessFrame">
+<area shape="rect" id="Node000001" title="Process an animation frame." alt="" coords="5,245,165,272"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a1ef415ad921f0a1b97149ec59ecbe7ea" title="The controller handler." alt="" coords="213,81,388,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,243,142,189,175,158,211,130,243,112,245,117,214,134,179,162,146,193,99,246"/>
+<area shape="rect" id="Node000010" href="$class_c_game.html#a7f54d0f4d35f427ddfd5a4442c6d885d" title="Make camera follow player character." alt="" coords="221,271,380,297"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="165,265,206,270,205,275,165,271"/>
+<area shape="rect" id="Node000012" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="213,144,388,171"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="114,242,255,175,258,180,117,247"/>
+<area shape="rect" id="Node000023" href="$class_c_game.html#a6978045dfc517814ff1a5674507cc56f" title="The mouse handler." alt="" coords="221,321,380,348"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="120,270,214,307,235,314,233,319,212,312,118,275"/>
+<area shape="rect" id="Node000025" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="224,220,377,247"/>
+<area shape="poly" id="edge27_Node000001_Node000025" title=" " alt="" coords="165,247,208,241,209,247,165,252"/>
+<area shape="rect" id="Node000027" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="224,372,377,399"/>
+<area shape="poly" id="edge30_Node000001_Node000027" title=" " alt="" coords="102,270,149,313,180,337,214,358,227,364,225,369,211,362,177,341,146,317,98,274"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a90bf0be7ca1092d570e9d5660ad06261" title="Fire armed object&#39;s gun." alt="" coords="458,119,632,145"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="389,105,443,114,443,119,388,111"/>
+<area shape="rect" id="Node000008" href="$class_c_player.html#a8b8147d61d72e129e8c4528c6a37ee7f" title="Set movement direction." alt="" coords="466,68,624,95"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="388,87,451,84,451,89,389,92"/>
+<area shape="rect" id="Node000009" href="$class_c_player.html#a63d6cf5fb542447cb233bdd65893d271" title="Set rotational velocity." alt="" coords="468,17,622,44"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="347,78,435,53,467,45,468,51,437,59,349,83"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a97512c70c9395658c59e2ce9dc84cf60" title="Create new object." alt="" coords="971,63,1138,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="631,116,653,105,668,86,675,66,682,46,701,28,741,12,783,4,826,3,870,8,950,28,1013,53,1011,58,948,33,869,13,826,9,784,9,742,17,704,33,687,49,680,68,673,89,656,109,634,121"/>
+<area shape="rect" id="Node000005" href="$class_c_armed_object.html#a0093f706ad2801801dd414ba797ad16e" title="Get gun offset." alt="" coords="706,43,901,69"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="617,115,653,104,677,92,701,79,722,72,724,77,703,84,680,96,655,109,618,121"/>
+<area shape="rect" id="Node000006" href="$class_c_armed_object.html#aad443c44e76a89026a2e8b02271d1242" title="Compute view vector." alt="" coords="702,93,905,120"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="632,121,686,115,687,121,633,126"/>
+<area shape="rect" id="Node000007" href="$class_c_player.html#a372b933d030cd0ae3bc375d9770b345f" title="Set the vulnerable flag." alt="" coords="725,144,882,171"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="633,138,710,145,709,151,632,143"/>
+<area shape="rect" id="Node000011" href="$class_c_object.html#a145e790baad59983ddb26abad3f4fa1b" title="Get position." alt="" coords="484,271,606,297"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="380,281,469,281,469,287,380,287"/>
+<area shape="poly" id="edge23_Node000012_Node000003" title=" " alt="" coords="388,146,443,140,443,145,388,151"/>
+<area shape="poly" id="edge24_Node000012_Node000008" title=" " alt="" coords="334,141,435,104,463,96,464,101,437,109,336,146"/>
+<area shape="rect" id="Node000013" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="474,169,616,196"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="388,164,459,171,458,176,388,169"/>
+<area shape="rect" id="Node000014" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="724,195,883,221"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="617,187,709,196,709,201,616,192"/>
+<area shape="rect" id="Node000016" href="$class_c_tile_manager.html#ab0926de034d81b14f0e5e48c0d0ac342" title="Load a map." alt="" coords="722,259,885,285"/>
+<area shape="poly" id="edge16_Node000013_Node000016" title=" " alt="" coords="618,194,655,205,680,218,703,231,750,250,748,255,701,236,677,222,653,210,616,199"/>
+<area shape="poly" id="edge14_Node000014_Node000004" title=" " alt="" coords="873,192,904,180,971,140,1025,98,1028,102,974,144,906,185,875,197"/>
+<area shape="rect" id="Node000015" href="$class_c_tile_manager.html#a2f8a4b1266dcc6407b0bd64b3c5dd351" title="Get object descriptorss." alt="" coords="966,183,1142,209"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="883,201,951,198,951,204,883,207"/>
+<area shape="rect" id="Node000017" href="$class_c_tile_manager.html#a6ffbbf152d3d27f59e281c0b7668e06f" title="Tile index to position." alt="" coords="953,233,1156,260"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="885,261,937,256,937,261,886,266"/>
+<area shape="rect" id="Node000018" href="$class_c_tile_manager.html#a78142eb7f83421c0ef87fa7e4f466e9b" title="Insert object." alt="" coords="964,284,1145,311"/>
+<area shape="poly" id="edge18_Node000016_Node000018" title=" " alt="" coords="886,278,948,284,948,289,885,283"/>
+<area shape="rect" id="Node000019" href="$class_c_tile_manager.html#a3021ca6fb30b2e041cb63bef80a72feb" title="Make bounding boxes for walls." alt="" coords="956,335,1152,377"/>
+<area shape="poly" id="edge19_Node000016_Node000019" title=" " alt="" coords="846,283,954,320,973,327,971,332,952,325,844,288"/>
+<area shape="rect" id="Node000020" href="$class_c_tile_manager.html#a3cae6688a52116f4c86778fd776e9f23" title="Make bounding boxes for 1&#45;block walls." alt="" coords="1204,268,1400,311"/>
+<area shape="poly" id="edge20_Node000019_Node000020" title=" " alt="" coords="1136,331,1205,313,1206,318,1137,337"/>
+<area shape="rect" id="Node000021" href="$class_c_tile_manager.html#a16aecc34eca5babed8212a6c721bd364" title="Make bounding boxes for horizontal walls." alt="" coords="1204,335,1400,377"/>
+<area shape="poly" id="edge21_Node000019_Node000021" title=" " alt="" coords="1153,353,1189,353,1189,359,1153,359"/>
+<area shape="rect" id="Node000022" href="$class_c_tile_manager.html#ab3fe8fe47bbd2f98ecfa6cf75753beb4" title="Make bounding boxes for vertical walls." alt="" coords="1204,401,1400,444"/>
+<area shape="poly" id="edge22_Node000019_Node000022" title=" " alt="" coords="1137,375,1206,394,1205,399,1136,380"/>
+<area shape="rect" id="Node000024" href="$class_c_player.html#afdb4ed7083a7f4b4f19349e5d6d690b6" title="Rotate towards point." alt="" coords="486,321,604,348"/>
+<area shape="poly" id="edge26_Node000023_Node000024" title=" " alt="" coords="380,332,471,332,471,337,380,337"/>
+<area shape="poly" id="edge28_Node000025_Node000013" title=" " alt="" coords="368,217,462,197,463,202,369,222"/>
+<area shape="rect" id="Node000026" href="$class_c_object_manager.html#a2fd3688804c59af2cc3957bdd67d12c8" title="Get the number of guards." alt="" coords="436,220,654,247"/>
+<area shape="poly" id="edge29_Node000025_Node000026" title=" " alt="" coords="378,231,421,231,421,236,378,236"/>
+<area shape="rect" id="Node000028" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="466,423,624,449"/>
+<area shape="poly" id="edge31_Node000027_Node000028" title=" " alt="" coords="369,397,463,416,462,422,368,402"/>
+<area shape="rect" id="Node000031" href="$class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c" title="Draw frame rate text to screen." alt="" coords="448,372,643,399"/>
+<area shape="poly" id="edge34_Node000027_Node000031" title=" " alt="" coords="378,383,432,383,432,388,378,388"/>
+<area shape="rect" id="Node000029" href="$class_c_tile_manager.html#a329861d19161159afb3753acb415a7c0" title="Draw the map using multi&#45;framed tile sprite." alt="" coords="733,393,874,420"/>
+<area shape="poly" id="edge32_Node000028_Node000029" title=" " alt="" coords="625,424,717,414,718,419,625,430"/>
+<area shape="rect" id="Node000030" href="$class_c_tile_manager.html#a459a0b429dd887031975276591c014fe" title="Draw the bounding boxes." alt="" coords="706,444,901,487"/>
+<area shape="poly" id="edge33_Node000028_Node000030" title=" " alt="" coords="625,442,691,450,690,455,625,448"/>
+</map>

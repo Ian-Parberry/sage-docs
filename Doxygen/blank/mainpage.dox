@@ -324,7 +324,7 @@ to `nullptr`.
 \anchor section5-3
 ## 5.3 CObject
 
-`CObject is the abstract representation of a game object.
+`CObject` is the abstract representation of a game object.
 Its declaration is in `Object.h` and its definition is in `Object.cpp`.
 See <a href="class_c_object.html#details">CObject More Details</a>
 for more details.

@@ -1,0 +1,16 @@
+<map id="Point.h" name="Point.h">
+<area shape="rect" id="Node000001" title="Interface for the point class CPoint." alt="" coords="228,5,290,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,135,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,35,118,77,116,72,227,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="159,80,269,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,34,232,68,228,65,249,31"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="250,155,362,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,31,283,79,301,139,296,141,278,81,261,33"/>
+<area shape="rect" id="Node000006" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="343,80,429,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="283,30,352,70,349,74,280,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="252,229,360,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="309,182,309,214,303,214,303,182"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="374,109,333,146,329,142,370,105"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="386,155,535,181"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="401,105,439,142,435,146,397,109"/>
+</map>

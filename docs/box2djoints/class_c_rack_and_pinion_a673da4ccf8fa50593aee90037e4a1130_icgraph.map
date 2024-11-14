@@ -1,0 +1,5 @@
+<map id="CRackAndPinion::CreateRack" name="CRackAndPinion::CreateRack">
+<area shape="rect" id="Node000001" title="Create a rack." alt="" coords="247,13,446,40"/>
+<area shape="rect" id="Node000002" href="$class_c_rack_and_pinion.html#a346dfdb09744ba73d63dc277d0a3388b" title="Constructor." alt="" coords="5,5,199,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,29,199,29,199,24,231,24"/>
+</map>

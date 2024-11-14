@@ -1,0 +1,10 @@
+<map id="CGear" name="CGear">
+<area shape="rect" id="Node000001" title="A system of interlocking gears." alt="" coords="5,172,65,199"/>
+<area shape="rect" id="Node000002" href="$class_c_level.html" title="Stub class for a level." alt="" coords="48,81,110,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,122,56,133,41,173,36,171,51,131,58,119"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="102,172,186,199"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="74,123,74,136,77,147,89,160,104,169,101,174,85,164,73,149,68,137,68,123"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="20,5,138,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,47,82,81,76,81,76,47"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="144,157,138,133,125,120,109,109,112,105,129,115,143,131,150,156"/>
+</map>

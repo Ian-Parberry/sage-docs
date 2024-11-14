@@ -1,0 +1,9 @@
+<map id="CObject::GetObjectType" name="CObject::GetObjectType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="450,31,614,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a5e4830aa4b29b05821dcfe5b56c44f02" title="Contact type test." alt="" coords="251,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,35,402,31,403,25,435,29"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#a12127eafa7e46b55b7471fd2462144a6" title="Contact type test." alt="" coords="251,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="435,59,403,63,402,57,434,53"/>
+<area shape="rect" id="Node000004" href="$class_c_object.html#a0bb4d70e883745a3c790ff7db150f2f5" title="Play collision sounds." alt="" coords="5,56,203,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="235,72,203,72,203,67,235,67"/>
+</map>

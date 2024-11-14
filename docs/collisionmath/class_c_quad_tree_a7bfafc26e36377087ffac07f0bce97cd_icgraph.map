@@ -1,0 +1,20 @@
+<map id="CQuadTree::Insert" name="CQuadTree::Insert">
+<area shape="rect" id="Node000001" title="Insert shape at place in tree." alt="" coords="831,56,960,83"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="934,43,920,37,895,35,872,37,859,41,856,47,862,54,858,57,851,47,855,37,871,31,895,29,922,32,936,38"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a0e435225cf822a7c0c2581a39511c151" title="Insert shape." alt="" coords="607,5,736,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="817,55,733,35,734,30,819,49"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a92401549bf943c5af2edb6dd88ca5304" title="Reset the quadtree." alt="" coords="562,56,781,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="815,72,782,72,782,67,815,67"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a07299e1ef6e4467ebd770c7742586c58" title="Update the quadtree." alt="" coords="560,107,783,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="819,89,734,109,733,103,817,84"/>
+<area shape="rect" id="Node000004" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="360,56,506,83"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="546,72,506,72,506,67,546,67"/>
+<area shape="rect" id="Node000005" href="$class_c_dialog_box.html#af607613321e58a633ee6c9f222f18b4b" title="Constructor." alt="" coords="136,56,305,83"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="344,72,305,72,305,67,344,67"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="353,107,512,133"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="544,123,513,123,513,117,544,117"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="141,107,300,133"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="338,123,300,123,300,117,338,117"/>
+<area shape="rect" id="Node000009" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,107,88,133"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="125,123,88,123,88,117,125,117"/>
+</map>

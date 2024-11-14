@@ -1,0 +1,16 @@
+<map id="CStroop::SetDesiredEyePos" name="CStroop::SetDesiredEyePos">
+<area shape="rect" id="Node000001" title="Set desired eye position." alt="" coords="830,35,1018,61"/>
+<area shape="rect" id="Node000002" href="$class_c_stroop.html#a967dfa4b8b4970865eee8c1889d19ae0" title="Animation step." alt="" coords="621,5,726,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="814,38,726,27,726,22,815,33"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#aeda57b79fe9d04b1544a32e8ea53cb36" title="Make Stroop&#39;s eyes swivel towards word count." alt="" coords="565,56,782,99"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="815,63,782,67,782,62,814,58"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a388377227dfb9471bb095d770c10ab35" title="Update all objects." alt="" coords="346,8,515,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="606,22,515,23,515,18,606,17"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,35,295,61"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="330,36,296,41,295,35,330,31"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,35,88,61"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,51,88,51,88,45,120,45"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,60,517,87"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="550,78,518,77,518,72,550,73"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="327,64,295,60,296,55,328,59"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="CDialogBox::Update" name="CDialogBox::Update">
+<area shape="rect" id="Node000001" title="Update the dialog box at 1&#45;second intervals." alt="" coords="5,253,147,280"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a915489e43e3516d517e67e213c24c6a5" title="Get number of AABB tests since last called." alt="" coords="195,5,425,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,252,89,211,111,154,145,93,167,66,193,42,200,37,203,42,196,46,171,69,150,96,116,156,94,213,83,254"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#abac8b6f240b3d840fd8ce5398154ca8d" title="Get number of collisions since last called." alt="" coords="200,56,420,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="80,252,95,219,119,175,151,130,193,93,201,87,204,92,196,97,155,134,123,178,99,221,85,254"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a1a3c30356a3f44f0e42481ffb788449a" title="Get number of collision tests since last called." alt="" coords="211,107,409,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="87,251,131,206,161,181,193,159,204,153,207,158,196,164,164,185,134,210,91,255"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#aaef7818f85a64d9a852cc9168026199a" title="Get number of lost balls." alt="" coords="202,173,418,200"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="102,250,144,230,194,209,220,202,221,207,196,215,146,234,104,255"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a54dc73f1ae3e73338ac783acc8d47419" title="Get number of overlapped balls." alt="" coords="203,224,417,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="147,255,187,250,188,255,148,260"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a9b676dbc32834f1b82f9f96c9e70d0fa" title="Get quadtree leaf count." alt="" coords="214,275,406,317"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="148,273,199,279,198,285,147,278"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#ae7da0616a48dcaf9d44efd30fdfff9f4" title="Get maximum number of objects in a leaf." alt="" coords="214,341,406,384"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="101,278,144,303,196,327,213,334,211,339,194,332,142,307,99,283"/>
+<area shape="rect" id="Node000011" href="$class_c_object_manager.html#ac97dd2df0f0628ac4dd03f1da387de5c" title="Get quadtree leaf area." alt="" coords="198,408,422,435"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="88,279,130,336,160,367,196,394,207,399,205,404,193,398,157,371,125,339,84,282"/>
+<area shape="rect" id="Node000013" href="$class_c_object_manager.html#a6a9e2e0d32498f57be3362f2faa9ecc0" title="Get quadtree node count." alt="" coords="211,459,408,501"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="85,279,99,313,123,358,155,405,196,445,203,449,199,453,193,449,151,408,118,360,94,315,80,281"/>
+<area shape="rect" id="Node000015" href="$class_c_dialog_box.html#ac3be68fa38c7f663755c8ea05ae6cba1" title="Set an edit box." alt="" coords="227,525,392,552"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="82,280,92,325,113,388,128,422,147,455,169,485,196,511,214,522,211,527,193,515,165,489,142,458,123,424,108,390,87,327,77,281"/>
+<area shape="rect" id="Node000008" href="$class_c_quad_tree.html#a4e395cda8f78aa6275d653652661fbd4" title="Get number of leaves." alt="" coords="481,283,658,309"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="406,293,466,293,466,299,406,299"/>
+<area shape="rect" id="Node000010" href="$class_c_quad_tree.html#a759cd8e1f022d3ff24ed91f026e77a00" title="Get maximum number of shapes in a leaf." alt="" coords="473,349,666,376"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="406,360,458,360,458,365,406,365"/>
+<area shape="rect" id="Node000012" href="$class_c_quad_tree.html#a7fbe434b365997854bca4eba01970564" title="Get width and height of area covered by a leaf." alt="" coords="485,408,654,435"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="422,419,469,419,469,424,422,424"/>
+<area shape="rect" id="Node000014" href="$class_c_quad_tree.html#a6b52fbe99255b10d0adfef4d88f2553e" title="Get number of nodes." alt="" coords="478,467,661,493"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="409,477,462,477,462,483,409,483"/>
+</map>

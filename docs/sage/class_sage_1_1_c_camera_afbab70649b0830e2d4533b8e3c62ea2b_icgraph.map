@@ -1,0 +1,5 @@
+<map id="Sage::CCamera::GetViewVector" name="Sage::CCamera::GetViewVector">
+<area shape="rect" id="Node000001" title="Get the view vector." alt="" coords="234,5,444,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a2712eca572f424f42bf8d5bbc2480f3e" title="Set listener to camera pos and orientation." alt="" coords="5,5,186,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,21,186,21,186,16,218,16"/>
+</map>

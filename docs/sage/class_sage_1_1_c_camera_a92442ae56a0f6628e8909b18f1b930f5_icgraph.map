@@ -1,0 +1,22 @@
+<map id="Sage::CCamera::GetPos" name="Sage::CCamera::GetPos">
+<area shape="rect" id="Node000001" title="Get position." alt="" coords="656,213,824,240"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30" title="Draw single 2D sprite." alt="" coords="440,139,596,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="678,211,591,185,592,179,679,206"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_sprite_renderer.html#ad42ed608e0480651f4c6da83a956b823" title="Get camera position." alt="" coords="440,205,596,248"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="641,229,597,229,597,224,641,224"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_sound.html#a2712eca572f424f42bf8d5bbc2480f3e" title="Set listener to camera pos and orientation." alt="" coords="428,272,608,299"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="673,247,572,274,571,269,672,242"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="554,125,541,120,518,117,497,119,484,124,479,130,481,138,476,139,474,129,481,120,496,114,518,112,542,114,556,121"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_particle_engine2_d.html#af2874f74f3934678fc3a569f864565a2" title="Draw particles." alt="" coords="210,5,380,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="478,131,432,96,379,62,355,51,358,46,381,58,435,92,481,127"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#a26a0b45bee2aa7430a384068f0dec17c" title="Draw list of 3D sprites." alt="" coords="217,72,373,115"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="429,136,368,118,370,113,431,131"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite_renderer.html#ac9512ef5737a00c602c1252ad85668ae" title="Draw single 2D sprite." alt="" coords="217,139,373,181"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="425,163,373,163,373,157,425,157"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite_renderer.html#acad1b13eba6b74a86015a1488124d02d" title="Draw circle." alt="" coords="217,205,373,248"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="431,189,370,207,368,202,429,184"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_sprite_renderer.html#a3d5154f12a86d5a1ea274e464e7e8095" title="Draw 2D line." alt="" coords="217,272,373,315"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="435,192,430,195,414,211,406,228,398,245,382,262,364,274,361,269,378,258,393,242,402,225,410,208,426,191,432,187"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_sprite_renderer.html#a0191ebd603d2a41c8e4b3b9fa53496b5" title="Draw AABB." alt="" coords="5,272,162,315"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="201,296,162,296,162,291,201,291"/>
+</map>

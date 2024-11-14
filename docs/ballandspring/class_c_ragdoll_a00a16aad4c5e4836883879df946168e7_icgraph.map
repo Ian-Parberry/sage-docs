@@ -1,0 +1,5 @@
+<map id="CRagdoll::isTippingRight" name="CRagdoll::isTippingRight">
+<area shape="rect" id="Node000001" title="Is tipping right." alt="" coords="188,5,354,32"/>
+<area shape="rect" id="Node000002" href="$class_c_ragdoll.html#a9360d6eb141b30947d4a285874da7f71" title="Attempt to stand up." alt="" coords="5,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,21,140,21,140,16,172,16"/>
+</map>

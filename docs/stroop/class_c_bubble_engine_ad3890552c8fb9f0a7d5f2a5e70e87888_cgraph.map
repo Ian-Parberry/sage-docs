@@ -1,0 +1,9 @@
+<map id="CBubbleEngine::Step" name="CBubbleEngine::Step">
+<area shape="rect" id="Node000001" title="Animation step." alt="" coords="5,13,152,40"/>
+<area shape="rect" id="Node000002" href="$class_c_vector_field.html#ac90e08ffafd82e46f911ecbcfeb9254e" title="Get vector closest to a point." alt="" coords="200,5,370,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,24,184,24,184,29,152,29"/>
+<area shape="rect" id="Node000003" href="$class_c_vector_field.html#a475e7a103eb142fe969b97a6f5d0d9cd" title="Closest vertex." alt="" coords="418,5,588,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,24,402,24,402,29,370,29"/>
+<area shape="rect" id="Node000004" href="$class_c_vector_field.html#a8756bfccbe7821de3826d0542f48441a" title="Check that indices are for a non&#45;edge vertex." alt="" coords="636,5,794,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="589,24,621,24,621,29,589,29"/>
+</map>

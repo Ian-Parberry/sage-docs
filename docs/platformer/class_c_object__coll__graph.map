@@ -1,0 +1,20 @@
+<map id="CObject" name="CObject">
+<area shape="rect" id="Node000001" title="The game object." alt="" coords="212,81,281,108"/>
+<area shape="rect" id="Node000008" href="$class_c_player.html" title="The player object." alt="" coords="174,157,242,184"/>
+<area shape="poly" id="edge10_Node000008_Node000001" title=" " alt="" coords="236,123,217,158,212,156,231,120"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="193,5,300,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,47,249,81,244,81,244,47"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="202,256,286,283"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,241,265,223,269,192,265,160,250,109,255,108,270,159,274,192,271,225,263,243"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html" title="The object manager." alt="" coords="246,355,365,381"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="261,295,282,329,298,353,294,356,278,332,257,298"/>
+<area shape="rect" id="Node000006" href="$class_c_tile_manager.html" title="Tile manager." alt="" coords="57,355,159,381"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="236,298,226,316,211,333,187,348,161,358,159,354,184,343,208,329,221,313,231,296"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="289,342,274,316,251,285,256,282,278,313,294,340"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="364,248,521,291"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="431,306,410,333,388,347,365,356,363,352,386,342,406,329,427,303"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="100,339,102,326,107,313,127,294,151,282,201,270,202,275,153,287,130,299,112,316,107,327,105,339"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,256,123,283"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="73,297,85,329,100,353,96,356,80,332,68,298"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="203,199,205,223,215,240,229,254,225,257,211,243,199,225,197,199"/>
+</map>

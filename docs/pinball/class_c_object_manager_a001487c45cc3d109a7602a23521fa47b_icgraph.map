@@ -1,0 +1,36 @@
+<map id="CObjectManager::AddShape" name="CObjectManager::AddShape">
+<area shape="rect" id="Node000001" title="Add shape." alt="" coords="1270,183,1458,209"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Launch a ball." alt="" coords="1062,5,1178,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1344,171,1293,108,1259,74,1221,46,1178,29,1180,25,1224,42,1263,70,1297,104,1348,168"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a8ec3facaf9550165947643f51e5265c7" title="Make a bollard." alt="" coords="1020,56,1220,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1332,175,1282,139,1221,104,1174,86,1176,81,1223,99,1285,134,1335,171"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="767,203,970,229"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="1319,179,1273,161,1222,148,1165,139,1120,135,1075,137,1019,148,983,159,948,174,892,205,889,200,945,169,981,154,1017,143,1074,132,1120,129,1165,133,1223,143,1274,156,1321,174"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#ae1c594c6824929eb9ba84f336045ae3d" title="Make a bumper." alt="" coords="1018,157,1222,184"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1255,187,1222,184,1223,179,1255,182"/>
+<area shape="rect" id="Node000011" href="$class_c_object_manager.html#abaa1d5ffeaee29261db5eae35a03487c" title="Make a flipper." alt="" coords="1021,208,1219,235"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="1255,210,1220,214,1220,208,1254,205"/>
+<area shape="rect" id="Node000012" href="$class_c_object_manager.html#a3c7fbcf613ac5cc2836d5e789ad4be20" title="Make a thing (left)." alt="" coords="1021,259,1219,285"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="1314,218,1223,249,1182,261,1180,256,1222,244,1312,213"/>
+<area shape="rect" id="Node000013" href="$class_c_object_manager.html#a08f704845cf30b46b8a59a3ce49d5419" title="Make a thing (right)." alt="" coords="1020,309,1221,336"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="1338,222,1287,262,1223,300,1193,311,1191,306,1221,295,1284,258,1334,218"/>
+<area shape="rect" id="Node000014" href="$class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006" title="Create shapes for world edges." alt="" coords="772,300,964,343"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="1350,224,1329,255,1301,291,1265,325,1223,350,1186,363,1148,370,1108,373,1069,372,995,362,932,346,933,341,996,356,1070,367,1108,368,1147,365,1185,358,1221,346,1262,321,1297,287,1325,252,1346,221"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="544,87,719,113"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1047,33,717,89,716,83,1047,28"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,140,295,167"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="529,116,296,146,295,141,529,110"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,140,88,167"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,156,88,156,88,151,120,151"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1050,91,1019,104,979,128,942,156,886,204,882,200,938,151,976,123,1017,99,1048,86"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="560,203,703,229"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="751,219,703,219,703,213,751,213"/>
+<area shape="rect" id="Node000009" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="343,165,496,192"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="544,203,496,195,497,190,545,198"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="327,170,295,166,296,161,328,165"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="1028,190,947,205,946,199,1027,185"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="1005,222,970,221,970,215,1005,216"/>
+<area shape="poly" id="edge16_Node000012_Node000007" title=" " alt="" coords="1041,257,931,233,932,227,1042,252"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="1038,307,1017,300,946,266,890,232,892,228,948,261,1019,295,1039,302"/>
+<area shape="poly" id="edge20_Node000014_Node000008" title=" " alt="" coords="804,296,663,232,665,227,806,291"/>
+</map>

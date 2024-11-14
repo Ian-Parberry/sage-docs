@@ -1,0 +1,7 @@
+<map id="CRenderer::GetPrimitiveDesc" name="CRenderer::GetPrimitiveDesc">
+<area shape="rect" id="Node000001" title="Get mesh descriptor." alt="" coords="425,5,620,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a3fe9a61717f053055ef0c33e1882b884" title="Compute convex hull." alt="" coords="179,5,377,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="410,21,377,21,377,16,410,16"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#ab56eceb7144e682219eb6462be03b627" title="Constructor." alt="" coords="5,5,131,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,21,131,21,131,16,163,16"/>
+</map>

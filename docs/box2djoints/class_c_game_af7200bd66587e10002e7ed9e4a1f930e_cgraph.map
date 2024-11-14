@@ -1,0 +1,5 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,5,148,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a63a5d4b70909b82e245628336838cad2" title="Create current level." alt="" coords="196,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
+</map>

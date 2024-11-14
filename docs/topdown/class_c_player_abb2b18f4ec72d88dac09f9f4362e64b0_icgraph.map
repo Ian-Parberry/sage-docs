@@ -1,0 +1,14 @@
+<map id="CPlayer::GetPos" name="CPlayer::GetPos">
+<area shape="rect" id="Node000001" title="Get position." alt="" coords="550,56,671,83"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#a45e169dc2c90f2ccc7544f4aa738806e" title="Is close to player." alt="" coords="343,5,502,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="543,54,474,35,476,30,544,49"/>
+<area shape="rect" id="Node000003" href="$class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279" title="Move." alt="" coords="162,31,268,57"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="535,67,269,50,269,45,535,62"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a7f54d0f4d35f427ddfd5a4442c6d885d" title="Make camera follow player character." alt="" coords="344,107,502,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="544,90,476,109,474,103,543,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,33,269,40,268,35,328,28"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,107,295,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,123,295,123,295,117,328,117"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,107,88,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,123,88,123,88,117,120,117"/>
+</map>

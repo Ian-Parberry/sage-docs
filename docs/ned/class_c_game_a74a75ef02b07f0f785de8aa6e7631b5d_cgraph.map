@@ -1,0 +1,68 @@
+<map id="CGame::KeyboardHandler" name="CGame::KeyboardHandler">
+<area shape="rect" id="Node000001" title="The keyboard handler." alt="" coords="5,461,180,488"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="248,107,390,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,459,298,145,303,148,105,462"/>
+<area shape="rect" id="Node000014" href="$class_c_plane_object.html#a42bdd5cd2cb87fd9046f7a925c6aa243" title="Set velocity." alt="" coords="727,411,875,437"/>
+<area shape="poly" id="edge39_Node000001_Node000014" title=" " alt="" coords="180,459,227,453,491,434,711,424,711,429,491,439,228,459,180,464"/>
+<area shape="rect" id="Node000015" href="$class_c_game.html#a2d43ed0ab95144c88b81fe1bc79beeea" title="Change draw mode." alt="" coords="228,284,410,311"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="110,459,287,318,290,322,113,463"/>
+<area shape="rect" id="Node000020" href="$class_c_game.html#a0d4ae530908e3f6686f67ea7b75fb2e1" title="Fire the plane&#39;s gun." alt="" coords="259,613,379,640"/>
+<area shape="poly" id="edge25_Node000001_Node000020" title=" " alt="" coords="116,486,287,603,284,607,113,491"/>
+<area shape="rect" id="Node000022" href="$class_c_object.html#a6f1b5884c14c3b6881c932ecd522065c" title="Get roll angle." alt="" coords="496,461,617,488"/>
+<area shape="poly" id="edge35_Node000001_Node000022" title=" " alt="" coords="180,472,480,472,480,477,180,477"/>
+<area shape="rect" id="Node000023" href="$class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d" title="Get velocity." alt="" coords="498,765,614,792"/>
+<area shape="poly" id="edge36_Node000001_Node000023" title=" " alt="" coords="103,487,149,563,186,609,229,650,291,689,359,720,425,744,483,760,482,766,423,749,357,725,289,694,226,654,182,613,145,566,98,490"/>
+<area shape="rect" id="Node000027" href="$class_c_plane_object.html#a4c357c7a9bab430201d501676693e18f" title="Rotate around Z&#45;axis." alt="" coords="242,791,396,817"/>
+<area shape="poly" id="edge37_Node000001_Node000027" title=" " alt="" coords="100,488,115,534,142,601,180,676,203,712,230,745,251,765,276,781,273,785,248,769,226,748,199,715,175,679,137,604,110,536,95,489"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear." alt="" coords="477,56,635,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,103,475,84,476,89,385,109"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="477,107,635,133"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="391,117,461,117,461,123,391,123"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a74b1cc8bc4e0d525dccae0d967c81074" title="Create new object." alt="" coords="965,284,1131,311"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="637,131,656,143,668,156,675,170,680,196,686,222,692,233,704,245,721,254,745,262,808,276,950,290,949,296,807,281,744,268,719,259,701,249,688,237,681,224,675,197,670,171,664,159,653,147,634,136"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a72b2cd322570c0b1a3aecd036de1d1a3" title="Create clouds." alt="" coords="724,309,878,336"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="637,131,656,143,671,162,679,180,682,217,684,254,691,271,704,289,718,300,715,304,700,293,686,274,679,255,676,218,673,182,666,164,653,147,634,135"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#ae25dcdebaf7de58496ffe15c1ed2b512" title="Create crows." alt="" coords="725,157,877,184"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="625,131,719,151,718,156,624,137"/>
+<area shape="rect" id="Node000009" href="$class_c_game.html#aaf9fdfa7f662c6e4ba437a5d174ec4f9" title="Create fence." alt="" coords="726,107,876,133"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="636,117,711,117,711,123,636,123"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#ada6461972d9c863a3fa7cdfb95bf7e32" title="Create new object." alt="" coords="948,56,1148,83"/>
+<area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="629,103,702,92,820,80,932,72,932,78,821,85,703,97,630,109"/>
+<area shape="rect" id="Node000011" href="$class_c_game.html#a5c27f91b50c6044582cb1ae9b9d0fcf8" title="Create trees." alt="" coords="728,5,874,32"/>
+<area shape="poly" id="edge13_Node000004_Node000011" title=" " alt="" coords="626,104,653,92,667,82,676,71,686,60,701,48,729,35,731,40,704,53,690,64,681,75,671,86,656,97,628,109"/>
+<area shape="rect" id="Node000012" href="$class_c_renderer.html#ac5dc2aec05d9eaa1da9d12f566d9d8e0" title="Set camera position." alt="" coords="710,360,892,387"/>
+<area shape="poly" id="edge15_Node000004_Node000012" title=" " alt="" coords="637,130,656,143,675,169,683,195,684,221,681,247,678,272,679,297,687,322,704,346,707,349,704,353,700,350,682,324,674,298,673,272,676,246,678,221,677,196,670,172,652,147,634,134"/>
+<area shape="rect" id="Node000013" href="$class_c_object.html#affd97d1cc0cc4a24c7dcc3de37dfdcfe" title="Set roll speed." alt="" coords="723,208,879,235"/>
+<area shape="poly" id="edge16_Node000004_Node000013" title=" " alt="" coords="630,131,656,143,671,156,681,169,689,182,704,194,715,199,712,204,701,198,685,185,676,172,667,159,653,148,628,136"/>
+<area shape="poly" id="edge17_Node000004_Node000014" title=" " alt="" coords="638,130,656,143,678,176,686,208,686,240,681,272,676,304,675,335,683,366,704,397,715,406,711,410,700,400,679,368,670,336,671,304,676,272,681,240,681,209,673,178,652,147,634,134"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="878,312,949,305,949,310,879,317"/>
+<area shape="rect" id="Node000007" href="$class_c_object.html#a5d9c7d58fd4a3e81c285a52f8f32c034" title="Set velocity." alt="" coords="990,411,1106,437"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="865,334,901,346,960,372,1012,400,1009,405,958,377,899,350,863,339"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="870,182,901,194,967,232,1020,272,1017,276,964,236,899,198,868,187"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="869,103,964,84,965,89,870,109"/>
+<area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="870,30,965,50,964,55,869,35"/>
+<area shape="poly" id="edge18_Node000014_Node000007" title=" " alt="" coords="876,421,974,421,974,427,876,427"/>
+<area shape="poly" id="edge22_Node000015_Node000012" title=" " alt="" coords="352,309,401,329,459,345,580,363,695,370,695,376,580,369,457,351,399,334,350,314"/>
+<area shape="rect" id="Node000016" href="$class_c_renderer.html#a8b83cca710d470aaacf7a0a8e8e8bad1" title="Get camera position." alt="" coords="465,259,647,285"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="410,285,449,281,450,286,411,290"/>
+<area shape="rect" id="Node000017" href="$class_c_renderer.html#a8d5a2f330a505f548ffad6b5f63e5273" title="Get camera yaw." alt="" coords="464,309,648,336"/>
+<area shape="poly" id="edge21_Node000015_Node000017" title=" " alt="" coords="411,304,449,309,449,314,410,310"/>
+<area shape="rect" id="Node000018" href="$class_c_renderer.html#a931bc2ab8d5c5e9e52dea0ce5872f26d" title="Set camera yaw." alt="" coords="464,157,648,184"/>
+<area shape="poly" id="edge23_Node000015_Node000018" title=" " alt="" coords="333,281,385,238,420,214,457,194,473,187,475,192,459,198,423,219,389,242,337,285"/>
+<area shape="rect" id="Node000019" href="$class_c_renderer.html#acbb28a9177b5bacc0763598d19f87eef" title="Set/unset follow camera." alt="" coords="458,208,654,235"/>
+<area shape="poly" id="edge24_Node000015_Node000019" title=" " alt="" coords="354,281,457,244,483,237,484,242,459,249,356,286"/>
+<area shape="poly" id="edge26_Node000020_Node000005" title=" " alt="" coords="356,610,457,575,525,556,584,543,686,527,734,517,783,503,837,480,898,447,914,436,924,425,946,397,1020,320,1024,324,950,400,928,428,917,440,901,452,840,485,785,508,735,523,687,532,585,548,526,561,459,580,358,615"/>
+<area shape="poly" id="edge34_Node000020_Node000007" title=" " alt="" coords="379,612,458,599,525,591,584,588,684,588,731,586,781,579,836,565,899,542,935,522,969,497,1023,447,1026,451,973,501,938,526,901,546,837,570,782,584,732,591,684,593,584,593,526,596,458,604,380,618"/>
+<area shape="rect" id="Node000021" href="$class_c_plane_object.html#a9f2c61a8c9ad3fcd54ceaad0c7ffe655" title="Get muzzle position and direction." alt="" coords="702,689,900,716"/>
+<area shape="poly" id="edge27_Node000020_Node000021" title=" " alt="" coords="340,638,391,672,424,688,459,700,516,711,575,716,687,714,687,719,575,721,515,716,457,705,422,693,389,676,337,643"/>
+<area shape="poly" id="edge28_Node000020_Node000022" title=" " alt="" coords="331,611,382,560,418,530,457,504,484,491,487,496,459,509,421,535,386,564,334,615"/>
+<area shape="poly" id="edge29_Node000020_Node000023" title=" " alt="" coords="337,638,405,700,459,744,487,757,484,762,457,749,402,704,333,642"/>
+<area shape="rect" id="Node000024" href="$class_c_plane_object.html#a10dce20bcd796b1c21856af638bdcb7e" title="Gun fire particle effects." alt="" coords="470,664,642,691"/>
+<area shape="poly" id="edge30_Node000020_Node000024" title=" " alt="" coords="380,637,476,658,475,663,379,642"/>
+<area shape="rect" id="Node000025" href="$class_c_object.html#a47b5f7fd259b2f849901e7b1c906f36e" title="Set lifetime." alt="" coords="482,613,630,640"/>
+<area shape="poly" id="edge32_Node000020_Node000025" title=" " alt="" coords="379,624,467,624,467,629,379,629"/>
+<area shape="rect" id="Node000026" href="$class_c_object.html#afaeba0c3c84e3b49e37a014807c3ba45" title="Set roll angle." alt="" coords="496,816,616,843"/>
+<area shape="poly" id="edge33_Node000020_Node000026" title=" " alt="" coords="329,639,347,672,376,717,414,763,459,802,483,813,480,818,457,806,410,766,372,720,343,675,324,642"/>
+<area shape="poly" id="edge31_Node000024_Node000021" title=" " alt="" coords="642,684,687,688,687,694,642,689"/>
+<area shape="poly" id="edge38_Node000027_Node000026" title=" " alt="" coords="396,810,481,819,480,824,395,815"/>
+</map>

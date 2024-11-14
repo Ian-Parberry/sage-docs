@@ -1,0 +1,29 @@
+<map id="Sage::CSpriteRenderer" name="Sage::CSpriteRenderer">
+<area shape="rect" id="Node000001" title="The sprite renderer class." alt="" coords="970,157,1127,184"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html" title="The renderer." alt="" coords="708,157,847,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="863,168,970,168,970,173,863,173"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="409,107,537,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,128,684,149,710,154,709,159,684,155,552,134"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_component.html" title="The component accessor." alt="" coords="405,56,541,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="555,84,619,101,685,123,753,154,750,159,683,128,617,106,554,89"/>
+<area shape="rect" id="Node000012" href="$class_sage_1_1_c_sprite.html" title="The sprite." alt="" coords="726,52,829,79"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="557,66,726,63,726,69,557,71"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_camera_common.html" title="The camera common variables class." alt="" coords="389,259,557,285"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="538,251,683,205,743,182,745,187,685,211,540,256"/>
+<area shape="rect" id="Node000011" href="$class_sage_1_1_c_camera.html" title="A basic camera." alt="" coords="720,233,835,260"/>
+<area shape="poly" id="edge11_Node000011_Node000005" title=" " alt="" coords="572,261,719,249,720,254,573,266"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_window.html" title="The window class." alt="" coords="415,157,531,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="547,168,708,168,708,173,547,173"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_window_desc.html" title="The window descriptor." alt="" coords="182,137,329,164"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="345,156,414,163,414,168,345,162"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_settings_manager.html" title="Settings manager." alt="" coords="172,188,339,215"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="354,185,414,176,414,182,355,190"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_settings.html" title="Settings." alt="" coords="5,188,123,215"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="138,199,172,199,172,204,138,204"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_screenshot_flag.html" title="Screenshot flag." alt="" coords="393,208,553,235"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="568,203,707,180,708,185,569,208"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="842,226,997,182,999,187,843,231"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="830,82,1013,154,1011,159,828,87"/>
+<area shape="rect" id="Node000013" href="$class_sage_1_1_c_texture_desc.html" title="The texture descriptor." alt="" coords="401,5,544,32"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="560,27,684,45,726,53,725,58,684,51,559,32"/>
+</map>

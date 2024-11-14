@@ -1,0 +1,25 @@
+<map id="CObject::SetVel" name="CObject::SetVel">
+<area shape="rect" id="Node000001" title="Set velocity." alt="" coords="1178,56,1294,83"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a72b2cd322570c0b1a3aecd036de1d1a3" title="Create clouds." alt="" coords="976,5,1130,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1170,54,1103,35,1105,30,1171,49"/>
+<area shape="rect" id="Node000009" href="$class_c_game.html#a0d4ae530908e3f6686f67ea7b75fb2e1" title="Fire the plane&#39;s gun." alt="" coords="789,107,909,133"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="1170,89,1131,97,1013,112,910,120,909,115,1013,107,1130,92,1169,84"/>
+<area shape="rect" id="Node000010" href="$class_c_plane_object.html#a42bdd5cd2cb87fd9046f7a925c6aa243" title="Set velocity." alt="" coords="979,56,1127,83"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1163,72,1127,72,1127,67,1163,67"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="770,5,928,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="961,21,929,21,929,16,961,16"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="579,5,722,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="754,21,722,21,722,16,754,16"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="350,56,524,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="577,39,497,58,496,53,576,34"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#ad92a74136e76ce02a0d25f0287ba462f" title="Process game state." alt="" coords="343,5,531,32"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="564,21,532,21,532,16,564,16"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="334,60,295,56,296,50,335,55"/>
+<area shape="rect" id="Node000007" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="328,34,296,38,295,32,327,29"/>
+<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="773,114,579,91,525,84,525,78,580,85,774,109"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="981,54,905,35,906,30,982,49"/>
+<area shape="poly" id="edge13_Node000010_Node000005" title=" " alt="" coords="963,72,525,72,525,67,963,67"/>
+</map>

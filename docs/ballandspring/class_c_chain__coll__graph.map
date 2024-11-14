@@ -1,0 +1,16 @@
+<map id="CChain" name="CChain">
+<area shape="rect" id="Node000001" title="The chain." alt="" coords="24,188,90,215"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html" title="The body." alt="" coords="40,81,101,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,124,61,188,56,187,64,123"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html" title="The object manager." alt="" coords="131,188,250,215"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="76,123,83,144,95,162,112,175,132,185,129,190,109,180,91,166,78,146,71,124"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="104,279,188,305"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,276,45,253,25,236,9,216,4,201,3,185,14,154,34,127,54,107,58,110,38,131,19,157,9,186,9,200,14,213,29,233,48,249,91,272"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="152,263,163,237,178,213,183,216,167,240,157,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="180,230,155,279,150,277,175,228"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="77,5,213,32"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="123,45,85,83,81,79,120,41"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="157,46,182,131,192,187,186,188,177,133,152,47"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="236,81,353,108"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="273,121,205,190,201,186,269,117"/>
+</map>

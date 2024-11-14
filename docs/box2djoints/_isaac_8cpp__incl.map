@@ -1,0 +1,18 @@
+<map id="Isaac.cpp" name="Isaac.cpp">
+<area shape="rect" id="Node000001" title="Code for the Isaac Newton class CSirIsaacNewton." alt="" coords="172,5,250,32"/>
+<area shape="rect" id="Node000002" href="$_isaac_8h.html" title="Interface for the Isaac Newton class CSirIsaacNewton." alt="" coords="120,80,185,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,34,174,69,170,66,199,31"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="208,80,334,107"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="224,31,253,66,249,70,220,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,116,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,109,90,147,86,143,135,105"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="136,229,249,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="158,106,188,214,183,215,153,108"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="190,155,275,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="168,105,209,142,206,146,165,109"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="71,304,178,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="183,258,149,294,145,291,179,255"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="202,304,319,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="206,255,240,291,236,294,202,258"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="228,183,209,217,204,214,223,181"/>
+</map>

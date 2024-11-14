@@ -1,0 +1,5 @@
+<map id="CPlaneObject::SetRoll" name="CPlaneObject::SetRoll">
+<area shape="rect" id="Node000001" title="Rotate around Z&#45;axis." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#afaeba0c3c84e3b49e37a014807c3ba45" title="Set roll angle." alt="" coords="207,5,327,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+</map>

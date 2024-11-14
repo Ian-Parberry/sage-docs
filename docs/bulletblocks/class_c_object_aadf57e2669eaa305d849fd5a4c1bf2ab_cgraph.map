@@ -1,0 +1,5 @@
+<map id="CObject::GetOrientation" name="CObject::GetOrientation">
+<area shape="rect" id="Node000001" title="Get orientation." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000002" href="$_game_defines_8h.html#ae7ffbe2c87a0231198fe2dc135dc0c3e" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="215,5,287,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+</map>

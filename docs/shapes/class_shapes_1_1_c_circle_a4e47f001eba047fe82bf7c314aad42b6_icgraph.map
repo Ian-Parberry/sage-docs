@@ -1,0 +1,11 @@
+<map id="Shapes::CCircle::GetRadius" name="Shapes::CCircle::GetRadius">
+<area shape="rect" id="Node000001" title="Get radius." alt="" coords="487,64,674,91"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_point.html#a7c238672005132e54bf1d4cada2db30d" title="Collision detection." alt="" coords="268,56,439,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="472,80,440,80,440,75,472,75"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_arc.html#a65f524c9e4e17ec42dc6fa4f64ee2a71" title="Collision detection." alt="" coords="5,5,220,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="252,55,219,47,172,35,173,30,220,41,253,50"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_circle.html#ac672d4f951692521c85862be7cd1c713" title="Collision detection." alt="" coords="25,56,200,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="252,80,201,80,201,75,252,75"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_line_seg.html#aed56df99acf61d2fca2dc98b1b55cccb" title="Collision detection." alt="" coords="18,123,207,165"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="260,106,193,125,192,119,259,101"/>
+</map>

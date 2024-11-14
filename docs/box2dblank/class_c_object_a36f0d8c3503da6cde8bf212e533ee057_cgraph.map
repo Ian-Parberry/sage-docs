@@ -1,0 +1,5 @@
+<map id="CObject::GetSpeed" name="CObject::GetSpeed">
+<area shape="rect" id="Node000001" title="Get speed in renderer units." alt="" coords="5,5,141,32"/>
+<area shape="rect" id="Node000002" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="189,5,261,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,16,173,16,173,21,141,21"/>
+</map>

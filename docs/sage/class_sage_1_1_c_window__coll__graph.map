@@ -1,0 +1,9 @@
+<map id="Sage::CWindow" name="Sage::CWindow">
+<area shape="rect" id="Node000001" title="The window class." alt="" coords="112,155,228,181"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_window_desc.html" title="The window descriptor." alt="" coords="5,80,153,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,114,156,152,152,156,105,119"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_settings_manager.html" title="Settings manager." alt="" coords="177,80,344,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,119,187,156,184,152,231,114"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_settings.html" title="Settings." alt="" coords="202,5,319,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="263,48,263,80,258,80,258,48"/>
+</map>

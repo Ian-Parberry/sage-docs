@@ -1,0 +1,25 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,56,148,83"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="216,5,371,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,53,218,34,219,39,138,58"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a75a23e62a316f4b34eff8a11dd4219c9" title="Create bells." alt="" coords="196,56,391,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,67,180,67,180,72,148,72"/>
+<area shape="rect" id="Node000007" href="$class_c_cannon.html#afa758cc6bae9a6dec2ea8b1ee3f049ea" title="Set up a cannon." alt="" coords="227,132,360,159"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="118,81,239,124,237,129,116,86"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a94042b0c4aa931c057ea2e0cf7cb1c3d" title="Create bell." alt="" coords="439,31,627,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="391,56,423,53,424,58,392,62"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#aa94cab726e5c4f3b619416d4fc4107de" title="Create object." alt="" coords="675,69,880,96"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="622,55,674,64,674,69,621,61"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="741,145,814,172"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="565,55,735,136,732,141,563,60"/>
+<area shape="poly" id="edge11_Node000007_Node000005" title=" " alt="" coords="359,130,439,117,660,91,660,96,439,123,360,136"/>
+<area shape="rect" id="Node000008" href="$class_c_cannon.html#ac9d99b276971a961be0f2ecba3c42edb" title="Create a cannon barrel in Physics World." alt="" coords="454,132,612,159"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="360,143,439,143,439,148,360,148"/>
+<area shape="rect" id="Node000009" href="$class_c_cannon.html#a6e84fcf3a92d95f5b226c7567bf3662b" title="Create a cannon base in Physics World." alt="" coords="456,183,610,209"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="361,157,452,176,451,182,360,162"/>
+<area shape="rect" id="Node000010" href="$class_c_cannon.html#a7d038475a4063ed61cb18b69ca72d975" title="Create a cannon wheel in Physics World." alt="" coords="453,233,613,260"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="319,157,373,188,440,219,459,226,458,231,438,224,371,192,316,162"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="612,147,726,153,726,159,612,152"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="610,182,726,164,727,169,611,187"/>
+<area shape="poly" id="edge13_Node000010_Node000006" title=" " alt="" coords="590,230,626,219,731,176,733,181,628,224,591,235"/>
+</map>

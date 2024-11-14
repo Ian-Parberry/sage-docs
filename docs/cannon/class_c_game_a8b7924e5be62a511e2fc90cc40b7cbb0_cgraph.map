@@ -1,0 +1,13 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,107,159,133"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="211,5,369,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,104,147,73,206,42,221,35,223,40,208,46,150,78,104,108"/>
+<area shape="rect" id="Node000003" href="$class_c_heads_up_display.html#a752862e9f074e8c1b208d78f7f9c6bfb" title="Draw HUD." alt="" coords="207,56,373,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="139,103,217,84,218,89,141,109"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a0f951deeb63ad176580a52860277f1a1" title="Draw win/lose text." alt="" coords="212,107,368,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,117,196,117,196,123,159,123"/>
+<area shape="rect" id="Node000005" href="$class_c_cannon.html#ae823e07c6e19ee6db5f07e38c68851ff" title="Get number of cannonballs fired in this level." alt="" coords="209,157,371,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="141,131,218,151,217,156,139,137"/>
+<area shape="rect" id="Node000006" href="$class_c_cannon.html#a1cea9e3b081100f247ad00344a61f67b" title="Get current and max temperatures." alt="" coords="218,208,362,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="104,132,150,162,208,194,223,200,221,205,206,198,147,167,101,136"/>
+</map>

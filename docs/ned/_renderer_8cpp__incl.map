@@ -1,0 +1,15 @@
+<map id="Renderer.cpp" name="Renderer.cpp">
+<area shape="rect" id="Node000001" title="Code for the renderer CRenderer." alt="" coords="264,5,363,32"/>
+<area shape="rect" id="Node000002" href="$_renderer_8h.html" title="Interface for the renderer CRenderer." alt="" coords="115,80,200,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,35,199,75,197,71,285,30"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="224,80,402,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="316,33,316,64,311,64,311,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="427,80,520,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="342,30,433,71,431,76,340,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,155,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,109,106,146,103,142,142,105"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="178,155,291,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="173,105,212,142,208,146,169,109"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,229,288,256"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="237,182,237,214,232,214,232,182"/>
+</map>

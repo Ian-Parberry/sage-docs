@@ -1,0 +1,23 @@
+<map id="Shapes::perp" name="Shapes::perp">
+<area shape="rect" id="Node000001" title="Perpendicular vector." alt="" coords="476,109,574,136"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="558,96,547,90,525,88,505,90,494,95,491,100,496,107,492,110,486,101,490,91,503,85,525,83,549,85,561,92"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_dynamic_circle.html#a3f2e8e14c8c28cc4629a4a31ae53595b" title="Collision response for kinematic shape." alt="" coords="232,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="492,102,427,62,400,51,402,46,429,58,495,98"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_line_seg_desc.html#aaa00f6fe5262b40fd6e5c44afb935f2c" title=" " alt="" coords="249,72,410,115"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="460,116,410,108,411,103,461,110"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_circle.html#a616d43f7672951a423a4d53c616e3770" title="Common tangents." alt="" coords="5,139,184,165"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="461,130,184,149,184,143,461,124"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="253,219,406,245"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="487,146,357,221,354,216,485,142"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_dynamic_circle.html#a9f0b02a5d076cd8900ef3b25e28f5ddc" title="Collision response." alt="" coords="10,5,179,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="216,29,179,29,179,24,216,24"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_line_seg_desc.html#ae48eac1e080a3bd32320d52ac2d40756" title="Constructor." alt="" coords="14,72,175,115"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="234,96,176,96,176,91,234,91"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="235,120,152,141,150,135,234,114"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_arc.html#ac448e5b08ef96a604212c8863982e0be" title="Constructor." alt="" coords="24,189,165,216"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="237,223,165,214,166,209,238,218"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_kinematic_arc.html#a6a54feb32d20c5758452cb8599643210" title="Reset orientation." alt="" coords="14,240,175,283"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="239,246,176,254,175,249,238,241"/>
+<area shape="rect" id="Node000010" href="$class_shapes_1_1_c_kinematic_arc.html#a9a6914c653b5c9fd5d84c628b3d304cd" title="Rotate." alt="" coords="14,307,175,349"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="285,255,185,297,156,309,154,304,183,292,283,250"/>
+</map>

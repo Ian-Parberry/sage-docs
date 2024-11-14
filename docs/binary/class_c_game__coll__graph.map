@@ -1,0 +1,30 @@
+<map id="CGame" name="CGame">
+<area shape="rect" id="Node000001" title="The game class." alt="" coords="436,339,502,365"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="229,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="381,26,437,35,491,49,531,68,543,79,548,93,548,263,544,292,529,316,515,330,499,340,496,336,511,326,525,313,539,290,543,262,543,94,539,82,528,72,489,54,436,41,380,31"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="175,81,294,108"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="279,45,247,83,243,79,275,42"/>
+<area shape="rect" id="Node000009" href="$class_c_bit_counter.html" title="Single&#45;bit counter." alt="" coords="5,248,99,275"/>
+<area shape="poly" id="edge12_Node000009_Node000002" title=" " alt="" coords="214,31,111,51,69,65,43,83,32,103,26,124,26,171,37,214,49,247,44,248,32,216,21,172,21,124,27,101,39,80,67,61,110,46,213,26"/>
+<area shape="rect" id="Node000010" href="$class_c_my_listener.html" title="My contact listener." alt="" coords="335,248,430,275"/>
+<area shape="poly" id="edge16_Node000010_Node000002" title=" " alt="" coords="309,45,381,247,376,248,304,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="537,5,655,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="607,46,615,93,615,263,612,281,603,297,575,322,539,338,504,348,502,343,537,333,572,317,599,294,607,280,609,262,609,94,602,47"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="523,38,295,84,294,79,522,32"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="120,172,205,199"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,205,284,255,391,312,441,336,439,341,388,317,282,260,195,209"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="170,156,185,130,212,106,215,110,189,134,174,159"/>
+<area shape="poly" id="edge13_Node000009_Node000004" title=" " alt="" coords="133,210,72,250,69,245,130,205"/>
+<area shape="poly" id="edge17_Node000010_Node000004" title=" " alt="" coords="221,199,292,220,355,245,353,250,290,225,219,204"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html" title="The Renderer." alt="" coords="54,81,138,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="70,120,62,134,64,147,75,158,89,167,121,178,119,183,87,172,72,162,60,149,57,133,65,118"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="34,5,158,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="99,47,99,81,93,81,93,47"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="217,122,175,173,171,170,213,118"/>
+<area shape="rect" id="Node000008" href="$class_c_counter.html" title="Binary counter." alt="" coords="69,339,147,365"/>
+<area shape="poly" id="edge10_Node000004_Node000008" title=" " alt="" coords="133,326,142,313,153,283,159,251,161,199,166,199,164,252,158,284,146,316,138,329"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="50,289,55,314,66,326,80,336,77,340,62,330,51,316,45,290"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="393,288,408,313,422,326,439,336,437,340,419,330,404,316,388,290"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="380,172,508,199"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="426,212,395,249,391,246,422,208"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CDialogBox::UpdateLaunchCount" name="CDialogBox::UpdateLaunchCount">
+<area shape="rect" id="Node000001" title="Update the launch count." alt="" coords="5,5,189,48"/>
+<area shape="rect" id="Node000002" href="$class_c_dialog_box.html#ac3be68fa38c7f663755c8ea05ae6cba1" title="Set an edit box." alt="" coords="237,13,402,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,24,221,24,221,29,189,29"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CCarAndBridge::Action" name="CCarAndBridge::Action">
+<area shape="rect" id="Node000001" title="Reverse the car." alt="" coords="206,5,363,32"/>
+<area shape="rect" id="Node000002" href="$class_c_car_and_bridge.html#a298554acbf281bfb4c82149c4b74d9ba" title="Reverse the car when it gets near the edges." alt="" coords="5,5,158,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,21,158,21,158,16,190,16"/>
+</map>

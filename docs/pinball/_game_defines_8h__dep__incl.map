@@ -1,0 +1,33 @@
+<map id="GameDefines.h" name="GameDefines.h">
+<area shape="rect" id="Node000001" title="Game specific defines." alt="" coords="171,5,284,32"/>
+<area shape="rect" id="Node000002" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="185,80,270,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,48,230,80,225,80,225,48"/>
+<area shape="rect" id="Node000005" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,379,87,405"/>
+<area shape="poly" id="edge16_Node000001_Node000005" title=" " alt="" coords="160,39,112,58,66,85,47,102,33,121,23,142,19,167,19,244,22,282,29,320,44,378,39,379,24,321,17,283,14,244,14,166,18,141,28,118,43,98,63,81,109,53,158,34"/>
+<area shape="rect" id="Node000007" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="70,155,140,181"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="207,46,175,82,116,156,112,152,171,78,203,42"/>
+<area shape="rect" id="Node000011" href="$_parts_8h.html" title="Interface for the gate class CGate and the flipper class CFipper." alt="" coords="388,155,451,181"/>
+<area shape="poly" id="edge19_Node000001_Node000011" title=" " alt="" coords="257,40,405,152,401,156,254,44"/>
+<area shape="rect" id="Node000012" href="$_parts_8cpp.html" title="Code for the gate class CGate and the flipper class CFipper." alt="" coords="439,229,517,256"/>
+<area shape="poly" id="edge18_Node000001_Node000012" title=" " alt="" coords="289,35,334,53,382,78,428,111,466,153,475,172,480,193,482,229,476,229,475,194,470,174,461,156,424,115,379,83,332,58,287,40"/>
+<area shape="rect" id="Node000003" href="$_common_8cpp.html" title="Code for the class CCommon." alt="" coords="264,155,364,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="256,115,301,152,297,156,252,119"/>
+<area shape="rect" id="Node000004" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="143,304,210,331"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="224,123,182,304,177,303,218,121"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="194,117,128,156,125,152,191,113"/>
+<area shape="rect" id="Node000009" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="214,229,334,256"/>
+<area shape="poly" id="edge11_Node000002_Node000009" title=" " alt="" coords="237,121,255,181,272,228,267,230,250,182,232,122"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="276,110,388,152,387,157,274,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="142,341,70,380,68,376,139,336"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="140,379,214,405"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="179,346,179,378,174,378,174,346"/>
+<area shape="rect" id="Node000008" href="$_object_8cpp.html" title="Code for the game object class CObject." alt="" coords="54,229,139,256"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="104,197,101,229,95,229,99,196"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="149,185,245,226,243,231,147,190"/>
+<area shape="poly" id="edge9_Node000009_Node000004" title=" " alt="" coords="247,268,195,306,192,301,243,263"/>
+<area shape="rect" id="Node000010" href="$_object_manager_8cpp.html" title="Code for the object manager class CObjectManager." alt="" coords="270,304,404,331"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="297,266,328,302,324,305,293,270"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="382,191,301,231,298,226,379,186"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="407,196,346,305,341,302,402,194"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="441,192,470,227,466,231,437,195"/>
+</map>

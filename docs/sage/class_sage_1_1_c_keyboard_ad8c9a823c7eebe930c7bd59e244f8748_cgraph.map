@@ -1,0 +1,7 @@
+<map id="Sage::CKeyboard::GetState" name="Sage::CKeyboard::GetState">
+<area shape="rect" id="Node000001" title="Poll the keyboard state." alt="" coords="5,5,190,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_keyboard.html#ae9f9bbaf1b0d7012672307bde4ba884f" title="Check for any key going down." alt="" coords="238,5,444,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,16,222,16,222,21,190,21"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_keyboard.html#a83de338ae65ff8cebd93683af02a6e2a" title="Check for key changing state." alt="" coords="492,5,664,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="444,16,476,16,476,21,444,21"/>
+</map>

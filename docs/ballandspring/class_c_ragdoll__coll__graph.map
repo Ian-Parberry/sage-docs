@@ -1,0 +1,17 @@
+<map id="CRagdoll" name="CRagdoll">
+<area shape="rect" id="Node000001" title="The ragdoll." alt="" coords="5,329,81,356"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="20,5,138,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,44,37,67,30,94,30,268,34,301,41,328,36,330,28,302,24,268,24,93,32,64,50,41"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The object manager." alt="" coords="73,81,192,108"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="99,43,125,79,121,83,95,46"/>
+<area shape="rect" id="Node000003" href="$class_c_body.html" title="The body." alt="" coords="120,253,182,280"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,291,63,331,60,327,119,287"/>
+<area shape="poly" id="edge8_Node000005_Node000003" title=" " alt="" coords="123,244,109,226,97,205,94,177,100,150,121,107,126,109,105,152,99,178,103,203,113,223,127,241"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="200,175,284,201"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="217,213,167,255,164,251,214,209"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="251,160,253,146,249,133,237,122,224,113,191,102,193,97,226,108,241,118,253,131,258,145,257,160"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="130,123,131,136,136,146,161,161,200,174,198,179,159,166,132,150,126,137,125,124"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="208,5,344,32"/>
+<area shape="poly" id="edge9_Node000003_Node000006" title=" " alt="" coords="291,45,304,79,313,121,314,165,308,186,299,206,274,230,244,248,212,259,183,265,182,259,210,253,242,243,271,226,294,202,303,184,308,164,308,122,299,81,286,47"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="240,42,158,83,156,78,237,37"/>
+</map>

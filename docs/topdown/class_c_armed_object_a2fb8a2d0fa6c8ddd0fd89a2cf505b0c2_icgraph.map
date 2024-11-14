@@ -1,0 +1,7 @@
+<map id="CArmedObject::DeathFX" name="CArmedObject::DeathFX">
+<area shape="rect" id="Node000001" title="Death special effects." alt="" coords="239,31,406,57"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#a7100575b2f8b1a4ece0bf3b24d44bfca" title="Collision response." alt="" coords="6,5,190,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,36,190,32,190,26,224,30"/>
+<area shape="rect" id="Node000003" href="$class_c_player.html#a257ff19b21196bf7a42bbaa36e7126a8" title="Collision response." alt="" coords="5,56,191,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,58,192,61,191,56,223,52"/>
+</map>

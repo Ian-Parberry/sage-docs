@@ -1,0 +1,35 @@
+<map id="Shapes::CKinematicArc::Rotate" name="Shapes::CKinematicArc::Rotate">
+<area shape="rect" id="Node000001" title="Rotate." alt="" coords="5,69,167,112"/>
+<area shape="rect" id="Node000002" href="$_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073" title="Normalize angle to ." alt="" coords="943,136,1108,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,66,158,37,186,23,214,13,261,4,300,4,386,13,530,15,643,15,697,18,755,27,818,41,893,64,950,91,998,124,995,128,948,96,891,69,817,46,754,32,697,24,643,20,530,21,386,18,299,9,262,9,215,18,188,28,161,41,116,71"/>
+<area shape="rect" id="Node000003" href="$_shape_math_8h.html#a655b44b1455600fa7b31101f5ee0109d" title="Rotate point." alt="" coords="238,52,363,78"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="166,78,222,71,223,77,167,83"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="215,102,386,129"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="167,97,199,101,199,106,166,102"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="224,180,377,206"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="133,110,258,170,256,175,131,114"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="987,137,980,127,985,117,1000,111,1026,109,1054,112,1068,118,1066,123,1052,117,1026,114,1002,116,988,121,985,126,991,133"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="264,53,258,43,262,33,277,27,300,25,326,27,339,34,337,39,324,33,300,30,278,32,266,37,263,42,268,50"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="699,78,892,105"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="352,99,385,88,408,75,433,64,511,53,589,53,662,61,725,72,724,77,661,66,588,58,511,58,435,69,411,79,387,93,354,104"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="434,129,651,156"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="367,176,460,157,461,162,368,181"/>
+<area shape="rect" id="Node000008" href="$_shape_math_8h.html#aae393ce7ea1fd0fe423161f849235011" title="Normal vector from orientation." alt="" coords="464,254,621,281"/>
+<area shape="poly" id="edge10_Node000006_Node000008" title=" " alt="" coords="347,204,483,247,482,252,345,209"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="940,224,1112,250"/>
+<area shape="poly" id="edge12_Node000006_Node000009" title=" " alt="" coords="316,205,364,250,398,273,435,290,508,308,584,316,660,316,735,309,806,297,870,283,972,253,973,258,872,288,807,302,736,314,661,321,584,322,507,314,433,295,395,278,361,254,312,209"/>
+<area shape="rect" id="Node000010" href="$_shape_math_8h.html#a42ba6241a99c1dcd508a892de306416a" title="Perpendicular vector." alt="" coords="494,380,592,406"/>
+<area shape="poly" id="edge13_Node000006_Node000010" title=" " alt="" coords="314,205,363,265,397,301,436,335,465,354,495,370,493,375,462,359,432,339,394,305,359,269,310,208"/>
+<area shape="rect" id="Node000011" href="$class_shapes_1_1_c_arc.html#a5df47e5d99c3d84d7c34cceb3c124288" title="Point in sector test." alt="" coords="456,180,629,206"/>
+<area shape="poly" id="edge15_Node000006_Node000011" title=" " alt="" coords="377,190,440,190,440,196,377,196"/>
+<area shape="rect" id="Node000013" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="436,78,650,105"/>
+<area shape="poly" id="edge19_Node000006_Node000013" title=" " alt="" coords="322,177,381,142,433,114,454,107,456,112,435,119,384,146,325,181"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="612,126,710,106,711,111,614,131"/>
+<area shape="poly" id="edge11_Node000008_Node000008" title=" " alt="" coords="502,255,495,245,500,236,516,230,543,228,572,230,587,237,585,242,571,235,543,233,517,235,503,240,500,245,506,252"/>
+<area shape="poly" id="edge14_Node000010_Node000010" title=" " alt="" coords="502,381,495,371,500,361,516,355,543,353,572,356,587,362,585,367,571,361,543,358,517,360,503,365,500,370,506,377"/>
+<area shape="rect" id="Node000012" href="$class_shapes_1_1_c_arc.html#a68cd1094cdde528977fd84e172483c0e" title="Point to angle." alt="" coords="710,180,881,206"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="630,190,694,190,694,196,630,196"/>
+<area shape="poly" id="edge18_Node000012_Node000002" title=" " alt="" coords="868,176,937,163,938,168,869,182"/>
+<area shape="poly" id="edge17_Node000012_Node000009" title=" " alt="" coords="869,204,938,217,937,223,868,209"/>
+<area shape="poly" id="edge20_Node000013_Node000005" title=" " alt="" coords="650,89,684,89,684,94,650,94"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Sage::CSpriteRenderer::Draw" name="Sage::CSpriteRenderer::Draw">
+<area shape="rect" id="Node000001" title="Draw single 2D sprite." alt="" coords="5,99,162,141"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="40,99,38,89,46,80,61,74,84,72,108,74,123,81,121,86,107,80,83,77,62,79,49,84,43,90,45,98"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite.html#a6cb63aa7786c8562e491af40567f159b" title="Get extents of sprite or sprite sheet/." alt="" coords="224,5,402,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="113,96,157,68,209,42,228,34,230,39,211,46,160,72,116,100"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#a92442ae56a0f6628e8909b18f1b930f5" title="Get position." alt="" coords="229,56,396,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="162,100,234,84,235,89,163,105"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite.html#a38b7dc057dc963c5f4a3608cfe00c852" title="Get bounding rectangle in sprite sheet." alt="" coords="233,107,393,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="162,117,217,117,217,123,162,123"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite_renderer.html#af190ad2d5d1ed12b60edf8d6a297d027" title="Get sprite size." alt="" coords="235,181,391,224"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="146,139,238,173,236,178,144,144"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite.html#af6302c78aa016f0c4a815a9be1dd89f7" title="Get texture descriptor." alt="" coords="210,248,416,275"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="104,140,149,188,179,213,211,234,224,240,222,245,208,238,176,217,146,192,100,144"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="269,181,268,171,275,162,290,157,313,155,337,157,352,163,350,168,336,162,313,160,291,162,278,167,273,173,275,180"/>
+</map>

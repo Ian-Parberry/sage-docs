@@ -1,0 +1,12 @@
+<map id="CObject::GetRoll" name="CObject::GetRoll">
+<area shape="rect" id="Node000001" title="Get roll angle." alt="" coords="734,31,855,57"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a0d4ae530908e3f6686f67ea7b75fb2e1" title="Fire the plane&#39;s gun." alt="" coords="565,5,686,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="718,35,686,30,687,25,718,30"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,31,517,57"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="718,47,518,47,518,41,718,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,31,518,35,518,30,549,26"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="327,47,295,47,295,41,327,41"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
+</map>

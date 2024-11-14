@@ -1,0 +1,21 @@
+<map id="CCommon::Wrap" name="CCommon::Wrap">
+<area shape="rect" id="Node000001" title="Wrap horizontal distance." alt="" coords="893,81,1015,108"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a32fd1555cb50d5e22e0270c9b45fbb1b" title="Crow death effects." alt="" coords="636,5,845,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="912,76,844,47,806,35,807,30,846,41,914,71"/>
+<area shape="rect" id="Node000004" href="$class_c_dead_crow_object.html#addc2b5ea9248e8da3c9ef4f22c90fabe" title="Move depending on time and speed." alt="" coords="655,56,826,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="877,88,826,82,827,77,878,83"/>
+<area shape="rect" id="Node000005" href="$class_c_crow_object.html#a6d1b7679437e8d5d0a84d5e0bdb420cc" title="Change state." alt="" coords="661,107,820,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="877,106,821,113,820,108,877,101"/>
+<area shape="rect" id="Node000007" href="$class_c_crow_object.html#a67ed3be858eba35a91ecdfacc9698145" title="Artificial intelligence." alt="" coords="194,107,334,133"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="919,118,884,135,845,148,717,170,664,173,615,173,512,164,382,148,317,137,318,131,382,143,513,158,615,168,664,168,716,165,844,143,882,130,916,114"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d" title="Narrow phase collision detection and response." alt="" coords="382,5,588,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="621,21,589,21,589,16,621,16"/>
+<area shape="rect" id="Node000006" href="$class_c_crow_object.html#aefc639111c29fee8d02b06e66699d003" title="Ai for avoiding plane." alt="" coords="400,56,570,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="654,106,555,86,557,81,655,100"/>
+<area shape="rect" id="Node000009" href="$class_c_crow_object.html#a584f8df1134f7a7efb6d2768757b5f21" title="Ai for cruising along." alt="" coords="401,107,569,133"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="645,123,570,123,570,117,645,117"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="409,89,326,109,325,103,408,84"/>
+<area shape="rect" id="Node000008" href="$class_c_crow_object.html#addf0f2d52e7afde908e4485fbc459e68" title="Move depending on time and speed." alt="" coords="5,107,146,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="178,123,146,123,146,117,178,117"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="386,123,334,123,334,117,386,117"/>
+</map>

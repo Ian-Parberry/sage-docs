@@ -1,0 +1,22 @@
+<map id="CObjectManager::Move" name="CObjectManager::Move">
+<area shape="rect" id="Node000001" title="Move all objects." alt="" coords="5,93,165,120"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ab0783c768fcb9e8450df530217d29802" title="Broad phase collision detection and response, brute force." alt="" coords="483,31,681,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,90,212,71,344,54,467,45,468,50,345,59,213,76,132,95"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#afd42d81cb3e08da017f57a30f4e4245d" title="Broad phase collision detection and response with quadtree." alt="" coords="225,85,423,128"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="165,104,209,104,209,109,165,109"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a07299e1ef6e4467ebd770c7742586c58" title="Update the quadtree." alt="" coords="213,156,435,183"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="139,118,256,149,254,154,138,123"/>
+<area shape="rect" id="Node000003" href="$class_c_gate.html#ac58a5ceb4cb14d4fa6be61c914cec859" title="Narrow phase." alt="" coords="759,5,906,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="681,31,744,25,744,30,682,37"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a3c574bccab311aa7259137f9bcf096af" title="Narrow phase collision detection and response." alt="" coords="729,56,936,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="682,51,714,55,714,60,681,57"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="414,82,508,59,510,64,415,87"/>
+<area shape="rect" id="Node000006" href="$class_c_quad_tree.html#a87f07ea7446aa26115265e75defc0b13" title="Get leaves with collidable things in them." alt="" coords="502,105,662,132"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="424,109,488,112,487,117,424,114"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="540,107,533,97,538,87,555,81,582,79,612,81,628,88,626,93,611,86,582,84,556,86,541,91,538,96,544,103"/>
+<area shape="rect" id="Node000008" href="$class_c_quad_tree.html#a92b7c5fde589cc97e7b803406cb44434" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="518,156,646,183"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="435,167,503,167,503,172,435,172"/>
+<area shape="rect" id="Node000009" href="$class_c_quad_tree.html#a7bfafc26e36377087ffac07f0bce97cd" title="Insert shape at place in tree." alt="" coords="518,231,647,257"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="373,181,519,223,518,228,372,186"/>
+<area shape="poly" id="edge11_Node000009_Node000009" title=" " alt="" coords="540,232,533,222,538,212,555,206,582,204,612,207,628,213,626,218,611,212,582,209,556,211,541,216,538,221,544,229"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c" title="Draw frame rate text to screen." alt="" coords="207,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="TileManager.h" name="TileManager.h">
+<area shape="rect" id="Node000001" title="Interface for the tile manager CTileManager." alt="" coords="126,5,230,32"/>
+<area shape="rect" id="Node000002" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,80,87,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,42,70,82,68,77,141,37"/>
+<area shape="rect" id="Node000003" href="$_object_manager_8cpp.html" title="Code for the the object manager class CObjectManager." alt="" coords="111,80,245,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,48,181,80,175,80,175,48"/>
+<area shape="rect" id="Node000004" href="$_tile_manager_8cpp.html" title="Code for the tile manager CTileManager." alt="" coords="269,80,386,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,37,302,77,300,82,217,42"/>
+</map>

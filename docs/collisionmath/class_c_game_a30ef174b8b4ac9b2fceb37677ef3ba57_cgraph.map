@@ -1,0 +1,13 @@
+<map id="CGame::ProcessLaunch" name="CGame::ProcessLaunch">
+<area shape="rect" id="Node000001" title="Process launch and multilaunch." alt="" coords="5,35,170,61"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Create and launch a ball." alt="" coords="218,35,334,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,45,202,45,202,51,170,51"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="382,5,569,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,37,366,32,367,37,335,42"/>
+<area shape="rect" id="Node000005" href="$class_c_dialog_box.html#afe7433827367c068e0f657bb9bd311bc" title="Update the launch count." alt="" coords="384,56,567,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="335,54,369,59,368,64,334,59"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="617,5,814,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="570,16,602,16,602,21,570,21"/>
+<area shape="rect" id="Node000006" href="$class_c_dialog_box.html#ac3be68fa38c7f663755c8ea05ae6cba1" title="Set an edit box." alt="" coords="633,64,798,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="568,75,618,75,618,80,568,80"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Sage::CController::ButtonDown" name="Sage::CController::ButtonDown">
+<area shape="rect" id="Node000001" title="Check button state." alt="" coords="187,239,320,281"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_controller.html#a260648b8fb60fb0853fb6f1d89d624f6" title="Get button A state." alt="" coords="5,5,139,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,225,199,145,171,101,137,62,122,51,126,46,141,58,175,98,203,142,241,223"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_controller.html#a80c2dcfb41ea48a939f652bc51240bd4" title="Get button B state." alt="" coords="5,72,139,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,228,188,178,137,129,120,117,123,113,140,125,191,174,231,224"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_controller.html#a1b5148cca1154fd34424e9671982740f" title="Get button X state." alt="" coords="5,139,139,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,233,137,196,116,184,118,180,140,191,204,228"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_controller.html#aa4ad69562c0fc194f1ec582874babf3c" title="Get button Y state." alt="" coords="5,205,139,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,248,138,242,139,236,172,242"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_controller.html#aa5b6c7069f1e5144a246a788bb31e5ee" title="Get digital pad down button state." alt="" coords="5,272,139,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="172,278,139,284,138,278,171,272"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_controller.html#a78d629e72c3fc725931d9bcfdc97fed8" title="Get digital pad left button state." alt="" coords="5,339,139,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="204,292,140,329,118,340,116,336,137,324,202,287"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_controller.html#a5e9132abe73782d11e9f50456057a869" title="Get digital pad right button state." alt="" coords="5,405,139,448"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="231,296,191,346,140,395,123,407,120,403,137,391,188,342,227,292"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_controller.html#a38fddaa11e9198083c9668a90bf816fa" title="Get digital pad up button state." alt="" coords="5,472,139,515"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="241,297,203,378,175,422,141,462,126,474,122,469,137,458,171,419,199,375,237,295"/>
+</map>

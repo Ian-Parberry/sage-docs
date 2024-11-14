@@ -1,0 +1,5 @@
+<map id="CObjectManager::GetQTLevelCount" name="CObjectManager::GetQTLevelCount">
+<area shape="rect" id="Node000001" title="Get quadtree level count." alt="" coords="5,5,203,48"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="251,13,403,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,24,235,24,235,29,203,29"/>
+</map>

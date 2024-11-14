@@ -1,0 +1,27 @@
+<map id="Sage::CCamera::BuildViewFrustum" name="Sage::CCamera::BuildViewFrustum">
+<area shape="rect" id="Node000001" title="Build the view frustum." alt="" coords="661,200,843,243"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="448,208,613,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="646,224,614,224,614,219,646,219"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#acf284df147f45fc92357ea7d985bd9f1" title="Add to pitch." alt="" coords="210,5,400,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="515,195,496,161,470,120,437,80,398,46,377,35,379,30,402,42,441,76,475,117,501,158,519,193"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_camera.html#a179081293d28027bdbbed55ef1f5aae0" title="Add to position." alt="" coords="213,56,396,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="508,197,462,146,432,120,399,97,373,86,376,81,401,92,435,115,465,142,512,194"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_camera.html#aeec07d9b75fc582f718a352afcf172a3" title="Add to roll." alt="" coords="213,107,396,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="496,201,451,174,399,148,366,136,368,131,401,143,453,169,498,197"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_camera.html#a107453c9ac01096d4015014e470c20ca" title="Add to yaw." alt="" coords="212,157,398,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="452,207,367,187,368,182,454,201"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_camera.html#a49028ce739fed4b751c89fa732555662" title="Move along velocity vector." alt="" coords="227,208,382,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="433,224,383,224,383,219,433,219"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_camera.html#a787c9d9eabb8d0671fcd9d4860adec40" title="Move to new position." alt="" coords="220,259,390,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="454,241,368,261,367,255,452,236"/>
+<area shape="rect" id="Node000011" href="$class_sage_1_1_c_camera.html#ab8693f3bbec6c24df78d3eeedf5108ee" title="Set pitch." alt="" coords="218,309,392,336"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="498,246,453,274,401,300,368,311,366,306,399,295,451,269,496,241"/>
+<area shape="rect" id="Node000012" href="$class_sage_1_1_c_camera.html#a351cb495da517e28727b95f1e0f3a392" title="Set roll." alt="" coords="222,360,388,387"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="512,249,465,300,435,327,401,350,376,362,373,357,399,346,432,323,462,297,508,245"/>
+<area shape="rect" id="Node000013" href="$class_sage_1_1_c_camera.html#a33a9fe002bf74b84c5a0d5380ce313b6" title="Set yaw." alt="" coords="221,411,389,437"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="519,250,501,284,475,325,441,366,402,401,379,412,377,408,398,396,437,362,470,322,496,282,515,247"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_sprite_renderer.html#a55305308c8c1f94f63897a2ca2b39a22" title="Constructor." alt="" coords="5,217,162,260"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="204,260,162,253,162,248,205,254"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_sprite_renderer.html#acfb173389d223b51774f5c0500a88aad" title="Set camera position." alt="" coords="5,284,162,327"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="205,290,162,296,162,291,204,284"/>
+</map>

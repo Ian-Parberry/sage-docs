@@ -1,0 +1,24 @@
+<map id="CObject::GetVel" name="CObject::GetVel">
+<area shape="rect" id="Node000001" title="Get velocity." alt="" coords="854,107,970,133"/>
+<area shape="rect" id="Node000002" href="$class_c_crow_object.html#aefc639111c29fee8d02b06e66699d003" title="Ai for avoiding plane." alt="" coords="616,5,787,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="882,98,847,71,805,46,774,35,776,30,807,42,850,67,886,94"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a89d0d8a25cf5d5e5a774e4385d7de0c0" title="Create new object." alt="" coords="618,56,785,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="838,105,759,86,761,81,839,100"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a32fd1555cb50d5e22e0270c9b45fbb1b" title="Crow death effects." alt="" coords="597,107,806,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="838,123,806,123,806,117,838,117"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#a0d4ae530908e3f6686f67ea7b75fb2e1" title="Fire the plane&#39;s gun." alt="" coords="641,157,762,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="839,140,761,159,759,154,838,135"/>
+<area shape="rect" id="Node000009" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="359,183,533,209"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="889,146,852,175,807,199,735,215,661,220,590,219,528,213,529,207,591,213,661,215,734,209,805,193,849,171,885,142"/>
+<area shape="rect" id="Node000003" href="$class_c_crow_object.html#a67ed3be858eba35a91ecdfacc9698145" title="Artificial intelligence." alt="" coords="376,5,516,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="600,21,517,21,517,16,600,16"/>
+<area shape="rect" id="Node000004" href="$class_c_crow_object.html#addf0f2d52e7afde908e4485fbc459e68" title="Move depending on time and speed." alt="" coords="145,5,286,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="361,21,286,21,286,16,361,16"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d" title="Narrow phase collision detection and response." alt="" coords="343,107,549,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="582,123,550,123,550,117,582,117"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="626,181,534,190,533,185,626,175"/>
+<area shape="rect" id="Node000010" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,183,295,209"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="343,199,296,199,296,193,343,193"/>
+<area shape="rect" id="Node000011" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,183,88,209"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="120,199,88,199,88,193,120,193"/>
+</map>

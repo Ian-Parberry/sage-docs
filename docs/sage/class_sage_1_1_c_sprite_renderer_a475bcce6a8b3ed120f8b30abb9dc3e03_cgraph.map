@@ -1,0 +1,11 @@
+<map id="Sage::CSpriteRenderer::Load" name="Sage::CSpriteRenderer::Load">
+<area shape="rect" id="Node000001" title="Load sprite." alt="" coords="5,39,162,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a6bcf287097bb673f14ed026cd9139f15" title="Load sprite by index." alt="" coords="210,39,366,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,57,195,57,195,63,162,63"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_settings_manager.html#ad1b3843d3ed095861945d846b255bc92" title="Load game settings." alt="" coords="418,5,585,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="366,45,402,40,402,45,367,50"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite.html#ac06b75603e5896e63203c9b91be4fa39" title="Set texture descriptor array." alt="" coords="414,72,588,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="367,70,399,75,398,80,366,75"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_settings_manager.html#a8a7ac51ac63186bf2b1a26996d2b100b" title="Set window size information." alt="" coords="636,5,804,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="585,24,621,24,621,29,585,29"/>
+</map>

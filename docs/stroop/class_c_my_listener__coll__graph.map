@@ -1,0 +1,32 @@
+<map id="CMyListener" name="CMyListener">
+<area shape="rect" id="Node000001" title="My contact listener." alt="" coords="649,263,744,289"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="446,5,582,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="546,40,561,54,606,111,645,171,693,261,689,264,640,174,602,114,558,58,543,44"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="385,81,504,108"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="494,45,458,83,455,79,490,41"/>
+<area shape="rect" id="Node000007" href="$class_c_vector_field.html" title="A vector field." alt="" coords="134,263,230,289"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="464,40,419,59,374,84,324,117,286,145,253,178,214,224,190,264,185,261,209,221,249,175,283,141,321,112,371,79,417,54,462,35"/>
+<area shape="rect" id="Node000011" href="$class_c_stroop.html" title="A caricature of John Ridley Stroop with swivelling eyeballs." alt="" coords="372,263,441,289"/>
+<area shape="poly" id="edge18_Node000011_Node000002" title=" " alt="" coords="535,44,549,66,560,92,566,120,562,149,550,179,537,201,518,220,493,241,468,256,442,267,440,262,466,251,490,236,515,216,532,198,545,177,557,147,560,120,555,93,544,68,531,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="670,172,798,199"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="725,214,705,263,700,261,720,212"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="385,172,470,199"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="481,201,659,260,657,265,480,206"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="424,156,426,131,435,107,440,109,431,133,429,157"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="397,209,334,241,281,258,231,269,230,264,280,253,332,236,395,205"/>
+<area shape="poly" id="edge19_Node000011_Node000004" title=" " alt="" coords="416,213,413,223,408,262,403,262,408,222,411,212"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="442,124,433,172,427,171,437,123"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="238,5,356,32"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="337,37,421,79,419,83,335,42"/>
+<area shape="poly" id="edge10_Node000007_Node000006" title=" " alt="" coords="273,45,242,77,206,119,172,169,147,224,146,231,147,238,155,250,166,260,162,264,151,253,142,240,140,231,142,222,168,166,202,116,238,73,270,41"/>
+<area shape="poly" id="edge17_Node000011_Node000006" title=" " alt="" coords="308,46,331,107,402,261,398,263,326,109,303,48"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="201,249,218,233,238,220,272,207,300,202,366,196,385,192,386,198,367,201,301,208,273,212,240,225,221,238,204,253"/>
+<area shape="rect" id="Node000009" href="$class_c_bubble_engine.html" title="A particle engine for bubbles." alt="" coords="460,353,571,380"/>
+<area shape="poly" id="edge15_Node000009_Node000007" title=" " alt="" coords="245,291,469,350,467,355,244,296"/>
+<area shape="rect" id="Node000008" href="$class_c_vertex.html" title="A vertex in a vector field." alt="" coords="5,172,74,199"/>
+<area shape="poly" id="edge12_Node000007_Node000008" title=" " alt="" coords="37,214,38,226,44,237,57,246,79,254,134,266,133,271,78,259,54,251,39,240,33,228,32,214"/>
+<area shape="poly" id="edge13_Node000004_Node000009" title=" " alt="" coords="515,338,511,282,503,252,489,224,477,211,461,201,464,197,480,207,494,221,508,250,517,281,520,337"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="769,263,939,289"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="792,296,565,355,563,350,790,291"/>
+<area shape="poly" id="edge16_Node000004_Node000011" title=" " alt="" coords="410,247,422,199,427,200,415,248"/>
+</map>

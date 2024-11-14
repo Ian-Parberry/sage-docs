@@ -1,0 +1,5 @@
+<map id="Sage::CTimer::ResetElapsedTime" name="Sage::CTimer::ResetElapsedTime">
+<area shape="rect" id="Node000001" title="Reset elapsed time in fixed timestep mode." alt="" coords="189,5,410,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_timer.html#ab24d65d62c636f7b2a09d30380cc4ef0" title="One tick per frame." alt="" coords="5,5,141,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,21,141,21,141,16,173,16"/>
+</map>

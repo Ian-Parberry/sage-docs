@@ -1,0 +1,7 @@
+<map id="CObjectManager::DeliverImpulse" name="CObjectManager::DeliverImpulse">
+<area shape="rect" id="Node000001" title="Apply impulse to the current bodies." alt="" coords="5,5,220,32"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#aa48fb617d00afe323683e60953ea1ce3" title="Deliver impulse to body." alt="" coords="268,5,424,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,16,252,16,252,21,220,21"/>
+<area shape="rect" id="Node000003" href="$class_c_point.html#a585dc9938563cbf5d3b2902ae09e286c" title="Deliver an impulse." alt="" coords="472,5,628,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="425,16,457,16,457,21,425,21"/>
+</map>

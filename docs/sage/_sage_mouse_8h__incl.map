@@ -1,0 +1,20 @@
+<map id="SageMouse.h" name="SageMouse.h">
+<area shape="rect" id="Node000001" title="Interface for the class CMouse." alt="" coords="151,5,253,32"/>
+<area shape="rect" id="Node000002" href="$_sage_window_8h.html" title="Interface for the window class CWindow." alt="" coords="148,80,256,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,33,205,64,199,64,199,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="44,229,130,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="148,98,112,103,75,113,41,130,14,156,9,173,16,189,31,205,51,219,48,223,28,209,11,192,3,173,9,153,38,126,73,108,111,98,147,93"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="155,229,262,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="205,107,210,214,205,214,200,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="319,229,400,256"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="257,97,285,104,314,115,341,131,363,153,370,168,372,184,370,215,365,214,367,184,365,169,358,156,338,135,312,119,284,109,256,102"/>
+<area shape="rect" id="Node000006" href="$_sage_settings_8h.html" title="Interface for the settings class CSettings." alt="" coords="239,155,349,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="220,105,268,143,265,147,216,109"/>
+<area shape="rect" id="Node000007" href="$_sage_window_desc_8h.html" title="Interface for the window descriptor CWindowDesc." alt="" coords="24,155,164,181"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="185,109,127,148,124,143,182,105"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="259,184,139,226,137,221,257,179"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="281,184,236,221,233,217,277,180"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="307,180,340,216,336,220,303,184"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="95,182,92,214,87,213,90,182"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="115,180,177,218,174,223,112,184"/>
+</map>

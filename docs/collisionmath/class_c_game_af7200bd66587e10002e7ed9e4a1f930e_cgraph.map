@@ -1,0 +1,20 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,57,148,84"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="218,7,376,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,54,221,35,222,40,139,59"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="196,57,399,84"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,68,180,68,180,73,148,73"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006" title="Create shapes for world edges." alt="" coords="463,133,655,176"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="140,82,196,94,448,136,447,141,195,99,139,87"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="719,47,907,73"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="363,54,398,43,421,29,446,18,509,5,559,3,609,8,672,18,717,27,760,39,758,44,716,32,671,23,608,14,558,9,509,11,448,23,424,34,400,48,364,59"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a30c3e96130b05eaae120e4721b9d1add" title="Make static line segment with guard points." alt="" coords="456,32,662,59"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="399,58,440,54,441,60,400,64"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a331c3db85903c158f818c9ac705a14ff" title="Start or stop kinematic shapes rotating." alt="" coords="447,83,671,109"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="400,78,432,81,431,86,399,83"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="955,87,1151,113"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="898,71,954,81,953,86,897,77"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="663,49,704,51,704,56,663,54"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="637,130,670,119,768,78,770,83,672,124,639,135"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="655,142,939,110,940,115,656,147"/>
+</map>

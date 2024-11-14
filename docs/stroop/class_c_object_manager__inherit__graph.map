@@ -1,0 +1,9 @@
+<map id="CObjectManager" name="CObjectManager">
+<area shape="rect" id="Node000001" title="The Object Manager." alt="" coords="164,80,284,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,37,199,77,197,82,112,41"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="166,5,283,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,48,227,80,222,80,222,48"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="307,5,392,32"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="316,42,247,82,245,77,314,38"/>
+</map>

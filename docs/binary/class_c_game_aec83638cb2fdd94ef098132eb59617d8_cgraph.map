@@ -1,0 +1,51 @@
+<map id="CGame::ProcessFrame" name="CGame::ProcessFrame">
+<area shape="rect" id="Node000001" title="Process an animation frame." alt="" coords="5,183,165,209"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="214,132,388,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,179,226,160,227,165,146,185"/>
+<area shape="rect" id="Node000011" href="$class_c_game.html#aabf31702371eea403862b171cb4a53c7" title="Process saying the current number in binary." alt="" coords="213,208,389,235"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="165,203,197,207,197,212,165,208"/>
+<area shape="rect" id="Node000018" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="224,69,378,96"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="106,180,211,118,249,100,251,105,214,122,109,184"/>
+<area shape="rect" id="Node000019" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="224,385,378,412"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="103,208,276,373,273,377,99,212"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="465,56,607,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,129,436,92,462,85,463,90,438,97,337,134"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#a6c658762cca40fa9e3555f3494499d7d" title="Begin saying the current number in binary." alt="" coords="456,157,617,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="388,152,440,158,440,163,388,157"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a5daaf88f390ec1fae3b4c2da5f38a6f5" title="Create a new ball." alt="" coords="442,107,630,133"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="388,133,426,129,427,134,388,139"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="712,5,867,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="606,53,704,33,705,38,607,58"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#aa2d13426f50a3bb1768245ea68e5d844" title="Create counter." alt="" coords="683,56,896,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="608,67,668,67,668,72,608,72"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="980,81,1052,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="896,79,965,86,965,92,895,84"/>
+<area shape="rect" id="Node000008" href="$class_c_counter.html#a1e3fa83cee3c4df155d97e2b4029b0ca" title="Get number of bits." alt="" coords="711,208,868,235"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="607,182,705,202,704,207,606,187"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="631,112,964,95,965,100,631,118"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#a03f151795235b557e169fb7c76ada512" title="Create object." alt="" coords="687,157,892,184"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="607,131,705,151,704,156,606,137"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="366,205,455,185,457,190,367,210"/>
+<area shape="rect" id="Node000012" href="$class_c_object_manager.html#acfcddd53e8f52a678c260f1b36d1a2a0" title="Have the balls stopped moving?" alt="" coords="441,208,631,235"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="389,219,425,219,425,224,389,224"/>
+<area shape="rect" id="Node000013" href="$class_c_object_manager.html#a1861a3895a26122191076e2ddc44ef4d" title="Highlight the nth bit." alt="" coords="437,259,635,285"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="367,233,457,252,455,257,366,238"/>
+<area shape="rect" id="Node000017" href="$class_c_object_manager.html#a9905763747f8386fc70e9ac3ad05c33c" title="Test overflow." alt="" coords="446,309,626,336"/>
+<area shape="poly" id="edge18_Node000011_Node000017" title=" " alt="" coords="324,233,375,264,438,295,457,302,455,307,436,300,372,268,321,237"/>
+<area shape="rect" id="Node000014" href="$class_c_counter.html#ac52825445e09d60b88940d3e6d43b7d7" title="Get position of a single&#45;bit counter." alt="" coords="725,259,854,285"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="636,269,709,269,709,275,636,275"/>
+<area shape="rect" id="Node000015" href="$class_c_bit_counter.html#a2f6ef12d5158ffb86fd08da91f188070" title="Get position." alt="" coords="944,259,1089,285"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="854,269,928,269,928,275,854,275"/>
+<area shape="rect" id="Node000016" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="1137,259,1209,285"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="1089,269,1121,269,1121,275,1089,275"/>
+<area shape="poly" id="edge20_Node000018_Node000003" title=" " alt="" coords="378,76,449,72,449,77,378,81"/>
+<area shape="poly" id="edge26_Node000019_Node000017" title=" " alt="" coords="335,382,436,345,462,338,463,343,438,351,337,387"/>
+<area shape="rect" id="Node000020" href="$class_c_object_manager.html#a96016db3387938f667512e3ab63e2d21" title="Draw all objects." alt="" coords="458,461,614,488"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="337,410,438,447,463,454,462,459,436,452,335,415"/>
+<area shape="rect" id="Node000021" href="$class_c_renderer.html#a2c215b8e26e3ab4f0dc947317afb4792" title="Draw number using nixie tubes." alt="" coords="448,512,624,539"/>
+<area shape="poly" id="edge23_Node000019_Node000021" title=" " alt="" coords="318,411,369,454,402,477,438,498,454,504,451,509,436,502,400,482,366,458,315,415"/>
+<area shape="rect" id="Node000022" href="$class_c_renderer.html#a02f1403c916acd69bb270cbb5daae0e0" title="Draw a 2&#45;digit number as text." alt="" coords="452,360,621,387"/>
+<area shape="poly" id="edge24_Node000019_Node000022" title=" " alt="" coords="377,388,436,381,437,387,378,393"/>
+<area shape="rect" id="Node000023" href="$class_c_renderer.html#a4518ce4b657e63168d3574b77f62b8c6" title=" " alt="" coords="448,411,624,437"/>
+<area shape="poly" id="edge25_Node000019_Node000023" title=" " alt="" coords="378,404,433,410,433,416,377,410"/>
+</map>

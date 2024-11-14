@@ -1,0 +1,9 @@
+<map id="CCommon" name="CCommon">
+<area shape="rect" id="Node000001" title="The common variables class." alt="" coords="88,5,173,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html" title="The game class." alt="" coords="5,80,72,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,44,56,82,53,78,101,40"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html" title="The game object." alt="" coords="96,80,165,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="133,48,133,80,128,80,128,48"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html" title="The object manager." alt="" coords="190,80,309,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,38,230,77,227,82,162,43"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CObjectManager::GetQTLeafCount" name="CObjectManager::GetQTLeafCount">
+<area shape="rect" id="Node000001" title="Get quadtree leaf count." alt="" coords="5,5,197,48"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a4e395cda8f78aa6275d653652661fbd4" title="Get number of leaves." alt="" coords="245,13,422,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,24,229,24,229,29,197,29"/>
+</map>

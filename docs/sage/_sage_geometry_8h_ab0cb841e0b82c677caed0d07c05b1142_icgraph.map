@@ -1,0 +1,9 @@
+<map id="Sage::Normalize" name="Sage::Normalize">
+<area shape="rect" id="Node000001" title="Normalize angle to ." alt="" coords="223,43,341,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="314,30,303,24,282,21,262,23,251,28,249,33,254,41,249,44,243,34,247,24,260,18,282,16,305,19,317,25"/>
+<area shape="rect" id="Node000002" href="$_sage_geometry_8h.html#ac2bcc3fc8fbb4c793036296dfb101a7b" title="Normalize a vector, ie. make it unit length." alt="" coords="31,5,149,32"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="207,44,149,33,150,28,208,39"/>
+<area shape="rect" id="Node000003" href="$_sage_geometry_8h.html#a2a716748cfbfb757431caab2f7dc5e55" title="Parallel component of vector." alt="" coords="5,80,175,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="208,73,163,82,162,77,207,68"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="123,67,111,61,90,59,70,61,59,65,57,71,62,78,57,81,51,71,55,62,69,55,90,53,113,56,125,62"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="SageController.cpp" name="SageController.cpp">
+<area shape="rect" id="Node000001" title="Code for the controller class CController." alt="" coords="25,5,157,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,65,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,34,56,69,52,66,79,31"/>
+<area shape="rect" id="Node000003" href="$_sage_controller_8h.html" title="Interface for the controller class CController." alt="" coords="89,80,208,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="103,31,131,66,127,69,99,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,89,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="132,109,79,147,76,143,129,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="113,155,184,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="151,107,151,139,146,139,146,107"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="208,155,315,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="170,105,230,144,228,148,167,109"/>
+</map>

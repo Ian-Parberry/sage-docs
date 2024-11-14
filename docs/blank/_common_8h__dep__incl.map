@@ -1,0 +1,14 @@
+<map id="Common.h" name="Common.h">
+<area shape="rect" id="Node000001" title="Interface for the comon variables class CCommon." alt="" coords="99,5,184,32"/>
+<area shape="rect" id="Node000002" href="$_common_8cpp.html" title="Code for the comon variables class CCommon." alt="" coords="5,80,105,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,44,72,82,68,78,113,40"/>
+<area shape="rect" id="Node000003" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="144,155,211,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,47,177,154,172,155,146,48"/>
+<area shape="rect" id="Node000006" href="$_object_8h.html" title="Interface for object class CObject." alt="" coords="178,80,249,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,41,203,78,199,81,163,45"/>
+<area shape="rect" id="Node000004" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="86,229,168,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="162,196,138,230,134,227,158,193"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="191,229,266,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="197,193,222,227,217,230,193,196"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="203,122,186,155,181,153,198,119"/>
+</map>

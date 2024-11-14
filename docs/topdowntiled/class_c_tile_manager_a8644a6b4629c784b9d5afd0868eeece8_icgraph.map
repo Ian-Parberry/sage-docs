@@ -1,0 +1,5 @@
+<map id="CTileManager::CollideWithWall" name="CTileManager::CollideWithWall">
+<area shape="rect" id="Node000001" title="Object&#45;wall collision test." alt="" coords="252,5,454,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ae2487201156a62dc632609bc42a7d80b" title="Broad phase collision detection and response." alt="" coords="5,5,204,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,21,204,21,204,16,236,16"/>
+</map>

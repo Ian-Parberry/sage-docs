@@ -1,0 +1,9 @@
+<map id="Sage::CTimer::Tick" name="Sage::CTimer::Tick">
+<area shape="rect" id="Node000001" title="One tick per frame." alt="" coords="5,56,141,83"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_timer.html#ac7afe3f72780c2aae15d6ab34b95c1b4" title="One time tick in fixed timestep mode." alt="" coords="189,5,412,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,53,222,33,223,39,137,58"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_timer.html#adf4545e9f845a9ea99e31cc90dd9a884" title="Reset elapsed time in fixed timestep mode." alt="" coords="190,56,411,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,67,174,67,174,72,141,72"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_timer.html#a1d5d06c347c9dfa98df006fad47f8342" title="One time tick in variable timestep mode." alt="" coords="208,107,393,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="128,81,201,100,200,105,127,86"/>
+</map>

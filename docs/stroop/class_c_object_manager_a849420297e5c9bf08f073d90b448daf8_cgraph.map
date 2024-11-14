@@ -1,0 +1,21 @@
+<map id="CObjectManager::Draw" name="CObjectManager::Draw">
+<area shape="rect" id="Node000001" title="Draw all objects." alt="" coords="5,136,164,163"/>
+<area shape="rect" id="Node000002" href="$class_c_stroop.html#a08f384c706d956ad7c3e6978d91ab5e8" title="Draw." alt="" coords="267,56,375,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,133,158,112,211,92,251,81,252,86,213,97,160,117,115,138"/>
+<area shape="rect" id="Node000003" href="$class_c_vector_field.html#af19334bb472d5a106d821ba2f0891dc8" title="Draw." alt="" coords="253,107,388,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,137,237,128,238,133,165,142"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#af92e56f0ba4cfe0e994ee077a905609f" title="Draw game text." alt="" coords="212,161,430,188"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="165,155,197,159,196,164,164,160"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#af53978fda21fe09e7e3068a8d5fcea0b" title="Draw scores." alt="" coords="221,220,420,247"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="119,161,213,197,258,212,256,217,211,203,117,166"/>
+<area shape="rect" id="Node000004" href="$class_c_vector_field.html#acfcab53e21194abc2718c257a69d7b85" title="Draw points." alt="" coords="489,5,661,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="388,108,429,92,443,81,452,68,461,55,477,42,488,36,490,41,479,46,465,58,456,71,447,84,431,97,390,113"/>
+<area shape="rect" id="Node000005" href="$class_c_vector_field.html#aee5f0c7e19a8dd45375b486053e2b79e" title="Draw pressures." alt="" coords="478,56,672,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="388,104,489,84,490,89,389,109"/>
+<area shape="rect" id="Node000006" href="$class_c_vector_field.html#ae826f751eb73d4cd1bc6be43c98594c9" title="Draw vectors." alt="" coords="486,107,665,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="389,117,470,117,470,123,389,123"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a9ba3bd9d9819f811bd627d23dd9fb07e" title="Load snide comment into character buffers." alt="" coords="481,157,669,200"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="430,174,465,174,465,180,430,179"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#a3b4205aa162bdc5e95810373b1ea57a2" title="Draw score, which may be negatve." alt="" coords="479,224,671,251"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="421,232,463,233,463,238,421,238"/>
+</map>

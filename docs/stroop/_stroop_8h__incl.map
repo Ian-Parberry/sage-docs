@@ -1,0 +1,18 @@
+<map id="Stroop.h" name="Stroop.h">
+<area shape="rect" id="Node000001" title="Interface for the John Ridley Stroop class CStroop." alt="" coords="148,5,218,32"/>
+<area shape="rect" id="Node000002" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="71,155,183,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,27,122,33,93,44,67,60,47,81,42,99,50,115,67,131,88,145,85,149,63,135,46,119,37,99,42,79,64,55,91,39,120,28,147,22"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="56,80,166,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="172,34,136,71,132,67,169,31"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="190,80,320,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="197,31,234,67,230,71,194,34"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="344,80,430,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="219,30,338,72,336,77,218,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,229,113,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,184,83,220,79,216,113,180"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="137,229,253,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="141,180,175,216,171,220,137,184"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="345,109,188,153,186,148,343,104"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="314,155,460,181"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="390,107,390,139,384,139,384,107"/>
+</map>

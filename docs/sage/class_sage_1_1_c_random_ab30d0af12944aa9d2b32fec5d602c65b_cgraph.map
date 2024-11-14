@@ -1,0 +1,8 @@
+<map id="Sage::CRandom::randclr" name="Sage::CRandom::randclr">
+<area shape="rect" id="Node000001" title="Get a random color." alt="" coords="5,55,171,81"/>
+<area shape="rect" id="Node000002" href="$_sage_helpers_8h.html#ac09f07823d51ef441172f8252cb2a079" title="Convert color from HSV to RGB." alt="" coords="233,29,360,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,55,217,50,218,55,172,61"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_random.html#a21c37e0b827c7fcb4ea641c5ccce7cd9" title="Get a random floating point number." alt="" coords="219,80,374,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="172,75,204,79,203,85,171,81"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="261,30,255,21,259,11,273,5,296,3,321,5,334,12,332,16,320,10,296,8,275,10,263,15,260,20,265,27"/>
+</map>

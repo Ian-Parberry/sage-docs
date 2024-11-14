@@ -1,0 +1,13 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,107,159,133"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a96016db3387938f667512e3ab63e2d21" title="Draw all objects." alt="" coords="219,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,104,147,73,206,42,222,35,224,40,208,46,150,78,104,108"/>
+<area shape="rect" id="Node000003" href="$class_c_renderer.html#a2c215b8e26e3ab4f0dc947317afb4792" title="Draw number using nixie tubes." alt="" coords="208,56,384,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,103,222,84,223,89,142,109"/>
+<area shape="rect" id="Node000004" href="$class_c_renderer.html#a02f1403c916acd69bb270cbb5daae0e0" title="Draw a 2&#45;digit number as text." alt="" coords="212,107,381,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,117,196,117,196,123,159,123"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html#a4518ce4b657e63168d3574b77f62b8c6" title=" " alt="" coords="209,157,384,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="142,131,223,151,222,156,141,137"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a9905763747f8386fc70e9ac3ad05c33c" title="Test overflow." alt="" coords="207,208,386,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="104,132,150,162,208,194,224,200,222,205,206,198,147,167,101,136"/>
+</map>

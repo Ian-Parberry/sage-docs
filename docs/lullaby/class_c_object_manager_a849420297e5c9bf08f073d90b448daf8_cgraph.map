@@ -1,0 +1,5 @@
+<map id="CObjectManager::Draw" name="CObjectManager::Draw">
+<area shape="rect" id="Node000001" title="Draw all objects." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a31512b5f3b35fe7a298edcb5a49226d6" title="Draw leaves." alt="" coords="212,5,435,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>

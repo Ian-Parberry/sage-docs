@@ -1,0 +1,11 @@
+<map id="SageTimer.h" name="SageTimer.h">
+<area shape="rect" id="Node000001" title="Interface for the timer CTimer." alt="" coords="60,5,156,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,80,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,34,66,70,62,67,94,31"/>
+<area shape="rect" id="Node000003" href="$_sage_window_desc_8h.html" title="Interface for the window descriptor CWindowDesc." alt="" coords="104,80,245,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,31,155,67,151,70,117,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="70,155,156,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,109,135,145,131,141,162,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="181,155,288,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="187,106,217,141,213,145,183,109"/>
+</map>

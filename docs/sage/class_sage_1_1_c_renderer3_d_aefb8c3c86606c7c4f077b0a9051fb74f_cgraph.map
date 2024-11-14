@@ -1,0 +1,7 @@
+<map id="Sage::CRenderer3D::DrawScreenText" name="Sage::CRenderer3D::DrawScreenText">
+<area shape="rect" id="Node000001" title="Draw screen text." alt="" coords="5,29,153,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="39,29,37,19,44,10,58,5,79,3,102,5,115,11,113,16,100,10,79,8,59,10,47,15,42,21,44,28"/>
+<area shape="rect" id="Node000002" href="$_sage_helpers_8h.html#a582d5fa5fcf803b10013316c19696a96" title="Make wide file name from a narrow one." alt="" coords="201,37,378,64"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="153,48,185,48,185,53,153,53"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="254,38,247,29,252,19,266,13,289,11,314,13,328,20,325,24,313,18,289,16,267,18,255,23,253,28,258,35"/>
+</map>

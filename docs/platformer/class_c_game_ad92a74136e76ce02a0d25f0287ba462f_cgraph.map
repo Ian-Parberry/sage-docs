@@ -1,0 +1,31 @@
+<map id="CGame::ProcessGameState" name="CGame::ProcessGameState">
+<area shape="rect" id="Node000001" title="Process game state." alt="" coords="5,107,194,133"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="281,56,424,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,103,267,84,268,89,170,109"/>
+<area shape="rect" id="Node000014" href="$class_c_player.html#a3c46bda290fc1c6d80a7a53b3a8e17c2" title="Get current action." alt="" coords="285,107,420,133"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="194,117,270,117,270,123,194,123"/>
+<area shape="rect" id="Node000015" href="$class_c_object_manager.html#a61e0abfa5eef66ad8ed8bb61a90b89d0" title="Level completed." alt="" coords="242,157,463,184"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="170,131,268,151,267,156,169,137"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to empty and delete all objects." alt="" coords="514,5,672,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,53,511,33,512,38,420,58"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="514,56,672,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="424,67,498,67,498,72,424,72"/>
+<area shape="rect" id="Node000007" href="$class_c_tile_manager.html#ab0926de034d81b14f0e5e48c0d0ac342" title="Load a map." alt="" coords="511,132,674,159"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="422,81,464,92,547,123,545,128,462,97,420,86"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a7f49b5b7c0da33dc53401a26aa865f39" title="Create new object." alt="" coords="741,5,907,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="657,53,745,33,746,38,658,58"/>
+<area shape="rect" id="Node000006" href="$class_c_tile_manager.html#a2f8a4b1266dcc6407b0bd64b3c5dd351" title="Get object descriptorss." alt="" coords="736,56,912,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="672,67,721,67,721,72,672,72"/>
+<area shape="rect" id="Node000008" href="$class_c_tile_manager.html#a6ffbbf152d3d27f59e281c0b7668e06f" title="Tile index to position." alt="" coords="722,107,926,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="674,134,707,130,707,135,675,139"/>
+<area shape="rect" id="Node000009" href="$class_c_tile_manager.html#a42b14c4e67210715a09cb94c548a59bc" title="Insert object." alt="" coords="733,157,915,184"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="675,152,718,156,718,162,674,157"/>
+<area shape="rect" id="Node000010" href="$class_c_tile_manager.html#a3021ca6fb30b2e041cb63bef80a72feb" title="Make bounding boxes for walls." alt="" coords="726,208,922,251"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="629,157,723,194,741,200,740,205,721,198,627,162"/>
+<area shape="rect" id="Node000011" href="$class_c_tile_manager.html#a3cae6688a52116f4c86778fd776e9f23" title="Make bounding boxes for 1&#45;block walls." alt="" coords="974,141,1170,184"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="905,205,974,186,976,191,907,210"/>
+<area shape="rect" id="Node000012" href="$class_c_tile_manager.html#a16aecc34eca5babed8212a6c721bd364" title="Make bounding boxes for horizontal walls." alt="" coords="974,208,1170,251"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="923,227,958,227,958,232,923,232"/>
+<area shape="rect" id="Node000013" href="$class_c_tile_manager.html#ab3fe8fe47bbd2f98ecfa6cf75753beb4" title="Make bounding boxes for vertical walls." alt="" coords="974,275,1170,317"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="907,249,976,267,974,273,905,254"/>
+</map>

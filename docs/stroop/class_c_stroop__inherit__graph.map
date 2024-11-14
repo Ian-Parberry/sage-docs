@@ -1,0 +1,9 @@
+<map id="CStroop" name="CStroop">
+<area shape="rect" id="Node000001" title="A caricature of John Ridley Stroop with swivelling eyeballs." alt="" coords="180,80,249,107"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,123,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,37,189,77,187,82,103,41"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="146,5,283,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,48,217,80,212,80,212,48"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="307,5,392,32"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="314,42,240,82,237,77,312,37"/>
+</map>

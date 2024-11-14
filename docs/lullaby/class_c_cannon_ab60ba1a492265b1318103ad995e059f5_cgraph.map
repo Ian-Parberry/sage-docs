@@ -1,0 +1,9 @@
+<map id="CCannon::Explode" name="CCannon::Explode">
+<area shape="rect" id="Node000001" title="Make cannon explode." alt="" coords="5,56,137,83"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#aafae6f3ee7b0853125c813abbe2ecd51" title="Emit a smoke particle." alt="" coords="185,5,380,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,53,208,34,209,39,131,58"/>
+<area shape="rect" id="Node000003" href="$class_c_cannon.html#a7d63c8600b48c817d20bc6438c44bcda" title="Make cannon parts collide&#45;able in Physics World." alt="" coords="204,56,360,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,67,189,67,189,72,137,72"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="246,107,318,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,81,232,105,231,111,129,86"/>
+</map>

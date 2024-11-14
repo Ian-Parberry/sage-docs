@@ -1,0 +1,9 @@
+<map id="Shapes::CCircleDesc" name="Shapes::CCircleDesc">
+<area shape="rect" id="Node000001" title="Circle descriptor." alt="" coords="94,80,243,107"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_arc_desc.html" title="Arc descriptor." alt="" coords="5,155,140,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,118,91,156,87,152,138,114"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_dynamic_circle_desc.html" title="Dynamic circle descriptor." alt="" coords="164,155,365,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,114,250,152,246,156,195,118"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape_desc.html" title="Shape Descriptor." alt="" coords="93,5,244,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,48,171,80,166,80,166,48"/>
+</map>

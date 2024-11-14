@@ -1,0 +1,16 @@
+<map id="CGame::KeyboardHandler" name="CGame::KeyboardHandler">
+<area shape="rect" id="Node000001" title="The keyboard handler." alt="" coords="5,56,180,83"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Launch a ball." alt="" coords="259,5,376,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,53,244,32,245,38,156,58"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#acd7fa3e1aa7512c071b0897c2c9d3a3b" title="Flip left flipper." alt="" coords="232,56,402,83"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="180,67,217,67,217,72,180,72"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a817419d89dc3060f2f2d7ba764c8de89" title="Flip right flipper." alt="" coords="228,107,407,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="156,81,241,100,240,105,155,86"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="455,5,642,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="376,16,439,16,439,21,376,21"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="690,5,887,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="643,16,675,16,675,21,643,21"/>
+<area shape="rect" id="Node000006" href="$class_c_flipper.html#abbe304d5038c6338f5a7664cd15041b9" title="Flip flipper." alt="" coords="499,81,598,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="403,76,484,85,483,90,403,81"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="407,108,483,99,484,104,407,113"/>
+</map>

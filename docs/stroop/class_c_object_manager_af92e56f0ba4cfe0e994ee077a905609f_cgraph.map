@@ -1,0 +1,5 @@
+<map id="CObjectManager::DrawGameText" name="CObjectManager::DrawGameText">
+<area shape="rect" id="Node000001" title="Draw game text." alt="" coords="5,13,224,40"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a9ba3bd9d9819f811bd627d23dd9fb07e" title="Load snide comment into character buffers." alt="" coords="272,5,460,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,24,256,24,256,29,224,29"/>
+</map>

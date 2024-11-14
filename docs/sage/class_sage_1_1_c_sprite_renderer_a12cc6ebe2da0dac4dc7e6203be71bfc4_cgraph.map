@@ -1,0 +1,5 @@
+<map id="Sage::CSpriteRenderer::GetSize" name="Sage::CSpriteRenderer::GetSize">
+<area shape="rect" id="Node000001" title="Get sprite size." alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite.html#a261df9a6b16dc3c72c12678cef5fc538" title="Get sprite width and height." alt="" coords="210,13,368,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,24,194,24,194,29,162,29"/>
+</map>

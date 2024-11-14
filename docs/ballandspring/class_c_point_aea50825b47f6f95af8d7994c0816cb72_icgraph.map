@@ -1,0 +1,15 @@
+<map id="CPoint::GetPos" name="CPoint::GetPos">
+<area shape="rect" id="Node000001" title="Get position." alt="" coords="918,31,1031,57"/>
+<area shape="rect" id="Node000002" href="$class_c_spring.html#aeae174db6ec9c8351ab8af98e29fb112" title="Draw." alt="" coords="763,5,867,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="902,35,867,30,868,24,903,30"/>
+<area shape="rect" id="Node000003" href="$class_c_spring.html#afee2fe84fe7fb9104b730973ed815e5d" title="Gauss&#45;Seidel relaxation." alt="" coords="760,56,870,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="903,58,871,63,870,58,902,53"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#aacc9d10f56a033e5acdeed45f2f0e95f" title="Gauss&#45;Seidel relaxation." alt="" coords="550,56,712,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="744,72,712,72,712,67,744,67"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a528d2d15ffc9bced002df95be266b910" title="Move all objects." alt="" coords="343,56,502,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="535,72,503,72,503,67,535,67"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,56,295,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="328,72,295,72,295,67,328,67"/>
+<area shape="rect" id="Node000007" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="120,72,88,72,88,67,120,67"/>
+</map>

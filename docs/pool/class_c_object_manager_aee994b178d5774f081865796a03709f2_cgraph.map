@@ -1,0 +1,15 @@
+<map id="CObjectManager::Move" name="CObjectManager::Move">
+<area shape="rect" id="Node000001" title="Move all objects." alt="" coords="5,107,165,133"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ae2487201156a62dc632609bc42a7d80b" title="Ball, rail, and pocket collision response." alt="" coords="213,56,411,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,103,234,84,235,89,149,109"/>
+<area shape="rect" id="Node000006" href="$class_c_object.html#ae6b4bc3eabccaa6d45d15954a648e047" title="Drop a particle." alt="" coords="237,107,386,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="165,117,222,117,222,123,165,123"/>
+<area shape="rect" id="Node000007" href="$class_c_object.html#ae33d05b96b8b11fe621e42525a908041" title="Move object." alt="" coords="257,157,366,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="149,131,243,153,242,158,148,137"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d" title="Collision response for two balls." alt="" coords="460,5,666,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,53,478,33,479,38,382,58"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a21ff35019a29b63d608802bc75e94694" title="Collision response for ball with pocket." alt="" coords="459,56,667,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="411,67,443,67,443,72,411,72"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a7704293d68f5527f323527028ea21398" title="Collision response for ball with rail." alt="" coords="468,107,658,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="382,81,479,100,478,106,381,86"/>
+</map>

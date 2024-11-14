@@ -1,0 +1,13 @@
+<map id="CGuard" name="CGuard">
+<area shape="rect" id="Node000001" title="The guard object." alt="" coords="99,229,165,256"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,155,123,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,191,122,227,118,231,84,195"/>
+<area shape="rect" id="Node000003" href="$class_c_armed_object.html" title="The armed object." alt="" coords="146,155,254,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,195,146,231,142,227,176,191"/>
+<area shape="rect" id="Node000004" href="$class_c_object.html" title="The game object." alt="" coords="165,80,235,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,122,203,154,197,154,197,122"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="86,5,194,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="162,42,192,78,188,81,158,46"/>
+<area shape="rect" id="Node000006" href="$class_c_common.html" title="The common variables class." alt="" coords="218,5,302,32"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="242,46,212,81,208,78,238,42"/>
+</map>

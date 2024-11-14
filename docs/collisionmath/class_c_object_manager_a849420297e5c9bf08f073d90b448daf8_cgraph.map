@@ -1,0 +1,13 @@
+<map id="CObjectManager::Draw" name="CObjectManager::Draw">
+<area shape="rect" id="Node000001" title="Draw all objects." alt="" coords="5,81,164,108"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a7bf2d9614c015b7447a8492e896974be" title="Draw AABBs." alt="" coords="217,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,78,211,41,237,34,238,39,213,47,118,83"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#adec172f1a42a9a14f0ed9fe253ab4f4e" title="Draw an object." alt="" coords="219,56,416,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,83,203,79,204,84,164,89"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#aaf54f01197fcf3253ac45fa5e39f0b85" title="Draw arc sectors." alt="" coords="216,107,419,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="164,101,201,105,200,110,163,106"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#a0945384e82276b1fd8facfb28521ff00" title="Draw tangents on line segments and arcs." alt="" coords="212,157,423,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="118,106,213,143,238,150,237,155,211,148,116,111"/>
+<area shape="rect" id="Node000003" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="471,5,623,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,16,455,16,455,21,418,21"/>
+</map>

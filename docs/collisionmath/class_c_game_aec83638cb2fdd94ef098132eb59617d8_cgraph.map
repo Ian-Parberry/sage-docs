@@ -1,0 +1,97 @@
+<map id="CGame::ProcessFrame" name="CGame::ProcessFrame">
+<area shape="rect" id="Node000001" title="Process an animation frame." alt="" coords="5,364,165,391"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="215,160,374,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,362,267,196,271,199,102,366"/>
+<area shape="rect" id="Node000011" href="$class_c_game.html#a30ef174b8b4ac9b2fceb37677ef3ba57" title="Process launch and multilaunch." alt="" coords="213,364,377,391"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="165,375,197,375,197,380,165,380"/>
+<area shape="rect" id="Node000017" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="218,312,372,339"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="141,361,222,340,224,346,142,366"/>
+<area shape="rect" id="Node000024" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="218,843,372,869"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="94,390,142,512,215,687,282,828,277,830,210,689,137,514,89,392"/>
+<area shape="rect" id="Node000031" href="$class_c_dialog_box.html#af662f7d9af550bd46f592e02bd111fd1" title="Update the dialog box at 1&#45;second intervals." alt="" coords="224,649,366,676"/>
+<area shape="poly" id="edge37_Node000001_Node000031" title=" " alt="" coords="98,390,277,635,273,638,94,393"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#ab0783c768fcb9e8450df530217d29802" title="Broad phase collision detection and response, brute force." alt="" coords="710,131,908,157"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,166,694,148,694,153,375,171"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#afd42d81cb3e08da017f57a30f4e4245d" title="Broad phase collision detection and response with quadtree." alt="" coords="441,181,639,224"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="375,180,426,186,425,192,375,186"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a07299e1ef6e4467ebd770c7742586c58" title="Update the quadtree." alt="" coords="429,80,651,107"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="330,157,424,123,471,109,472,114,426,128,332,162"/>
+<area shape="rect" id="Node000004" href="$class_c_gate.html#ac58a5ceb4cb14d4fa6be61c914cec859" title="Narrow phase." alt="" coords="1002,135,1148,161"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="909,143,986,144,986,149,909,148"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a3c574bccab311aa7259137f9bcf096af" title="Narrow phase collision detection and response." alt="" coords="972,84,1178,111"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="888,127,980,111,980,117,889,133"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="639,178,729,159,730,164,640,184"/>
+<area shape="rect" id="Node000007" href="$class_c_quad_tree.html#a87f07ea7446aa26115265e75defc0b13" title="Get leaves with collidable things in them." alt="" coords="729,205,889,232"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="640,206,714,210,714,216,640,211"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="765,207,757,197,762,187,780,181,809,179,841,181,857,188,855,193,840,187,809,184,781,186,765,191,762,196,769,203"/>
+<area shape="rect" id="Node000009" href="$class_c_quad_tree.html#a92b7c5fde589cc97e7b803406cb44434" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="745,5,873,32"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="584,77,703,41,733,34,734,39,704,47,586,82"/>
+<area shape="rect" id="Node000010" href="$class_c_quad_tree.html#a7bfafc26e36377087ffac07f0bce97cd" title="Insert shape at place in tree." alt="" coords="744,80,874,107"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="652,91,729,91,729,96,652,96"/>
+<area shape="poly" id="edge12_Node000010_Node000010" title=" " alt="" coords="765,81,757,71,762,61,780,55,809,53,841,56,857,63,855,68,840,61,809,59,781,61,765,66,762,71,769,78"/>
+<area shape="rect" id="Node000012" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Create and launch a ball." alt="" coords="482,364,598,391"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="378,375,467,375,467,380,378,380"/>
+<area shape="rect" id="Node000013" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="1235,256,1422,283"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="599,382,734,396,905,409,990,412,1069,411,1136,405,1186,394,1223,374,1257,348,1307,293,1311,297,1260,351,1226,378,1188,398,1137,411,1070,416,990,417,904,414,734,402,599,387"/>
+<area shape="rect" id="Node000015" href="$class_c_dialog_box.html#afe7433827367c068e0f657bb9bd311bc" title="Update the launch count." alt="" coords="717,459,901,501"/>
+<area shape="poly" id="edge17_Node000012_Node000015" title=" " alt="" coords="600,382,657,400,681,419,705,438,729,450,726,455,702,442,678,423,654,405,598,387"/>
+<area shape="rect" id="Node000014" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="1470,231,1667,257"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="1422,257,1454,253,1455,259,1423,262"/>
+<area shape="rect" id="Node000016" href="$class_c_dialog_box.html#ac3be68fa38c7f663755c8ea05ae6cba1" title="Set an edit box." alt="" coords="992,613,1158,640"/>
+<area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="889,500,916,511,989,556,1048,601,1045,605,986,560,913,516,887,504"/>
+<area shape="rect" id="Node000018" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="469,308,611,335"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="372,321,453,320,453,325,372,327"/>
+<area shape="rect" id="Node000019" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="730,357,888,384"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="612,332,718,351,717,357,611,337"/>
+<area shape="rect" id="Node000020" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="707,307,911,333"/>
+<area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="612,318,692,318,692,323,612,324"/>
+<area shape="rect" id="Node000023" href="$class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006" title="Create shapes for world edges." alt="" coords="979,189,1171,232"/>
+<area shape="poly" id="edge27_Node000018_Node000023" title=" " alt="" coords="609,305,914,241,963,231,964,236,915,247,610,310"/>
+<area shape="poly" id="edge23_Node000020_Node000013" title=" " alt="" coords="885,303,962,292,1096,279,1219,271,1220,277,1096,285,963,297,886,309"/>
+<area shape="rect" id="Node000021" href="$class_c_object_manager.html#a30c3e96130b05eaae120e4721b9d1add" title="Make static line segment with guard points." alt="" coords="972,307,1178,333"/>
+<area shape="poly" id="edge24_Node000020_Node000021" title=" " alt="" coords="911,317,956,317,956,323,911,323"/>
+<area shape="rect" id="Node000022" href="$class_c_object_manager.html#a331c3db85903c158f818c9ac705a14ff" title="Start or stop kinematic shapes rotating." alt="" coords="963,357,1187,384"/>
+<area shape="poly" id="edge26_Node000020_Node000022" title=" " alt="" coords="883,331,987,351,986,356,882,337"/>
+<area shape="poly" id="edge25_Node000021_Node000013" title=" " alt="" coords="1145,303,1243,284,1244,289,1146,309"/>
+<area shape="poly" id="edge28_Node000023_Node000013" title=" " alt="" coords="1171,230,1253,249,1252,254,1169,235"/>
+<area shape="poly" id="edge29_Node000023_Node000014" title=" " alt="" coords="1172,214,1455,234,1455,239,1171,220"/>
+<area shape="rect" id="Node000025" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="461,985,619,1012"/>
+<area shape="poly" id="edge31_Node000024_Node000025" title=" " alt="" coords="309,868,356,919,389,947,426,971,447,980,445,985,424,976,386,952,353,923,305,872"/>
+<area shape="rect" id="Node000026" href="$class_c_object_manager.html#a7bf2d9614c015b7447a8492e896974be" title="Draw AABBs." alt="" coords="708,1011,910,1037"/>
+<area shape="poly" id="edge32_Node000025_Node000026" title=" " alt="" coords="620,1003,693,1010,693,1016,620,1009"/>
+<area shape="rect" id="Node000028" href="$class_c_object_manager.html#adec172f1a42a9a14f0ed9fe253ab4f4e" title="Draw an object." alt="" coords="711,1061,907,1088"/>
+<area shape="poly" id="edge34_Node000025_Node000028" title=" " alt="" coords="584,1010,704,1047,733,1054,732,1060,703,1052,583,1015"/>
+<area shape="rect" id="Node000029" href="$class_c_object_manager.html#aaf54f01197fcf3253ac45fa5e39f0b85" title="Draw arc sectors." alt="" coords="707,909,911,936"/>
+<area shape="poly" id="edge35_Node000025_Node000029" title=" " alt="" coords="617,982,654,971,678,958,702,946,724,938,726,943,704,950,681,963,656,976,618,987"/>
+<area shape="rect" id="Node000030" href="$class_c_object_manager.html#a0945384e82276b1fd8facfb28521ff00" title="Draw tangents on line segments and arcs." alt="" coords="703,960,915,987"/>
+<area shape="poly" id="edge36_Node000025_Node000030" title=" " alt="" coords="620,989,687,982,688,987,620,994"/>
+<area shape="rect" id="Node000027" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="999,1011,1151,1037"/>
+<area shape="poly" id="edge33_Node000026_Node000027" title=" " alt="" coords="910,1021,983,1021,983,1027,910,1027"/>
+<area shape="poly" id="edge51_Node000031_Node000016" title=" " alt="" coords="311,674,359,716,391,737,426,752,498,774,561,789,617,798,671,800,724,796,780,785,914,744,954,725,991,700,1049,649,1053,653,994,705,957,730,916,749,781,790,725,801,671,805,617,803,560,794,496,779,424,757,388,741,355,720,307,678"/>
+<area shape="rect" id="Node000032" href="$class_c_object_manager.html#a915489e43e3516d517e67e213c24c6a5" title="Get number of AABB tests since last called." alt="" coords="425,817,655,844"/>
+<area shape="poly" id="edge38_Node000031_Node000032" title=" " alt="" coords="307,675,354,734,388,768,426,796,453,809,451,814,424,801,384,772,350,737,303,678"/>
+<area shape="rect" id="Node000033" href="$class_c_object_manager.html#abac8b6f240b3d840fd8ce5398154ca8d" title="Get number of collisions since last called." alt="" coords="430,868,650,895"/>
+<area shape="poly" id="edge39_Node000031_Node000033" title=" " alt="" coords="304,675,319,712,345,761,381,811,402,834,427,854,435,859,432,863,423,858,399,838,377,815,340,764,314,714,299,678"/>
+<area shape="rect" id="Node000034" href="$class_c_object_manager.html#a1a3c30356a3f44f0e42481ffb788449a" title="Get number of collision tests since last called." alt="" coords="441,919,639,961"/>
+<area shape="poly" id="edge40_Node000031_Node000034" title=" " alt="" coords="305,675,367,803,403,869,427,905,431,908,428,912,423,908,398,872,363,805,300,678"/>
+<area shape="rect" id="Node000035" href="$class_c_object_manager.html#aaef7818f85a64d9a852cc9168026199a" title="Get number of lost balls." alt="" coords="432,415,648,441"/>
+<area shape="poly" id="edge41_Node000031_Node000035" title=" " alt="" coords="298,648,313,608,338,555,375,499,398,473,423,451,431,446,434,451,427,455,401,477,379,502,343,557,317,611,303,650"/>
+<area shape="rect" id="Node000036" href="$class_c_object_manager.html#a54dc73f1ae3e73338ac783acc8d47419" title="Get number of overlapped balls." alt="" coords="433,465,647,492"/>
+<area shape="poly" id="edge42_Node000031_Node000036" title=" " alt="" coords="301,648,318,617,345,577,381,536,424,502,434,496,436,501,426,506,385,540,350,581,323,620,305,650"/>
+<area shape="rect" id="Node000037" href="$class_c_object_manager.html#a9b676dbc32834f1b82f9f96c9e70d0fa" title="Get quadtree leaf count." alt="" coords="444,516,636,559"/>
+<area shape="poly" id="edge43_Node000031_Node000037" title=" " alt="" coords="310,647,359,608,424,568,437,562,440,567,426,573,362,613,313,651"/>
+<area shape="rect" id="Node000039" href="$class_c_object_manager.html#ae7da0616a48dcaf9d44efd30fdfff9f4" title="Get maximum number of objects in a leaf." alt="" coords="444,583,636,625"/>
+<area shape="poly" id="edge45_Node000031_Node000039" title=" " alt="" coords="353,646,433,627,434,632,354,651"/>
+<area shape="rect" id="Node000041" href="$class_c_object_manager.html#ac97dd2df0f0628ac4dd03f1da387de5c" title="Get quadtree leaf area." alt="" coords="428,649,652,676"/>
+<area shape="poly" id="edge47_Node000031_Node000041" title=" " alt="" coords="366,660,412,660,412,665,366,665"/>
+<area shape="rect" id="Node000043" href="$class_c_object_manager.html#a6a9e2e0d32498f57be3362f2faa9ecc0" title="Get quadtree node count." alt="" coords="442,700,639,743"/>
+<area shape="poly" id="edge49_Node000031_Node000043" title=" " alt="" coords="354,674,434,693,433,698,353,679"/>
+<area shape="rect" id="Node000038" href="$class_c_quad_tree.html#a4e395cda8f78aa6275d653652661fbd4" title="Get number of leaves." alt="" coords="720,525,898,552"/>
+<area shape="poly" id="edge44_Node000037_Node000038" title=" " alt="" coords="636,535,705,535,705,541,636,540"/>
+<area shape="rect" id="Node000040" href="$class_c_quad_tree.html#a759cd8e1f022d3ff24ed91f026e77a00" title="Get maximum number of shapes in a leaf." alt="" coords="712,591,906,617"/>
+<area shape="poly" id="edge46_Node000039_Node000040" title=" " alt="" coords="636,601,697,601,697,607,636,607"/>
+<area shape="rect" id="Node000042" href="$class_c_quad_tree.html#a7fbe434b365997854bca4eba01970564" title="Get width and height of area covered by a leaf." alt="" coords="724,649,894,676"/>
+<area shape="poly" id="edge48_Node000041_Node000042" title=" " alt="" coords="653,660,709,660,709,665,653,665"/>
+<area shape="rect" id="Node000044" href="$class_c_quad_tree.html#a6b52fbe99255b10d0adfef4d88f2553e" title="Get number of nodes." alt="" coords="717,708,901,735"/>
+<area shape="poly" id="edge50_Node000043_Node000044" title=" " alt="" coords="639,719,702,719,702,724,639,724"/>
+</map>

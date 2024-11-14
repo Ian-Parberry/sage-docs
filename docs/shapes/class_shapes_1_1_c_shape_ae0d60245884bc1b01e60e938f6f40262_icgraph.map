@@ -1,0 +1,23 @@
+<map id="Shapes::CShape::AddAABBPoint" name="Shapes::CShape::AddAABBPoint">
+<area shape="rect" id="Node000001" title="Add AABB point." alt="" coords="477,93,694,120"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_circle.html#a487c5fe33a9df4b3e432dc4e588bd45c" title="Constructor." alt="" coords="254,5,424,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="538,89,428,47,392,35,393,30,430,41,540,84"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_dynamic_circle.html#a5e1a08e9aefbc26b7f6434481b9e2d3d" title="Constructor." alt="" coords="254,56,424,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="461,95,424,90,424,85,462,89"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="262,123,416,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="462,124,416,130,416,124,461,119"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_line_seg.html#a9d7855e89e954f47465461997da75dee" title="Update other properties from the end points." alt="" coords="249,244,429,271"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="551,131,364,246,361,241,548,126"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_arc.html#ac448e5b08ef96a604212c8863982e0be" title="Constructor." alt="" coords="32,31,174,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,119,247,113,232,102,223,92,213,81,199,72,172,60,174,56,202,67,217,77,227,88,236,98,250,108,262,114"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_kinematic_arc.html#a6a54feb32d20c5758452cb8599643210" title="Reset orientation." alt="" coords="22,81,184,124"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="247,126,184,117,184,111,247,120"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_kinematic_arc.html#a9a6914c653b5c9fd5d84c628b3d304cd" title="Rotate." alt="" coords="22,148,184,191"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="247,152,184,161,184,155,247,146"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_line_seg.html#aa2af99a98735c90a1437b70cbdafe12d" title="Constructor." alt="" coords="5,215,201,241"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="232,247,201,243,202,238,233,242"/>
+<area shape="rect" id="Node000010" href="$class_shapes_1_1_c_kinematic_line_seg.html#a79556eedb3fe746fde97c404cf77c2cb" title="Reset orientation." alt="" coords="9,265,197,308"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="233,273,198,278,197,272,232,268"/>
+<area shape="rect" id="Node000011" href="$class_shapes_1_1_c_kinematic_line_seg.html#a3b4eff84ef24b4b78f898f44064ed967" title="Rotate." alt="" coords="9,332,197,375"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="297,280,202,322,171,334,170,329,200,318,295,275"/>
+</map>

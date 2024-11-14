@@ -1,0 +1,15 @@
+<map id="CMyListener" name="CMyListener">
+<area shape="rect" id="Node000001" title="My contact listener." alt="" coords="123,248,218,275"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,172,133,199"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,206,155,245,151,250,97,210"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="102,5,238,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,47,173,248,168,248,168,47"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="235,81,354,108"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="206,38,275,79,272,83,203,42"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="208,172,292,199"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,211,186,250,182,246,224,207"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="306,174,330,163,348,147,351,137,346,128,323,111,326,106,350,124,356,136,353,149,333,168,308,179"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,119,236,133,233,142,234,152,243,170,238,173,229,153,228,142,231,131,245,115"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="262,5,380,32"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="314,47,301,82,296,80,309,45"/>
+</map>

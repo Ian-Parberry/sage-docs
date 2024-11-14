@@ -1,0 +1,21 @@
+<map id="Shapes::CLineSeg::CollisionDetected" name="Shapes::CLineSeg::CollisionDetected">
+<area shape="rect" id="Node000001" title="Collision detection." alt="" coords="5,99,194,141"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_line.html#a81eae7f8bffd32c04924d76c133af4e8" title="Get closest point on line." alt="" coords="242,56,415,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,96,249,84,250,89,195,102"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_point.html#a7c238672005132e54bf1d4cada2db30d" title="Collision detection." alt="" coords="243,157,414,200"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="186,139,228,150,227,155,184,144"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="470,107,643,133"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="194,117,455,117,455,123,194,123"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_line.html#a526a9994d90fbcf54dd7a21fbb8d0165" title="Constructor." alt="" coords="482,5,631,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,53,478,33,479,39,393,58"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_line.html#aa8ec141c06ee78d7d3c54b560692cc20" title="Get intersection point with line." alt="" coords="474,56,640,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="416,67,458,67,458,72,416,72"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="413,154,486,135,488,140,414,159"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_circle.html#a4e47f001eba047fe82bf7c314aad42b6" title="Get radius." alt="" coords="463,157,650,184"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="414,173,447,172,448,177,414,178"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_dynamic_circle.html#a1175766174a320a27bdd8180cd167303" title="Get velocity." alt="" coords="472,208,641,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="415,195,458,205,456,210,414,200"/>
+<area shape="rect" id="Node000009" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="490,299,623,325"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="364,198,464,260,516,289,513,293,462,265,361,203"/>
+<area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="518,300,511,290,516,280,531,274,557,272,584,275,599,281,596,286,583,280,557,277,533,279,520,284,517,289,523,297"/>
+</map>

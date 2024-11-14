@@ -1,0 +1,5 @@
+<map id="Shapes::CKinematicCircle::CKinematicCircle" name="Shapes::CKinematicCircle::CKinematicCircle">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,5,181,48"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="229,13,401,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,24,213,24,213,29,181,29"/>
+</map>

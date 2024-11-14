@@ -1,0 +1,7 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="207,5,365,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a31512b5f3b35fe7a298edcb5a49226d6" title="Draw leaves." alt="" coords="413,5,636,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="365,16,398,16,398,21,365,21"/>
+</map>

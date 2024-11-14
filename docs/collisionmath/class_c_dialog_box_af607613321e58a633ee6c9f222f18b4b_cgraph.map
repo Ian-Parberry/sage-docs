@@ -1,0 +1,43 @@
+<map id="CDialogBox::CDialogBox" name="CDialogBox::CDialogBox">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,259,175,285"/>
+<area shape="rect" id="Node000002" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="223,259,369,285"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,269,208,269,208,275,175,275"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="450,5,608,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,257,309,215,332,156,366,94,389,66,415,42,434,31,437,35,419,46,393,70,371,97,337,159,314,217,303,259"/>
+<area shape="rect" id="Node000004" href="$class_c_dialog_box.html#adbcaef1a681b3b5f6e43fda31a897db6" title="Get number from an edit box." alt="" coords="446,56,612,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="300,257,315,223,339,179,373,132,393,111,416,92,430,84,433,89,418,97,396,115,377,135,343,181,319,226,305,259"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a1b59a173eb45d6d60073d6d556fff7be" title="Get quadtree level count." alt="" coords="430,360,628,403"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="317,284,362,314,418,346,433,352,431,357,416,350,359,319,314,288"/>
+<area shape="rect" id="Node000007" href="$class_c_dialog_box.html#ad204873072080d264d24ee70058e8349" title="Get value from slider." alt="" coords="436,157,622,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="313,256,358,224,416,194,435,186,437,191,418,198,361,229,316,260"/>
+<area shape="rect" id="Node000008" href="$class_c_dialog_box.html#a2072d3a7a6eddb9e0d3dc6909e67c8a3" title="Initialize check boxes." alt="" coords="433,107,625,133"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="304,256,347,201,379,169,416,143,428,137,430,142,418,148,382,173,351,204,308,260"/>
+<area shape="rect" id="Node000010" href="$class_c_dialog_box.html#adef9d20153055e2a1e04b0db85400d02" title="Initialize edit boxes." alt="" coords="440,259,618,285"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="370,269,425,269,425,275,370,275"/>
+<area shape="rect" id="Node000011" href="$class_c_dialog_box.html#a58b2303f8fb8258a336a64d4b6cc2eef" title="Initialize radio buttons." alt="" coords="431,309,627,336"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="361,283,450,303,449,308,360,289"/>
+<area shape="rect" id="Node000012" href="$class_c_dialog_box.html#aedc1cf77da384ddee9b7915c5ed0b931" title="Initialize all spin controls." alt="" coords="433,208,625,235"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="360,255,449,236,450,241,361,261"/>
+<area shape="rect" id="Node000014" href="$class_c_object_manager.html#a92401549bf943c5af2edb6dd88ca5304" title="Reset the quadtree." alt="" coords="420,427,639,453"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="307,284,349,347,381,383,418,412,429,418,426,423,416,417,377,387,344,350,302,287"/>
+<area shape="rect" id="Node000019" href="$class_c_object_manager.html#a331c3db85903c158f818c9ac705a14ff" title="Start or stop kinematic shapes rotating." alt="" coords="417,477,641,504"/>
+<area shape="poly" id="edge20_Node000002_Node000019" title=" " alt="" coords="304,285,318,321,341,370,375,421,395,444,419,463,426,468,423,472,415,467,392,447,371,424,337,373,313,323,299,287"/>
+<area shape="rect" id="Node000020" href="$class_c_dialog_box.html#ac3be68fa38c7f663755c8ea05ae6cba1" title="Set an edit box." alt="" coords="446,528,612,555"/>
+<area shape="poly" id="edge21_Node000002_Node000020" title=" " alt="" coords="302,285,313,330,334,392,369,458,392,488,419,514,434,523,431,528,415,518,388,492,364,461,330,394,308,331,297,286"/>
+<area shape="rect" id="Node000006" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="706,368,858,395"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="628,379,690,379,690,384,628,384"/>
+<area shape="rect" id="Node000009" href="$class_c_dialog_box.html#aabadc320a5452abccdf439a9835f4e7b" title="Set check box." alt="" coords="693,107,871,133"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="626,117,677,117,677,123,626,123"/>
+<area shape="rect" id="Node000013" href="$class_c_dialog_box.html#a9f81ef1d87e19acbee78287603864916" title="Init a spin control." alt="" coords="689,208,875,235"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="626,219,674,219,674,224,626,224"/>
+<area shape="poly" id="edge15_Node000014_Node000006" title=" " alt="" coords="591,423,641,412,708,396,709,401,642,417,593,429"/>
+<area shape="rect" id="Node000015" href="$class_c_quad_tree.html#a92b7c5fde589cc97e7b803406cb44434" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="718,419,846,445"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="639,434,703,432,703,437,640,439"/>
+<area shape="rect" id="Node000016" href="$class_c_quad_tree.html#a9a3b1aff4515dd638c7343f17fafd711" title="Initialize for a given depth and area." alt="" coords="710,469,854,496"/>
+<area shape="poly" id="edge16_Node000014_Node000016" title=" " alt="" coords="613,451,695,465,694,471,612,457"/>
+<area shape="rect" id="Node000018" href="$class_c_quad_tree.html#a7bfafc26e36377087ffac07f0bce97cd" title="Insert shape at place in tree." alt="" coords="717,544,847,571"/>
+<area shape="poly" id="edge18_Node000014_Node000018" title=" " alt="" coords="614,451,643,463,658,473,668,484,691,506,739,534,736,539,688,510,664,487,655,477,640,468,612,456"/>
+<area shape="rect" id="Node000017" href="$class_c_quad_tree.html#a88f2b8deae87509f1b4736f6e06a0583" title="Initialize AABBs in all nodes." alt="" coords="923,469,1080,496"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="854,480,907,480,907,485,854,485"/>
+<area shape="poly" id="edge19_Node000018_Node000018" title=" " alt="" coords="745,545,738,535,743,525,758,519,782,517,808,520,822,526,820,531,807,525,782,523,759,525,746,529,744,535,749,542"/>
+</map>

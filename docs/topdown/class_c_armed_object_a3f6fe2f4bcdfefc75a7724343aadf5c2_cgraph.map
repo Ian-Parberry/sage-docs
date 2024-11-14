@@ -1,0 +1,5 @@
+<map id="CArmedObject::Move" name="CArmedObject::Move">
+<area shape="rect" id="Node000001" title="Move object." alt="" coords="5,5,153,32"/>
+<area shape="rect" id="Node000002" href="$class_c_armed_object.html#a0093f706ad2801801dd414ba797ad16e" title="Get gun offset." alt="" coords="201,5,396,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,16,185,16,185,21,153,21"/>
+</map>

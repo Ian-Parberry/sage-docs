@@ -1,0 +1,5 @@
+<map id="CGame::BeginSpeaking" name="CGame::BeginSpeaking">
+<area shape="rect" id="Node000001" title="Begin saying the current number in binary." alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000002" href="$class_c_counter.html#a1e3fa83cee3c4df155d97e2b4029b0ca" title="Get number of bits." alt="" coords="215,5,372,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+</map>

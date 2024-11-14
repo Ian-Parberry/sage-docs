@@ -1,0 +1,13 @@
+<map id="CObjectManager::LoadSnideComment" name="CObjectManager::LoadSnideComment">
+<area shape="rect" id="Node000001" title="Load snide comment into character buffers." alt="" coords="1017,5,1205,48"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#af92e56f0ba4cfe0e994ee077a905609f" title="Draw game text." alt="" coords="751,13,969,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1001,29,970,29,970,24,1001,24"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="544,13,703,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="735,29,703,29,703,24,735,24"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="343,13,496,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="529,29,497,29,497,24,529,24"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,13,295,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,29,295,29,295,24,328,24"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,13,88,40"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,29,88,29,88,24,120,24"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CGame::MouseHandler" name="CGame::MouseHandler">
+<area shape="rect" id="Node000001" title="The mouse handler." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="Node000002" href="$class_c_player.html#afdb4ed7083a7f4b4f19349e5d6d690b6" title="Rotate towards point." alt="" coords="212,5,329,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CObjectManager::MakeCollisionSounds" name="CObjectManager::MakeCollisionSounds">
+<area shape="rect" id="Node000001" title="Make sounds for all objects." alt="" coords="343,5,552,48"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,13,295,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,29,296,29,296,24,327,24"/>
+<area shape="rect" id="Node000003" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,13,88,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,29,88,29,88,24,120,24"/>
+</map>

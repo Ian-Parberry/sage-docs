@@ -1,0 +1,5 @@
+<map id="CQuadTree" name="CQuadTree">
+<area shape="rect" id="Node000001" title="A quadtree." alt="" coords="21,96,109,123"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree_node.html" title="Quadtree node." alt="" coords="5,5,125,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,48,68,95,62,95,62,48"/>
+</map>

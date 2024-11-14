@@ -1,0 +1,17 @@
+<map id="CGame::ControllerHandler" name="CGame::ControllerHandler">
+<area shape="rect" id="Node000001" title="The controller handler." alt="" coords="5,132,181,159"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a90bf0be7ca1092d570e9d5660ad06261" title="Fire armed object&#39;s gun." alt="" coords="229,81,402,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,129,238,109,239,115,156,134"/>
+<area shape="rect" id="Node000007" href="$class_c_player.html#a8b8147d61d72e129e8c4528c6a37ee7f" title="Set movement direction." alt="" coords="237,132,394,159"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="181,143,221,143,221,148,181,148"/>
+<area shape="rect" id="Node000008" href="$class_c_player.html#a63d6cf5fb542447cb233bdd65893d271" title="Set rotational velocity." alt="" coords="238,183,392,209"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="156,157,239,176,238,181,154,162"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a97512c70c9395658c59e2ce9dc84cf60" title="Create new object." alt="" coords="468,5,634,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,78,449,41,475,34,477,39,451,47,351,83"/>
+<area shape="rect" id="Node000004" href="$class_c_armed_object.html#a0093f706ad2801801dd414ba797ad16e" title="Get gun offset." alt="" coords="454,56,649,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,83,438,79,438,84,402,88"/>
+<area shape="rect" id="Node000005" href="$class_c_armed_object.html#aad443c44e76a89026a2e8b02271d1242" title="Compute view vector." alt="" coords="450,107,652,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="402,101,435,105,435,110,402,107"/>
+<area shape="rect" id="Node000006" href="$class_c_player.html#a372b933d030cd0ae3bc375d9770b345f" title="Set the vulnerable flag." alt="" coords="473,157,629,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="370,106,403,118,427,130,451,143,472,150,470,155,449,148,425,135,401,122,369,111"/>
+</map>

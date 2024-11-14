@@ -1,0 +1,19 @@
+<map id="CObjectManager::CreateObject" name="CObjectManager::CreateObject">
+<area shape="rect" id="Node000001" title="Create object." alt="" coords="802,51,1006,78"/>
+<area shape="rect" id="Node000002" href="$class_c_bit_counter.html#a966655d68d0c450d9f3a19965e29bfad" title="Constructor." alt="" coords="344,26,517,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="856,47,807,30,753,16,701,10,660,8,566,16,493,28,492,22,565,11,660,3,701,4,754,11,809,25,858,42"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5daaf88f390ec1fae3b4c2da5f38a6f5" title="Create a new ball." alt="" coords="565,127,754,154"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="850,86,754,118,715,129,713,124,753,113,848,81"/>
+<area shape="rect" id="Node000007" href="$class_c_bit_counter.html#a2f2d4c2fe8c17ffe43a331101a9bc940" title="Create a block." alt="" coords="573,26,746,52"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="786,55,746,51,747,45,786,50"/>
+<area shape="rect" id="Node000008" href="$class_c_bit_counter.html#aee754ea7f63dbb5a76ef261362d7227f" title="Create a triangular ramp." alt="" coords="572,76,747,103"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="786,79,748,83,747,78,786,74"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,127,517,154"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="550,143,518,143,518,138,550,138"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,127,295,154"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="327,143,295,143,295,138,327,138"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,127,88,154"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,143,88,143,88,138,120,138"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="557,42,517,42,517,36,557,36"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="580,75,493,56,494,50,581,70"/>
+</map>

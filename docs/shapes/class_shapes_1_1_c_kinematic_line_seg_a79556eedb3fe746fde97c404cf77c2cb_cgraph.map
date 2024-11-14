@@ -1,0 +1,20 @@
+<map id="Shapes::CKinematicLineSeg::Reset" name="Shapes::CKinematicLineSeg::Reset">
+<area shape="rect" id="Node000001" title="Reset orientation." alt="" coords="5,48,194,91"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="246,5,418,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,46,252,33,253,38,195,51"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_line_seg.html#a9d7855e89e954f47465461997da75dee" title="Update other properties from the end points." alt="" coords="242,81,422,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,77,227,81,226,86,194,82"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="735,31,928,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,12,545,10,688,16,751,25,750,30,687,21,545,15,418,17"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="470,31,687,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="400,78,495,58,496,64,401,83"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="492,81,665,108"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="422,92,477,92,477,97,422,97"/>
+<area shape="rect" id="Node000007" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="512,156,645,183"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="379,106,518,148,516,154,378,111"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="472,207,686,233"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="350,107,401,149,435,172,471,192,488,199,486,204,469,197,432,177,398,153,346,111"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="688,41,720,41,720,47,688,47"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="537,157,530,147,535,137,552,131,579,129,608,132,624,139,622,144,607,137,579,135,553,137,538,141,535,147,542,154"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="661,204,686,192,725,165,760,132,811,69,815,72,763,135,728,169,689,197,663,209"/>
+</map>

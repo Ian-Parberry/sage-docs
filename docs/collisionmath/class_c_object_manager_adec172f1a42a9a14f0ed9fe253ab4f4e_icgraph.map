@@ -1,0 +1,11 @@
+<map id="CObjectManager::DrawObject" name="CObjectManager::DrawObject">
+<area shape="rect" id="Node000001" title="Draw an object." alt="" coords="751,5,947,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="544,5,703,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="735,21,703,21,703,16,735,16"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="343,5,496,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="529,21,497,21,497,16,529,16"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="CWheel" name="CWheel">
+<area shape="rect" id="Node000001" title="The wheel." alt="" coords="24,188,92,215"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html" title="The body." alt="" coords="41,81,102,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,124,63,188,57,187,65,123"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html" title="The object manager." alt="" coords="132,188,251,215"/>
+<area shape="poly" id="edge7_Node000004_Node000002" title=" " alt="" coords="77,123,84,144,96,162,113,175,133,185,131,190,110,180,92,166,79,146,72,124"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="105,279,190,305"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,277,45,253,25,236,9,216,4,201,3,185,15,154,35,127,55,107,59,110,39,131,19,157,9,186,9,200,14,213,29,233,48,249,92,272"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="153,263,164,237,180,213,184,216,169,240,158,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="181,230,156,279,152,277,176,228"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="78,5,214,32"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="125,45,86,83,82,79,121,41"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="158,46,184,131,193,187,188,188,178,133,153,47"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="237,81,354,108"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="275,121,206,190,202,186,271,117"/>
+</map>

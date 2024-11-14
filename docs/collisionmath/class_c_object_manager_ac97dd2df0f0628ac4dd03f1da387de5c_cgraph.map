@@ -1,0 +1,5 @@
+<map id="CObjectManager::GetQTNodeArea" name="CObjectManager::GetQTNodeArea">
+<area shape="rect" id="Node000001" title="Get quadtree leaf area." alt="" coords="5,5,230,32"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a7fbe434b365997854bca4eba01970564" title="Get width and height of area covered by a leaf." alt="" coords="278,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,16,262,16,262,21,230,21"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="SageSprite.h" name="SageSprite.h">
+<area shape="rect" id="Node000001" title="Interface for the sprite class CSprite." alt="" coords="235,5,331,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,113,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,35,113,77,112,72,243,30"/>
+<area shape="rect" id="Node000003" href="$_sage_texture_desc_8h.html" title="Interface for the texture descriptor CTextureDesc." alt="" coords="136,80,272,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,35,231,71,227,67,267,31"/>
+<area shape="rect" id="Node000004" href="$_sage_component_8h.html" title="Interface for the component class CComponent." alt="" coords="297,80,426,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="299,31,339,67,335,71,295,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="450,80,577,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="324,30,459,72,458,77,322,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="328,155,396,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="364,107,364,139,359,139,359,107"/>
+</map>

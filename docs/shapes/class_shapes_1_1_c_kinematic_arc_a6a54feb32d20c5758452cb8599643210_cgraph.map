@@ -1,0 +1,28 @@
+<map id="Shapes::CKinematicArc::Reset" name="Shapes::CKinematicArc::Reset">
+<area shape="rect" id="Node000001" title="Reset orientation." alt="" coords="5,156,167,199"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="215,164,368,191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,175,199,175,199,180,167,180"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="416,252,633,279"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,189,363,214,417,238,439,245,438,250,415,243,360,219,315,194"/>
+<area shape="rect" id="Node000005" href="$_shape_math_8h.html#aae393ce7ea1fd0fe423161f849235011" title="Normal vector from orientation." alt="" coords="446,76,603,103"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="315,161,360,137,415,113,438,105,439,110,417,117,363,141,317,166"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="922,99,1094,126"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="298,162,314,134,340,99,374,64,415,38,452,24,489,14,567,4,646,5,724,16,797,32,863,51,965,90,963,95,861,57,796,37,723,21,646,11,568,9,491,19,453,29,417,43,377,68,344,102,319,137,302,165"/>
+<area shape="rect" id="Node000007" href="$_shape_math_8h.html#a42ba6241a99c1dcd508a892de306416a" title="Perpendicular vector." alt="" coords="476,202,574,228"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="369,187,460,202,459,207,368,193"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_arc.html#a5df47e5d99c3d84d7c34cceb3c124288" title="Point in sector test." alt="" coords="438,303,611,330"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="306,190,351,239,382,266,417,289,431,295,428,300,415,293,379,270,347,243,302,193"/>
+<area shape="rect" id="Node000011" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="418,127,632,154"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="368,163,422,154,423,159,369,168"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="681,190,874,216"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="586,249,633,238,709,218,710,223,634,243,587,254"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="485,78,478,68,483,58,499,52,525,50,553,52,567,59,565,64,551,57,525,55,500,57,487,62,484,67,490,74"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="485,203,478,193,483,183,499,177,525,175,553,178,567,184,565,189,551,183,525,180,500,182,487,187,484,192,490,200"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_arc.html#a68cd1094cdde528977fd84e172483c0e" title="Point to angle." alt="" coords="692,271,863,298"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="611,303,676,294,677,300,612,308"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="804,268,872,226,931,179,980,135,983,139,935,183,875,231,807,273"/>
+<area shape="rect" id="Node000010" href="$_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073" title="Normalize angle to ." alt="" coords="925,271,1090,298"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="864,282,910,282,910,287,864,287"/>
+<area shape="poly" id="edge13_Node000010_Node000010" title=" " alt="" coords="969,272,962,262,967,252,982,246,1008,244,1036,247,1050,254,1048,259,1034,252,1008,250,984,252,970,256,967,262,973,269"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="587,152,634,163,710,183,709,188,633,168,586,157"/>
+</map>

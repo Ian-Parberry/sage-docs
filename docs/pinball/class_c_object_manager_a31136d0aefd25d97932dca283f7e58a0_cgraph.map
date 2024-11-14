@@ -1,0 +1,22 @@
+<map id="CObjectManager::MakeShapes" name="CObjectManager::MakeShapes">
+<area shape="rect" id="Node000001" title="Create shapes." alt="" coords="5,114,209,141"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="509,114,696,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,111,176,65,214,41,256,23,313,8,359,3,405,8,462,23,496,38,529,59,579,101,576,105,526,63,494,43,460,28,404,13,359,8,314,13,258,28,217,46,179,69,124,115"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a8ec3facaf9550165947643f51e5265c7" title="Make a bollard." alt="" coords="259,38,458,65"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,111,256,74,283,66,285,72,257,79,147,116"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#ae1c594c6824929eb9ba84f336045ae3d" title="Make a bumper." alt="" coords="257,89,461,115"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="209,114,241,111,242,116,210,120"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#abaa1d5ffeaee29261db5eae35a03487c" title="Make a flipper." alt="" coords="260,139,458,166"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="210,135,244,138,244,144,209,140"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a3c7fbcf613ac5cc2836d5e789ad4be20" title="Make a thing (left)." alt="" coords="260,190,458,217"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="147,139,257,175,285,183,283,188,256,180,145,144"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a08f704845cf30b46b8a59a3ce49d5419" title="Make a thing (right)." alt="" coords="258,241,460,267"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="126,139,182,182,219,206,258,226,275,233,273,238,256,231,216,210,179,186,123,143"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="744,114,941,141"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="697,125,729,125,729,130,697,130"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="420,63,462,74,553,106,551,111,460,79,419,68"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="462,110,494,113,493,119,461,115"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="458,140,493,136,494,141,459,145"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="419,187,460,175,551,144,553,149,462,180,420,192"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="429,238,460,226,523,189,573,149,576,153,526,193,462,231,431,243"/>
+</map>

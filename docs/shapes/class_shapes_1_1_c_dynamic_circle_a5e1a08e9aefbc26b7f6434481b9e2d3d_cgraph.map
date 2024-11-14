@@ -1,0 +1,10 @@
+<map id="Shapes::CDynamicCircle::CDynamicCircle" name="Shapes::CDynamicCircle::CDynamicCircle">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,23,175,65"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#ae0d60245884bc1b01e60e938f6f40262" title="Add AABB point." alt="" coords="223,5,440,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,32,207,29,207,34,175,38"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_shape.html#a9d0ae8137f77ff572acd3f6a2904422b" title="Set AABB point." alt="" coords="224,56,438,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,50,209,54,209,59,175,56"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="488,31,680,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,27,472,30,472,35,440,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="439,56,472,53,473,58,439,61"/>
+</map>

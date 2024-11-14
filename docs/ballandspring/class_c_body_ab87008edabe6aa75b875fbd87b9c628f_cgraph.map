@@ -1,0 +1,5 @@
+<map id="CBody::CreateSpring" name="CBody::CreateSpring">
+<area shape="rect" id="Node000001" title="Create spring." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="199,5,362,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Sage::StartLoadingThread" name="Sage::StartLoadingThread">
+<area shape="rect" id="Node000001" title="Spawn a sound loading thread." alt="" coords="5,29,178,56"/>
+<area shape="rect" id="Node000002" href="$_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb" title="Spawn an image loading thread." alt="" coords="226,29,398,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,40,210,40,210,45,178,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="275,30,268,21,273,11,287,5,312,3,338,5,352,12,350,16,337,10,312,8,289,10,276,15,273,20,279,27"/>
+</map>

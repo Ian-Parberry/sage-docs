@@ -1,0 +1,8 @@
+<map id="Shapes::CCircle::ClosestPt" name="Shapes::CCircle::ClosestPt">
+<area shape="rect" id="Node000001" title="Closest point on circle." alt="" coords="5,43,189,69"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="237,5,409,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,39,223,33,223,38,182,45"/>
+<area shape="rect" id="Node000003" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="257,80,389,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,67,242,77,241,83,181,73"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="285,81,278,71,283,61,298,55,323,53,350,56,364,62,362,67,348,61,323,59,299,61,286,65,283,71,289,78"/>
+</map>

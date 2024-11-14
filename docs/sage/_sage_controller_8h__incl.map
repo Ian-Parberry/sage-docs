@@ -1,0 +1,9 @@
+<map id="SageController.h" name="SageController.h">
+<area shape="rect" id="Node000001" title="Interface for the controller class CController." alt="" coords="89,5,208,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,89,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,35,79,73,76,68,129,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="113,80,184,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,33,151,64,146,64,146,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="208,80,315,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,30,230,69,228,74,167,35"/>
+</map>

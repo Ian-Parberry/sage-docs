@@ -1,0 +1,17 @@
+<map id="Shapes::CDynamicCircle::CollisionResponseStatic" name="Shapes::CDynamicCircle::CollisionResponseStatic">
+<area shape="rect" id="Node000001" title="Collision response for static shape." alt="" coords="5,85,178,128"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#a8ce4e8fcc672750e2a3857fc1b5fde0d" title="Get elasticity." alt="" coords="226,5,429,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,82,225,42,247,34,249,39,227,46,135,87"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="241,56,414,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,90,225,83,226,88,179,96"/>
+<area shape="rect" id="Node000004" href="$_shape_math_8h.html#afb56c106f4e788b4dacb03165c3a29eb" title="Compute parallel component of vector." alt="" coords="236,131,419,157"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,118,224,125,223,130,178,123"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="242,181,413,208"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="135,126,227,167,249,174,247,179,225,172,133,131"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="288,132,281,122,285,112,301,106,327,104,356,107,371,113,368,118,354,112,327,109,303,111,289,116,286,121,292,129"/>
+<area shape="rect" id="Node000005" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="507,131,639,157"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="420,141,492,141,492,147,420,147"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="532,132,525,122,530,112,546,106,573,104,603,107,618,113,616,118,602,112,573,109,547,111,533,116,530,121,536,129"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="477,181,669,208"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="413,192,461,192,461,197,413,197"/>
+</map>

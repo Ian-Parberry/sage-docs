@@ -1,0 +1,16 @@
+<map id="CObjectManager::Clear" name="CObjectManager::Clear">
+<area shape="rect" id="Node000001" title="Reset to initial conditions." alt="" coords="797,56,955,83"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="586,5,728,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="800,55,717,35,718,30,801,49"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,56,517,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="781,72,518,72,518,67,781,67"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a7f985240f67c8bf03a26f370e67fdb33" title="Destructor." alt="" coords="565,107,749,149"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="809,90,740,109,738,103,808,85"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="354,5,507,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,21,507,21,507,16,571,16"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="338,32,296,37,295,32,337,27"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="327,60,295,56,296,51,328,55"/>
+</map>

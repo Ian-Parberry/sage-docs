@@ -1,0 +1,9 @@
+<map id="CGuard::ChangeState" name="CGuard::ChangeState">
+<area shape="rect" id="Node000001" title="Change state." alt="" coords="173,56,323,83"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#abe34909309f4b07ac4349e2c59b1ed09" title="Constructor." alt="" coords="5,5,125,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,54,115,35,117,30,183,49"/>
+<area shape="rect" id="Node000003" href="$class_c_guard.html#a41e5204843c2ee44f37f2f55dbbe84e9" title="Draw." alt="" coords="12,56,118,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,72,118,72,118,67,157,67"/>
+<area shape="rect" id="Node000004" href="$class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279" title="Move." alt="" coords="12,107,118,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,90,117,109,115,103,181,85"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CGame::CreateObjects" name="CGame::CreateObjects">
+<area shape="rect" id="Node000001" title="Create game objects." alt="" coords="5,31,164,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a47c6139224ca0bc1b7aae523e90534c3" title="Create an object." alt="" coords="212,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,32,196,28,196,33,164,37"/>
+<area shape="rect" id="Node000003" href="$class_c_renderer.html#a66e1f431af58e6f988a327491827c641" title="Get model extents." alt="" coords="216,56,374,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,51,200,55,200,61,163,56"/>
+</map>

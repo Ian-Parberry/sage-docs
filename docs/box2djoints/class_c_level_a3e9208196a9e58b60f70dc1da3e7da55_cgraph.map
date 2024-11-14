@@ -1,0 +1,7 @@
+<map id="CLevel::Draw" name="CLevel::Draw">
+<area shape="rect" id="Node000001" title="Draw objects in level." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="Node000002" href="$class_c_line_object.html#a593b11f7a8cc9f9a25b97ac7d2f74d62" title="Draw line." alt="" coords="155,5,287,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,16,139,16,139,21,107,21"/>
+<area shape="rect" id="Node000003" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="335,5,407,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="287,16,319,16,319,21,287,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CMyListener::GetBellType" name="CMyListener::GetBellType">
+<area shape="rect" id="Node000001" title="Get a pointer to the bell object in a bell collision." alt="" coords="5,31,180,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#aaa8e01de1643e10f7ff340dda8526287" title="Get sprite type." alt="" coords="228,5,388,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,212,27,213,33,181,36"/>
+<area shape="rect" id="Node000003" href="$_contact_listener_8cpp.html#a0e6d621f314360837e514aa64b5491d6" title=" " alt="" coords="277,56,339,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,52,261,61,261,67,180,57"/>
+</map>

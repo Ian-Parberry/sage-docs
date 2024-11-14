@@ -1,0 +1,37 @@
+<map id="ObjectManager.h" name="ObjectManager.h">
+<area shape="rect" id="Node000001" title="Interface for the object manager CObjectManager." alt="" coords="232,5,353,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="74,80,184,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,35,172,76,170,71,263,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,135,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,34,246,70,197,109,157,132,117,151,115,146,154,127,194,104,243,66,279,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="553,80,592,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,30,536,77,539,78,538,84,535,83,348,35"/>
+<area shape="rect" id="Node000005" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="258,80,328,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="295,33,295,64,290,64,290,33"/>
+<area shape="rect" id="Node000010" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="423,229,509,256"/>
+<area shape="poly" id="edge21_Node000001_Node000010" title=" " alt="" coords="324,30,360,49,401,76,440,111,470,154,477,184,475,214,470,214,472,185,465,156,436,114,397,80,357,53,321,35"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="258,109,124,152,123,147,256,104"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="213,229,346,256"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="294,107,284,214,279,214,289,107"/>
+<area shape="rect" id="Node000007" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="147,304,260,331"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="259,109,226,128,212,141,200,156,189,189,187,225,191,260,197,289,192,290,185,261,181,225,184,188,196,153,208,137,223,124,256,105"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="329,97,387,115,417,131,443,153,459,182,467,213,462,214,454,184,439,156,414,136,385,120,327,103"/>
+<area shape="rect" id="Node000013" href="$_descriptors_8h.html" title="Interface for descriptors." alt="" coords="330,155,429,181"/>
+<area shape="poly" id="edge16_Node000005_Node000013" title=" " alt="" coords="309,105,355,143,351,147,306,109"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="210,155,256,181"/>
+<area shape="poly" id="edge20_Node000005_Node000014" title=" " alt="" coords="284,109,255,145,250,141,280,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="263,379,370,405"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="225,329,285,368,283,372,222,333"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="452,379,640,405"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="260,328,472,372,471,378,259,333"/>
+<area shape="poly" id="edge15_Node000010_Node000007" title=" " alt="" coords="424,258,264,302,263,297,423,253"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="488,254,507,270,525,289,535,310,535,321,529,332,507,349,471,363,386,383,385,378,470,358,504,344,525,329,530,320,530,311,521,292,504,274,484,259"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="510,254,545,273,561,286,574,303,579,319,578,336,566,366,561,364,573,334,574,319,569,305,557,290,542,277,507,259"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="284,304,392,331"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="445,259,375,298,372,294,442,254"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="416,304,516,331"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="469,257,469,288,463,288,463,257"/>
+<area shape="poly" id="edge17_Node000013_Node000006" title=" " alt="" coords="363,184,311,222,308,218,360,180"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="382,182,378,218,372,239,360,258,344,270,321,281,264,301,263,296,319,276,342,265,356,254,367,237,373,217,377,181"/>
+<area shape="poly" id="edge19_Node000013_Node000010" title=" " alt="" coords="396,180,441,217,438,221,393,184"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CObjectManager::GetQTLevelCount" name="CObjectManager::GetQTLevelCount">
+<area shape="rect" id="Node000001" title="Get quadtree level count." alt="" coords="417,5,614,48"/>
+<area shape="rect" id="Node000002" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="223,13,369,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="402,29,369,29,369,24,402,24"/>
+<area shape="rect" id="Node000003" href="$class_c_dialog_box.html#af607613321e58a633ee6c9f222f18b4b" title="Constructor." alt="" coords="5,13,175,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,29,175,29,175,24,207,24"/>
+</map>

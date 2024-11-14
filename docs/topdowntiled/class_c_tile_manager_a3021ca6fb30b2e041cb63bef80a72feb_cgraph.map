@@ -1,0 +1,9 @@
+<map id="CTileManager::MakeBoundingBoxes" name="CTileManager::MakeBoundingBoxes">
+<area shape="rect" id="Node000001" title="Make bounding boxes for walls." alt="" coords="5,72,202,115"/>
+<area shape="rect" id="Node000002" href="$class_c_tile_manager.html#a3cae6688a52116f4c86778fd776e9f23" title="Make bounding boxes for 1&#45;block walls." alt="" coords="250,5,446,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,69,252,50,253,55,185,74"/>
+<area shape="rect" id="Node000003" href="$class_c_tile_manager.html#a16aecc34eca5babed8212a6c721bd364" title="Make bounding boxes for horizontal walls." alt="" coords="250,72,446,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,91,234,91,234,96,202,96"/>
+<area shape="rect" id="Node000004" href="$class_c_tile_manager.html#ab3fe8fe47bbd2f98ecfa6cf75753beb4" title="Make bounding boxes for vertical walls." alt="" coords="250,139,446,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,113,253,131,252,137,184,118"/>
+</map>

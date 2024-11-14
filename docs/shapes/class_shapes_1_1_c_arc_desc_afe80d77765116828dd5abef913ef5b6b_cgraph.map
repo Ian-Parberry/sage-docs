@@ -1,0 +1,6 @@
+<map id="Shapes::CArcDesc::SetAngles" name="Shapes::CArcDesc::SetAngles">
+<area shape="rect" id="Node000001" title="Set the angles." alt="" coords="5,29,208,56"/>
+<area shape="rect" id="Node000002" href="$_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073" title="Normalize angle to ." alt="" coords="256,29,421,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,40,240,40,240,45,208,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="299,31,292,21,297,11,313,5,338,3,366,5,381,12,379,17,365,10,338,8,314,10,301,15,298,20,304,27"/>
+</map>

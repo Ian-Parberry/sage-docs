@@ -1,0 +1,14 @@
+<map id="CGuard::Draw" name="CGuard::Draw">
+<area shape="rect" id="Node000001" title="Draw." alt="" coords="5,81,111,108"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#a3b22279349c76fa4e1966c5d776da07a" title="Change state." alt="" coords="159,5,309,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,78,158,42,173,35,175,40,160,46,85,83"/>
+<area shape="rect" id="Node000003" href="$class_c_guard.html#ac221cdeb835736a295b79384065a89ec" title="Draw state text." alt="" coords="166,56,302,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,84,150,79,151,84,112,90"/>
+<area shape="rect" id="Node000005" href="$class_c_object.html#a145e790baad59983ddb26abad3f4fa1b" title="Get position." alt="" coords="376,132,498,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="112,99,362,133,361,138,111,104"/>
+<area shape="rect" id="Node000006" href="$class_c_tile_manager.html#a78c79d883bca8b12c5cf47344344ee44" title="Player visibility test." alt="" coords="159,157,308,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="92,106,160,136,187,148,185,153,158,141,90,111"/>
+<area shape="rect" id="Node000004" href="$class_c_guard.html#a2d1351bd30c8ebed2a8b437f1a53563d" title="Get state text." alt="" coords="357,56,517,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="303,67,341,67,341,72,303,72"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="308,159,361,152,362,157,309,164"/>
+</map>

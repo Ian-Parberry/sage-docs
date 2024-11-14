@@ -1,0 +1,5 @@
+<map id="Sage::CKeyboard::TriggerDown" name="Sage::CKeyboard::TriggerDown">
+<area shape="rect" id="Node000001" title="Check for key going down." alt="" coords="5,5,212,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_keyboard.html#a83de338ae65ff8cebd93683af02a6e2a" title="Check for key changing state." alt="" coords="260,5,432,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,16,244,16,244,21,212,21"/>
+</map>

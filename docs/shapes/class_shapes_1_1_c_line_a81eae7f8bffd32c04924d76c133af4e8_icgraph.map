@@ -1,0 +1,5 @@
+<map id="Shapes::CLine::ClosestPt" name="Shapes::CLine::ClosestPt">
+<area shape="rect" id="Node000001" title="Get closest point on line." alt="" coords="242,13,415,40"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_line_seg.html#aed56df99acf61d2fca2dc98b1b55cccb" title="Collision detection." alt="" coords="5,5,194,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,29,194,29,194,24,226,24"/>
+</map>

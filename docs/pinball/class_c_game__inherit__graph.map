@@ -1,0 +1,11 @@
+<map id="CGame" name="CGame">
+<area shape="rect" id="Node000001" title="The game class." alt="" coords="191,155,257,181"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,142,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,111,199,152,197,156,112,116"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="166,80,283,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,122,227,154,222,154,222,122"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="307,80,392,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="316,117,247,156,245,152,314,112"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="263,5,436,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="352,48,352,80,347,80,347,48"/>
+</map>

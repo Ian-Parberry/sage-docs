@@ -1,0 +1,31 @@
+<map id="Shapes::CDynamicCircle::CollisionResponseKinematic" name="Shapes::CDynamicCircle::CollisionResponseKinematic">
+<area shape="rect" id="Node000001" title="Collision response for kinematic shape." alt="" coords="5,191,202,233"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_dynamic_circle.html#a463cfe5f078bb462a1774d3acd03093f" title="Collision response for static shape." alt="" coords="268,107,440,149"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,188,273,152,275,157,170,193"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#a8ce4e8fcc672750e2a3857fc1b5fde0d" title="Get elasticity." alt="" coords="507,5,710,32"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="116,189,137,158,168,121,205,85,248,56,308,33,371,19,433,11,491,9,491,14,433,17,372,24,309,38,251,61,208,89,171,125,142,161,120,192"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="522,56,695,83"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="121,189,175,138,210,112,249,92,314,73,381,62,447,58,507,58,507,63,447,63,382,67,315,78,251,97,213,117,178,142,125,192"/>
+<area shape="rect" id="Node000005" href="$_shape_math_8h.html#afb56c106f4e788b4dacb03165c3a29eb" title="Compute parallel component of vector." alt="" coords="517,181,700,208"/>
+<area shape="poly" id="edge15_Node000001_Node000005" title=" " alt="" coords="202,206,501,196,502,201,202,211"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_shape.html#a6f59c0c25d31ef6223392036ea669ecd" title="Get whether rotating." alt="" coords="255,224,454,251"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="202,219,240,223,239,228,202,225"/>
+<area shape="rect" id="Node000010" href="$class_shapes_1_1_c_shape.html#a722bbf814f0a699f1f31a530224fa93b" title="Get rotation speed." alt="" coords="250,275,459,301"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="164,231,250,260,278,268,277,273,249,265,162,236"/>
+<area shape="rect" id="Node000011" href="$class_shapes_1_1_c_shape.html#a50201fa1d006baa8eccf7b6a6cccfd0d" title="Get rotation speed." alt="" coords="251,325,458,352"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="131,232,184,272,251,311,268,318,266,323,248,316,181,277,128,236"/>
+<area shape="rect" id="Node000012" href="$_shape_math_8h.html#a42ba6241a99c1dcd508a892de306416a" title="Perpendicular vector." alt="" coords="305,400,404,427"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="123,232,177,294,212,330,251,362,303,391,300,396,248,366,209,334,173,298,119,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,104,442,72,506,42,527,34,528,39,508,46,444,77,390,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="440,106,532,84,534,89,441,111"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="439,147,541,174,539,179,438,152"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_shape.html#aa166f8dde86e627b143cba798d82a03d" title="Set position." alt="" coords="523,107,694,133"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="441,123,507,121,508,126,441,128"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="568,183,560,173,565,163,582,157,609,155,638,157,654,164,651,169,637,162,609,160,583,162,569,167,565,172,572,179"/>
+<area shape="rect" id="Node000006" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="788,181,921,208"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="701,192,773,192,773,197,701,197"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="813,183,806,173,811,163,827,157,855,155,884,157,899,164,897,169,883,162,854,160,829,162,814,167,811,172,818,179"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="758,107,951,133"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="695,117,743,117,743,123,695,123"/>
+<area shape="poly" id="edge17_Node000012_Node000012" title=" " alt="" coords="312,401,305,391,310,381,327,375,354,373,385,376,400,383,398,388,383,381,354,379,328,381,313,386,310,391,317,398"/>
+</map>

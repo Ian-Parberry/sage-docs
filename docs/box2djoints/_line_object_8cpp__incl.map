@@ -1,0 +1,15 @@
+<map id="LineObject.cpp" name="LineObject.cpp">
+<area shape="rect" id="Node000001" title="Code for the line object class CLineObject." alt="" coords="140,5,248,32"/>
+<area shape="rect" id="Node000002" href="$_line_object_8h.html" title="Interface for the line object class CLineObject." alt="" coords="80,80,174,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,34,151,70,147,67,180,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="198,80,323,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="207,31,241,67,237,70,203,34"/>
+<area shape="rect" id="Node000003" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="84,155,170,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="130,107,130,139,124,139,124,107"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="71,229,183,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="130,182,130,214,124,214,124,182"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,304,113,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="117,258,83,294,79,291,113,255"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="137,304,253,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="141,255,175,291,171,294,137,258"/>
+</map>

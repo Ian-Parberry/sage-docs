@@ -1,0 +1,37 @@
+<map id="Object.h" name="Object.h">
+<area shape="rect" id="Node000001" title="Interface for the object class CObject." alt="" coords="280,5,350,32"/>
+<area shape="rect" id="Node000002" href="$_dead_crow_object_8h.html" title="Interface for the dead crow object CDeadCrowObject." alt="" coords="30,80,163,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,39,135,82,134,77,264,34"/>
+<area shape="rect" id="Node000005" href="$_house_object_8h.html" title="Interface for the house object CHouseObject." alt="" coords="261,80,369,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="318,48,318,80,312,80,312,48"/>
+<area shape="rect" id="Node000007" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="339,229,459,256"/>
+<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="285,44,266,61,251,81,235,108,225,132,223,155,235,180,255,201,282,217,310,227,339,234,338,239,309,233,279,222,252,205,230,183,218,156,219,131,230,106,246,79,262,57,282,40"/>
+<area shape="rect" id="Node000011" href="$_object_8cpp.html" title="Code for the object class CObject." alt="" coords="530,80,615,107"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="366,32,530,77,529,83,365,37"/>
+<area shape="rect" id="Node000012" href="$_plane_object_8h.html" title="Interface for the plane object CPlaneObject." alt="" coords="403,80,507,107"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="354,37,432,77,429,82,352,42"/>
+<area shape="rect" id="Node000003" href="$_dead_crow_object_8cpp.html" title="Code for the dead crow object CDeadCrowObject." alt="" coords="23,155,170,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,122,99,154,94,154,94,122"/>
+<area shape="rect" id="Node000004" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="376,304,510,331"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="56,116,34,130,17,146,8,163,9,171,13,180,36,201,72,220,117,239,169,255,279,283,376,302,375,307,277,288,167,260,115,244,70,225,33,205,9,183,4,173,3,162,12,143,31,126,53,112"/>
+<area shape="rect" id="Node000006" href="$_house_object_8cpp.html" title="Code for the house object CHouseObject." alt="" coords="245,155,367,181"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="314,122,310,155,305,154,309,122"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="347,115,366,132,381,153,396,193,401,228,396,229,391,195,377,156,362,136,343,118"/>
+<area shape="poly" id="edge10_Node000007_Node000004" title=" " alt="" coords="417,268,438,302,433,305,412,271"/>
+<area shape="rect" id="Node000008" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="284,304,351,331"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="375,268,334,306,330,302,372,265"/>
+<area shape="rect" id="Node000009" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="442,379,524,405"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="362,335,455,376,453,380,360,340"/>
+<area shape="rect" id="Node000010" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="281,379,355,405"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="320,346,320,378,315,378,315,346"/>
+<area shape="poly" id="edge19_Node000012_Node000007" title=" " alt="" coords="448,122,426,182,407,230,402,228,421,180,443,120"/>
+<area shape="rect" id="Node000013" href="$_crow_object_8h.html" title="Interface for the crow object class CCrowObject." alt="" coords="492,155,594,181"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="484,115,530,152,526,156,480,119"/>
+<area shape="rect" id="Node000015" href="$_plane_object_8cpp.html" title="Code for the plane object CPlaneObject." alt="" coords="618,155,735,181"/>
+<area shape="poly" id="edge20_Node000012_Node000015" title=" " alt="" coords="509,109,638,151,637,157,507,114"/>
+<area shape="poly" id="edge17_Node000013_Node000004" title=" " alt="" coords="528,196,454,305,449,302,524,193"/>
+<area shape="poly" id="edge18_Node000013_Node000007" title=" " alt="" coords="506,191,426,231,423,226,503,186"/>
+<area shape="poly" id="edge16_Node000013_Node000009" title=" " alt="" coords="546,197,541,260,534,296,524,332,511,358,496,380,491,377,506,355,519,330,529,295,536,259,540,197"/>
+<area shape="rect" id="Node000014" href="$_crow_object_8cpp.html" title="Code for the crow object class CCrowObject." alt="" coords="584,229,699,256"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="574,189,626,227,623,231,571,193"/>
+</map>

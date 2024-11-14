@@ -1,0 +1,6 @@
+<map id="Sage::CRandom::srand" name="Sage::CRandom::srand">
+<area shape="rect" id="Node000001" title="Seed the random number generator." alt="" coords="239,29,397,56"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="356,16,343,10,318,8,295,10,282,15,279,20,285,27,281,30,274,21,279,11,294,5,318,3,344,5,358,12"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_random.html#a5f9d8f408ffab0a25630e8d4f529294a" title="Constructor." alt="" coords="5,29,191,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,45,191,45,191,40,223,40"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CPulley::CreateObject" name="CPulley::CreateObject">
+<area shape="rect" id="Node000001" title="Create an object." alt="" coords="175,31,327,57"/>
+<area shape="rect" id="Node000002" href="$class_c_pulley.html#a8b496f93742ca2222a6c4d685f3ee1d2" title="Create or delete elephant." alt="" coords="10,5,122,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,34,122,29,123,24,160,29"/>
+<area shape="rect" id="Node000003" href="$class_c_pulley.html#a6fa495b98bf127804b223ba74a12e969" title="Constructor." alt="" coords="5,56,127,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,59,128,64,127,58,159,54"/>
+</map>

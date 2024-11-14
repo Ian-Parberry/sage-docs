@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,46,40"/>
+<area shape="rect" id="Node000001" href="$class_sage_1_1_c_particle_desc.html" title="The particle descriptor." alt="" coords="94,5,238,48"/>
+<area shape="poly" id="edge31_Node000000_Node000001" title=" " alt="" coords="61,24,93,24,93,29,61,29"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_particle.html" title="A particle." alt="" coords="286,5,443,48"/>
+<area shape="poly" id="edge32_Node000001_Node000002" title=" " alt="" coords="254,24,285,24,285,29,254,29"/>
+</map>

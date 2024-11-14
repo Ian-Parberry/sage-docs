@@ -1,0 +1,5 @@
+<map id="Sage::CTimer::VariableTimeStepTick" name="Sage::CTimer::VariableTimeStepTick">
+<area shape="rect" id="Node000001" title="One time tick in variable timestep mode." alt="" coords="189,5,374,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_timer.html#ab24d65d62c636f7b2a09d30380cc4ef0" title="One tick per frame." alt="" coords="5,13,141,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,29,141,29,141,24,173,24"/>
+</map>

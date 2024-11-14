@@ -1,0 +1,10 @@
+<map id="CRagdoll::CRagdoll" name="CRagdoll::CRagdoll">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,31,143,57"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="194,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,32,179,27,179,33,144,37"/>
+<area shape="rect" id="Node000004" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="191,56,336,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,51,175,55,175,60,143,56"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="384,31,547,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,25,369,29,368,34,332,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="336,58,368,54,369,59,337,63"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Shapes::CCircle::PtInCircle" name="Shapes::CCircle::PtInCircle">
+<area shape="rect" id="Node000001" title="Point in circle test." alt="" coords="494,31,677,57"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_arc.html#a65f524c9e4e17ec42dc6fa4f64ee2a71" title="Collision detection." alt="" coords="232,5,446,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="478,36,446,32,447,27,479,30"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_circle.html#a8465052c0a6352328832c657b2f147dd" title="Tangents through external point." alt="" coords="250,56,428,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="479,58,429,63,428,58,478,52"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_circle.html#aead9bbd3657c5f5b9618ea400f30aed0" title="Common tangent." alt="" coords="9,31,180,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="234,61,180,56,181,50,235,56"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_circle.html#a616d43f7672951a423a4d53c616e3770" title="Common tangents." alt="" coords="5,81,184,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="234,83,185,88,184,83,234,78"/>
+</map>

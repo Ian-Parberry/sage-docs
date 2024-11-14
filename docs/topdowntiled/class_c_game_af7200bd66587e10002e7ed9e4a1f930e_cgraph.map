@@ -1,0 +1,23 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,107,148,133"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="198,56,356,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,103,206,84,207,90,133,109"/>
+<area shape="rect" id="Node000005" href="$class_c_tile_manager.html#ab0926de034d81b14f0e5e48c0d0ac342" title="Load a map." alt="" coords="196,132,359,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="149,126,181,130,180,136,148,132"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a97512c70c9395658c59e2ce9dc84cf60" title="Create new object." alt="" coords="426,5,592,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="341,53,429,33,430,38,342,58"/>
+<area shape="rect" id="Node000004" href="$class_c_tile_manager.html#a2f8a4b1266dcc6407b0bd64b3c5dd351" title="Get object descriptorss." alt="" coords="420,56,597,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="357,67,405,67,405,72,357,72"/>
+<area shape="rect" id="Node000006" href="$class_c_tile_manager.html#a6ffbbf152d3d27f59e281c0b7668e06f" title="Tile index to position." alt="" coords="407,107,610,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="359,134,391,130,392,135,360,139"/>
+<area shape="rect" id="Node000007" href="$class_c_tile_manager.html#a78142eb7f83421c0ef87fa7e4f466e9b" title="Insert object." alt="" coords="418,157,599,184"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="360,152,403,156,402,162,359,157"/>
+<area shape="rect" id="Node000008" href="$class_c_tile_manager.html#a3021ca6fb30b2e041cb63bef80a72feb" title="Make bounding boxes for walls." alt="" coords="410,208,607,251"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="313,157,408,194,426,200,424,205,406,198,311,162"/>
+<area shape="rect" id="Node000009" href="$class_c_tile_manager.html#a3cae6688a52116f4c86778fd776e9f23" title="Make bounding boxes for 1&#45;block walls." alt="" coords="658,141,855,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="590,205,659,186,660,191,591,210"/>
+<area shape="rect" id="Node000010" href="$class_c_tile_manager.html#a16aecc34eca5babed8212a6c721bd364" title="Make bounding boxes for horizontal walls." alt="" coords="658,208,855,251"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="607,227,643,227,643,232,607,232"/>
+<area shape="rect" id="Node000011" href="$class_c_tile_manager.html#ab3fe8fe47bbd2f98ecfa6cf75753beb4" title="Make bounding boxes for vertical walls." alt="" coords="658,275,855,317"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="591,249,660,267,659,273,590,254"/>
+</map>

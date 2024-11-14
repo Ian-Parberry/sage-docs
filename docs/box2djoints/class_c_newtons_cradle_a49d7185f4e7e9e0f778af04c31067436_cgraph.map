@@ -1,0 +1,5 @@
+<map id="CNewtonsCradle::Draw" name="CNewtonsCradle::Draw">
+<area shape="rect" id="Node000001" title="Draw level." alt="" coords="5,5,166,32"/>
+<area shape="rect" id="Node000002" href="$class_c_sir_isaac_newton.html#a71340497fd4c0bef0c87f89436c23888" title="Draw." alt="" coords="214,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,16,198,16,198,21,166,21"/>
+</map>

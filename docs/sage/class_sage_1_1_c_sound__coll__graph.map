@@ -1,0 +1,13 @@
+<map id="Sage::CSound" name="Sage::CSound">
+<area shape="rect" id="Node000001" title="The Sound Player." alt="" coords="339,172,446,199"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_window_desc.html" title="The window descriptor." alt="" coords="5,81,153,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,110,348,169,347,174,138,115"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_settings_manager.html" title="Settings manager." alt="" coords="177,81,344,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,115,375,169,372,174,290,119"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_settings.html" title="Settings." alt="" coords="202,5,319,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="263,47,263,81,258,81,258,47"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_component.html" title="The component accessor." alt="" coords="368,81,504,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="426,123,401,173,396,170,421,121"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_playable_sound_desc.html" title="The playable sound descriptor." alt="" coords="528,81,715,108"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="576,117,426,174,424,169,574,112"/>
+</map>

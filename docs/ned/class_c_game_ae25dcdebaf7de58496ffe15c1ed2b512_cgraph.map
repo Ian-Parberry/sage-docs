@@ -1,0 +1,5 @@
+<map id="CGame::CreateCrows" name="CGame::CreateCrows">
+<area shape="rect" id="Node000001" title="Create crows." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a74b1cc8bc4e0d525dccae0d967c81074" title="Create new object." alt="" coords="205,5,371,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,16,189,16,189,21,157,21"/>
+</map>

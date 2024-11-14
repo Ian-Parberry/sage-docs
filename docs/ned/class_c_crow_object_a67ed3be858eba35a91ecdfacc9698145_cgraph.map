@@ -1,0 +1,17 @@
+<map id="CCrowObject::Think" name="CCrowObject::Think">
+<area shape="rect" id="Node000001" title="Artificial intelligence." alt="" coords="5,81,146,108"/>
+<area shape="rect" id="Node000002" href="$class_c_crow_object.html#aefc639111c29fee8d02b06e66699d003" title="Ai for avoiding plane." alt="" coords="194,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,78,193,42,213,35,214,40,195,46,107,83"/>
+<area shape="rect" id="Node000005" href="$class_c_common.html#a0c01cce335a8dec3058c19f5f8e48dec" title="Wrap horizontal distance." alt="" coords="619,81,742,108"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="146,92,604,92,604,97,146,97"/>
+<area shape="rect" id="Node000006" href="$class_c_crow_object.html#a584f8df1134f7a7efb6d2768757b5f21" title="Ai for cruising along." alt="" coords="195,56,363,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="146,83,179,79,179,84,146,89"/>
+<area shape="rect" id="Node000007" href="$class_c_object.html#a1b52d807212ad393bdb1b0c1aa3c4f2b" title="Get position." alt="" coords="218,157,340,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="115,106,227,149,225,154,113,111"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d" title="Get velocity." alt="" coords="434,5,550,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,16,418,16,418,21,364,21"/>
+<area shape="rect" id="Node000004" href="$class_c_crow_object.html#a6d1b7679437e8d5d0a84d5e0bdb420cc" title="Change state." alt="" coords="412,56,571,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="339,30,418,49,417,54,338,35"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="572,77,604,82,603,87,572,83"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="363,67,397,67,397,72,363,72"/>
+</map>

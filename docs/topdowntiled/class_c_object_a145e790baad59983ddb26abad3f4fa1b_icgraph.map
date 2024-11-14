@@ -1,0 +1,19 @@
+<map id="CObject::GetPos" name="CObject::GetPos">
+<area shape="rect" id="Node000001" title="Get position." alt="" coords="550,107,672,133"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#a45e169dc2c90f2ccc7544f4aa738806e" title="Is close to player." alt="" coords="343,5,502,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="580,99,544,72,501,46,474,35,476,30,504,42,547,67,583,95"/>
+<area shape="rect" id="Node000003" href="$class_c_guard.html#a41e5204843c2ee44f37f2f55dbbe84e9" title="Draw." alt="" coords="163,120,268,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="535,125,268,134,268,129,535,120"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a7f54d0f4d35f427ddfd5a4442c6d885d" title="Make camera follow player character." alt="" coords="344,56,502,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="543,105,474,86,476,81,545,99"/>
+<area shape="rect" id="Node000007" href="$class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279" title="Move." alt="" coords="162,196,268,223"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="586,146,549,175,503,198,442,214,378,220,319,221,269,218,269,213,319,216,378,215,441,208,501,194,546,170,583,142"/>
+<area shape="rect" id="Node000008" href="$class_c_tile_manager.html#a78c79d883bca8b12c5cf47344344ee44" title="Player visibility test." alt="" coords="348,157,497,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="545,141,476,159,474,154,543,135"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,56,295,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,72,295,72,295,67,328,67"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,72,88,72,88,67,120,67"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="332,157,268,145,269,140,333,152"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="333,190,269,202,268,197,332,185"/>
+</map>

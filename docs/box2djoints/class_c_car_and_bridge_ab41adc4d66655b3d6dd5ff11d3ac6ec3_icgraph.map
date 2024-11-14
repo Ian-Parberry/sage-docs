@@ -1,0 +1,7 @@
+<map id="CCarAndBridge::CreateRampUp" name="CCarAndBridge::CreateRampUp">
+<area shape="rect" id="Node000001" title="Create an up ramp." alt="" coords="509,5,720,32"/>
+<area shape="rect" id="Node000002" href="$class_c_car_and_bridge.html#a96b7a38bf7cfe00da2b5317fd3cf2f82" title="Create bridge from platforms &amp; ramps." alt="" coords="265,5,461,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,21,461,21,461,16,493,16"/>
+<area shape="rect" id="Node000003" href="$class_c_car_and_bridge.html#a7a4815dce429f6b16c61c2d1c9125be6" title="Constructor." alt="" coords="5,5,217,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="249,21,217,21,217,16,249,16"/>
+</map>

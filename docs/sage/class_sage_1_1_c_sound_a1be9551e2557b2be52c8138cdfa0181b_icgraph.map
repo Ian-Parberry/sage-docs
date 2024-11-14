@@ -1,0 +1,12 @@
+<map id="Sage::CSound::Play" name="Sage::CSound::Play">
+<area shape="rect" id="Node000001" title="Play sound." alt="" coords="196,81,336,108"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="298,68,287,62,266,60,246,62,236,67,233,72,238,79,233,82,228,73,232,63,245,57,266,55,288,57,301,64"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a1a8beeb4e4fb72c2ba4908224e976d19" title="Loop a sound." alt="" coords="5,5,148,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,77,147,46,117,35,118,30,149,42,221,72"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sound.html#a66643b51e382ebb65188b279fcbdec5a" title="Play sound." alt="" coords="6,56,147,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="180,86,147,81,148,76,181,81"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sound.html#ac9f9d8cd94e9418079c09c0fd2c2b69c" title="Play a randomly varied sound." alt="" coords="6,107,147,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="181,109,148,113,147,108,180,103"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sound.html#a2b3522a7cab6678044df4415eb668f56" title="Play a randomly varied sound." alt="" coords="6,157,147,184"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="221,117,149,148,118,159,117,154,147,143,219,112"/>
+</map>

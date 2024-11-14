@@ -1,0 +1,9 @@
+<map id="Sage::CSpriteRenderer::CreateIndexBuffer" name="Sage::CSpriteRenderer::CreateIndexBuffer">
+<area shape="rect" id="Node000001" title="Create index buffer." alt="" coords="414,39,570,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a355d82ddc363143d90f5f75ed45bb0d6" title="Initialize." alt="" coords="210,39,366,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="398,63,366,63,366,57,398,57"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#a14930c07e0b35aa4112d9353557f96c2" title="Load sprites." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,47,161,42,162,37,194,42"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#adc58cbeb01e943290082ba84d2e54704" title="Load sprites multithreaded." alt="" coords="5,72,162,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="194,78,162,83,161,78,194,73"/>
+</map>

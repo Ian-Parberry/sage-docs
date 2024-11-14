@@ -1,0 +1,8 @@
+<map id="Shapes::CCircle::Tangents" name="Shapes::CCircle::Tangents">
+<area shape="rect" id="Node000001" title="Tangents through external point." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="463,5,635,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,16,448,16,448,21,184,21"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_circle.html#a6c38d58773ad3ff94b635483769b3d5a" title="Point in circle test." alt="" coords="232,31,415,57"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,26,216,29,216,35,184,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="415,31,447,27,448,33,416,36"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CBox2DRenderer::Drawb2Chain" name="CBox2DRenderer::Drawb2Chain">
+<area shape="rect" id="Node000001" title="Draw Box2D chain shape." alt="" coords="523,5,734,32"/>
+<area shape="rect" id="Node000002" href="$class_c_box2_d_renderer.html#ac38bbdd8f79c713ed9d8c8670dceb2e8" title="Draw Box2D shape." alt="" coords="261,5,475,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="508,21,476,21,476,16,508,16"/>
+<area shape="rect" id="Node000003" href="$class_c_box2_d_renderer.html#a6ad6b6804f284b9faf6fed3f22c06bbf" title="Draw Box2D body." alt="" coords="5,5,213,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,21,213,21,213,16,245,16"/>
+</map>

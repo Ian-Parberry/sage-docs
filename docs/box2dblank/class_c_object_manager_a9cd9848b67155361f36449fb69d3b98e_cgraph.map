@@ -1,0 +1,5 @@
+<map id="CObjectManager::CreateWorldEdges" name="CObjectManager::CreateWorldEdges">
+<area shape="rect" id="Node000001" title="Create the edges of the world." alt="" coords="5,5,205,48"/>
+<area shape="rect" id="Node000002" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="253,13,325,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,24,237,24,237,29,205,29"/>
+</map>

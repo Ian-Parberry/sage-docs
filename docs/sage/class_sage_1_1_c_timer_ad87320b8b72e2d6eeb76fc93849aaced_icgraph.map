@@ -1,0 +1,5 @@
+<map id="Sage::CTimer::SecondsToTicks" name="Sage::CTimer::SecondsToTicks">
+<area shape="rect" id="Node000001" title="Convert seconds to ticks." alt="" coords="250,5,457,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_timer.html#a99a1a189f1ec478e735016576bff268b" title="Set desired seconds per frame." alt="" coords="5,5,202,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,21,202,21,202,16,234,16"/>
+</map>

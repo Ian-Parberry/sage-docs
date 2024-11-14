@@ -1,0 +1,28 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,224,148,251"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="196,144,399,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,221,243,174,245,179,117,226"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006" title="Create shapes for world edges." alt="" coords="453,296,645,339"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="149,247,438,296,437,302,148,252"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="699,170,887,196"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,142,329,116,361,84,401,52,446,29,503,10,550,3,597,9,652,29,694,54,730,88,758,124,779,155,775,158,754,127,726,92,691,59,650,33,596,14,550,8,504,15,448,34,404,57,365,88,333,120,311,146"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a8ec3facaf9550165947643f51e5265c7" title="Make a bollard." alt="" coords="450,43,649,70"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="320,142,376,111,446,79,468,72,470,77,448,84,379,116,323,146"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#ae1c594c6824929eb9ba84f336045ae3d" title="Make a bumper." alt="" coords="447,94,651,120"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="367,141,464,121,465,127,368,146"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#abaa1d5ffeaee29261db5eae35a03487c" title="Make a flipper." alt="" coords="450,144,648,171"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="400,155,434,155,434,160,400,160"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a3c7fbcf613ac5cc2836d5e789ad4be20" title="Make a thing (left)." alt="" coords="450,195,648,222"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="368,169,465,189,464,194,367,174"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a08f704845cf30b46b8a59a3ce49d5419" title="Make a thing (right)." alt="" coords="448,246,650,272"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="323,169,379,200,448,231,470,239,468,244,446,236,376,205,320,174"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="935,223,1131,250"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="857,194,955,217,954,222,855,200"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="622,68,652,79,716,117,767,157,763,161,713,122,650,84,620,73"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="611,118,652,130,743,161,741,166,651,135,609,124"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="649,165,684,169,684,174,649,171"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="649,195,684,192,684,197,649,201"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="609,243,651,231,741,200,743,205,652,236,611,248"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="624,293,650,282,712,244,763,205,766,209,715,248,653,287,626,298"/>
+<area shape="poly" id="edge16_Node000010_Node000004" title=" " alt="" coords="645,299,934,250,935,255,646,304"/>
+</map>

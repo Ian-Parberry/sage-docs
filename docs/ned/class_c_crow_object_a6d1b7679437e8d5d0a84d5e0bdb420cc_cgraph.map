@@ -1,0 +1,5 @@
+<map id="CCrowObject::SetState" name="CCrowObject::SetState">
+<area shape="rect" id="Node000001" title="Change state." alt="" coords="5,5,165,32"/>
+<area shape="rect" id="Node000002" href="$class_c_common.html#a0c01cce335a8dec3058c19f5f8e48dec" title="Wrap horizontal distance." alt="" coords="213,5,335,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+</map>

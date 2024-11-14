@@ -1,0 +1,17 @@
+<map id="CRenderer" name="CRenderer">
+<area shape="rect" id="Node000001" title="The renderer." alt="" coords="306,96,390,123"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="307,187,392,213"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="309,133,296,147,294,154,297,161,307,174,321,184,317,188,303,178,292,164,289,154,291,145,305,130"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="208,5,347,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="299,42,340,94,336,97,295,46"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="373,174,380,161,379,148,362,125,366,122,384,146,385,162,378,176"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html" title="The object manager." alt="" coords="180,277,300,304"/>
+<area shape="poly" id="edge7_Node000004_Node000003" title=" " alt="" coords="321,225,302,239,255,279,252,275,298,235,317,221"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="276,267,298,251,337,212,341,216,302,255,279,271"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,187,142,213"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="112,219,218,274,215,279,109,223"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="166,187,283,213"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="232,228,241,276,235,277,227,229"/>
+<area shape="rect" id="Node000007" href="$class_c_mesh_desc.html" title="Mesh descriptor." alt="" coords="372,5,466,32"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="402,46,360,97,356,94,397,42"/>
+</map>

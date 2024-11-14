@@ -1,0 +1,17 @@
+<map id="CObjectManager::RotateKinematic" name="CObjectManager::RotateKinematic">
+<area shape="rect" id="Node000001" title="Start or stop kinematic shapes rotating." alt="" coords="1013,31,1237,57"/>
+<area shape="rect" id="Node000002" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="790,5,936,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="997,34,937,28,937,23,998,29"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="762,56,965,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="998,59,966,62,965,57,997,54"/>
+<area shape="rect" id="Node000003" href="$class_c_dialog_box.html#af607613321e58a633ee6c9f222f18b4b" title="Constructor." alt="" coords="544,5,714,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="775,21,714,21,714,16,775,16"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="558,56,700,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="746,72,701,72,701,67,746,67"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="343,56,496,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="543,72,497,72,497,67,543,67"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,56,295,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="328,72,295,72,295,67,328,67"/>
+<area shape="rect" id="Node000008" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="120,72,88,72,88,67,120,67"/>
+</map>

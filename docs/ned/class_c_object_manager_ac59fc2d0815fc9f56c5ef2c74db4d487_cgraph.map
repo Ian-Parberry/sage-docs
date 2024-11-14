@@ -1,0 +1,5 @@
+<map id="CObjectManager::GetRenderList" name="CObjectManager::GetRenderList">
+<area shape="rect" id="Node000001" title="Get render list." alt="" coords="5,5,217,32"/>
+<area shape="rect" id="Node000002" href="$class_c_renderer.html#a8b83cca710d470aaacf7a0a8e8e8bad1" title="Get camera position." alt="" coords="265,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,16,249,16,249,21,217,21"/>
+</map>

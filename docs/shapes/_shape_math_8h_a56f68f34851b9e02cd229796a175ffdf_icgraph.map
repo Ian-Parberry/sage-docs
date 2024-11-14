@@ -1,0 +1,42 @@
+<map id="Shapes::Normalize" name="Shapes::Normalize">
+<area shape="rect" id="Node000001" title="Normalize a vector, ie. make it unit length." alt="" coords="961,281,1093,308"/>
+<area shape="poly" id="edge8_Node000001_Node000001" title=" " alt="" coords="1062,268,1050,262,1027,260,1005,262,994,267,991,272,996,279,992,282,986,273,990,263,1004,257,1027,255,1051,257,1064,264"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_circle.html#a8d4f1b7f446170f46a55a054daa042ee" title="Closest point on circle." alt="" coords="729,64,913,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1014,268,999,232,976,189,947,146,911,109,884,94,886,89,914,105,951,142,981,186,1003,229,1018,266"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_point.html#a7c238672005132e54bf1d4cada2db30d" title="Collision detection." alt="" coords="735,119,907,161"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="993,274,850,164,853,160,997,269"/>
+<area shape="rect" id="Node000007" href="$_shape_math_8h.html#afb56c106f4e788b4dacb03165c3a29eb" title="Compute parallel component of vector." alt="" coords="729,248,913,275"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="945,284,907,278,908,273,946,279"/>
+<area shape="rect" id="Node000011" href="$class_shapes_1_1_c_line_seg_desc.html#aaa00f6fe5262b40fd6e5c44afb935f2c" title=" " alt="" coords="740,307,902,349"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="945,310,903,318,902,312,945,305"/>
+<area shape="rect" id="Node000013" href="$class_shapes_1_1_c_circle.html#a616d43f7672951a423a4d53c616e3770" title="Common tangents." alt="" coords="485,373,663,400"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="997,320,959,344,914,364,850,379,784,389,664,394,664,388,783,383,849,374,912,359,956,339,994,315"/>
+<area shape="rect" id="Node000014" href="$class_shapes_1_1_c_line_seg.html#a9d7855e89e954f47465461997da75dee" title="Update other properties from the end points." alt="" coords="731,453,911,480"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="1005,321,964,363,914,407,847,455,843,451,911,403,960,359,1001,318"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_arc.html#a65f524c9e4e17ec42dc6fa4f64ee2a71" title="Collision detection." alt="" coords="467,5,681,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="747,62,681,47,633,35,634,30,682,41,748,57"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_circle.html#ac672d4f951692521c85862be7cd1c713" title="Collision detection." alt="" coords="486,56,662,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="714,80,662,80,662,75,714,75"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="740,113,728,105,712,89,704,74,695,60,680,46,656,35,659,30,683,42,699,56,708,71,717,86,731,101,743,109"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="719,117,660,102,662,97,721,112"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_line_seg.html#aed56df99acf61d2fca2dc98b1b55cccb" title="Collision detection." alt="" coords="480,123,668,165"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="720,144,669,145,669,140,720,139"/>
+<area shape="poly" id="edge15_Node000007_Node000007" title=" " alt="" coords="856,235,844,229,821,227,799,229,788,233,785,239,790,246,786,249,780,239,784,230,798,223,821,221,846,224,859,230"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_dynamic_circle.html#a3f2e8e14c8c28cc4629a4a31ae53595b" title="Collision response for kinematic shape." alt="" coords="223,181,419,224"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="755,246,681,231,544,215,419,208,420,202,545,210,682,225,757,241"/>
+<area shape="rect" id="Node000010" href="$class_shapes_1_1_c_dynamic_circle.html#a463cfe5f078bb462a1774d3acd03093f" title="Collision response for static shape." alt="" coords="488,240,660,283"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="713,264,661,264,661,259,713,259"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_dynamic_circle.html#a9f0b02a5d076cd8900ef3b25e28f5ddc" title="Collision response." alt="" coords="5,211,175,253"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="207,220,175,224,175,219,207,214"/>
+<area shape="poly" id="edge14_Node000010_Node000008" title=" " alt="" coords="472,241,415,227,416,222,473,235"/>
+<area shape="poly" id="edge13_Node000010_Node000009" title=" " alt="" coords="473,258,175,240,175,234,473,253"/>
+<area shape="rect" id="Node000012" href="$class_shapes_1_1_c_line_seg_desc.html#ae48eac1e080a3bd32320d52ac2d40756" title="Constructor." alt="" coords="494,307,655,349"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="725,331,655,331,655,325,725,325"/>
+<area shape="poly" id="edge18_Node000011_Node000013" title=" " alt="" coords="726,353,682,364,634,375,633,370,681,359,725,348"/>
+<area shape="rect" id="Node000015" href="$class_shapes_1_1_c_line_seg.html#aa2af99a98735c90a1437b70cbdafe12d" title="Constructor." alt="" coords="476,424,672,451"/>
+<area shape="poly" id="edge21_Node000014_Node000015" title=" " alt="" coords="715,457,672,452,673,446,716,452"/>
+<area shape="rect" id="Node000016" href="$class_shapes_1_1_c_kinematic_line_seg.html#a79556eedb3fe746fde97c404cf77c2cb" title="Reset orientation." alt="" coords="480,475,668,517"/>
+<area shape="poly" id="edge22_Node000014_Node000016" title=" " alt="" coords="716,482,669,487,669,482,715,477"/>
+<area shape="rect" id="Node000017" href="$class_shapes_1_1_c_kinematic_line_seg.html#a3b4eff84ef24b4b78f898f44064ed967" title="Rotate." alt="" coords="480,541,668,584"/>
+<area shape="poly" id="edge23_Node000014_Node000017" title=" " alt="" coords="779,490,682,532,650,543,648,538,680,527,777,485"/>
+</map>

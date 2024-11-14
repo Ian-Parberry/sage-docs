@@ -1,0 +1,36 @@
+<map id="ObjectManager.h" name="ObjectManager.h">
+<area shape="rect" id="Node000001" title="Interface for CObjectManager." alt="" coords="182,5,302,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,63,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,35,78,80,76,74,205,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="36,155,165,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,34,171,82,120,144,116,140,167,78,223,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="190,155,300,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="222,35,204,49,187,66,177,85,179,106,193,126,212,144,208,148,189,130,174,108,172,84,183,63,200,45,219,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="189,80,295,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="245,33,245,64,239,64,239,33"/>
+<area shape="rect" id="Node000006" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="512,80,582,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="296,30,497,77,496,83,295,35"/>
+<area shape="rect" id="Node000012" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="374,155,459,181"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="304,26,356,44,381,59,403,78,417,108,421,139,416,140,412,110,399,82,378,63,354,49,302,31"/>
+<area shape="rect" id="Node000014" href="$_stroop_8h.html" title="Interface for the John Ridley Stroop class CStroop." alt="" coords="319,80,389,107"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="263,30,323,69,320,74,260,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="534,155,662,181"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="558,106,583,141,579,144,554,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="686,155,811,181"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="583,105,700,146,698,151,582,110"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="682,304,799,331"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="583,94,645,100,718,111,784,128,809,139,825,153,835,171,837,191,833,210,824,230,798,266,769,296,765,292,794,263,820,227,828,209,832,190,830,173,821,156,806,144,782,133,717,117,644,106,583,100"/>
+<area shape="rect" id="Node000010" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="440,229,553,256"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="544,108,525,156,506,215,501,214,519,154,539,106"/>
+<area shape="poly" id="edge12_Node000006_Node000012" title=" " alt="" coords="526,110,454,149,452,144,523,105"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="540,254,684,297,683,302,538,259"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="443,304,550,331"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="499,257,499,288,494,288,494,257"/>
+<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="432,180,474,217,470,221,429,184"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="270,229,416,256"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="406,184,369,220,365,216,402,180"/>
+<area shape="poly" id="edge19_Node000014_Node000003" title=" " alt="" coords="319,107,160,152,159,147,318,102"/>
+<area shape="poly" id="edge18_Node000014_Node000004" title=" " alt="" coords="336,109,278,148,275,144,333,105"/>
+<area shape="poly" id="edge17_Node000014_Node000010" title=" " alt="" coords="354,107,352,143,356,162,364,180,392,206,427,223,424,228,389,210,360,183,351,164,347,143,349,107"/>
+<area shape="poly" id="edge20_Node000014_Node000012" title=" " alt="" coords="367,105,398,141,394,145,363,109"/>
+</map>

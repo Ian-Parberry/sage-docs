@@ -1,0 +1,12 @@
+<map id="CObject::CObject" name="CObject::CObject">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,56,131,83"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a3fe9a61717f053055ef0c33e1882b884" title="Compute convex hull." alt="" coords="179,5,377,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,53,204,34,205,39,127,58"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a285991d28b64500af42300aadb7fac3f" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="486,56,559,83"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="131,67,471,67,471,72,131,72"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html#a66e1f431af58e6f988a327491827c641" title="Get model extents." alt="" coords="199,107,357,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,81,205,100,204,105,126,86"/>
+<area shape="rect" id="Node000003" href="$class_c_renderer.html#aa7aa4d8c34a1e99cef68f28c385674af" title="Get mesh descriptor." alt="" coords="425,5,620,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,16,409,16,409,21,378,21"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,30,472,56,471,62,345,35"/>
+</map>

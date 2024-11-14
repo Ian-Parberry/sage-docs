@@ -1,0 +1,93 @@
+<map id="CGame::ProcessFrame" name="CGame::ProcessFrame">
+<area shape="rect" id="Node000001" title="Process an animation frame." alt="" coords="5,661,165,688"/>
+<area shape="rect" id="Node000002" href="$class_c_renderer.html#a8b83cca710d470aaacf7a0a8e8e8bad1" title="Get camera position." alt="" coords="731,53,914,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,660,119,561,149,487,187,404,236,318,295,236,329,198,366,162,405,131,448,103,513,75,583,60,652,53,716,53,716,59,652,59,584,65,515,80,450,108,408,135,369,166,333,201,300,239,241,321,192,406,153,489,124,563,92,662"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#a1b52d807212ad393bdb1b0c1aa3c4f2b" title="Get position." alt="" coords="246,737,368,764"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,686,214,723,237,730,235,735,212,728,117,691"/>
+<area shape="rect" id="Node000004" href="$class_c_renderer.html#ab88b063a19342f57474c61f21ebafa64" title="Test if follow camera." alt="" coords="213,788,400,815"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,687,149,730,180,753,214,774,227,780,225,785,211,778,177,758,145,734,98,691"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="220,433,394,460"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="98,659,280,470,284,473,102,663"/>
+<area shape="rect" id="Node000016" href="$class_c_renderer.html#ac5dc2aec05d9eaa1da9d12f566d9d8e0" title="Set camera position." alt="" coords="977,104,1158,131"/>
+<area shape="poly" id="edge54_Node000001_Node000016" title=" " alt="" coords="84,661,91,590,110,478,126,415,148,350,176,287,210,229,262,164,312,121,370,89,448,59,577,19,631,8,682,3,734,4,789,11,921,39,953,49,984,63,1036,93,1033,97,981,68,951,54,920,44,788,16,734,10,683,9,632,13,578,24,450,64,372,94,315,125,266,168,215,232,180,290,153,352,131,416,115,479,96,590,90,661"/>
+<area shape="rect" id="Node000031" href="$class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="227,839,386,865"/>
+<area shape="poly" id="edge44_Node000001_Node000031" title=" " alt="" coords="96,687,140,753,174,792,214,825,223,830,221,835,211,829,170,796,136,757,92,690"/>
+<area shape="rect" id="Node000032" href="$class_c_game.html#ad92a74136e76ce02a0d25f0287ba462f" title="Process game state." alt="" coords="213,687,401,713"/>
+<area shape="poly" id="edge45_Node000001_Node000032" title=" " alt="" coords="165,681,198,685,197,690,165,687"/>
+<area shape="rect" id="Node000034" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="230,636,384,663"/>
+<area shape="poly" id="edge48_Node000001_Node000034" title=" " alt="" coords="165,663,214,657,215,663,165,668"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="492,687,634,713"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="317,459,377,572,416,634,434,657,451,673,478,686,475,691,447,677,430,661,412,637,372,575,312,461"/>
+<area shape="rect" id="Node000018" href="$class_c_plane_object.html#a42bdd5cd2cb87fd9046f7a925c6aa243" title="Set velocity." alt="" coords="993,560,1142,587"/>
+<area shape="poly" id="edge43_Node000005_Node000018" title=" " alt="" coords="339,458,678,622,701,636,725,647,780,661,824,668,868,664,919,647,935,637,943,624,952,610,967,597,979,591,981,595,970,601,956,613,948,627,938,640,922,652,869,670,824,673,779,666,723,652,698,641,675,626,337,463"/>
+<area shape="rect" id="Node000019" href="$class_c_game.html#a2d43ed0ab95144c88b81fe1bc79beeea" title="Change draw mode." alt="" coords="472,180,654,207"/>
+<area shape="poly" id="edge23_Node000005_Node000019" title=" " alt="" coords="319,431,447,300,534,216,538,219,451,303,323,435"/>
+<area shape="rect" id="Node000023" href="$class_c_game.html#a0d4ae530908e3f6686f67ea7b75fb2e1" title="Fire the plane&#39;s gun." alt="" coords="502,459,623,485"/>
+<area shape="poly" id="edge29_Node000005_Node000023" title=" " alt="" coords="395,453,487,462,487,467,394,458"/>
+<area shape="rect" id="Node000025" href="$class_c_object.html#a6f1b5884c14c3b6881c932ecd522065c" title="Get roll angle." alt="" coords="762,307,883,333"/>
+<area shape="poly" id="edge39_Node000005_Node000025" title=" " alt="" coords="325,431,378,396,412,378,448,363,526,342,606,329,681,321,746,318,747,323,682,327,607,334,527,347,450,368,415,382,381,400,328,435"/>
+<area shape="rect" id="Node000026" href="$class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d" title="Get velocity." alt="" coords="764,357,881,384"/>
+<area shape="poly" id="edge40_Node000005_Node000026" title=" " alt="" coords="338,430,389,411,448,394,528,380,609,372,749,367,749,372,609,378,529,386,450,399,391,416,340,435"/>
+<area shape="rect" id="Node000030" href="$class_c_plane_object.html#a4c357c7a9bab430201d501676693e18f" title="Rotate around Z&#45;axis." alt="" coords="486,408,639,435"/>
+<area shape="poly" id="edge41_Node000005_Node000030" title=" " alt="" coords="394,435,470,428,471,433,395,441"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear." alt="" coords="743,813,902,840"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="635,705,657,712,678,723,695,742,703,762,710,781,726,799,733,804,730,809,723,803,706,784,698,764,691,745,675,728,655,717,633,710"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="743,763,902,789"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="634,711,677,723,725,742,764,755,763,760,723,747,676,728,633,717"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a74b1cc8bc4e0d525dccae0d967c81074" title="Create new object." alt="" coords="1231,687,1397,713"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="901,759,968,748,1215,711,1216,716,969,753,902,765"/>
+<area shape="rect" id="Node000010" href="$class_c_game.html#a72b2cd322570c0b1a3aecd036de1d1a3" title="Create clouds." alt="" coords="990,611,1144,637"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="877,760,919,742,1037,645,1041,649,922,746,879,765"/>
+<area shape="rect" id="Node000012" href="$class_c_game.html#ae25dcdebaf7de58496ffe15c1ed2b512" title="Create crows." alt="" coords="992,813,1143,840"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="891,787,985,807,984,812,890,793"/>
+<area shape="rect" id="Node000013" href="$class_c_game.html#aaf9fdfa7f662c6e4ba437a5d174ec4f9" title="Create fence." alt="" coords="993,915,1142,941"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="903,788,922,799,934,812,941,825,947,852,953,877,959,889,970,901,980,908,977,912,967,905,955,892,948,879,942,853,936,827,930,815,919,804,901,792"/>
+<area shape="rect" id="Node000014" href="$class_c_object_manager.html#ada6461972d9c863a3fa7cdfb95bf7e32" title="Create new object." alt="" coords="1214,915,1414,941"/>
+<area shape="poly" id="edge16_Node000008_Node000014" title=" " alt="" coords="904,787,922,800,937,819,944,839,945,880,947,918,955,935,970,951,1005,971,1044,982,1085,985,1126,983,1204,967,1268,945,1270,950,1206,973,1126,989,1084,991,1043,987,1003,976,967,956,950,938,942,920,940,880,939,840,933,822,919,803,901,791"/>
+<area shape="rect" id="Node000015" href="$class_c_game.html#a5c27f91b50c6044582cb1ae9b9d0fcf8" title="Create trees." alt="" coords="994,864,1140,891"/>
+<area shape="poly" id="edge17_Node000008_Node000015" title=" " alt="" coords="897,788,922,799,938,812,947,825,956,838,970,850,981,856,979,860,967,854,952,842,942,828,934,816,919,804,894,792"/>
+<area shape="poly" id="edge19_Node000008_Node000016" title=" " alt="" coords="835,760,876,713,899,682,918,648,946,565,986,418,1056,145,1062,146,991,419,951,566,923,651,903,685,881,716,840,764"/>
+<area shape="rect" id="Node000017" href="$class_c_object.html#affd97d1cc0cc4a24c7dcc3de37dfdcfe" title="Set roll speed." alt="" coords="990,763,1145,789"/>
+<area shape="poly" id="edge20_Node000008_Node000017" title=" " alt="" coords="902,773,974,773,974,779,902,779"/>
+<area shape="poly" id="edge21_Node000008_Node000018" title=" " alt="" coords="892,760,919,742,932,725,939,707,941,671,944,634,952,615,967,597,978,589,981,593,971,601,957,618,950,635,947,671,944,708,937,727,922,746,894,764"/>
+<area shape="poly" id="edge10_Node000010_Node000009" title=" " alt="" coords="1114,636,1254,679,1253,684,1113,641"/>
+<area shape="rect" id="Node000011" href="$class_c_object.html#a5d9c7d58fd4a3e81c285a52f8f32c034" title="Set velocity." alt="" coords="1256,560,1372,587"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1135,608,1241,586,1242,591,1137,613"/>
+<area shape="poly" id="edge13_Node000012_Node000009" title=" " alt="" coords="1134,810,1165,799,1230,761,1284,722,1287,726,1233,766,1167,804,1136,815"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="1143,925,1198,925,1198,931,1143,931"/>
+<area shape="poly" id="edge18_Node000015_Node000014" title=" " alt="" coords="1137,889,1231,909,1230,914,1135,894"/>
+<area shape="poly" id="edge22_Node000018_Node000011" title=" " alt="" coords="1142,571,1241,571,1241,576,1142,576"/>
+<area shape="poly" id="edge24_Node000019_Node000002" title=" " alt="" coords="625,177,651,167,675,154,689,140,698,126,707,111,723,97,747,84,749,88,726,101,711,115,703,129,694,144,678,158,653,172,627,182"/>
+<area shape="poly" id="edge26_Node000019_Node000016" title=" " alt="" coords="605,177,724,140,846,124,961,116,961,122,847,129,725,145,607,182"/>
+<area shape="rect" id="Node000020" href="$class_c_renderer.html#a8d5a2f330a505f548ffad6b5f63e5273" title="Get camera yaw." alt="" coords="730,256,915,283"/>
+<area shape="poly" id="edge25_Node000019_Node000020" title=" " alt="" coords="607,205,725,242,752,249,751,254,724,247,605,210"/>
+<area shape="rect" id="Node000021" href="$class_c_renderer.html#a931bc2ab8d5c5e9e52dea0ce5872f26d" title="Set camera yaw." alt="" coords="731,155,914,181"/>
+<area shape="poly" id="edge27_Node000019_Node000021" title=" " alt="" coords="654,182,715,176,715,181,655,187"/>
+<area shape="rect" id="Node000022" href="$class_c_renderer.html#acbb28a9177b5bacc0763598d19f87eef" title="Set/unset follow camera." alt="" coords="724,205,921,232"/>
+<area shape="poly" id="edge28_Node000019_Node000022" title=" " alt="" coords="655,200,709,205,709,210,654,205"/>
+<area shape="poly" id="edge30_Node000023_Node000009" title=" " alt="" coords="574,485,595,519,629,565,673,611,698,631,725,647,764,661,817,672,947,687,1090,695,1216,698,1215,703,1090,700,947,693,816,677,763,666,723,652,695,635,669,615,625,568,591,522,569,487"/>
+<area shape="poly" id="edge38_Node000023_Node000011" title=" " alt="" coords="623,464,727,457,863,457,1015,467,1092,478,1167,495,1229,519,1282,549,1279,554,1227,524,1165,500,1091,484,1015,472,863,462,727,463,624,469"/>
+<area shape="rect" id="Node000024" href="$class_c_plane_object.html#a9f2c61a8c9ad3fcd54ceaad0c7ffe655" title="Get muzzle position and direction." alt="" coords="969,509,1166,536"/>
+<area shape="poly" id="edge31_Node000023_Node000024" title=" " alt="" coords="586,484,647,517,685,533,725,546,796,555,869,554,937,547,996,537,997,542,938,553,869,560,796,560,724,551,683,538,645,522,584,488"/>
+<area shape="poly" id="edge32_Node000023_Node000025" title=" " alt="" coords="623,466,650,459,675,445,686,433,692,421,698,396,704,369,711,356,723,343,746,330,749,334,726,348,715,359,709,371,703,397,697,423,690,436,678,449,652,463,624,471"/>
+<area shape="poly" id="edge33_Node000023_Node000026" title=" " alt="" coords="622,463,649,456,675,445,690,433,698,420,707,407,723,394,748,382,750,387,726,398,711,410,703,423,693,436,678,449,651,461,624,468"/>
+<area shape="rect" id="Node000027" href="$class_c_plane_object.html#a10dce20bcd796b1c21856af638bdcb7e" title="Gun fire particle effects." alt="" coords="737,509,908,536"/>
+<area shape="poly" id="edge34_Node000023_Node000027" title=" " alt="" coords="624,481,736,503,735,509,622,486"/>
+<area shape="rect" id="Node000028" href="$class_c_object.html#a47b5f7fd259b2f849901e7b1c906f36e" title="Set lifetime." alt="" coords="749,611,896,637"/>
+<area shape="poly" id="edge36_Node000023_Node000028" title=" " alt="" coords="581,484,641,535,682,564,726,590,755,603,753,608,723,594,679,568,638,539,577,488"/>
+<area shape="rect" id="Node000029" href="$class_c_object.html#afaeba0c3c84e3b49e37a014807c3ba45" title="Set roll angle." alt="" coords="762,408,883,435"/>
+<area shape="poly" id="edge37_Node000023_Node000029" title=" " alt="" coords="622,458,747,433,748,439,624,463"/>
+<area shape="poly" id="edge35_Node000027_Node000024" title=" " alt="" coords="909,520,953,520,953,525,909,525"/>
+<area shape="poly" id="edge42_Node000030_Node000029" title=" " alt="" coords="640,419,747,419,747,424,640,424"/>
+<area shape="poly" id="edge46_Node000032_Node000006" title=" " alt="" coords="401,697,476,697,476,703,401,703"/>
+<area shape="rect" id="Node000033" href="$class_c_object_manager.html#a8dd4d3a87dccfe7b81de1f95430f8e63" title=" " alt="" coords="456,788,670,815"/>
+<area shape="poly" id="edge47_Node000032_Node000033" title=" " alt="" coords="377,712,402,723,418,736,427,750,436,762,450,774,462,780,459,784,448,778,432,766,423,753,414,740,400,728,375,716"/>
+<area shape="poly" id="edge51_Node000034_Node000033" title=" " alt="" coords="384,661,403,673,415,686,422,699,427,725,433,751,439,763,451,774,457,778,454,783,447,778,435,766,428,753,422,726,417,701,410,689,399,677,381,666"/>
+<area shape="rect" id="Node000035" href="$class_c_object_manager.html#afb9135b4070eaf38d73c70655959b678" title="Draw background." alt="" coords="449,737,676,764"/>
+<area shape="poly" id="edge49_Node000034_Node000035" title=" " alt="" coords="377,661,402,673,418,685,427,699,436,711,450,723,462,729,459,734,448,728,432,715,423,702,414,689,400,677,375,666"/>
+<area shape="rect" id="Node000036" href="$class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c" title="Draw frame rate text to screen." alt="" coords="465,636,660,663"/>
+<area shape="poly" id="edge50_Node000034_Node000036" title=" " alt="" coords="384,647,450,647,450,652,384,652"/>
+<area shape="rect" id="Node000037" href="$class_c_object_manager.html#ac59fc2d0815fc9f56c5ef2c74db4d487" title="Get render list." alt="" coords="457,117,668,144"/>
+<area shape="poly" id="edge52_Node000034_Node000037" title=" " alt="" coords="315,635,356,566,379,520,398,471,409,426,412,385,405,311,404,276,408,241,421,205,447,166,468,149,471,153,451,170,426,207,413,242,409,276,411,310,417,384,414,426,404,473,384,522,360,569,320,637"/>
+<area shape="poly" id="edge53_Node000037_Node000002" title=" " alt="" coords="619,114,750,82,751,87,620,119"/>
+</map>

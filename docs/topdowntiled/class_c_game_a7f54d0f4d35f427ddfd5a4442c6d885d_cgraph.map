@@ -1,0 +1,5 @@
+<map id="CGame::FollowCamera" name="CGame::FollowCamera">
+<area shape="rect" id="Node000001" title="Make camera follow player character." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a145e790baad59983ddb26abad3f4fa1b" title="Get position." alt="" coords="212,5,333,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>

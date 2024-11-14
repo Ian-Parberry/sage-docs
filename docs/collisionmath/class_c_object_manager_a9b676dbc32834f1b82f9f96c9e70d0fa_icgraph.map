@@ -1,0 +1,9 @@
+<map id="CObjectManager::GetQTLeafCount" name="CObjectManager::GetQTLeafCount">
+<area shape="rect" id="Node000001" title="Get quadtree leaf count." alt="" coords="532,5,724,48"/>
+<area shape="rect" id="Node000002" href="$class_c_dialog_box.html#af662f7d9af550bd46f592e02bd111fd1" title="Update the dialog box at 1&#45;second intervals." alt="" coords="343,13,484,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,29,485,29,485,24,517,24"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,13,295,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="328,29,296,29,296,24,328,24"/>
+<area shape="rect" id="Node000004" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,13,88,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="120,29,88,29,88,24,120,24"/>
+</map>

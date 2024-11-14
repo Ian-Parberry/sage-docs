@@ -1,0 +1,5 @@
+<map id="CObjectManager::EmitSmoke" name="CObjectManager::EmitSmoke">
+<area shape="rect" id="Node000001" title="Emit a puff of smoke." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ad337c35f788cc01cfdc9b7537592b915" title="Create new particle." alt="" coords="249,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,16,233,16,233,21,201,21"/>
+</map>

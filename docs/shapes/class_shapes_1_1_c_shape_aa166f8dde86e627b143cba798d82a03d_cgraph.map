@@ -1,0 +1,5 @@
+<map id="Shapes::CShape::SetPos" name="Shapes::CShape::SetPos">
+<area shape="rect" id="Node000001" title="Set position." alt="" coords="5,5,177,32"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_aabb2_d.html#ac37ed65abc5924019ffebf89a8562ff3" title="Translate AABB." alt="" coords="225,5,417,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,16,209,16,209,21,177,21"/>
+</map>

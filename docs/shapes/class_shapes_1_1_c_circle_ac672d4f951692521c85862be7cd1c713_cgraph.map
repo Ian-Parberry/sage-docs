@@ -1,0 +1,19 @@
+<map id="Shapes::CCircle::CollisionDetected" name="Shapes::CCircle::CollisionDetected">
+<area shape="rect" id="Node000001" title="Collision detection." alt="" coords="5,48,181,91"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_circle.html#a8d4f1b7f446170f46a55a054daa042ee" title="Closest point on circle." alt="" coords="229,56,412,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,67,213,67,213,72,181,72"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="468,5,640,32"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="181,49,228,41,344,29,452,21,452,26,344,34,229,47,182,54"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_point.html#a7c238672005132e54bf1d4cada2db30d" title="Collision detection." alt="" coords="235,107,406,149"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="179,89,221,100,220,105,177,94"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,53,474,33,475,38,386,58"/>
+<area shape="rect" id="Node000004" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="488,80,620,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="412,76,472,82,472,88,412,81"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="514,81,507,71,512,61,528,55,554,53,582,56,596,63,594,68,580,61,554,59,529,61,516,65,513,71,519,78"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="390,104,410,92,425,80,434,67,443,54,459,42,469,36,472,41,461,46,447,58,438,70,429,84,414,97,393,108"/>
+<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="406,113,471,103,472,108,407,118"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_circle.html#a4e47f001eba047fe82bf7c314aad42b6" title="Get radius." alt="" coords="460,131,647,157"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="406,131,445,134,444,139,406,137"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_dynamic_circle.html#a1175766174a320a27bdd8180cd167303" title="Get velocity." alt="" coords="469,181,638,224"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="390,147,471,174,469,179,389,153"/>
+</map>

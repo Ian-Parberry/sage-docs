@@ -1,0 +1,7 @@
+<map id="Sage::CRandom::randf" name="Sage::CRandom::randf">
+<area shape="rect" id="Node000001" title="Get a random floating point number." alt="" coords="219,31,374,57"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_random.html#ab30d0af12944aa9d2b32fec5d602c65b" title="Get a random color." alt="" coords="5,5,171,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,35,171,31,171,26,204,30"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_random.html#afa84bf00340d5ab6815563f5f3bffdf3" title="Get a random direction." alt="" coords="9,56,167,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,58,168,62,167,57,203,53"/>
+</map>

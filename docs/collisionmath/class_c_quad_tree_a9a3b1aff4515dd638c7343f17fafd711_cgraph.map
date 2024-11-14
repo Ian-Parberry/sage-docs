@@ -1,0 +1,5 @@
+<map id="CQuadTree::Initialize" name="CQuadTree::Initialize">
+<area shape="rect" id="Node000001" title="Initialize for a given depth and area." alt="" coords="5,5,150,32"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a88f2b8deae87509f1b4736f6e06a0583" title="Initialize AABBs in all nodes." alt="" coords="198,5,355,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,16,182,16,182,21,150,21"/>
+</map>

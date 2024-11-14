@@ -16,6 +16,5 @@ var searchData=
   ['shapecommon_2ecpp_13',['ShapeCommon.cpp',['../_shape_common_8cpp.html',1,'']]],
   ['shapecommon_2eh_14',['ShapeCommon.h',['../_shape_common_8h.html',1,'']]],
   ['shapemath_2ecpp_15',['ShapeMath.cpp',['../_shape_math_8cpp.html',1,'']]],
-  ['shapemath_2eh_16',['ShapeMath.h',['../_shape_math_8h.html',1,'']]],
-  ['sqr_17',['sqr',['../_shape_math_8h.html#adee8c6d2fc20a1194cf64c481e7b6353',1,'ShapeMath.h']]]
+  ['shapemath_2eh_16',['ShapeMath.h',['../_shape_math_8h.html',1,'']]]
 ];

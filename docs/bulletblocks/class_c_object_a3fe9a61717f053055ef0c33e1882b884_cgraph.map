@@ -1,0 +1,7 @@
+<map id="CObject::ComputeConvexHull" name="CObject::ComputeConvexHull">
+<area shape="rect" id="Node000001" title="Compute convex hull." alt="" coords="5,31,204,57"/>
+<area shape="rect" id="Node000002" href="$class_c_renderer.html#aa7aa4d8c34a1e99cef68f28c385674af" title="Get mesh descriptor." alt="" coords="252,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,31,236,28,236,33,205,36"/>
+<area shape="rect" id="Node000003" href="$_game_defines_8h.html#a285991d28b64500af42300aadb7fac3f" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="313,56,386,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,52,298,61,298,67,204,57"/>
+</map>

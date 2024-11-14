@@ -1,0 +1,23 @@
+<map id="CObject" name="CObject">
+<area shape="rect" id="Node000001" title="The game object." alt="" coords="39,248,108,275"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,47,76,248,71,248,71,47"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="162,81,281,108"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="114,37,198,79,195,83,111,42"/>
+<area shape="rect" id="Node000009" href="$class_c_bit_counter.html" title="Single&#45;bit counter." alt="" coords="132,248,226,275"/>
+<area shape="poly" id="edge11_Node000009_Node000002" title=" " alt="" coords="90,45,95,55,143,165,176,246,171,248,138,167,90,57,85,47"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="175,172,260,199"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,208,99,250,97,245,178,204"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="211,157,211,132,215,108,221,109,216,132,216,157"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="206,213,188,249,183,246,202,211"/>
+<area shape="rect" id="Node000004" href="$class_c_renderer.html" title="The Renderer." alt="" coords="327,81,412,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="362,124,353,138,342,150,302,171,260,182,259,177,300,167,339,146,349,134,357,121"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="307,5,432,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="372,47,372,81,367,81,367,47"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="223,124,221,172,215,171,218,124"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="166,5,283,32"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="226,47,225,81,219,81,221,47"/>
+<area shape="rect" id="Node000008" href="$class_c_counter.html" title="Binary counter." alt="" coords="187,339,264,365"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="252,326,260,314,262,307,260,299,242,243,222,200,227,198,247,241,265,298,267,307,265,316,257,329"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="172,289,171,302,174,313,184,326,198,336,195,340,181,330,169,316,166,302,167,289"/>
+</map>

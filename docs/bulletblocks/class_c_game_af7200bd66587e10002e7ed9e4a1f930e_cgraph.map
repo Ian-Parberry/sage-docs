@@ -1,0 +1,11 @@
+<map id="CGame::BeginGame" name="CGame::BeginGame">
+<area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,31,148,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="196,5,354,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,32,180,28,180,33,148,38"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="196,56,354,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,50,180,55,180,60,148,56"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a47c6139224ca0bc1b7aae523e90534c3" title="Create an object." alt="" coords="402,31,568,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="354,57,386,53,387,59,354,62"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html#a66e1f431af58e6f988a327491827c641" title="Get model extents." alt="" coords="406,81,564,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="354,76,391,81,390,86,354,81"/>
+</map>

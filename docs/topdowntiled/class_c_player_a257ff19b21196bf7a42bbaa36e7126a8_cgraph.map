@@ -1,0 +1,9 @@
+<map id="CPlayer::CollisionResponse" name="CPlayer::CollisionResponse">
+<area shape="rect" id="Node000001" title="Collision response." alt="" coords="5,56,191,83"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a2cfe2c14ca84c5a06b60f29a57b64e3d" title="Collision response." alt="" coords="239,5,425,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,53,252,33,253,38,164,58"/>
+<area shape="rect" id="Node000003" href="$class_c_armed_object.html#a2fb8a2d0fa6c8ddd0fd89a2cf505b0c2" title="Death special effects." alt="" coords="248,56,416,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,67,233,67,233,72,191,72"/>
+<area shape="rect" id="Node000004" href="$class_c_object.html#ab39ee0bc168e051d1b2497b1259d0b83" title="Get object type." alt="" coords="269,107,395,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,81,254,100,253,106,163,86"/>
+</map>

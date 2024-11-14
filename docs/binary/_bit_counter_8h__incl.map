@@ -1,0 +1,21 @@
+<map id="BitCounter.h" name="BitCounter.h">
+<area shape="rect" id="Node000001" title="Interface for the single&#45;bit counter CBitCounter." alt="" coords="126,5,220,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="67,155,196,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,33,142,140,137,139,167,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,304,122,331"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,35,104,83,77,117,57,156,49,190,48,226,58,288,53,289,43,226,43,190,52,154,73,114,100,79,154,31"/>
+<area shape="rect" id="Node000004" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="188,80,259,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,31,208,66,204,69,179,34"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="272,155,357,181"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="203,30,238,50,272,78,293,108,307,139,303,141,289,111,268,82,235,54,200,35"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="209,109,161,147,157,143,206,105"/>
+<area shape="rect" id="Node000005" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="161,229,273,256"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="226,107,221,214,215,214,220,107"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="241,105,289,143,285,147,238,109"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="191,259,105,299,103,294,189,254"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="163,304,270,331"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="220,257,220,288,214,288,214,257"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="299,184,247,222,244,218,296,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="297,229,443,256"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="326,180,353,215,349,219,322,184"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="CSirIsaacNewton" name="CSirIsaacNewton">
+<area shape="rect" id="Node000001" title="Sir Isaac Newton." alt="" coords="5,248,130,275"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,5,126,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,47,70,248,65,248,65,47"/>
+<area shape="rect" id="Node000004" href="$class_c_level.html" title="Stub class for a level." alt="" coords="88,81,151,108"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="87,43,113,79,109,83,83,46"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="89,172,174,199"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,212,80,249,76,246,109,208"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="159,160,167,147,166,133,157,121,144,111,147,107,161,117,171,131,172,148,163,163"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,123,111,147,124,170,119,173,106,149,106,123"/>
+</map>

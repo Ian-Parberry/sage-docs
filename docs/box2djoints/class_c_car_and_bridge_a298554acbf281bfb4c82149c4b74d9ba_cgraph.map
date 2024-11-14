@@ -1,0 +1,7 @@
+<map id="CCarAndBridge::Move" name="CCarAndBridge::Move">
+<area shape="rect" id="Node000001" title="Reverse the car when it gets near the edges." alt="" coords="5,31,158,57"/>
+<area shape="rect" id="Node000002" href="$class_c_car_and_bridge.html#a071068281bf806331c6014c3335c57c3" title="Reverse the car." alt="" coords="206,5,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,32,190,28,190,33,158,37"/>
+<area shape="rect" id="Node000003" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="248,56,320,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,51,233,60,233,66,158,56"/>
+</map>

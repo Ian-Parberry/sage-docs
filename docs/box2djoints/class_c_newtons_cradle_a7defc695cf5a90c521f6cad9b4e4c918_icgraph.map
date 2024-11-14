@@ -1,0 +1,5 @@
+<map id="CNewtonsCradle::ResetBalls" name="CNewtonsCradle::ResetBalls">
+<area shape="rect" id="Node000001" title="Reset all balls to initial conditions." alt="" coords="220,5,413,32"/>
+<area shape="rect" id="Node000002" href="$class_c_newtons_cradle.html#abf8af4bdf7ddfac2093d9d23321b4318" title="Reverse motor." alt="" coords="5,5,172,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,21,172,21,172,16,204,16"/>
+</map>

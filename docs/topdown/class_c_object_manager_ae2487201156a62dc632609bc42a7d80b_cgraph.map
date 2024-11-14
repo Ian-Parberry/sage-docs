@@ -1,0 +1,5 @@
+<map id="CObjectManager::BroadPhase" name="CObjectManager::BroadPhase">
+<area shape="rect" id="Node000001" title="Broad phase collision detection and response." alt="" coords="5,5,204,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a8fd3f8660bf6e9c30a681453d776c111" title="Test whether at the edge of the world." alt="" coords="252,5,455,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,16,236,16,236,21,204,21"/>
+</map>

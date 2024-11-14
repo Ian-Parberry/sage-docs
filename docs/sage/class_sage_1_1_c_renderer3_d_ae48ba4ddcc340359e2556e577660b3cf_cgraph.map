@@ -1,0 +1,5 @@
+<map id="Sage::CRenderer3D::CreateWICTexture" name="Sage::CRenderer3D::CreateWICTexture">
+<area shape="rect" id="Node000001" title="Load a texture from a an image file (does not contain mipmaps)." alt="" coords="5,5,153,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#a6edc4a85a105a3569f1c5383c95c161b" title="Process a loaded texture." alt="" coords="201,5,348,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,24,185,24,185,29,153,29"/>
+</map>

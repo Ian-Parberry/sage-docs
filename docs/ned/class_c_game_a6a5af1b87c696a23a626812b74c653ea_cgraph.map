@@ -1,0 +1,28 @@
+<map id="CGame::CreateObjects" name="CGame::CreateObjects">
+<area shape="rect" id="Node000001" title="Create game objects." alt="" coords="5,194,164,221"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a74b1cc8bc4e0d525dccae0d967c81074" title="Create new object." alt="" coords="458,42,624,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,193,103,157,128,111,163,64,186,44,210,28,246,13,283,5,322,3,360,4,432,16,492,34,490,39,431,22,360,10,322,8,284,11,248,18,213,32,189,48,167,67,132,113,107,159,93,195"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a72b2cd322570c0b1a3aecd036de1d1a3" title="Create clouds." alt="" coords="225,93,380,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,191,151,160,211,129,228,122,230,127,213,134,154,165,106,196"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#ae25dcdebaf7de58496ffe15c1ed2b512" title="Create crows." alt="" coords="227,42,378,69"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="94,192,140,137,173,105,210,78,221,72,224,77,213,83,176,109,143,140,98,195"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#aaf9fdfa7f662c6e4ba437a5d174ec4f9" title="Create fence." alt="" coords="228,245,377,271"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="146,219,228,238,226,243,145,224"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#ada6461972d9c863a3fa7cdfb95bf7e32" title="Create new object." alt="" coords="441,245,641,271"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="165,209,273,217,393,230,452,239,451,244,393,235,273,223,164,214"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#a5c27f91b50c6044582cb1ae9b9d0fcf8" title="Create trees." alt="" coords="229,295,376,322"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="106,219,154,250,213,281,230,287,228,292,211,286,151,254,104,223"/>
+<area shape="rect" id="Node000009" href="$class_c_renderer.html#ac5dc2aec05d9eaa1da9d12f566d9d8e0" title="Set camera position." alt="" coords="212,346,393,373"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="98,219,143,274,176,305,213,332,224,337,221,342,210,336,173,309,140,278,94,223"/>
+<area shape="rect" id="Node000010" href="$class_c_object.html#affd97d1cc0cc4a24c7dcc3de37dfdcfe" title="Set roll speed." alt="" coords="225,397,380,423"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="94,220,110,253,136,297,171,343,213,382,221,387,218,392,210,387,167,347,132,300,106,256,89,222"/>
+<area shape="rect" id="Node000011" href="$class_c_plane_object.html#a42bdd5cd2cb87fd9046f7a925c6aa243" title="Set velocity." alt="" coords="228,143,376,170"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="145,191,226,171,228,177,146,196"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="368,89,460,70,461,75,369,95"/>
+<area shape="rect" id="Node000004" href="$class_c_object.html#a5d9c7d58fd4a3e81c285a52f8f32c034" title="Set velocity." alt="" coords="484,118,599,145"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="380,111,468,121,468,126,379,117"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="378,53,442,53,442,58,378,58"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="377,255,425,255,425,261,377,261"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="368,292,460,272,461,278,369,297"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="377,146,468,136,468,142,377,151"/>
+</map>

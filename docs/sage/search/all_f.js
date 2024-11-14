@@ -62,7 +62,7 @@ var searchData=
   ['setframetime_59',['SetFrameTime',['../class_sage_1_1_c_timer.html#a99a1a189f1ec478e735016576bff268b',1,'Sage::CTimer']]],
   ['setlistener_60',['SetListener',['../class_sage_1_1_c_sound.html#a2712eca572f424f42bf8d5bbc2480f3e',1,'Sage::CSound']]],
   ['setlistenerorient_61',['SetListenerOrient',['../class_sage_1_1_c_sound.html#a9a3b6e89e60796c3a375636adab8c752',1,'Sage::CSound']]],
-  ['setlistenerpos_62',['SetListenerPos',['../class_sage_1_1_c_sound.html#a01cad4589a84b31f34a1d0c7f98be76e',1,'Sage::CSound::SetListenerPos(const Vector2 &amp;)'],['../class_sage_1_1_c_sound.html#a72011b02fdba4317ed0c7c0435724987',1,'Sage::CSound::SetListenerPos(const Vector3 &amp;)']]],
+  ['setlistenerpos_62',['SetListenerPos',['../class_sage_1_1_c_sound.html#a72011b02fdba4317ed0c7c0435724987',1,'Sage::CSound::SetListenerPos(const Vector3 &amp;)'],['../class_sage_1_1_c_sound.html#a01cad4589a84b31f34a1d0c7f98be76e',1,'Sage::CSound::SetListenerPos(const Vector2 &amp;)']]],
   ['setorigin_63',['SetOrigin',['../class_sage_1_1_c_particle_engine.html#ae080ffa01dd205955c8b07b628283d12',1,'Sage::CParticleEngine']]],
   ['setorthographic_64',['SetOrthographic',['../class_sage_1_1_c_camera.html#a9cea93e4eaa931f448688ff0b0b54659',1,'Sage::CCamera']]],
   ['setperspective_65',['SetPerspective',['../class_sage_1_1_c_camera.html#ade2fecf77d3484403ffc3fbc76d5d028',1,'Sage::CCamera']]],
@@ -76,9 +76,10 @@ var searchData=
   ['sign_73',['sign',['../_sage_helpers_8h.html#a7f5a0133138c7b287c4ca598fa023e07',1,'SageHelpers.h']]],
   ['spline3_74',['spline3',['../_sage_helpers_8h.html#a757d377502930ea48b54ec148845a4f3',1,'SageHelpers.h']]],
   ['spline5_75',['spline5',['../_sage_helpers_8h.html#ae9c6db2ec491a9e4ca1d64f64e83d2ca',1,'SageHelpers.h']]],
-  ['srand_76',['srand',['../class_sage_1_1_c_random.html#a88799734f848e1f9baca07ffbd1cc070',1,'Sage::CRandom::srand(UINT)'],['../class_sage_1_1_c_random.html#ad394ffa1ea93c111c77388f3ab8ef24f',1,'Sage::CRandom::srand()']]],
-  ['start_77',['Start',['../class_sage_1_1_c_event_timer.html#a7e11d20ff6b1eb039aa635f4fbfc7b36',1,'Sage::CEventTimer']]],
-  ['startloadingthread_78',['StartLoadingThread',['../_sage_loading_thread_8h.html#a14d2095562d0ef5297a4cd38812d6d7f',1,'Sage::StartLoadingThread(CSound *pAudio, CMediaList&lt; t &gt; m, bool *pFlag)'],['../_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb',1,'Sage::StartLoadingThread(CSpriteRenderer *pRenderer, CMediaList&lt; t &gt; m, bool *pFlag)']]],
-  ['step_79',['Step',['../class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f',1,'Sage::CParticleEngine']]],
-  ['stop_80',['Stop',['../class_sage_1_1_c_sound.html#a37ccd37b4e00ff0daf110f888ee24280',1,'Sage::CSound::Stop()'],['../class_sage_1_1_c_sound.html#a9a6fa009546ff7d53fc505d39e5ee7c2',1,'Sage::CSound::Stop(t)'],['../class_sage_1_1_c_sound.html#a08ff13fd976f3ce80f559a1be16198ac',1,'Sage::CSound::Stop(const CSoundDesc &amp;)']]]
+  ['sqr_76',['sqr',['../_sage_helpers_8h.html#adee8c6d2fc20a1194cf64c481e7b6353',1,'SageHelpers.h']]],
+  ['srand_77',['srand',['../class_sage_1_1_c_random.html#a88799734f848e1f9baca07ffbd1cc070',1,'Sage::CRandom::srand(UINT)'],['../class_sage_1_1_c_random.html#ad394ffa1ea93c111c77388f3ab8ef24f',1,'Sage::CRandom::srand()']]],
+  ['start_78',['Start',['../class_sage_1_1_c_event_timer.html#a7e11d20ff6b1eb039aa635f4fbfc7b36',1,'Sage::CEventTimer']]],
+  ['startloadingthread_79',['StartLoadingThread',['../_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb',1,'Sage::StartLoadingThread(CSpriteRenderer *pRenderer, CMediaList&lt; t &gt; m, bool *pFlag)'],['../_sage_loading_thread_8h.html#a14d2095562d0ef5297a4cd38812d6d7f',1,'Sage::StartLoadingThread(CSound *pAudio, CMediaList&lt; t &gt; m, bool *pFlag)']]],
+  ['step_80',['Step',['../class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f',1,'Sage::CParticleEngine']]],
+  ['stop_81',['Stop',['../class_sage_1_1_c_sound.html#a37ccd37b4e00ff0daf110f888ee24280',1,'Sage::CSound::Stop()'],['../class_sage_1_1_c_sound.html#a9a6fa009546ff7d53fc505d39e5ee7c2',1,'Sage::CSound::Stop(t)'],['../class_sage_1_1_c_sound.html#a08ff13fd976f3ce80f559a1be16198ac',1,'Sage::CSound::Stop(const CSoundDesc &amp;)']]]
 ];

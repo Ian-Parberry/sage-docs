@@ -359,6 +359,33 @@ The remainder of the `CObject::CObject` code creates a physics body for the shap
 sets various important attributes. This body is then added to Physics World
 by calling `btDiscreteDynamicsWorld::addRigidBody`.
 
+\anchor section5-2-4
+###5.2.4 Bullet Physics Simulation Step
+
+Once per frame in `CGame::ProcessFrame` we call 
+
+     m_pPhysicsWorld->stepSimulation(t, 4);
+
+where the first parameter `t` is the frame time (fixed to \f$1/60\f$ of a second in `CGame::Initialize`) and 
+the second parameter is the number of physics iterations per render frame.
+
+\anchor section5-2-5
+###5.2.5 Sound Using Bullet Physics Callback Function
+
+To make things a little neater we define a _contact descriptor_  `CContactDesc` to record information
+about collisions, specifically, the number of contact points `CContactDesc::m_nNumContacts` and the magnitude of
+the collision impulse `CContactDesc::m_fImpulse`.
+
+<span style="background-color:#D8E4D8;">`Game.cpp`</span> contains a C-style function
+`myTickCallback` that will be called at the end of each physics tick. 
+It has two parameters, the first of which is a pointer to Physics World (that is, `CCommon::m_pPhysicsWorld`)
+and the second of which is not used in this code.
+This is set by calling 
+
+    m_pPhysicsWorld->setInternalTickCallback(myTickCallback);
+
+in `CGame::Initialize`.
+
 \anchor section6
 # 6. What Next?
 

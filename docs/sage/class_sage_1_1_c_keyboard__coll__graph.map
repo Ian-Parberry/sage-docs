@@ -1,0 +1,7 @@
+<map id="Sage::CKeyboard" name="Sage::CKeyboard">
+<area shape="rect" id="Node000001" title="The keyboard handler." alt="" coords="105,80,229,107"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_window_desc.html" title="The window descriptor." alt="" coords="5,5,153,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,40,154,78,150,82,104,44"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_screenshot_flag.html" title="Screenshot flag." alt="" coords="176,5,336,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,44,184,82,181,78,227,40"/>
+</map>

@@ -1,0 +1,25 @@
+<map id="Shape.h" name="Shape.h">
+<area shape="rect" id="Node000001" title="Interface for CShapeDesc and CShape." alt="" coords="391,5,460,32"/>
+<area shape="rect" id="Node000002" href="$_a_a_b_b_8h.html" title="Interface for the AABB class CAabb2D." alt="" coords="284,80,352,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,35,351,73,348,69,405,30"/>
+<area shape="rect" id="Node000009" href="$_shape_math_8h.html" title="Handy math functions for the collision module." alt="" coords="376,80,475,107"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="428,33,428,64,423,64,423,33"/>
+<area shape="rect" id="Node000010" href="$_shape_common_8h.html" title="Interface for the class CShapeCommon." alt="" coords="499,80,622,107"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="450,30,525,70,522,75,448,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,89,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,107,104,154,103,149,282,101"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="112,155,203,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="291,110,200,150,198,145,289,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="227,155,307,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="311,109,286,144,282,141,307,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="331,155,408,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="329,106,354,141,350,144,325,109"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="433,155,538,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="348,105,443,146,441,151,346,110"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="563,155,664,181"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="353,101,365,104,548,148,547,154,364,109,352,106"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="399,110,310,150,308,145,397,105"/>
+<area shape="poly" id="edge10_Node000009_Node000006" title=" " alt="" coords="418,109,391,144,386,141,414,106"/>
+<area shape="poly" id="edge11_Node000009_Node000007" title=" " alt="" coords="438,106,468,141,464,145,434,109"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="459,105,567,146,566,151,457,110"/>
+</map>

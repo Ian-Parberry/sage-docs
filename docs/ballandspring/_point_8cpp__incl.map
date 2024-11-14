@@ -1,0 +1,21 @@
+<map id="Point.cpp" name="Point.cpp">
+<area shape="rect" id="Node000001" title="Code for the point class CPoint." alt="" coords="268,5,344,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="151,80,250,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,35,233,73,230,69,286,30"/>
+<area shape="rect" id="Node000003" href="$_point_8h.html" title="Interface for the point class CPoint." alt="" coords="275,80,337,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,33,309,64,303,64,303,33"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="390,229,539,256"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="325,30,383,80,415,114,443,153,456,183,463,213,458,214,451,185,438,156,411,118,379,84,322,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,135,181"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="275,107,126,152,125,147,273,102"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="159,155,269,181"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="292,109,243,147,240,143,288,105"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="252,229,365,256"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="309,107,311,214,305,214,304,107"/>
+<area shape="rect" id="Node000008" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="343,155,429,181"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="322,105,363,142,359,146,318,109"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="255,304,362,331"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="311,257,311,288,306,288,306,257"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="374,184,335,221,331,217,371,180"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="402,180,442,217,438,221,398,184"/>
+</map>

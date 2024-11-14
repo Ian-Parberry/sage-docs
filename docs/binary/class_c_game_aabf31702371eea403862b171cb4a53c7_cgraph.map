@@ -1,0 +1,19 @@
+<map id="CGame::ProcessSpeaking" name="CGame::ProcessSpeaking">
+<area shape="rect" id="Node000001" title="Process saying the current number in binary." alt="" coords="5,81,182,108"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#acfcddd53e8f52a678c260f1b36d1a2a0" title="Have the balls stopped moving?" alt="" coords="234,5,424,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,78,229,41,254,34,256,39,231,47,130,83"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a6c658762cca40fa9e3555f3494499d7d" title="Begin saying the current number in binary." alt="" coords="248,56,410,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,83,232,77,233,82,182,88"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a1861a3895a26122191076e2ddc44ef4d" title="Highlight the nth bit." alt="" coords="230,107,428,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,102,214,105,214,110,182,107"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a9905763747f8386fc70e9ac3ad05c33c" title="Test overflow." alt="" coords="239,157,418,184"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="130,106,231,143,256,150,254,155,229,148,128,111"/>
+<area shape="rect" id="Node000004" href="$class_c_counter.html#a1e3fa83cee3c4df155d97e2b4029b0ca" title="Get number of bits." alt="" coords="476,56,633,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="410,67,460,67,460,72,410,72"/>
+<area shape="rect" id="Node000006" href="$class_c_counter.html#ac52825445e09d60b88940d3e6d43b7d7" title="Get position of a single&#45;bit counter." alt="" coords="490,107,619,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="428,117,474,117,474,123,428,123"/>
+<area shape="rect" id="Node000007" href="$class_c_bit_counter.html#a2f6ef12d5158ffb86fd08da91f188070" title="Get position." alt="" coords="681,107,827,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="620,117,666,117,666,123,620,123"/>
+<area shape="rect" id="Node000008" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="875,107,947,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="827,117,859,117,859,123,827,123"/>
+</map>

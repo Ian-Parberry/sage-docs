@@ -1,0 +1,30 @@
+<map id="Shapes::CArc::CollisionDetected" name="Shapes::CArc::CollisionDetected">
+<area shape="rect" id="Node000001" title="Collision detection." alt="" coords="5,178,220,205"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_circle.html#a8d4f1b7f446170f46a55a054daa042ee" title="Closest point on circle." alt="" coords="268,107,451,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,175,294,136,296,141,163,180"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#ac7850b7185bf4ee72f6e453b43b27d4a" title="Get position." alt="" coords="734,275,907,302"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="130,175,220,114,287,77,362,43,444,16,486,8,527,3,569,4,610,9,650,21,688,40,716,61,741,87,761,117,778,148,803,209,816,260,811,261,798,211,773,150,757,119,737,90,713,65,685,44,648,26,609,15,569,9,528,9,486,13,445,22,364,48,289,82,223,119,133,180"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_point.html#a7c238672005132e54bf1d4cada2db30d" title="Collision detection." alt="" coords="274,170,445,213"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="220,189,258,189,258,194,220,194"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_circle.html#a6c38d58773ad3ff94b635483769b3d5a" title="Point in circle test." alt="" coords="268,262,451,289"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="155,203,304,254,303,259,153,208"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_arc.html#a5df47e5d99c3d84d7c34cceb3c124288" title="Point in sector test." alt="" coords="273,363,446,390"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="134,203,330,352,327,356,131,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,104,442,78,519,54,562,47,605,46,648,53,688,69,714,87,737,109,773,162,799,215,814,260,809,261,794,217,769,164,733,113,710,91,685,74,646,58,605,52,563,53,521,59,444,83,387,109"/>
+<area shape="rect" id="Node000004" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="526,107,659,134"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="451,118,511,118,511,123,451,123"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="554,108,547,98,552,89,568,83,593,81,620,83,635,90,632,95,619,88,593,86,569,88,556,93,553,98,559,105"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="394,211,443,238,500,261,555,273,612,282,719,288,719,293,612,287,554,279,498,266,441,243,392,215"/>
+<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="425,167,498,143,524,136,525,141,500,148,426,172"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_circle.html#a4e47f001eba047fe82bf7c314aad42b6" title="Get radius." alt="" coords="499,158,686,185"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="445,181,483,178,484,183,445,187"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_dynamic_circle.html#a1175766174a320a27bdd8180cd167303" title="Get velocity." alt="" coords="508,209,677,251"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="446,203,493,211,492,216,445,208"/>
+<area shape="poly" id="edge12_Node000008_Node000003" title=" " alt="" coords="409,287,499,305,593,310,686,305,719,301,719,307,687,310,593,316,499,310,408,292"/>
+<area shape="rect" id="Node000010" href="$class_shapes_1_1_c_arc.html#a68cd1094cdde528977fd84e172483c0e" title="Point to angle." alt="" coords="507,377,678,403"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="447,379,492,381,492,387,446,384"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="638,373,685,355,781,307,783,312,687,360,640,378"/>
+<area shape="rect" id="Node000011" href="$_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073" title="Normalize angle to ." alt="" coords="738,377,903,403"/>
+<area shape="poly" id="edge16_Node000010_Node000011" title=" " alt="" coords="678,387,722,387,722,393,678,393"/>
+<area shape="poly" id="edge17_Node000011_Node000011" title=" " alt="" coords="782,378,775,368,780,358,795,352,821,350,848,353,862,359,860,364,847,358,820,355,797,357,784,362,781,367,786,374"/>
+</map>

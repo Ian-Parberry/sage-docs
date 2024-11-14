@@ -1,0 +1,11 @@
+<map id="Sage::CWindow::EnforceAspectRatio" name="Sage::CWindow::EnforceAspectRatio">
+<area shape="rect" id="Node000001" title="Enforce aspect ratio." alt="" coords="974,5,1184,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_window.html#a30e80de22640c3459f55b664537f560a" title="The Window Procedure." alt="" coords="747,13,926,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="958,29,926,29,926,24,958,24"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_window.html#ad5bb6fc88ae1148df52a80637932674d" title="Create default window." alt="" coords="501,5,699,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="732,29,700,29,700,24,732,24"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_window.html#aec72168f89bff6661b0a0cfd69b6f0e0" title="Initialize the game window." alt="" coords="229,13,453,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="485,29,453,29,453,24,485,24"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_window.html#adfe2944a5e50b1df557bb0babbc5eb9c" title="WinMain." alt="" coords="5,13,181,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="213,29,181,29,181,24,213,24"/>
+</map>

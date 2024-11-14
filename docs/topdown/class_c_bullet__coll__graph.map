@@ -1,0 +1,19 @@
+<map id="CBullet" name="CBullet">
+<area shape="rect" id="Node000001" title="The bullet object." alt="" coords="40,157,104,184"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html" title="The game object." alt="" coords="147,81,216,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,119,92,159,89,155,149,115"/>
+<area shape="rect" id="Node000008" href="$class_c_armed_object.html" title="The armed object." alt="" coords="128,157,235,184"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="184,123,184,157,179,157,179,123"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="128,5,235,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,47,184,81,179,81,179,47"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="187,332,272,359"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="244,317,251,299,260,259,263,227,259,196,244,159,224,131,200,110,203,106,228,127,249,156,264,195,269,227,265,260,256,301,248,319"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The object manager." alt="" coords="126,431,245,457"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="216,373,206,392,192,431,187,429,202,390,211,371"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="195,416,221,358,226,360,200,418"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,324,163,367"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="118,375,174,428,170,432,114,379"/>
+<area shape="rect" id="Node000007" href="$class_c_player.html" title="The player object." alt="" coords="150,233,218,260"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="185,275,190,299,201,316,215,330,211,334,197,319,185,301,180,276"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="185,199,186,233,181,233,180,199"/>
+</map>

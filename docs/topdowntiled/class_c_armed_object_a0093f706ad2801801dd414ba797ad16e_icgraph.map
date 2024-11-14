@@ -1,0 +1,20 @@
+<map id="CArmedObject::GetGunOffset" name="CArmedObject::GetGunOffset">
+<area shape="rect" id="Node000001" title="Get gun offset." alt="" coords="788,107,983,133"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a90bf0be7ca1092d570e9d5660ad06261" title="Fire armed object&#39;s gun." alt="" coords="566,69,740,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="783,106,740,99,741,94,784,101"/>
+<area shape="rect" id="Node000008" href="$class_c_armed_object.html#a3f6fe2f4bcdfefc75a7724343aadf5c2" title="Move object." alt="" coords="579,132,727,159"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="772,135,728,140,727,135,772,130"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a1ef415ad921f0a1b97149ec59ecbe7ea" title="The controller handler." alt="" coords="343,5,518,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="589,67,479,35,481,30,590,62"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="344,56,518,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="551,79,518,77,519,72,551,74"/>
+<area shape="rect" id="Node000007" href="$class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279" title="Move." alt="" coords="378,107,484,133"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="555,102,484,114,483,109,554,96"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="328,33,296,37,295,32,327,28"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="327,60,295,56,296,51,328,55"/>
+<area shape="rect" id="Node000009" href="$class_c_player.html#a8cdce2b8fd7f5765c19d1d45f9899866" title="Move player object." alt="" coords="376,157,485,184"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="564,158,486,167,485,162,564,153"/>
+</map>

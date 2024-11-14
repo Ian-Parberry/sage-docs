@@ -1,0 +1,17 @@
+<map id="CArmedObject" name="CArmedObject">
+<area shape="rect" id="Node000001" title="The armed object." alt="" coords="5,5,113,32"/>
+<area shape="rect" id="Node000007" href="$class_c_player.html" title="The player object." alt="" coords="150,81,218,108"/>
+<area shape="poly" id="edge8_Node000007_Node000001" title=" " alt="" coords="95,38,164,79,162,83,92,42"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html" title="The game object." alt="" coords="99,279,168,305"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,269,83,245,66,216,52,164,49,111,54,32,60,33,54,111,58,163,71,214,87,242,109,266"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="80,180,187,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,222,136,278,131,278,131,222"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="212,180,296,207"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="228,218,151,280,148,276,225,214"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The object manager." alt="" coords="219,279,339,305"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="257,222,263,254,274,277,269,280,258,255,252,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="269,265,254,208,260,207,275,263"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="338,172,495,215"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="411,231,394,257,368,274,340,285,338,280,366,269,390,253,406,228"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="205,119,247,178,243,181,200,123"/>
+</map>

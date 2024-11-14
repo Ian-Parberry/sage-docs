@@ -1,0 +1,9 @@
+<map id="CObject::Move" name="CObject::Move">
+<area shape="rect" id="Node000001" title="Move me." alt="" coords="225,56,334,83"/>
+<area shape="rect" id="Node000002" href="$class_c_crow_object.html#addf0f2d52e7afde908e4485fbc459e68" title="Move depending on time and speed." alt="" coords="21,5,161,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,54,143,35,144,30,213,49"/>
+<area shape="rect" id="Node000003" href="$class_c_dead_crow_object.html#addc2b5ea9248e8da3c9ef4f22c90fabe" title="Move depending on time and speed." alt="" coords="5,56,177,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,72,177,72,177,67,209,67"/>
+<area shape="rect" id="Node000004" href="$class_c_plane_object.html#a63612c6cd49516a40b83be1a3604b697" title="Move object." alt="" coords="20,107,162,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="213,90,144,109,143,103,212,85"/>
+</map>

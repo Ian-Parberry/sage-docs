@@ -1,0 +1,14 @@
+<map id="CObjectManager::ResetQuadTree" name="CObjectManager::ResetQuadTree">
+<area shape="rect" id="Node000001" title="Reset the quadtree." alt="" coords="5,81,225,108"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a92b7c5fde589cc97e7b803406cb44434" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="285,5,412,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,78,290,35,291,40,160,83"/>
+<area shape="rect" id="Node000003" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="273,56,425,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,80,257,77,257,82,225,85"/>
+<area shape="rect" id="Node000004" href="$class_c_quad_tree.html#a9a3b1aff4515dd638c7343f17fafd711" title="Initialize for a given depth and area." alt="" coords="277,107,421,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,104,261,108,261,113,225,109"/>
+<area shape="rect" id="Node000006" href="$class_c_quad_tree.html#a7bfafc26e36377087ffac07f0bce97cd" title="Insert shape at place in tree." alt="" coords="284,181,414,208"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="150,106,302,172,300,177,147,111"/>
+<area shape="rect" id="Node000005" href="$class_c_quad_tree.html#a88f2b8deae87509f1b4736f6e06a0583" title="Initialize AABBs in all nodes." alt="" coords="473,107,630,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="421,117,457,117,457,123,421,123"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="314,182,308,173,312,163,326,157,349,155,373,157,386,164,383,168,372,162,349,160,328,162,316,167,314,172,319,179"/>
+</map>

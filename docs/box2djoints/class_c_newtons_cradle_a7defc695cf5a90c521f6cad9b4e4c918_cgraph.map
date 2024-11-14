@@ -1,0 +1,14 @@
+<map id="CNewtonsCradle::ResetBalls" name="CNewtonsCradle::ResetBalls">
+<area shape="rect" id="Node000001" title="Reset all balls to initial conditions." alt="" coords="5,81,199,108"/>
+<area shape="rect" id="Node000002" href="$class_c_newtons_cradle.html#ade953fca77863053020e04bd783ff0d7" title="Create all balls." alt="" coords="247,81,415,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,92,231,92,231,97,199,97"/>
+<area shape="rect" id="Node000003" href="$class_c_newtons_cradle.html#a80a13f008f7dfea273b2117f99f67e67" title="Create a ball." alt="" coords="471,5,661,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="372,78,462,48,504,35,506,40,464,53,374,83"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="717,31,790,57"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="415,82,701,47,702,53,416,87"/>
+<area shape="rect" id="Node000005" href="$class_c_newtons_cradle.html#a54d759a52886d0067d37ed5dc4d0d697" title="Create the cradle." alt="" coords="463,107,669,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="416,101,448,105,447,110,415,106"/>
+<area shape="rect" id="Node000006" href="$class_c_level.html#afc270743065b1f4bfd48d8f8567aded6" title="Create new line object." alt="" coords="500,157,633,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="365,106,464,143,490,150,488,155,462,148,364,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="662,29,702,34,701,40,662,34"/>
+</map>

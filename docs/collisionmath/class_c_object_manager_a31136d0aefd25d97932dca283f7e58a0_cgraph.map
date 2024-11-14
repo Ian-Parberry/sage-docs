@@ -1,0 +1,12 @@
+<map id="CObjectManager::MakeShapes" name="CObjectManager::MakeShapes">
+<area shape="rect" id="Node000001" title="Create shapes." alt="" coords="5,31,209,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="529,5,716,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,27,256,16,390,10,514,11,513,17,390,15,257,21,176,33"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a30c3e96130b05eaae120e4721b9d1add" title="Make static line segment with guard points." alt="" coords="266,31,472,57"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="209,41,250,41,250,47,209,47"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a331c3db85903c158f818c9ac705a14ff" title="Start or stop kinematic shapes rotating." alt="" coords="257,81,481,108"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="180,55,282,75,281,80,179,61"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="764,5,961,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="717,16,749,16,749,21,717,21"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="472,31,513,27,514,32,473,36"/>
+</map>

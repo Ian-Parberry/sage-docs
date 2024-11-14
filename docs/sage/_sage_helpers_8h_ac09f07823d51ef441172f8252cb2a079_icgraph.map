@@ -1,0 +1,6 @@
+<map id="Sage::HSVtoRGB" name="Sage::HSVtoRGB">
+<area shape="rect" id="Node000001" title="Convert color from HSV to RGB." alt="" coords="219,29,346,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="315,16,304,10,282,8,262,10,251,15,249,20,254,27,249,30,243,21,247,11,261,5,282,3,306,5,318,12"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_random.html#ab30d0af12944aa9d2b32fec5d602c65b" title="Get a random color." alt="" coords="5,29,171,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="203,45,171,45,171,40,203,40"/>
+</map>

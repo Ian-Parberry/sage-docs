@@ -1,0 +1,7 @@
+<map id="Sage::CWindow::WndProc" name="Sage::CWindow::WndProc">
+<area shape="rect" id="Node000001" title="The Window Procedure." alt="" coords="5,13,184,40"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_window.html#a49ac74df4c94094c27d246fcba6bb888" title="Enforce aspect ratio." alt="" coords="232,5,442,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,24,216,24,216,29,184,29"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_window.html#a4762977ec0a454e12327ca9033da42db" title="Get window border width and height." alt="" coords="490,5,673,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,24,474,24,474,29,443,29"/>
+</map>

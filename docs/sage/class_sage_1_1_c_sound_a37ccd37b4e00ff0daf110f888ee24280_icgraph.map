@@ -1,0 +1,8 @@
+<map id="Sage::CSound::Stop" name="Sage::CSound::Stop">
+<area shape="rect" id="Node000001" title="Stop all sounds." alt="" coords="197,31,338,57"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="300,18,289,12,267,9,248,11,237,16,234,21,239,29,235,32,229,22,233,12,246,6,267,4,290,7,302,13"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#af7a3454a1ba9ca5cbd61913c2d259794" title="Mute/unmute the sounds." alt="" coords="5,5,149,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,35,149,31,149,26,181,30"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sound.html#a9a6fa009546ff7d53fc505d39e5ee7c2" title="Stop a sound." alt="" coords="6,56,148,83"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="182,58,149,63,148,57,181,53"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CObjectManager::CreateObject" name="CObjectManager::CreateObject">
+<area shape="rect" id="Node000001" title="V Create word." alt="" coords="5,5,210,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a4b6cf500f4a2d6552bb4b19bb404f4dd" title="Is in the current word." alt="" coords="258,5,388,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,16,242,16,242,21,210,21"/>
+</map>

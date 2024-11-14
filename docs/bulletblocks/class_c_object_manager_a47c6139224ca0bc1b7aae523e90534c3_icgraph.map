@@ -1,0 +1,23 @@
+<map id="CObjectManager::Create" name="CObjectManager::Create">
+<area shape="rect" id="Node000001" title="Create an object." alt="" coords="963,31,1129,57"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="757,56,915,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="948,58,916,62,915,57,947,53"/>
+<area shape="rect" id="Node000009" href="$class_c_game.html#acc2a91bd13dcb8140c4d5aae854a66fd" title="Fire a ball." alt="" coords="589,5,686,32"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="947,41,686,24,686,19,948,35"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="566,56,709,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="741,72,709,72,709,67,741,67"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#aeca1323f12998e4897141599d8ba7550" title="The controller handler." alt="" coords="343,5,518,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="564,54,488,35,489,30,566,49"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="154,107,276,133"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="564,89,519,97,390,112,277,120,277,115,389,107,518,92,563,84"/>
+<area shape="rect" id="Node000008" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="344,56,518,83"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="551,72,518,72,518,67,551,67"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,56,295,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="357,39,276,58,275,53,355,34"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,81,88,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="121,86,89,91,88,86,120,81"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="138,111,88,103,89,98,139,106"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="328,72,296,72,296,67,328,67"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="574,21,519,21,519,16,574,16"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="575,37,489,58,488,53,573,31"/>
+</map>

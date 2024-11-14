@@ -1,0 +1,20 @@
+<map id="CGame::ControllerHandler" name="CGame::ControllerHandler">
+<area shape="rect" id="Node000001" title="The controller handler." alt="" coords="5,81,181,108"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="229,56,371,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,81,213,77,214,83,181,87"/>
+<area shape="rect" id="Node000007" href="$class_c_game.html#acc2a91bd13dcb8140c4d5aae854a66fd" title="Fire a ball." alt="" coords="252,107,348,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="181,103,237,110,236,115,181,108"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="419,5,577,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="354,53,428,34,429,39,356,58"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="419,56,577,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="371,67,403,67,403,72,371,72"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a47c6139224ca0bc1b7aae523e90534c3" title="Create an object." alt="" coords="625,107,792,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="557,81,636,100,635,105,556,86"/>
+<area shape="rect" id="Node000006" href="$class_c_renderer.html#a66e1f431af58e6f988a327491827c641" title="Get model extents." alt="" coords="629,56,788,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="577,67,614,67,614,72,577,72"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="349,117,610,117,610,123,349,123"/>
+<area shape="rect" id="Node000008" href="$class_c_object.html#a471fd4473deb413d390329d528e2854e" title="Apply impulse." alt="" coords="420,157,576,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="349,130,429,150,428,156,348,135"/>
+<area shape="rect" id="Node000009" href="$_game_defines_8h.html#a285991d28b64500af42300aadb7fac3f" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="672,157,745,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="577,168,657,168,657,173,577,173"/>
+</map>

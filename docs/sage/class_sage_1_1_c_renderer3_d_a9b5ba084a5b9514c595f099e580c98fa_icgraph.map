@@ -1,0 +1,7 @@
+<map id="Sage::CRenderer3D::LoadTextureFile" name="Sage::CRenderer3D::LoadTextureFile">
+<area shape="rect" id="Node000001" title="Load texture from file." alt="" coords="210,39,357,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#aef2c9196aae92e3118adf7755f9b9b8d" title="Load sprite." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,48,162,42,162,37,195,43"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#a9b1dc200216ae36d3548646a5bfd3644" title="Load texture." alt="" coords="10,72,157,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,77,158,84,157,78,194,72"/>
+</map>

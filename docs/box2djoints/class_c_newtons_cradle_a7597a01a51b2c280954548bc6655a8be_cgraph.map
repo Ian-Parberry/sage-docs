@@ -1,0 +1,7 @@
+<map id="CNewtonsCradle::Move" name="CNewtonsCradle::Move">
+<area shape="rect" id="Node000001" title="Swivel Isaac Newton&#39;s eyeballs." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="Node000002" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="257,5,330,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,31,241,22,242,28,167,37"/>
+<area shape="rect" id="Node000003" href="$class_c_sir_isaac_newton.html#a23c9bdb7f395a86c001c45400f2b3e14" title="Animation step." alt="" coords="215,56,372,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,51,199,55,199,60,167,57"/>
+</map>

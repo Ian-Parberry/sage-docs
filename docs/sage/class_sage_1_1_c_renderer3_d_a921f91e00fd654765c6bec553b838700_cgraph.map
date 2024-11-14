@@ -1,0 +1,7 @@
+<map id="Sage::CRenderer3D::Initialize" name="Sage::CRenderer3D::Initialize">
+<area shape="rect" id="Node000001" title="Initialize renderer." alt="" coords="5,5,153,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#ab1ac966e9bc51855409130f782724cef" title="Create device dependent resources." alt="" coords="201,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,24,185,24,185,29,153,29"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#a9c039ae8dbb3cc5f240e0604dce807ed" title="Load screen font." alt="" coords="476,5,623,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="429,24,461,24,461,29,429,29"/>
+</map>

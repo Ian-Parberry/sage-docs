@@ -1,0 +1,17 @@
+<map id="Sage::CSpriteRenderer::Draw" name="Sage::CSpriteRenderer::Draw">
+<area shape="rect" id="Node000001" title="Draw single 2D sprite." alt="" coords="5,99,162,141"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30" title="Draw single 2D sprite." alt="" coords="210,99,366,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,117,195,117,195,123,162,123"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="249,99,247,89,254,80,267,74,288,72,310,74,323,81,321,85,308,80,288,77,269,79,257,84,252,90,254,98"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite.html#a6cb63aa7786c8562e491af40567f159b" title="Get extents of sprite or sprite sheet/." alt="" coords="428,5,606,32"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="318,96,361,68,413,42,432,34,434,39,415,46,364,72,321,100"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_camera.html#a92442ae56a0f6628e8909b18f1b930f5" title="Get position." alt="" coords="434,56,601,83"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="366,100,438,84,439,89,367,105"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite.html#a38b7dc057dc963c5f4a3608cfe00c852" title="Get bounding rectangle in sprite sheet." alt="" coords="437,107,597,133"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="367,117,421,117,421,123,367,123"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite_renderer.html#af190ad2d5d1ed12b60edf8d6a297d027" title="Get sprite size." alt="" coords="439,181,595,224"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="350,139,442,173,441,178,348,144"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_sprite.html#af6302c78aa016f0c4a815a9be1dd89f7" title="Get texture descriptor." alt="" coords="414,248,620,275"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="309,140,354,188,383,213,415,234,428,240,426,245,413,238,380,217,350,192,305,144"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="474,181,472,171,479,162,494,157,517,155,542,157,556,163,554,168,540,162,517,160,496,162,482,167,477,173,479,180"/>
+</map>

@@ -1,0 +1,47 @@
+<map id="GameDefines.h" name="GameDefines.h">
+<area shape="rect" id="Node000001" title="Game specific defines." alt="" coords="332,5,444,32"/>
+<area shape="rect" id="Node000002" href="$_cannon_8h.html" title="Interface for the cannon class CCannon." alt="" coords="95,155,172,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,42,156,157,154,152,352,38"/>
+<area shape="rect" id="Node000005" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="117,379,198,405"/>
+<area shape="poly" id="edge27_Node000001_Node000005" title=" " alt="" coords="317,35,222,56,120,85,76,103,40,123,16,144,10,155,8,167,8,244,11,267,20,289,34,309,51,326,91,356,129,376,126,380,88,360,48,330,30,312,16,292,6,269,3,244,3,166,5,154,12,141,37,119,73,98,119,80,221,50,316,30"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="345,80,431,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="391,48,391,80,385,80,385,48"/>
+<area shape="rect" id="Node000009" href="$_contact_listener_8h.html" title="Interface for my Box2D contact listener." alt="" coords="528,229,653,256"/>
+<area shape="poly" id="edge26_Node000001_Node000009" title=" " alt="" coords="460,34,507,51,557,76,603,110,623,130,640,154,644,175,637,196,623,215,608,231,604,227,619,212,632,194,639,175,635,156,619,134,600,114,555,81,505,56,458,39"/>
+<area shape="rect" id="Node000010" href="$_contact_listener_8cpp.html" title="Code for my Box2D contact listener." alt="" coords="522,304,660,331"/>
+<area shape="poly" id="edge25_Node000001_Node000010" title=" " alt="" coords="460,27,529,46,565,60,597,78,637,109,649,128,661,154,672,182,678,205,678,229,668,257,645,286,618,306,615,301,642,282,663,255,672,228,673,206,667,183,656,156,645,131,633,113,595,82,562,65,528,51,459,33"/>
+<area shape="rect" id="Node000012" href="$_hud_8cpp.html" title="Code for the heads&#45;up display class CHeadsUpDisplay." alt="" coords="694,304,764,331"/>
+<area shape="poly" id="edge28_Node000001_Node000012" title=" " alt="" coords="460,21,502,28,547,38,592,55,634,78,660,102,682,131,698,163,711,196,726,258,731,303,726,304,721,259,706,198,694,165,677,133,656,105,630,82,590,60,545,44,501,33,459,27"/>
+<area shape="rect" id="Node000013" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="230,155,300,181"/>
+<area shape="poly" id="edge29_Node000001_Node000013" title=" " alt="" coords="368,46,335,82,277,156,273,152,331,78,364,42"/>
+<area shape="rect" id="Node000003" href="$_cannon_8cpp.html" title="Code for the cannon class CCannon." alt="" coords="73,304,164,331"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="112,194,100,211,91,230,88,250,93,269,111,302,107,305,88,271,83,250,85,229,95,209,108,191"/>
+<area shape="rect" id="Node000004" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="377,304,444,331"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="127,196,124,227,127,241,134,254,158,278,183,292,208,298,234,299,294,295,328,296,365,301,377,304,376,310,363,307,327,301,294,301,235,304,207,303,181,297,155,283,130,258,122,243,119,227,122,196"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="363,335,199,382,198,376,361,330"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="374,379,448,405"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="413,346,413,378,408,378,408,346"/>
+<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="331,113,173,158,172,153,330,108"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="393,122,412,303,407,304,388,122"/>
+<area shape="rect" id="Node000008" href="$_common_8cpp.html" title="Code for the class CCommon." alt="" coords="526,155,626,181"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="436,110,544,152,542,157,434,115"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="419,114,575,227,572,231,416,118"/>
+<area shape="rect" id="Node000011" href="$_hud_8h.html" title="Interface for the heads&#45;up display class CHeadsUpDisplay." alt="" coords="448,229,504,256"/>
+<area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="406,119,471,227,466,230,401,121"/>
+<area shape="poly" id="edge16_Node000007_Node000013" title=" " alt="" coords="355,117,288,156,286,152,352,113"/>
+<area shape="rect" id="Node000015" href="$_object_manager_8h.html" title="Interface for the object manager CObjectManager." alt="" coords="253,229,374,256"/>
+<area shape="poly" id="edge24_Node000007_Node000015" title=" " alt="" coords="377,122,322,230,317,228,372,119"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="546,265,443,306,441,301,544,260"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="593,272,593,304,588,304,588,272"/>
+<area shape="poly" id="edge14_Node000011_Node000004" title=" " alt="" coords="457,269,424,305,420,302,453,266"/>
+<area shape="poly" id="edge15_Node000011_Node000012" title=" " alt="" coords="520,254,695,304,693,309,519,260"/>
+<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="316,184,448,229,447,234,315,189"/>
+<area shape="rect" id="Node000014" href="$_object_8cpp.html" title="Code for the game object class CObject." alt="" coords="144,229,229,256"/>
+<area shape="poly" id="edge18_Node000013_Node000014" title=" " alt="" coords="242,194,202,231,198,227,239,190"/>
+<area shape="poly" id="edge19_Node000013_Node000015" title=" " alt="" coords="284,193,307,227,303,230,280,196"/>
+<area shape="poly" id="edge20_Node000015_Node000003" title=" " alt="" coords="266,264,154,306,152,301,264,259"/>
+<area shape="poly" id="edge22_Node000015_Node000004" title=" " alt="" coords="344,263,395,301,392,306,341,268"/>
+<area shape="poly" id="edge21_Node000015_Node000010" title=" " alt="" coords="377,258,543,301,541,306,375,263"/>
+<area shape="rect" id="Node000016" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="218,304,352,331"/>
+<area shape="poly" id="edge23_Node000015_Node000016" title=" " alt="" coords="305,272,293,305,288,303,300,270"/>
+</map>

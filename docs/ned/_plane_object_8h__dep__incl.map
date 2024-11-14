@@ -1,0 +1,22 @@
+<map id="PlaneObject.h" name="PlaneObject.h">
+<area shape="rect" id="Node000001" title="Interface for the plane object CPlaneObject." alt="" coords="249,5,352,32"/>
+<area shape="rect" id="Node000002" href="$_crow_object_8h.html" title="Interface for the crow object class CCrowObject." alt="" coords="158,80,259,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,44,226,82,223,78,271,40"/>
+<area shape="rect" id="Node000006" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="246,155,366,181"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="304,47,308,154,303,154,299,48"/>
+<area shape="rect" id="Node000009" href="$_plane_object_8cpp.html" title="Code for the plane object CPlaneObject." alt="" coords="338,80,455,107"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="330,39,381,77,378,82,327,44"/>
+<area shape="rect" id="Node000003" href="$_crow_object_8cpp.html" title="Code for the crow object class CCrowObject." alt="" coords="5,155,121,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,116,90,156,87,152,168,111"/>
+<area shape="rect" id="Node000004" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="181,304,262,331"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="200,122,183,184,180,220,186,255,198,281,213,302,209,305,193,284,180,257,175,220,178,183,195,121"/>
+<area shape="rect" id="Node000005" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="194,229,329,256"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="218,121,236,180,258,228,253,230,231,182,213,123"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="239,114,290,152,287,156,236,118"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="292,196,272,230,267,228,288,193"/>
+<area shape="rect" id="Node000007" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="353,229,421,256"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="333,190,375,227,371,231,329,194"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="345,265,252,306,250,301,343,260"/>
+<area shape="rect" id="Node000008" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="350,304,424,331"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="390,272,390,304,384,304,384,272"/>
+</map>

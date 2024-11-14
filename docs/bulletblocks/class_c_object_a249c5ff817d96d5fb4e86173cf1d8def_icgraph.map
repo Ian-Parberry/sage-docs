@@ -1,0 +1,15 @@
+<map id="CObject::GetPosition" name="CObject::GetPosition">
+<area shape="rect" id="Node000001" title="Get object type." alt="" coords="996,31,1141,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a0bb4d70e883745a3c790ff7db150f2f5" title="Play collision sounds." alt="" coords="751,5,948,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="980,37,948,33,949,27,981,31"/>
+<area shape="rect" id="Node000003" href="$class_c_renderer.html#a98e1092e43b5a597cf0142f5b31ef5f6" title="Render an object." alt="" coords="782,56,916,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="981,57,917,64,917,59,980,51"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="544,56,703,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="767,72,703,72,703,67,767,67"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="343,56,496,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="529,72,497,72,497,67,529,67"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,56,295,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="328,72,295,72,295,67,328,67"/>
+<area shape="rect" id="Node000007" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="120,72,88,72,88,67,120,67"/>
+</map>

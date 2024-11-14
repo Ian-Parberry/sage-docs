@@ -1,0 +1,15 @@
+<map id="CGame::RenderFrame" name="CGame::RenderFrame">
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,81,159,108"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="207,81,365,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,92,191,92,191,97,159,97"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7bf2d9614c015b7447a8492e896974be" title="Draw AABBs." alt="" coords="418,5,619,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,78,412,41,438,34,440,39,414,47,319,83"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#adec172f1a42a9a14f0ed9fe253ab4f4e" title="Draw an object." alt="" coords="420,56,617,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="365,83,405,79,405,84,365,89"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#aaf54f01197fcf3253ac45fa5e39f0b85" title="Draw arc sectors." alt="" coords="417,107,620,133"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="365,101,402,105,401,110,365,106"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a0945384e82276b1fd8facfb28521ff00" title="Draw tangents on line segments and arcs." alt="" coords="413,157,624,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="319,106,414,143,440,150,438,155,412,148,317,111"/>
+<area shape="rect" id="Node000004" href="$class_c_quad_tree.html#a7d9f47848ab2d1bc9bd33525dfa9afb9" title="Get depth." alt="" coords="672,5,825,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="620,16,657,16,657,21,620,21"/>
+</map>

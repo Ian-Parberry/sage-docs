@@ -1,0 +1,9 @@
+<map id="CObjectManager::step" name="CObjectManager::step">
+<area shape="rect" id="Node000001" title="Animation step." alt="" coords="5,64,158,91"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ab0acefa556b25d562a58168df2b94310" title="Emit stars in the wake of each object." alt="" coords="217,5,402,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,61,205,41,235,34,237,39,206,47,134,66"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#ac78b9e8a874ebb58a1d1cc1eb9450db8" title="Make balls collide after they have rung their bell." alt="" coords="215,56,404,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,75,199,75,199,80,158,80"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#afe2e4eb7f26ed35615d6158c47203827" title="Remove collided balls after small delay." alt="" coords="206,123,413,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,89,220,115,218,120,129,94"/>
+</map>

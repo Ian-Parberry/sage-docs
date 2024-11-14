@@ -1,0 +1,5 @@
+<map id="CMyListener::Count" name="CMyListener::Count">
+<area shape="rect" id="Node000001" title="Count number of bodies that have sprite type t." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#aaa8e01de1643e10f7ff340dda8526287" title="&lt; Get velocity." alt="" coords="192,5,352,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,16,176,16,176,21,144,21"/>
+</map>

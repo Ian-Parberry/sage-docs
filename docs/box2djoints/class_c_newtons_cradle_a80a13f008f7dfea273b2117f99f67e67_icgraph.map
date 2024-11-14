@@ -1,0 +1,11 @@
+<map id="CNewtonsCradle::CreateBall" name="CNewtonsCradle::CreateBall">
+<area shape="rect" id="Node000001" title="Create a ball." alt="" coords="677,43,868,69"/>
+<area shape="rect" id="Node000002" href="$class_c_newtons_cradle.html#ade953fca77863053020e04bd783ff0d7" title="Create all balls." alt="" coords="461,43,629,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="662,59,630,59,630,53,662,53"/>
+<area shape="rect" id="Node000003" href="$class_c_newtons_cradle.html#ab4a77b11ccf02a52d39c1eec6f220746" title="Constructor." alt="" coords="221,5,412,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="446,46,412,42,413,36,446,41"/>
+<area shape="rect" id="Node000004" href="$class_c_newtons_cradle.html#a7defc695cf5a90c521f6cad9b4e4c918" title="Reset all balls to initial conditions." alt="" coords="220,72,413,99"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="446,71,414,76,413,70,446,66"/>
+<area shape="rect" id="Node000005" href="$class_c_newtons_cradle.html#abf8af4bdf7ddfac2093d9d23321b4318" title="Reverse motor." alt="" coords="5,72,172,99"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="204,88,172,88,172,83,204,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CObject::ContactType" name="CObject::ContactType">
+<area shape="rect" id="Node000001" title="Contact type test." alt="" coords="251,5,402,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a0bb4d70e883745a3c790ff7db150f2f5" title="Play collision sounds." alt="" coords="5,5,203,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,21,203,21,203,16,235,16"/>
+</map>

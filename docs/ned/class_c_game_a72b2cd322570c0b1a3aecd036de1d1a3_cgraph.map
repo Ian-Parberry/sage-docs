@@ -1,0 +1,7 @@
+<map id="CGame::CreateClouds" name="CGame::CreateClouds">
+<area shape="rect" id="Node000001" title="Create clouds." alt="" coords="5,31,160,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a74b1cc8bc4e0d525dccae0d967c81074" title="Create new object." alt="" coords="208,5,374,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,32,192,28,192,33,160,37"/>
+<area shape="rect" id="Node000003" href="$class_c_object.html#a5d9c7d58fd4a3e81c285a52f8f32c034" title="Set velocity." alt="" coords="233,56,348,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,51,219,58,218,63,160,56"/>
+</map>

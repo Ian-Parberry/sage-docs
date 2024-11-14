@@ -1,0 +1,5 @@
+<map id="CGame::CreateFence" name="CGame::CreateFence">
+<area shape="rect" id="Node000001" title="Create fence." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ada6461972d9c863a3fa7cdfb95bf7e32" title="Create new object." alt="" coords="203,5,403,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,16,187,16,187,21,155,21"/>
+</map>

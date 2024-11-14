@@ -1,0 +1,87 @@
+<map id="SageSound.cpp" name="SageSound.cpp">
+<area shape="rect" id="Node000001" title="Code for the Audio Player class CSound." alt="" coords="750,5,863,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="646,80,706,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="785,35,714,74,711,70,783,30"/>
+<area shape="rect" id="Node000003" href="$_sage_component_includes_8h.html" title="A bunch of includes needed wherever you derive from CComponent." alt="" coords="782,80,960,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="820,31,851,66,848,70,816,34"/>
+<area shape="rect" id="Node000006" href="$_sage_sound_8h.html" title="Interface for the sound class CSound." alt="" coords="508,155,607,181"/>
+<area shape="poly" id="edge51_Node000001_Node000006" title=" " alt="" coords="799,34,766,70,720,109,672,134,623,152,621,147,670,129,717,104,763,67,795,31"/>
+<area shape="rect" id="Node000032" href="$_sage_helpers_8h.html" title="Header file for helper functions." alt="" coords="1549,80,1656,107"/>
+<area shape="poly" id="edge47_Node000001_Node000032" title=" " alt="" coords="864,23,1534,83,1533,88,864,28"/>
+<area shape="rect" id="Node000004" href="$_sage_component_8h.html" title="Interface for the component class CComponent." alt="" coords="501,304,630,331"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="853,109,781,157,725,193,671,231,592,296,589,292,668,227,722,189,779,152,850,105"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="816,110,623,154,622,149,815,105"/>
+<area shape="rect" id="Node000018" href="$_sage_random_8h.html" title="Interface for the pseudo&#45;random number generator CRandom." alt="" coords="682,229,793,256"/>
+<area shape="poly" id="edge36_Node000003_Node000018" title=" " alt="" coords="859,109,810,156,758,219,754,215,806,153,855,105"/>
+<area shape="rect" id="Node000023" href="$_sage_controller_8h.html" title="Interface for the controller class CController." alt="" coords="1390,155,1508,181"/>
+<area shape="poly" id="edge29_Node000003_Node000023" title=" " alt="" coords="961,103,1375,155,1375,160,960,108"/>
+<area shape="rect" id="Node000026" href="$_sage_timer_8h.html" title="Interface for the timer CTimer." alt="" coords="1016,155,1112,181"/>
+<area shape="poly" id="edge33_Node000003_Node000026" title=" " alt="" coords="905,105,1017,146,1015,151,903,110"/>
+<area shape="rect" id="Node000028" href="$_sage_keyboard_8h.html" title="Interface for the keyboard handler class CKeyboard." alt="" coords="1155,155,1272,181"/>
+<area shape="poly" id="edge37_Node000003_Node000028" title=" " alt="" coords="931,105,1140,149,1139,154,930,110"/>
+<area shape="rect" id="Node000030" href="$_sage_mouse_8h.html" title="Interface for the class CMouse." alt="" coords="820,155,921,181"/>
+<area shape="poly" id="edge40_Node000003_Node000030" title=" " alt="" coords="873,107,873,139,868,139,868,107"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="531,379,600,405"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="568,331,568,363,563,363,563,331"/>
+<area shape="poly" id="edge16_Node000006_Node000004" title=" " alt="" coords="561,182,566,288,561,289,555,182"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="18,229,83,256"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="507,176,331,196,217,212,99,232,98,227,216,206,330,190,507,171"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1096,379,1203,405"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="608,171,776,191,881,207,986,227,1111,261,1193,285,1234,302,1239,313,1240,323,1231,342,1214,359,1192,373,1189,369,1210,355,1227,339,1235,322,1234,314,1230,306,1191,290,1110,266,985,232,880,212,775,196,607,176"/>
+<area shape="rect" id="Node000009" href="$_sage_abort_8h.html" title="Header and define for the ABORT macro." alt="" coords="108,229,201,256"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="508,180,217,231,216,226,507,175"/>
+<area shape="rect" id="Node000010" href="$_sage_window_desc_8h.html" title="Interface for the window descriptor CWindowDesc." alt="" coords="1079,304,1220,331"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="608,170,757,188,848,204,938,227,968,239,996,254,1102,296,1100,301,994,258,965,244,936,232,847,209,757,193,607,175"/>
+<area shape="rect" id="Node000012" href="$_sage_settings_8h.html" title="Interface for the settings class CSettings." alt="" coords="793,304,903,331"/>
+<area shape="poly" id="edge12_Node000006_Node000012" title=" " alt="" coords="572,180,614,216,671,254,726,278,782,297,780,302,724,283,668,258,611,220,568,184"/>
+<area shape="rect" id="Node000014" href="$_sage_camera_8h.html" title="Code for the base camera class CCamera." alt="" coords="378,229,486,256"/>
+<area shape="poly" id="edge17_Node000006_Node000014" title=" " alt="" coords="537,184,468,224,465,219,534,180"/>
+<area shape="poly" id="edge22_Node000006_Node000018" title=" " alt="" coords="590,179,693,221,691,226,588,184"/>
+<area shape="rect" id="Node000020" href="$_sage_media_desc_8h.html" title="Header for the class CMediaDesc." alt="" coords="225,229,354,256"/>
+<area shape="poly" id="edge26_Node000006_Node000020" title=" " alt="" coords="511,184,352,227,350,222,510,179"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="1152,331,1152,363,1147,363,1147,331"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="897,379,983,405"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="1114,334,992,376,990,371,1112,329"/>
+<area shape="poly" id="edge15_Node000012_Node000008" title=" " alt="" coords="901,329,1082,372,1081,377,900,334"/>
+<area shape="poly" id="edge13_Node000012_Node000011" title=" " alt="" coords="866,329,914,367,911,371,862,333"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="753,379,834,405"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="841,333,814,368,810,364,836,330"/>
+<area shape="rect" id="Node000015" href="$_sage_camera_common_8h.html" title="Interface for the camera common variables class CCameraCommon." alt="" coords="165,304,326,331"/>
+<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="400,259,293,300,291,295,399,254"/>
+<area shape="rect" id="Node000017" href="$_sage_sprite_desc_8h.html" title="Interface for the sprite descriptor classes." alt="" coords="350,304,477,331"/>
+<area shape="poly" id="edge20_Node000014_Node000017" title=" " alt="" coords="431,257,423,289,418,288,426,256"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="262,379,396,405"/>
+<area shape="poly" id="edge19_Node000015_Node000016" title=" " alt="" coords="262,329,305,366,302,370,258,333"/>
+<area shape="poly" id="edge21_Node000017_Node000016" title=" " alt="" coords="400,333,357,370,354,366,397,329"/>
+<area shape="poly" id="edge24_Node000018_Node000004" title=" " alt="" coords="708,259,610,300,608,295,706,254"/>
+<area shape="poly" id="edge25_Node000018_Node000008" title=" " alt="" coords="776,254,916,301,1103,370,1101,375,914,307,775,259"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="654,304,719,331"/>
+<area shape="poly" id="edge23_Node000018_Node000019" title=" " alt="" coords="731,258,706,293,702,290,726,255"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="5,304,59,331"/>
+<area shape="poly" id="edge27_Node000020_Node000021" title=" " alt="" coords="242,259,74,306,73,301,241,254"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="83,304,141,331"/>
+<area shape="poly" id="edge28_Node000020_Node000022" title=" " alt="" coords="259,259,156,301,154,296,257,254"/>
+<area shape="poly" id="edge32_Node000023_Node000008" title=" " alt="" coords="1507,179,1575,200,1603,213,1621,228,1627,243,1621,258,1594,281,1553,303,1503,322,1445,338,1324,366,1219,384,1218,378,1323,360,1444,333,1501,316,1551,298,1591,277,1616,254,1621,243,1617,231,1600,218,1573,205,1505,185"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1524,229,1607,256"/>
+<area shape="poly" id="edge30_Node000023_Node000024" title=" " alt="" coords="1471,180,1533,218,1531,223,1468,184"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1429,229,1499,256"/>
+<area shape="poly" id="edge31_Node000023_Node000025" title=" " alt="" coords="1455,181,1461,214,1456,215,1449,182"/>
+<area shape="poly" id="edge35_Node000026_Node000010" title=" " alt="" coords="1068,181,1076,216,1092,255,1106,275,1123,292,1120,296,1102,278,1087,257,1071,217,1063,182"/>
+<area shape="rect" id="Node000027" title=" " alt="" coords="1102,229,1176,256"/>
+<area shape="poly" id="edge34_Node000026_Node000027" title=" " alt="" coords="1079,180,1117,217,1113,221,1075,184"/>
+<area shape="poly" id="edge38_Node000028_Node000010" title=" " alt="" coords="1214,182,1205,216,1190,257,1170,293,1165,290,1186,255,1200,215,1208,181"/>
+<area shape="rect" id="Node000029" href="$_sage_screenshot_flag_8h.html" title="Interface for the class CScreenshotFlag." alt="" coords="1251,229,1405,256"/>
+<area shape="poly" id="edge39_Node000028_Node000029" title=" " alt="" coords="1235,180,1296,218,1294,223,1232,184"/>
+<area shape="rect" id="Node000031" href="$_sage_window_8h.html" title="Interface for the window class CWindow." alt="" coords="816,229,925,256"/>
+<area shape="poly" id="edge41_Node000030_Node000031" title=" " alt="" coords="873,182,873,214,868,214,868,182"/>
+<area shape="poly" id="edge43_Node000031_Node000008" title=" " alt="" coords="904,254,1011,302,1070,335,1120,368,1117,372,1067,340,1008,306,902,259"/>
+<area shape="poly" id="edge46_Node000031_Node000010" title=" " alt="" coords="920,254,1087,297,1085,302,919,259"/>
+<area shape="poly" id="edge42_Node000031_Node000011" title=" " alt="" coords="884,255,901,276,917,303,929,333,937,363,932,364,924,335,912,305,896,279,880,258"/>
+<area shape="poly" id="edge45_Node000031_Node000012" title=" " alt="" coords="869,257,859,290,854,288,864,256"/>
+<area shape="poly" id="edge44_Node000031_Node000013" title=" " alt="" coords="839,259,808,278,794,290,784,305,779,319,778,334,784,364,779,365,773,334,774,318,779,303,790,287,805,273,836,254"/>
+<area shape="poly" id="edge50_Node000032_Node000008" title=" " alt="" coords="1632,105,1661,125,1675,138,1685,154,1688,168,1685,182,1675,214,1662,241,1647,263,1629,280,1584,308,1524,333,1444,358,1362,374,1285,385,1219,391,1219,385,1284,380,1361,369,1443,353,1522,328,1581,304,1626,276,1643,259,1658,238,1670,212,1680,181,1683,168,1680,156,1671,141,1658,129,1629,109"/>
+<area shape="rect" id="Node000033" title=" " alt="" coords="1532,155,1593,181"/>
+<area shape="poly" id="edge48_Node000032_Node000033" title=" " alt="" coords="1598,109,1579,142,1575,140,1593,106"/>
+<area shape="rect" id="Node000034" title=" " alt="" coords="1617,155,1671,181"/>
+<area shape="poly" id="edge49_Node000032_Node000034" title=" " alt="" coords="1612,106,1632,140,1627,143,1608,109"/>
+</map>

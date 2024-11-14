@@ -1,0 +1,19 @@
+<map id="CObject" name="CObject">
+<area shape="rect" id="Node000001" title="The game object." alt="" coords="252,81,321,108"/>
+<area shape="rect" id="Node000008" href="$class_c_plane_object.html" title="The plane object." alt="" coords="178,157,280,184"/>
+<area shape="poly" id="edge9_Node000008_Node000001" title=" " alt="" coords="270,122,241,159,237,155,266,118"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="233,5,340,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,47,289,81,284,81,284,47"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="187,256,272,283"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="274,246,287,235,296,223,305,193,304,161,298,132,290,109,295,108,303,131,310,161,310,194,301,225,291,239,277,250"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html" title="The object manager." alt="" coords="126,355,245,381"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="216,297,206,316,192,355,187,353,202,314,211,295"/>
+<area shape="rect" id="Node000004" href="$class_c_renderer.html" title="The game renderer." alt="" coords="70,157,154,184"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,196,144,222,168,240,194,253,192,258,165,244,140,226,121,199"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="34,81,190,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="115,123,115,157,109,157,109,123"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="195,340,221,282,226,284,200,342"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,248,163,291"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="118,299,174,352,170,356,114,303"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="232,200,232,256,227,256,227,200"/>
+</map>

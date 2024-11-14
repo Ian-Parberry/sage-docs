@@ -1,0 +1,9 @@
+<map id="Shapes::CLineSeg::Update" name="Shapes::CLineSeg::Update">
+<area shape="rect" id="Node000001" title="Update other properties from the end points." alt="" coords="249,64,429,91"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_line_seg.html#aa2af99a98735c90a1437b70cbdafe12d" title="Constructor." alt="" coords="5,5,201,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,62,159,35,160,30,268,57"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_kinematic_line_seg.html#a79556eedb3fe746fde97c404cf77c2cb" title="Reset orientation." alt="" coords="9,56,197,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,80,198,80,198,75,233,75"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_kinematic_line_seg.html#a3b4eff84ef24b4b78f898f44064ed967" title="Rotate." alt="" coords="9,123,197,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="275,98,182,125,180,119,273,93"/>
+</map>

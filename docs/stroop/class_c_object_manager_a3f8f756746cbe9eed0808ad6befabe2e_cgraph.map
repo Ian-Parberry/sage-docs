@@ -1,0 +1,21 @@
+<map id="CObjectManager::AnimateJointExplosion" name="CObjectManager::AnimateJointExplosion">
+<area shape="rect" id="Node000001" title="Animate a joint explosion." alt="" coords="5,127,209,169"/>
+<area shape="rect" id="Node000002" href="$class_c_vector_field.html#ac8380c325eb531cb67dc4542b9d40bce" title="Detonation." alt="" coords="276,59,433,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,124,256,95,282,87,283,92,257,100,170,129"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a97be97ade1cf2ab9a3996b36e6a84da2" title="Emit a puff of smoke." alt="" coords="257,109,452,136"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="209,135,241,132,242,137,210,140"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a3f335cac0e6ad03c358163815c031889" title="Emit a spark." alt="" coords="260,160,448,187"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="210,156,245,159,244,165,209,161"/>
+<area shape="rect" id="Node000008" href="$class_c_object.html#a5f44152d4c3f0c760e2538300a1e893e" title="Get joint position and velocity." alt="" coords="280,211,428,237"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="170,167,257,196,283,204,282,209,256,201,169,172"/>
+<area shape="rect" id="Node000003" href="$class_c_vector_field.html#a475e7a103eb142fe969b97a6f5d0d9cd" title="Closest vertex." alt="" coords="514,5,684,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="430,55,498,43,499,48,431,61"/>
+<area shape="rect" id="Node000004" href="$class_c_vector_field.html#a8756bfccbe7821de3826d0542f48441a" title="Check that indices are for a non&#45;edge vertex." alt="" coords="746,35,904,77"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="433,67,730,57,731,62,434,72"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="685,35,731,41,730,46,685,40"/>
+<area shape="rect" id="Node000006" href="$class_c_object_manager.html#ad337c35f788cc01cfdc9b7537592b915" title="Create new particle." alt="" coords="500,135,698,161"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="453,130,485,133,484,139,452,135"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="449,161,484,157,485,163,449,166"/>
+<area shape="rect" id="Node000009" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="563,211,635,237"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="429,221,547,221,547,227,429,227"/>
+</map>

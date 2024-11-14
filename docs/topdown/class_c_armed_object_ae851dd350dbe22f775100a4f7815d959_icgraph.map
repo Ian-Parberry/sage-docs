@@ -1,0 +1,7 @@
+<map id="CArmedObject::RotateTowards" name="CArmedObject::RotateTowards">
+<area shape="rect" id="Node000001" title="Swivel towards position." alt="" coords="162,31,365,57"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#a2d1a319a8c34c47a065ca82390f2b279" title="Move." alt="" coords="6,5,113,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,32,113,28,113,23,147,27"/>
+<area shape="rect" id="Node000003" href="$class_c_player.html#a8cdce2b8fd7f5765c19d1d45f9899866" title="Move player object." alt="" coords="5,56,114,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,61,115,65,114,60,146,56"/>
+</map>

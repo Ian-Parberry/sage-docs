@@ -1,0 +1,8 @@
+<map id="Shapes::CShape::move" name="Shapes::CShape::move">
+<area shape="rect" id="Node000001" title="Translate." alt="" coords="5,55,166,81"/>
+<area shape="rect" id="Node000002" href="$_shape_math_8h.html#a4d3eae83cf4dda3b8777573ff6ddf073" title="Normalize angle to ." alt="" coords="215,29,380,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,56,199,52,199,57,166,61"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_shape.html#ac12634b0d95c843b6ff5015a7d5cae68" title="Rotate." alt="" coords="214,80,381,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="166,75,198,79,198,84,166,80"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="261,30,255,21,259,11,274,5,297,3,323,5,336,12,334,16,321,10,297,8,275,10,263,15,260,20,266,27"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="CCommon" name="CCommon">
+<area shape="rect" id="Node000001" title="The common variables class." alt="" coords="55,5,139,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="260,96,379,123"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="155,21,212,32,269,54,294,73,313,94,309,97,290,77,266,58,210,37,154,27"/>
+<area shape="rect" id="Node000005" href="$class_c_cannon.html" title="The cannon." alt="" coords="5,96,82,123"/>
+<area shape="poly" id="edge7_Node000005_Node000001" title=" " alt="" coords="51,42,38,57,35,76,40,95,35,96,29,76,33,55,47,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,104,196,93,149,74,123,55,104,34,108,31,127,51,152,70,197,88,245,99"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="251,5,388,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,46,337,56,336,78,329,97,324,95,331,77,332,56,329,47"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="305,47,291,62,274,74,238,86,187,96,83,108,82,102,186,91,237,81,272,70,288,58,301,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="412,5,529,32"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="437,43,342,98,340,93,434,38"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="37,80,43,55,54,41,68,30,71,35,58,45,48,57,43,81"/>
+</map>

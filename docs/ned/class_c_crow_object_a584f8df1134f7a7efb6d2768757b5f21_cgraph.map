@@ -1,0 +1,7 @@
+<map id="CCrowObject::CruisingAi" name="CCrowObject::CruisingAi">
+<area shape="rect" id="Node000001" title="Ai for cruising along." alt="" coords="5,5,174,32"/>
+<area shape="rect" id="Node000002" href="$class_c_crow_object.html#a6d1b7679437e8d5d0a84d5e0bdb420cc" title="Change state." alt="" coords="222,5,381,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,16,206,16,206,21,174,21"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html#a0c01cce335a8dec3058c19f5f8e48dec" title="Wrap horizontal distance." alt="" coords="429,5,551,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="382,16,413,16,413,21,382,21"/>
+</map>

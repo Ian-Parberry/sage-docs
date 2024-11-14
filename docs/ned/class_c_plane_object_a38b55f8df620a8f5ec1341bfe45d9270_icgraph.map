@@ -1,0 +1,5 @@
+<map id="CPlaneObject::EmitSmoke" name="CPlaneObject::EmitSmoke">
+<area shape="rect" id="Node000001" title="Emit smoke particle periodically." alt="" coords="196,5,374,32"/>
+<area shape="rect" id="Node000002" href="$class_c_plane_object.html#a63612c6cd49516a40b83be1a3604b697" title="Move object." alt="" coords="5,5,148,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,21,148,21,148,16,180,16"/>
+</map>

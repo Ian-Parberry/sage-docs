@@ -1,0 +1,13 @@
+<map id="SageKeyboard.cpp" name="SageKeyboard.cpp">
+<area shape="rect" id="Node000001" title="Code for the keyboard handler class CKeyboard." alt="" coords="128,5,260,32"/>
+<area shape="rect" id="Node000002" href="$_sage_keyboard_8h.html" title="Interface for the keyboard handler class CKeyboard." alt="" coords="135,80,252,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,33,196,64,191,64,191,33"/>
+<area shape="rect" id="Node000003" href="$_sage_window_desc_8h.html" title="Interface for the window descriptor CWindowDesc." alt="" coords="38,155,179,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="181,109,136,147,133,143,177,105"/>
+<area shape="rect" id="Node000006" href="$_sage_screenshot_flag_8h.html" title="Interface for the class CScreenshotFlag." alt="" coords="202,155,356,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="210,105,255,143,251,147,207,109"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,229,92,256"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="100,184,70,219,66,216,96,180"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="116,229,224,256"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="121,180,152,216,148,219,117,184"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="CObjectManager::MakeLineSeg" name="CObjectManager::MakeLineSeg">
+<area shape="rect" id="Node000001" title="Make static line segment with guard points." alt="" coords="5,5,212,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a001487c45cc3d109a7602a23521fa47b" title="Add shape." alt="" coords="260,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,16,244,16,244,21,212,21"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape." alt="" coords="495,5,691,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,16,479,16,479,21,447,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CObjectManager::CrowDeathFx" name="CObjectManager::CrowDeathFx">
+<area shape="rect" id="Node000001" title="Crow death effects." alt="" coords="260,5,468,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d" title="Narrow phase collision detection and response." alt="" coords="5,5,212,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,21,212,21,212,16,244,16"/>
+</map>

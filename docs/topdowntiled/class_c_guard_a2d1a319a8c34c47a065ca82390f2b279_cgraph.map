@@ -1,0 +1,20 @@
+<map id="CGuard::Move" name="CGuard::Move">
+<area shape="rect" id="Node000001" title="Move." alt="" coords="5,157,112,184"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a90bf0be7ca1092d570e9d5660ad06261" title="Fire armed object&#39;s gun." alt="" coords="175,81,348,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,154,159,124,198,111,199,116,161,129,90,159"/>
+<area shape="rect" id="Node000007" href="$class_c_object.html#a145e790baad59983ddb26abad3f4fa1b" title="Get position." alt="" coords="452,220,573,247"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="112,160,165,156,228,154,296,157,364,168,389,179,412,194,457,212,455,217,410,198,386,184,362,173,296,162,228,159,165,161,112,166"/>
+<area shape="rect" id="Node000008" href="$class_c_armed_object.html#ae851dd350dbe22f775100a4f7815d959" title="Swivel towards position." alt="" coords="160,183,363,209"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="112,175,145,179,144,184,112,180"/>
+<area shape="rect" id="Node000009" href="$class_c_tile_manager.html#a78c79d883bca8b12c5cf47344344ee44" title="Player visibility test." alt="" coords="187,233,336,260"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="85,182,161,219,182,226,181,231,159,224,82,187"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a97512c70c9395658c59e2ce9dc84cf60" title="Create new object." alt="" coords="429,5,595,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,78,410,41,438,34,439,39,412,47,302,83"/>
+<area shape="rect" id="Node000004" href="$class_c_armed_object.html#a0093f706ad2801801dd414ba797ad16e" title="Get gun offset." alt="" coords="414,56,610,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="348,83,399,78,399,83,349,89"/>
+<area shape="rect" id="Node000005" href="$class_c_armed_object.html#aad443c44e76a89026a2e8b02271d1242" title="Compute view vector." alt="" coords="411,107,613,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="349,101,396,106,395,111,348,106"/>
+<area shape="rect" id="Node000006" href="$class_c_player.html#a372b933d030cd0ae3bc375d9770b345f" title="Set the vulnerable flag." alt="" coords="434,157,590,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="309,106,364,124,412,143,437,150,436,155,410,148,362,129,307,111"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="336,240,436,235,436,240,337,245"/>
+</map>

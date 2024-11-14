@@ -1,0 +1,5 @@
+<map id="CBody::DeliverImpulse" name="CBody::DeliverImpulse">
+<area shape="rect" id="Node000001" title="Deliver impulse to body." alt="" coords="5,5,162,32"/>
+<area shape="rect" id="Node000002" href="$class_c_point.html#a585dc9938563cbf5d3b2902ae09e286c" title="Deliver an impulse." alt="" coords="210,5,366,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,16,195,16,195,21,162,21"/>
+</map>

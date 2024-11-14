@@ -1,0 +1,5 @@
+<map id="CObjectManager::EmitSpark" name="CObjectManager::EmitSpark">
+<area shape="rect" id="Node000001" title="Emit a spark." alt="" coords="5,5,194,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#ad337c35f788cc01cfdc9b7537592b915" title="Create new particle." alt="" coords="242,5,440,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,16,226,16,226,21,194,21"/>
+</map>

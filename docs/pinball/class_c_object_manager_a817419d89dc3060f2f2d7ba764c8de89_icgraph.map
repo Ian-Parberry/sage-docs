@@ -1,0 +1,9 @@
+<map id="CObjectManager::RightFlip" name="CObjectManager::RightFlip">
+<area shape="rect" id="Node000001" title="Flip right flipper." alt="" coords="565,5,745,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,5,517,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="550,21,518,21,518,16,550,16"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="327,21,295,21,295,16,327,16"/>
+<area shape="rect" id="Node000004" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>

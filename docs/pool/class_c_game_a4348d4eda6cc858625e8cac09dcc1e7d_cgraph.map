@@ -1,0 +1,20 @@
+<map id="CGame::ProcessState" name="CGame::ProcessState">
+<area shape="rect" id="Node000001" title="Process the game state." alt="" coords="5,107,159,133"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#acfcddd53e8f52a678c260f1b36d1a2a0" title="Have all balls stopped moving?" alt="" coords="215,5,406,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,104,147,73,206,42,225,34,227,39,208,46,149,77,103,108"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a53e0bfc4fab48f76a8869a8cc6c4f36d" title="Is a ball down in a pocket?" alt="" coords="219,56,402,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,103,232,84,233,89,146,109"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="239,107,382,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="159,117,224,117,224,123,159,123"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#aee47c7b6ce520868dc3ada8f1e2eb2b6" title="Reset the Impulse Vector." alt="" coords="668,149,877,192"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="142,131,207,143,325,155,444,162,653,168,653,173,444,167,325,160,206,148,141,137"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a72b44cc9c7ffe94695129fafc6a2aa64" title="Is the cue ball down in a pocket?" alt="" coords="207,208,414,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="106,132,152,159,208,187,244,200,242,205,206,192,150,164,104,136"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="462,56,620,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="374,103,462,84,463,89,375,109"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="462,107,620,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="382,117,447,117,447,123,382,123"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#a75cfc504d6ff1645b9520ba8bddf54ee" title="Create new object." alt="" coords="689,99,856,125"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="620,115,674,113,674,118,621,120"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="606,131,658,143,657,148,605,137"/>
+</map>

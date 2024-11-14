@@ -1,0 +1,26 @@
+<map id="Sage::CSpriteRenderer::DrawBoundingBox" name="Sage::CSpriteRenderer::DrawBoundingBox">
+<area shape="rect" id="Node000001" title="Draw AABB." alt="" coords="5,228,162,271"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a3d5154f12a86d5a1ea274e464e7e8095" title="Draw 2D line." alt="" coords="210,228,366,271"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,247,195,247,195,252,162,252"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30" title="Draw single 2D sprite." alt="" coords="414,140,570,183"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,225,426,187,428,192,341,230"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_sprite_renderer.html#ad590e63bb80e78c8e1dd35fa8822448c" title="Get sprite width." alt="" coords="414,228,570,271"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="367,247,399,247,399,252,367,252"/>
+<area shape="rect" id="Node000011" href="$_sage_geometry_8h.html#a1756928c779c61114227e92ee31b0be3" title="Convert vector to angle." alt="" coords="420,319,564,345"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="344,269,444,310,442,315,342,274"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="453,140,452,130,458,121,472,115,492,113,514,116,527,122,525,127,513,121,492,119,473,121,461,125,457,131,458,139"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite.html#a6cb63aa7786c8562e491af40567f159b" title="Get extents of sprite or sprite sheet/." alt="" coords="633,5,810,32"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="509,138,554,89,584,63,617,42,630,36,632,40,620,46,587,68,558,93,512,141"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_camera.html#a92442ae56a0f6628e8909b18f1b930f5" title="Get position." alt="" coords="638,56,805,83"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="528,137,570,114,617,92,639,85,641,90,619,97,572,119,530,142"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite.html#a38b7dc057dc963c5f4a3608cfe00c852" title="Get bounding rectangle in sprite sheet." alt="" coords="641,107,802,133"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="570,145,628,134,629,139,571,150"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_sprite_renderer.html#af190ad2d5d1ed12b60edf8d6a297d027" title="Get sprite size." alt="" coords="643,181,800,224"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="571,173,628,183,627,188,570,178"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_sprite.html#af6302c78aa016f0c4a815a9be1dd89f7" title="Get texture descriptor." alt="" coords="618,248,825,275"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="525,181,569,208,619,234,639,241,637,246,617,238,566,213,523,185"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="678,181,676,171,684,162,699,157,722,155,746,157,761,163,759,168,745,162,721,160,700,162,687,167,681,173,683,180"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_sprite.html#a30dea0b1985ce1e31f7cccd8b7465b89" title="Get sprite width." alt="" coords="638,299,805,325"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="565,269,619,284,648,292,647,297,618,289,564,274"/>
+<area shape="poly" id="edge13_Node000011_Node000011" title=" " alt="" coords="457,320,451,310,456,300,470,294,492,292,517,295,529,301,527,306,515,300,492,297,471,299,459,304,457,309,462,317"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="CObjectManager::MakeLineSeg" name="CObjectManager::MakeLineSeg">
+<area shape="rect" id="Node000001" title="Make static line segment with guard points." alt="" coords="986,5,1192,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="735,5,938,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="970,21,938,21,938,16,970,16"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="544,5,687,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="719,21,687,21,687,16,719,16"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="343,5,496,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="529,21,497,21,497,16,529,16"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>

@@ -1,0 +1,87 @@
+<map id="wWinMain" name="wWinMain">
+<area shape="rect" id="Node000001" title="The main entry point for this application." alt="" coords="5,487,88,513"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="154,81,276,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,485,200,121,205,123,56,487"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,487,295,513"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="88,497,120,497,120,503,88,503"/>
+<area shape="rect" id="Node000037" href="$class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer." alt="" coords="154,537,276,564"/>
+<area shape="poly" id="edge48_Node000001_Node000037" title=" " alt="" coords="89,510,154,530,153,535,87,515"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a2b8445af848995e021ae59ae2e12be2c" title="Start loading sounds." alt="" coords="374,5,521,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,78,342,41,368,34,370,39,344,47,249,83"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a7c1fa6038d453a578371caa9f01e2388" title="Start loading sprites." alt="" coords="376,56,519,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,85,360,76,361,81,277,91"/>
+<area shape="rect" id="Node000005" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="1397,588,1470,615"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="277,97,460,110,686,117,914,117,979,121,1034,130,1081,146,1123,169,1162,197,1201,232,1288,321,1315,351,1339,384,1378,454,1408,521,1426,572,1421,574,1403,523,1374,457,1334,387,1311,354,1284,324,1197,236,1158,202,1120,173,1079,151,1032,135,978,126,914,123,686,123,460,115,277,103"/>
+<area shape="rect" id="Node000007" href="$class_c_cannon.html#a00f2f772f27bf59adc530bdc10e04d7f" title="Cannon temperature drops over time." alt="" coords="375,436,520,463"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="279,483,368,464,369,469,281,489"/>
+<area shape="rect" id="Node000013" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="360,537,535,564"/>
+<area shape="poly" id="edge13_Node000006_Node000013" title=" " alt="" coords="281,511,369,531,368,536,279,517"/>
+<area shape="rect" id="Node000026" href="$class_c_object_manager.html#ae582f4ae0db3309a0d22ffaf77eeec14" title="Make sounds for all objects." alt="" coords="343,689,552,732"/>
+<area shape="poly" id="edge36_Node000006_Node000026" title=" " alt="" coords="281,512,297,523,312,543,319,563,322,601,324,639,331,657,345,676,347,678,344,682,341,679,326,660,319,640,316,602,314,564,307,546,293,527,278,516"/>
+<area shape="rect" id="Node000027" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="371,639,524,665"/>
+<area shape="poly" id="edge37_Node000006_Node000027" title=" " alt="" coords="273,512,296,523,312,535,322,547,345,574,415,628,412,632,341,578,318,551,308,539,294,528,271,516"/>
+<area shape="rect" id="Node000031" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="371,284,524,311"/>
+<area shape="poly" id="edge42_Node000006_Node000031" title=" " alt="" coords="231,484,418,319,422,323,234,488"/>
+<area shape="rect" id="Node000008" href="$class_c_cannon.html#ab60ba1a492265b1318103ad995e059f5" title="Make cannon explode." alt="" coords="847,436,978,463"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="521,447,831,447,831,452,521,452"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="950,433,1016,414,1102,398,1149,395,1196,397,1243,406,1287,422,1312,436,1334,453,1372,494,1402,536,1422,573,1417,576,1397,539,1368,497,1330,457,1309,440,1285,426,1242,411,1196,403,1149,401,1103,404,1017,419,952,438"/>
+<area shape="rect" id="Node000009" href="$class_c_cannon.html#a1b4d2972497af93191e17bc8daa28700" title="Apply an impulse in Physics World." alt="" coords="1083,487,1254,513"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="979,460,1083,480,1082,486,978,465"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#aafae6f3ee7b0853125c813abbe2ecd51" title="Emit a smoke particle." alt="" coords="1071,537,1266,564"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="936,461,987,492,1052,523,1074,530,1073,535,1050,528,985,497,933,465"/>
+<area shape="rect" id="Node000011" href="$class_c_cannon.html#ad15a3450e6e166e512e3d17317d4237d" title="Make cannon parts collide&#45;able in Physics World." alt="" coords="1090,436,1247,463"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="978,447,1075,447,1075,452,978,452"/>
+<area shape="rect" id="Node000012" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="1132,335,1205,361"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="960,433,1002,415,1025,396,1050,378,1083,364,1116,355,1118,360,1085,369,1052,382,1028,400,1004,420,962,438"/>
+<area shape="rect" id="Node000014" href="$class_c_cannon.html#a883486767bd7c5eb539557a573c2c5bb" title="Rotate the cannon barrel." alt="" coords="619,512,755,539"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="535,539,604,531,604,537,536,544"/>
+<area shape="rect" id="Node000015" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="616,677,758,704"/>
+<area shape="poly" id="edge15_Node000013_Node000015" title=" " alt="" coords="469,562,527,603,602,650,639,668,636,673,599,654,524,608,466,567"/>
+<area shape="rect" id="Node000023" href="$class_c_cannon.html#a7694d324e7716dcab02e0d21c02a3f2a" title="Fire the cannon." alt="" coords="634,613,740,640"/>
+<area shape="poly" id="edge26_Node000013_Node000023" title=" " alt="" coords="490,562,601,599,624,606,622,611,600,604,489,567"/>
+<area shape="rect" id="Node000024" href="$class_c_cannon.html#ac84b2ca11b83301b4f44c38a78449d7d" title="Get cannon position." alt="" coords="848,335,976,361"/>
+<area shape="poly" id="edge33_Node000013_Node000024" title=" " alt="" coords="476,534,622,465,821,378,854,365,856,370,823,382,625,469,478,539"/>
+<area shape="rect" id="Node000025" href="$class_c_cannon.html#a791819e1bf526ca43acc2849e76b5f36" title="Set the motor speed in the wheel joints." alt="" coords="616,563,758,589"/>
+<area shape="poly" id="edge35_Node000013_Node000025" title=" " alt="" coords="536,557,601,564,600,570,535,563"/>
+<area shape="rect" id="Node000016" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="835,740,990,767"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="738,702,848,733,846,738,737,707"/>
+<area shape="rect" id="Node000017" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="833,689,992,716"/>
+<area shape="poly" id="edge17_Node000015_Node000017" title=" " alt="" coords="759,692,818,695,818,700,759,697"/>
+<area shape="rect" id="Node000018" href="$class_c_object_manager.html#ac89a034f56afd9d3e55278c4a856f5b6" title="Create background." alt="" coords="1051,689,1286,716"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="992,700,1036,700,1036,705,992,705"/>
+<area shape="rect" id="Node000020" href="$class_c_object_manager.html#af6d4b978171f1eade1d2aa3a0192a61f" title="Create a tower of crates." alt="" coords="1068,740,1269,767"/>
+<area shape="poly" id="edge21_Node000017_Node000020" title=" " alt="" coords="984,714,1083,734,1082,739,983,719"/>
+<area shape="rect" id="Node000022" href="$class_c_heads_up_display.html#a01a33ec5bff1314f159607ae42c93c67" title="Create HUD objects." alt="" coords="1076,791,1262,817"/>
+<area shape="poly" id="edge25_Node000017_Node000022" title=" " alt="" coords="980,714,1004,726,1020,739,1029,752,1038,765,1052,776,1064,782,1062,787,1050,781,1034,768,1025,755,1016,742,1002,730,977,719"/>
+<area shape="poly" id="edge20_Node000018_Node000005" title=" " alt="" coords="1205,686,1382,618,1384,623,1207,691"/>
+<area shape="rect" id="Node000019" href="$class_c_object_manager.html#aa94cab726e5c4f3b619416d4fc4107de" title="Create new object." alt="" coords="1581,689,1785,716"/>
+<area shape="poly" id="edge19_Node000018_Node000019" title=" " alt="" coords="1287,700,1565,700,1565,705,1287,705"/>
+<area shape="poly" id="edge24_Node000020_Node000005" title=" " alt="" coords="1256,737,1285,726,1322,703,1356,677,1409,625,1412,628,1359,681,1325,708,1288,730,1258,742"/>
+<area shape="rect" id="Node000021" href="$class_c_object_manager.html#ae7b1c5735f55985a58a947d544198a3b" title="Create a crate." alt="" coords="1334,740,1533,767"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="1270,751,1319,751,1319,756,1270,756"/>
+<area shape="poly" id="edge23_Node000021_Node000019" title=" " alt="" coords="1502,737,1598,717,1599,722,1503,742"/>
+<area shape="poly" id="edge32_Node000023_Node000005" title=" " alt="" coords="741,622,1381,600,1382,606,741,628"/>
+<area shape="poly" id="edge30_Node000023_Node000008" title=" " alt="" coords="739,617,757,610,772,599,784,585,791,571,795,541,800,511,807,495,820,479,835,468,838,472,824,483,812,498,805,512,801,542,796,573,788,588,775,603,759,614,741,622"/>
+<area shape="poly" id="edge28_Node000023_Node000009" title=" " alt="" coords="740,613,772,599,786,587,795,574,804,560,820,548,881,523,946,507,1009,499,1068,495,1068,500,1010,504,947,513,883,529,823,553,808,564,799,577,790,590,775,604,742,618"/>
+<area shape="poly" id="edge29_Node000023_Node000010" title=" " alt="" coords="737,610,773,599,796,589,821,580,941,560,1055,550,1056,556,942,565,822,585,798,594,775,604,739,615"/>
+<area shape="poly" id="edge31_Node000023_Node000012" title=" " alt="" coords="740,618,757,610,772,599,787,578,794,556,794,512,793,489,795,467,803,444,820,422,836,413,863,404,943,385,1117,353,1118,359,944,391,865,409,838,418,823,426,807,447,800,468,798,489,800,512,800,557,792,580,776,603,760,615,742,622"/>
+<area shape="poly" id="edge27_Node000023_Node000019" title=" " alt="" coords="741,627,1075,646,1302,662,1533,681,1566,685,1565,690,1532,687,1301,667,1074,651,741,632"/>
+<area shape="poly" id="edge34_Node000024_Node000012" title=" " alt="" coords="977,345,1117,345,1117,351,977,351"/>
+<area shape="poly" id="edge38_Node000027_Node000015" title=" " alt="" coords="525,662,601,674,600,679,524,667"/>
+<area shape="rect" id="Node000028" href="$class_c_game.html#ac934fab58961e1d1ff8ae5b95b40c45c" title="Process whether player has won or lost." alt="" coords="600,791,774,817"/>
+<area shape="poly" id="edge39_Node000027_Node000028" title=" " alt="" coords="526,663,554,675,577,692,607,719,665,777,661,781,603,723,574,696,551,680,524,668"/>
+<area shape="rect" id="Node000029" href="$class_c_object_manager.html#a999bd0acd093ba701a7f24b865aa0fd5" title="Test all crates below height." alt="" coords="822,841,1003,884"/>
+<area shape="poly" id="edge40_Node000028_Node000029" title=" " alt="" coords="742,815,814,834,812,839,740,820"/>
+<area shape="rect" id="Node000030" href="$class_c_cannon.html#a2dd70c0ca912532f46bb0234d3928eb2" title="Whether cannon has exploded." alt="" coords="849,791,976,817"/>
+<area shape="poly" id="edge41_Node000028_Node000030" title=" " alt="" coords="774,801,833,801,833,807,774,807"/>
+<area shape="rect" id="Node000032" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="608,360,766,387"/>
+<area shape="poly" id="edge43_Node000031_Node000032" title=" " alt="" coords="490,309,601,345,624,352,622,358,600,351,489,314"/>
+<area shape="rect" id="Node000033" href="$class_c_heads_up_display.html#a752862e9f074e8c1b208d78f7f9c6bfb" title="Draw HUD." alt="" coords="604,157,770,184"/>
+<area shape="poly" id="edge44_Node000031_Node000033" title=" " alt="" coords="464,282,522,239,599,194,615,187,617,192,602,198,525,243,467,286"/>
+<area shape="rect" id="Node000034" href="$class_c_game.html#a0f951deeb63ad176580a52860277f1a1" title="Draw win/lose text." alt="" coords="609,208,765,235"/>
+<area shape="poly" id="edge45_Node000031_Node000034" title=" " alt="" coords="489,281,600,244,622,237,624,242,601,249,490,286"/>
+<area shape="rect" id="Node000035" href="$class_c_cannon.html#ae823e07c6e19ee6db5f07e38c68851ff" title="Get number of cannonballs fired in this level." alt="" coords="606,259,768,285"/>
+<area shape="poly" id="edge46_Node000031_Node000035" title=" " alt="" coords="524,287,590,280,591,285,525,292"/>
+<area shape="rect" id="Node000036" href="$class_c_cannon.html#a1cea9e3b081100f247ad00344a61f67b" title="Get current and max temperatures." alt="" coords="615,309,759,336"/>
+<area shape="poly" id="edge47_Node000031_Node000036" title=" " alt="" coords="525,303,600,311,599,316,524,308"/>
+</map>

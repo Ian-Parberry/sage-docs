@@ -1,0 +1,11 @@
+<map id="CDialogBox" name="CDialogBox">
+<area shape="rect" id="Node000001" title="The dialog box class." alt="" coords="193,155,284,181"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,142,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,111,211,152,209,156,115,116"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="165,80,312,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,122,242,154,236,154,236,122"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="337,80,421,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,117,265,156,262,152,340,112"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="292,5,466,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="382,48,382,80,376,80,376,48"/>
+</map>

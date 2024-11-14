@@ -1,0 +1,36 @@
+<map id="NautilusGear.cpp" name="NautilusGear.cpp">
+<area shape="rect" id="Node000001" title="Code for the nautilus gear class CNautilusGear." alt="" coords="647,5,769,32"/>
+<area shape="rect" id="Node000002" href="$_nautilus_gear_8h.html" title="Interface for the nautilus gear class CNautilusGear." alt="" coords="268,80,377,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="647,34,392,82,391,76,646,29"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="572,229,697,256"/>
+<area shape="poly" id="edge21_Node000001_Node000006" title=" " alt="" coords="706,33,646,216,641,214,701,32"/>
+<area shape="rect" id="Node000009" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="410,379,523,405"/>
+<area shape="poly" id="edge20_Node000001_Node000009" title=" " alt="" coords="714,32,729,89,735,128,737,167,737,244,732,276,717,303,695,326,667,344,636,359,603,370,538,385,537,380,601,365,634,354,665,340,692,322,713,300,727,274,732,244,732,167,729,128,723,91,709,33"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="772,80,846,107"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="727,30,781,68,778,73,724,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="80,453,197,480"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="268,99,189,108,146,117,104,130,66,149,36,173,15,204,10,221,8,241,8,319,10,339,17,358,40,392,71,421,103,443,100,447,68,425,36,396,12,360,5,340,3,319,3,241,5,220,10,201,32,169,63,144,102,125,144,112,188,102,268,93"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="43,229,101,256"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="303,109,108,223,105,219,300,105"/>
+<area shape="rect" id="Node000005" href="$_level_8h.html" title="Interface for the level class CLevel." alt="" coords="291,155,354,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="325,107,325,139,320,139,320,107"/>
+<area shape="rect" id="Node000011" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="478,229,548,256"/>
+<area shape="poly" id="edge18_Node000002_Node000011" title=" " alt="" coords="341,105,487,218,484,222,337,109"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="291,174,260,180,226,190,193,207,166,231,151,255,140,282,130,339,131,394,136,438,131,439,125,395,125,339,135,281,146,253,162,228,190,202,224,185,259,175,290,169"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="291,181,116,231,115,226,290,176"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="355,174,566,223,565,228,354,179"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="176,229,286,256"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="308,184,260,222,257,218,305,180"/>
+<area shape="rect" id="Node000008" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="371,304,456,331"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="327,181,334,216,350,255,366,275,385,292,382,296,362,279,346,257,329,218,322,183"/>
+<area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="356,179,467,221,465,226,354,184"/>
+<area shape="rect" id="Node000012" href="$_line_object_8h.html" title="Interface for the line object class CLineObject." alt="" coords="360,229,454,256"/>
+<area shape="poly" id="edge16_Node000005_Node000012" title=" " alt="" coords="339,180,382,217,379,221,336,184"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="425,330,451,365,446,368,420,333"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="410,408,211,452,210,447,409,403"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="413,453,520,480"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="469,406,469,438,464,438,464,406"/>
+<area shape="poly" id="edge15_Node000011_Node000008" title=" " alt="" coords="497,259,445,297,442,292,494,254"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="512,257,478,364,473,363,507,256"/>
+<area shape="poly" id="edge17_Node000012_Node000008" title=" " alt="" coords="410,256,413,288,408,289,405,257"/>
+</map>

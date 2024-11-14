@@ -1,0 +1,5 @@
+<map id="CObjectManager::RightFlip" name="CObjectManager::RightFlip">
+<area shape="rect" id="Node000001" title="Flip right flipper." alt="" coords="5,5,185,32"/>
+<area shape="rect" id="Node000002" href="$class_c_flipper.html#abbe304d5038c6338f5a7664cd15041b9" title="Flip flipper." alt="" coords="233,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,16,217,16,217,21,185,21"/>
+</map>

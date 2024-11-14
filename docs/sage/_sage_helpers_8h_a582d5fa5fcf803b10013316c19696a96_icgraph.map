@@ -1,0 +1,20 @@
+<map id="Sage::MakeWideFileName" name="Sage::MakeWideFileName">
+<area shape="rect" id="Node000001" title="Make wide file name from a narrow one." alt="" coords="448,157,625,184"/>
+<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="577,145,563,138,537,136,512,138,499,143,496,148,502,155,498,159,491,149,495,139,511,133,537,131,565,133,579,140"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#a3f85885e38b4c7b095fbbd5376344300" title="Draw centered text." alt="" coords="231,29,378,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="503,150,455,118,399,86,373,75,375,70,401,82,458,114,506,146"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#aefb8c3c86606c7c4f077b0a9051fb74f" title="Draw screen text." alt="" coords="231,120,378,163"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="432,160,379,153,379,148,433,155"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sound.html#aaeb3cc995a95fbefb9b360e4dfcfff5b" title="Load sound by index." alt="" coords="210,187,400,213"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="433,186,401,191,400,185,432,181"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_renderer3_d.html#a9b5ba084a5b9514c595f099e580c98fa" title="Load texture from file." alt="" coords="231,237,378,280"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="489,193,401,228,370,239,368,234,399,223,487,188"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="341,16,327,10,305,8,284,10,271,15,266,21,268,28,263,29,261,19,268,10,283,5,305,3,329,5,343,11"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="341,107,327,101,305,99,284,101,271,105,266,111,268,119,263,120,261,110,268,101,283,95,305,93,329,96,343,102"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sound.html#a54ba4211e1d5b685ddaee1fa23a3691b" title="Load sound." alt="" coords="12,187,155,213"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="194,203,155,203,155,197,194,197"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_sprite_renderer.html#aef2c9196aae92e3118adf7755f9b9b8d" title="Load sprite." alt="" coords="5,237,162,280"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="215,261,162,261,162,256,215,256"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_renderer3_d.html#a9b1dc200216ae36d3548646a5bfd3644" title="Load texture." alt="" coords="10,304,157,347"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="218,287,158,306,156,301,217,282"/>
+</map>

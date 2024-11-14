@@ -1,0 +1,15 @@
+<map id="CCannon::CoolDown" name="CCannon::CoolDown">
+<area shape="rect" id="Node000001" title="Cannon temperature drops over time." alt="" coords="5,107,151,133"/>
+<area shape="rect" id="Node000002" href="$class_c_cannon.html#ab60ba1a492265b1318103ad995e059f5" title="Make cannon explode." alt="" coords="199,107,330,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,117,183,117,183,123,151,123"/>
+<area shape="rect" id="Node000003" href="$class_c_cannon.html#a1b4d2972497af93191e17bc8daa28700" title="Apply an impulse in Physics World." alt="" coords="390,5,561,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,104,323,73,377,42,394,35,396,40,379,46,326,77,284,108"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#aafae6f3ee7b0853125c813abbe2ecd51" title="Emit a smoke particle." alt="" coords="378,56,573,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="323,103,402,84,403,89,324,109"/>
+<area shape="rect" id="Node000005" href="$class_c_cannon.html#ad15a3450e6e166e512e3d17317d4237d" title="Make cannon parts collide&#45;able in Physics World." alt="" coords="398,107,554,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="331,117,382,117,382,123,331,123"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="440,157,512,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="324,131,425,156,424,161,323,137"/>
+<area shape="rect" id="Node000007" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="440,208,512,235"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="284,132,326,163,379,194,425,209,423,214,377,198,323,167,281,136"/>
+</map>

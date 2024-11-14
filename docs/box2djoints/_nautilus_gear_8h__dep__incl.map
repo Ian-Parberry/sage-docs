@@ -1,0 +1,7 @@
+<map id="NautilusGear.h" name="NautilusGear.h">
+<area shape="rect" id="Node000001" title="Interface for the nautilus gear class CNautilusGear." alt="" coords="54,5,163,32"/>
+<area shape="rect" id="Node000002" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,80,87,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,46,59,81,55,78,86,42"/>
+<area shape="rect" id="Node000003" href="$_nautilus_gear_8cpp.html" title="Code for the nautilus gear class CNautilusGear." alt="" coords="110,80,232,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,42,163,78,159,81,128,46"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="CBox2DRenderer::Drawb2Edge" name="CBox2DRenderer::Drawb2Edge">
+<area shape="rect" id="Node000001" title="Draw Box2D shape." alt="" coords="5,5,213,32"/>
+<area shape="rect" id="Node000002" href="$class_c_box2_d_renderer.html#ab3e66c16fda3d9e81ebf175402dc58e2" title="Physics World to Render World." alt="" coords="261,5,444,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,16,245,16,245,21,213,21"/>
+</map>

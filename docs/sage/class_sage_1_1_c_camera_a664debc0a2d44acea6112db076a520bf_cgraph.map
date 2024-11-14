@@ -1,0 +1,5 @@
+<map id="Sage::CCamera::Update" name="Sage::CCamera::Update">
+<area shape="rect" id="Node000001" title="Update matrices and frustum." alt="" coords="5,13,171,40"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a79e0bf2f10d2cdc90b71ac25e68e2f80" title="Build the view frustum." alt="" coords="219,5,400,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,24,203,24,203,29,171,29"/>
+</map>

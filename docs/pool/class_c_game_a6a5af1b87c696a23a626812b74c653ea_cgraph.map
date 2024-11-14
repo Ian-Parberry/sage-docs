@@ -1,0 +1,7 @@
+<map id="CGame::CreateObjects" name="CGame::CreateObjects">
+<area shape="rect" id="Node000001" title="Create game objects." alt="" coords="5,35,164,61"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a75cfc504d6ff1645b9520ba8bddf54ee" title="Create new object." alt="" coords="233,5,399,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,35,217,28,218,34,164,41"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#aee47c7b6ce520868dc3ada8f1e2eb2b6" title="Reset the Impulse Vector." alt="" coords="212,56,420,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,55,197,60,196,65,164,61"/>
+</map>

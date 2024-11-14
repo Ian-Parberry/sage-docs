@@ -1,0 +1,5 @@
+<map id="CBitCounter::GetPos" name="CBitCounter::GetPos">
+<area shape="rect" id="Node000001" title="Get position." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="Node000002" href="$_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="199,5,271,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+</map>

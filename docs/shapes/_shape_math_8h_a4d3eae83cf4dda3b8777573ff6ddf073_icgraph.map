@@ -1,0 +1,23 @@
+<map id="Shapes::NormalizeAngle" name="Shapes::NormalizeAngle">
+<area shape="rect" id="Node000001" title="Normalize angle to ." alt="" coords="949,97,1114,124"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="1072,85,1058,78,1031,76,1007,78,994,83,991,88,997,95,992,99,985,89,990,79,1006,73,1031,71,1059,73,1074,80"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#aecb040e20a172af5753641604a789ba9" title="Translate." alt="" coords="719,21,880,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="983,94,900,63,860,51,862,46,901,57,985,89"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_arc.html#a68cd1094cdde528977fd84e172483c0e" title="Point to angle." alt="" coords="714,72,885,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="933,103,885,97,886,92,934,97"/>
+<area shape="rect" id="Node000009" href="$class_shapes_1_1_c_kinematic_arc.html#a9a6914c653b5c9fd5d84c628b3d304cd" title="Rotate." alt="" coords="5,123,167,165"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="933,117,167,144,167,139,933,111"/>
+<area shape="rect" id="Node000010" href="$class_shapes_1_1_c_arc_desc.html#afe80d77765116828dd5abef913ef5b6b" title="Set the angles." alt="" coords="698,173,901,200"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="976,132,902,157,845,175,844,170,900,152,975,127"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_arc.html#a5df47e5d99c3d84d7c34cceb3c124288" title="Point in sector test." alt="" coords="477,68,650,95"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="698,86,651,85,651,80,698,81"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_arc.html#a65f524c9e4e17ec42dc6fa4f64ee2a71" title="Collision detection." alt="" coords="215,17,429,44"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="481,67,388,47,389,42,482,62"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_arc.html#acebabe19c76a51e13bb8ce59c5cae602" title="Update from angles and radius." alt="" coords="245,68,398,95"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="462,84,399,84,399,79,462,79"/>
+<area shape="rect" id="Node000007" href="$class_shapes_1_1_c_arc.html#ac448e5b08ef96a604212c8863982e0be" title="Constructor." alt="" coords="15,5,157,32"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="244,66,214,59,132,35,133,30,215,53,246,61"/>
+<area shape="rect" id="Node000008" href="$class_shapes_1_1_c_kinematic_arc.html#a6a54feb32d20c5758452cb8599643210" title="Reset orientation." alt="" coords="5,56,167,99"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="230,82,167,81,167,76,230,77"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="255,102,168,125,166,120,253,97"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="Shapes::CShapeDesc" name="Shapes::CShapeDesc">
+<area shape="rect" id="Node000001" title="Shape Descriptor." alt="" coords="272,5,423,32"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_circle_desc.html" title="Circle descriptor." alt="" coords="94,80,243,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,41,201,82,199,77,301,36"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_line_seg_desc.html" title="Line segment descriptor." alt="" coords="266,80,428,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="350,48,350,80,344,80,344,48"/>
+<area shape="rect" id="Node000006" href="$class_shapes_1_1_c_point_desc.html" title="Point descriptor." alt="" coords="452,80,597,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="393,36,494,77,492,82,391,41"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_arc_desc.html" title="Arc descriptor." alt="" coords="5,155,140,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="142,118,91,156,87,152,138,114"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_dynamic_circle_desc.html" title="Dynamic circle descriptor." alt="" coords="164,155,365,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="199,114,250,152,246,156,195,118"/>
+</map>

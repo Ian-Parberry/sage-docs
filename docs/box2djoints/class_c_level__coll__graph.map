@@ -1,0 +1,8 @@
+<map id="CLevel" name="CLevel">
+<area shape="rect" id="Node000001" title="Stub class for a level." alt="" coords="33,81,95,108"/>
+<area shape="rect" id="Node000003" href="$class_c_common.html" title="The common variables class." alt="" coords="22,172,106,199"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="32,120,22,133,21,143,25,152,44,170,40,174,21,155,16,144,18,131,28,117"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,123,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,47,67,81,61,81,61,47"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="79,158,83,148,81,128,72,110,77,107,86,126,88,148,84,159"/>
+</map>

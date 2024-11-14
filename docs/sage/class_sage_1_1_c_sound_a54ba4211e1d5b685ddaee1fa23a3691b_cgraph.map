@@ -1,0 +1,10 @@
+<map id="Sage::CSound::Load" name="Sage::CSound::Load">
+<area shape="rect" id="Node000001" title="Load sound." alt="" coords="5,43,148,69"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#aaeb3cc995a95fbefb9b360e4dfcfff5b" title="Load sound by index." alt="" coords="196,43,386,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,53,180,53,180,59,148,59"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sound.html#af0dc12df8465ca47564aa68663f9bb6d" title="Create sound instances." alt="" coords="434,5,644,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="384,39,430,32,431,38,384,45"/>
+<area shape="rect" id="Node000004" href="$_sage_helpers_8h.html#a582d5fa5fcf803b10013316c19696a96" title="Make wide file name from a narrow one." alt="" coords="450,80,628,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="384,67,436,75,435,80,384,73"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="498,81,490,71,495,61,512,55,539,53,569,56,585,63,582,68,568,61,539,59,513,61,499,65,495,71,502,78"/>
+</map>

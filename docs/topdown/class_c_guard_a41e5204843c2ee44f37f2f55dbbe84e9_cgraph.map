@@ -1,0 +1,9 @@
+<map id="CGuard::Draw" name="CGuard::Draw">
+<area shape="rect" id="Node000001" title="Draw." alt="" coords="5,31,111,57"/>
+<area shape="rect" id="Node000002" href="$class_c_guard.html#a3b22279349c76fa4e1966c5d776da07a" title="Change state." alt="" coords="159,5,309,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,34,143,29,144,34,112,39"/>
+<area shape="rect" id="Node000003" href="$class_c_guard.html#ac221cdeb835736a295b79384065a89ec" title="Draw state text." alt="" coords="166,56,302,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,49,151,55,150,60,111,54"/>
+<area shape="rect" id="Node000004" href="$class_c_guard.html#a2d1351bd30c8ebed2a8b437f1a53563d" title="Get state text." alt="" coords="357,56,517,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="303,67,341,67,341,72,303,72"/>
+</map>

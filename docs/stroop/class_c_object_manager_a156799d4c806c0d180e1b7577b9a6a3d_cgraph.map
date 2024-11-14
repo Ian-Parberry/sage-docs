@@ -1,0 +1,5 @@
+<map id="CObjectManager::ProcessShutdown" name="CObjectManager::ProcessShutdown">
+<area shape="rect" id="Node000001" title="Initiate shutdown if the game is finished." alt="" coords="5,5,239,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#af4f892324585bd755b8b378a0f224d11" title="Make all words explode into characters." alt="" coords="287,5,508,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,16,271,16,271,21,239,21"/>
+</map>

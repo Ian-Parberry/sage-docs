@@ -1,0 +1,8 @@
+<map id="CObjectManager::UpdateQuadtree" name="CObjectManager::UpdateQuadtree">
+<area shape="rect" id="Node000001" title="Update the quadtree." alt="" coords="5,43,228,69"/>
+<area shape="rect" id="Node000002" href="$class_c_quad_tree.html#a92b7c5fde589cc97e7b803406cb44434" title="Clear dynamic and kinematic shape lists in all nodes." alt="" coords="277,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,39,261,29,262,34,201,45"/>
+<area shape="rect" id="Node000003" href="$class_c_quad_tree.html#a7bfafc26e36377087ffac07f0bce97cd" title="Insert shape at place in tree." alt="" coords="276,80,405,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,67,261,77,260,83,200,73"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="303,81,296,71,300,61,316,55,340,53,367,56,381,62,379,67,365,61,340,59,317,61,304,65,301,71,307,78"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="CGame::KeyboardHandler" name="CGame::KeyboardHandler">
+<area shape="rect" id="Node000001" title="The keyboard handler." alt="" coords="5,107,180,133"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="251,56,393,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,103,243,84,244,89,157,109"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a6c658762cca40fa9e3555f3494499d7d" title="Begin saying the current number in binary." alt="" coords="241,107,402,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="180,117,226,117,226,123,180,123"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#a5daaf88f390ec1fae3b4c2da5f38a6f5" title="Create a new ball." alt="" coords="228,157,416,184"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="157,131,244,151,243,156,156,137"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="492,5,648,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,53,486,33,487,38,391,58"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#aa2d13426f50a3bb1768245ea68e5d844" title="Create counter." alt="" coords="464,56,676,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="394,67,449,67,449,72,394,72"/>
+<area shape="rect" id="Node000005" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="724,107,797,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="633,81,677,92,710,102,709,107,676,97,631,86"/>
+<area shape="rect" id="Node000007" href="$class_c_counter.html#a1e3fa83cee3c4df155d97e2b4029b0ca" title="Get number of bits." alt="" coords="492,107,649,133"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="403,117,476,117,476,123,403,123"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="416,167,540,160,676,143,708,135,710,140,677,148,541,165,417,172"/>
+<area shape="rect" id="Node000009" href="$class_c_object_manager.html#a03f151795235b557e169fb7c76ada512" title="Create object." alt="" coords="468,208,672,235"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="391,182,487,202,486,207,390,187"/>
+</map>

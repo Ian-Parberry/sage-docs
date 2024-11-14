@@ -1,0 +1,89 @@
+<map id="RW2PW" name="RW2PW">
+<area shape="rect" id="Node000001" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="1044,671,1116,697"/>
+<area shape="rect" id="Node000002" href="$class_c_pulley.html#a8b496f93742ca2222a6c4d685f3ee1d2" title="Create or delete elephant." alt="" coords="567,51,679,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1074,655,1065,516,1048,324,1024,146,1010,84,1002,64,994,53,955,28,911,13,864,8,816,11,770,18,726,29,657,53,655,48,725,24,768,13,816,5,864,3,912,8,957,23,998,49,1006,62,1015,83,1030,145,1054,323,1071,516,1080,655"/>
+<area shape="rect" id="Node000003" href="$class_c_car_and_bridge.html#a7a4815dce429f6b16c61c2d1c9125be6" title="Constructor." alt="" coords="5,392,217,419"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1074,656,1066,577,1051,476,1027,382,1012,347,994,325,966,309,929,297,885,290,835,287,721,290,595,305,468,326,348,350,165,394,164,389,347,345,467,321,595,299,720,285,835,281,886,284,930,292,968,304,997,321,1016,344,1032,381,1056,475,1071,576,1079,655"/>
+<area shape="rect" id="Node000004" href="$class_c_gear.html#a4680074b02a91cb020dfd1ff52d7e02b" title="Constructor." alt="" coords="310,671,416,697"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1028,674,995,668,859,653,753,648,646,651,509,661,416,675,415,670,509,656,646,646,753,642,860,648,996,663,1029,669"/>
+<area shape="rect" id="Node000005" href="$class_c_nautilus_gear.html#a066707102a77b81c84a59f1b347f8bea" title="Constructor." alt="" coords="522,848,724,875"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1066,713,1038,753,1019,773,997,789,930,821,859,843,789,856,724,862,724,857,788,850,858,837,929,816,994,785,1015,769,1034,749,1062,710"/>
+<area shape="rect" id="Node000006" href="$class_c_pulley.html#a6fa495b98bf127804b223ba74a12e969" title="Constructor." alt="" coords="562,127,684,153"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1076,656,1074,544,1063,391,1053,315,1038,246,1019,190,1007,169,994,154,972,142,941,134,858,127,766,129,685,136,684,131,766,124,858,122,942,129,974,137,997,150,1011,166,1023,188,1043,244,1058,314,1068,391,1079,544,1081,655"/>
+<area shape="rect" id="Node000007" href="$class_c_rack_and_pinion.html#a346dfdb09744ba73d63dc277d0a3388b" title="Constructor." alt="" coords="526,967,720,1009"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1079,713,1073,758,1059,812,1035,867,1018,892,997,914,959,929,889,946,721,976,720,971,888,941,958,924,994,910,1014,889,1031,865,1054,811,1068,757,1074,713"/>
+<area shape="rect" id="Node000008" href="$class_c_newtons_cradle.html#ade953fca77863053020e04bd783ff0d7" title="Create all balls." alt="" coords="539,1101,707,1128"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1079,713,1071,795,1056,901,1032,1001,1016,1040,998,1066,977,1079,948,1090,873,1105,788,1113,708,1117,708,1112,788,1108,872,1100,946,1085,974,1075,994,1062,1011,1037,1027,999,1050,900,1066,794,1074,713"/>
+<area shape="rect" id="Node000012" href="$class_c_newtons_cradle.html#a80a13f008f7dfea273b2117f99f67e67" title="Create a ball." alt="" coords="795,1127,986,1153"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1079,713,1072,803,1056,921,1032,1034,1017,1079,998,1110,972,1128,969,1124,994,1106,1012,1077,1027,1033,1051,920,1066,802,1074,713"/>
+<area shape="rect" id="Node000013" href="$class_c_car_and_bridge.html#a96b7a38bf7cfe00da2b5317fd3cf2f82" title="Create bridge from platforms &amp; ramps." alt="" coords="265,392,461,419"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="1073,655,1064,584,1047,495,1024,413,1010,382,994,362,976,351,954,342,899,331,832,327,761,328,618,341,510,357,448,374,395,394,393,389,446,369,508,352,618,336,760,323,833,321,899,326,956,337,979,346,997,358,1014,379,1029,411,1053,494,1069,583,1078,655"/>
+<area shape="rect" id="Node000014" href="$class_c_car_and_bridge.html#a4db9efe1d2f774542cea2954e518bd98" title="Create the car." alt="" coords="533,519,713,545"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="1072,656,1064,620,1049,579,1027,540,1012,523,994,509,972,500,941,496,861,497,772,507,693,521,692,515,772,502,860,492,941,490,973,495,997,504,1015,519,1031,537,1054,577,1069,619,1077,655"/>
+<area shape="rect" id="Node000015" href="$class_c_car_and_bridge.html#aeb3f15eac9bd996e6c32d4f1c5c41821" title="Create the car body." alt="" coords="785,519,996,545"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="1065,657,1038,607,1018,581,994,560,973,548,976,544,997,555,1022,577,1042,604,1070,655"/>
+<area shape="rect" id="Node000016" href="$class_c_pulley.html#ab705df676a26d29c522aba8922ff9934" title="Create the elephant&#39;s crate." alt="" coords="817,164,964,191"/>
+<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="1075,655,1069,554,1056,419,1045,351,1032,289,1014,239,994,205,980,194,963,186,965,181,983,189,998,201,1019,236,1037,288,1050,350,1061,418,1075,554,1080,655"/>
+<area shape="rect" id="Node000017" href="$class_c_windmill.html#a658ebd2a0abedde6cc955dcc03a7528e" title="Create the fan." alt="" coords="815,1228,966,1255"/>
+<area shape="poly" id="edge21_Node000001_Node000017" title=" " alt="" coords="1081,713,1076,822,1063,970,1052,1046,1038,1115,1020,1172,998,1211,984,1223,967,1232,965,1227,981,1219,994,1208,1015,1169,1033,1113,1047,1045,1058,970,1070,822,1075,713"/>
+<area shape="rect" id="Node000018" href="$class_c_windmill.html#a7283ffb864dbb46d8114f381d72b6785" title="Constructor." alt="" coords="548,1203,698,1229"/>
+<area shape="poly" id="edge45_Node000001_Node000018" title=" " alt="" coords="1081,713,1076,814,1063,951,1052,1020,1038,1082,1020,1133,998,1167,976,1181,946,1192,868,1208,779,1216,698,1219,698,1213,779,1210,867,1202,945,1187,974,1177,994,1164,1015,1131,1033,1081,1047,1019,1058,950,1070,814,1075,713"/>
+<area shape="rect" id="Node000019" href="$class_c_gear.html#a5006fbb717c07291b7226c26d4287ba4" title="Create gear." alt="" coords="823,721,958,748"/>
+<area shape="poly" id="edge23_Node000001_Node000019" title=" " alt="" coords="1029,700,944,723,943,718,1028,695"/>
+<area shape="rect" id="Node000020" href="$class_c_gear.html#a7d2ac0668cf57a7bbad5f8f755b7853f" title="Create round gears." alt="" coords="534,671,713,697"/>
+<area shape="poly" id="edge41_Node000001_Node000020" title=" " alt="" coords="1028,687,713,687,713,681,1028,681"/>
+<area shape="rect" id="Node000021" href="$class_c_gear.html#ae731dccef3566be87a7fd9568bc526ed" title="Create square gears." alt="" coords="532,721,714,748"/>
+<area shape="poly" id="edge42_Node000001_Node000021" title=" " alt="" coords="1061,712,1033,740,997,763,953,776,907,783,860,784,815,782,731,768,665,751,666,746,732,763,815,776,860,779,906,777,951,771,995,758,1030,736,1057,708"/>
+<area shape="rect" id="Node000022" href="$class_c_nautilus_gear.html#a553e402655a93ca0e97f2049ebaaa124" title="Create gear." alt="" coords="799,873,982,900"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="1075,713,1065,746,1049,785,1027,824,997,857,966,875,963,871,994,853,1023,820,1044,783,1060,745,1070,712"/>
+<area shape="rect" id="Node000023" href="$class_c_pulley.html#a66f92c9862fa56c0b78a199406345d03" title="Create the ground." alt="" coords="812,215,969,241"/>
+<area shape="poly" id="edge30_Node000001_Node000023" title=" " alt="" coords="1074,656,1066,566,1051,448,1027,335,1012,292,994,262,967,244,970,239,998,258,1017,289,1032,334,1056,447,1072,566,1079,655"/>
+<area shape="rect" id="Node000024" href="$class_c_pulley.html#a53e8b1419b9b614fc6bc6f1fd60a2866" title="Create an object." alt="" coords="814,63,967,89"/>
+<area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="1076,655,1072,537,1061,374,1050,291,1036,215,1017,152,1006,128,994,110,981,99,966,90,969,86,984,94,998,106,1011,126,1022,150,1041,213,1056,290,1066,373,1078,537,1081,655"/>
+<area shape="rect" id="Node000025" href="$class_c_rack_and_pinion.html#a4a62a9bf8a4d92d9e2a6239d372b8fa7" title="Create a pinion." alt="" coords="788,975,993,1001"/>
+<area shape="poly" id="edge35_Node000001_Node000025" title=" " alt="" coords="1081,713,1076,765,1064,830,1039,898,1021,930,997,958,970,976,967,972,994,954,1016,927,1034,896,1059,829,1071,764,1075,713"/>
+<area shape="rect" id="Node000026" href="$class_c_car_and_bridge.html#aa38bdb36606b46841766abf36917f664" title="Create a platform." alt="" coords="519,367,727,393"/>
+<area shape="poly" id="edge37_Node000001_Node000026" title=" " alt="" coords="1077,655,1075,600,1064,532,1054,497,1039,464,1019,433,994,408,958,385,918,369,876,359,833,355,750,358,680,369,679,364,750,353,834,350,877,354,920,364,961,380,997,403,1023,430,1044,461,1059,495,1069,531,1080,600,1082,655"/>
+<area shape="rect" id="Node000027" href="$class_c_rack_and_pinion.html#a673da4ccf8fa50593aee90037e4a1130" title="Create a rack." alt="" coords="791,1025,990,1052"/>
+<area shape="poly" id="edge39_Node000001_Node000027" title=" " alt="" coords="1078,713,1067,785,1051,875,1027,960,1013,993,998,1015,982,1027,978,1023,994,1012,1009,990,1022,958,1045,874,1062,784,1072,713"/>
+<area shape="rect" id="Node000028" href="$class_c_car_and_bridge.html#af0bba8bae33a656fb6e1eb839093b037" title="Create a wheel." alt="" coords="792,569,989,596"/>
+<area shape="poly" id="edge43_Node000001_Node000028" title=" " alt="" coords="1053,662,1026,638,994,617,950,599,952,594,997,612,1029,634,1057,658"/>
+<area shape="rect" id="Node000029" href="$class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="829,1279,952,1305"/>
+<area shape="poly" id="edge46_Node000001_Node000029" title=" " alt="" coords="1081,713,1079,833,1068,999,1057,1083,1043,1161,1023,1225,1011,1249,998,1269,977,1284,953,1292,951,1287,975,1279,994,1265,1007,1247,1018,1223,1038,1160,1052,1083,1062,998,1073,832,1076,713"/>
+<area shape="rect" id="Node000031" href="$class_c_rack_and_pinion.html#a9dc1202d3762d7b2bc45602891779ebd" title="Reverse the rack when it hits the limits." alt="" coords="810,1329,971,1356"/>
+<area shape="poly" id="edge48_Node000001_Node000031" title=" " alt="" coords="1082,713,1080,842,1071,1023,1061,1116,1046,1201,1025,1271,1012,1298,998,1319,973,1336,970,1332,994,1316,1008,1296,1020,1269,1041,1200,1055,1115,1065,1023,1075,841,1076,713"/>
+<area shape="rect" id="Node000032" href="$_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="840,417,941,444"/>
+<area shape="poly" id="edge49_Node000001_Node000032" title=" " alt="" coords="1073,656,1066,613,1052,562,1028,510,1013,486,994,465,969,448,940,439,942,434,971,444,997,461,1017,483,1033,507,1057,560,1071,612,1078,655"/>
+<area shape="rect" id="Node000009" href="$class_c_newtons_cradle.html#ab4a77b11ccf02a52d39c1eec6f220746" title="Constructor." alt="" coords="267,1064,458,1107"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="523,1106,459,1099,459,1094,524,1101"/>
+<area shape="rect" id="Node000010" href="$class_c_newtons_cradle.html#a7defc695cf5a90c521f6cad9b4e4c918" title="Reset all balls to initial conditions." alt="" coords="266,1131,460,1157"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="524,1129,460,1136,459,1131,523,1123"/>
+<area shape="rect" id="Node000011" href="$class_c_newtons_cradle.html#abf8af4bdf7ddfac2093d9d23321b4318" title="Reverse motor." alt="" coords="28,1131,194,1157"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="251,1147,194,1147,194,1141,251,1141"/>
+<area shape="poly" id="edge12_Node000012_Node000008" title=" " alt="" coords="779,1132,708,1125,708,1120,780,1127"/>
+<area shape="poly" id="edge14_Node000013_Node000003" title=" " alt="" coords="249,408,217,408,217,403,249,403"/>
+<area shape="poly" id="edge16_Node000014_Node000003" title=" " alt="" coords="543,518,508,509,164,422,165,417,510,504,544,512"/>
+<area shape="poly" id="edge18_Node000015_Node000014" title=" " alt="" coords="770,535,714,535,714,529,770,529"/>
+<area shape="poly" id="edge20_Node000016_Node000006" title=" " alt="" coords="801,168,684,151,685,146,802,162"/>
+<area shape="poly" id="edge22_Node000017_Node000018" title=" " alt="" coords="800,1236,698,1226,699,1221,800,1230"/>
+<area shape="poly" id="edge24_Node000019_Node000020" title=" " alt="" coords="807,722,697,701,698,695,809,717"/>
+<area shape="poly" id="edge26_Node000019_Node000021" title=" " alt="" coords="808,737,715,737,715,732,808,732"/>
+<area shape="poly" id="edge25_Node000020_Node000004" title=" " alt="" coords="518,687,416,687,416,681,518,681"/>
+<area shape="poly" id="edge27_Node000021_Node000004" title=" " alt="" coords="535,720,415,697,416,692,536,715"/>
+<area shape="poly" id="edge29_Node000022_Node000005" title=" " alt="" coords="784,879,724,874,725,868,784,874"/>
+<area shape="poly" id="edge31_Node000023_Node000006" title=" " alt="" coords="811,213,785,205,715,181,655,156,657,151,717,176,786,200,812,208"/>
+<area shape="poly" id="edge33_Node000024_Node000002" title=" " alt="" coords="799,75,680,69,680,64,799,69"/>
+<area shape="poly" id="edge34_Node000024_Node000006" title=" " alt="" coords="818,96,683,129,682,124,817,91"/>
+<area shape="poly" id="edge36_Node000025_Node000007" title=" " alt="" coords="773,991,720,991,720,985,773,985"/>
+<area shape="poly" id="edge38_Node000026_Node000013" title=" " alt="" coords="504,394,462,399,461,393,503,389"/>
+<area shape="poly" id="edge40_Node000027_Node000007" title=" " alt="" coords="801,1025,720,1009,721,1004,802,1019"/>
+<area shape="poly" id="edge44_Node000028_Node000014" title=" " alt="" coords="801,569,697,549,698,543,802,563"/>
+<area shape="rect" id="Node000030" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="582,1279,664,1305"/>
+<area shape="poly" id="edge47_Node000029_Node000030" title=" " alt="" coords="814,1295,665,1295,665,1289,814,1289"/>
+<area shape="rect" id="Node000033" href="$class_c_car_and_bridge.html#a547b14b8365f7d3991facb6b91959282" title="Create a down ramp." alt="" coords="509,417,737,444"/>
+<area shape="poly" id="edge50_Node000032_Node000033" title=" " alt="" coords="825,433,738,433,738,428,825,428"/>
+<area shape="rect" id="Node000034" href="$class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="518,468,729,495"/>
+<area shape="poly" id="edge52_Node000032_Node000034" title=" " alt="" coords="826,446,698,470,697,465,825,440"/>
+<area shape="poly" id="edge51_Node000033_Node000013" title=" " alt="" coords="493,421,461,418,462,412,494,415"/>
+<area shape="poly" id="edge53_Node000034_Node000013" title=" " alt="" coords="539,467,508,459,399,422,401,417,510,454,540,461"/>
+</map>

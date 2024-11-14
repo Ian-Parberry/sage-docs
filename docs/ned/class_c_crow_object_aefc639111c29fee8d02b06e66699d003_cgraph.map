@@ -1,0 +1,9 @@
+<map id="CCrowObject::AvoidingAi" name="CCrowObject::AvoidingAi">
+<area shape="rect" id="Node000001" title="Ai for avoiding plane." alt="" coords="5,31,176,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object.html#a1d9460013e87ae82be087eca7a70fd1d" title="Get velocity." alt="" coords="245,5,362,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,31,230,25,230,30,176,36"/>
+<area shape="rect" id="Node000003" href="$class_c_crow_object.html#a6d1b7679437e8d5d0a84d5e0bdb420cc" title="Change state." alt="" coords="224,56,383,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,52,209,55,208,61,176,57"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html#a0c01cce335a8dec3058c19f5f8e48dec" title="Wrap horizontal distance." alt="" coords="431,56,553,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="384,67,415,67,415,72,384,72"/>
+</map>

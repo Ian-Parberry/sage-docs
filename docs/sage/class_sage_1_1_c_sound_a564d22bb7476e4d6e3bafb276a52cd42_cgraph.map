@@ -1,0 +1,5 @@
+<map id="Sage::CSound::Loop" name="Sage::CSound::Loop">
+<area shape="rect" id="Node000001" title="Loop a sound." alt="" coords="5,5,148,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a0f91cbf3b09d27b513cc99a4c571d654" title="Get the next instance that is not playing." alt="" coords="196,5,409,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="CGame" name="CGame">
+<area shape="rect" id="Node000001" title="The game class." alt="" coords="224,253,290,280"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,5,166,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,38,193,75,219,101,241,131,254,163,260,198,261,253,256,253,255,198,249,165,236,133,215,105,189,80,135,42"/>
+<area shape="rect" id="Node000005" href="$class_c_object_manager.html" title="The object manager." alt="" coords="38,81,157,108"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="100,47,100,81,95,81,95,47"/>
+<area shape="rect" id="Node000006" href="$class_c_object.html" title="The game object." alt="" coords="5,253,75,280"/>
+<area shape="poly" id="edge9_Node000006_Node000002" title=" " alt="" coords="63,43,43,61,28,83,20,105,16,129,18,178,27,221,38,252,33,254,22,222,13,178,11,129,15,104,23,80,39,57,60,39"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="249,5,367,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,48,301,130,292,181,279,230,267,254,263,252,273,228,286,179,295,130,304,47"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="258,40,134,83,133,78,256,35"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="135,175,220,201"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="203,210,246,251,243,255,200,214"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="124,169,103,150,95,129,94,108,99,108,100,127,108,146,128,165"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="143,212,64,255,61,250,140,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="109,121,124,146,156,172,152,176,120,150,104,124"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="38,237,41,205,49,171,66,135,85,107,90,110,71,138,54,173,46,206,43,238"/>
+</map>

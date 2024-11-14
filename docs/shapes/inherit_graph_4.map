@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_shapes_1_1_c_shape_desc.html" title="Shape Descriptor." alt="" coords="5,81,157,108"/>
+<area shape="rect" id="Node000001" href="$class_shapes_1_1_c_circle_desc.html" title="Circle descriptor." alt="" coords="211,31,360,57"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="152,74,228,55,229,61,153,80"/>
+<area shape="rect" id="Node000004" href="$class_shapes_1_1_c_line_seg_desc.html" title="Line segment descriptor." alt="" coords="205,81,366,108"/>
+<area shape="poly" id="edge15_Node000000_Node000004" title=" " alt="" coords="172,92,204,92,204,97,172,97"/>
+<area shape="rect" id="Node000005" href="$class_shapes_1_1_c_point_desc.html" title="Point descriptor." alt="" coords="213,132,358,159"/>
+<area shape="poly" id="edge16_Node000000_Node000005" title=" " alt="" coords="153,110,229,129,228,134,152,115"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_arc_desc.html" title="Arc descriptor." alt="" coords="447,5,581,32"/>
+<area shape="poly" id="edge13_Node000001_Node000002" title=" " alt="" coords="375,31,446,23,447,29,375,37"/>
+<area shape="rect" id="Node000003" href="$class_shapes_1_1_c_dynamic_circle_desc.html" title="Dynamic circle descriptor." alt="" coords="414,56,614,83"/>
+<area shape="poly" id="edge14_Node000001_Node000003" title=" " alt="" coords="375,51,414,56,413,61,375,57"/>
+</map>

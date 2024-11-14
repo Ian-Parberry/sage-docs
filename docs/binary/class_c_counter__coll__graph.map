@@ -1,0 +1,20 @@
+<map id="CCounter" name="CCounter">
+<area shape="rect" id="Node000001" title="Binary counter." alt="" coords="15,81,92,108"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="275,172,359,199"/>
+<area shape="poly" id="edge10_Node000004_Node000001" title=" " alt="" coords="106,111,280,169,279,174,105,116"/>
+<area shape="rect" id="Node000002" href="$class_c_bit_counter.html" title="Single&#45;bit counter." alt="" coords="131,263,224,289"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,266,86,257,57,243,31,224,9,200,4,188,3,174,10,149,24,125,39,106,43,110,28,128,15,151,8,175,9,186,14,197,34,220,60,238,88,252,116,261"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,172,251,199"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,214,181,262,175,262,178,214"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html" title="The Object Manager." alt="" coords="255,263,374,289"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="216,205,297,260,294,264,213,210"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,210,199,264,196,260,283,205"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="314,214,313,223,315,262,310,262,308,223,309,214"/>
+<area shape="rect" id="Node000005" href="$class_c_renderer.html" title="The Renderer." alt="" coords="275,81,359,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,124,320,171,315,171,315,124"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="255,5,379,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="320,47,320,81,315,81,315,47"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="313,247,314,199,320,199,318,247"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="400,172,517,199"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="456,214,450,228,440,241,410,260,375,271,374,266,407,255,437,237,445,226,451,212"/>
+</map>

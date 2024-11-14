@@ -1,0 +1,7 @@
+<map id="normalize" name="normalize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="187,47,264,73"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_controller.html#abea0acf2352c54eb9b05192300377959" title="Get position of left thumb stick." alt="" coords="5,5,139,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,51,139,44,140,39,172,46"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_controller.html#a1bf72c8c5c10e2e3bdde213f0a7f3105" title="Get position of right thumb stick." alt="" coords="5,72,139,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,74,140,81,139,76,171,69"/>
+</map>

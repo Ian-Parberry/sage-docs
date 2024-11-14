@@ -1,0 +1,14 @@
+<map id="Sage::CRenderer3D::ProcessTexture" name="Sage::CRenderer3D::ProcessTexture">
+<area shape="rect" id="Node000001" title="Process a loaded texture." alt="" coords="600,39,748,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#a4214e252e5c0a151cd0e3da9e8a67acd" title="Load a texture from a DirectDraw surface file (contains mipmaps)." alt="" coords="405,5,552,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="584,47,552,42,553,37,585,42"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_renderer3_d.html#ae48ba4ddcc340359e2556e577660b3cf" title="Load a texture from a an image file (does not contain mipmaps)." alt="" coords="405,72,552,115"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="585,78,553,83,552,78,584,73"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#a9b5ba084a5b9514c595f099e580c98fa" title="Load texture from file." alt="" coords="210,39,357,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,44,358,50,357,45,389,39"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#aef2c9196aae92e3118adf7755f9b9b8d" title="Load sprite." alt="" coords="5,5,162,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,48,162,42,162,37,195,43"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_renderer3_d.html#a9b1dc200216ae36d3548646a5bfd3644" title="Load texture." alt="" coords="10,72,157,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="195,77,158,84,157,78,194,72"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="389,81,357,75,358,70,390,76"/>
+</map>

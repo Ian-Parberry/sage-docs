@@ -1,0 +1,7 @@
+<map id="Wheel.h" name="Wheel.h">
+<area shape="rect" id="Node000001" title="Interface for the wheel class CWheel." alt="" coords="104,5,174,32"/>
+<area shape="rect" id="Node000002" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="5,80,140,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,45,86,81,82,78,115,42"/>
+<area shape="rect" id="Node000003" href="$_wheel_8cpp.html" title="Code for the wheel class CWheel." alt="" coords="164,80,248,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="163,42,196,78,192,81,159,45"/>
+</map>

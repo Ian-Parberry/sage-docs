@@ -1,0 +1,9 @@
+<map id="Shapes::CLineSegDesc::SetEndPts" name="Shapes::CLineSegDesc::SetEndPts">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,167,101"/>
+<area shape="rect" id="Node000002" href="$_shape_math_8h.html#a56f68f34851b9e02cd229796a175ffdf" title="Normalize a vector, ie. make it unit length." alt="" coords="215,29,347,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,62,199,56,200,61,168,67"/>
+<area shape="rect" id="Node000003" href="$_shape_math_8h.html#a42ba6241a99c1dcd508a892de306416a" title="Perpendicular vector." alt="" coords="232,104,330,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="168,93,217,103,216,108,167,98"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="248,30,242,21,246,11,259,5,281,3,304,5,317,12,314,16,303,10,281,8,261,10,250,15,247,20,252,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="248,105,242,95,246,86,259,79,281,77,304,80,317,86,314,91,303,85,281,83,261,85,250,89,247,95,252,102"/>
+</map>

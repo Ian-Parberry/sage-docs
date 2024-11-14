@@ -1,0 +1,15 @@
+<map id="CTileManager::LoadMap" name="CTileManager::LoadMap">
+<area shape="rect" id="Node000001" title="Load a map." alt="" coords="5,56,169,83"/>
+<area shape="rect" id="Node000002" href="$class_c_tile_manager.html#a6ffbbf152d3d27f59e281c0b7668e06f" title="Tile index to position." alt="" coords="217,5,420,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,53,239,33,240,38,152,58"/>
+<area shape="rect" id="Node000003" href="$class_c_tile_manager.html#a42b14c4e67210715a09cb94c548a59bc" title="Insert object." alt="" coords="228,56,409,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,67,212,67,212,72,169,72"/>
+<area shape="rect" id="Node000004" href="$class_c_tile_manager.html#a3021ca6fb30b2e041cb63bef80a72feb" title="Make bounding boxes for walls." alt="" coords="220,107,416,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,81,217,100,216,105,142,86"/>
+<area shape="rect" id="Node000005" href="$class_c_tile_manager.html#a3cae6688a52116f4c86778fd776e9f23" title="Make bounding boxes for 1&#45;block walls." alt="" coords="468,40,664,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="400,104,469,85,470,90,401,109"/>
+<area shape="rect" id="Node000006" href="$class_c_tile_manager.html#a16aecc34eca5babed8212a6c721bd364" title="Make bounding boxes for horizontal walls." alt="" coords="468,107,664,149"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="417,125,453,125,453,131,417,131"/>
+<area shape="rect" id="Node000007" href="$class_c_tile_manager.html#ab3fe8fe47bbd2f98ecfa6cf75753beb4" title="Make bounding boxes for vertical walls." alt="" coords="468,173,664,216"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="401,147,470,166,469,171,400,152"/>
+</map>
