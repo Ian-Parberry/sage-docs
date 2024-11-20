@@ -1,6 +1,6 @@
 <map id="CObject::AddContact" name="CObject::AddContact">
 <area shape="rect" id="Node000001" title="Add a contact." alt="" coords="469,5,616,32"/>
-<area shape="rect" id="Node000002" href="$_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Callback function for the end of a physics tick." alt="" coords="306,5,421,32"/>
+<area shape="rect" id="Node000002" href="$_my_tick_callback_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Physics tick callback." alt="" coords="306,5,421,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="454,21,422,21,422,16,454,16"/>
 <area shape="rect" id="Node000003" href="$class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="136,5,258,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,21,258,21,258,16,290,16"/>

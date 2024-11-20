@@ -99,8 +99,7 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">Game.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -169,65 +168,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_game.html">CGame</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The game class.  <a href="class_c_game.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:addc05ba033bc137ca0714a6ea93b1a4e" id="r_addc05ba033bc137ca0714a6ea93b1a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc05ba033bc137ca0714a6ea93b1a4e">myTickCallback</a> (btDynamicsWorld *, btScalar)</td></tr>
-<tr class="memdesc:addc05ba033bc137ca0714a6ea93b1a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physics tick callback.  <br /></td></tr>
-<tr class="separator:addc05ba033bc137ca0714a6ea93b1a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="addc05ba033bc137ca0714a6ea93b1a4e" name="addc05ba033bc137ca0714a6ea93b1a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addc05ba033bc137ca0714a6ea93b1a4e">&#9670;&#160;</a></span>myTickCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void myTickCallback </td>
-          <td>(</td>
-          <td class="paramtype">btDynamicsWorld *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">btScalar</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Physics tick callback.</p>
-<p>This function gets called by Bullet Physics at the end of a physics tick, which may be more than once a frame. We use it to notify objects of contacts with other objects. The objects are then responsible for playing their collision sounds. The user pointers of the two physics bodies that are in contact are assumed to point to two corresponding <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code>s. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>Pointer to Physics World. </td></tr>
-    <tr><td class="paramname">t</td><td>Time step (unused). </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_cgraph.png" border="0" usemap="#a_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_cgraph" alt=""/></div>
-<map name="a_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_cgraph" id="a_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_cgraph">
-<area shape="rect" title="Physics tick callback." alt="" coords="5,5,121,32"/>
-<area shape="rect" href="class_c_object.html#a588546a4912cee64af7b31d6c1d6ffff" title="Add a contact." alt="" coords="169,5,315,32"/>
-<area shape="poly" title=" " alt="" coords="121,16,153,16,153,21,121,21"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_icgraph.png" border="0" usemap="#a_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_icgraph" alt=""/></div>
-<map name="a_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_icgraph" id="a_game_8h_addc05ba033bc137ca0714a6ea93b1a4e_icgraph">
-<area shape="rect" title="Physics tick callback." alt="" coords="306,5,421,32"/>
-<area shape="rect" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="136,5,258,32"/>
-<area shape="poly" title=" " alt="" coords="290,21,258,21,258,16,290,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
-<area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
-</map>
-</div>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

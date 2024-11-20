@@ -412,7 +412,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add a contact to the current contact map. This function is called by a callback function <code><a class="el" href="_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Callback function for the end of a physics tick.">myTickCallback()</a></code>, which is called from Bullet Physics whenever a contact between two bodies is detected. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Add a contact to the current contact map. This function is called by a callback function <code><a class="el" href="_game_8cpp.html#addc05ba033bc137ca0714a6ea93b1a4e" title="Physics tick callback.">myTickCallback()</a></code>, which is called from Bullet Physics whenever a contact between two bodies is detected. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pObj</td><td>Pointer to object in contact. </td></tr>
     <tr><td class="paramname">d</td><td>Contact descriptor for the contact. </td></tr>
@@ -425,7 +425,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_object_a588546a4912cee64af7b31d6c1d6ffff_icgraph.png" border="0" usemap="#aclass_c_object_a588546a4912cee64af7b31d6c1d6ffff_icgraph" alt=""/></div>
 <map name="aclass_c_object_a588546a4912cee64af7b31d6c1d6ffff_icgraph" id="aclass_c_object_a588546a4912cee64af7b31d6c1d6ffff_icgraph">
 <area shape="rect" title="Add a contact." alt="" coords="469,5,616,32"/>
-<area shape="rect" href="_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Callback function for the end of a physics tick." alt="" coords="306,5,421,32"/>
+<area shape="rect" href="_my_tick_callback_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Physics tick callback." alt="" coords="306,5,421,32"/>
 <area shape="poly" title=" " alt="" coords="454,21,422,21,422,16,454,16"/>
 <area shape="rect" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="136,5,258,32"/>
 <area shape="poly" title=" " alt="" coords="290,21,258,21,258,16,290,16"/>
@@ -828,7 +828,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Play collision sounds, which are managed as follows. There are two contact maps, <code>m_mapContact[0]</code> and <code>m_mapContact[1]</code>, which map a pointer to the object that this object is in contact with to a contact descriptor for the contact. The current contact map is <code>m_mapContact[m_nContactIndex]</code>, where <code>m_nContactIndex</code> flips from zero to one each time this function is called. The other contact map <code>m_mapContact[m_nContactIndex^1]</code> is the contact map from the previous frame. Entries are place in the current contact map by a callback function <code><a class="el" href="_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Callback function for the end of a physics tick.">myTickCallback()</a></code> calling function <code><a class="el" href="#a588546a4912cee64af7b31d6c1d6ffff" title="Add a contact.">AddContact()</a></code> above. This function is then called at the end of the frame to play the appropriate sound when either (1) there is an entry in the current contact map for an object that does not have an entry in the previous contact map, or, (2) the entry for an object in the current contact map has more points of contact than the one in the previous contact map. </p>
+<p>Play collision sounds, which are managed as follows. There are two contact maps, <code>m_mapContact[0]</code> and <code>m_mapContact[1]</code>, which map a pointer to the object that this object is in contact with to a contact descriptor for the contact. The current contact map is <code>m_mapContact[m_nContactIndex]</code>, where <code>m_nContactIndex</code> flips from zero to one each time this function is called. The other contact map <code>m_mapContact[m_nContactIndex^1]</code> is the contact map from the previous frame. Entries are place in the current contact map by a callback function <code><a class="el" href="_game_8cpp.html#addc05ba033bc137ca0714a6ea93b1a4e" title="Physics tick callback.">myTickCallback()</a></code> calling function <code><a class="el" href="#a588546a4912cee64af7b31d6c1d6ffff" title="Add a contact.">AddContact()</a></code> above. This function is then called at the end of the frame to play the appropriate sound when either (1) there is an entry in the current contact map for an object that does not have an entry in the previous contact map, or, (2) the entry for an object in the current contact map has more points of contact than the one in the previous contact map. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

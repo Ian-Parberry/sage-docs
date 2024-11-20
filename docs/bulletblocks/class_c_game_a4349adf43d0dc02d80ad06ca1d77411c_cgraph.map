@@ -12,7 +12,7 @@
 <area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="113,307,176,327,202,334,200,339,175,332,111,312"/>
 <area shape="rect" id="Node000018" href="$class_c_game.html#a2b8445af848995e021ae59ae2e12be2c" title="Load sounds." alt="" coords="193,392,339,419"/>
 <area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="84,308,124,343,177,378,190,384,188,389,174,382,121,347,80,312"/>
-<area shape="rect" id="Node000019" href="$_game_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Physics tick callback." alt="" coords="208,468,324,495"/>
+<area shape="rect" id="Node000019" href="$_my_tick_callback_8cpp.html#a597d97ada3fc7457db2a3d8eed118fe1" title="Physics tick callback." alt="" coords="208,468,324,495"/>
 <area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="78,308,118,364,146,398,177,429,222,458,219,463,174,433,142,401,114,367,74,311"/>
 <area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="433,5,591,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,53,429,33,430,38,335,58"/>

@@ -298,6 +298,14 @@ which is called from `CGame::Initialize`.
 \anchor section5-2
 ##5.2 Bullet Physics
 
+This section will describe how Bullet Physics is integrated into our code. It is divided into
+five subsections.
+\ref section5-2-1 "Section 5.2.1" briefly touches on Bullet Physics units.
+\ref section5-2-2 "Section 5.2.2" describes some Bullet Physics core objects.
+\ref section5-2-3 "Section 5.2.3" introduces Bullet Physics bodies.
+\ref section5-2-4 "Section 5.2.4" shows you the Bullet Physics update step.
+\ref section5-2-5 "Section 5.2.5" describes how collision sounds are generated using Bullet Physics callback functions.
+
 \anchor section5-2-1
 ###5.2.1 Bullet Physics Units
 
@@ -376,7 +384,7 @@ To make things a little neater we define a _contact descriptor_  `CContactDesc` 
 about collisions, specifically, the number of contact points `CContactDesc::m_nNumContacts` and the magnitude of
 the collision impulse `CContactDesc::m_fImpulse`.
 
-<span style="background-color:#D8E4D8;">`Game.cpp`</span> contains a C-style function
+<span style="background-color:#D8E4D8;">`MyTickCallback.cpp`</span> contains a C-style function
 `myTickCallback` that will be called at the end of each physics tick. 
 It has two parameters, the first of which is a pointer to Physics World (that is, `CCommon::m_pPhysicsWorld`)
 and the second of which is not used in this code.
@@ -384,7 +392,18 @@ This is set by calling
 
     m_pPhysicsWorld->setInternalTickCallback(myTickCallback);
 
-in `CGame::Initialize`.
+in `CGame::Initialize`. Function `myTickCallback` processes each collision by
+iterating through the `btDispatcher`'s 
+`btPersistentManifold`s, getting pointers to the two `btRigidBody`s involved
+from which it obtains pointers to the corresponding two `CObject`s.
+From this it fills in an instance of `CContactDesc`, which it adds to
+one of the `CObject`s by calling its `CObject::AddContact` function.
+This is inserted into `CObject::m_mapContact`.
+Later, when `CObject::PlayCollisionSounds` is called from `CObjectManager::Update`
+(which is called from `CGame::ProcessFrame` immediately after the call to `m_pPhysicsWorld->stepSimulation`,
+which triggers the calls to `myTickCallback` from Bullet Physics),
+`CObject::m_mapContact` is used to play the appropriate collision sounds depending on
+the object types `eObject` of the objects colliding.
 
 \anchor section6
 # 6. What Next?
