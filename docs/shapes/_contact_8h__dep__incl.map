@@ -6,9 +6,9 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,39,177,82,175,77,310,34"/>
 <area shape="rect" id="Node000004" href="$_compound_8h.html" title="Interface for the compound shape class CCompoundShape." alt="" coords="200,80,296,107"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="334,43,270,82,267,77,331,38"/>
-<area shape="rect" id="Node000006" href="$_contact_8cpp.html" title="Code for the contact descriptor classCContactDesc." alt="" coords="319,80,411,107"/>
+<area shape="rect" id="Node000006" href="$_contact_8cpp.html" title="Code for the contact descriptor class CContactDesc." alt="" coords="319,80,411,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="368,48,368,80,362,80,362,48"/>
-<area shape="rect" id="Node000007" href="$_dynamic_circle_8cpp.html" title="Code for the dynamic circle class CDynamicCircle and the dynamic circle descriptor class CDynamicCirc..." alt="" coords="435,80,567,107"/>
+<area shape="rect" id="Node000007" href="$_dynamic_circle_8cpp.html" title="Code for CDynamicCircleDesc and CDynamicCircle." alt="" coords="435,80,567,107"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="404,37,479,77,476,82,401,42"/>
 <area shape="rect" id="Node000008" href="$_line_seg_8cpp.html" title="Code for CLineSegDesc, CLineSeg, and CKinematicLineSeg." alt="" coords="592,80,685,107"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="420,32,592,77,591,82,419,37"/>

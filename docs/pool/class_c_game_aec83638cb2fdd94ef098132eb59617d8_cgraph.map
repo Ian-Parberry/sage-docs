@@ -4,7 +4,7 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,399,275,181,279,185,100,403"/>
 <area shape="rect" id="Node000012" href="$class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="220,503,380,529"/>
 <area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="117,426,257,493,254,498,114,431"/>
-<area shape="rect" id="Node000019" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process the game state." alt="" coords="223,351,376,377"/>
+<area shape="rect" id="Node000019" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="223,351,376,377"/>
 <area shape="poly" id="edge19_Node000001_Node000019" title=" " alt="" coords="144,398,225,379,226,384,145,403"/>
 <area shape="rect" id="Node000023" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="223,629,376,656"/>
 <area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="101,427,278,616,274,620,97,430"/>
@@ -25,7 +25,7 @@
 <area shape="rect" id="Node000008" href="$class_c_object_manager.html#a75cfc504d6ff1645b9520ba8bddf54ee" title="Create new object." alt="" coords="971,257,1137,284"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="877,245,956,255,955,261,877,250"/>
 <area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="877,227,934,221,935,226,877,232"/>
-<area shape="rect" id="Node000011" href="$class_c_object.html#afa2a19510290dcf323fdba42697bcd06" title="Deliver an impulse." alt="" coords="715,56,880,83"/>
+<area shape="rect" id="Node000011" href="$class_c_object.html#a1cf5dcfbac665543093e48c75a084550" title="Deliver an impulse." alt="" coords="715,56,880,83"/>
 <area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="621,67,700,67,700,72,621,72"/>
 <area shape="rect" id="Node000013" href="$class_c_object_manager.html#ae2487201156a62dc632609bc42a7d80b" title="Ball, rail, and pocket collision response." alt="" coords="441,477,639,504"/>
 <area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="379,505,425,500,426,505,380,510"/>

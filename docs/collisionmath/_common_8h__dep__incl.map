@@ -1,8 +1,8 @@
 <map id="Common.h" name="Common.h">
-<area shape="rect" id="Node000001" title="Interface for the class CCommon." alt="" coords="159,5,244,32"/>
-<area shape="rect" id="Node000002" href="$_common_8cpp.html" title="Code for the class CCommon." alt="" coords="5,80,105,107"/>
+<area shape="rect" id="Node000001" title="Interface for the common variables class CCommon." alt="" coords="159,5,244,32"/>
+<area shape="rect" id="Node000002" href="$_common_8cpp.html" title="Code for the common variables class CCommon." alt="" coords="5,80,105,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,42,82,82,80,77,161,37"/>
-<area shape="rect" id="Node000003" href="$_dialog_box_8h.html" title="Interface for dialog box functions." alt="" coords="180,229,272,256"/>
+<area shape="rect" id="Node000003" href="$_dialog_box_8h.html" title="Interface for the dialog box class CDialogBox." alt="" coords="180,229,272,256"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,47,227,229,222,229,202,48"/>
 <area shape="rect" id="Node000005" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="192,304,259,331"/>
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="192,47,176,88,163,141,158,199,161,228,169,255,187,282,209,302,206,306,183,285,165,257,156,229,153,199,157,140,171,87,187,45"/>
@@ -10,12 +10,12 @@
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="248,36,353,77,351,82,247,41"/>
 <area shape="rect" id="Node000011" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="239,155,359,181"/>
 <area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="220,44,293,153,289,156,216,46"/>
-<area shape="rect" id="Node000004" href="$_dialog_box_8cpp.html" title="Dialog box code." alt="" coords="295,304,402,331"/>
+<area shape="rect" id="Node000004" href="$_dialog_box_8cpp.html" title="Code for the dialog box class CDialogBox." alt="" coords="295,304,402,331"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="262,262,328,301,325,306,259,267"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="228,272,228,304,223,304,223,272"/>
 <area shape="rect" id="Node000006" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="134,379,216,405"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="210,345,186,380,182,377,206,342"/>
-<area shape="rect" id="Node000007" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="239,379,314,405"/>
+<area shape="rect" id="Node000007" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="239,379,314,405"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="245,342,270,377,265,380,241,345"/>
 <area shape="rect" id="Node000009" href="$_gate_8cpp.html" title="Code for the gate class CGate." alt="" coords="383,155,458,181"/>
 <area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="399,119,416,153,412,155,394,122"/>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ccommon_0',['CCommon',['../class_c_common.html',1,'']]],
-  ['cgame_1',['CGame',['../class_c_game.html',1,'CGame'],['../class_c_game.html#aa0b28c798a6198998d018047e96f188e',1,'CGame::CGame()']]],
+  ['cgame_1',['CGame',['../class_c_game.html',1,'']]],
   ['clear_2',['Clear',['../class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116',1,'CObjectManager']]],
   ['cobject_3',['CObject',['../class_c_object.html',1,'CObject'],['../class_c_object.html#a552b4b16c4913b4880d0494a6e35e6f3',1,'CObject::CObject()']]],
   ['cobjectmanager_4',['CObjectManager',['../class_c_object_manager.html',1,'CObjectManager'],['../class_c_object.html#a308775fed4dfbed8d4a5ae0efd086fcc',1,'CObject::CObjectManager'],['../class_c_object_manager.html#abba05e60f1cecc9071d070d3435fa0ce',1,'CObjectManager::CObjectManager()']]],

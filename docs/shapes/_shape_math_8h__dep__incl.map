@@ -1,6 +1,6 @@
 <map id="ShapeMath.h" name="ShapeMath.h">
 <area shape="rect" id="Node000001" title="Handy math functions for the collision module." alt="" coords="642,5,741,32"/>
-<area shape="rect" id="Node000002" href="$_dynamic_circle_8cpp.html" title="Code for the dynamic circle class CDynamicCircle and the dynamic circle descriptor class CDynamicCirc..." alt="" coords="5,528,138,555"/>
+<area shape="rect" id="Node000002" href="$_dynamic_circle_8cpp.html" title="Code for CDynamicCircleDesc and CDynamicCircle." alt="" coords="5,528,138,555"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="627,25,477,35,389,45,301,59,220,77,153,101,128,115,109,131,97,148,93,167,93,393,87,470,77,528,72,527,81,469,88,393,88,166,92,146,105,128,125,111,151,96,218,72,300,53,388,39,477,30,626,19"/>
 <area shape="rect" id="Node000003" href="$_shape_8h.html" title="Interface for CShapeDesc and CShape." alt="" coords="657,80,726,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="694,48,694,80,689,80,689,48"/>
@@ -42,7 +42,7 @@
 <area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="489,476,771,531,770,536,488,481"/>
 <area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="468,486,529,525,526,530,465,491"/>
 <area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="381,487,244,530,242,525,380,482"/>
-<area shape="rect" id="Node000012" href="$_contact_8cpp.html" title="Code for the contact descriptor classCContactDesc." alt="" coords="384,528,476,555"/>
+<area shape="rect" id="Node000012" href="$_contact_8cpp.html" title="Code for the contact descriptor class CContactDesc." alt="" coords="384,528,476,555"/>
 <area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="435,496,434,528,428,527,430,496"/>
 <area shape="poly" id="edge17_Node000010_Node000013" title=" " alt="" coords="401,491,335,530,333,525,399,486"/>
 <area shape="poly" id="edge18_Node000010_Node000014" title=" " alt="" coords="488,483,619,525,617,530,486,488"/>

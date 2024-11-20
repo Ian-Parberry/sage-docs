@@ -1,0 +1,66 @@
+<map id="wWinMain" name="wWinMain">
+<area shape="rect" id="Node000001" title="The main entry point for this application." alt="" coords="5,233,88,260"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="154,107,276,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,231,182,141,185,145,67,235"/>
+<area shape="rect" id="Node000005" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,233,295,260"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="88,244,120,244,120,249,88,249"/>
+<area shape="rect" id="Node000031" href="$class_c_game.html#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer." alt="" coords="154,284,276,311"/>
+<area shape="poly" id="edge33_Node000001_Node000031" title=" " alt="" coords="89,256,154,276,153,281,87,261"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#a2b8445af848995e021ae59ae2e12be2c" title="Load sounds." alt="" coords="357,56,503,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,103,355,84,356,89,276,109"/>
+<area shape="rect" id="Node000004" href="$class_c_game.html#a7c1fa6038d453a578371caa9f01e2388" title="Load sprites." alt="" coords="358,107,502,133"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,117,343,117,343,123,277,123"/>
+<area shape="rect" id="Node000006" href="$class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,397,517,424"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="273,258,296,270,332,296,364,326,412,383,408,386,360,330,328,300,294,274,271,263"/>
+<area shape="rect" id="Node000016" href="$class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="350,157,510,184"/>
+<area shape="poly" id="edge16_Node000005_Node000016" title=" " alt="" coords="255,230,375,187,377,192,256,235"/>
+<area shape="rect" id="Node000023" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="354,604,507,631"/>
+<area shape="poly" id="edge23_Node000005_Node000023" title=" " alt="" coords="281,258,297,270,313,290,324,310,331,347,334,388,346,435,382,520,417,589,412,592,377,522,340,437,329,388,326,348,319,312,309,293,293,274,278,263"/>
+<area shape="rect" id="Node000027" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="354,233,507,260"/>
+<area shape="poly" id="edge29_Node000005_Node000027" title=" " alt="" coords="295,244,338,244,338,249,295,249"/>
+<area shape="rect" id="Node000007" href="$class_c_object_manager.html#aa7fe841b430ea2e22d9fdebcf497b797" title="Move cue&#45;ball up or down." alt="" coords="565,427,776,453"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="518,419,550,423,549,428,518,424"/>
+<area shape="rect" id="Node000008" href="$class_c_object_manager.html#ac78c8fd3294fe59694c37e0d9f4c54d8" title="Adjust the Impulse Vector." alt="" coords="565,360,776,403"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="518,397,549,393,550,399,518,403"/>
+<area shape="rect" id="Node000009" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="599,528,742,555"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="448,422,499,464,567,507,598,520,596,525,564,512,495,468,445,426"/>
+<area shape="rect" id="Node000013" href="$class_c_object_manager.html#aee47c7b6ce520868dc3ada8f1e2eb2b6" title="Reset the Impulse Vector." alt="" coords="1080,495,1288,537"/>
+<area shape="poly" id="edge13_Node000006_Node000013" title=" " alt="" coords="459,422,508,444,566,463,661,478,793,491,1065,508,1064,513,792,496,660,483,565,468,506,449,457,427"/>
+<area shape="rect" id="Node000014" href="$class_c_object_manager.html#a059d66d8e43e9d8e3ee956e840ff9f95" title="Shoot the cue ball." alt="" coords="590,309,751,336"/>
+<area shape="poly" id="edge14_Node000006_Node000014" title=" " alt="" coords="456,394,505,370,564,345,588,338,590,343,566,351,508,375,458,399"/>
+<area shape="rect" id="Node000010" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="849,579,1007,605"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="743,553,842,572,841,578,742,558"/>
+<area shape="rect" id="Node000011" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="849,528,1007,555"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="742,539,833,539,833,544,742,544"/>
+<area shape="rect" id="Node000012" href="$class_c_object_manager.html#a75cfc504d6ff1645b9520ba8bddf54ee" title="Create new object." alt="" coords="1101,561,1267,588"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="1008,549,1086,559,1085,565,1007,554"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="1007,531,1065,525,1065,530,1008,536"/>
+<area shape="rect" id="Node000015" href="$class_c_object.html#a1cf5dcfbac665543093e48c75a084550" title="Deliver an impulse." alt="" coords="846,309,1010,336"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="752,320,830,320,830,325,752,325"/>
+<area shape="rect" id="Node000017" href="$class_c_object_manager.html#ae2487201156a62dc632609bc42a7d80b" title="Ball, rail, and pocket collision response." alt="" coords="571,56,770,83"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="492,154,516,143,530,131,539,118,548,105,564,92,575,87,578,91,567,97,552,109,543,121,534,135,519,148,494,159"/>
+<area shape="rect" id="Node000021" href="$class_c_object.html#ae6b4bc3eabccaa6d45d15954a648e047" title="Drop a particle." alt="" coords="596,107,745,133"/>
+<area shape="poly" id="edge21_Node000016_Node000021" title=" " alt="" coords="497,154,588,134,590,140,498,159"/>
+<area shape="rect" id="Node000022" href="$class_c_object.html#ae33d05b96b8b11fe621e42525a908041" title="Move object." alt="" coords="616,157,725,184"/>
+<area shape="poly" id="edge22_Node000016_Node000022" title=" " alt="" coords="510,168,600,168,600,173,510,173"/>
+<area shape="rect" id="Node000018" href="$class_c_object_manager.html#acee7c392319024d71772e2d290a1cc7d" title="Collision response for two balls." alt="" coords="825,56,1031,83"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="770,67,809,67,809,72,770,72"/>
+<area shape="rect" id="Node000019" href="$class_c_object_manager.html#a21ff35019a29b63d608802bc75e94694" title="Collision response for ball with pocket." alt="" coords="824,107,1032,133"/>
+<area shape="poly" id="edge19_Node000017_Node000019" title=" " alt="" coords="743,81,842,100,841,106,742,86"/>
+<area shape="rect" id="Node000020" href="$class_c_object_manager.html#a7704293d68f5527f323527028ea21398" title="Collision response for ball with rail." alt="" coords="833,5,1023,32"/>
+<area shape="poly" id="edge20_Node000017_Node000020" title=" " alt="" coords="742,53,841,33,842,38,743,58"/>
+<area shape="poly" id="edge26_Node000023_Node000009" title=" " alt="" coords="464,601,565,564,592,556,593,561,566,569,466,606"/>
+<area shape="poly" id="edge28_Node000023_Node000013" title=" " alt="" coords="507,623,636,634,789,642,864,641,932,638,989,629,1031,615,1047,601,1055,584,1062,565,1078,547,1085,543,1088,547,1082,551,1067,568,1060,586,1051,604,1033,620,990,634,932,643,864,647,789,647,636,640,507,628"/>
+<area shape="rect" id="Node000024" href="$class_c_object_manager.html#acfcddd53e8f52a678c260f1b36d1a2a0" title="Have all balls stopped moving?" alt="" coords="575,680,766,707"/>
+<area shape="poly" id="edge24_Node000023_Node000024" title=" " alt="" coords="474,629,566,659,609,672,608,677,565,664,472,634"/>
+<area shape="rect" id="Node000025" href="$class_c_object_manager.html#a53e0bfc4fab48f76a8869a8cc6c4f36d" title="Is a ball down in a pocket?" alt="" coords="579,731,762,757"/>
+<area shape="poly" id="edge25_Node000023_Node000025" title=" " alt="" coords="447,629,497,672,531,696,567,716,583,723,581,728,564,721,528,701,494,676,444,633"/>
+<area shape="rect" id="Node000026" href="$class_c_object_manager.html#a72b44cc9c7ffe94695129fafc6a2aa64" title="Is the cue ball down in a pocket?" alt="" coords="567,579,774,605"/>
+<area shape="poly" id="edge27_Node000023_Node000026" title=" " alt="" coords="507,607,551,602,552,607,508,612"/>
+<area shape="rect" id="Node000028" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="591,259,750,285"/>
+<area shape="poly" id="edge30_Node000027_Node000028" title=" " alt="" coords="508,252,576,259,576,265,507,257"/>
+<area shape="rect" id="Node000030" href="$class_c_game.html#ad2ae857e236f8748ccd71b0e2354938c" title="Draw frame rate text to screen." alt="" coords="573,208,768,235"/>
+<area shape="poly" id="edge32_Node000027_Node000030" title=" " alt="" coords="507,236,557,231,558,236,508,241"/>
+<area shape="rect" id="Node000029" href="$class_c_object.html#ae060ffb1aa3bf6148614cf6506074e42" title="Draw object." alt="" coords="874,259,982,285"/>
+<area shape="poly" id="edge31_Node000028_Node000029" title=" " alt="" coords="750,269,858,269,858,275,750,275"/>
+</map>

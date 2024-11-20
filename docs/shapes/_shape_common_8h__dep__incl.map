@@ -33,14 +33,14 @@
 <area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="330,420,337,450,353,478,371,495,392,508,437,527,435,532,390,513,368,499,349,482,332,452,325,421"/>
 <area shape="rect" id="Node000009" href="$_contact_8h.html" title="Interface for the contact descriptor class CContactDesc." alt="" coords="362,453,440,480"/>
 <area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="351,414,390,451,386,455,348,418"/>
-<area shape="rect" id="Node000012" href="$_dynamic_circle_8cpp.html" title="Code for the dynamic circle class CDynamicCircle and the dynamic circle descriptor class CDynamicCirc..." alt="" coords="164,528,297,555"/>
+<area shape="rect" id="Node000012" href="$_dynamic_circle_8cpp.html" title="Code for CDynamicCircleDesc and CDynamicCircle." alt="" coords="164,528,297,555"/>
 <area shape="poly" id="edge18_Node000006_Node000012" title=" " alt="" coords="311,420,241,529,236,526,307,417"/>
 <area shape="poly" id="edge19_Node000006_Node000014" title=" " alt="" coords="400,399,514,418,578,433,640,451,728,488,796,525,794,530,726,493,638,456,576,438,513,424,399,405"/>
 <area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="440,563,338,605,336,600,438,558"/>
 <area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="347,482,90,536,89,530,346,477"/>
 <area shape="poly" id="edge13_Node000009_Node000008" title=" " alt="" coords="429,488,472,526,468,530,425,493"/>
 <area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="450,483,563,525,561,530,448,488"/>
-<area shape="rect" id="Node000011" href="$_contact_8cpp.html" title="Code for the contact descriptor classCContactDesc." alt="" coords="320,528,413,555"/>
+<area shape="rect" id="Node000011" href="$_contact_8cpp.html" title="Code for the contact descriptor class CContactDesc." alt="" coords="320,528,413,555"/>
 <area shape="poly" id="edge14_Node000009_Node000011" title=" " alt="" coords="391,495,375,529,370,526,386,493"/>
 <area shape="poly" id="edge15_Node000009_Node000012" title=" " alt="" coords="359,489,262,530,260,525,356,484"/>
 <area shape="poly" id="edge16_Node000009_Node000013" title=" " alt="" coords="456,478,660,526,659,531,455,483"/>

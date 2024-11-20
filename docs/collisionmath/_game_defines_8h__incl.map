@@ -1,7 +1,5 @@
 <map id="GameDefines.h" name="GameDefines.h">
-<area shape="rect" id="Node000001" title="Game specific defines." alt="" coords="67,5,179,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,113,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,34,82,70,78,66,110,31"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="137,80,237,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,31,168,66,164,70,132,34"/>
+<area shape="rect" id="Node000001" title="Game specific defines and enumerated types." alt="" coords="5,5,118,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="8,80,115,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,33,64,64,59,64,59,33"/>
 </map>

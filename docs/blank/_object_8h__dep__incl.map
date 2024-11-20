@@ -1,7 +1,9 @@
 <map id="Object.h" name="Object.h">
-<area shape="rect" id="Node000001" title="Interface for object class CObject." alt="" coords="62,5,132,32"/>
+<area shape="rect" id="Node000001" title="Interface for object class CObject." alt="" coords="111,5,181,32"/>
 <area shape="rect" id="Node000002" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="63,80,130,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,48,99,80,94,80,94,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,47,107,81,103,78,127,44"/>
+<area shape="rect" id="Node000005" href="$_object_8cpp.html" title="Code for the game object class CObject." alt="" coords="154,80,239,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,43,190,78,186,81,161,46"/>
 <area shape="rect" id="Node000003" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="5,155,87,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,121,57,156,53,153,77,118"/>
 <area shape="rect" id="Node000004" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="110,155,184,181"/>

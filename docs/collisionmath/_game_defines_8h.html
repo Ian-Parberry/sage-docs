@@ -104,20 +104,17 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Game specific defines.  
+<p>Game specific defines and enumerated types.  
 </p>
 <div class="textblock"><code>#include &quot;SageDefines.h&quot;</code><br />
-<code>#include &quot;SageSound.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for GameDefines.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_game_defines_8h__incl.png" border="0" usemap="#a_game_defines_8h" alt=""/></div>
 <map name="a_game_defines_8h" id="a_game_defines_8h">
-<area shape="rect" title="Game specific defines." alt="" coords="67,5,179,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,113,107"/>
-<area shape="poly" title=" " alt="" coords="114,34,82,70,78,66,110,31"/>
-<area shape="rect" title=" " alt="" coords="137,80,237,107"/>
-<area shape="poly" title=" " alt="" coords="136,31,168,66,164,70,132,34"/>
+<area shape="rect" title="Game specific defines and enumerated types." alt="" coords="5,5,118,32"/>
+<area shape="rect" title=" " alt="" coords="8,80,115,107"/>
+<area shape="poly" title=" " alt="" coords="64,33,64,64,59,64,59,33"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -125,10 +122,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_game_defines_8h__dep__incl.png" border="0" usemap="#a_game_defines_8hdep" alt=""/></div>
 <map name="a_game_defines_8hdep" id="a_game_defines_8hdep">
-<area shape="rect" title="Game specific defines." alt="" coords="407,5,520,32"/>
-<area shape="rect" href="_common_8h.html" title="Interface for the class CCommon." alt="" coords="140,80,225,107"/>
+<area shape="rect" title="Game specific defines and enumerated types." alt="" coords="407,5,520,32"/>
+<area shape="rect" href="_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="140,80,225,107"/>
 <area shape="poly" title=" " alt="" coords="401,39,226,84,225,78,399,34"/>
-<area shape="rect" href="_dialog_box_8cpp.html" title="Dialog box code." alt="" coords="293,379,399,405"/>
+<area shape="rect" href="_dialog_box_8cpp.html" title="Code for the dialog box class CDialogBox." alt="" coords="293,379,399,405"/>
 <area shape="poly" title=" " alt="" coords="491,41,513,65,534,95,550,129,557,166,557,244,555,292,547,312,531,333,502,356,468,372,433,383,400,389,399,384,432,377,466,367,499,351,527,329,542,309,550,291,552,244,552,167,545,131,530,98,509,68,487,45"/>
 <area shape="rect" href="_game_8cpp.html" title="Code for the game class CGame." alt="" coords="418,453,499,480"/>
 <area shape="poly" title=" " alt="" coords="505,38,539,59,572,88,597,124,605,145,608,167,608,319,604,343,595,366,581,386,564,405,525,434,488,455,485,450,522,430,560,401,577,383,590,363,599,342,602,318,602,167,600,146,593,127,568,92,535,64,502,42"/>
@@ -138,9 +135,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="478,46,488,76,494,111,493,148,481,183,467,200,449,213,411,231,409,226,447,209,463,196,476,180,488,147,489,111,482,77,473,47"/>
 <area shape="rect" href="_object_8h.html" title="Interface for the game object class CObject." alt="" coords="388,80,459,107"/>
 <area shape="poly" title=" " alt="" coords="452,47,433,81,428,78,447,45"/>
-<area shape="rect" href="_common_8cpp.html" title="Code for the class CCommon." alt="" coords="21,155,120,181"/>
+<area shape="rect" href="_common_8cpp.html" title="Code for the common variables class CCommon." alt="" coords="21,155,120,181"/>
 <area shape="poly" title=" " alt="" coords="152,118,91,156,89,152,149,113"/>
-<area shape="rect" href="_dialog_box_8h.html" title="Interface for dialog box functions." alt="" coords="165,304,258,331"/>
+<area shape="rect" href="_dialog_box_8h.html" title="Interface for the dialog box class CDialogBox." alt="" coords="165,304,258,331"/>
 <area shape="poly" title=" " alt="" coords="181,122,178,184,179,220,185,255,194,281,206,302,201,305,189,283,180,257,174,220,172,184,176,122"/>
 <area shape="rect" href="_game_8h.html" title="Interface for the game class CGame." alt="" coords="190,379,257,405"/>
 <area shape="poly" title=" " alt="" coords="125,103,79,112,38,127,23,137,12,149,8,164,12,180,29,215,51,247,104,303,159,347,203,376,200,380,156,351,100,307,47,250,24,217,6,182,3,163,8,147,19,133,36,122,78,107,124,98"/>
@@ -149,7 +146,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <area shape="poly" title=" " alt="" coords="249,336,324,376,321,380,247,341"/>
 <area shape="poly" title=" " alt="" coords="219,346,224,378,219,379,214,347"/>
 <area shape="poly" title=" " alt="" coords="273,406,418,450,416,455,271,411"/>
-<area shape="rect" href="_main_8cpp.html" title="Every program has to have a main." alt="" coords="186,453,261,480"/>
+<area shape="rect" href="_main_8cpp.html" title="The home of WinMain." alt="" coords="186,453,261,480"/>
 <area shape="poly" title=" " alt="" coords="226,421,226,453,221,453,221,421"/>
 <area shape="rect" href="_gate_8cpp.html" title="Code for the gate class CGate." alt="" coords="194,229,269,256"/>
 <area shape="poly" title=" " alt="" coords="262,196,241,230,237,228,258,193"/>
@@ -281,8 +278,7 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>An enumerated type for the sounds, which will be cast to an unsigned integer and used for the index of the corresponding sample. <br  />
- </p>
+<p>An enumerated type for the sounds, which will be cast to an unsigned integer and used for the index of the corresponding sound sample. </p>
 
 </div>
 </div>
@@ -305,7 +301,7 @@ Enumerations</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>An enumerated type for the sprites, which will be cast to an unsigned integer and used for the index of the corresponding texture in graphics memory. <br  />
+<p>An enumerated type for the sprites, which will be cast to an unsigned integer and used for the index of the sprite texture in graphics memory. <br  />
  </p>
 
 </div>

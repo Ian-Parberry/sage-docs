@@ -157,9 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6b4bc3eabccaa6d45d15954a648e047" id="r_ae6b4bc3eabccaa6d45d15954a648e047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b4bc3eabccaa6d45d15954a648e047">DropParticle</a> (Sage::CParticleDesc2D *)</td></tr>
 <tr class="memdesc:ae6b4bc3eabccaa6d45d15954a648e047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop a particle.  <br /></td></tr>
 <tr class="separator:ae6b4bc3eabccaa6d45d15954a648e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2a19510290dcf323fdba42697bcd06" id="r_afa2a19510290dcf323fdba42697bcd06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa2a19510290dcf323fdba42697bcd06">DeliverImpulse</a> (float, float)</td></tr>
-<tr class="memdesc:afa2a19510290dcf323fdba42697bcd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deliver an impulse.  <br /></td></tr>
-<tr class="separator:afa2a19510290dcf323fdba42697bcd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf5dcfbac665543093e48c75a084550" id="r_a1cf5dcfbac665543093e48c75a084550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cf5dcfbac665543093e48c75a084550">DeliverImpulse</a> (const float, const float)</td></tr>
+<tr class="memdesc:a1cf5dcfbac665543093e48c75a084550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deliver an impulse.  <br /></td></tr>
+<tr class="separator:a1cf5dcfbac665543093e48c75a084550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -292,8 +292,8 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afa2a19510290dcf323fdba42697bcd06" name="afa2a19510290dcf323fdba42697bcd06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa2a19510290dcf323fdba42697bcd06">&#9670;&#160;</a></span>DeliverImpulse()</h2>
+<a id="a1cf5dcfbac665543093e48c75a084550" name="a1cf5dcfbac665543093e48c75a084550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf5dcfbac665543093e48c75a084550">&#9670;&#160;</a></span>DeliverImpulse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,12 +301,12 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
         <tr>
           <td class="memname">void CObject::DeliverImpulse </td>
           <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>m</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -320,8 +320,8 @@ static Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vBotCPock
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_object_afa2a19510290dcf323fdba42697bcd06_icgraph.png" border="0" usemap="#aclass_c_object_afa2a19510290dcf323fdba42697bcd06_icgraph" alt=""/></div>
-<map name="aclass_c_object_afa2a19510290dcf323fdba42697bcd06_icgraph" id="aclass_c_object_afa2a19510290dcf323fdba42697bcd06_icgraph">
+<div class="center"><img src="class_c_object_a1cf5dcfbac665543093e48c75a084550_icgraph.png" border="0" usemap="#aclass_c_object_a1cf5dcfbac665543093e48c75a084550_icgraph" alt=""/></div>
+<map name="aclass_c_object_a1cf5dcfbac665543093e48c75a084550_icgraph" id="aclass_c_object_a1cf5dcfbac665543093e48c75a084550_icgraph">
 <area shape="rect" title="Deliver an impulse." alt="" coords="775,5,939,32"/>
 <area shape="rect" href="class_c_object_manager.html#a059d66d8e43e9d8e3ee956e840ff9f95" title="Shoot the cue ball." alt="" coords="565,5,727,32"/>
 <area shape="poly" title=" " alt="" coords="759,21,727,21,727,16,759,16"/>
@@ -329,7 +329,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="549,21,518,21,518,16,549,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="327,21,295,21,295,16,327,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -363,7 +363,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="529,21,497,21,497,16,529,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -400,7 +400,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="535,21,503,21,503,16,535,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -432,7 +432,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="535,21,502,21,502,16,535,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>

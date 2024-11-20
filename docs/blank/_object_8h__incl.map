@@ -12,7 +12,7 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="447,30,532,70,530,75,445,35"/>
 <area shape="rect" id="Node000007" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="769,80,881,107"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="456,24,754,77,753,82,455,29"/>
-<area shape="rect" id="Node000009" href="$_common_8h.html" title="Interface for the comon variables class CCommon." alt="" coords="660,80,745,107"/>
+<area shape="rect" id="Node000009" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="660,80,745,107"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="456,27,645,75,644,80,455,32"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="710,155,817,181"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="816,109,786,145,782,141,812,105"/>
