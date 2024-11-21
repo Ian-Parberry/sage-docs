@@ -26,7 +26,7 @@
 <area shape="poly" id="edge11_Node000006_Node000011" title=" " alt="" coords="312,185,420,226,418,231,310,190"/>
 <area shape="poly" id="edge14_Node000006_Node000013" title=" " alt="" coords="225,191,138,231,136,226,222,186"/>
 <area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="589,267,525,306,522,301,586,262"/>
-<area shape="rect" id="Node000008" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="583,304,658,331"/>
+<area shape="rect" id="Node000008" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="583,304,658,331"/>
 <area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="623,272,623,304,618,304,618,272"/>
 <area shape="poly" id="edge12_Node000011_Node000005" title=" " alt="" coords="472,267,496,302,492,305,468,270"/>
 <area shape="rect" id="Node000012" href="$_object_manager_8cpp.html" title="Code for the object manager class CObjectManager." alt="" coords="272,304,406,331"/>
