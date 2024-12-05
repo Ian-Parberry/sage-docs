@@ -1,6 +1,6 @@
 <map id="CGame::BeginGame" name="CGame::BeginGame">
 <area shape="rect" id="Node000001" title="Begin playing the game." alt="" coords="5,57,148,84"/>
-<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="218,7,376,33"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all objects." alt="" coords="218,7,376,33"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,54,221,35,222,40,139,59"/>
 <area shape="rect" id="Node000003" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="196,57,399,84"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,68,180,68,180,73,148,73"/>

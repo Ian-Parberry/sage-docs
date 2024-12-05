@@ -1,5 +1,5 @@
 <map id="CObjectManager::Clear" name="CObjectManager::Clear">
-<area shape="rect" id="Node000001" title="Clear all dynamic shapes." alt="" coords="755,31,913,57"/>
+<area shape="rect" id="Node000001" title="Clear all objects." alt="" coords="755,31,913,57"/>
 <area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="562,5,705,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="739,35,705,30,706,25,740,29"/>
 <area shape="rect" id="Node000006" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="560,56,707,83"/>

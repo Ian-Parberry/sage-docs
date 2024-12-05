@@ -1,6 +1,6 @@
 <map id="CDialogBox::DlgProc" name="CDialogBox::DlgProc">
 <area shape="rect" id="Node000001" title="Dialog box procedure." alt="" coords="5,259,152,285"/>
-<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="233,5,391,32"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all objects." alt="" coords="233,5,391,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,257,92,215,114,156,149,94,172,66,198,42,217,31,220,35,201,46,176,70,154,97,119,159,97,217,85,259"/>
 <area shape="rect" id="Node000003" href="$class_c_dialog_box.html#adbcaef1a681b3b5f6e43fda31a897db6" title="Get number from an edit box." alt="" coords="229,56,395,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,257,97,223,122,179,155,132,176,111,198,92,213,84,216,89,201,97,179,115,159,135,126,181,102,226,87,259"/>

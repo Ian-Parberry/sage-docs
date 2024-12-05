@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Process game state." alt="" coords="5,57,159,84"/>
 <area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="207,57,349,84"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,68,192,68,192,73,159,73"/>
-<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="420,7,578,33"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all objects." alt="" coords="420,7,578,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="339,54,422,35,423,40,340,59"/>
 <area shape="rect" id="Node000004" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="397,57,600,84"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="349,68,382,68,382,73,349,73"/>

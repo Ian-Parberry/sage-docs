@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numscoredigits_0',['NUMSCOREDIGITS',['../class_c_game.html#a4903754c8afe375a8244774f896ad09f',1,'CGame']]]
+  ['rotspeed_0',['ROTSPEED',['../_flipper_8cpp.html#a32b5d255a1445a55f625f6705fbed36d',1,'Flipper.cpp']]]
 ];

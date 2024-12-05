@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,259,175,285"/>
 <area shape="rect" id="Node000002" href="$class_c_dialog_box.html#adae4102995724f6950028c936ff7bf13" title="Dialog box procedure." alt="" coords="223,259,369,285"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,269,208,269,208,275,175,275"/>
-<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="450,5,608,32"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all objects." alt="" coords="450,5,608,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="298,257,309,215,332,156,366,94,389,66,415,42,434,31,437,35,419,46,393,70,371,97,337,159,314,217,303,259"/>
 <area shape="rect" id="Node000004" href="$class_c_dialog_box.html#adbcaef1a681b3b5f6e43fda31a897db6" title="Get number from an edit box." alt="" coords="446,56,612,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="300,257,315,223,339,179,373,132,393,111,416,92,430,84,433,89,418,97,396,115,377,135,343,181,319,226,305,259"/>

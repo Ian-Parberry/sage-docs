@@ -1,5 +1,5 @@
 <map id="Object.h" name="Object.h">
-<area shape="rect" id="Node000001" title="Interface for the game object class CObject." alt="" coords="276,5,346,32"/>
+<area shape="rect" id="Node000001" title="Interface for the class CObject." alt="" coords="276,5,346,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,80,135,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,33,127,78,126,73,275,28"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="159,80,309,107"/>

@@ -1,6 +1,6 @@
 <map id="Contact.cpp" name="Contact.cpp">
-<area shape="rect" id="Node000001" title="Code for the contact descriptor class CContactDesc." alt="" coords="380,5,472,32"/>
-<area shape="rect" id="Node000002" href="$_contact_8h.html" title="Interface for the contact descriptor class CContactDesc." alt="" coords="386,80,465,107"/>
+<area shape="rect" id="Node000001" title="Code for the class CContactDesc." alt="" coords="380,5,472,32"/>
+<area shape="rect" id="Node000002" href="$_contact_8h.html" title="Interface for the class CContactDesc." alt="" coords="386,80,465,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="428,33,428,64,423,64,423,33"/>
 <area shape="rect" id="Node000003" href="$_dynamic_circle_8h.html" title="Interface for CDynamicCircleDesc and CDynamicCircle." alt="" coords="366,155,485,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="428,107,428,139,423,139,423,107"/>
@@ -8,13 +8,13 @@
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="421,183,403,217,398,214,417,181"/>
 <area shape="rect" id="Node000017" href="$_arc_8h.html" title="Interface for CArcDesc, CArc, and CKinematicArc." alt="" coords="440,304,492,331"/>
 <area shape="poly" id="edge20_Node000003_Node000017" title=" " alt="" coords="432,181,461,288,456,290,427,183"/>
-<area shape="rect" id="Node000005" href="$_line_8h.html" title="Interface for CLine." alt="" coords="359,304,415,331"/>
+<area shape="rect" id="Node000005" href="$_line_8h.html" title="Interface for the class CLine." alt="" coords="359,304,415,331"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="390,257,390,288,384,288,384,257"/>
 <area shape="rect" id="Node000006" href="$_circle_8h.html" title="Interface for CCircleDesc, CCircle, and CKinematicCircle." alt="" coords="392,379,459,405"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="396,330,414,364,410,366,391,332"/>
 <area shape="rect" id="Node000007" href="$_shape_8h.html" title="Interface for CShapeDesc and CShape." alt="" coords="391,453,460,480"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="428,406,428,438,423,438,423,406"/>
-<area shape="rect" id="Node000008" href="$_a_a_b_b_8h.html" title="Interface for the AABB class CAabb2D." alt="" coords="284,528,352,555"/>
+<area shape="rect" id="Node000008" href="$_a_a_b_b_8h.html" title="Interface for the class CAabb2D." alt="" coords="284,528,352,555"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="408,483,351,521,348,517,405,478"/>
 <area shape="rect" id="Node000015" href="$_shape_math_8h.html" title="Handy math functions for the collision module." alt="" coords="376,528,475,555"/>
 <area shape="poly" id="edge14_Node000007_Node000015" title=" " alt="" coords="428,481,428,512,423,512,423,481"/>

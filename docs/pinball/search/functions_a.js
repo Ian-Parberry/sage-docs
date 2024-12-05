@@ -8,5 +8,5 @@ var searchData=
   ['makethingl_5',['MakeThingL',['../class_c_object_manager.html#a3c7fbcf613ac5cc2836d5e789ad4be20',1,'CObjectManager']]],
   ['makethingr_6',['MakeThingR',['../class_c_object_manager.html#a08f704845cf30b46b8a59a3ce49d5419',1,'CObjectManager']]],
   ['makeworldedges_7',['MakeWorldEdges',['../class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006',1,'CObjectManager']]],
-  ['move_8',['move',['../class_c_object_manager.html#a528d2d15ffc9bced002df95be266b910',1,'CObjectManager']]]
+  ['move_8',['Move',['../class_c_object_manager.html#aee994b178d5774f081865796a03709f2',1,'CObjectManager']]]
 ];

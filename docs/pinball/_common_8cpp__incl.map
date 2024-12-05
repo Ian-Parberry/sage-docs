@@ -8,7 +8,7 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="381,110,298,150,296,145,378,105"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="330,155,480,181"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="408,107,408,139,402,139,402,107"/>
-<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="504,155,616,181"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="504,155,616,181"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="433,105,520,145,518,150,431,110"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="640,155,762,181"/>
 <area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="449,103,635,148,634,153,448,108"/>

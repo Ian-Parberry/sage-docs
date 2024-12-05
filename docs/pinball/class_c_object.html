@@ -159,9 +159,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a620f81f403f4b7c00ef5afbb15a88de2" id="r_a620f81f403f4b7c00ef5afbb15a88de2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a620f81f403f4b7c00ef5afbb15a88de2">CObject</a> (Shapes::CShape *, const <a class="el" href="class_c_obj_desc.html">CObjDesc</a> &amp;)</td></tr>
 <tr class="memdesc:a620f81f403f4b7c00ef5afbb15a88de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a620f81f403f4b7c00ef5afbb15a88de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa861568d9cfbce2b09ce86b7934b61" id="r_a2fa861568d9cfbce2b09ce86b7934b61"><td class="memItemLeft" align="right" valign="top"><a id="a2fa861568d9cfbce2b09ce86b7934b61" name="a2fa861568d9cfbce2b09ce86b7934b61"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
-<tr class="memdesc:a2fa861568d9cfbce2b09ce86b7934b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update object. <br /></td></tr>
+<tr class="memitem:a2fa861568d9cfbce2b09ce86b7934b61" id="r_a2fa861568d9cfbce2b09ce86b7934b61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fa861568d9cfbce2b09ce86b7934b61">Update</a> ()</td></tr>
+<tr class="memdesc:a2fa861568d9cfbce2b09ce86b7934b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update object.  <br /></td></tr>
 <tr class="separator:a2fa861568d9cfbce2b09ce86b7934b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45b99376582639dedfc612ab1c29f37" id="r_aa45b99376582639dedfc612ab1c29f37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa45b99376582639dedfc612ab1c29f37">DrawOutline</a> ()</td></tr>
 <tr class="memdesc:aa45b99376582639dedfc612ab1c29f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw outline.  <br /></td></tr>
@@ -190,6 +189,10 @@ Private Attributes</h2></td></tr>
 Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vSpriteOffset</b></td></tr>
 <tr class="memdesc:ac75d44a003108a32735398e23c877794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite offset in local coordinates. <br /></td></tr>
 <tr class="separator:ac75d44a003108a32735398e23c877794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2710e60021bc92b31546f1fe34bb9a09" id="r_a2710e60021bc92b31546f1fe34bb9a09"><td class="memItemLeft" align="right" valign="top"><a id="a2710e60021bc92b31546f1fe34bb9a09" name="a2710e60021bc92b31546f1fe34bb9a09"></a>
+<a class="el" href="_game_defines_8h.html#a05551407c3195664c546b61dea02e822">eSound</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSound</b> = eSound::None</td></tr>
+<tr class="memdesc:a2710e60021bc92b31546f1fe34bb9a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision sound. <br /></td></tr>
+<tr class="separator:a2710e60021bc92b31546f1fe34bb9a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a842acd98e83e19ae71d23390b3948916" id="r_a842acd98e83e19ae71d23390b3948916"><td class="memItemLeft" align="right" valign="top"><a id="a842acd98e83e19ae71d23390b3948916" name="a842acd98e83e19ae71d23390b3948916"></a>
 Shapes::CShape *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pShape</b> = nullptr</td></tr>
 <tr class="memdesc:a842acd98e83e19ae71d23390b3948916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to shape. <br  />
@@ -200,17 +203,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bRecentHit</b> = fa
 <tr class="memdesc:a67c7e06d8d32dc902184af9d7cd9f399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Was hit recently. <br /></td></tr>
 <tr class="separator:a67c7e06d8d32dc902184af9d7cd9f399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9693e6f5b689b74ef5c7edc7a03836" id="r_afa9693e6f5b689b74ef5c7edc7a03836"><td class="memItemLeft" align="right" valign="top"><a id="afa9693e6f5b689b74ef5c7edc7a03836" name="afa9693e6f5b689b74ef5c7edc7a03836"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fLastHitTime</b> = 0</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fLastHitTime</b> = 0.0f</td></tr>
 <tr class="memdesc:afa9693e6f5b689b74ef5c7edc7a03836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time of last hit. <br /></td></tr>
 <tr class="separator:afa9693e6f5b689b74ef5c7edc7a03836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182d7382cd46ab16ae0329b5640826c4" id="r_a182d7382cd46ab16ae0329b5640826c4"><td class="memItemLeft" align="right" valign="top"><a id="a182d7382cd46ab16ae0329b5640826c4" name="a182d7382cd46ab16ae0329b5640826c4"></a>
 UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nScore</b> = 0</td></tr>
 <tr class="memdesc:a182d7382cd46ab16ae0329b5640826c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Score for collision. <br /></td></tr>
 <tr class="separator:a182d7382cd46ab16ae0329b5640826c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2710e60021bc92b31546f1fe34bb9a09" id="r_a2710e60021bc92b31546f1fe34bb9a09"><td class="memItemLeft" align="right" valign="top"><a id="a2710e60021bc92b31546f1fe34bb9a09" name="a2710e60021bc92b31546f1fe34bb9a09"></a>
-<a class="el" href="_game_defines_8h.html#a05551407c3195664c546b61dea02e822">eSound</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eSound</b> = eSound::None</td></tr>
-<tr class="memdesc:a2710e60021bc92b31546f1fe34bb9a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collision sound. <br /></td></tr>
-<tr class="separator:a2710e60021bc92b31546f1fe34bb9a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -255,7 +254,7 @@ static UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nScore</b> =
 <tr class="separator:a895fca9c2d0bec1d4696fb807973b540 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_c_object.html" title="The game object.">CObject</a> is the abstract representation of an object. </p>
+<div class="textblock"><p><code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> is the abstract representation of an object. Notice that <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code> has no move or draw functions. Moving and drawing is now handled by <code>CShape</code>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a620f81f403f4b7c00ef5afbb15a88de2" name="a620f81f403f4b7c00ef5afbb15a88de2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a620f81f403f4b7c00ef5afbb15a88de2">&#9670;&#160;</a></span>CObject()</h2>
@@ -300,7 +299,7 @@ static UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nScore</b> =
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Draw only the outline of the object's shape. This is reasonably cheap for line segments but hideously expensive for circles and arcs because it laboriously constructs the curve by drawing very short lines. Ideally I should put it into the pixel shader but I can't be bothered. This is good enough for now. </p>
+<p>Draw only the outline of the object's shape. This is reasonably cheap for line segments but hideously expensive for circles and arcs because it laboriously constructs the curve by drawing very short lines. Ideally I should put it into a pixel shader but I can't be bothered. This is good enough for now. </p>
 
 </div>
 </div>
@@ -318,7 +317,7 @@ static UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nScore</b> =
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reader function for the object's AABB. It gets this by querying the oblect's shape's AABB. </p><dl class="section return"><dt>Returns</dt><dd>The object's AABB. </dd></dl>
+<p>Reader function for the object's AABB. It gets this by querying the object's shape's AABB. </p><dl class="section return"><dt>Returns</dt><dd>The object's AABB. </dd></dl>
 
 </div>
 </div>
@@ -355,6 +354,24 @@ static UINT&#160;</td><td class="memItemRight" valign="bottom"><b>m_nScore</b> =
       </table>
 </div><div class="memdoc">
 <p>Reader function for the object's shape. </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the object's shape. </dd></dl>
+
+</div>
+</div>
+<a id="a2fa861568d9cfbce2b09ce86b7934b61" name="a2fa861568d9cfbce2b09ce86b7934b61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa861568d9cfbce2b09ce86b7934b61">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CObject::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update object setting from its shape. </p>
 
 </div>
 </div>

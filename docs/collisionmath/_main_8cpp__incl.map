@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="The home of WinMain." alt="" coords="321,5,396,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="248,80,357,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,34,323,69,319,66,347,31"/>
-<area shape="rect" id="Node000003" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="381,80,448,107"/>
+<area shape="rect" id="Node000003" href="$_game_8h.html" title="Interface for the class CGame." alt="" coords="381,80,448,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="370,31,398,66,394,69,366,34"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="371,379,500,405"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="422,107,434,154,441,212,443,270,440,363,435,363,437,270,435,213,429,155,417,108"/>
@@ -10,11 +10,11 @@
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="394,109,316,157,215,231,138,296,135,292,212,227,313,152,391,105"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="957,304,1067,331"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="449,105,965,296,963,301,447,110"/>
-<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="69,379,154,405"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="69,379,154,405"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="381,108,217,164,132,199,73,232,45,254,23,277,17,288,14,301,15,314,21,329,40,352,65,369,62,374,36,356,16,332,10,315,8,300,12,286,19,273,41,250,70,227,129,194,215,159,379,103"/>
-<area shape="rect" id="Node000012" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="496,229,616,256"/>
+<area shape="rect" id="Node000012" href="$_object_manager_8h.html" title="Interface for the class CObjectManager." alt="" coords="496,229,616,256"/>
 <area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="429,105,478,153,537,216,533,220,474,157,426,109"/>
-<area shape="rect" id="Node000023" href="$_dialog_box_8h.html" title="Interface for the dialog box class CDialogBox." alt="" coords="327,155,419,181"/>
+<area shape="rect" id="Node000023" href="$_dialog_box_8h.html" title="Interface for the class CDialogBox." alt="" coords="327,155,419,181"/>
 <area shape="poly" id="edge38_Node000003_Node000023" title=" " alt="" coords="410,109,390,143,385,140,405,106"/>
 <area shape="rect" id="Node000008" title=" " alt="" coords="152,453,298,480"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="133,404,194,442,191,447,130,408"/>
@@ -39,9 +39,9 @@
 <area shape="poly" id="edge24_Node000012_Node000018" title=" " alt="" coords="563,256,606,363,601,365,558,257"/>
 <area shape="rect" id="Node000019" title=" " alt="" coords="178,379,296,405"/>
 <area shape="poly" id="edge23_Node000012_Node000019" title=" " alt="" coords="495,248,449,253,397,264,345,281,297,306,269,334,250,366,246,364,265,331,294,302,343,276,396,258,448,248,495,243"/>
-<area shape="rect" id="Node000020" href="$_gate_8h.html" title="Interface for the gate class CGate." alt="" coords="308,304,369,331"/>
+<area shape="rect" id="Node000020" href="$_gate_8h.html" title="Interface for the class CGate." alt="" coords="308,304,369,331"/>
 <area shape="poly" id="edge25_Node000012_Node000020" title=" " alt="" coords="519,259,384,304,383,299,517,254"/>
-<area shape="rect" id="Node000021" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="862,304,932,331"/>
+<area shape="rect" id="Node000021" href="$_object_8h.html" title="Interface for the class CObject." alt="" coords="862,304,932,331"/>
 <area shape="poly" id="edge33_Node000012_Node000021" title=" " alt="" coords="617,254,844,301,848,302,847,307,843,307,616,259"/>
 <area shape="poly" id="edge17_Node000014_Node000013" title=" " alt="" coords="739,332,722,366,717,363,734,330"/>
 <area shape="rect" id="Node000015" title=" " alt="" coords="759,379,827,405"/>

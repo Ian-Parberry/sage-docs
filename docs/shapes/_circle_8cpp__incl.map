@@ -2,13 +2,13 @@
 <area shape="rect" id="Node000001" title="Code for CCircleDesc, CCircle, and CKinematicCircle." alt="" coords="344,5,424,32"/>
 <area shape="rect" id="Node000002" href="$_circle_8h.html" title="Interface for CCircleDesc, CCircle, and CKinematicCircle." alt="" coords="392,379,459,405"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="387,33,387,167,387,244,390,277,397,309,416,363,411,365,392,310,385,277,382,244,382,167,382,33"/>
-<area shape="rect" id="Node000004" href="$_a_a_b_b_8h.html" title="Interface for the AABB class CAabb2D." alt="" coords="214,528,282,555"/>
+<area shape="rect" id="Node000004" href="$_a_a_b_b_8h.html" title="Interface for the class CAabb2D." alt="" coords="214,528,282,555"/>
 <area shape="poly" id="edge21_Node000001_Node000004" title=" " alt="" coords="361,35,327,56,291,85,262,123,254,144,251,167,251,393,251,512,246,512,246,393,246,166,249,143,258,120,287,82,324,51,358,30"/>
 <area shape="rect" id="Node000013" href="$_line_seg_8h.html" title="Interface for CLineSegDesc, CLineSeg, and CKinematicLineSeg." alt="" coords="487,229,567,256"/>
 <area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="426,26,476,45,501,60,524,78,543,102,554,125,557,151,554,182,543,216,538,214,548,181,552,151,549,127,539,105,520,82,498,64,474,50,424,31"/>
 <area shape="rect" id="Node000015" href="$_point_8h.html" title="Interface for CPointDesc, CPoint, and CKinematicPoint." alt="" coords="285,155,348,181"/>
 <area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="381,34,331,142,326,139,376,31"/>
-<area shape="rect" id="Node000016" href="$_contact_8h.html" title="Interface for the contact descriptor class CContactDesc." alt="" coords="432,80,510,107"/>
+<area shape="rect" id="Node000016" href="$_contact_8h.html" title="Interface for the class CContactDesc." alt="" coords="432,80,510,107"/>
 <area shape="poly" id="edge22_Node000001_Node000016" title=" " alt="" coords="401,30,446,68,443,72,398,35"/>
 <area shape="rect" id="Node000003" href="$_shape_8h.html" title="Interface for CShapeDesc and CShape." alt="" coords="334,453,403,480"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,408,390,443,386,439,414,404"/>
@@ -33,7 +33,7 @@
 <area shape="poly" id="edge12_Node000011_Node000008" title=" " alt="" coords="481,558,407,597,405,593,479,553"/>
 <area shape="poly" id="edge13_Node000011_Node000009" title=" " alt="" coords="503,556,495,588,490,587,497,555"/>
 <area shape="poly" id="edge14_Node000011_Node000010" title=" " alt="" coords="524,553,583,592,580,596,521,557"/>
-<area shape="rect" id="Node000014" href="$_line_8h.html" title="Interface for CLine." alt="" coords="499,304,555,331"/>
+<area shape="rect" id="Node000014" href="$_line_8h.html" title="Interface for the class CLine." alt="" coords="499,304,555,331"/>
 <area shape="poly" id="edge17_Node000013_Node000014" title=" " alt="" coords="530,257,530,288,524,288,524,257"/>
 <area shape="poly" id="edge18_Node000014_Node000002" title=" " alt="" coords="511,333,457,371,454,367,508,329"/>
 <area shape="poly" id="edge20_Node000015_Node000003" title=" " alt="" coords="321,181,366,437,361,438,316,182"/>

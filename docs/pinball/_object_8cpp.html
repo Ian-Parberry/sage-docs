@@ -102,48 +102,46 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Code for the game object class <a class="el" href="class_c_object.html" title="The game object.">CObject</a>.  
+<p>Code for the class <code><a class="el" href="class_c_object.html" title="The game object.">CObject</a></code>.  
 </p>
 <div class="textblock"><code>#include &quot;SageComponentIncludes.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_object_8h.html">Object.h</a>&quot;</code><br />
 <code>#include &quot;LineSeg.h&quot;</code><br />
 <code>#include &quot;DynamicCircle.h&quot;</code><br />
-<code>#include &quot;SageSpriteRenderer.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Object.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_object_8cpp__incl.png" border="0" usemap="#a_object_8cpp" alt=""/></div>
 <map name="a_object_8cpp" id="a_object_8cpp">
-<area shape="rect" title="Code for the game object class CObject." alt="" coords="723,5,807,32"/>
+<area shape="rect" title="Code for the class CObject." alt="" coords="496,5,581,32"/>
 <area shape="rect" title=" " alt="" coords="5,229,184,256"/>
-<area shape="poly" title=" " alt="" coords="723,25,621,34,483,55,407,72,330,94,254,122,183,157,144,186,114,219,110,216,140,182,180,152,252,118,328,89,406,67,482,50,621,28,722,19"/>
-<area shape="rect" href="_object_8h.html" title="Interface for the game object class CObject." alt="" coords="546,80,616,107"/>
-<area shape="poly" title=" " alt="" coords="734,35,628,76,626,71,732,30"/>
-<area shape="rect" title=" " alt="" coords="670,229,820,256"/>
-<area shape="poly" title=" " alt="" coords="767,33,750,214,745,214,761,32"/>
-<area shape="rect" title=" " alt="" coords="803,80,882,107"/>
-<area shape="poly" title=" " alt="" coords="780,31,820,67,816,71,777,34"/>
-<area shape="rect" title=" " alt="" coords="906,80,1024,107"/>
-<area shape="poly" title=" " alt="" coords="801,30,917,72,915,77,799,35"/>
-<area shape="rect" title=" " alt="" coords="303,155,430,181"/>
-<area shape="poly" title=" " alt="" coords="547,109,419,152,418,147,545,104"/>
-<area shape="rect" title=" " alt="" coords="454,155,583,181"/>
-<area shape="poly" title=" " alt="" coords="572,109,541,145,537,141,568,105"/>
-<area shape="rect" href="_game_defines_8h.html" title="Game specific defines." alt="" coords="516,229,628,256"/>
-<area shape="poly" title=" " alt="" coords="618,103,649,116,677,134,695,156,696,169,691,183,668,208,638,225,635,221,664,204,687,180,691,168,690,158,674,138,646,121,616,108"/>
-<area shape="rect" href="_common_8h.html" title="Interface for the class CCommon." alt="" coords="193,155,278,181"/>
-<area shape="poly" title=" " alt="" coords="546,105,294,157,293,151,545,99"/>
-<area shape="rect" title=" " alt="" coords="608,155,677,181"/>
-<area shape="poly" title=" " alt="" coords="594,105,624,141,620,145,590,109"/>
-<area shape="rect" title=" " alt="" coords="518,304,626,331"/>
-<area shape="poly" title=" " alt="" coords="574,257,574,288,569,288,569,257"/>
-<area shape="poly" title=" " alt="" coords="212,184,134,224,132,219,210,179"/>
-<area shape="poly" title=" " alt="" coords="279,176,291,179,501,224,500,229,290,184,278,181"/>
-<area shape="rect" title=" " alt="" coords="208,229,307,256"/>
-<area shape="poly" title=" " alt="" coords="242,181,252,214,247,215,237,183"/>
-<area shape="poly" title=" " alt="" coords="279,176,291,179,457,203,656,228,655,233,456,208,290,184,278,182"/>
-<area shape="rect" title=" " alt="" coords="331,229,453,256"/>
-<area shape="poly" title=" " alt="" coords="264,179,352,220,350,225,262,184"/>
+<area shape="poly" title=" " alt="" coords="506,35,382,85,305,119,229,157,173,190,126,222,123,218,171,186,227,152,303,114,380,80,504,30"/>
+<area shape="rect" href="_object_8h.html" title="Interface for the class CObject." alt="" coords="454,80,524,107"/>
+<area shape="poly" title=" " alt="" coords="532,34,508,69,504,66,528,31"/>
+<area shape="rect" title=" " alt="" coords="548,80,628,107"/>
+<area shape="poly" title=" " alt="" coords="549,31,573,66,569,69,545,34"/>
+<area shape="rect" title=" " alt="" coords="651,80,770,107"/>
+<area shape="poly" title=" " alt="" coords="569,30,668,71,665,76,567,35"/>
+<area shape="rect" title=" " alt="" coords="350,155,477,181"/>
+<area shape="poly" title=" " alt="" coords="478,109,439,146,435,142,474,105"/>
+<area shape="rect" title=" " alt="" coords="500,155,630,181"/>
+<area shape="poly" title=" " alt="" coords="504,105,543,142,539,146,501,109"/>
+<area shape="rect" href="_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="678,229,791,256"/>
+<area shape="poly" title=" " alt="" coords="525,101,536,104,568,109,597,111,648,109,672,111,694,118,716,131,738,153,746,168,749,184,746,215,740,214,743,184,741,169,734,156,713,135,692,122,671,116,648,115,597,116,567,115,535,109,524,106"/>
+<area shape="rect" href="_common_8h.html" title="Interface for the class CCommon." alt="" coords="240,155,325,181"/>
+<area shape="poly" title=" " alt="" coords="455,110,334,152,332,147,453,105"/>
+<area shape="rect" title=" " alt="" coords="654,155,724,181"/>
+<area shape="poly" title=" " alt="" coords="525,105,641,146,639,151,523,110"/>
+<area shape="rect" title=" " alt="" coords="681,304,788,331"/>
+<area shape="poly" title=" " alt="" coords="737,257,737,288,732,288,732,257"/>
+<area shape="poly" title=" " alt="" coords="251,184,143,226,141,221,249,179"/>
+<area shape="poly" title=" " alt="" coords="326,176,338,179,513,208,663,229,663,235,512,213,337,184,325,182"/>
+<area shape="rect" title=" " alt="" coords="528,229,627,256"/>
+<area shape="poly" title=" " alt="" coords="326,177,513,223,512,228,325,182"/>
+<area shape="rect" title=" " alt="" coords="208,229,357,256"/>
+<area shape="poly" title=" " alt="" coords="285,182,285,214,280,214,280,182"/>
+<area shape="rect" title=" " alt="" coords="381,229,504,256"/>
+<area shape="poly" title=" " alt="" coords="311,179,402,220,400,225,309,184"/>
 </map>
 </div>
 </div></div><!-- contents -->

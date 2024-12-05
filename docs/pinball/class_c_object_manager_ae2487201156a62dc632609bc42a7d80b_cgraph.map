@@ -1,6 +1,6 @@
 <map id="CObjectManager::BroadPhase" name="CObjectManager::BroadPhase">
 <area shape="rect" id="Node000001" title="Broad phase collision detection and response." alt="" coords="5,31,204,57"/>
-<area shape="rect" id="Node000002" href="$class_c_gate.html#ac58a5ceb4cb14d4fa6be61c914cec859" title="Narrow phase collision detection and response." alt="" coords="282,5,428,32"/>
+<area shape="rect" id="Node000002" href="$class_c_gate.html#ac58a5ceb4cb14d4fa6be61c914cec859" title="Narrow phase." alt="" coords="282,5,428,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,31,266,25,267,30,204,37"/>
 <area shape="rect" id="Node000003" href="$class_c_object_manager.html#a3c574bccab311aa7259137f9bcf096af" title="Narrow phase collision detection and response." alt="" coords="252,56,458,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,51,236,55,236,60,204,57"/>

@@ -41,7 +41,7 @@
 <area shape="poly" id="edge18_Node000015_Node000016" title=" " alt="" coords="889,500,916,511,989,556,1048,601,1045,605,986,560,913,516,887,504"/>
 <area shape="rect" id="Node000018" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="469,308,611,335"/>
 <area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="372,321,453,320,453,325,372,327"/>
-<area shape="rect" id="Node000019" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all dynamic shapes." alt="" coords="730,357,888,384"/>
+<area shape="rect" id="Node000019" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Clear all objects." alt="" coords="730,357,888,384"/>
 <area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="612,332,718,351,717,357,611,337"/>
 <area shape="rect" id="Node000020" href="$class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes." alt="" coords="707,307,911,333"/>
 <area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="612,318,692,318,692,323,612,324"/>

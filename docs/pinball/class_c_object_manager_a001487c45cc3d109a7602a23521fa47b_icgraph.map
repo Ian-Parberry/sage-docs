@@ -1,6 +1,6 @@
 <map id="CObjectManager::AddShape" name="CObjectManager::AddShape">
 <area shape="rect" id="Node000001" title="Add shape." alt="" coords="1270,183,1458,209"/>
-<area shape="rect" id="Node000002" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Launch a ball." alt="" coords="1062,5,1178,32"/>
+<area shape="rect" id="Node000002" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Create and launch a ball." alt="" coords="1062,5,1178,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1344,171,1293,108,1259,74,1221,46,1178,29,1180,25,1224,42,1263,70,1297,104,1348,168"/>
 <area shape="rect" id="Node000006" href="$class_c_object_manager.html#a8ec3facaf9550165947643f51e5265c7" title="Make a bollard." alt="" coords="1020,56,1220,83"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1332,175,1282,139,1221,104,1174,86,1176,81,1223,99,1285,134,1335,171"/>
@@ -20,7 +20,7 @@
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1047,33,717,89,716,83,1047,28"/>
 <area shape="rect" id="Node000004" href="$class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,140,295,167"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="529,116,296,146,295,141,529,110"/>
-<area shape="rect" id="Node000005" href="$_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,140,88,167"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,140,88,167"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="120,156,88,156,88,151,120,151"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1050,91,1019,104,979,128,942,156,886,204,882,200,938,151,976,123,1017,99,1048,86"/>
 <area shape="rect" id="Node000008" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="560,203,703,229"/>

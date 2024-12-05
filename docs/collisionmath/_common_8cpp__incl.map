@@ -1,6 +1,6 @@
 <map id="Common.cpp" name="Common.cpp">
-<area shape="rect" id="Node000001" title="Code for the common variables class CCommon." alt="" coords="182,5,282,32"/>
-<area shape="rect" id="Node000002" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="189,80,274,107"/>
+<area shape="rect" id="Node000001" title="Code for the class CCommon." alt="" coords="182,5,282,32"/>
+<area shape="rect" id="Node000002" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="189,80,274,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,33,234,64,229,64,229,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,155,152,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="206,110,120,150,118,145,204,105"/>
