@@ -6,7 +6,7 @@ var searchData=
   ['cgame_3',['CGame',['../class_c_game.html',1,'']]],
   ['chain_2ecpp_4',['Chain.cpp',['../_chain_8cpp.html',1,'']]],
   ['chain_2eh_5',['Chain.h',['../_chain_8h.html',1,'']]],
-  ['clear_6',['clear',['../class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf',1,'CObjectManager']]],
+  ['clear_6',['Clear',['../class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116',1,'CObjectManager']]],
   ['cobjectmanager_7',['CObjectManager',['../class_c_object_manager.html',1,'']]],
   ['common_2ecpp_8',['Common.cpp',['../_common_8cpp.html',1,'']]],
   ['common_2eh_9',['Common.h',['../_common_8h.html',1,'']]],
@@ -16,7 +16,8 @@ var searchData=
   ['createbody_13',['CreateBody',['../class_c_object_manager.html#a0115e10e9f8d6c4f644989b96fe69675',1,'CObjectManager']]],
   ['createobjects_14',['CreateObjects',['../class_c_game.html#a6a5af1b87c696a23a626812b74c653ea',1,'CGame']]],
   ['createpoint_15',['CreatePoint',['../class_c_body.html#a90e83d000e685e5929c32fcb96e13321',1,'CBody']]],
-  ['createspring_16',['CreateSpring',['../class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f',1,'CBody']]],
-  ['cspring_17',['CSpring',['../class_c_spring.html',1,'CSpring'],['../class_c_spring.html#a1e4c8b42639420d34f33a6ecce2f3f8d',1,'CSpring::CSpring()']]],
-  ['cwheel_18',['CWheel',['../class_c_wheel.html',1,'CWheel'],['../class_c_wheel.html#a8a9c7cc14cd9b432fba6238086a80abd',1,'CWheel::CWheel()']]]
+  ['createspring_16',['CreateSpring',['../class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f',1,'CBody::CreateSpring()'],['../class_c_ragdoll.html#adfddfe7e918173ab516791efa01cb070',1,'CRagdoll::CreateSpring(ePoint, ePoint, float)']]],
+  ['createstick_17',['CreateStick',['../class_c_ragdoll.html#a8b344aa96aa3c98b0f96337b0cfe51ed',1,'CRagdoll']]],
+  ['cspring_18',['CSpring',['../class_c_spring.html',1,'CSpring'],['../class_c_spring.html#a1e4c8b42639420d34f33a6ecce2f3f8d',1,'CSpring::CSpring()']]],
+  ['cwheel_19',['CWheel',['../class_c_wheel.html',1,'CWheel'],['../class_c_wheel.html#a8a9c7cc14cd9b432fba6238086a80abd',1,'CWheel::CWheel()']]]
 ];

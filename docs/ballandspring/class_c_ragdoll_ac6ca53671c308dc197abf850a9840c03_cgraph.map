@@ -1,10 +1,19 @@
 <map id="CRagdoll::CRagdoll" name="CRagdoll::CRagdoll">
-<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,31,143,57"/>
-<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="194,5,332,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,32,179,27,179,33,144,37"/>
-<area shape="rect" id="Node000004" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="191,56,336,83"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,51,175,55,175,60,143,56"/>
-<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="384,31,547,57"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,25,369,29,368,34,332,30"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="336,58,368,54,369,59,337,63"/>
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,107,143,133"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="418,5,557,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,104,132,71,160,55,190,41,244,27,300,18,403,12,403,18,300,23,245,32,192,47,163,59,135,76,92,108"/>
+<area shape="rect" id="Node000004" href="$class_c_ragdoll.html#adfddfe7e918173ab516791efa01cb070" title="Create a spring." alt="" coords="199,56,358,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,103,207,84,208,90,132,109"/>
+<area shape="rect" id="Node000006" href="$class_c_ragdoll.html#a8b344aa96aa3c98b0f96337b0cfe51ed" title="Create a stick." alt="" coords="203,107,355,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="143,117,187,117,187,123,143,123"/>
+<area shape="rect" id="Node000007" href="$class_c_point.html#af2c9b70f9e753b3155b2375acf166a23" title="Override default collision sound." alt="" coords="191,157,367,184"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="132,131,208,150,207,156,130,137"/>
+<area shape="rect" id="Node000008" href="$class_c_ragdoll.html#a4e8425ecc532b93e6b1afd4e426814bb" title="Set relative position." alt="" coords="192,208,366,235"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="94,132,137,163,192,194,207,200,205,205,189,198,134,167,91,136"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="608,31,772,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="557,25,593,29,592,34,557,30"/>
+<area shape="rect" id="Node000005" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="415,56,560,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="359,67,399,67,399,72,359,72"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="560,58,592,54,593,59,561,63"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="336,103,414,84,416,89,338,109"/>
 </map>

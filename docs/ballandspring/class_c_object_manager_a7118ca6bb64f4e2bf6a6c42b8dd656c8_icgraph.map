@@ -1,16 +1,21 @@
 <map id="CObjectManager::create" name="CObjectManager::create">
-<area shape="rect" id="Node000001" title="Create a point." alt="" coords="384,56,547,83"/>
-<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="194,31,332,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,60,332,55,333,50,369,55"/>
-<area shape="rect" id="Node000006" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="191,81,336,108"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="369,84,337,88,336,83,368,79"/>
-<area shape="rect" id="Node000003" href="$class_c_chain.html#a90e5240657b6a61f224034aa63637a8e" title="Constructor." alt="" coords="15,5,133,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,35,132,29,133,24,179,30"/>
+<area shape="rect" id="Node000001" title="Create a point." alt="" coords="591,132,755,159"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#a90e83d000e685e5929c32fcb96e13321" title="Create point." alt="" coords="402,157,540,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="576,160,540,165,540,159,576,155"/>
+<area shape="rect" id="Node000006" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="398,107,543,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="576,136,544,132,544,126,576,131"/>
+<area shape="rect" id="Node000003" href="$class_c_chain.html#a90e5240657b6a61f224034aa63637a8e" title="Constructor." alt="" coords="212,157,329,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,173,329,173,329,168,386,168"/>
 <area shape="rect" id="Node000004" href="$class_c_ragdoll.html#ac6ca53671c308dc197abf850a9840c03" title="Constructor." alt="" coords="5,56,143,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,58,144,63,143,57,178,53"/>
-<area shape="rect" id="Node000005" href="$class_c_wheel.html#a8a9c7cc14cd9b432fba6238086a80abd" title="Constructor." alt="" coords="12,107,136,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="207,66,192,72,144,97,116,109,114,104,142,92,190,67,204,61"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="204,78,190,72,142,46,114,35,116,30,144,42,192,67,207,73"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="175,86,142,81,143,76,176,80"/>
-<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="176,109,137,114,136,109,175,104"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="420,192,370,205,311,215,249,214,219,208,190,198,152,174,120,143,96,111,80,84,85,82,101,108,124,139,155,170,192,194,220,203,250,209,311,209,369,200,418,187"/>
+<area shape="rect" id="Node000005" href="$class_c_wheel.html#a8a9c7cc14cd9b432fba6238086a80abd" title="Constructor." alt="" coords="209,107,332,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="399,155,325,137,327,131,401,150"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="401,140,327,159,325,154,399,135"/>
+<area shape="poly" id="edge11_Node000006_Node000005" title=" " alt="" coords="382,123,332,123,332,117,382,117"/>
+<area shape="rect" id="Node000007" href="$class_c_ragdoll.html#adfddfe7e918173ab516791efa01cb070" title="Create a spring." alt="" coords="191,5,350,32"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="437,100,396,72,349,46,320,35,322,30,351,42,399,68,440,95"/>
+<area shape="rect" id="Node000008" href="$class_c_ragdoll.html#a8b344aa96aa3c98b0f96337b0cfe51ed" title="Create a stick." alt="" coords="194,56,346,83"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="399,105,325,86,327,81,401,100"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="201,39,129,58,128,53,200,34"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="178,72,143,72,143,67,178,67"/>
 </map>

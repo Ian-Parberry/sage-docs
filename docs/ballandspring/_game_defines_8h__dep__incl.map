@@ -1,5 +1,5 @@
 <map id="GameDefines.h" name="GameDefines.h">
-<area shape="rect" id="Node000001" title="Game specific defines." alt="" coords="359,5,471,32"/>
+<area shape="rect" id="Node000001" title="Game specific defines and enumerated types." alt="" coords="359,5,471,32"/>
 <area shape="rect" id="Node000002" href="$_body_8cpp.html" title="Code for the body class CBody." alt="" coords="5,453,81,480"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="344,36,252,57,154,87,111,104,76,124,54,145,48,156,46,167,46,319,46,453,40,453,40,319,40,166,43,154,49,142,73,120,109,100,152,82,251,52,343,30"/>
 <area shape="rect" id="Node000003" href="$_body_8h.html" title="Interface for the body class CBody." alt="" coords="187,304,248,331"/>
@@ -8,14 +8,14 @@
 <area shape="poly" id="edge30_Node000001_Node000009" title=" " alt="" coords="487,21,563,32,603,42,641,57,675,76,702,100,720,130,727,166,727,393,727,527,722,527,722,393,722,167,715,132,698,103,672,80,639,61,601,48,562,37,487,26"/>
 <area shape="rect" id="Node000011" href="$_ragdoll_8cpp.html" title="Code for the ragdoll class CRagdoll." alt="" coords="475,453,566,480"/>
 <area shape="poly" id="edge32_Node000001_Node000011" title=" " alt="" coords="487,27,549,42,610,69,636,87,657,109,671,136,676,166,676,319,673,344,663,366,649,387,631,405,590,435,552,455,549,450,587,430,627,401,644,384,658,364,668,342,671,318,671,167,666,137,653,112,633,91,608,74,547,47,486,32"/>
-<area shape="rect" id="Node000015" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="412,80,498,107"/>
+<area shape="rect" id="Node000015" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="412,80,498,107"/>
 <area shape="poly" id="edge20_Node000001_Node000015" title=" " alt="" coords="432,45,450,78,446,81,427,47"/>
 <area shape="rect" id="Node000017" href="$_point_8h.html" title="Interface for the point class CPoint." alt="" coords="344,155,406,181"/>
 <area shape="poly" id="edge31_Node000001_Node000017" title=" " alt="" coords="410,48,381,155,376,153,405,46"/>
 <area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="181,341,121,381,82,420,54,455,50,451,78,416,117,377,178,336"/>
 <area shape="rect" id="Node000004" href="$_chain_8h.html" title="Interface for the chain class CChain." alt="" coords="224,379,291,405"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="234,343,253,377,248,380,230,346"/>
-<area shape="rect" id="Node000007" href="$_object_manager_8h.html" title="Interface for the object manager CObjectManager." alt="" coords="416,379,536,405"/>
+<area shape="rect" id="Node000007" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="416,379,536,405"/>
 <area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="264,329,432,375,430,381,263,334"/>
 <area shape="rect" id="Node000012" href="$_ragdoll_8h.html" title="Interface for the ragdoll class CRagdoll." alt="" coords="316,379,392,405"/>
 <area shape="poly" id="edge14_Node000003_Node000012" title=" " alt="" coords="256,336,331,376,329,380,254,341"/>
@@ -23,7 +23,7 @@
 <area shape="poly" id="edge17_Node000003_Node000013" title=" " alt="" coords="202,345,177,380,172,377,198,342"/>
 <area shape="rect" id="Node000005" href="$_chain_8cpp.html" title="Code for the chain class CChain." alt="" coords="212,453,292,480"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="258,421,256,453,251,453,253,421"/>
-<area shape="rect" id="Node000006" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="317,453,452,480"/>
+<area shape="rect" id="Node000006" href="$_object_manager_8cpp.html" title="Code for the object manager class CObjectManager." alt="" coords="317,453,452,480"/>
 <area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="294,411,363,450,361,455,291,416"/>
 <area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="401,408,246,431,94,456,82,459,81,453,93,451,245,425,401,403"/>
 <area shape="poly" id="edge12_Node000007_Node000006" title=" " alt="" coords="450,417,402,455,399,451,447,413"/>
@@ -31,7 +31,7 @@
 <area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="517,410,598,450,596,455,514,415"/>
 <area shape="poly" id="edge13_Node000007_Node000011" title=" " alt="" coords="494,417,515,452,510,454,490,420"/>
 <area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="655,487,708,525,705,530,651,492"/>
-<area shape="rect" id="Node000010" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="586,528,660,555"/>
+<area shape="rect" id="Node000010" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="586,528,660,555"/>
 <area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="626,496,626,528,620,528,620,496"/>
 <area shape="poly" id="edge15_Node000012_Node000006" title=" " alt="" coords="367,419,382,452,377,454,363,421"/>
 <area shape="poly" id="edge16_Node000012_Node000011" title=" " alt="" coords="398,409,492,450,490,455,395,414"/>
@@ -40,7 +40,7 @@
 <area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="161,421,153,454,148,452,156,420"/>
 <area shape="poly" id="edge23_Node000015_Node000007" title=" " alt="" coords="460,122,478,378,473,378,454,122"/>
 <area shape="poly" id="edge22_Node000015_Node000008" title=" " alt="" coords="514,104,559,122,581,136,600,153,615,174,623,194,626,241,626,319,626,453,620,453,620,319,620,241,618,195,611,176,596,156,578,140,557,127,512,109"/>
-<area shape="rect" id="Node000016" href="$_common_8cpp.html" title="Code for the class CCommon." alt="" coords="487,155,586,181"/>
+<area shape="rect" id="Node000016" href="$_common_8cpp.html" title="Code for the common variables class CCommon." alt="" coords="487,155,586,181"/>
 <area shape="poly" id="edge21_Node000015_Node000016" title=" " alt="" coords="482,115,524,152,521,156,479,119"/>
 <area shape="poly" id="edge24_Node000015_Node000017" title=" " alt="" coords="432,119,391,156,387,152,428,115"/>
 <area shape="poly" id="edge25_Node000017_Node000003" title=" " alt="" coords="330,182,285,201,263,214,245,231,234,249,227,269,221,304,215,303,221,267,229,246,241,228,260,210,282,196,328,177"/>

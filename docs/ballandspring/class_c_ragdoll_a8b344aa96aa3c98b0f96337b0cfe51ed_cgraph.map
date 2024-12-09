@@ -1,0 +1,7 @@
+<map id="CRagdoll::CreateStick" name="CRagdoll::CreateStick">
+<area shape="rect" id="Node000001" title="Create a stick." alt="" coords="5,5,158,32"/>
+<area shape="rect" id="Node000002" href="$class_c_body.html#ab87008edabe6aa75b875fbd87b9c628f" title="Create spring." alt="" coords="206,5,351,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,16,190,16,190,21,158,21"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a7118ca6bb64f4e2bf6a6c42b8dd656c8" title="Create a point." alt="" coords="399,5,562,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="351,16,383,16,383,21,351,21"/>
+</map>

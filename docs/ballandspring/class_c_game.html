@@ -104,7 +104,7 @@ $(function(){ initResizable(false); });
 <div class="contents">
 
 <p>The game class.  
-</p>
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;Game.h&gt;</code></p>
 <div class="dynheader">
@@ -147,9 +147,8 @@ Collaboration diagram for CGame:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4db10c09035dc16b32d6c1ef4cca2143" id="r_a4db10c09035dc16b32d6c1ef4cca2143"><td class="memItemLeft" align="right" valign="top"><a id="a4db10c09035dc16b32d6c1ef4cca2143" name="a4db10c09035dc16b32d6c1ef4cca2143"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>~CGame</b> ()</td></tr>
-<tr class="memdesc:a4db10c09035dc16b32d6c1ef4cca2143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="memitem:a4db10c09035dc16b32d6c1ef4cca2143" id="r_a4db10c09035dc16b32d6c1ef4cca2143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4db10c09035dc16b32d6c1ef4cca2143">~CGame</a> ()</td></tr>
+<tr class="memdesc:a4db10c09035dc16b32d6c1ef4cca2143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:a4db10c09035dc16b32d6c1ef4cca2143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4349adf43d0dc02d80ad06ca1d77411c" id="r_a4349adf43d0dc02d80ad06ca1d77411c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4349adf43d0dc02d80ad06ca1d77411c">Initialize</a> ()</td></tr>
 <tr class="memdesc:a4349adf43d0dc02d80ad06ca1d77411c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the game.  <br /></td></tr>
@@ -208,6 +207,27 @@ static <a class="el" href="_game_defines_8h.html#a4f4c86dbcf5b26b3abd6fe271ffe92
 <tr class="memdesc:adc2d73b853724bb66aa435b519234587 inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current body type. <br /></td></tr>
 <tr class="separator:adc2d73b853724bb66aa435b519234587 inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The game class is the object-oriented implementation of the game. This class must contain the following public member functions. <code><a class="el" href="#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">Initialize()</a></code> does initialization and will be run exactly once at the start of the game. <code><a class="el" href="#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame.">ProcessFrame()</a></code> will be called once per frame to create and render the next animation frame. <code><a class="el" href="#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer.">Release()</a></code> will be called at game exit but before any destructors are run. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4db10c09035dc16b32d6c1ef4cca2143" name="a4db10c09035dc16b32d6c1ef4cca2143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db10c09035dc16b32d6c1ef4cca2143">&#9670;&#160;</a></span>~CGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CGame::~CGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Delete the object manager. The renderer needs to be deleted before this destructor runs so it will be done elsewhere. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af7200bd66587e10002e7ed9e4a1f930e" name="af7200bd66587e10002e7ed9e4a1f930e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7200bd66587e10002e7ed9e4a1f930e">&#9670;&#160;</a></span>BeginGame()</h2>
@@ -231,15 +251,15 @@ static <a class="el" href="_game_defines_8h.html#a4f4c86dbcf5b26b3abd6fe271ffe92
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Clear any old objects out of the object manager and create some new ones. </p>
+<p>Set the game state to "playing", clear any old objects out of the object manager and create some new ones. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_game_af7200bd66587e10002e7ed9e4a1f930e_cgraph.png" border="0" usemap="#aclass_c_game_af7200bd66587e10002e7ed9e4a1f930e_cgraph" alt=""/></div>
 <map name="aclass_c_game_af7200bd66587e10002e7ed9e4a1f930e_cgraph" id="aclass_c_game_af7200bd66587e10002e7ed9e4a1f930e_cgraph">
 <area shape="rect" title="Begin playing the game." alt="" coords="5,31,148,57"/>
-<area shape="rect" href="class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="197,5,352,32"/>
-<area shape="poly" title=" " alt="" coords="148,32,181,28,182,33,148,38"/>
+<area shape="rect" href="class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="196,5,354,32"/>
+<area shape="poly" title=" " alt="" coords="148,32,180,28,180,33,148,38"/>
 <area shape="rect" href="class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="196,56,354,83"/>
 <area shape="poly" title=" " alt="" coords="148,50,180,55,180,60,148,56"/>
 <area shape="rect" href="class_c_object_manager.html#a0115e10e9f8d6c4f644989b96fe69675" title="Create a pair of bodies." alt="" coords="402,56,598,83"/>
@@ -258,7 +278,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="550,57,508,63,507,57,550,52"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
 <area shape="poly" title=" " alt="" coords="328,33,296,37,295,32,327,28"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
 <area shape="poly" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
 <area shape="poly" title=" " alt="" coords="337,61,295,56,296,51,338,56"/>
 </map>
@@ -313,7 +333,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="550,57,508,63,507,57,550,52"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
 <area shape="poly" title=" " alt="" coords="328,33,296,37,295,32,327,28"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
 <area shape="poly" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
 <area shape="poly" title=" " alt="" coords="337,61,295,56,296,51,338,56"/>
 </map>
@@ -335,7 +355,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the renderer, load the images for the background, and start the game. </p>
+<p>Initialize the game as follows. Set the timer. Create the renderer and the object manager. Load images and sounds from files. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -354,7 +374,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph.png" border="0" usemap="#aclass_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph" alt=""/></div>
 <map name="aclass_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph" id="aclass_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph">
 <area shape="rect" title="Initialize the game." alt="" coords="136,5,258,32"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -383,7 +403,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Poll the keyboard state and respond to the key presses that happened since the last frame. </p>
+<p>Poll the keyboard state and respond to the key presses that happened since the last frame. The keys are identified using <a href="https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">virtual-key codes</a>. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -394,7 +414,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="180,83,248,76,248,81,180,88"/>
 <area shape="rect" href="class_c_object_manager.html#abe0aca27076ca4be480d729ff5fb5cbd" title="Apply impulse to the current bodies." alt="" coords="228,107,442,133"/>
 <area shape="poly" title=" " alt="" coords="180,101,212,105,212,110,180,106"/>
-<area shape="rect" href="class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="492,5,647,32"/>
+<area shape="rect" href="class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="490,5,648,32"/>
 <area shape="poly" title=" " alt="" coords="400,53,489,33,490,38,401,58"/>
 <area shape="rect" href="class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="490,56,648,83"/>
 <area shape="poly" title=" " alt="" coords="406,67,475,67,475,72,406,72"/>
@@ -414,7 +434,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="The keyboard handler." alt="" coords="343,5,517,32"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="327,21,295,21,295,16,327,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -443,7 +463,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load the sounds for this game. </p>
+<p>Create a media list <code>Sage::CMediaList</code> of <code>eSound</code>. For each sound, insert into the media list a pair consisting of an instance of the sound enumerated type <code>eSound</code> and the corresponding string used in the <code>name</code> field in a <code>&lt;sound&gt;</code> tag in <code>GameSettings.xml</code>. Pass the media list to the sound manager for loading. <br  />
+ </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -452,7 +473,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Start loading sounds." alt="" coords="306,5,452,32"/>
 <area shape="rect" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="136,5,258,32"/>
 <area shape="poly" title=" " alt="" coords="291,21,258,21,258,16,291,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -481,7 +502,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load the sprites for this game. </p>
+<p>Create a media list <code>Sage::CMediaList</code> of <code>eSprite</code>. For each sprite, insert into the media list a pair consisting of an instance of the sprite enumerated type <code>eSprite</code> and the corresponding string used in the <code>name</code> field in a <code>&lt;sprite&gt;</code> tag in <code>GameSettings.xml</code>. Pass the media list to the renderer for loading. <br  />
+ </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -490,7 +512,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Start loading sprites." alt="" coords="306,5,449,32"/>
 <area shape="rect" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="136,5,258,32"/>
 <area shape="poly" title=" " alt="" coords="290,21,259,21,259,16,290,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -511,8 +533,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Handle keyboard input, move the game objects and render them in their new positions and orientations. Notify the audio player at the start of each frame so that it can prevent multiple copies of a sound from starting on the same frame. Notify the timer of the start and end of the frame so that it can calculate frame time. <br  />
- </p>
+<p>This function will be called regularly to process and render a frame of animation, which involves the following. Handle keyboard input. Notify the sound player at the start of each frame so that it can prevent multiple copies of a sound from starting on the same frame. Move the game objects. Render a frame of animation. Process any changes to the current game state. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -521,7 +542,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Process an animation frame." alt="" coords="5,132,165,159"/>
 <area shape="rect" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="213,107,387,133"/>
 <area shape="poly" title=" " alt="" coords="164,133,197,129,197,135,165,139"/>
-<area shape="rect" href="class_c_object_manager.html#a528d2d15ffc9bced002df95be266b910" title="Move all objects." alt="" coords="220,157,380,184"/>
+<area shape="rect" href="class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="220,157,380,184"/>
 <area shape="poly" title=" " alt="" coords="165,152,205,157,204,162,164,157"/>
 <area shape="rect" href="class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="223,56,376,83"/>
 <area shape="poly" title=" " alt="" coords="118,129,212,92,233,85,235,90,214,97,120,134"/>
@@ -531,7 +552,7 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="367,103,459,84,461,89,368,109"/>
 <area shape="rect" href="class_c_object_manager.html#abe0aca27076ca4be480d729ff5fb5cbd" title="Apply impulse to the current bodies." alt="" coords="435,107,649,133"/>
 <area shape="poly" title=" " alt="" coords="387,117,419,117,419,123,387,123"/>
-<area shape="rect" href="class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="699,5,854,32"/>
+<area shape="rect" href="class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="697,5,856,32"/>
 <area shape="poly" title=" " alt="" coords="607,53,696,33,697,38,608,58"/>
 <area shape="rect" href="class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="697,56,856,83"/>
 <area shape="poly" title=" " alt="" coords="614,67,682,67,682,72,614,72"/>
@@ -550,10 +571,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_c_point.html#aea50825b47f6f95af8d7994c0816cb72" title="Get position." alt="" coords="945,208,1058,235"/>
 <area shape="poly" title=" " alt="" coords="833,180,931,203,929,208,832,186"/>
 <area shape="poly" title=" " alt="" coords="377,67,455,67,455,72,377,72"/>
-<area shape="rect" href="class_c_object_manager.html#a96016db3387938f667512e3ab63e2d21" title="Draw all objects." alt="" coords="464,208,620,235"/>
-<area shape="poly" title=" " alt="" coords="377,219,449,219,449,224,377,224"/>
-<area shape="rect" href="class_c_body.html#aa26317b61792e05ddf9b9fa123ac50d4" title="Draw body." alt="" coords="728,208,825,235"/>
-<area shape="poly" title=" " alt="" coords="620,219,712,219,712,224,620,224"/>
+<area shape="rect" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="463,208,621,235"/>
+<area shape="poly" title=" " alt="" coords="377,219,448,219,448,224,377,224"/>
+<area shape="rect" href="class_c_body.html#a12798132a809d192be3a41f48b0efbb7" title="Draw body." alt="" coords="726,208,827,235"/>
+<area shape="poly" title=" " alt="" coords="622,219,711,219,711,224,622,224"/>
 </map>
 </div>
 <div class="dynheader">
@@ -562,7 +583,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph.png" border="0" usemap="#aclass_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph" alt=""/></div>
 <map name="aclass_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph" id="aclass_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph">
 <area shape="rect" title="Process an animation frame." alt="" coords="136,5,295,32"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -591,7 +612,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Take action appropriate to the current game state. </p>
+<p>Process any changes to the current game state. If the game is in state <code>eGameState::Loading</code> and both the renderer and sound manager have finished loading (which may or may not be multithreaded), then begin the game. <br  />
+ </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -600,8 +622,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="Process game state." alt="" coords="5,31,159,57"/>
 <area shape="rect" href="class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="207,31,349,57"/>
 <area shape="poly" title=" " alt="" coords="159,41,192,41,192,47,159,47"/>
-<area shape="rect" href="class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="398,5,554,32"/>
-<area shape="poly" title=" " alt="" coords="349,32,383,28,383,33,350,38"/>
+<area shape="rect" href="class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="397,5,555,32"/>
+<area shape="poly" title=" " alt="" coords="349,32,381,28,382,33,350,38"/>
 <area shape="rect" href="class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="397,56,555,83"/>
 <area shape="poly" title=" " alt="" coords="350,50,382,55,381,60,349,56"/>
 <area shape="rect" href="class_c_object_manager.html#a0115e10e9f8d6c4f644989b96fe69675" title="Create a pair of bodies." alt="" coords="603,56,800,83"/>
@@ -616,7 +638,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Process game state." alt="" coords="343,5,496,32"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -644,7 +666,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph.png" border="0" usemap="#aclass_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph" alt=""/></div>
 <map name="aclass_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph" id="aclass_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph">
 <area shape="rect" title="Release the renderer." alt="" coords="136,5,258,32"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -673,17 +695,17 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Ask the object manager to draw the game objects. The renderer is notified of the start and end of the frame so that it can let Direct3D do its pipelining jiggery-pokery. </p>
+<p>Draw the game objects. The renderer is notified of the start and end of the frame so that it can let Direct3D do its pipelining jiggery-pokery. If the game state indicates that media is still loading, then a <code>Loading...</code> string is drawn at the center of the screen. This function assumes that the font specified in <code>GameSettings.xml</code> has already been loaded. If all media has finished loading, then the game objects are drawn by the object manager. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph.png" border="0" usemap="#aclass_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph" alt=""/></div>
 <map name="aclass_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph" id="aclass_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph">
 <area shape="rect" title="Render an animation frame." alt="" coords="5,5,159,32"/>
-<area shape="rect" href="class_c_object_manager.html#a96016db3387938f667512e3ab63e2d21" title="Draw all objects." alt="" coords="207,5,362,32"/>
+<area shape="rect" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="207,5,365,32"/>
 <area shape="poly" title=" " alt="" coords="159,16,191,16,191,21,159,21"/>
-<area shape="rect" href="class_c_body.html#aa26317b61792e05ddf9b9fa123ac50d4" title="Draw body." alt="" coords="410,5,507,32"/>
-<area shape="poly" title=" " alt="" coords="362,16,394,16,394,21,362,21"/>
+<area shape="rect" href="class_c_body.html#a12798132a809d192be3a41f48b0efbb7" title="Draw body." alt="" coords="413,5,513,32"/>
+<area shape="poly" title=" " alt="" coords="365,16,397,16,397,21,365,21"/>
 </map>
 </div>
 <div class="dynheader">
@@ -694,7 +716,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Render an animation frame." alt="" coords="343,5,496,32"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>

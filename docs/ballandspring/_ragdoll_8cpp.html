@@ -104,9 +104,10 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Code for the ragdoll class <a class="el" href="class_c_ragdoll.html" title="The ragdoll.">CRagdoll</a>.  
+<p>Code for the ragdoll class <code><a class="el" href="class_c_ragdoll.html" title="The ragdoll.">CRagdoll</a></code>.  
 </p>
 <div class="textblock"><code>#include &quot;SageRandom.h&quot;</code><br />
+<code>#include &quot;SageHelpers.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_ragdoll_8h.html">Ragdoll.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_object_manager_8h.html">ObjectManager.h</a>&quot;</code><br />
 <code>#include &quot;SageSpriteRenderer.h&quot;</code><br />
@@ -117,48 +118,50 @@ Include dependency graph for Ragdoll.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_ragdoll_8cpp__incl.png" border="0" usemap="#a_ragdoll_8cpp" alt=""/></div>
 <map name="a_ragdoll_8cpp" id="a_ragdoll_8cpp">
-<area shape="rect" title="Code for the ragdoll class CRagdoll." alt="" coords="424,5,514,32"/>
+<area shape="rect" title="Code for the ragdoll class CRagdoll." alt="" coords="449,5,540,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,117,107"/>
-<area shape="poly" title=" " alt="" coords="424,31,133,82,132,77,423,25"/>
-<area shape="rect" href="_ragdoll_8h.html" title="Interface for the ragdoll class CRagdoll." alt="" coords="367,80,443,107"/>
-<area shape="poly" title=" " alt="" coords="460,34,428,70,424,66,456,31"/>
-<area shape="rect" href="_game_defines_8h.html" title="Game specific defines." alt="" coords="332,453,444,480"/>
-<area shape="poly" title=" " alt="" coords="424,24,345,32,300,41,257,54,218,73,186,97,165,128,159,146,157,167,157,318,161,345,172,368,189,388,211,406,263,432,317,449,316,454,261,437,208,410,186,392,168,371,156,347,152,319,152,167,154,145,160,126,182,93,215,68,255,49,299,36,344,27,423,18"/>
-<area shape="rect" title=" " alt="" coords="564,453,713,480"/>
-<area shape="poly" title=" " alt="" coords="515,19,590,29,632,39,673,53,710,72,741,96,761,128,769,166,769,319,766,366,758,385,743,407,718,431,688,449,686,444,714,427,739,404,753,383,760,365,764,319,764,167,756,130,737,100,707,76,671,58,630,44,589,35,514,25"/>
-<area shape="rect" href="_object_manager_8h.html" title="Interface for the object manager CObjectManager." alt="" coords="470,80,590,107"/>
-<area shape="poly" title=" " alt="" coords="482,31,512,66,508,70,478,34"/>
-<area shape="rect" title=" " alt="" coords="803,80,903,107"/>
-<area shape="poly" title=" " alt="" coords="515,26,789,77,788,83,514,31"/>
-<area shape="rect" href="_body_8h.html" title="Interface for the body class CBody." alt="" coords="369,155,430,181"/>
-<area shape="poly" title=" " alt="" coords="407,107,404,139,399,139,401,107"/>
-<area shape="rect" title=" " alt="" coords="438,229,495,256"/>
-<area shape="poly" title=" " alt="" coords="413,180,447,216,443,220,409,184"/>
-<area shape="rect" title=" " alt="" coords="306,379,435,405"/>
-<area shape="poly" title=" " alt="" coords="370,178,323,196,300,211,283,231,271,257,267,279,271,303,283,329,302,352,326,369,323,373,298,356,279,332,266,304,262,280,266,255,279,228,297,207,320,191,368,173"/>
-<area shape="rect" href="_spring_8h.html" title="Interface for the spring class CSpring." alt="" coords="293,229,362,256"/>
-<area shape="poly" title=" " alt="" coords="389,184,353,220,349,216,385,180"/>
-<area shape="rect" href="_point_8h.html" title="Interface for the point class CPoint." alt="" coords="546,304,608,331"/>
-<area shape="poly" title=" " alt="" coords="403,181,409,217,417,237,428,254,451,273,477,288,531,306,530,311,475,293,448,278,424,258,412,239,404,219,398,182"/>
-<area shape="poly" title=" " alt="" coords="369,176,342,182,313,192,286,208,264,231,252,255,244,277,243,298,245,319,264,360,296,404,320,426,347,444,344,448,317,430,292,407,259,363,240,320,237,298,239,276,247,252,260,228,283,204,311,187,341,177,368,170"/>
-<area shape="rect" title=" " alt="" coords="293,304,472,331"/>
-<area shape="poly" title=" " alt="" coords="339,255,366,290,362,293,335,258"/>
-<area shape="poly" title=" " alt="" coords="364,252,532,300,531,305,362,257"/>
-<area shape="poly" title=" " alt="" coords="546,332,422,376,420,371,545,327"/>
-<area shape="rect" title=" " alt="" coords="619,379,730,405"/>
-<area shape="poly" title=" " alt="" coords="596,329,647,367,644,372,592,333"/>
-<area shape="poly" title=" " alt="" coords="562,333,500,381,417,446,414,441,497,377,559,329"/>
-<area shape="rect" href="_common_8h.html" title="Interface for the class CCommon." alt="" coords="510,379,596,405"/>
-<area shape="poly" title=" " alt="" coords="575,332,564,365,559,363,570,330"/>
-<area shape="rect" title=" " alt="" coords="334,528,441,555"/>
-<area shape="poly" title=" " alt="" coords="390,481,390,512,385,512,385,481"/>
-<area shape="poly" title=" " alt="" coords="525,408,432,449,430,444,523,403"/>
-<area shape="poly" title=" " alt="" coords="570,404,614,441,611,445,566,408"/>
-<area shape="poly" title=" " alt="" coords="509,110,437,149,435,144,506,105"/>
-<area shape="poly" title=" " alt="" coords="527,108,480,216,475,214,522,106"/>
-<area shape="poly" title=" " alt="" coords="534,107,536,149,533,208,518,273,505,304,486,332,458,357,426,375,423,370,455,353,482,329,500,302,513,272,528,207,531,149,529,107"/>
-<area shape="poly" title=" " alt="" coords="547,105,569,126,591,153,622,208,645,267,672,363,667,365,640,268,617,211,587,156,565,130,544,109"/>
-<area shape="poly" title=" " alt="" coords="540,106,582,187,605,244,622,303,625,318,622,332,608,354,589,371,585,367,604,350,617,330,620,318,617,305,600,245,577,189,536,109"/>
+<area shape="poly" title=" " alt="" coords="449,30,132,82,132,77,448,25"/>
+<area shape="rect" title=" " alt="" coords="141,80,248,107"/>
+<area shape="poly" title=" " alt="" coords="449,34,262,78,261,73,448,28"/>
+<area shape="rect" href="_ragdoll_8h.html" title="Interface for the ragdoll class CRagdoll." alt="" coords="456,80,532,107"/>
+<area shape="poly" title=" " alt="" coords="497,33,497,64,492,64,492,33"/>
+<area shape="rect" href="_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="462,453,574,480"/>
+<area shape="poly" title=" " alt="" coords="450,33,398,50,345,77,322,95,304,116,292,140,288,167,288,318,292,345,303,368,320,388,342,406,394,432,448,449,446,454,392,437,339,410,316,392,298,371,287,347,282,319,282,166,287,138,300,113,319,91,342,73,396,45,448,28"/>
+<area shape="rect" title=" " alt="" coords="694,453,844,480"/>
+<area shape="poly" title=" " alt="" coords="541,24,641,42,759,72,813,91,858,113,888,138,897,152,900,166,900,319,896,366,888,385,874,407,848,431,819,449,816,444,845,427,870,404,884,383,891,365,894,319,894,167,892,154,884,142,855,118,811,96,757,77,640,48,540,29"/>
+<area shape="rect" href="_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="581,80,701,107"/>
+<area shape="poly" title=" " alt="" coords="521,30,603,70,601,75,519,35"/>
+<area shape="rect" title=" " alt="" coords="934,80,1033,107"/>
+<area shape="poly" title=" " alt="" coords="540,23,916,77,919,78,919,83,915,83,540,29"/>
+<area shape="rect" href="_body_8h.html" title="Interface for the body class CBody." alt="" coords="464,155,525,181"/>
+<area shape="poly" title=" " alt="" coords="497,107,497,139,492,139,492,107"/>
+<area shape="rect" title=" " alt="" coords="568,229,626,256"/>
+<area shape="poly" title=" " alt="" coords="514,180,568,218,565,222,511,184"/>
+<area shape="rect" title=" " alt="" coords="436,379,566,405"/>
+<area shape="poly" title=" " alt="" coords="466,184,437,203,424,216,414,231,403,257,399,280,402,303,414,329,432,352,456,369,453,373,429,356,409,332,397,304,393,280,397,256,409,228,420,212,434,199,463,180"/>
+<area shape="rect" href="_spring_8h.html" title="Interface for the spring class CSpring." alt="" coords="424,229,493,256"/>
+<area shape="poly" title=" " alt="" coords="490,183,474,216,469,214,486,181"/>
+<area shape="rect" href="_point_8h.html" title="Interface for the point class CPoint." alt="" coords="676,304,739,331"/>
+<area shape="poly" title=" " alt="" coords="503,180,524,216,540,236,559,254,583,270,610,284,662,302,661,307,608,289,581,275,555,258,536,240,520,220,498,183"/>
+<area shape="poly" title=" " alt="" coords="465,181,427,200,410,214,397,231,386,256,385,278,397,330,406,370,427,404,451,426,478,444,475,448,448,430,423,407,401,372,392,331,380,278,381,255,392,228,406,210,424,195,462,176"/>
+<area shape="rect" title=" " alt="" coords="424,304,602,331"/>
+<area shape="poly" title=" " alt="" coords="470,255,496,290,492,293,466,258"/>
+<area shape="poly" title=" " alt="" coords="494,252,663,300,661,305,493,257"/>
+<area shape="poly" title=" " alt="" coords="677,332,552,376,551,371,675,327"/>
+<area shape="rect" title=" " alt="" coords="750,379,860,405"/>
+<area shape="poly" title=" " alt="" coords="726,329,778,367,775,372,723,333"/>
+<area shape="poly" title=" " alt="" coords="693,333,631,381,548,446,544,441,627,377,690,329"/>
+<area shape="rect" href="_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="641,379,726,405"/>
+<area shape="poly" title=" " alt="" coords="706,332,695,365,690,363,701,330"/>
+<area shape="rect" title=" " alt="" coords="465,528,572,555"/>
+<area shape="poly" title=" " alt="" coords="521,481,521,512,516,512,516,481"/>
+<area shape="poly" title=" " alt="" coords="656,408,562,449,560,444,654,403"/>
+<area shape="poly" title=" " alt="" coords="700,404,745,441,741,445,697,408"/>
+<area shape="poly" title=" " alt="" coords="617,110,535,150,532,145,614,105"/>
+<area shape="poly" title=" " alt="" coords="640,108,608,215,603,213,635,106"/>
+<area shape="poly" title=" " alt="" coords="647,107,653,149,656,208,653,241,646,274,634,305,616,332,588,357,557,375,554,370,585,353,612,329,630,302,641,272,648,240,651,208,648,149,641,108"/>
+<area shape="poly" title=" " alt="" coords="661,105,687,126,712,153,747,207,772,265,791,320,802,363,797,364,785,321,767,267,742,210,708,156,683,130,658,109"/>
+<area shape="poly" title=" " alt="" coords="653,105,705,185,733,242,753,303,756,318,753,332,738,354,720,371,716,367,734,350,748,330,750,318,748,305,728,244,700,188,648,108"/>
 </map>
 </div>
 </div><table class="memberdecls">

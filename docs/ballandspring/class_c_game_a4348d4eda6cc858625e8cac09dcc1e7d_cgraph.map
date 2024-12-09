@@ -2,8 +2,8 @@
 <area shape="rect" id="Node000001" title="Process game state." alt="" coords="5,31,159,57"/>
 <area shape="rect" id="Node000002" href="$class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game." alt="" coords="207,31,349,57"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,41,192,41,192,47,159,47"/>
-<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a66f64716f253fad5517f4539072df3bf" title="Reset to initial conditions." alt="" coords="398,5,554,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,32,383,28,383,33,350,38"/>
+<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a5f13656ff4050c227c8f1fb27803d116" title="Reset to initial conditions." alt="" coords="397,5,555,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="349,32,381,28,382,33,350,38"/>
 <area shape="rect" id="Node000004" href="$class_c_game.html#a6a5af1b87c696a23a626812b74c653ea" title="Create game objects." alt="" coords="397,56,555,83"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="350,50,382,55,381,60,349,56"/>
 <area shape="rect" id="Node000005" href="$class_c_object_manager.html#a0115e10e9f8d6c4f644989b96fe69675" title="Create a pair of bodies." alt="" coords="603,56,800,83"/>

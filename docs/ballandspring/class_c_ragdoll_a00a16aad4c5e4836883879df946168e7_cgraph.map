@@ -1,0 +1,9 @@
+<map id="CRagdoll::isTippingRight" name="CRagdoll::isTippingRight">
+<area shape="rect" id="Node000001" title="Is tipping right." alt="" coords="5,67,172,93"/>
+<area shape="rect" id="Node000002" href="$class_c_ragdoll.html#a484576dbc00ded2e34980fb6791b2ce8" title="Get position of a point." alt="" coords="229,29,356,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,63,213,54,214,60,165,69"/>
+<area shape="rect" id="Node000003" href="$class_c_ragdoll.html#a10917b4786f8297ead92cf52edf307e4" title="Get radius of ball at a point." alt="" coords="220,104,365,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="165,91,205,99,204,104,164,97"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="258,30,252,21,256,11,270,5,292,3,317,5,330,12,327,16,315,10,292,8,271,10,260,15,257,20,262,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="258,105,252,95,256,86,270,79,292,77,317,80,330,86,327,91,315,85,292,83,271,85,260,89,257,95,262,102"/>
+</map>

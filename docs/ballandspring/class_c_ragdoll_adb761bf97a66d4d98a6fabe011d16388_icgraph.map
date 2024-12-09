@@ -1,0 +1,6 @@
+<map id="CRagdoll::DeliverImpulse" name="CRagdoll::DeliverImpulse">
+<area shape="rect" id="Node000001" title="Deliver impulse to point." alt="" coords="188,29,358,56"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="307,16,295,10,273,8,252,10,241,15,238,20,243,27,239,30,233,21,237,11,251,5,273,3,297,5,309,12"/>
+<area shape="rect" id="Node000002" href="$class_c_ragdoll.html#a9360d6eb141b30947d4a285874da7f71" title="Attempt to stand up." alt="" coords="5,29,140,56"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="172,45,140,45,140,40,172,40"/>
+</map>

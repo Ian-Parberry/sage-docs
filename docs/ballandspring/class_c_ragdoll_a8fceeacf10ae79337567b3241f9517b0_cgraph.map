@@ -1,0 +1,9 @@
+<map id="CRagdoll::isOnRightSide" name="CRagdoll::isOnRightSide">
+<area shape="rect" id="Node000001" title="Is on right side." alt="" coords="5,67,173,93"/>
+<area shape="rect" id="Node000002" href="$class_c_ragdoll.html#a484576dbc00ded2e34980fb6791b2ce8" title="Get position of a point." alt="" coords="230,29,357,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,63,214,54,215,60,166,69"/>
+<area shape="rect" id="Node000003" href="$class_c_ragdoll.html#a10917b4786f8297ead92cf52edf307e4" title="Get radius of ball at a point." alt="" coords="221,104,366,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="166,91,206,99,205,104,165,97"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="259,30,252,21,257,11,271,5,293,3,318,5,331,12,328,16,316,10,293,8,272,10,260,15,258,20,263,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="259,105,252,95,257,86,271,79,293,77,318,80,331,86,328,91,316,85,293,83,272,85,260,89,258,95,263,102"/>
+</map>

@@ -1,15 +1,15 @@
 <map id="ObjectManager.h" name="ObjectManager.h">
-<area shape="rect" id="Node000001" title="Interface for the object manager CObjectManager." alt="" coords="142,5,262,32"/>
+<area shape="rect" id="Node000001" title="Interface for the object manager class CObjectManager." alt="" coords="142,5,262,32"/>
 <area shape="rect" id="Node000002" href="$_body_8cpp.html" title="Code for the body class CBody." alt="" coords="5,80,81,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,41,72,82,70,77,159,36"/>
 <area shape="rect" id="Node000003" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="105,80,173,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,46,152,81,148,78,179,42"/>
-<area shape="rect" id="Node000006" href="$_object_manager_8cpp.html" title="Code for the object manager CObjectManager." alt="" coords="197,80,332,107"/>
+<area shape="rect" id="Node000006" href="$_object_manager_8cpp.html" title="Code for the object manager class CObjectManager." alt="" coords="197,80,332,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="225,42,256,78,252,81,221,46"/>
 <area shape="rect" id="Node000007" href="$_ragdoll_8cpp.html" title="Code for the ragdoll class CRagdoll." alt="" coords="355,80,446,107"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="251,35,366,77,365,82,249,40"/>
 <area shape="rect" id="Node000004" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="48,155,129,181"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="124,121,99,156,95,153,119,118"/>
-<area shape="rect" id="Node000005" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="152,155,227,181"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="152,155,227,181"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="159,118,183,153,179,156,154,121"/>
 </map>

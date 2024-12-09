@@ -1,0 +1,11 @@
+<map id="CObjectManager::Move" name="CObjectManager::Move">
+<area shape="rect" id="Node000001" title="Move all objects." alt="" coords="5,31,165,57"/>
+<area shape="rect" id="Node000002" href="$class_c_object_manager.html#aacc9d10f56a033e5acdeed45f2f0e95f" title="Gauss&#45;Seidel relaxation." alt="" coords="213,31,374,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,41,197,41,197,47,165,47"/>
+<area shape="rect" id="Node000003" href="$class_c_spring.html#afee2fe84fe7fb9104b730973ed815e5d" title="Gauss&#45;Seidel relaxation." alt="" coords="422,31,532,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,41,407,41,407,47,375,47"/>
+<area shape="rect" id="Node000004" href="$class_c_point.html#abe949fa06f217a058cea2bc528ef993d" title="Adjust position from Gauss&#45;Seidel relaxation." alt="" coords="584,5,690,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="532,33,568,27,569,32,533,38"/>
+<area shape="rect" id="Node000005" href="$class_c_point.html#aea50825b47f6f95af8d7994c0816cb72" title="Get position." alt="" coords="580,56,694,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="533,50,565,55,564,61,532,55"/>
+</map>

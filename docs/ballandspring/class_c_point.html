@@ -150,12 +150,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accbf9e6d21f8dc9e2ec7437fdebbd855" id="r_accbf9e6d21f8dc9e2ec7437fdebbd855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accbf9e6d21f8dc9e2ec7437fdebbd855">CPoint</a> (<a class="el" href="_game_defines_8h.html#ae419e2bc55ebc731cfdbf4ab769f44e4">eSprite</a>, const Vector2 &amp;, float)</td></tr>
 <tr class="memdesc:accbf9e6d21f8dc9e2ec7437fdebbd855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:accbf9e6d21f8dc9e2ec7437fdebbd855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc7702172f5577d1ffc8376f6cefed6" id="r_a0fc7702172f5577d1ffc8376f6cefed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fc7702172f5577d1ffc8376f6cefed6">move</a> ()</td></tr>
-<tr class="memdesc:a0fc7702172f5577d1ffc8376f6cefed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change position depending on time and velocity.  <br /></td></tr>
-<tr class="separator:a0fc7702172f5577d1ffc8376f6cefed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5e639f39c26e97dc03c944f6002e1f" id="r_aea5e639f39c26e97dc03c944f6002e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea5e639f39c26e97dc03c944f6002e1f">draw</a> (float)</td></tr>
-<tr class="memdesc:aea5e639f39c26e97dc03c944f6002e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw.  <br /></td></tr>
-<tr class="separator:aea5e639f39c26e97dc03c944f6002e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296cabee819ba2b692950aa47552b68b" id="r_a296cabee819ba2b692950aa47552b68b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296cabee819ba2b692950aa47552b68b">Move</a> ()</td></tr>
+<tr class="memdesc:a296cabee819ba2b692950aa47552b68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change position depending on time and velocity.  <br /></td></tr>
+<tr class="separator:a296cabee819ba2b692950aa47552b68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d9d669c6eb4800a0bedb08a078eff0" id="r_a30d9d669c6eb4800a0bedb08a078eff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d9d669c6eb4800a0bedb08a078eff0">Draw</a> (float)</td></tr>
+<tr class="memdesc:a30d9d669c6eb4800a0bedb08a078eff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw.  <br /></td></tr>
+<tr class="separator:a30d9d669c6eb4800a0bedb08a078eff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585dc9938563cbf5d3b2902ae09e286c" id="r_a585dc9938563cbf5d3b2902ae09e286c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a585dc9938563cbf5d3b2902ae09e286c">DeliverImpulse</a> (float, float)</td></tr>
 <tr class="memdesc:a585dc9938563cbf5d3b2902ae09e286c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deliver an impulse.  <br /></td></tr>
 <tr class="separator:a585dc9938563cbf5d3b2902ae09e286c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,19 +196,19 @@ Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>m_vOldPos</b></td>
 <tr class="memdesc:a970726d8fff843c2f77f7db6f6dfa0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Previous position, needed for Verlet. <br /></td></tr>
 <tr class="separator:a970726d8fff843c2f77f7db6f6dfa0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32656c11a76023c739a8547cef88b22c" id="r_a32656c11a76023c739a8547cef88b22c"><td class="memItemLeft" align="right" valign="top"><a id="a32656c11a76023c739a8547cef88b22c" name="a32656c11a76023c739a8547cef88b22c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b> = 0</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fRadius</b> = 0.0f</td></tr>
 <tr class="memdesc:a32656c11a76023c739a8547cef88b22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of bounding circle. <br /></td></tr>
 <tr class="separator:a32656c11a76023c739a8547cef88b22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66dea653ddf0cf586182aa8e06f76010" id="r_a66dea653ddf0cf586182aa8e06f76010"><td class="memItemLeft" align="right" valign="top"><a id="a66dea653ddf0cf586182aa8e06f76010" name="a66dea653ddf0cf586182aa8e06f76010"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fAngle</b> = 0</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fAngle</b> = 0.0f</td></tr>
 <tr class="memdesc:a66dea653ddf0cf586182aa8e06f76010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orientation angle. <br /></td></tr>
 <tr class="separator:a66dea653ddf0cf586182aa8e06f76010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d7e186e8560f694b9b86d00074c729" id="r_a31d7e186e8560f694b9b86d00074c729"><td class="memItemLeft" align="right" valign="top"><a id="a31d7e186e8560f694b9b86d00074c729" name="a31d7e186e8560f694b9b86d00074c729"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fXScale</b> = 1</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fXScale</b> = 1.0f</td></tr>
 <tr class="memdesc:a31d7e186e8560f694b9b86d00074c729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale along x-axis. <br /></td></tr>
 <tr class="separator:a31d7e186e8560f694b9b86d00074c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42f0bbe3733b7d4db991f4a80d10ab33" id="r_a42f0bbe3733b7d4db991f4a80d10ab33"><td class="memItemLeft" align="right" valign="top"><a id="a42f0bbe3733b7d4db991f4a80d10ab33" name="a42f0bbe3733b7d4db991f4a80d10ab33"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fYScale</b> = 1</td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fYScale</b> = 1.0f</td></tr>
 <tr class="memdesc:a42f0bbe3733b7d4db991f4a80d10ab33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale along y-axis. <br /></td></tr>
 <tr class="separator:a42f0bbe3733b7d4db991f4a80d10ab33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e4dcecedc53b1cd0ac904107f67d69d" id="r_a4e4dcecedc53b1cd0ac904107f67d69d"><td class="memItemLeft" align="right" valign="top"><a id="a4e4dcecedc53b1cd0ac904107f67d69d" name="a4e4dcecedc53b1cd0ac904107f67d69d"></a>
@@ -258,7 +258,7 @@ static <a class="el" href="_game_defines_8h.html#a4f4c86dbcf5b26b3abd6fe271ffe92
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Create a Verlet-style point. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>Sprite type. </td></tr>
     <tr><td class="paramname">p</td><td>Initial position. </td></tr>
@@ -284,7 +284,7 @@ static <a class="el" href="_game_defines_8h.html#a4f4c86dbcf5b26b3abd6fe271ffe92
         </tr>
       </table>
 </div><div class="memdoc">
-<p>All a point needs to do for Gauss-Seidel relaxation is to move when the spring tells it to. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>All a point needs to do ti adjust its position during Gauss-Seidel relaxation is to move when the spring tells it to. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>Translation vector. </td></tr>
   </table>
@@ -300,11 +300,11 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="902,21,870,21,870,16,902,16"/>
 <area shape="rect" href="class_c_object_manager.html#aacc9d10f56a033e5acdeed45f2f0e95f" title="Gauss&#45;Seidel relaxation." alt="" coords="550,5,712,32"/>
 <area shape="poly" title=" " alt="" coords="744,21,712,21,712,16,744,16"/>
-<area shape="rect" href="class_c_object_manager.html#a528d2d15ffc9bced002df95be266b910" title="Move all objects." alt="" coords="343,5,502,32"/>
+<area shape="rect" href="class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="343,5,502,32"/>
 <area shape="poly" title=" " alt="" coords="535,21,503,21,503,16,535,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -329,7 +329,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Since we are using Verlet integration, an impulse is easily faked by moving the old position a distance proportional to the magnitude of the impulse in the direction of the vector's orientatio. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Since we are using Verlet integration, an impulse is easily faked by moving the old position a distance proportional to the magnitude of the impulse in the direction of motion. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a</td><td>Angle. </td></tr>
     <tr><td class="paramname">m</td><td>Magnitude. </td></tr>
@@ -341,39 +341,37 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_point_a585dc9938563cbf5d3b2902ae09e286c_icgraph.png" border="0" usemap="#aclass_c_point_a585dc9938563cbf5d3b2902ae09e286c_icgraph" alt=""/></div>
 <map name="aclass_c_point_a585dc9938563cbf5d3b2902ae09e286c_icgraph" id="aclass_c_point_a585dc9938563cbf5d3b2902ae09e286c_icgraph">
-<area shape="rect" title="Deliver an impulse." alt="" coords="1032,31,1188,57"/>
-<area shape="rect" href="class_c_body.html#aa48fb617d00afe323683e60953ea1ce3" title="Deliver impulse to body." alt="" coords="828,31,984,57"/>
-<area shape="poly" title=" " alt="" coords="1016,47,984,47,984,41,1016,41"/>
+<area shape="rect" title="Deliver an impulse." alt="" coords="1032,5,1188,32"/>
+<area shape="rect" href="class_c_body.html#aa48fb617d00afe323683e60953ea1ce3" title="Deliver impulse to body." alt="" coords="828,5,984,32"/>
+<area shape="poly" title=" " alt="" coords="1016,21,984,21,984,16,1016,16"/>
 <area shape="rect" href="class_c_object_manager.html#abe0aca27076ca4be480d729ff5fb5cbd" title="Apply impulse to the current bodies." alt="" coords="565,5,780,32"/>
-<area shape="poly" title=" " alt="" coords="812,36,780,33,780,28,812,31"/>
-<area shape="rect" href="class_c_ragdoll.html#a9360d6eb141b30947d4a285874da7f71" title="Attempt to stand up." alt="" coords="605,56,740,83"/>
-<area shape="poly" title=" " alt="" coords="812,57,741,65,740,59,812,52"/>
+<area shape="poly" title=" " alt="" coords="812,21,780,21,780,16,812,16"/>
 <area shape="rect" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler." alt="" coords="343,5,517,32"/>
 <area shape="poly" title=" " alt="" coords="550,21,518,21,518,16,550,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="327,21,295,21,295,16,327,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aea5e639f39c26e97dc03c944f6002e1f" name="aea5e639f39c26e97dc03c944f6002e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea5e639f39c26e97dc03c944f6002e1f">&#9670;&#160;</a></span>draw()</h2>
+<a id="a30d9d669c6eb4800a0bedb08a078eff0" name="a30d9d669c6eb4800a0bedb08a078eff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d9d669c6eb4800a0bedb08a078eff0">&#9670;&#160;</a></span>Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CPoint::draw </td>
+          <td class="memname">void CPoint::Draw </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Draw a point. If it's a ball, draw it at orientation zero (the default orientation, meaning the sprite is drawn as given in the image file). Otherwise, orient it correctly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a</td><td>Orientation. </td></tr>
   </table>
@@ -382,11 +380,11 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_point_aea5e639f39c26e97dc03c944f6002e1f_icgraph.png" border="0" usemap="#aclass_c_point_aea5e639f39c26e97dc03c944f6002e1f_icgraph" alt=""/></div>
-<map name="aclass_c_point_aea5e639f39c26e97dc03c944f6002e1f_icgraph" id="aclass_c_point_aea5e639f39c26e97dc03c944f6002e1f_icgraph">
-<area shape="rect" title="Draw." alt="" coords="158,5,255,32"/>
-<area shape="rect" href="class_c_spring.html#aeae174db6ec9c8351ab8af98e29fb112" title="Draw." alt="" coords="5,5,110,32"/>
-<area shape="poly" title=" " alt="" coords="142,21,110,21,110,16,142,16"/>
+<div class="center"><img src="class_c_point_a30d9d669c6eb4800a0bedb08a078eff0_icgraph.png" border="0" usemap="#aclass_c_point_a30d9d669c6eb4800a0bedb08a078eff0_icgraph" alt=""/></div>
+<map name="aclass_c_point_a30d9d669c6eb4800a0bedb08a078eff0_icgraph" id="aclass_c_point_a30d9d669c6eb4800a0bedb08a078eff0_icgraph">
+<area shape="rect" title="Draw." alt="" coords="161,5,261,32"/>
+<area shape="rect" href="class_c_spring.html#a3a4b36a41c1efe71700eb3dc0a0bd634" title="Draw." alt="" coords="5,5,113,32"/>
+<area shape="poly" title=" " alt="" coords="145,21,113,21,113,16,145,16"/>
 </map>
 </div>
 
@@ -414,14 +412,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checks for a collision, and does the necessary calculations for reflecting a point if it hits an edge. </p><dl class="section return"><dt>Returns</dt><dd>Collision speed, zero if no collision. </dd></dl>
+<p>Check for a collision and do the necessary calculations for reflecting a point if it hits an edge. </p><dl class="section return"><dt>Returns</dt><dd>Collision speed, zero if no collision. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_point_a522497cd7730a524c2a1c6da815a11a0_icgraph.png" border="0" usemap="#aclass_c_point_a522497cd7730a524c2a1c6da815a11a0_icgraph" alt=""/></div>
 <map name="aclass_c_point_a522497cd7730a524c2a1c6da815a11a0_icgraph" id="aclass_c_point_a522497cd7730a524c2a1c6da815a11a0_icgraph">
 <area shape="rect" title="Collision detection and response for edges of screen." alt="" coords="155,5,304,32"/>
-<area shape="rect" href="class_c_point.html#a0fc7702172f5577d1ffc8376f6cefed6" title="Change position depending on time and velocity." alt="" coords="5,5,107,32"/>
+<area shape="rect" href="class_c_point.html#a296cabee819ba2b692950aa47552b68b" title="Change position depending on time and velocity." alt="" coords="5,5,107,32"/>
 <area shape="poly" title=" " alt="" coords="139,21,107,21,107,16,139,16"/>
 </map>
 </div>
@@ -449,17 +447,17 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_point_aea50825b47f6f95af8d7994c0816cb72_icgraph.png" border="0" usemap="#aclass_c_point_aea50825b47f6f95af8d7994c0816cb72_icgraph" alt=""/></div>
 <map name="aclass_c_point_aea50825b47f6f95af8d7994c0816cb72_icgraph" id="aclass_c_point_aea50825b47f6f95af8d7994c0816cb72_icgraph">
 <area shape="rect" title="Get position." alt="" coords="918,31,1031,57"/>
-<area shape="rect" href="class_c_spring.html#aeae174db6ec9c8351ab8af98e29fb112" title="Draw." alt="" coords="763,5,867,32"/>
-<area shape="poly" title=" " alt="" coords="902,35,867,30,868,24,903,30"/>
+<area shape="rect" href="class_c_spring.html#a3a4b36a41c1efe71700eb3dc0a0bd634" title="Draw." alt="" coords="761,5,868,32"/>
+<area shape="poly" title=" " alt="" coords="902,35,868,30,869,24,903,30"/>
 <area shape="rect" href="class_c_spring.html#afee2fe84fe7fb9104b730973ed815e5d" title="Gauss&#45;Seidel relaxation." alt="" coords="760,56,870,83"/>
 <area shape="poly" title=" " alt="" coords="903,58,871,63,870,58,902,53"/>
 <area shape="rect" href="class_c_object_manager.html#aacc9d10f56a033e5acdeed45f2f0e95f" title="Gauss&#45;Seidel relaxation." alt="" coords="550,56,712,83"/>
 <area shape="poly" title=" " alt="" coords="744,72,712,72,712,67,744,67"/>
-<area shape="rect" href="class_c_object_manager.html#a528d2d15ffc9bced002df95be266b910" title="Move all objects." alt="" coords="343,56,502,83"/>
+<area shape="rect" href="class_c_object_manager.html#aee994b178d5774f081865796a03709f2" title="Move all objects." alt="" coords="343,56,502,83"/>
 <area shape="poly" title=" " alt="" coords="535,72,503,72,503,67,535,67"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,56,295,83"/>
 <area shape="poly" title=" " alt="" coords="328,72,295,72,295,67,328,67"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,56,88,83"/>
 <area shape="poly" title=" " alt="" coords="120,72,88,72,88,67,120,67"/>
 </map>
 </div>
@@ -484,14 +482,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a0fc7702172f5577d1ffc8376f6cefed6" name="a0fc7702172f5577d1ffc8376f6cefed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fc7702172f5577d1ffc8376f6cefed6">&#9670;&#160;</a></span>move()</h2>
+<a id="a296cabee819ba2b692950aa47552b68b" name="a296cabee819ba2b692950aa47552b68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296cabee819ba2b692950aa47552b68b">&#9670;&#160;</a></span>Move()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CPoint::move </td>
+          <td class="memname">void CPoint::Move </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -502,8 +500,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_point_a0fc7702172f5577d1ffc8376f6cefed6_cgraph.png" border="0" usemap="#aclass_c_point_a0fc7702172f5577d1ffc8376f6cefed6_cgraph" alt=""/></div>
-<map name="aclass_c_point_a0fc7702172f5577d1ffc8376f6cefed6_cgraph" id="aclass_c_point_a0fc7702172f5577d1ffc8376f6cefed6_cgraph">
+<div class="center"><img src="class_c_point_a296cabee819ba2b692950aa47552b68b_cgraph.png" border="0" usemap="#aclass_c_point_a296cabee819ba2b692950aa47552b68b_cgraph" alt=""/></div>
+<map name="aclass_c_point_a296cabee819ba2b692950aa47552b68b_cgraph" id="aclass_c_point_a296cabee819ba2b692950aa47552b68b_cgraph">
 <area shape="rect" title="Change position depending on time and velocity." alt="" coords="5,5,107,32"/>
 <area shape="rect" href="class_c_point.html#a522497cd7730a524c2a1c6da815a11a0" title="Collision detection and response for edges of screen." alt="" coords="155,5,304,32"/>
 <area shape="poly" title=" " alt="" coords="107,16,139,16,139,21,107,21"/>
@@ -526,12 +524,22 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Set the sound to be used when this point collides with something. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>New collision sound. </td></tr>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_point_af2c9b70f9e753b3155b2375acf166a23_icgraph.png" border="0" usemap="#aclass_c_point_af2c9b70f9e753b3155b2375acf166a23_icgraph" alt=""/></div>
+<map name="aclass_c_point_af2c9b70f9e753b3155b2375acf166a23_icgraph" id="aclass_c_point_af2c9b70f9e753b3155b2375acf166a23_icgraph">
+<area shape="rect" title="Override default collision sound." alt="" coords="191,5,367,32"/>
+<area shape="rect" href="class_c_ragdoll.html#ac6ca53671c308dc197abf850a9840c03" title="Constructor." alt="" coords="5,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="175,21,143,21,143,16,175,16"/>
+</map>
+</div>
 
 </div>
 </div>

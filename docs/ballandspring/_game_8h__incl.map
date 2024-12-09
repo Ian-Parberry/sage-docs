@@ -4,13 +4,13 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="561,24,421,32,330,42,236,55,149,74,75,98,47,113,26,129,13,147,8,167,8,244,14,280,30,313,52,342,73,366,69,370,48,346,26,316,9,281,3,244,3,166,8,145,22,126,44,109,73,94,147,69,235,50,329,36,420,27,560,18"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="453,379,563,405"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="610,30,631,54,655,86,675,124,683,166,683,244,679,268,671,289,657,309,640,326,600,354,560,375,557,370,598,350,637,322,653,305,666,287,674,266,677,244,677,167,670,126,651,89,627,57,606,34"/>
-<area shape="rect" id="Node000004" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="587,379,672,405"/>
+<area shape="rect" id="Node000004" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="587,379,672,405"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="630,30,667,49,701,78,717,100,727,119,732,140,733,167,733,244,732,271,726,291,701,332,682,354,662,371,658,367,679,350,697,329,721,289,726,270,728,244,728,167,727,141,722,121,713,102,697,82,664,54,628,35"/>
-<area shape="rect" id="Node000008" href="$_object_manager_8h.html" title="Interface for the object manager CObjectManager." alt="" coords="314,80,435,107"/>
+<area shape="rect" id="Node000008" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="314,80,435,107"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="562,34,428,77,427,72,560,29"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="555,453,704,480"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="632,406,632,438,627,438,627,406"/>
-<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="252,453,364,480"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="252,453,364,480"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="587,405,380,452,379,447,586,400"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="254,528,362,555"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="311,481,311,512,305,512,305,481"/>

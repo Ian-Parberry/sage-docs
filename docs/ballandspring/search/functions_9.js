@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['move_0',['move',['../class_c_object_manager.html#a528d2d15ffc9bced002df95be266b910',1,'CObjectManager::move()'],['../class_c_point.html#a0fc7702172f5577d1ffc8376f6cefed6',1,'CPoint::move()']]]
+  ['move_0',['Move',['../class_c_object_manager.html#aee994b178d5774f081865796a03709f2',1,'CObjectManager::Move()'],['../class_c_point.html#a296cabee819ba2b692950aa47552b68b',1,'CPoint::Move()']]]
 ];
