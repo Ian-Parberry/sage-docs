@@ -1,6 +1,6 @@
 <map id="Common.h" name="Common.h">
-<area shape="rect" id="Node000001" title="Interface for the class CCommon." alt="" coords="311,5,396,32"/>
-<area shape="rect" id="Node000002" href="$_common_8cpp.html" title="Code for the class CCommon." alt="" coords="5,80,105,107"/>
+<area shape="rect" id="Node000001" title="Interface for the common variables class CCommon." alt="" coords="311,5,396,32"/>
+<area shape="rect" id="Node000002" href="$_common_8cpp.html" title="Code for the common variables class CCommon." alt="" coords="5,80,105,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,36,106,82,105,77,295,31"/>
 <area shape="rect" id="Node000003" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="259,80,326,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="335,46,305,81,301,78,331,42"/>
@@ -14,7 +14,7 @@
 <area shape="poly" id="edge34_Node000001_Node000026" title=" " alt="" coords="412,27,772,84,771,89,411,32"/>
 <area shape="rect" id="Node000004" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="642,304,724,331"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,122,280,153,278,188,283,224,290,240,300,254,324,271,361,282,406,289,455,293,554,296,630,301,642,304,641,309,629,307,554,301,455,298,405,295,360,288,322,276,296,258,285,242,278,225,272,189,275,152,281,121"/>
-<area shape="rect" id="Node000005" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="180,155,255,181"/>
+<area shape="rect" id="Node000005" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="180,155,255,181"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="270,119,232,156,229,152,267,116"/>
 <area shape="rect" id="Node000007" href="$_isaac_8cpp.html" title="Code for the Isaac Newton class CSirIsaacNewton." alt="" coords="78,155,157,181"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="148,122,127,156,123,153,143,119"/>
@@ -24,7 +24,7 @@
 <area shape="rect" id="Node000009" href="$_newtons_cradle_8cpp.html" title="Code for the Newton&#39;s cradle class CNewtonsCradle." alt="" coords="255,304,391,331"/>
 <area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="356,271,333,305,329,302,352,268"/>
 <area shape="poly" id="edge21_Node000010_Node000008" title=" " alt="" coords="646,182,428,231,426,226,645,177"/>
-<area shape="rect" id="Node000011" href="$_car_8h.html" title="Interface for the car class CCarAndBridge." alt="" coords="755,229,808,256"/>
+<area shape="rect" id="Node000011" href="$_car_8h.html" title="Interface for the car and bridge class CCarAndBridge." alt="" coords="755,229,808,256"/>
 <area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="721,189,768,227,765,231,718,194"/>
 <area shape="rect" id="Node000013" href="$_gear_8h.html" title="Interface for the gear class CGear." alt="" coords="833,229,893,256"/>
 <area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="737,185,834,226,832,231,735,190"/>
@@ -39,7 +39,7 @@
 <area shape="rect" id="Node000022" href="$_windmill_8h.html" title="Interface for the windmill class CWindmill." alt="" coords="547,229,630,256"/>
 <area shape="poly" id="edge28_Node000010_Node000022" title=" " alt="" coords="664,192,608,231,605,227,661,188"/>
 <area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="754,268,702,306,698,301,751,263"/>
-<area shape="rect" id="Node000012" href="$_car_8cpp.html" title="Code for the car class CCarAndBridge." alt="" coords="748,304,815,331"/>
+<area shape="rect" id="Node000012" href="$_car_8cpp.html" title="Code for the car and bridge class CCarAndBridge." alt="" coords="748,304,815,331"/>
 <area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="784,272,784,304,779,304,779,272"/>
 <area shape="poly" id="edge15_Node000013_Node000004" title=" " alt="" coords="819,264,715,306,713,301,817,259"/>
 <area shape="rect" id="Node000014" href="$_gear_8cpp.html" title="Code for the gear class CGear." alt="" coords="839,304,914,331"/>

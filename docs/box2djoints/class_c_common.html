@@ -121,7 +121,7 @@ Inheritance diagram for CCommon:</div>
 <area shape="poly" title=" " alt="" coords="551,39,607,77,604,82,548,43"/>
 <area shape="rect" href="class_c_sir_isaac_newton.html" title="Sir Isaac Newton." alt="" coords="683,80,808,107"/>
 <area shape="poly" title=" " alt="" coords="573,35,707,77,705,82,572,40"/>
-<area shape="rect" href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels." alt="" coords="5,155,118,181"/>
+<area shape="rect" href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels, and a bridge to run on." alt="" coords="5,155,118,181"/>
 <area shape="poly" title=" " alt="" coords="372,110,119,159,118,154,371,105"/>
 <area shape="rect" href="class_c_gear.html" title="A system of interlocking gears." alt="" coords="141,155,200,181"/>
 <area shape="poly" title=" " alt="" coords="372,111,202,160,200,155,371,106"/>
@@ -175,7 +175,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="separator:a342e9d67f45b482a02d16b595508850e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a> is a singleton class that encapsulates things that are common to different game components, including game state variables. Making it a singleton class means that we can avoid passing its member variables around as parameters, which makes the code minisculely faster, and more importantly, reduces function clutter. </p>
+<div class="textblock"><p><code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code> is a monostate class that encapsulates things that are common to different game components, including game state variables. Making it a monostate class means that we can avoid passing its member variables around as parameters, which makes the code minisculely faster, and more importantly, makes the code more readable by reducing function clutter. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

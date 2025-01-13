@@ -1,5 +1,5 @@
 <map id="CCarAndBridge" name="CCarAndBridge">
-<area shape="rect" id="Node000001" title="A car consisting of a body and two wheels." alt="" coords="70,155,183,181"/>
+<area shape="rect" id="Node000001" title="A car consisting of a body and two wheels, and a bridge to run on." alt="" coords="70,155,183,181"/>
 <area shape="rect" id="Node000002" href="$class_c_level.html" title="Stub class for a level." alt="" coords="96,80,158,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,122,129,154,124,154,124,122"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,5,123,32"/>

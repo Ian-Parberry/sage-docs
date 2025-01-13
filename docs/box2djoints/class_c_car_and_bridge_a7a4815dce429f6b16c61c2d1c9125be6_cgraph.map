@@ -14,7 +14,7 @@
 <area shape="rect" id="Node000007" href="$class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="518,157,729,184"/>
 <area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="436,131,537,151,536,156,435,137"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="966,30,997,49,1027,82,1049,120,1065,159,1075,192,1070,194,1060,161,1044,123,1023,85,994,53,963,35"/>
-<area shape="rect" id="Node000006" href="$_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="840,157,941,184"/>
+<area shape="rect" id="Node000006" href="$_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Translate an array of points from artist world to physics world." alt="" coords="840,157,941,184"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="698,131,826,156,825,161,697,137"/>
 <area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="942,181,1029,205,1028,210,940,187"/>
 <area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="729,168,825,168,825,173,729,173"/>

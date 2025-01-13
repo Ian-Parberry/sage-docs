@@ -6,9 +6,9 @@
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="224,31,253,66,249,70,220,34"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,155,116,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="138,109,90,147,86,143,135,105"/>
-<area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="136,229,249,256"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="136,229,249,256"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="158,106,188,214,183,215,153,108"/>
-<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="190,155,275,181"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="190,155,275,181"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="168,105,209,142,206,146,165,109"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="71,304,178,331"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="183,258,149,294,145,291,179,255"/>

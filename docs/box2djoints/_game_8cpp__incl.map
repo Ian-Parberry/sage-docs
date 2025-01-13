@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Code for the game class CGame." alt="" coords="679,5,761,32"/>
 <area shape="rect" id="Node000002" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="157,155,224,181"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="679,24,547,29,378,40,225,57,173,69,146,82,140,96,143,111,153,127,166,142,162,145,148,130,138,113,135,95,142,78,171,64,225,52,377,35,547,24,679,19"/>
-<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="622,379,735,405"/>
+<area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="622,379,735,405"/>
 <area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="679,22,510,26,399,32,286,44,179,62,90,88,56,104,30,122,14,143,8,167,8,244,13,265,26,283,47,300,76,315,151,340,241,359,341,372,440,380,607,387,607,393,439,386,340,377,241,364,149,346,74,320,45,305,22,287,8,267,3,244,3,166,9,141,26,119,53,99,88,83,178,57,285,38,399,27,510,20,679,17"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="156,80,263,107"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="679,28,509,49,279,82,278,77,508,44,678,22"/>
@@ -18,7 +18,7 @@
 <area shape="poly" id="edge29_Node000001_Node000018" title=" " alt="" coords="762,26,1016,76,1015,81,761,31"/>
 <area shape="rect" id="Node000019" href="$_rack_and_pinion_8h.html" title="Interface for the rack and pinion class CRackAndPinion." alt="" coords="884,80,1006,107"/>
 <area shape="poly" id="edge34_Node000001_Node000019" title=" " alt="" coords="760,30,892,72,891,77,758,35"/>
-<area shape="rect" id="Node000020" href="$_car_8h.html" title="Interface for the car class CCarAndBridge." alt="" coords="1248,80,1301,107"/>
+<area shape="rect" id="Node000020" href="$_car_8h.html" title="Interface for the car and bridge class CCarAndBridge." alt="" coords="1248,80,1301,107"/>
 <area shape="poly" id="edge38_Node000001_Node000020" title=" " alt="" coords="761,20,961,36,1095,53,1233,77,1232,82,1094,58,961,42,761,25"/>
 <area shape="rect" id="Node000021" href="$_newtons_cradle_8h.html" title="Interface for the Newton&#39;s cradle class CNewtonsCradle." alt="" coords="540,80,662,107"/>
 <area shape="poly" id="edge43_Node000001_Node000021" title=" " alt="" coords="701,35,636,74,634,69,698,30"/>
@@ -30,7 +30,7 @@
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="178,184,135,221,132,217,175,180"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="349,229,459,256"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="226,178,353,221,351,226,224,183"/>
-<area shape="rect" id="Node000005" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="636,304,721,331"/>
+<area shape="rect" id="Node000005" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="636,304,721,331"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="207,180,258,217,291,237,326,254,404,278,484,295,558,305,621,311,620,316,558,310,483,300,403,283,324,258,289,242,255,222,204,184"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="681,331,681,363,676,363,676,331"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="625,453,732,480"/>

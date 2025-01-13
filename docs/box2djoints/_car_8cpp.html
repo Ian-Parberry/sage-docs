@@ -105,7 +105,7 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Code for the car class <a class="el" href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels.">CCarAndBridge</a>.  
+<p>Code for the car and bridge class <code><a class="el" href="class_c_car_and_bridge.html" title="A car consisting of a body and two wheels, and a bridge to run on.">CCarAndBridge</a></code>.  
 </p>
 <div class="textblock"><code>#include &quot;<a class="el" href="_car_8h.html">Car.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_game_defines_8h.html">GameDefines.h</a>&quot;</code><br />
@@ -115,12 +115,12 @@ Include dependency graph for Car.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_car_8cpp__incl.png" border="0" usemap="#a_car_8cpp" alt=""/></div>
 <map name="a_car_8cpp" id="a_car_8cpp">
-<area shape="rect" title="Code for the car class CCarAndBridge." alt="" coords="600,5,667,32"/>
-<area shape="rect" href="_car_8h.html" title="Interface for the car class CCarAndBridge." alt="" coords="329,80,383,107"/>
+<area shape="rect" title="Code for the car and bridge class CCarAndBridge." alt="" coords="600,5,667,32"/>
+<area shape="rect" href="_car_8h.html" title="Interface for the car and bridge class CCarAndBridge." alt="" coords="329,80,383,107"/>
 <area shape="poly" title=" " alt="" coords="600,31,399,84,397,79,599,26"/>
 <area shape="rect" title=" " alt="" coords="571,229,696,256"/>
 <area shape="poly" title=" " alt="" coords="636,33,636,214,631,214,631,33"/>
-<area shape="rect" href="_game_defines_8h.html" title="Game specific defines." alt="" coords="420,379,532,405"/>
+<area shape="rect" href="_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="420,379,532,405"/>
 <area shape="poly" title=" " alt="" coords="652,31,677,53,704,85,727,123,734,144,736,167,736,244,731,275,717,301,696,323,670,342,609,368,548,384,547,378,608,363,668,337,693,319,713,298,726,273,731,244,731,167,728,146,722,125,700,88,673,57,648,35"/>
 <area shape="rect" title=" " alt="" coords="43,229,101,256"/>
 <area shape="poly" title=" " alt="" coords="333,110,111,224,108,220,331,105"/>
@@ -135,7 +135,7 @@ Include dependency graph for Car.cpp:</div>
 <area shape="poly" title=" " alt="" coords="388,175,571,222,569,227,387,180"/>
 <area shape="rect" title=" " alt="" coords="125,229,235,256"/>
 <area shape="poly" title=" " alt="" coords="326,184,226,225,224,220,324,179"/>
-<area shape="rect" href="_common_8h.html" title="Interface for the class CCommon." alt="" coords="393,304,479,331"/>
+<area shape="rect" href="_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="393,304,479,331"/>
 <area shape="poly" title=" " alt="" coords="374,180,397,201,417,228,429,258,436,288,430,289,424,260,412,231,393,204,371,184"/>
 <area shape="poly" title=" " alt="" coords="384,179,472,220,470,225,382,184"/>
 <area shape="rect" href="_line_object_8h.html" title="Interface for the line object class CLineObject." alt="" coords="309,229,403,256"/>
@@ -153,7 +153,7 @@ Include dependency graph for Car.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:abede07222f9ce9162eeddd409b917842" id="r_abede07222f9ce9162eeddd409b917842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abede07222f9ce9162eeddd409b917842">RemapPoints</a> (b2Vec2 p[], int n, int w, int h)</td></tr>
-<tr class="memdesc:abede07222f9ce9162eeddd409b917842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to translate an array of points from Artist World (measured in pixels from top left) to Physics WOrld (measured in Physics World units from bottom left).  <br /></td></tr>
+<tr class="memdesc:abede07222f9ce9162eeddd409b917842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate an array of points from artist world to physics world.  <br /></td></tr>
 <tr class="separator:abede07222f9ce9162eeddd409b917842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -192,7 +192,7 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_SPEED<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Helper function to translate an array of points from artist world (measured in pixels from top left) to physics world (measured in physics world units from bottom left). This is so that you can measure distances in pixels using an image editor such as <code>Paint.net</code>, which measures from the top left corner with positive \(y\) values increasing downwards. Recall that physics world measures from the bottom left corner with positive \(y\) values increasing upwards. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Array of 2D points. </td></tr>
     <tr><td class="paramname">n</td><td>Number of points in a. </td></tr>
@@ -206,7 +206,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_car_8cpp_abede07222f9ce9162eeddd409b917842_cgraph.png" border="0" usemap="#a_car_8cpp_abede07222f9ce9162eeddd409b917842_cgraph" alt=""/></div>
 <map name="a_car_8cpp_abede07222f9ce9162eeddd409b917842_cgraph" id="a_car_8cpp_abede07222f9ce9162eeddd409b917842_cgraph">
-<area shape="rect" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="5,5,106,32"/>
+<area shape="rect" title="Translate an array of points from artist world to physics world." alt="" coords="5,5,106,32"/>
 <area shape="rect" href="_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="154,5,226,32"/>
 <area shape="poly" title=" " alt="" coords="106,16,138,16,138,21,106,21"/>
 </map>
@@ -216,7 +216,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_car_8cpp_abede07222f9ce9162eeddd409b917842_icgraph.png" border="0" usemap="#a_car_8cpp_abede07222f9ce9162eeddd409b917842_icgraph" alt=""/></div>
 <map name="a_car_8cpp_abede07222f9ce9162eeddd409b917842_icgraph" id="a_car_8cpp_abede07222f9ce9162eeddd409b917842_icgraph">
-<area shape="rect" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="785,31,886,57"/>
+<area shape="rect" title="Translate an array of points from artist world to physics world." alt="" coords="785,31,886,57"/>
 <area shape="rect" href="class_c_car_and_bridge.html#a547b14b8365f7d3991facb6b91959282" title="Create a down ramp." alt="" coords="509,5,737,32"/>
 <area shape="poly" title=" " alt="" coords="770,39,738,35,738,30,770,34"/>
 <area shape="rect" href="class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="518,56,729,83"/>

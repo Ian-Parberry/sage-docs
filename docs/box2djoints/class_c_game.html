@@ -104,7 +104,7 @@ $(function(){ initResizable(false); });
 <div class="contents">
 
 <p>The game class.  
-</p>
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;Game.h&gt;</code></p>
 <div class="dynheader">
@@ -207,7 +207,9 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <tr class="memdesc:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw mode. <br /></td></tr>
 <tr class="separator:a342e9d67f45b482a02d16b595508850e inherit pro_static_attribs_class_c_common"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The game class is the object-oriented implementation of the game. This class must contain the following public member functions. <code><a class="el" href="#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game.">Initialize()</a></code> does initialization and will be run exactly once at the start of the game. <code><a class="el" href="#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame.">ProcessFrame()</a></code> will be called once per frame to create and render the next animation frame. <code><a class="el" href="#aa4cbb6823e28b0b35cd4cac5f17ac797" title="Release the renderer.">Release()</a></code> will be called at game exit but before any destructors are run. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4db10c09035dc16b32d6c1ef4cca2143" name="a4db10c09035dc16b32d6c1ef4cca2143"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4db10c09035dc16b32d6c1ef4cca2143">&#9670;&#160;</a></span>~CGame()</h2>
 
@@ -222,7 +224,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete the renderer and the current level, then delete Physics World, which MUST be deleted after the current level because of way things are set up. </p>
+<p>Delete the current level and physics world. </p>
 
 </div>
 </div>
@@ -272,7 +274,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="550,57,508,63,507,57,550,52"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
 <area shape="poly" title=" " alt="" coords="328,33,296,37,295,32,327,28"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
 <area shape="poly" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
 <area shape="poly" title=" " alt="" coords="337,61,295,56,296,51,338,56"/>
 </map>
@@ -317,7 +319,7 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="550,57,508,63,507,57,550,52"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,31,295,57"/>
 <area shape="poly" title=" " alt="" coords="328,33,296,37,295,32,327,28"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,31,88,57"/>
 <area shape="poly" title=" " alt="" coords="120,47,88,47,88,41,120,41"/>
 <area shape="poly" title=" " alt="" coords="337,61,295,56,296,51,338,56"/>
 </map>
@@ -339,7 +341,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the renderer, load images and sounds, start the timer, and begin the game. </p>
+<p>Set the timer to a fixed time step. Create the renderer and load images. Create physics world. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -358,7 +360,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph.png" border="0" usemap="#aclass_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph" alt=""/></div>
 <map name="aclass_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph" id="aclass_c_game_a4349adf43d0dc02d80ad06ca1d77411c_icgraph">
 <area shape="rect" title="Initialize the game." alt="" coords="136,5,258,32"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -410,7 +412,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="The keyboard handler." alt="" coords="343,5,517,32"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="327,21,295,21,295,16,327,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -439,7 +441,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load the sprites for this game. </p>
+<p>Create a media list <code>Sage::CMediaList</code> of <code>eSprite</code>. For each sprite, insert into the media list a pair consisting of an instance of the sprite enumerated type <code>eSprite</code> and the corresponding string used in the <code>name</code> field in a <code>&lt;sprite&gt;</code> tag in <code>GameSettings.xml</code>. Pass the media list to the renderer for loading. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -448,7 +450,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Start loading sprites." alt="" coords="306,5,449,32"/>
 <area shape="rect" href="class_c_game.html#a4349adf43d0dc02d80ad06ca1d77411c" title="Initialize the game." alt="" coords="136,5,258,32"/>
 <area shape="poly" title=" " alt="" coords="290,21,259,21,259,16,290,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -469,7 +471,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Handle keyboard input, move the game objects and render them in their new positions and orientations. There's also some extra processing to be done outside Box2D in order to control the motion of the nautilus gears, the car, the pulleys, and the rack-and-pinion. </p>
+<p>This function will be called regularly to process and render a frame of animation, which involves the following. Handle keyboard input. Move the game objects in physics world. Render a frame of animation. Process any changes to the current game state. There's also some extra processing to be done outside the physics in order to control the motion of the nautilus gears, the car, the pulleys, and the rack-and-pinion. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -505,7 +507,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph.png" border="0" usemap="#aclass_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph" alt=""/></div>
 <map name="aclass_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph" id="aclass_c_game_aec83638cb2fdd94ef098132eb59617d8_icgraph">
 <area shape="rect" title="Process an animation frame." alt="" coords="136,5,295,32"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -534,7 +536,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Take action appropriate to the current game state. </p>
+<p>Process any changes to the current game state. If the game is in state <code>eGameState::Loading</code> and both the renderer and sound manager have finished loading (which may or may not be multithreaded), then begin the game. <br  />
+ </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -555,7 +558,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Process game state." alt="" coords="343,5,496,32"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -583,7 +586,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph.png" border="0" usemap="#aclass_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph" alt=""/></div>
 <map name="aclass_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph" id="aclass_c_game_aa4cbb6823e28b0b35cd4cac5f17ac797_icgraph">
 <area shape="rect" title="Release the renderer." alt="" coords="136,5,258,32"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>
@@ -612,7 +615,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Ask the current level to draw its objects. RenderWorld is notified of the start and end of the frame so that it can let Direct3D do its pipelining. </p>
+<p>Draw the game objects. The renderer is notified of the start and end of the frame so that it can let Direct3D do its pipelining jiggery-pokery. If the game state indicates that media is still loading, then a <code>Loading...</code> string is drawn at the center of the screen. This function assumes that the font specified in <code>GameSettings.xml</code> has already been loaded. If all media has finished loading, then the game objects are drawn by the level class. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -635,7 +638,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Render an animation frame." alt="" coords="343,5,496,32"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
-<area shape="rect" href="_main_8cpp.html#aeeb116aec1e9017291d3924e27a15d31" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
 <area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
 </map>
 </div>

@@ -103,7 +103,7 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>A car consisting of a body and two wheels.  
+<p>A car consisting of a body and two wheels, and a bridge to run on.  
 </p>
 
 <p><code>#include &lt;Car.h&gt;</code></p>
@@ -112,7 +112,7 @@ Inheritance diagram for CCarAndBridge:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_car_and_bridge__inherit__graph.png" border="0" usemap="#a_c_car_and_bridge_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_c_car_and_bridge_inherit__map" id="a_c_car_and_bridge_inherit__map">
-<area shape="rect" title="A car consisting of a body and two wheels." alt="" coords="70,155,183,181"/>
+<area shape="rect" title="A car consisting of a body and two wheels, and a bridge to run on." alt="" coords="70,155,183,181"/>
 <area shape="rect" href="class_c_level.html" title="Stub class for a level." alt="" coords="96,80,158,107"/>
 <area shape="poly" title=" " alt="" coords="129,122,129,154,124,154,124,122"/>
 <area shape="rect" title=" " alt="" coords="5,5,123,32"/>
@@ -126,14 +126,17 @@ Collaboration diagram for CCarAndBridge:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_car_and_bridge__coll__graph.png" border="0" usemap="#a_c_car_and_bridge_coll__map" alt="Collaboration graph"/></div>
 <map name="a_c_car_and_bridge_coll__map" id="a_c_car_and_bridge_coll__map">
-<area shape="rect" title="A car consisting of a body and two wheels." alt="" coords="5,172,118,199"/>
-<area shape="rect" href="class_c_level.html" title="Stub class for a level." alt="" coords="74,81,137,108"/>
-<area shape="poly" title=" " alt="" coords="89,122,83,133,67,173,62,171,78,131,85,119"/>
-<area shape="rect" href="class_c_common.html" title="The common variables class." alt="" coords="142,172,226,199"/>
-<area shape="poly" title=" " alt="" coords="100,124,100,136,104,147,121,163,143,173,141,178,118,167,99,149,95,137,94,124"/>
-<area shape="rect" title=" " alt="" coords="47,5,164,32"/>
-<area shape="poly" title=" " alt="" coords="108,47,108,81,103,81,103,47"/>
-<area shape="poly" title=" " alt="" coords="177,158,165,134,151,121,135,111,138,106,154,117,169,130,182,156"/>
+<area shape="rect" title="A car consisting of a body and two wheels, and a bridge to run on." alt="" coords="5,339,118,365"/>
+<area shape="rect" href="class_c_level.html" title="Stub class for a level." alt="" coords="53,81,115,108"/>
+<area shape="poly" title=" " alt="" coords="77,124,75,133,68,172,64,267,64,338,58,338,58,267,63,172,70,131,72,122"/>
+<area shape="rect" href="class_c_common.html" title="The common variables class." alt="" coords="78,172,162,199"/>
+<area shape="poly" title=" " alt="" coords="80,123,83,147,91,159,102,169,98,173,87,163,78,149,75,123"/>
+<area shape="rect" title=" " alt="" coords="26,5,143,32"/>
+<area shape="poly" title=" " alt="" coords="87,47,87,81,82,81,82,47"/>
+<area shape="poly" title=" " alt="" coords="140,159,145,145,143,133,131,119,115,109,117,105,134,115,148,131,150,146,145,160"/>
+<area shape="rect" href="class_c_object.html" title="The game object." alt="" coords="82,248,151,275"/>
+<area shape="poly" title=" " alt="" coords="121,214,120,248,114,247,116,214"/>
+<area shape="poly" title=" " alt="" coords="103,290,72,339,67,337,98,287"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -196,6 +199,10 @@ b2WheelJoint *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWheelJoi
 b2WheelJoint *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pWheelJoint2</b> = nullptr</td></tr>
 <tr class="memdesc:ae39ffd85fdb084f66896e06fa1e1658f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a wheel joint. <br /></td></tr>
 <tr class="separator:ae39ffd85fdb084f66896e06fa1e1658f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1079467563fe037e77dec4555d005b8" id="r_ad1079467563fe037e77dec4555d005b8"><td class="memItemLeft" align="right" valign="top"><a id="ad1079467563fe037e77dec4555d005b8" name="ad1079467563fe037e77dec4555d005b8"></a>
+<a class="el" href="class_c_object.html">CObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCarObject</b> = nullptr</td></tr>
+<tr class="memdesc:ad1079467563fe037e77dec4555d005b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to car object. <br /></td></tr>
+<tr class="separator:ad1079467563fe037e77dec4555d005b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -253,7 +260,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create physics bodies for the car body and wheels, and a wheel joint between each wheel and the car body. </p>
+<p>Create a car and a bridge for it to run on. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -274,7 +281,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="518,157,729,184"/>
 <area shape="poly" title=" " alt="" coords="436,131,537,151,536,156,435,137"/>
 <area shape="poly" title=" " alt="" coords="966,30,997,49,1027,82,1049,120,1065,159,1075,192,1070,194,1060,161,1044,123,1023,85,994,53,963,35"/>
-<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="840,157,941,184"/>
+<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Translate an array of points from artist world to physics world." alt="" coords="840,157,941,184"/>
 <area shape="poly" title=" " alt="" coords="698,131,826,156,825,161,697,137"/>
 <area shape="poly" title=" " alt="" coords="942,181,1029,205,1028,210,940,187"/>
 <area shape="poly" title=" " alt="" coords="729,168,825,168,825,173,729,173"/>
@@ -377,7 +384,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="258,157,470,184"/>
 <area shape="poly" title=" " alt="" coords="142,106,250,143,281,151,279,156,249,148,140,111"/>
 <area shape="poly" title=" " alt="" coords="683,30,768,53,767,58,682,35"/>
-<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="580,107,680,133"/>
+<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Translate an array of points from artist world to physics world." alt="" coords="580,107,680,133"/>
 <area shape="poly" title=" " alt="" coords="479,117,564,117,564,123,479,123"/>
 <area shape="poly" title=" " alt="" coords="680,104,767,80,768,86,681,109"/>
 <area shape="poly" title=" " alt="" coords="437,154,564,130,565,135,438,159"/>
@@ -422,7 +429,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create the car body and wheels and attach the wheels to the body. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create the car body and wheels and attach the wheels to the body using wheel joints. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
     <tr><td class="paramname">y</td><td>Y coordinate in Physics World units. </td></tr>
@@ -484,7 +491,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create the car's body at a given point in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create the car object with its body at a given point in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
     <tr><td class="paramname">y</td><td>Y coordinate in Physics World units. </td></tr>
@@ -614,7 +621,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_c_car_and_bridge_a547b14b8365f7d3991facb6b91959282_cgraph.png" border="0" usemap="#aclass_c_car_and_bridge_a547b14b8365f7d3991facb6b91959282_cgraph" alt=""/></div>
 <map name="aclass_c_car_and_bridge_a547b14b8365f7d3991facb6b91959282_cgraph" id="aclass_c_car_and_bridge_a547b14b8365f7d3991facb6b91959282_cgraph">
 <area shape="rect" title="Create a down ramp." alt="" coords="5,5,234,32"/>
-<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="282,5,382,32"/>
+<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Translate an array of points from artist world to physics world." alt="" coords="282,5,382,32"/>
 <area shape="poly" title=" " alt="" coords="234,16,266,16,266,21,234,21"/>
 <area shape="rect" href="_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="430,5,502,32"/>
 <area shape="poly" title=" " alt="" coords="383,16,414,16,414,21,383,21"/>
@@ -674,7 +681,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_c_car_and_bridge_ab41adc4d66655b3d6dd5ff11d3ac6ec3_cgraph.png" border="0" usemap="#aclass_c_car_and_bridge_ab41adc4d66655b3d6dd5ff11d3ac6ec3_cgraph" alt=""/></div>
 <map name="aclass_c_car_and_bridge_ab41adc4d66655b3d6dd5ff11d3ac6ec3_cgraph" id="aclass_c_car_and_bridge_ab41adc4d66655b3d6dd5ff11d3ac6ec3_cgraph">
 <area shape="rect" title="Create an up ramp." alt="" coords="5,5,217,32"/>
-<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="265,5,365,32"/>
+<area shape="rect" href="_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Translate an array of points from artist world to physics world." alt="" coords="265,5,365,32"/>
 <area shape="poly" title=" " alt="" coords="217,16,249,16,249,21,217,21"/>
 <area shape="rect" href="_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="413,5,485,32"/>
 <area shape="poly" title=" " alt="" coords="366,16,397,16,397,21,366,21"/>
@@ -776,7 +783,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Ensure that the car reverses direction before hitting the left or right edge of the window. All other aspects of motion are, of course, handled by Box2D. This fucntion assumes that the car is the first object created. </p>
+<p>Ensure that the car reverses direction before hitting the left or right edge of the window. All other aspects of motion are, of course, handled by Box2D. This function assumes that the car wass the first object created. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_level.html#ad35cb55ec0815766f028013beed590b3">CLevel</a>.</p>
 <div class="dynheader">
@@ -784,11 +791,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_car_and_bridge_a298554acbf281bfb4c82149c4b74d9ba_cgraph.png" border="0" usemap="#aclass_c_car_and_bridge_a298554acbf281bfb4c82149c4b74d9ba_cgraph" alt=""/></div>
 <map name="aclass_c_car_and_bridge_a298554acbf281bfb4c82149c4b74d9ba_cgraph" id="aclass_c_car_and_bridge_a298554acbf281bfb4c82149c4b74d9ba_cgraph">
-<area shape="rect" title="Reverse the car when it gets near the edges." alt="" coords="5,31,158,57"/>
+<area shape="rect" title="Reverse the car when it gets near the edges." alt="" coords="5,56,158,83"/>
 <area shape="rect" href="class_c_car_and_bridge.html#a071068281bf806331c6014c3335c57c3" title="Reverse the car." alt="" coords="206,5,363,32"/>
-<area shape="poly" title=" " alt="" coords="158,32,190,28,190,33,158,37"/>
-<area shape="rect" href="_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="248,56,320,83"/>
-<area shape="poly" title=" " alt="" coords="158,51,233,60,233,66,158,56"/>
+<area shape="poly" title=" " alt="" coords="137,53,213,34,214,39,139,58"/>
+<area shape="rect" href="class_c_object.html#a3b49a8d3816c95eff4808cae88048293" title="Get body pointer." alt="" coords="220,56,348,83"/>
+<area shape="poly" title=" " alt="" coords="158,67,205,67,205,72,158,72"/>
+<area shape="rect" href="_game_defines_8h.html#a38e76a96e08feec381c5a094ec9d6f6d" title="Physics World to Render World units for a float. Physics World to Render World units for a float." alt="" coords="248,107,320,133"/>
+<area shape="poly" title=" " alt="" coords="139,81,234,105,233,110,137,86"/>
 </map>
 </div>
 

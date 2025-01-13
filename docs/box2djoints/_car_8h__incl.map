@@ -1,5 +1,5 @@
 <map id="Car.h" name="Car.h">
-<area shape="rect" id="Node000001" title="Interface for the car class CCarAndBridge." alt="" coords="128,5,181,32"/>
+<area shape="rect" id="Node000001" title="Interface for the car and bridge class CCarAndBridge." alt="" coords="128,5,181,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="43,155,101,181"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,34,89,142,84,140,145,31"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="79,379,196,405"/>
@@ -14,12 +14,12 @@
 <area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="262,105,363,146,361,151,260,110"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="493,155,603,181"/>
 <area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="263,99,478,148,477,153,262,105"/>
-<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="231,229,316,256"/>
+<area shape="rect" id="Node000007" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="231,229,316,256"/>
 <area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="227,108,215,142,213,161,217,180,229,201,246,218,242,221,225,204,212,182,208,162,210,141,222,106"/>
 <area shape="poly" id="edge12_Node000004_Node000010" title=" " alt="" coords="263,96,410,117,613,152,612,157,409,122,262,101"/>
 <area shape="rect" id="Node000011" href="$_line_object_8h.html" title="Interface for the line object class CLineObject." alt="" coords="226,155,320,181"/>
 <area shape="poly" id="edge15_Node000004_Node000011" title=" " alt="" coords="240,106,261,140,256,143,236,109"/>
-<area shape="rect" id="Node000008" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="217,304,330,331"/>
+<area shape="rect" id="Node000008" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="217,304,330,331"/>
 <area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="276,257,276,288,271,288,271,257"/>
 <area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="251,334,176,373,173,369,248,329"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="220,379,327,405"/>

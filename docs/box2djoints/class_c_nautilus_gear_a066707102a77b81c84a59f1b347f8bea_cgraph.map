@@ -1,0 +1,10 @@
+<map id="CNautilusGear::CNautilusGear" name="CNautilusGear::CNautilusGear">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,56,207,83"/>
+<area shape="rect" id="Node000002" href="$class_c_nautilus_gear.html#ac5273af54879e56385b66180328a6a02" title="Create invisible base." alt="" coords="255,5,439,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,53,265,33,266,38,174,58"/>
+<area shape="rect" id="Node000003" href="$class_c_nautilus_gear.html#a553e402655a93ca0e97f2049ebaaa124" title="Create gear." alt="" coords="256,56,438,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,67,240,67,240,72,207,72"/>
+<area shape="rect" id="Node000004" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="487,81,559,108"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="175,81,255,92,371,96,471,95,472,100,371,102,254,97,174,86"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="439,80,472,85,471,90,438,85"/>
+</map>

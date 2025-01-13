@@ -1,5 +1,5 @@
 <map id="RemapPoints" name="RemapPoints">
-<area shape="rect" id="Node000001" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="785,31,886,57"/>
+<area shape="rect" id="Node000001" title="Translate an array of points from artist world to physics world." alt="" coords="785,31,886,57"/>
 <area shape="rect" id="Node000002" href="$class_c_car_and_bridge.html#a547b14b8365f7d3991facb6b91959282" title="Create a down ramp." alt="" coords="509,5,737,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="770,39,738,35,738,30,770,34"/>
 <area shape="rect" id="Node000005" href="$class_c_car_and_bridge.html#ab41adc4d66655b3d6dd5ff11d3ac6ec3" title="Create an up ramp." alt="" coords="518,56,729,83"/>

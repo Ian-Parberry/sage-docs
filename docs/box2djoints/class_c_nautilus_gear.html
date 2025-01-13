@@ -139,13 +139,11 @@ Collaboration diagram for CNautilusGear:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a066707102a77b81c84a59f1b347f8bea" id="r_a066707102a77b81c84a59f1b347f8bea"><td class="memItemLeft" align="right" valign="top"><a id="a066707102a77b81c84a59f1b347f8bea" name="a066707102a77b81c84a59f1b347f8bea"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CNautilusGear</b> ()</td></tr>
-<tr class="memdesc:a066707102a77b81c84a59f1b347f8bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="memitem:a066707102a77b81c84a59f1b347f8bea" id="r_a066707102a77b81c84a59f1b347f8bea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066707102a77b81c84a59f1b347f8bea">CNautilusGear</a> ()</td></tr>
+<tr class="memdesc:a066707102a77b81c84a59f1b347f8bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a066707102a77b81c84a59f1b347f8bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad552abf342ec746adb654afd872bf242" id="r_ad552abf342ec746adb654afd872bf242"><td class="memItemLeft" align="right" valign="top"><a id="ad552abf342ec746adb654afd872bf242" name="ad552abf342ec746adb654afd872bf242"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>~CNautilusGear</b> ()</td></tr>
-<tr class="memdesc:ad552abf342ec746adb654afd872bf242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="memitem:ad552abf342ec746adb654afd872bf242" id="r_ad552abf342ec746adb654afd872bf242"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad552abf342ec746adb654afd872bf242">~CNautilusGear</a> ()</td></tr>
+<tr class="memdesc:ad552abf342ec746adb654afd872bf242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:ad552abf342ec746adb654afd872bf242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6280edc601ff8ca4fa98045970c95e9" id="r_ab6280edc601ff8ca4fa98045970c95e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6280edc601ff8ca4fa98045970c95e9">Move</a> ()</td></tr>
 <tr class="memdesc:ab6280edc601ff8ca4fa98045970c95e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move gears in synchrony.  <br /></td></tr>
@@ -176,7 +174,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af074e75a8de5b0f7fdc9592cca87081f" id="r_af074e75a8de5b0f7fdc9592cca87081f"><td class="memItemLeft" align="right" valign="top"><a id="af074e75a8de5b0f7fdc9592cca87081f" name="af074e75a8de5b0f7fdc9592cca87081f"></a>
 b2RevoluteJoint *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pJoint</b> = nullptr</td></tr>
-<tr class="memdesc:af074e75a8de5b0f7fdc9592cca87081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ptr to center gear revolute joint. <br /></td></tr>
+<tr class="memdesc:af074e75a8de5b0f7fdc9592cca87081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ptr to left gear revolute joint. <br /></td></tr>
 <tr class="separator:af074e75a8de5b0f7fdc9592cca87081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e3410158f083f660e62ec33ad1af01" id="r_a12e3410158f083f660e62ec33ad1af01"><td class="memItemLeft" align="right" valign="top"><a id="a12e3410158f083f660e62ec33ad1af01" name="a12e3410158f083f660e62ec33ad1af01"></a>
 const float&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 98.0f</td></tr>
@@ -235,7 +233,59 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <em>nautilus gear</em> is a gear in the shape of a nautilus shell. This level will animate a pair of nautilus gears. The left gear has a revolute joint with a motor. The right gear has variable speed, so it cannot be animated by Box2D. We have to animate it ourselves which means doing a little math. <br  />
  </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a066707102a77b81c84a59f1b347f8bea" name="a066707102a77b81c84a59f1b347f8bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066707102a77b81c84a59f1b347f8bea">&#9670;&#160;</a></span>CNautilusGear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CNautilusGear::CNautilusGear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create gear wheel objects and physics bodies, with a revolute joint between the left gear and the background. Store a pointer to the revolute joint in <code>m_pJoint</code> so that the motor speed and direction can be changed. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_nautilus_gear_a066707102a77b81c84a59f1b347f8bea_cgraph.png" border="0" usemap="#aclass_c_nautilus_gear_a066707102a77b81c84a59f1b347f8bea_cgraph" alt=""/></div>
+<map name="aclass_c_nautilus_gear_a066707102a77b81c84a59f1b347f8bea_cgraph" id="aclass_c_nautilus_gear_a066707102a77b81c84a59f1b347f8bea_cgraph">
+<area shape="rect" title="Constructor." alt="" coords="5,56,207,83"/>
+<area shape="rect" href="class_c_nautilus_gear.html#ac5273af54879e56385b66180328a6a02" title="Create invisible base." alt="" coords="255,5,439,32"/>
+<area shape="poly" title=" " alt="" coords="172,53,265,33,266,38,174,58"/>
+<area shape="rect" href="class_c_nautilus_gear.html#a553e402655a93ca0e97f2049ebaaa124" title="Create gear." alt="" coords="256,56,438,83"/>
+<area shape="poly" title=" " alt="" coords="207,67,240,67,240,72,207,72"/>
+<area shape="rect" href="_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="487,81,559,108"/>
+<area shape="poly" title=" " alt="" coords="175,81,255,92,371,96,471,95,472,100,371,102,254,97,174,86"/>
+<area shape="poly" title=" " alt="" coords="439,80,472,85,471,90,438,85"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad552abf342ec746adb654afd872bf242" name="ad552abf342ec746adb654afd872bf242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad552abf342ec746adb654afd872bf242">&#9670;&#160;</a></span>~CNautilusGear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CNautilusGear::~CNautilusGear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Null destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0bf55e596af190056172a60202b42bb9" name="a0bf55e596af190056172a60202b42bb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bf55e596af190056172a60202b42bb9">&#9670;&#160;</a></span>Action()</h2>
 
@@ -258,7 +308,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reverse the gears by setting the motor speed on the revolute joint for the left gear. </p>
+<p>Reverse the gears by setting the motor speed on the revolute joint for the left gear. Assumes that <code>m_pJoint</code> contains a pointer to the revolute joint. </p>
 
 <p>Reimplemented from <a class="el" href="class_c_level.html#ae0da64b3cc6ab4bd9e9a046ecd4730f6">CLevel</a>.</p>
 
@@ -290,7 +340,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create an invisible base to attach the largest gear wheel to. The base has no sprite and no shape in Physics World. The latter means it doesn't collide with anything. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create an invisible base object and phsyics body to attach the largest gear wheel to. The base has no sprite and no shape in Physics World. The latter means it doesn't collide with anything. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
     <tr><td class="paramname">y</td><td>Y coordinate in Physics World units. </td></tr>
@@ -347,7 +397,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a gear wheel at a given position in Physics World. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create the object and physics body for a gear wheel. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate in Physics World units. </td></tr>
     <tr><td class="paramname">y</td><td>Y coordinate in Physics World units. </td></tr>

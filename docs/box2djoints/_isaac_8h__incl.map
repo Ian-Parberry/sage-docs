@@ -2,9 +2,9 @@
 <area shape="rect" id="Node000001" title="Interface for the Isaac Newton class CSirIsaacNewton." alt="" coords="120,5,185,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,80,116,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,35,90,73,86,68,135,30"/>
-<area shape="rect" id="Node000003" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="136,155,249,181"/>
+<area shape="rect" id="Node000003" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="136,155,249,181"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,32,188,139,183,140,153,33"/>
-<area shape="rect" id="Node000006" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="190,80,275,107"/>
+<area shape="rect" id="Node000006" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="190,80,275,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="168,31,209,68,206,72,165,35"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="71,229,178,256"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="183,184,149,220,145,216,179,180"/>

@@ -1,10 +1,10 @@
 <map id="Car.cpp" name="Car.cpp">
-<area shape="rect" id="Node000001" title="Code for the car class CCarAndBridge." alt="" coords="600,5,667,32"/>
-<area shape="rect" id="Node000002" href="$_car_8h.html" title="Interface for the car class CCarAndBridge." alt="" coords="329,80,383,107"/>
+<area shape="rect" id="Node000001" title="Code for the car and bridge class CCarAndBridge." alt="" coords="600,5,667,32"/>
+<area shape="rect" id="Node000002" href="$_car_8h.html" title="Interface for the car and bridge class CCarAndBridge." alt="" coords="329,80,383,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="600,31,399,84,397,79,599,26"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="571,229,696,256"/>
 <area shape="poly" id="edge20_Node000001_Node000006" title=" " alt="" coords="636,33,636,214,631,214,631,33"/>
-<area shape="rect" id="Node000009" href="$_game_defines_8h.html" title="Game specific defines." alt="" coords="420,379,532,405"/>
+<area shape="rect" id="Node000009" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="420,379,532,405"/>
 <area shape="poly" id="edge19_Node000001_Node000009" title=" " alt="" coords="652,31,677,53,704,85,727,123,734,144,736,167,736,244,731,275,717,301,696,323,670,342,609,368,548,384,547,378,608,363,668,337,693,319,713,298,726,273,731,244,731,167,728,146,722,125,700,88,673,57,648,35"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="43,229,101,256"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,110,111,224,108,220,331,105"/>
@@ -19,7 +19,7 @@
 <area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="388,175,571,222,569,227,387,180"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="125,229,235,256"/>
 <area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="326,184,226,225,224,220,324,179"/>
-<area shape="rect" id="Node000008" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="393,304,479,331"/>
+<area shape="rect" id="Node000008" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="393,304,479,331"/>
 <area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="374,180,397,201,417,228,429,258,436,288,430,289,424,260,412,231,393,204,371,184"/>
 <area shape="poly" id="edge13_Node000005_Node000011" title=" " alt="" coords="384,179,472,220,470,225,382,184"/>
 <area shape="rect" id="Node000012" href="$_line_object_8h.html" title="Interface for the line object class CLineObject." alt="" coords="309,229,403,256"/>

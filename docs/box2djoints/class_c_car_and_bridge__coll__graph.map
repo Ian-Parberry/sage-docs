@@ -1,10 +1,13 @@
 <map id="CCarAndBridge" name="CCarAndBridge">
-<area shape="rect" id="Node000001" title="A car consisting of a body and two wheels." alt="" coords="5,172,118,199"/>
-<area shape="rect" id="Node000002" href="$class_c_level.html" title="Stub class for a level." alt="" coords="74,81,137,108"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,122,83,133,67,173,62,171,78,131,85,119"/>
-<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="142,172,226,199"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="100,124,100,136,104,147,121,163,143,173,141,178,118,167,99,149,95,137,94,124"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="47,5,164,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,47,108,81,103,81,103,47"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="177,158,165,134,151,121,135,111,138,106,154,117,169,130,182,156"/>
+<area shape="rect" id="Node000001" title="A car consisting of a body and two wheels, and a bridge to run on." alt="" coords="5,339,118,365"/>
+<area shape="rect" id="Node000002" href="$class_c_level.html" title="Stub class for a level." alt="" coords="53,81,115,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,124,75,133,68,172,64,267,64,338,58,338,58,267,63,172,70,131,72,122"/>
+<area shape="rect" id="Node000004" href="$class_c_common.html" title="The common variables class." alt="" coords="78,172,162,199"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="80,123,83,147,91,159,102,169,98,173,87,163,78,149,75,123"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,5,143,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,47,87,81,82,81,82,47"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="140,159,145,145,143,133,131,119,115,109,117,105,134,115,148,131,150,146,145,160"/>
+<area shape="rect" id="Node000005" href="$class_c_object.html" title="The game object." alt="" coords="82,248,151,275"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="121,214,120,248,114,247,116,214"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="103,290,72,339,67,337,98,287"/>
 </map>

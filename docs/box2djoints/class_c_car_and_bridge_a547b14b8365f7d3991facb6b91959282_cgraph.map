@@ -1,6 +1,6 @@
 <map id="CCarAndBridge::CreateRampDown" name="CCarAndBridge::CreateRampDown">
 <area shape="rect" id="Node000001" title="Create a down ramp." alt="" coords="5,5,234,32"/>
-<area shape="rect" id="Node000002" href="$_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="282,5,382,32"/>
+<area shape="rect" id="Node000002" href="$_car_8cpp.html#abede07222f9ce9162eeddd409b917842" title="Translate an array of points from artist world to physics world." alt="" coords="282,5,382,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,16,266,16,266,21,234,21"/>
 <area shape="rect" id="Node000003" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="430,5,502,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,16,414,16,414,21,383,21"/>

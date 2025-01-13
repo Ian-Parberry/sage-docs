@@ -1,5 +1,5 @@
 <map id="RemapPoints" name="RemapPoints">
-<area shape="rect" id="Node000001" title="Helper function to translate an array of points from Artist World (measured in pixels from top left) ..." alt="" coords="5,5,106,32"/>
+<area shape="rect" id="Node000001" title="Translate an array of points from artist world to physics world." alt="" coords="5,5,106,32"/>
 <area shape="rect" id="Node000002" href="$_game_defines_8h.html#a61ee6d8999d820331d7158308e393bbf" title="Render World to Physics World units for a float. Render World to Physics World units for a float." alt="" coords="154,5,226,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,16,138,16,138,21,106,21"/>
 </map>
