@@ -221,7 +221,7 @@ static <a class="el" href="_game_defines_8h.html#a9eee2982f33e8c95b34d3acfbc807c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete the renderer and the object manager, then delete Physics World, which MUST be deleted after the object manager. </p>
+<p>Delete the object manager and physics world. </p>
 
 </div>
 </div>
@@ -352,7 +352,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Initialize the renderer and the object manager, load images and sounds. </p>
+<p>Set the timer to a fixed time step. Create the renderer and load images. Create the object manager and physics world. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -460,7 +460,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Load the sprites for this game. </p>
+<p>Create a media list <code>Sage::CMediaList</code> of <code>eSprite</code>. For each sprite, insert into the media list a pair consisting of an instance of the sprite enumerated type <code>eSprite</code> and the corresponding string used in the <code>name</code> field in a <code>&lt;sprite&gt;</code> tag in <code>GameSettings.xml</code>. Pass the media list to the renderer for loading. </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -490,7 +490,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function will be called regularly to process and render a frame of animation, which involves the following. Handle keyboard input. Move the game objects. Render a frame of animation. Process any changes to the current game state. </p>
+<p>This function will be called regularly to process and render a frame of animation, which involves the following. Handle keyboard input. Move the game objects in physics world. Render a frame of animation. Process any changes to the current game state. </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
