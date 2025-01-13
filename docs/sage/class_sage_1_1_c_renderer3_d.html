@@ -312,7 +312,7 @@ ID3D12GraphicsCommandList *&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memdesc:afa34af7b0ca51223dc86db53e36a9509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the command list. <br /></td></tr>
 <tr class="separator:afa34af7b0ca51223dc86db53e36a9509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a502411615df120c292dba60c8da6f734" id="r_a502411615df120c292dba60c8da6f734"><td class="memItemLeft" align="right" valign="top"><a id="a502411615df120c292dba60c8da6f734" name="a502411615df120c292dba60c8da6f734"></a>
-ID3D12DescriptorHeap *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pHeaps</b> [2]</td></tr>
+ID3D12DescriptorHeap *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pHeaps</b> [2] = {nullptr}</td></tr>
 <tr class="memdesc:a502411615df120c292dba60c8da6f734"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pair of pointers to heaps. <br /></td></tr>
 <tr class="separator:a502411615df120c292dba60c8da6f734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a934bac140312798f2a29293e13c0a416" id="r_a934bac140312798f2a29293e13c0a416"><td class="memItemLeft" align="right" valign="top"><a id="a934bac140312798f2a29293e13c0a416" name="a934bac140312798f2a29293e13c0a416"></a>
@@ -1048,7 +1048,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Load a texture from a file specified in gamesettings.xml. Aborts if <code>gamesettings.xml</code> has not been loaded correctly. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Load a texture from a file specified in <code>gamesettings.xml</code>. Aborts if <code>gamesettings.xml</code> has not been loaded correctly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>[in] Name field in a sprite tag. </td></tr>
     <tr><td class="paramname">tDesc</td><td>[out] Texture descriptor. </td></tr>
