@@ -95,7 +95,7 @@ $(function(){ initResizable(false); });
 
 <div><div class="contents">
 <div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
-<p>The Box2D Joint Toy demonstrates some important Box2D joints, including revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound. The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The Box2D Joint Toy demonstrates some important Box2D joints, including revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound. The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, important features, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -363,7 +363,109 @@ Fig. 30: Direction of motion for Elephant Drop.</div></div>
 <div class="caption">
 Fig. 31: Angle from distance around the circumference.</div></div>
 <p>This calculation is carried out in <code><a class="el" href="class_c_pulley.html#a94f5a448781d0810d75cc8a8b417828e" title="Rotate the pulley wheels.">CPulley::Move</a></code>. The orientation of each pulley wheel is then set by calling their <code>b2Body</code>'s <code>SetTransform</code> function with \(\theta\) as the orientation parameter and the the body's current position as the position parameter.</p>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
+<p>In the folder <span style="background-color:#D8E4D8;"><code>8. Box2D Joint Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository you will find a folder <span style="background-color:#D8E4D8;">Problems</span> which will contain some code to help you with the problems below.</p>
+<p><a class="anchor" id="section6-1"></a></p><h2>6.1 Round Gear Problems</h2>
+<p>In the following problems, an <em>external</em> gear has teeth on the outside and an <em>internal</em> gear has teeth on the inside. Navigate to the <span style="background-color:#D8E4D8;">Problems</span> folder mentioned above Open <span style="background-color:#D8E4D8;"><code>Gears.sln</code></span> with Visual Studio. When you compile and run it, each level will correspond to a problem below and it should react to the key controls in <a class="el" href="#section2">Section 2</a> with the exception of the space bar, more of which later. The first level corresponds to <a class="el" href="#problem6-1-1">Problem 6.1.1</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig32">Fig. 32</a>. The second level corresponds to <a class="el" href="#problem6-1-2">Problem 6.1.2</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig33">Fig. 33</a>. The third level corresponds to <a class="el" href="#problem6-1-3">Problem 6.1.3</a> and displays two gears in their start positions and orientations are also as shown in <a class="el" href="#fig33">Fig. 33</a>.</p>
+<p><a class="anchor" id="fig32"></a></p><div class="image">
+<img src="externalstart.png" alt="" width="180"/>
+<div class="caption">
+Fig. 32: Start position for the first level.</div></div>
+<p><a class="anchor" id="fig33"></a></p><div class="image">
+<img src="internalstart.png" alt="" width="256"/>
+<div class="caption">
+Fig. 33: Start position for the second and third levels.</div></div>
+<p><a class="anchor" id="problem6-1-1"></a></p><h3>Problem 6.1.1</h3>
+<div style="padding-left: 30px;" markdown="1"> Use two revolute joints and a gear joint to create a toy that has an external gear rotating around a fixed external gear as shown in <a class="el" href="#fig34">Fig. 34</a>. One revolute joint must have a motor and the other must not. To make the space bar reverse the motor, simply place a pointer to the revolute joint with the motor in local variable <code>m_pJoint</code> inherited from <code>CLevel::m_pJoint</code>. Your code must go into the <code>CExternal</code> constructor <code>CExternal::CExternal</code> in file <span style="background-color:#D8E4D8;">Round.cpp</span>. </div><p><a class="anchor" id="fig34"></a></p><div class="image">
+<img src="external256.gif" alt=""/>
+<div class="caption">
+Fig. 34: An external gear rotating around a fixed external gear.</div></div>
+<p><a class="anchor" id="problem6-1-2"></a></p><h3>Problem 6.1.2</h3>
+<div style="padding-left: 30px;" markdown="1"> Use two revolute joints and a gear joint to create a toy that has an external gear rotating inside a fixed internal gear as shown in <a class="el" href="#fig35">Fig. 35</a>. One revolute joint must have a motor and the other must not. To make the space bar reverse the motor, simply place a pointer to the revolute joint with the motor in local variable <code>m_pJoint</code> inherited from <code>CLevel::m_pJoint</code>. Your code must go into the <code>CInternal</code> constructor <code>CInternal::CInternal</code> in file <span style="background-color:#D8E4D8;">Round.cpp</span>. </div><p><a class="anchor" id="fig35"></a></p><div class="image">
+<img src="internal256.gif" alt=""/>
+<div class="caption">
+Fig. 35: An external gear rotating inside a fixed internal gear.</div></div>
+<p><a class="anchor" id="problem6-1-3"></a></p><h3>Problem 6.1.3</h3>
+<div style="padding-left: 30px;" markdown="1"> Use two revolute joints and a gear joint to create a toy that has an internal gear rotating around a fixed external gear as shown in <a class="el" href="#fig36">Fig. 36</a>. One revolute joint must have a motor and the other must not. To make the space bar reverse the motor, simply place a pointer to the revolute joint with the motor in local variable <code>m_pJoint</code> inherited from <code>CLevel::m_pJoint</code>. Your code must go into the <code>CInternal2</code> constructor <code>CInternal2::CInternal2</code> in file <span style="background-color:#D8E4D8;">Round.cpp</span>. </div><p><a class="anchor" id="fig36"></a></p><div class="image">
+<img src="internal2-320.gif" alt=""/>
+<div class="caption">
+Fig. 36: An internal gear rotating around a fixed external gear.</div></div>
+<p><a class="anchor" id="section6-2"></a></p><h2>6.2 Elliptical Gear Problems</h2>
+<p>An <em>ellipse</em> is a shape that is formed as follows. Choose two distinct points called the <em>foci</em> (the singular of which is <em>focus</em>) and a distance \(d\). The perimeter of the ellipse is the set of all points \(p\) such that the sum of the two distances from \(p\) to the foci is equal to \(d\). In <a class="el" href="#fig37">Fig. 37</a> (left), the point \(p\) is on the perimeter of the ellipse because \(d_0 + d_1 = d\). If we place the foci on a horizontal line, then the ellipse is symmetrical about horizontal and vertical lines through its center, and the foci are on the horizontal center line equidistant from the center, as we can see in <a class="el" href="#fig37">Fig. 37</a> (right).</p>
+<p><a class="anchor" id="fig37"></a></p><div class="image">
+<img src="ellipsedef.png" alt="" width="40%"/>
+<div class="caption">
+Fig. 37: Some ellipse definitions.</div></div>
+<p>Let \(a\) be the length of the major (horizontal) axis, \(b\) be the length of the minor (vertical) axis, and \(c\) be the <em>focal distance</em>, that is, the distance from the center to either focus (see <a class="el" href="#fig37">Fig. 37</a> (right)). The focal distance \(c\) is uniquely defined by the major and minor radii \(a\) and \(b\). That is, if we know \(a\) and \(b\), then we can calculate \(c\). This means that we can download an image of an elliptical gear from the internet, measure its height and width, and calculate \(c\) as follows.</p>
+<p>Let \(p_0\) be a point at the end of the horizontal axis through the center of the ellipse. Then, as shown in <a class="el" href="#fig38">Fig. 38</a> (left), the distance from \(p_0\) to the leftmost focus is \(a-c\) and the distance from \(p_0\) to the rightmost focus is \(a-c+2c=a+c\). The sum of the two distances is therefore \(2a\). Let \(p_1\) be a point at the end of the vertical axis through the center of the ellipse. Then, as shown in <a class="el" href="#fig38">Fig. 38</a> (right) \(p_1\) is at distance \(\sqrt{c^2+b^2}\) from each focus, which means that the sum of the distances is \(2\sqrt{c^2+b^2}\). Since both \(p_0\) and \(p_1\) are on the perimeter of the ellipse, it must be the case that \(2\sqrt{c^2+b^2} = 2a\), that is, \(c = \sqrt{a^2 - b^2}\).</p>
+<p><a class="anchor" id="fig38"></a></p><div class="image">
+<img src="ellipse-f.png" alt="" width="40%"/>
+<div class="caption">
+Fig. 38: Calculating the focal distance.</div></div>
+<p>Let \(p = (x,y)\) be the coordinates of a point on an ellipse with major radius \(a\) and minor radius \(b\) centered at the origin. The sum of the distances from \(p\) to the two focal points is   </p><p class="formulaDsp">
+\[
+\sqrt{(x+c)^2 + y^2} + \sqrt{(x-c)^2 + y^2}  =  2a.
+\]
+</p>
+<p> That is,   </p><p class="formulaDsp">
+\[
+\sqrt{(x+c)^2 + y^2}  =  2a - \sqrt{(x-c)^2 + y^2}.
+\]
+</p>
+<p> Squaring both sides,        </p><p class="formulaDsp">
+\[
+\begin{align*}
+(x+c)^2 + y^2  &amp;=  \left( 2a - \sqrt{(x-c)^2 + y^2} \right)^2\\
+x^2 + 2cx + c^2 + y^2 &amp;=  4a^2 - 4a \sqrt{(x-c)^2 + y^2} + (x-c)^2 + y^2\\
+2cx  &amp;=  4a^2 - 4a \sqrt{(x-c)^2 + y^2} - 2cx\\
+a^2 - cx  &amp;=  a \sqrt{(x-c)^2 + y^2}.
+\end{align*}
+\]
+</p>
+<p> Squaring both sides again,        </p><p class="formulaDsp">
+\[
+\begin{align*}
+(a^2 - cx)^2  &amp;=  a^2 ((x-c)^2 + y^2)\\
+c^2x^2 + a^4 &amp;=  a^2x^2 + a^2c^2 + a^2y^2\\
+a^4 - a^2c^2 &amp;=  a^2x^2 - c^2x^2 + a^2y^2\\
+a^2 (a^2 - c^2) &amp;=  (a^2 - c^2)x^2 + a^2y^2
+\end{align*}
+\]
+</p>
+<p> Since \(c^2 = a^2 + b^2\), we can now substitute for \(b^2 = c^2 - a^2\).   </p><p class="formulaDsp">
+\[
+a^2b^2  =  b^2 x^2 + a^2 y^2.
+\]
+</p>
+<p> Dividing both sides by \(a^2b^2\),   </p><p class="formulaDsp">
+\[
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1. \label{eq1}\tag{Equation 1}
+\]
+</p>
+<p> \(\ref{eq1}\) is the equation for an ellipse in Cartesian coordinates.</p>
+<p>Sometimes it is more useful to know the equation of an ellipse in polar coordinates. Let \(r\) be the length of a line at angle \(\theta\) counterclockwise from the long axis. This line ends at some point \(p=(r\cos \theta, r \sin\theta)\) on the ellipse. Therefore, by \(\ref{eq1}\),   </p><p class="formulaDsp">
+\[
+\frac{r^2\cos^2 \theta}{a^2} + \frac{r^2\sin^2 \theta}{b^2} = 1.
+\]
+</p>
+<p> That is,   </p><p class="formulaDsp">
+\[
+r = \frac{ab}{\sqrt{b^2\cos^2 \theta + a^2 \sin^2 \theta}}. \label{eq2}\tag{Equation 2}
+\]
+</p>
+<p> \(\ref{eq2}\) is the equation for an ellipse in polar coordinates.</p>
+<p><a class="anchor" id="problem6-2-1"></a></p><h3>Problem 6.2.1</h3>
+<div style="padding-left: 30px;" markdown="1"> Your code must go into <code>CEllipticalGear2::Move</code> in file <span style="background-color:#D8E4D8;">Elliptical.cpp</span>. </div><p><a class="anchor" id="fig35"></a></p><div class="image">
+<img src="DoubleLobe.gif" alt=""/>
+<div class="caption">
+Fig. 35: Double-lobe elliptical gears.</div></div>
+<p><a class="anchor" id="problem6-2-2"></a></p><h3>Problem 6.2.2</h3>
+<div style="padding-left: 30px;" markdown="1"> Your code must go into <code>CEllipticalGear1::Move</code> in file <span style="background-color:#D8E4D8;">Elliptical.cpp</span>. <br  />
+ </div><p><a class="anchor" id="fig36"></a></p><div class="image">
+<img src="SingleLobe.gif" alt=""/>
+<div class="caption">
+Fig. 36: Single-lobe elliptical gears.</div></div>
+<p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../cannon/index.html">Box2D Cannon Game</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

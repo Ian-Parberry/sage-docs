@@ -15,8 +15,10 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+important features,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
@@ -791,7 +793,205 @@ The orientation of each pulley wheel is then set by calling their `b2Body`'s
 and the the body's current position as the position parameter.
 
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+In the folder <span style="background-color:#D8E4D8;">`8. Box2D Joint Toy`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository
+you will find a folder <span style="background-color:#D8E4D8;">Problems</span> which will
+contain some code to help you with the problems below.
+
+\anchor section6-1
+## 6.1 Round Gear Problems
+
+In the following problems, an _external_ gear has teeth on the outside
+and an _internal_ gear has teeth on the inside.
+Navigate to the <span style="background-color:#D8E4D8;">Problems</span> folder mentioned above
+Open <span style="background-color:#D8E4D8;">`Gears.sln`</span>
+with Visual Studio. 
+When you compile and run it,
+each level will correspond to a problem below and it should react to the
+key controls in \ref section2 "Section 2" with the exception
+of the space bar, more of which later.
+The first level corresponds to \ref problem6-1-1 "Problem 6.1.1"
+and displays two gears in their start positions and orientations
+as shown in \ref fig32 "Fig. 32".
+The second level corresponds to \ref problem6-1-2 "Problem 6.1.2"
+and displays two gears in their start positions and orientations
+as shown in \ref fig33 "Fig. 33".
+The third level corresponds to \ref problem6-1-3 "Problem 6.1.3"
+and displays two gears in their start positions and orientations are also
+as shown in \ref fig33 "Fig. 33".
+
+\anchor fig32
+\image html externalstart.png "Fig. 32: Start position for the first level."  width=180
+
+\anchor fig33
+\image html internalstart.png "Fig. 33: Start position for the second and third levels."  width=256
+
+\anchor problem6-1-1
+### Problem 6.1.1
+
+<div style="padding-left: 30px;" markdown="1">
+Use two revolute joints and a gear joint to create a toy that has
+an external gear rotating around a fixed external gear as shown in
+\ref fig34 "Fig. 34". 
+One revolute joint must have a motor and the other must not.
+To make the space bar reverse the motor, simply place a pointer to the revolute
+joint with the motor in local variable `m_pJoint` inherited from `CLevel::m_pJoint`.
+Your code must go into the `CExternal` constructor `CExternal::CExternal` in
+file <span style="background-color:#D8E4D8;">Round.cpp</span>. 
+</div>
+
+\anchor fig34
+\image html external256.gif "Fig. 34: An external gear rotating around a fixed external gear." 
+
+\anchor problem6-1-2
+### Problem 6.1.2
+
+<div style="padding-left: 30px;" markdown="1">
+Use two revolute joints and a gear joint to create a toy that has
+an external gear rotating inside a fixed internal gear as shown in
+\ref fig35 "Fig. 35".
+One revolute joint must have a motor and the other must not.
+To make the space bar reverse the motor, simply place a pointer to the revolute
+joint with the motor in local variable `m_pJoint` inherited from `CLevel::m_pJoint`.
+Your code must go into the `CInternal` constructor `CInternal::CInternal` in
+file <span style="background-color:#D8E4D8;">Round.cpp</span>. 
+</div>
+
+\anchor fig35
+\image html internal256.gif "Fig. 35: An external gear rotating inside a fixed internal gear." 
+
+\anchor problem6-1-3
+### Problem 6.1.3
+
+<div style="padding-left: 30px;" markdown="1">
+Use two revolute joints and a gear joint to create a toy that has
+an internal gear rotating around a fixed external gear as shown in
+\ref fig36 "Fig. 36".
+One revolute joint must have a motor and the other must not.
+To make the space bar reverse the motor, simply place a pointer to the revolute
+joint with the motor in local variable `m_pJoint` inherited from `CLevel::m_pJoint`.
+Your code must go into the `CInternal2` constructor `CInternal2::CInternal2` in
+file <span style="background-color:#D8E4D8;">Round.cpp</span>. 
+</div>
+
+\anchor fig36
+\image html internal2-320.gif "Fig. 36: An internal gear rotating around a fixed external gear." 
+
+\anchor section6-2
+## 6.2 Elliptical Gear Problems
+
+An _ellipse_ is a shape that is
+formed as follows. Choose two distinct points
+called the _foci_ (the singular of which is _focus_) and a distance \f$d\f$. The perimeter
+of the ellipse is the set of all points \f$p\f$
+such that the sum of the two distances from \f$p\f$ to the foci is equal to \f$d\f$.
+In \ref fig37 "Fig. 37" (left), the point \f$p\f$ is on the perimeter of the ellipse
+because \f$d_0 + d_1 = d\f$. 
+If we place the foci on a horizontal line, then the ellipse is
+symmetrical about horizontal and vertical lines through its center, and the foci are
+on the horizontal center line equidistant from the center, as we can see in \ref fig37 "Fig. 37" (right).
+
+\anchor fig37
+\image html ellipsedef.png "Fig. 37: Some ellipse definitions." width=40%
+
+Let \f$a\f$ be the length of the major (horizontal) axis, \f$b\f$ be the length of the minor (vertical)
+axis, and \f$c\f$ be the _focal distance_, that is, the distance from the center to either focus
+(see \ref fig37 "Fig. 37" (right)).
+The focal distance \f$c\f$ is uniquely defined by the major and minor radii \f$a\f$ and \f$b\f$.
+That is, if we know \f$a\f$ and \f$b\f$, then we can calculate \f$c\f$. This means that we can download
+an image of an elliptical gear from the internet, measure its height and width, and
+calculate \f$c\f$ as follows. 
+
+Let \f$p_0\f$ be a point at the end of the horizontal axis through the center of the ellipse.
+Then, as shown in \ref fig38 "Fig. 38" (left), the distance from \f$p_0\f$ to the leftmost
+focus is \f$a-c\f$ and the distance from \f$p_0\f$ to the rightmost focus is \f$a-c+2c=a+c\f$. The sum of
+the two distances is therefore \f$2a\f$. Let \f$p_1\f$ be a point at the end of the vertical axis
+through the center of the ellipse. 
+Then, as shown in \ref fig38 "Fig. 38" (right) \f$p_1\f$ is at distance \f$\sqrt{c^2+b^2}\f$ from each focus,
+which means that the sum of the distances is \f$2\sqrt{c^2+b^2}\f$.
+Since both \f$p_0\f$ and \f$p_1\f$ are on the perimeter of the ellipse, it must be the case that
+\f$2\sqrt{c^2+b^2} = 2a\f$, that is, \f$c = \sqrt{a^2 - b^2}\f$.
+
+\anchor fig38
+\image html ellipse-f.png "Fig. 38: Calculating the focal distance." width=40%
+
+Let \f$p = (x,y)\f$ be the coordinates of a point on an ellipse with major radius \f$a\f$
+and minor radius \f$b\f$ centered at the origin. The sum of the distances from \f$p\f$ to the two focal points is
+\f[
+\sqrt{(x+c)^2 + y^2} + \sqrt{(x-c)^2 + y^2}  =  2a.
+\f]
+That is,
+\f[
+\sqrt{(x+c)^2 + y^2}  =  2a - \sqrt{(x-c)^2 + y^2}.
+\f]
+Squaring both sides,
+\f[
+\begin{align*}
+(x+c)^2 + y^2  &=  \left( 2a - \sqrt{(x-c)^2 + y^2} \right)^2\\
+x^2 + 2cx + c^2 + y^2 &=  4a^2 - 4a \sqrt{(x-c)^2 + y^2} + (x-c)^2 + y^2\\
+2cx  &=  4a^2 - 4a \sqrt{(x-c)^2 + y^2} - 2cx\\
+a^2 - cx  &=  a \sqrt{(x-c)^2 + y^2}.
+\end{align*}
+\f]
+Squaring both sides again,
+\f[
+\begin{align*}
+(a^2 - cx)^2  &=  a^2 ((x-c)^2 + y^2)\\
+c^2x^2 + a^4 &=  a^2x^2 + a^2c^2 + a^2y^2\\
+a^4 - a^2c^2 &=  a^2x^2 - c^2x^2 + a^2y^2\\
+a^2 (a^2 - c^2) &=  (a^2 - c^2)x^2 + a^2y^2
+\end{align*}
+\f]
+Since \f$c^2 = a^2 + b^2\f$, we can now substitute for \f$b^2 = c^2 - a^2\f$.
+\f[
+a^2b^2  =  b^2 x^2 + a^2 y^2.
+\f]
+Dividing both sides by \f$a^2b^2\f$,
+\f[
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1. \label{eq1}\tag{Equation 1}
+\f]
+\f$\ref{eq1}\f$ is the equation for an ellipse in Cartesian coordinates.
+
+Sometimes it is more useful to know the equation of an ellipse in polar coordinates.
+Let \f$r\f$ be the length of a line at angle \f$\theta\f$ counterclockwise from the long axis.
+This line ends at some point \f$p=(r\cos \theta, r \sin\theta)\f$ on the ellipse.
+Therefore, by \f$\ref{eq1}\f$,
+\f[
+\frac{r^2\cos^2 \theta}{a^2} + \frac{r^2\sin^2 \theta}{b^2} = 1.
+\f]
+That is,
+\f[
+r = \frac{ab}{\sqrt{b^2\cos^2 \theta + a^2 \sin^2 \theta}}. \label{eq2}\tag{Equation 2}
+\f]
+\f$\ref{eq2}\f$ is the equation for an ellipse in polar coordinates.
+
+\anchor problem6-2-1
+### Problem 6.2.1
+
+<div style="padding-left: 30px;" markdown="1">
+Your code must go into `CEllipticalGear2::Move` in
+file <span style="background-color:#D8E4D8;">Elliptical.cpp</span>. 
+</div>
+
+\anchor fig35
+\image html DoubleLobe.gif "Fig. 35: Double-lobe elliptical gears." 
+
+\anchor problem6-2-2
+### Problem 6.2.2
+
+<div style="padding-left: 30px;" markdown="1">
+Your code must go into `CEllipticalGear1::Move` in
+file <span style="background-color:#D8E4D8;">Elliptical.cpp</span>.  
+</div>
+
+\anchor fig36
+\image html SingleLobe.gif "Fig. 36: Single-lobe elliptical gears." 
+
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../cannon/index.html">Box2D Cannon Game</a>.
 
