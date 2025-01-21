@@ -95,7 +95,7 @@ $(function(){ initResizable(false); });
 
 <div><div class="contents">
 <div class="textblock"><p><a class="anchor" id="section1"></a></p><h1>1. Introduction</h1>
-<p>The Box2D Joint Toy demonstrates some important Box2D joints, including revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound. The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, important features, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
+<p>The Box2D Joint Toy demonstrates some important Box2D joints, including revolute, gear, prismatic, wheel, distance, and pulley joints. It is divided into 7 levels. This code demo has no sound. The remainder of this page is divided into six sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, important features, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -364,9 +364,10 @@ Fig. 30: Direction of motion for Elephant Drop.</div></div>
 Fig. 31: Angle from distance around the circumference.</div></div>
 <p>This calculation is carried out in <code><a class="el" href="class_c_pulley.html#a94f5a448781d0810d75cc8a8b417828e" title="Rotate the pulley wheels.">CPulley::Move</a></code>. The orientation of each pulley wheel is then set by calling their <code>b2Body</code>'s <code>SetTransform</code> function with \(\theta\) as the orientation parameter and the the body's current position as the position parameter.</p>
 <p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
-<p>In the folder <span style="background-color:#D8E4D8;"><code>8. Box2D Joint Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository you will find a folder <span style="background-color:#D8E4D8;">Problems</span> which will contain some code to help you with the problems below.</p>
+<p>In the folder <span style="background-color:#D8E4D8;"><code>8. Box2D Joint Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository you will find a folder <span style="background-color:#D8E4D8;">Problems</span> which will contain some code to help you with the problems below. In the <span style="background-color:#D8E4D8;">Problems</span> folder, open <span style="background-color:#D8E4D8;"><code>Gear Toy.sln</code></span> with Visual Studio. Each level of the Gear Toy corresponds to a problem below and it should react to the key controls in <a class="el" href="#section2">Section 2</a>.</p>
 <p><a class="anchor" id="section6-1"></a></p><h2>6.1 Round Gear Problems</h2>
-<p>In the following problems, an <em>external</em> gear has teeth on the outside and an <em>internal</em> gear has teeth on the inside. Navigate to the <span style="background-color:#D8E4D8;">Problems</span> folder mentioned above Open <span style="background-color:#D8E4D8;"><code>Gears.sln</code></span> with Visual Studio. When you compile and run it, each level will correspond to a problem below and it should react to the key controls in <a class="el" href="#section2">Section 2</a> with the exception of the space bar, more of which later. The first level corresponds to <a class="el" href="#problem6-1-1">Problem 6.1.1</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig32">Fig. 32</a>. The second level corresponds to <a class="el" href="#problem6-1-2">Problem 6.1.2</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig33">Fig. 33</a>. The third level corresponds to <a class="el" href="#problem6-1-3">Problem 6.1.3</a> and displays two gears in their start positions and orientations are also as shown in <a class="el" href="#fig33">Fig. 33</a>.</p>
+<p>The first level of the Gear Toy corresponds to <a class="el" href="#problem6-1-1">Problem 6.1.1</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig32">Fig. 32</a>. The second level of the Gear Toy corresponds to <a class="el" href="#problem6-1-2">Problem 6.1.2</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig33">Fig. 33</a>. The third level of the Gear Toy corresponds to <a class="el" href="#problem6-1-3">Problem 6.1.3</a> and displays two gears in their start positions and orientations are also as shown in <a class="el" href="#fig33">Fig. 33</a>.</p>
+<p>In the following problems, an <em>external</em> gear has teeth on the outside and an <em>internal</em> gear has teeth on the inside.</p>
 <p><a class="anchor" id="fig32"></a></p><div class="image">
 <img src="externalstart.png" alt="" width="180"/>
 <div class="caption">
@@ -391,6 +392,7 @@ Fig. 35: An external gear rotating inside a fixed internal gear.</div></div>
 <div class="caption">
 Fig. 36: An internal gear rotating around a fixed external gear.</div></div>
 <p><a class="anchor" id="section6-2"></a></p><h2>6.2 Elliptical Gear Problems</h2>
+<p>The fourth level of the Gear Toy corresponds to <a class="el" href="#problem6-2-1">Problem 6.2.1</a> and displays two elliptical gears with the left gear driven by a motor as shown in <a class="el" href="#fig35">Fig.35</a> and the right gear in its initial position. The fifth level of the Gear Toy corresponds to <a class="el" href="#problem6-2-2">Problem 6.2.2</a> and displays two elliptical gears with the left gear driven by a motor as shown in <a class="el" href="#fig35">Fig.35</a> and the right gear in its initial position. Before we start writing code we need some basic math facts about ellipses.</p>
 <p>An <em>ellipse</em> is a shape that is formed as follows. Choose two distinct points called the <em>foci</em> (the singular of which is <em>focus</em>) and a distance \(d\). The perimeter of the ellipse is the set of all points \(p\) such that the sum of the two distances from \(p\) to the foci is equal to \(d\). In <a class="el" href="#fig37">Fig. 37</a> (left), the point \(p\) is on the perimeter of the ellipse because \(d_0 + d_1 = d\). If we place the foci on a horizontal line, then the ellipse is symmetrical about horizontal and vertical lines through its center, and the foci are on the horizontal center line equidistant from the center, as we can see in <a class="el" href="#fig37">Fig. 37</a> (right).</p>
 <p><a class="anchor" id="fig37"></a></p><div class="image">
 <img src="ellipsedef.png" alt="" width="40%"/>
@@ -454,18 +456,69 @@ r = \frac{ab}{\sqrt{b^2\cos^2 \theta + a^2 \sin^2 \theta}}. \label{eq2}\tag{Equa
 \]
 </p>
 <p> \(\ref{eq2}\) is the equation for an ellipse in polar coordinates.</p>
+<p>As in <a class="el" href="#section6-1">Section 6.1</a>, navigate to the <span style="background-color:#D8E4D8;">Problems</span> folder and open <span style="background-color:#D8E4D8;"><code>Gears.sln</code></span> with Visual Studio. When you compile and run it, each level will correspond to a problem below and it should react to the key controls in <a class="el" href="#section2">Section 2</a> with the exception of the space bar, more of which later. The first level corresponds to <a class="el" href="#problem6-1-1">Problem 6.1.1</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig32">Fig. 32</a>. The second level corresponds to <a class="el" href="#problem6-1-2">Problem 6.1.2</a> and displays two gears in their start positions and orientations as shown in <a class="el" href="#fig37">Fig. 37</a>.</p>
 <p><a class="anchor" id="problem6-2-1"></a></p><h3>Problem 6.2.1</h3>
-<div style="padding-left: 30px;" markdown="1"> Your code must go into <code>CEllipticalGear2::Move</code> in file <span style="background-color:#D8E4D8;">Elliptical.cpp</span>. </div><p><a class="anchor" id="fig35"></a></p><div class="image">
-<img src="DoubleLobe.gif" alt=""/>
+<div style="padding-left: 30px;" markdown="1"> Consider the two meshed elliptical gears rotating around their centers shown in <a class="el" href="#fig35">Fig.35</a>. The left gear is driven by a motor at a constant rate of rotation. The gear rotates at a varying rate that has two local maxima and two local minima per revolution. These are called <em>double lobe</em> elliptical gears. Suppose that the gear on the left of <a class="el" href="#fig36">Fig. 36</a> is rotated counterclockwise through angle \(\theta_0\). Then the gear on the right rotates counterclockwise through some angle \(\pi/2 - \theta_1\) in order to keep the sum of the two radii along the line joining their centers \(r_0+r_1\) constant. </div><p><a class="anchor" id="fig35"></a></p><div class="image">
+<img src="DoubleLobe.gif" alt="" width="300"/>
 <div class="caption">
 Fig. 35: Double-lobe elliptical gears.</div></div>
-<p><a class="anchor" id="problem6-2-2"></a></p><h3>Problem 6.2.2</h3>
-<div style="padding-left: 30px;" markdown="1"> Your code must go into <code>CEllipticalGear1::Move</code> in file <span style="background-color:#D8E4D8;">Elliptical.cpp</span>. <br  />
- </div><p><a class="anchor" id="fig36"></a></p><div class="image">
-<img src="SingleLobe.gif" alt=""/>
+<p><a class="anchor" id="fig36"></a></p><div class="image">
+<img src="ellipserotate.png" alt="" width="50%"/>
 <div class="caption">
-Fig. 36: Single-lobe elliptical gears.</div></div>
-<p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
+Fig. 36: Double-lobe elliptical gears.</div></div>
+<div style="padding-left: 30px;" markdown="1"> We can calculate \(\theta_1\) from \(\theta_0\) in three steps. First we calculate \(r_0\) from \(\theta_0\). Then we calculate \(r_1\) from \(r_0\). Then we calculate \(\theta_1\) from \(r_1\). The first two steps are easy. By \(\ref{eq2}\),   <p class="formulaDsp">
+\[
+r_0 = \frac{ab}{\sqrt{b^2 \cos^2 \theta_0 + a^2 \sin^2 \theta_0}}.
+\]
+</p>
+ Since the initial position of the gears has one gear rotated by \(\pi/2\) with respect to the other (see <a class="el" href="#fig36">Fig. 36</a>, left), \(r_0+r_1=a+b\). Therefore, \(r_1 = a+b-r_0\).</div><div style="padding-left: 30px;" markdown="1">Now that we have \(r_1\) we can calculate \(\theta_1\) as follows. By \(\ref{eq2}\),   <p class="formulaDsp">
+\[
+r_1^2 = \frac{a^2b^2}{b^2 \cos^2 (\theta_1 + \pi/2) + a^2 \sin^2 (\theta_1 + \pi/2)},
+\]
+</p>
+ and therefore, inverting both sides and multiplying by \(ab\),   <p class="formulaDsp">
+\[
+a^2 b^2/r_1^2 = b^2 \cos^2 (\theta_1 + \pi/2) + a^2 \sin^2 (\theta_1 + \pi/2) .
+\]
+</p>
+ Since (by the Theorem of Pythagoras), \(\sin^2 (\theta_1 + \pi/2) = 1 - \cos^2 (\theta_1 + \pi/2)\), we Substitute for \(\sin^2 \theta_1\) in the above,   <p class="formulaDsp">
+\[
+b^2 \cos^2 (\theta_1 + \pi/2)_1 + a^2 (1 - (\theta_1 + \pi/2)^2 \theta_1) = a^2 b^2/r_1^2.
+\]
+</p>
+ Therefore,   <p class="formulaDsp">
+\[
+\cos^2 (\theta_1 + \pi/2) = (a^2 b^2/r_1^2 - a^2)/(b^2 - a^2),
+\]
+</p>
+ that is, since \(\cos (x + \pi/2) = \sin x\) for all angles \(x\),   <p class="formulaDsp">
+\[
+\sin^2 \theta_1  = (a^2 b^2/r_1^2 - a^2)/(b^2 - a^2).
+\]
+</p>
+ Therefore,     <p class="formulaDsp">
+\[
+\theta_1 =  \sin^{-1} (
+\sqrt{a^2 - a^2 b^2/r_1^2}/f
+) ,
+\]
+</p>
+ where \(f\) is the focal distance. We can therefore compute \(\theta_1\) from \(\theta_0\) and the major and minor radiuses of the elliptical gears \(a\) and \(b\) respectively as follows: <pre class="fragment">const float ComputeTheta1(const float a, const float b, const float theta0){
+  const float x = b*cosf(theta0);
+  const float y = a*sinf(theta0);
+  const float r0 = a*b/(sqrtf(x*x + y*y));
+  const float r1 = a + b - r0;
+  const float f = sqrtf(a*a - b*b); //focal distance
+  const float d = a*b/r1;
+
+  return asinf(sqrt(a*a - d*d)/f); 
+} //ComputeTheta1
+</pre></div><div style="padding-left: 30px;" markdown="1">Therefore the right gear has to be rotated a quarter of a turn counterclockwise from its initial orientation plus \(\theta_1\) clockwise to angle \(b2_pi - \theta_1\). Finally, <code>asinf</code> returns a value in the first or second quadrant, whereas we want an angle that can be in any quadrant. The correct quadrant needs to be corrected in code or else the right gear sprite will jump from one orientation to another at multiples of \(\pi/2\)..</div><div style="padding-left: 30px;" markdown="1">Level 4 of the Gear Toy shows two elliptical gears with the left gear driven by a motor as in <a class="el" href="#fig35">Fig. 35</a> and the right gear static in its initial position. Write code for function <code>CEllipticalGear2::Move</code> in file <span style="background-color:#D8E4D8;">Elliptical.cpp</span> to rotate the right gear meshed with the left gear as shown in <a class="el" href="#fig35">Fig. 35</a>. You may use function <code>ComputeTheta1</code> as described above. </div><p><a class="anchor" id="problem6-2-2"></a></p><h3>Problem 6.2.2</h3>
+<div style="padding-left: 30px;" markdown="1"> Consider the two meshed elliptical gears rotating around their centers shown in <a class="el" href="#fig37">Fig.37</a>. The left gear is driven by a motor at a constant rate of rotation. The gear rotates at a varying rate that has one local maximum and one local minimum per revolution. These are called <em>single lobe</em> elliptical gears. Suppose that the gear on the left of <a class="el" href="#fig37">Fig. 37</a> is rotated counterclockwise through angle \(\theta_0\). Then the gear on the right rotates counterclockwise through some angle \(\pi + \theta_1\) in order to keep the sum of the two radii along the line joining their centers \(r_0+r_1\) constant. </div><p><a class="anchor" id="fig37"></a></p><div class="image">
+<img src="SingleLobe.gif" alt="" width="400"/>
+<div class="caption">
+Fig. 37: Single-lobe elliptical gears.</div></div>
+<div style="padding-left: 30px;" markdown="1"> Level 5 of the Gear Toy shows two elliptical gears with the left gear driven by a motor as in <a class="el" href="#fig37">Fig. 37</a> and the right gear static in its initial position. Write code for function <code>CEllipticalGear1::Move</code> in file <span style="background-color:#D8E4D8;">Elliptical.cpp</span> to rotate the right gear meshed with the left gear as shown in <a class="el" href="#fig37">Fig. 37</a>. </div><p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../cannon/index.html">Box2D Cannon Game</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
