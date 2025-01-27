@@ -93,10 +93,10 @@ described more detail in the subsections below.
 \anchor fig1
 \image html l1.png "Fig. 1: The windmill." width=60%
 
-A windmill with a revolute joint connecting the vanes to the body.
+A windmill with a revolute joint connecting the fan to the body.
 The revolute joint has a motor (see \ref fig1 "Fig. 1"). 
 The `Space` bar reverses the motor's direction of rotation. 
-Notice that the vanes take a while to spin up to full speed,
+Notice that the fan takes a while to spin up to full speed,
 and when the direction of the motor is reversed they slowly spin down
 to zero before spinning up in the opposite direction. This is a property
 of motors in Box2D and will depend of the mass of the body being rotated.
@@ -798,26 +798,76 @@ and the the body's current position as the position parameter.
 In the folder <span style="background-color:#D8E4D8;">`8. Box2D Joint Toy`</span> in your
 copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository
 you will find a folder <span style="background-color:#D8E4D8;">Problems</span> which will
-contain some code to help you with the problems below.
-In the <span style="background-color:#D8E4D8;">Problems</span> folder,
-open <span style="background-color:#D8E4D8;">`Gear Toy.sln`</span>
-with Visual Studio. 
-Each level of the
-Gear Toy corresponds to a problem below and it should react to the
-key controls in \ref section2 "Section 2".
+contain some code to help you get started with the problems below.
 
 \anchor section6-1
-## 6.1 Round Gear Problems
+## 6.1 Windmill Problems
 
-The first level of the Gear Toy corresponds to \ref problem6-1-1 "Problem 6.1.1"
+In the folder <span style="background-color:#D8E4D8;">Windmill</span>, which you will find in the
+<span style="background-color:#D8E4D8;">Problems</span> folder described in 
+the \ref section6 "introduction to Section 6" above,
+open <span style="background-color:#D8E4D8;">`Windmill.sln`</span>
+with Visual Studio. 
+The key controls in \ref section2 "Section 2" apply here too, except for the
+space bar which, instead of reversing the direction of the motor on the revolute joint,
+launches a collection of crates and balls using code borrowed from the
+<a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>.
+
+\anchor problem6-1-1
+### Problem 6.1.1
+
+<div style="padding-left: 30px;" markdown="1">
+You might recall from \ref section5-1 "Section 5.1" that the only shape in the Windmill
+level is a circle for the fan. Therefore, if you hit the space bar repeatedly to fill the
+window with crates and balls they will overlap the base of the windmill but not
+the fan, as shown in \ref fig90 "Fig. 90"
+
+\anchor fig90
+\image html wm-blank.png "Fig. 90: Filling the windmill level with crates and balls viewed as sprites (left) and lines (right)."  width=95%
+
+Add code to `CWindmill::CreateBase` that adds shapes to the windmill base object
+so that the balls collide with the body of the windmill as shown in \ref fig91 "Fig. 91".
+
+\anchor fig91
+\image html wm-sln.png "Fig. 91: Filling the windmill level with crates and balls viewed as sprites (left) and lines (right)."  width=95%
+
+Note that the shape coordinates in your code need to be in physics coordinates
+relative to the center of the sprite. You can find the coordinates of the points in image coordinates
+(relative to the top left corner of the sprite) by opening
+<span style="background-color:#D8E4D8;">windmillbase.png</span> in an image editing tool
+such as <span style="background-color:#D8E4D8;">Paint.net</span>
+(available for free download from <a href="https://www.getpaint.net/download.html">https://www.getpaint.net/download.html</a>. 
+In <span style="background-color:#D8E4D8;">Paint.net</span> style="background-color:#D8E4D8;">
+the coordinates of the mouse pointer are given at bottom of the window
+as shown in \ref fig92 "Fig. 92", left.
+I’ve marked the points from two polygons for you below in \ref fig92 "Fig. 92", right. 
+Do the crosspiece yourself.
+Note that I've given you a handy function `RemapPoints` in <span style="background-color:#D8E4D8;">Windmill.cpp</span>
+that takes coordinates from the image and maps them to the correct equivalents for Box2D.
+
+\anchor fig92
+\image html wm-hints.png "Fig. 92: Mouse coordinates in paint.net (left), and location of some points (right)."  width=70%
+
+</div>
+
+\anchor section6-2
+## 6.2 Round Gear Problems
+
+In the folder <span style="background-color:#D8E4D8;">Gears</span>, which you will find in the
+<span style="background-color:#D8E4D8;">Problems</span> folder described in 
+the \ref section6 "introduction to Section 6" above,
+open <span style="background-color:#D8E4D8;">`Gear Toy.sln`</span>
+with Visual Studio. 
+The first level of the Gear Toy corresponds to \ref problem6-2-1 "Problem 6.2.1"
 and displays two gears in their start positions and orientations
 as shown in \ref fig32 "Fig. 32".
-The second level of the Gear Toy corresponds to \ref problem6-1-2 "Problem 6.1.2"
+The second level of the Gear Toy corresponds to \ref problem6-2-2 "Problem 6.2.2"
 and displays two gears in their start positions and orientations
 as shown in \ref fig33 "Fig. 33".
-The third level of the Gear Toy corresponds to \ref problem6-1-3 "Problem 6.1.3"
+The third level of the Gear Toy corresponds to \ref problem6-2-3 "Problem 6.2.3"
 and displays two gears in their start positions and orientations are also
 as shown in \ref fig33 "Fig. 33".
+The key controls in \ref section2 "Section 2" apply here too.
 
 In the following problems, an _external_ gear has teeth on the outside
 and an _internal_ gear has teeth on the inside.
@@ -828,8 +878,8 @@ and an _internal_ gear has teeth on the inside.
 \anchor fig33
 \image html internalstart.png "Fig. 33: Start position for the second and third levels."  width=256
 
-\anchor problem6-1-1
-### Problem 6.1.1
+\anchor problem6-2-1
+### Problem 6.2.1
 
 <div style="padding-left: 30px;" markdown="1">
 Use two revolute joints and a gear joint to create a toy that has
@@ -845,8 +895,8 @@ file <span style="background-color:#D8E4D8;">Round.cpp</span>.
 \anchor fig34
 \image html external256.gif "Fig. 34: An external gear rotating around a fixed external gear." 
 
-\anchor problem6-1-2
-### Problem 6.1.2
+\anchor problem6-2-2
+### Problem 6.2.2
 
 <div style="padding-left: 30px;" markdown="1">
 Use two revolute joints and a gear joint to create a toy that has
@@ -862,8 +912,8 @@ file <span style="background-color:#D8E4D8;">Round.cpp</span>.
 \anchor fig35
 \image html internal256.gif "Fig. 35: An external gear rotating inside a fixed internal gear." 
 
-\anchor problem6-1-3
-### Problem 6.1.3
+\anchor problem6-2-3
+### Problem 6.2.3
 
 <div style="padding-left: 30px;" markdown="1">
 Use two revolute joints and a gear joint to create a toy that has
@@ -879,13 +929,18 @@ file <span style="background-color:#D8E4D8;">Round.cpp</span>.
 \anchor fig36
 \image html internal2-320.gif "Fig. 36: An internal gear rotating around a fixed external gear." 
 
-\anchor section6-2
-## 6.2 Elliptical Gear Problems
-
-The fourth level of the Gear Toy corresponds to \ref problem6-2-1 "Problem 6.2.1"
+\anchor section6-3
+## 6.3 Elliptical Gear Problems
+In the folder <span style="background-color:#D8E4D8;">Gears</span>, which you will find in the
+<span style="background-color:#D8E4D8;">Problems</span> folder described in 
+the \ref section6 "introduction to Section 6" above,
+once again
+open <span style="background-color:#D8E4D8;">`Gear Toy.sln`</span>
+with Visual Studio. 
+The fourth level of the Gear Toy corresponds to \ref problem6-3-1 "Problem 6.3.1"
 and displays two elliptical gears with the left gear driven by a
 motor as shown in \ref fig35 "Fig.35" and the right gear in its initial position.
-The fifth level of the Gear Toy corresponds to \ref problem6-2-2 "Problem 6.2.2"
+The fifth level of the Gear Toy corresponds to \ref problem6-3-2 "Problem 6.3.2"
 and displays two elliptical gears with the left gear driven by a
 motor as shown in \ref fig35 "Fig.35" and the right gear in its initial position.
 Before we start writing code we need some basic math facts about ellipses.
@@ -975,23 +1030,23 @@ r = \frac{ab}{\sqrt{b^2\cos^2 \theta + a^2 \sin^2 \theta}}. \label{eq2}\tag{Equa
 \f]
 \f$\ref{eq2}\f$ is the equation for an ellipse in polar coordinates.
 
-As in \ref section6-1 "Section 6.1",
-navigate to the <span style="background-color:#D8E4D8;">Problems</span> folder and
+As in \ref section6-2 "Section 6.2",
+navigate to the <span style="background-color:#D8E4D8;">Gears</span> folder and
 open <span style="background-color:#D8E4D8;">`Gears.sln`</span>
 with Visual Studio. 
 When you compile and run it,
 each level will correspond to a problem below and it should react to the
 key controls in \ref section2 "Section 2" with the exception
 of the space bar, more of which later.
-The first level corresponds to \ref problem6-1-1 "Problem 6.1.1"
+The first level corresponds to \ref problem6-3-1 "Problem 6.3.1"
 and displays two gears in their start positions and orientations
 as shown in \ref fig32 "Fig. 32".
-The second level corresponds to \ref problem6-1-2 "Problem 6.1.2"
+The second level corresponds to \ref problem6-3-2 "Problem 6.3.2"
 and displays two gears in their start positions and orientations
 as shown in \ref fig37 "Fig. 37".
 
-\anchor problem6-2-1
-### Problem 6.2.1
+\anchor problem6-3-1
+### Problem 6.3.1
 
 <div style="padding-left: 30px;" markdown="1">
 Consider the two meshed elliptical gears rotating around their centers shown in \ref fig35 "Fig.35".
@@ -1008,7 +1063,7 @@ in order to keep the sum of the two radii along the line joining their centers \
 \image html DoubleLobe.gif "Fig. 35: Double-lobe elliptical gears." width=300
 
 \anchor fig36
-\image html ellipserotate.png "Fig. 36: Double-lobe elliptical gears." width=50%
+\image html ellipserotate.png "Fig. 36: Geometry of double-lobe elliptical gears." width=45%
 
 <div style="padding-left: 30px;" markdown="1">
 We can calculate \f$\theta_1\f$ from \f$\theta_0\f$ in three steps.
@@ -1060,7 +1115,7 @@ We can therefore compute \f$\theta_1\f$ from \f$\theta_0\f$ and the
 major and minor radiuses of the elliptical gears \f$a\f$ and \f$b\f$ respectively
 as follows:
 
-    const float ComputeTheta1(const float a, const float b, const float theta0){
+    const float CEllipticalGear2::ComputeTheta1(const float a, const float b, const float theta0){
       const float x = b*cosf(theta0);
       const float y = a*sinf(theta0);
       const float r0 = a*b/(sqrtf(x*x + y*y));
@@ -1073,10 +1128,10 @@ as follows:
 
 Therefore the right gear has to be rotated a quarter of a turn counterclockwise from its
 initial orientation plus \f$\theta_1\f$ clockwise
-to angle \f$b2_pi - \theta_1\f$. Finally, `asinf` returns a value in the first
+to angle \f$\pi - \theta_1\f$. Finally, note that `asinf` returns a value in the first
 or second quadrant,
 whereas we want an angle that can be in any quadrant. The correct quadrant needs to be corrected in
-code or else the right gear sprite will jump from one orientation to another at multiples of \f$\pi/2\f$..
+code or else the right gear sprite will jump from one orientation to another at multiples of \f$\pi/2\f$.
 
 Level 4 of the Gear Toy shows two elliptical gears with the left gear driven
 by a motor as in \ref fig35 "Fig. 35" and the right gear static in its initial position.
@@ -1086,11 +1141,12 @@ to rotate the right gear meshed with the left gear as shown in \ref fig35 "Fig. 
 You may use function `ComputeTheta1` as described above.
 </div>
 
-\anchor problem6-2-2
-### Problem 6.2.2
+\anchor problem6-3-2
+### Problem 6.3.2
 
 <div style="padding-left: 30px;" markdown="1">
-Consider the two meshed elliptical gears rotating around their centers shown in \ref fig37 "Fig.37".
+Consider the two meshed elliptical gears rotating around their centers shown in
+their initial positions in \ref fig37 "Fig.37" and animated in \ref fig38 "Fig.38".
 The left gear is driven by a motor at a constant rate of rotation.
 The gear rotates at a varying rate that has one local maximum and
 one local minimum per revolution. These are called _single lobe_ elliptical gears.
@@ -1098,12 +1154,78 @@ Suppose that the gear on the left of \ref fig37 "Fig. 37" is rotated countercloc
 through angle \f$\theta_0\f$. Then the gear on the right rotates counterclockwise through some angle
 \f$\pi + \theta_1\f$
 in order to keep the sum of the two radii along the line joining their centers \f$r_0+r_1\f$ constant.
-</div>
 
 \anchor fig37
-\image html SingleLobe.gif "Fig. 37: Single-lobe elliptical gears." width=400
+\image html elliptical1initial.png "Fig. 37: Single-lobe elliptical gears in their initial position." width=400
 
-<div style="padding-left: 30px;" markdown="1">
+\anchor fig38
+\image html SingleLobe.gif "Fig. 38: Single-lobe elliptical gears." width=400
+
+We again calculate \f$\theta_1\f$ from \f$\theta_0\f$ in three steps.
+First we calculate \f$r_0\f$ from \f$\theta_0\f$.
+Then we calculate \f$r_1\f$ from \f$r_0\f$.
+Then we calculate \f$\theta_1\f$ from \f$r_1\f$.
+This time the first step is a little more difficult.
+Let \f$A_0\f$ be the center of rotation of the left gear and \f$B_0\f$ its other focus,
+let \f$A_1\f$ be the center of rotation of the right gear and \f$B_1\f$ its other focus,
+and let \f$C\f$ be the point of contact between the gears, as shown in \ref fig39 "Fig. 39".
+Then \f$\triangle A_0B_0C\f$ is similar to \f$\triangle A_1B_1C\f$ and \f$\triangle A_0B_0C\f$ is as pictured
+in \ref fig39 "Fig. 39" (right).
+
+\anchor fig39
+\image html ellipserotate1.png "Fig. 39: Geometry of single-lobe elliptical gears." width=450
+
+Applying the Law of Cosines to \f$\angle B_0A_0C = \theta_0\f$
+(see \ref fig39 "Fig. 39", right),
+\f[
+r_1^2 = r_0^2 + 4c^2 - 4cr_0 \cos \theta_0. 
+\f]
+Recall that \f$r_0+r_1 = 2a\f$ (see \ref fig37 "Fig. 37").
+Substituting for \f$r_1 = 2a - r_0\f$ in the last equation,
+\f[
+(2a - r_0)^2 =  r_0^2 + 4c^2 - 4c r_0 \cos \theta_0.
+\f]
+Solving for \f$r_0\f$,
+\f[
+r_0   = \frac{c^2 - a^2}{c\cos \theta_0 - a}.
+\f]
+
+Calculating \f$r_1\f$ from \f$r_0\f$ is pretty easy.
+The initial position of the gears has both gears with the same orientation with
+the foci about which they rotate at distance \f$r_0+r_1\f$ (see \ref fig37 "Fig.37", left). 
+Therefore \f$r_0+r_1=2f+2(a-c)=2a\f$ 
+(again, see \ref fig37 "Fig.37", left).
+
+To calculate \f$\theta_1\f$ from \f$r_1\f$ we
+apply the Law of Cosines to \f$\angle CB_0A_0 = \theta_1\f$
+(see \ref fig39 "Fig. 39", right),
+\f[
+r_0^2 = 4c^2 + r_1^2 - 4cr_1 \cos \theta_1. 
+\f]
+Therefore, solving for \f$\theta_1\f$,
+\f[
+\theta_1 = \cos^{-1} \left( \frac{4c^2 + r_1^2 -r_0^2}{4cr_1} \right).
+\f]
+
+Now we can write code to compute the orientation of the right gear `theta1` from 
+the orientation of the right gear `theta0` and the ellipse radii `a` and `b`
+as follows. 
+
+    const float CEllipticalGear1::ComputeTheta1(const float a, const float b, const float theta0) const{
+      const float f = sqrtf(a*a - b*b); //focal distance
+      const float r0 = (f*f - a*a)/(f*cosf(theta0) - a);
+      const float r1 = 2*a - r0;
+
+      return acosf((4.0f*f*f + r1*r1 - r0*r0)/(4.0f*f*r1));
+    } //ComputeTheta1
+
+Therefore the right gear has to be rotated a quarter of a turn counterclockwise from its
+initial orientation plus \f$\theta_1\f$ counterclockwise
+to angle \f$\pi \pm \theta_1\f$. Finally, note that `acosf` returns a value in the first
+or second quadrant,
+whereas we want an angle that can be in any quadrant. The correct quadrant needs to be corrected in
+code or else the right gear sprite will jump from one orientation to another at multiples of \f$\pi/2\f$.
+
 Level 5 of the Gear Toy shows two elliptical gears with the left gear driven
 by a motor as in \ref fig37 "Fig. 37" and the right gear static in its initial position.
 Write code for function `CEllipticalGear1::Move` in
