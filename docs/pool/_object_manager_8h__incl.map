@@ -1,14 +1,14 @@
 <map id="ObjectManager.h" name="ObjectManager.h">
-<area shape="rect" id="Node000001" title="Interface for the class CObjectManager." alt="" coords="143,5,263,32"/>
+<area shape="rect" id="Node000001" title="Interface for the object manager class CObjectManager." alt="" coords="143,5,263,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="31,155,161,181"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,33,197,68,190,89,180,108,159,131,136,148,132,144,156,127,175,105,185,87,192,67,199,32"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="56,80,166,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,35,140,73,137,68,185,30"/>
 <area shape="rect" id="Node000004" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="143,229,255,256"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,32,92,50,67,64,46,82,25,106,12,130,9,154,21,180,42,201,69,217,98,228,128,234,127,240,97,233,67,222,39,206,17,183,4,155,7,128,21,103,42,78,64,60,89,46,141,27"/>
-<area shape="rect" id="Node000006" href="$_object_8h.html" title="Interface for the class CObject." alt="" coords="252,80,322,107"/>
+<area shape="rect" id="Node000006" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="252,80,322,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="219,31,262,68,259,72,216,35"/>
-<area shape="rect" id="Node000009" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="561,155,647,181"/>
+<area shape="rect" id="Node000009" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="561,155,647,181"/>
 <area shape="poly" id="edge14_Node000001_Node000009" title=" " alt="" coords="238,30,556,146,554,151,236,35"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="145,304,252,331"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="201,257,201,288,196,288,196,257"/>

@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <img src="ss0.png" alt="" width="50%"/>
 <div class="caption">
 Fig. 1: The Pool End Game at the start of a game.</div></div>
-<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -226,7 +226,29 @@ Fig. 10: New position and velocity of ball colliding with horizontal line from b
 <p>This concludes collision of a ball with a horizontal line from below. The other three cases needed for this game, collision of a ball with a horizontal line from above (the bottom rail), collision of a ball with a vertical line from the left (the right rail), and collision of a ball with a vertical line from the right (the left rail), are similar. See the code for <code><a class="el" href="class_c_object_manager.html#a7704293d68f5527f323527028ea21398" title="Collision response for ball with rail.">CObjectManager::RailCollide</a></code> for more details.</p>
 <p><a class="anchor" id="section5-2-3"></a></p><h3>5.2.3 CObjectManager::PocketCollide</h3>
 <p>Collision of a ball with a pocket is fairly easy. For example, if a ball collides with the top and right rails, then it is deemed to have fallen into the pocket at the top right of the table. While this is much simpler than the behavior of a ball in a real world game of pool, it is sufficient for this game.</p>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
+<p><a class="anchor" id="problem6-1"></a></p><h2>Problem 6.1</h2>
+<p><a class="anchor" id="fig11"></a></p><div class="image">
+<img src="hitpoint.gif" alt=""/>
+<div class="caption">
+Fig. 11: A circle drawn at the point of impact.</div></div>
+<div style="padding-left: 30px;" markdown="1"> Add code that draws a circle where the cue-ball would be at the time of impact with the 8-ball, as shown in <a class="el" href="#fig11">Fig. 11</a>. The new circle is only drawn when the cue-ball would hit the 8-ball before hitting a rail, and only when both balls are stationary and not in a pocket. Your code should go into <code><a class="el" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects.">CObjectManager::Draw</a></code>. Once you have computed the position of the cue ball at time of impact into a local variable, say <code>vCueBallPosAtTOI</code> of type <code>Vector2</code>, you can draw a circle there with the following code: <pre class="fragment">Sage::CSpriteDesc2D sd;
+sd.m_nSpriteIndex = (UINT)eSprite::Circle;
+sd.m_vPos = vCueBallPosAtTOI;
+sd.m_f4Tint = XMFLOAT4(Colors::AntiqueWhite);
+
+m_pRenderer-&gt;Draw(&amp;sd); 
+</pre></div><div style="padding-left: 30px;" markdown="1"><h3>Hint:</h3>
+</div><div style="padding-left: 30px;" markdown="1"> There is already code to compute the center of the ball at TOI. This can be used whether or not the balls currently overlap. </div><p><a class="anchor" id="problem6-2"></a></p><h2>Problem 6.2</h2>
+<p><a class="anchor" id="fig12"></a></p><div class="image">
+<img src="lines.gif" alt=""/>
+<div class="caption">
+Fig. 12: Lines showing the paths of the cue-ball (white) and the 8-ball (magenta).</div></div>
+<div style="padding-left: 30px;" markdown="1"> After completing <a class="el" href="#problem6-1">Problem 6.1</a> above, add code that draws a line showing the path of the cue-ball before impact, and lines showing the paths of both balls after impact. The latter must must end at a rail as shown in <a class="el" href="#fig12">Fig. 12</a>.</div><div style="padding-left: 30px;" markdown="1"><h3>Hints:</h3>
+</div><div style="padding-left: 30px;" markdown="1"></div><div style="padding-left: 30px;" markdown="1">To draw a line from the current position of the cue-ball <code>m_pCueBall-&gt;m_vPos</code> to the its position at time of impact <code>vCueBallPosAtTOI</code> found in <a class="el" href="#problem6-1">Problem 6.1</a>, add the following line of code in the appropriate place in <code><a class="el" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects.">CObjectManager::Draw</a></code>. <pre class="fragment">m_pRenderer-&gt;DrawLine(eSprite::Line, m_pCueBall-&gt;m_vPos, vCueBallPosAtTOI, Colors::AntiqueWhite);
+</pre></div><div style="padding-left: 30px;" markdown="1">Next, add the private member function <pre class="fragment">DrawLineToRail(const Vector2&amp; p, float theta, XMVECTORF32 c)
+</pre></div><div style="padding-left: 30px;" markdown="1">to <code><a class="el" href="class_c_object_manager.html" title="The object manager.">CObjectManager</a></code> and write code to draw a line from point <code>p</code> at orientation <code>theta</code> in color <code>c</code>. You can do this by computing the point of intersection of the line with a rail in <code>vIntercept</code> and calling <pre class="fragment">m_pRenderer-&gt;DrawLine(eSprite::Line, p, vIntercept, c);
+</pre></div><div style="padding-left: 30px;" markdown="1">You can find the coordinates of the rails from the inherited private member variables <code><a class="el" href="class_c_common.html#ae9442a1691ff4cdba3cd33848e00bed8" title="Horizontal margin.">CCommon::m_fXMargin</a></code>, <code><a class="el" href="class_c_common.html#a73ea76e56858709e78ddfc49d13b1222" title="Vertical margin.">CCommon::m_fYMargin</a></code>, <code>Sage::CSettings::m_nWinWidth</code>, and <code>Sage::CSettings::m_nWinHeight</code></div><div style="padding-left: 30px;" markdown="1">Call your new function <code>CObjectManager::DrawLineToRail</code> from <code><a class="el" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects.">CObjectManager::Draw</a></code> once for the cue-ball and once for the 8-ball when appropriate. The lines for the cue-ball should have color parameter <code>c</code> equal to <code>Colors::AntiqueWhite</code> for the cue-ball lines and <code>Colors::Magenta</code> for the 8-ball lines. </div><p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../shapes/index.html">Shapes Library</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

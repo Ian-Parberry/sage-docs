@@ -17,8 +17,9 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
@@ -396,7 +397,79 @@ the behavior of a ball in a real world game of pool, it is sufficient for
 this game.
 
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+\anchor problem6-1
+## Problem 6.1
+
+\anchor fig11
+@image html hitpoint.gif "Fig. 11: A circle drawn at the point of impact." 
+
+<div style="padding-left: 30px;" markdown="1">
+Add code that draws a circle where the cue-ball would be at the time of impact
+with the 8-ball, as shown in \ref fig11 "Fig. 11". The new circle is only drawn
+when the cue-ball would hit the 8-ball before hitting a rail, and only when both balls are
+stationary and not in a pocket. 
+Your code should go into `CObjectManager::Draw`. Once you have computed
+the position of the cue ball at time of impact into a local variable, say `vCueBallPosAtTOI`
+of type `Vector2`, you can draw a circle there with the following code:
+
+    Sage::CSpriteDesc2D sd;
+    sd.m_nSpriteIndex = (UINT)eSprite::Circle;
+    sd.m_vPos = vCueBallPosAtTOI;
+    sd.m_f4Tint = XMFLOAT4(Colors::AntiqueWhite);
+
+    m_pRenderer->Draw(&sd); 
+
+###Hint: 
+There is already code to compute the center of the ball at TOI. This can be used whether or not
+the balls currently overlap.
+</div>
+
+\anchor problem6-2
+## Problem 6.2
+
+\anchor fig12
+@image html lines.gif "Fig. 12: Lines showing the paths of the cue-ball (white) and the 8-ball (magenta)." 
+
+<div style="padding-left: 30px;" markdown="1">
+After completing \ref problem6-1 "Problem 6.1" above, 
+add code that draws a line showing the path of the cue-ball before impact,
+and lines showing the paths of both balls after impact. 
+The latter must must end at a rail as shown in \ref fig12 "Fig. 12". 
+
+###Hints: 
+
+To draw a line from the current position of the cue-ball `m_pCueBall->m_vPos` to the its
+position at time of impact `vCueBallPosAtTOI`
+found in \ref problem6-1 "Problem 6.1", add the following line of code in the appropriate
+place in `CObjectManager::Draw`.
+
+    m_pRenderer->DrawLine(eSprite::Line, m_pCueBall->m_vPos, vCueBallPosAtTOI, Colors::AntiqueWhite);
+
+Next, add the private member function
+
+    DrawLineToRail(const Vector2& p, float theta, XMVECTORF32 c)
+
+to `CObjectManager` and write code to draw a line from point `p` at orientation `theta` in color `c`.
+You can do this by computing the point of intersection of the line with a rail in `vIntercept`
+and calling 
+
+    m_pRenderer->DrawLine(eSprite::Line, p, vIntercept, c);
+
+You can find the coordinates of the rails from the inherited private
+member variables `CCommon::m_fXMargin`, `CCommon::m_fYMargin`,
+`Sage::CSettings::m_nWinWidth`, and `Sage::CSettings::m_nWinHeight`
+
+Call your new function `CObjectManager::DrawLineToRail` from `CObjectManager::Draw`
+once for the cue-ball and once
+for the 8-ball when appropriate. The lines for the cue-ball should have color parameter
+`c` equal to `Colors::AntiqueWhite` for the cue-ball lines and `Colors::Magenta`
+for the 8-ball lines.
+</div>
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../shapes/index.html">Shapes Library</a>.
 

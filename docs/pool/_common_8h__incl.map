@@ -1,5 +1,5 @@
 <map id="Common.h" name="Common.h">
-<area shape="rect" id="Node000001" title="Interface for the class CCommon." alt="" coords="152,5,238,32"/>
+<area shape="rect" id="Node000001" title="Interface for the common variables class CCommon." alt="" coords="152,5,238,32"/>
 <area shape="rect" id="Node000002" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="5,80,118,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,35,99,75,97,70,170,30"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="142,80,248,107"/>
