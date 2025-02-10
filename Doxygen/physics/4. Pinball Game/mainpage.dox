@@ -32,8 +32,9 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Controls
@@ -117,9 +118,102 @@ which in turn calls
 and
 `CObjectManager::MakeShape`. 
 
-
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+For the following problems you can either work directly in the
+folder <span style="background-color:#D8E4D8;">`4. Pinball Game`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository,
+or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;">`4. Pinball Game`</span>
+in some place convenient (for example, the Desktop or your `Documents` folder)
+and work there.
+
+\anchor problem6-1
+## Problem 6.1
+
+<div style="padding-left: 30px;" markdown="1">
+Add the following function to `CObjectManager` to create a regular polygonal bumper
+with `n` sides, centered at `p`, with elasticity `e`, sprites `unlit` and `lit`,
+which when hit makes sound `snd` and adds `nScore` to the score.
+Each polygonal bumper will be an instance of
+<a href ="../shapes/class_shapes_1_1_c_compound_shape.html">`Shapes::CCompoundShape`</a>.
+
+    void CObjectManager::MakeBumper(UINT n, const Vector2& p, float e, 
+      eSprite unlit, eSprite lit, eSound snd, int nScore)
+    {   
+      if(n < 3)ABORT("Too few edges in polygon");
+    
+      CObjDesc nullObjDesc(eSprite::None, eSprite::None, snd);
+      CObjDesc bumperObjDesc(unlit, lit, snd);
+      bumperObjDesc.m_nScore = nScore;
+    
+      CObjDesc lineDesc(eSprite::BlackLine, eSprite::BlackLine, snd);
+      Shapes::CPointDesc pointDesc(p);
+    
+      Shapes::CShape* pCenterPoint = AddShape(&pointDesc, bumperObjDesc);
+      Shapes::CCompoundShape* pBumper = new Shapes::CCompoundShape(pCenterPoint); 
+    } //MakeBumper
+
+Append to the end of this function code to add the appropriate shapes from the
+<a href="../shapes/index.html">Shapes Library</a> to the compound shape pointed to by `pBumper`.
+Then in `CObjectManager::MakeShapes`, replace the lines
+
+    MakeBumper(Vector2(mid + 14.0f - dx, y), e, unlit, lit, snd);
+    MakeBumper(Vector2(mid + 14.0f,      y), e, unlit, lit, snd);
+    MakeBumper(Vector2(mid + 14.0f + dx, y), e, unlit, lit, snd);
+
+with the following lines
+
+    Vector2 pos = Vector2(mid + 14.0f - dx, y);
+    MakeBumper(3, pos, e, eSprite::UnlitTriangle, eSprite::LitTriangle, snd, 10);
+    pos.x += dx;
+    MakeBumper(4, pos, e, eSprite::UnlitSquare, eSprite::LitSquare, snd, 100);
+    pos.x += dx;
+    MakeBumper(5, pos, e, eSprite::UnlitPentagon, eSprite::LitPentagon, snd, 100);
+
+Your game should now look like \ref fig2 "Fig. 2" left, with the collision shapes
+in \ref fig2 "Fig. 2" right aligned with the edges of the polygons.
+When you play the game the balls should collide correctly with the polygon edges and points,
+but the bumpers will not light up. That is the subject of the next question.
+</div>
+
+\anchor fig2
+\image html screenshot2.png "Fig. 2: Screen shot with polygonal bumpers." width=60%
+
+\anchor problem6-2
+## Problem 6.2
+
+<div style="padding-left: 30px;" markdown="1">
+After completing \ref problem6-2 "Problem 6.1",
+add code to `CObjectManager::NarrowPhase` to make the polygonal
+bumpers light up when hit.
+
+###Hints
+
+Keep a vector of pointers to the new polygons 
+
+    std::vector<Shapes::CCompoundShape*> m_vBumperList;
+
+and push a pointer to each polygonal bumper to the back of it in your function
+`CObjectManager::MakeBumper` from \ref problem6-2 "Problem 6.1".
+Then at the end of `CObjectManager::NarrowPhase`, if the local variable `bHit` is `true`
+then use the function
+<a href="../shapes/class_shapes_1_1_c_compound_shape.html#abef3eafc01c529d2d9618be7c3fc604e">`CCompoundshape::IsPartOf`</a>
+to check whether `pShape`
+is a part of each bumper. If so, then get the bumper's central
+point using
+<a href="../shapes/class_shapes_1_1_c_compound_shape.html#a70c09b0cf7fe31caa0f793d589a398cc">`CCompoundShape::GetCenterPoint`</a>,
+then get a pointer
+to the bumper object by using that point's
+<a href="../shapes/class_shapes_1_1_c_shape.html#a712df6c7164d15900bddefc1a16d0136">`CShape::GetUserPtr`</a>
+function
+and casting it to `CObject*`.  You can then set the object's
+`CObject::m_bRecentHit` and `CObject::m_fLastHitTime` to the appropriate values,
+which will then make the bumpers light up when hit.
+</div>
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../ballandspring/index.html">Ball and Spring Toy</a>.
 

@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 1: Screen shot.</div></div>
-<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -126,7 +126,41 @@ Fig. 1: Screen shot.</div></div>
 <p>Do I have to tell you how to play <a href="https://en.wikipedia.org/wiki/Pinball">pinball</a>? Refer back to <a class="el" href="#section2">Section 2</a> to see the flipper and ball launch keys.</p>
 <p><a class="anchor" id="section5"></a></p><h1>5. Code Breakdown</h1>
 <p>This code uses the <a href="../shapes/index.html">Shapes Library</a> and some code from the <a href="../collisionmath/index.html">Collision Math Toy</a> to make a rudimentary pinball game. The most challenging part of the code is the creation of the shapes in the play area as shown in <a class="el" href="#fig1">Fig. 1</a>, right. This is done in <code><a class="el" href="class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game.">CGame::BeginGame</a></code> by calling <code><a class="el" href="class_c_object_manager.html#a1dcdb4b8172c7657d398b966381ae006" title="Create shapes for world edges.">CObjectManager::MakeWorldEdges</a></code> to make various static edges and arcs, and <code><a class="el" href="class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes.">CObjectManager::MakeShapes</a></code> to make the other various shapes, which in turn calls <code><a class="el" href="class_c_object_manager.html#ae1c594c6824929eb9ba84f336045ae3d" title="Make a bumper.">CObjectManager::MakeBumper</a></code>, <code><a class="el" href="class_c_object_manager.html#a8ec3facaf9550165947643f51e5265c7" title="Make a bollard.">CObjectManager::MakeBollard</a></code>, <code><a class="el" href="class_c_object_manager.html#abaa1d5ffeaee29261db5eae35a03487c" title="Make a flipper.">CObjectManager::MakeFlipper</a></code>, <code><a class="el" href="class_c_object_manager.html#a3c7fbcf613ac5cc2836d5e789ad4be20" title="Make a thing (left).">CObjectManager::MakeThingL</a></code>, <code><a class="el" href="class_c_object_manager.html#a08f704845cf30b46b8a59a3ce49d5419" title="Make a thing (right).">CObjectManager::MakeThingR</a></code>, and <code><a class="el" href="class_c_object_manager.html#a6c230a9e32ea2869acc9d1916e490df0" title="Make a shape.">CObjectManager::MakeShape</a></code>.</p>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
+<p>For the following problems you can either work directly in the folder <span style="background-color:#D8E4D8;"><code>4. Pinball Game</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository, or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;"><code>4. Pinball Game</code></span> in some place convenient (for example, the Desktop or your <code>Documents</code> folder) and work there.</p>
+<p><a class="anchor" id="problem6-1"></a></p><h2>Problem 6.1</h2>
+<div style="padding-left: 30px;" markdown="1"> Add the following function to <code><a class="el" href="class_c_object_manager.html" title="The object manager.">CObjectManager</a></code> to create a regular polygonal bumper with <code>n</code> sides, centered at <code>p</code>, with elasticity <code>e</code>, sprites <code>unlit</code> and <code>lit</code>, which when hit makes sound <code>snd</code> and adds <code>nScore</code> to the score. Each polygonal bumper will be an instance of <a href="../shapes/class_shapes_1_1_c_compound_shape.html"><code>Shapes::CCompoundShape</code></a>. <pre class="fragment">void CObjectManager::MakeBumper(UINT n, const Vector2&amp; p, float e, 
+  eSprite unlit, eSprite lit, eSound snd, int nScore)
+{   
+  if(n &lt; 3)ABORT("Too few edges in polygon");
+
+  CObjDesc nullObjDesc(eSprite::None, eSprite::None, snd);
+  CObjDesc bumperObjDesc(unlit, lit, snd);
+  bumperObjDesc.m_nScore = nScore;
+
+  CObjDesc lineDesc(eSprite::BlackLine, eSprite::BlackLine, snd);
+  Shapes::CPointDesc pointDesc(p);
+
+  Shapes::CShape* pCenterPoint = AddShape(&amp;pointDesc, bumperObjDesc);
+  Shapes::CCompoundShape* pBumper = new Shapes::CCompoundShape(pCenterPoint); 
+} //MakeBumper
+</pre></div><div style="padding-left: 30px;" markdown="1">Append to the end of this function code to add the appropriate shapes from the <a href="../shapes/index.html">Shapes Library</a> to the compound shape pointed to by <code>pBumper</code>. Then in <code><a class="el" href="class_c_object_manager.html#a31136d0aefd25d97932dca283f7e58a0" title="Create shapes.">CObjectManager::MakeShapes</a></code>, replace the lines <pre class="fragment">MakeBumper(Vector2(mid + 14.0f - dx, y), e, unlit, lit, snd);
+MakeBumper(Vector2(mid + 14.0f,      y), e, unlit, lit, snd);
+MakeBumper(Vector2(mid + 14.0f + dx, y), e, unlit, lit, snd);
+</pre></div><div style="padding-left: 30px;" markdown="1">with the following lines <pre class="fragment">Vector2 pos = Vector2(mid + 14.0f - dx, y);
+MakeBumper(3, pos, e, eSprite::UnlitTriangle, eSprite::LitTriangle, snd, 10);
+pos.x += dx;
+MakeBumper(4, pos, e, eSprite::UnlitSquare, eSprite::LitSquare, snd, 100);
+pos.x += dx;
+MakeBumper(5, pos, e, eSprite::UnlitPentagon, eSprite::LitPentagon, snd, 100);
+</pre></div><div style="padding-left: 30px;" markdown="1">Your game should now look like <a class="el" href="#fig2">Fig. 2</a> left, with the collision shapes in <a class="el" href="#fig2">Fig. 2</a> right aligned with the edges of the polygons. When you play the game the balls should collide correctly with the polygon edges and points, but the bumpers will not light up. That is the subject of the next question. </div><p><a class="anchor" id="fig2"></a></p><div class="image">
+<img src="screenshot2.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 2: Screen shot with polygonal bumpers.</div></div>
+<p><a class="anchor" id="problem6-2"></a></p><h2>Problem 6.2</h2>
+<div style="padding-left: 30px;" markdown="1"> After completing <a class="el" href="#problem6-2">Problem 6.1</a>, add code to <code><a class="el" href="class_c_object_manager.html#a3c574bccab311aa7259137f9bcf096af" title="Narrow phase collision detection and response.">CObjectManager::NarrowPhase</a></code> to make the polygonal bumpers light up when hit.</div><div style="padding-left: 30px;" markdown="1"><h3>Hints</h3>
+</div><div style="padding-left: 30px;" markdown="1"></div><div style="padding-left: 30px;" markdown="1">Keep a vector of pointers to the new polygons <pre class="fragment">std::vector&lt;Shapes::CCompoundShape*&gt; m_vBumperList;
+</pre></div><div style="padding-left: 30px;" markdown="1">and push a pointer to each polygonal bumper to the back of it in your function <code><a class="el" href="class_c_object_manager.html#ae1c594c6824929eb9ba84f336045ae3d" title="Make a bumper.">CObjectManager::MakeBumper</a></code> from <a class="el" href="#problem6-2">Problem 6.1</a>. Then at the end of <code><a class="el" href="class_c_object_manager.html#a3c574bccab311aa7259137f9bcf096af" title="Narrow phase collision detection and response.">CObjectManager::NarrowPhase</a></code>, if the local variable <code>bHit</code> is <code>true</code> then use the function <a href="../shapes/class_shapes_1_1_c_compound_shape.html#abef3eafc01c529d2d9618be7c3fc604e"><code>CCompoundshape::IsPartOf</code></a> to check whether <code>pShape</code> is a part of each bumper. If so, then get the bumper's central point using <a href="../shapes/class_shapes_1_1_c_compound_shape.html#a70c09b0cf7fe31caa0f793d589a398cc"><code>CCompoundShape::GetCenterPoint</code></a>, then get a pointer to the bumper object by using that point's <a href="../shapes/class_shapes_1_1_c_shape.html#a712df6c7164d15900bddefc1a16d0136"><code>CShape::GetUserPtr</code></a> function and casting it to <code>CObject*</code>. You can then set the object's <code><a class="el" href="class_c_object.html#a67c7e06d8d32dc902184af9d7cd9f399" title="Was hit recently.">CObject::m_bRecentHit</a></code> and <code><a class="el" href="class_c_object.html#afa9693e6f5b689b74ef5c7edc7a03836" title="Time of last hit.">CObject::m_fLastHitTime</a></code> to the appropriate values, which will then make the bumpers light up when hit. </div><p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../ballandspring/index.html">Ball and Spring Toy</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

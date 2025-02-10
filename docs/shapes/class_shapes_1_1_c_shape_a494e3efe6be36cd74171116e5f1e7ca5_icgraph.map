@@ -1,0 +1,5 @@
+<map id="Shapes::CShape::SetCanCollide" name="Shapes::CShape::SetCanCollide">
+<area shape="rect" id="Node000001" title="Turn collisions on or off." alt="" coords="237,13,449,40"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_compound_shape.html#aa2d8a4884f71d6b2beca29fc66363a19" title="Constructor." alt="" coords="5,5,189,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,29,189,29,189,24,221,24"/>
+</map>

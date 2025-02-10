@@ -1,15 +1,15 @@
 <map id="Point.h" name="Point.h">
-<area shape="rect" id="Node000001" title="Interface for CPointDesc, CPoint, and CKinematicPoint." alt="" coords="217,5,279,32"/>
-<area shape="rect" id="Node000002" href="$_arc_8cpp.html" title="Code for CArcDesc, CArc, and CKinematicArc." alt="" coords="5,80,72,107"/>
+<area shape="rect" id="Node000001" title="Interface for the point classes CPointDesc, CPoint, and CKinematicPoint." alt="" coords="217,5,279,32"/>
+<area shape="rect" id="Node000002" href="$_arc_8cpp.html" title="Code for the arc classes CArcDesc, CArc, and CKinematicArc." alt="" coords="5,80,72,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,38,73,83,71,78,201,33"/>
-<area shape="rect" id="Node000003" href="$_circle_8cpp.html" title="Code for CCircleDesc, CCircle, and CKinematicCircle." alt="" coords="96,80,176,107"/>
+<area shape="rect" id="Node000003" href="$_circle_8cpp.html" title="Code for the circle classes CCircleDesc, CCircle, and CKinematicCircle." alt="" coords="96,80,176,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,43,157,82,154,77,214,38"/>
-<area shape="rect" id="Node000004" href="$_compound_8h.html" title="Interface for the class CCompoundShape." alt="" coords="200,80,296,107"/>
+<area shape="rect" id="Node000004" href="$_compound_8h.html" title="Interface for the compound shape class CCompoundShape." alt="" coords="200,80,296,107"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="250,48,250,80,245,80,245,48"/>
-<area shape="rect" id="Node000006" href="$_line_seg_8cpp.html" title="Code for CLineSegDesc, CLineSeg, and CKinematicLineSeg." alt="" coords="320,80,413,107"/>
+<area shape="rect" id="Node000006" href="$_line_seg_8cpp.html" title="Code for the line segment classes CLineSegDesc, CLineSeg, and CKinematicLineSeg." alt="" coords="320,80,413,107"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="283,38,347,77,344,82,280,43"/>
-<area shape="rect" id="Node000007" href="$_point_8cpp.html" title="Code for CPointDesc, CPoint, and CKinematicPoint." alt="" coords="438,80,514,107"/>
+<area shape="rect" id="Node000007" href="$_point_8cpp.html" title="Code for the point classes CPointDesc, CPoint, and CKinematicPoint." alt="" coords="438,80,514,107"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="295,32,438,77,436,82,293,37"/>
-<area shape="rect" id="Node000005" href="$_compound_8cpp.html" title="Code for the class CCompoundShape." alt="" coords="193,155,302,181"/>
+<area shape="rect" id="Node000005" href="$_compound_8cpp.html" title="Code for the compound shape class CCompoundShape." alt="" coords="193,155,302,181"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="250,122,250,154,245,154,245,122"/>
 </map>

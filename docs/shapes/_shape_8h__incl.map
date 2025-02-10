@@ -1,10 +1,10 @@
 <map id="Shape.h" name="Shape.h">
-<area shape="rect" id="Node000001" title="Interface for CShapeDesc and CShape." alt="" coords="391,5,460,32"/>
-<area shape="rect" id="Node000002" href="$_a_a_b_b_8h.html" title="Interface for the class CAabb2D." alt="" coords="284,80,352,107"/>
+<area shape="rect" id="Node000001" title="Interface for the shape classes CShapeDesc and CShape." alt="" coords="391,5,460,32"/>
+<area shape="rect" id="Node000002" href="$_a_a_b_b_8h.html" title="Interface for the AABB class CAabb2D." alt="" coords="284,80,352,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,35,351,73,348,69,405,30"/>
 <area shape="rect" id="Node000009" href="$_shape_math_8h.html" title="Handy math functions for the collision module." alt="" coords="376,80,475,107"/>
 <area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="428,33,428,64,423,64,423,33"/>
-<area shape="rect" id="Node000010" href="$_shape_common_8h.html" title="Interface for the class CShapeCommon." alt="" coords="499,80,622,107"/>
+<area shape="rect" id="Node000010" href="$_shape_common_8h.html" title="Interface for the shape common variables class CShapeCommon." alt="" coords="499,80,622,107"/>
 <area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="450,30,525,70,522,75,448,35"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,155,89,181"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,107,104,154,103,149,282,101"/>

@@ -399,6 +399,13 @@ this game.
 \anchor section6
 # 6. Problems
 
+For the following problems you can either work directly in the
+folder <span style="background-color:#D8E4D8;">`1. Pool End Game`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository,
+or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;">`1. Pool End Game`</span>
+in some place convenient (for example, the Desktop or your `Documents` folder)
+and work there.
+
 \anchor problem6-1
 ## Problem 6.1
 
@@ -460,7 +467,6 @@ and calling
 You can find the coordinates of the rails from the inherited private
 member variables `CCommon::m_fXMargin`, `CCommon::m_fYMargin`,
 `Sage::CSettings::m_nWinWidth`, and `Sage::CSettings::m_nWinHeight`
-
 Call your new function `CObjectManager::DrawLineToRail` from `CObjectManager::Draw`
 once for the cue-ball and once
 for the 8-ball when appropriate. The lines for the cue-ball should have color parameter

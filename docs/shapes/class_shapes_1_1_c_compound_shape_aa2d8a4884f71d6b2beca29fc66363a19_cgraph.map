@@ -1,0 +1,5 @@
+<map id="Shapes::CCompoundShape::CCompoundShape" name="Shapes::CCompoundShape::CCompoundShape">
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,5,189,48"/>
+<area shape="rect" id="Node000002" href="$class_shapes_1_1_c_shape.html#a494e3efe6be36cd74171116e5f1e7ca5" title="Turn collisions on or off." alt="" coords="237,13,449,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,24,221,24,221,29,189,29"/>
+</map>

@@ -1,8 +1,8 @@
 <map id="Object.cpp" name="Object.cpp">
-<area shape="rect" id="Node000001" title="Code for the class CObject." alt="" coords="496,5,581,32"/>
+<area shape="rect" id="Node000001" title="Code for the game object class CObject." alt="" coords="496,5,581,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,229,184,256"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="506,35,382,85,305,119,229,157,173,190,126,222,123,218,171,186,227,152,303,114,380,80,504,30"/>
-<area shape="rect" id="Node000003" href="$_object_8h.html" title="Interface for the class CObject." alt="" coords="454,80,524,107"/>
+<area shape="rect" id="Node000003" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="454,80,524,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="532,34,508,69,504,66,528,31"/>
 <area shape="rect" id="Node000013" title=" " alt="" coords="548,80,628,107"/>
 <area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="549,31,573,66,569,69,545,34"/>
@@ -14,7 +14,7 @@
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="504,105,543,142,539,146,501,109"/>
 <area shape="rect" id="Node000006" href="$_game_defines_8h.html" title="Game specific defines and enumerated types." alt="" coords="678,229,791,256"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="525,101,536,104,568,109,597,111,648,109,672,111,694,118,716,131,738,153,746,168,749,184,746,215,740,214,743,184,741,169,734,156,713,135,692,122,671,116,648,115,597,116,567,115,535,109,524,106"/>
-<area shape="rect" id="Node000008" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="240,155,325,181"/>
+<area shape="rect" id="Node000008" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="240,155,325,181"/>
 <area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="455,110,334,152,332,147,453,105"/>
 <area shape="rect" id="Node000012" title=" " alt="" coords="654,155,724,181"/>
 <area shape="poly" id="edge13_Node000003_Node000012" title=" " alt="" coords="525,105,641,146,639,151,523,110"/>

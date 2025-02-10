@@ -1,5 +1,5 @@
 <map id="AABB.h" name="AABB.h">
-<area shape="rect" id="Node000001" title="Interface for the class CAabb2D." alt="" coords="284,5,352,32"/>
+<area shape="rect" id="Node000001" title="Interface for the AABB class CAabb2D." alt="" coords="284,5,352,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,80,89,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,32,104,79,103,74,282,27"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="112,80,203,107"/>
