@@ -28,8 +28,9 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Controls
@@ -339,7 +340,53 @@ feet after it has fallen (see \ref fig3 "Fig. 3").
 
 
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+For the following problems you can either work directly in the
+folder <span style="background-color:#D8E4D8;">`5. Ball and Spring Toy`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository,
+or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;">`5. Ball and Spring Toy`</span>
+in some place convenient (for example, the Desktop or your `Documents` folder)
+and work there.
+
+\anchor problem6-1
+## Problem 6.1
+
+Modify the code so that it works as follows. Hitting the down arrow (`VK_DOWN`) must scale the objects
+by 4/5 each time it is hit, down to a minimum of 16/25.
+Hitting the up arrow (VK_UP) scale the objects by
+5/4 each time it is hit, up to a maximum of 1. The object must relaunch each time you scale up or
+down. For example, \ref fig13 "Fig. 13" shows the first body in their scaled
+initial positions at small (scale factor \f$0.75^2\f$), medium (scale factor \f$0.75\f$), 
+and large (scale factor \f$1\f$) scale.
+
+\anchor fig13
+\image html scale.gif "Fig. 13: Scaled object in the initial position for small, medium, and large."
+
+Hint: Begin by adding a new static member variable `m_fScale` to `CCommon`, initialized to `1.0f`.
+Add the following code to `CGame::KeyboardHandler`:
+
+    const float fScaleFactor = 0.8f;
+    const float fScaleFactorSq = sqr(fScaleFactor);
+    
+    if(m_pKeyboard->TriggerDown(VK_UP) && m_fScale < 1.0f){ 
+        m_fScale = min(1.0f, m_fScale/fScaleFactor);
+        BeginGame();
+    } //if
+    
+    if(m_pKeyboard->TriggerDown(VK_DOWN) && m_fScale > fScaleFactorSq){
+        m_fScale = max(fScaleFactorSq, m_fScale*fScaleFactor);
+        BeginGame(); 
+    } //if
+
+The main things that must scale by `CCommon::m_fScale` are the initial position (as
+shown in \ref fig13 "Fig. 13"), gravity, 
+collision detection and response, sprite scale (as
+shown in \ref fig13 "Fig. 13"),
+impulse magnitude, and ragdoll AI.
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../box2drender/index.html">Box2D Render Library</a>.
 

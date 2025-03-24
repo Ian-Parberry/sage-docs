@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <div class="caption">
 Fig. 1: Bodies made up from springs and sticks.</div></div>
 <p>The Ball and Spring Toy applies Verlet integration and Gauss-Seidel Relaxation to bodies made up of balls connected by springs and sticks. The bodies fall under gravity and you can apply a random impulse to them to see how they react The types of bodies available are chains of length 2, 3, and 4; wheels of size 4, 5, and 6; and a ragdoll robot (see <a class="el" href="#fig1">Fig. 1</a>). For each body type except the ragdoll robot you are given two bodies, one with springs and one with sticks. The ragdoll robot has some primitive AI that attempts to make it stand up and move to the center of the window.</p>
-<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -245,7 +245,28 @@ Fig. 11: Pentagonal wheel made of sticks (left) and springs (right).</div></div>
 <img src="robot0.png" alt="" width="15%"/>
 <div class="caption">
 Fig. 12: Woody the ragdoll robot.</div></div>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
+<p>For the following problems you can either work directly in the folder <span style="background-color:#D8E4D8;"><code>5. Ball and Spring Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository, or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;"><code>5. Ball and Spring Toy</code></span> in some place convenient (for example, the Desktop or your <code>Documents</code> folder) and work there.</p>
+<p><a class="anchor" id="problem6-1"></a></p><h2>Problem 6.1</h2>
+<p>Modify the code so that it works as follows. Hitting the down arrow (<code>VK_DOWN</code>) must scale the objects by 4/5 each time it is hit, down to a minimum of 16/25. Hitting the up arrow (VK_UP) scale the objects by 5/4 each time it is hit, up to a maximum of 1. The object must relaunch each time you scale up or down. For example, <a class="el" href="#fig13">Fig. 13</a> shows the first body in their scaled initial positions at small (scale factor \(0.75^2\)), medium (scale factor \(0.75\)), and large (scale factor \(1\)) scale.</p>
+<p><a class="anchor" id="fig13"></a></p><div class="image">
+<img src="scale.gif" alt=""/>
+<div class="caption">
+Fig. 13: Scaled object in the initial position for small, medium, and large.</div></div>
+<p>Hint: Begin by adding a new static member variable <code>m_fScale</code> to <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code>, initialized to <code>1.0f</code>. Add the following code to <code><a class="el" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler.">CGame::KeyboardHandler</a></code>: </p><pre class="fragment">const float fScaleFactor = 0.8f;
+const float fScaleFactorSq = sqr(fScaleFactor);
+
+if(m_pKeyboard-&gt;TriggerDown(VK_UP) &amp;&amp; m_fScale &lt; 1.0f){ 
+    m_fScale = min(1.0f, m_fScale/fScaleFactor);
+    BeginGame();
+} //if
+
+if(m_pKeyboard-&gt;TriggerDown(VK_DOWN) &amp;&amp; m_fScale &gt; fScaleFactorSq){
+    m_fScale = max(fScaleFactorSq, m_fScale*fScaleFactor);
+    BeginGame(); 
+} //if
+</pre><p>The main things that must scale by <code>CCommon::m_fScale</code> are the initial position (as shown in <a class="el" href="#fig13">Fig. 13</a>), gravity, collision detection and response, sprite scale (as shown in <a class="el" href="#fig13">Fig. 13</a>), impulse magnitude, and ragdoll AI.</p>
+<p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../box2drender/index.html">Box2D Render Library</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
