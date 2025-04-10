@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 1: Screen shot.</div></div>
-<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -202,7 +202,35 @@ m_pPhysicsWorld-&gt;DestroyJoint(m_pBarrelJoint);
 </pre><p>and impulses are applied to the cannon bodies using <code>b2Body::ApplyLinearImpulse</code> much in the same way as impulses were applied to the cannonball and cannon barrel above.</p>
 <p><a class="anchor" id="section5-2"></a></p><h2>5.2 Collision Sounds</h2>
 <p>The sounds made by objects colliding in this game are totally kluged. We will see a better way of doing this in the <a href="../cannonstars/index.html">Box2D Cannon Game With Stars</a>. In the current game <code><a class="el" href="class_c_object.html#a892cb35d1b86abb11dca6c5a4744a179" title="Make collision sound, if appropriate.">CObject::MakeCollisionSound</a></code> is called once per object per animation frame. This function gets the object's current velocity by calling its body's <code>GetLinearVelocityFromWorldPoint(b2Vec2(0, 0))</code> function and comparing it to its velocity in the previous frame which was stored in <code><a class="el" href="class_c_object.html#aa6aa837c893d2afb8f510d88fa456eab" title="Old velocity vector, needed to infer collisions.">CObject::m_b2vOldV</a></code>. If the difference between these vectors has "large enough" magnitude, then a collision sound is played. Currently the cannon barrel makes a clang when colliding with anything and everything else makes a thump when colliding with anything. Finer control over which objects make what sounds when colliding with which objects is possible here but we will put it off until the <a href="../cannonstars/index.html">Box2D Cannon Game With Stars</a>.</p>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
+<p>For the following problems you can either work directly in the folder <span style="background-color:#D8E4D8;"><code>9. Box2D Cannon Game</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository, or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;"><code>9. Box2D Cannon Game</code></span> in some place convenient (for example, the Desktop or your <code>Documents</code> folder) and work there.</p>
+<p><a class="anchor" id="problem9-1"></a></p><h2>Problem 9.1</h2>
+<div style="padding-left: 30px;" markdown="1"> <em>Rocket jumping</em> is the technique of using the recoil from a rocket launcher as a method of propulsion, first seen as a game mechanic in Doom in 1993. Modify the Cannon Game so that the player can point the cannon at the ground and use the recoil from cannon fire to launch the cannon into the air as shown in <a class="el" href="#fig10">Fig. 10</a>.</div><div style="padding-left: 30px;" markdown="1"><a class="anchor" id="fig10"></a><div class="image">
+<img src="rocket.png" alt="" width="60%"/>
+<div class="caption">
+Fig. 10: Rocket jumping the cannon.</div></div>
+</div><div style="padding-left: 30px;" markdown="1"><h3>Hint:</h3>
+</div><div style="padding-left: 30px;" markdown="1"> You will need to make the following changes (you can either comment out code or delete it outright).</div><div style="padding-left: 30px;" markdown="1"><ol>
+<li>
+<p class="startli">In <code><a class="el" href="class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state.">CGame::ProcessState</a></code>, comment out the call to <code><a class="el" href="class_c_game.html#ac934fab58961e1d1ff8ae5b95b40c45c" title="Process whether player has won or lost.">CGame::ProcessWinLose</a></code> so that you have time to experiment with the game. </p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">In the <code><a class="el" href="class_c_cannon.html" title="The cannon.">CCannon</a></code> constructor <code><a class="el" href="class_c_cannon.html#a574ad10283380b932ad36c342f890704" title="Constructor.">CCannon::CCannon</a></code>, disable the limits on the revolute joint between the cannon barrel and the base so that the cannon can point vertically downwards. </p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">In <code><a class="el" href="class_c_cannon.html#a7694d324e7716dcab02e0d21c02a3f2a" title="Fire the cannon.">CCannon::Fire</a></code>, comment out the cannon temperature change so that the cannon won't overheat. </p>
+<p class="endli"></p>
+</li>
+<li>
+<p class="startli">In <code><a class="el" href="class_c_cannon.html#a7694d324e7716dcab02e0d21c02a3f2a" title="Fire the cannon.">CCannon::Fire</a></code>, disable the cannon explosion when the barrel is pointing at the ground. </p>
+<p class="endli"></p>
+</li>
+<li>
+In <code><a class="el" href="class_c_cannon.html#a7694d324e7716dcab02e0d21c02a3f2a" title="Fire the cannon.">CCannon::Fire</a></code>, increase the amount of recoil by a factor of four.  </li>
+</ol>
+</div><p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../cannonstars/index.html">Box2D Cannon Game With Stars</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

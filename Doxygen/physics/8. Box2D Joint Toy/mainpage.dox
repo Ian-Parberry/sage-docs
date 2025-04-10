@@ -813,8 +813,8 @@ space bar which, instead of reversing the direction of the motor on the revolute
 launches a collection of crates and balls using code borrowed from the
 <a href="../bouncy/index.html">Box2D Bouncy Things Toy</a>.
 
-\anchor problem6-1-1
-### Problem 6.1.1
+\anchor problem8-1-1
+### Problem 8.1.1
 
 <div style="padding-left: 30px;" markdown="1">
 You might recall from \ref section5-1 "Section 5.1" that the only shape in the Windmill
@@ -858,13 +858,13 @@ In the folder <span style="background-color:#D8E4D8;">Gears</span>, which you wi
 the \ref section6 "introduction to Section 6" above,
 open <span style="background-color:#D8E4D8;">`Gear Toy.sln`</span>
 with Visual Studio. 
-The first level of the Gear Toy corresponds to \ref problem6-2-1 "Problem 6.2.1"
+The first level of the Gear Toy corresponds to \ref problem8-2-1 "Problem 8.2.1"
 and displays two gears in their start positions and orientations
 as shown in \ref fig32 "Fig. 32".
-The second level of the Gear Toy corresponds to \ref problem6-2-2 "Problem 6.2.2"
+The second level of the Gear Toy corresponds to \ref problem8-2-2 "Problem 8.2.2"
 and displays two gears in their start positions and orientations
 as shown in \ref fig33 "Fig. 33".
-The third level of the Gear Toy corresponds to \ref problem6-2-3 "Problem 6.2.3"
+The third level of the Gear Toy corresponds to \ref problem8-2-3 "Problem 8.2.3"
 and displays two gears in their start positions and orientations are also
 as shown in \ref fig33 "Fig. 33".
 The key controls in \ref section2 "Section 2" apply here too.
@@ -878,8 +878,8 @@ and an _internal_ gear has teeth on the inside.
 \anchor fig33
 \image html internalstart.png "Fig. 33: Start position for the second and third levels."  width=256
 
-\anchor problem6-2-1
-### Problem 6.2.1
+\anchor problem8-2-1
+### Problem 8.2.1
 
 <div style="padding-left: 30px;" markdown="1">
 Use two revolute joints and a gear joint to create a toy that has
@@ -895,8 +895,8 @@ file <span style="background-color:#D8E4D8;">Round.cpp</span>.
 \anchor fig34
 \image html external256.gif "Fig. 34: An external gear rotating around a fixed external gear." 
 
-\anchor problem6-2-2
-### Problem 6.2.2
+\anchor problem8-2-2
+### Problem 8.2.2
 
 <div style="padding-left: 30px;" markdown="1">
 Use two revolute joints and a gear joint to create a toy that has
@@ -912,8 +912,8 @@ file <span style="background-color:#D8E4D8;">Round.cpp</span>.
 \anchor fig35
 \image html internal256.gif "Fig. 35: An external gear rotating inside a fixed internal gear." 
 
-\anchor problem6-2-3
-### Problem 6.2.3
+\anchor problem8-2-3
+### Problem 8.2.3
 
 <div style="padding-left: 30px;" markdown="1">
 Use two revolute joints and a gear joint to create a toy that has
@@ -937,10 +937,10 @@ the \ref section6 "introduction to Section 6" above,
 once again
 open <span style="background-color:#D8E4D8;">`Gear Toy.sln`</span>
 with Visual Studio. 
-The fourth level of the Gear Toy corresponds to \ref problem6-3-1 "Problem 6.3.1"
+The fourth level of the Gear Toy corresponds to \ref problem8-3-1 "Problem 8.3.1"
 and displays two elliptical gears with the left gear driven by a
 motor as shown in \ref fig35 "Fig.35" and the right gear in its initial position.
-The fifth level of the Gear Toy corresponds to \ref problem6-3-2 "Problem 6.3.2"
+The fifth level of the Gear Toy corresponds to \ref problem8-3-2 "Problem 8.3.2"
 and displays two elliptical gears with the left gear driven by a
 motor as shown in \ref fig35 "Fig.35" and the right gear in its initial position.
 Before we start writing code we need some basic math facts about ellipses.
@@ -1038,15 +1038,15 @@ When you compile and run it,
 each level will correspond to a problem below and it should react to the
 key controls in \ref section2 "Section 2" with the exception
 of the space bar, more of which later.
-The first level corresponds to \ref problem6-3-1 "Problem 6.3.1"
+The first level corresponds to \ref problem8-3-1 "Problem 8.3.1"
 and displays two gears in their start positions and orientations
 as shown in \ref fig32 "Fig. 32".
-The second level corresponds to \ref problem6-3-2 "Problem 6.3.2"
+The second level corresponds to \ref problem8-3-2 "Problem 8.3.2"
 and displays two gears in their start positions and orientations
 as shown in \ref fig37 "Fig. 37".
 
-\anchor problem6-3-1
-### Problem 6.3.1
+\anchor problem8-3-1
+### Problem 8.3.1
 
 <div style="padding-left: 30px;" markdown="1">
 Consider the two meshed elliptical gears rotating around their centers shown in \ref fig35 "Fig.35".
@@ -1141,8 +1141,8 @@ to rotate the right gear meshed with the left gear as shown in \ref fig35 "Fig. 
 You may use function `ComputeTheta1` as described above.
 </div>
 
-\anchor problem6-3-2
-### Problem 6.3.2
+\anchor problem8-3-2
+### Problem 8.3.2
 
 <div style="padding-left: 30px;" markdown="1">
 Consider the two meshed elliptical gears rotating around their centers shown in

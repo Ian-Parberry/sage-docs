@@ -10,7 +10,7 @@ hand-written physics code based on Euler integration.
 \anchor fig1
 \image html ss0.png "Fig. 1: The Pool End Game at the start of a game." width=50%
 
-The remainder of this page is divided into five sections.
+The remainder of this page is divided into six sections.
 \ref section2 "Section 2" lists the controls
 and their corresponding actions,
 \ref section3 "Section 3" tells you how to build it,
@@ -406,8 +406,8 @@ or (recommended) make a copy of the folder <span style="background-color:#D8E4D8
 in some place convenient (for example, the Desktop or your `Documents` folder)
 and work there.
 
-\anchor problem6-1
-## Problem 6.1
+\anchor problem1-1
+## Problem 1.1
 
 \anchor fig11
 @image html hitpoint.gif "Fig. 11: A circle drawn at the point of impact." 
@@ -433,14 +433,14 @@ There is already code to compute the center of the ball at TOI. This can be used
 the balls currently overlap.
 </div>
 
-\anchor problem6-2
-## Problem 6.2
+\anchor problem1-2
+## Problem 1.2
 
 \anchor fig12
 @image html lines.gif "Fig. 12: Lines showing the paths of the cue-ball (white) and the 8-ball (magenta)." 
 
 <div style="padding-left: 30px;" markdown="1">
-After completing \ref problem6-1 "Problem 6.1" above, 
+After completing \ref problem1-1 "Problem 1.1" above, 
 add code that draws a line showing the path of the cue-ball before impact,
 and lines showing the paths of both balls after impact. 
 The latter must must end at a rail as shown in \ref fig12 "Fig. 12". 
@@ -449,7 +449,7 @@ The latter must must end at a rail as shown in \ref fig12 "Fig. 12".
 
 To draw a line from the current position of the cue-ball `m_pCueBall->m_vPos` to the its
 position at time of impact `vCueBallPosAtTOI`
-found in \ref problem6-1 "Problem 6.1", add the following line of code in the appropriate
+found in \ref problem1-1 "Problem 1.1", add the following line of code in the appropriate
 place in `CObjectManager::Draw`.
 
     m_pRenderer->DrawLine(eSprite::Line, m_pCueBall->m_vPos, vCueBallPosAtTOI, Colors::AntiqueWhite);

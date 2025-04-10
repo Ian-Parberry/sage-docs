@@ -124,8 +124,8 @@ If a build fails, run `testenv.bat` and try building in Visual Studio instead.
 We strongly recommend that you install Visual Leak Detector from
 [https://kinddragon.github.io/vld/](https://kinddragon.github.io/vld/).
 Click on `Download Installer` and run it.
-The installer offers to set environment variables for you, but for SAGE you should
-ignire that and instead (or in addition to)
+Let the installer set the environment variable for you,
+in addition create and
 set an environment variable `VLD_DIR` that SAGE
 will use to find the header and library folders for Visual Leak Detector.
 The default is

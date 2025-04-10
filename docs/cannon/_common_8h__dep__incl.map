@@ -17,7 +17,7 @@
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="120,182,280,229,279,234,119,187"/>
 <area shape="rect" id="Node000005" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="222,304,304,331"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="298,270,274,305,270,302,294,267"/>
-<area shape="rect" id="Node000006" href="$_main_8cpp.html" title="Every program has to have a main." alt="" coords="327,304,402,331"/>
+<area shape="rect" id="Node000006" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="327,304,402,331"/>
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="333,267,358,302,353,305,329,270"/>
 <area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="422,191,341,231,338,226,420,186"/>
 <area shape="rect" id="Node000009" href="$_hud_8cpp.html" title="Code for the heads&#45;up display class CHeadsUpDisplay." alt="" coords="425,229,496,256"/>

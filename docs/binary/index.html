@@ -100,7 +100,7 @@ $(function(){ initResizable(false); });
 <img src="screenshot.png" alt="" width="60%"/>
 <div class="caption">
 Fig. 1: Screen shot in the initial configuration (zero).</div></div>
-<p>The remainder of this page is divided into five sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, and <a class="el" href="#section6">Section 6</a> addresses the question "what next?".</p>
+<p>The remainder of this page is divided into six sections. <a class="el" href="#section2">Section 2</a> lists the controls and their corresponding actions, <a class="el" href="#section3">Section 3</a> tells you how to build it, <a class="el" href="#section4">Section 4</a> gives you a list of actions to take in the game to see some of its important features, <a class="el" href="#section5">Section 5</a> gives a breakdown of the code, <a class="el" href="#section6">Section 6</a> contains some programming problems, and <a class="el" href="#section7">Section 7</a> addresses the question "what next?".</p>
 <p><a class="anchor" id="section2"></a></p><h1>2. Keyboard Controls</h1>
 <center> <table class="doxtable">
 <tr>
@@ -163,7 +163,21 @@ Fig. 8: Ripple-carry counter with 5 bits.</div></div>
 <div class="caption">
 Fig. 9: Shapes for single bit counter at 1.</div></div>
 <p>Our counter is implemented as an instance of <code><a class="el" href="class_c_counter.html" title="Binary counter.">CCounter</a></code>, which stores an array of pointers to instances of <code><a class="el" href="class_c_bit_counter.html" title="Single-bit counter.">CBitCounter</a></code> created in its constructor. An instance of <code><a class="el" href="class_c_counter.html" title="Binary counter.">CCounter</a></code> is created in <code><a class="el" href="class_c_object_manager.html#aa2d13426f50a3bb1768245ea68e5d844" title="Create counter.">CObjectManager::CreateCounter</a></code> which is called from <code><a class="el" href="class_c_game.html#af7200bd66587e10002e7ed9e4a1f930e" title="Begin playing the game.">CGame::BeginGame</a></code>.</p>
-<p><a class="anchor" id="section6"></a></p><h1>6. What Next?</h1>
+<p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
+<p><a class="anchor" id="problem13-1"></a></p><h2>Problem 13.1</h2>
+<div style="padding-left: 30px;" markdown="1"> There are many ways to build a binary counter. Suppose we represent a single bit as a triangle that tips left for zero (<a class="el" href="#fig10">Fig. 10</a>, left) and right for one (<a class="el" href="#fig10">Fig. 10</a>, right). Let's call this a <em>gadget</em> for short. Dropping a ball from above the middle of this triangle will tip it from one side to the other.</div><div style="padding-left: 30px;" markdown="1"><a class="anchor" id="fig10"></a><div class="image">
+<img src="newcounter0-1.png" alt=""/>
+<div class="caption">
+Fig. 10: A single bit at zero (left) and one (right).</div></div>
+</div><div style="padding-left: 30px;" markdown="1">Your task is to build a 4-bit counter from 4 of these gadgets arranged one above the other as shown in <a class="el" href="#fig11">Fig. 11</a> with some extra shapes that makes the balls cascade on the left (what a one changes to a zero) from one gadget to the next. Note that the gadgets are arranged from the least significant bit at the top to the most significant bit at the bottom as above.</div><div style="padding-left: 30px;" markdown="1"><a class="anchor" id="fig11"></a><div class="image">
+<img src="newcounter.png" alt="" width="30%"/>
+<div class="caption">
+Fig. 11: A four bit counter at zero.</div></div>
+</div><div style="padding-left: 30px;" markdown="1">Make a copy of the folder <span style="background-color:#D8E4D8;"><code>11. Box2D Blank Game</code></span> in some place convenient (for example, the Desktop or your <code>Documents</code> folder) and modify it so that a ball is dropped from the top center of the window when the <code>Space</code> bar is pressed. Each ball cascades off the gadgets and collects at the bottom of the window having incremented the binary number represented by the gadgets from bottom to top. <a class="el" href="#fig12">Fig. 12</a> shows the rest states representing the 4-bit binary numbers.</div><div style="padding-left: 30px;" markdown="1"><a class="anchor" id="fig12"></a><div class="image">
+<img src="newcounter.gif" alt=""/>
+<div class="caption">
+Fig. 12: Rest states while counting.</div></div>
+</div><div style="padding-left: 30px;" markdown="1">Notice that in <a class="el" href="#fig12">Fig. 12</a> the number represented is written in binary at top right of the window and the bit represented by each gadget is indicated by a 0 and a 1 character printed above the gadget so that the triangle points to the current bit. It's not necessary for you to do that. </div><p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../lullaby/index.html">Cannon Lullaby Toy</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

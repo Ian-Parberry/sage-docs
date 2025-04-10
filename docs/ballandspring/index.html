@@ -247,13 +247,13 @@ Fig. 11: Pentagonal wheel made of sticks (left) and springs (right).</div></div>
 Fig. 12: Woody the ragdoll robot.</div></div>
 <p><a class="anchor" id="section6"></a></p><h1>6. Problems</h1>
 <p>For the following problems you can either work directly in the folder <span style="background-color:#D8E4D8;"><code>5. Ball and Spring Toy</code></span> in your copy of the <span style="background-color:#D8E4D8;"><code>sage-physics</code></span> repository, or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;"><code>5. Ball and Spring Toy</code></span> in some place convenient (for example, the Desktop or your <code>Documents</code> folder) and work there.</p>
-<p><a class="anchor" id="problem6-1"></a></p><h2>Problem 6.1</h2>
-<p>Modify the code so that it works as follows. Hitting the down arrow (<code>VK_DOWN</code>) must scale the objects by 4/5 each time it is hit, down to a minimum of 16/25. Hitting the up arrow (VK_UP) scale the objects by 5/4 each time it is hit, up to a maximum of 1. The object must relaunch each time you scale up or down. For example, <a class="el" href="#fig13">Fig. 13</a> shows the first body in their scaled initial positions at small (scale factor \(0.75^2\)), medium (scale factor \(0.75\)), and large (scale factor \(1\)) scale.</p>
-<p><a class="anchor" id="fig13"></a></p><div class="image">
+<p><a class="anchor" id="problem5-1"></a></p><h2>Problem 5.1</h2>
+<div style="padding-left: 30px;" markdown="1"> Modify the code so that it works as follows. Hitting the down arrow (<code>VK_DOWN</code>) must scale the objects by 4/5 each time it is hit, down to a minimum of 16/25. Hitting the up arrow (VK_UP) scale the objects by 5/4 each time it is hit, up to a maximum of 1. The object must relaunch each time you scale up or down. For example, <a class="el" href="#fig13">Fig. 13</a> shows the first body in their scaled initial positions at small (scale factor \(0.75^2\)), medium (scale factor \(0.75\)), and large (scale factor \(1\)) scale.</div><div style="padding-left: 30px;" markdown="1"><a class="anchor" id="fig13"></a><div class="image">
 <img src="scale.gif" alt=""/>
 <div class="caption">
 Fig. 13: Scaled object in the initial position for small, medium, and large.</div></div>
-<p>Hint: Begin by adding a new static member variable <code>m_fScale</code> to <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code>, initialized to <code>1.0f</code>. Add the following code to <code><a class="el" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler.">CGame::KeyboardHandler</a></code>: </p><pre class="fragment">const float fScaleFactor = 0.8f;
+</div><div style="padding-left: 30px;" markdown="1"><h3>Hint:</h3>
+</div><div style="padding-left: 30px;" markdown="1"> Begin by adding a new static member variable <code>m_fScale</code> to <code><a class="el" href="class_c_common.html" title="The common variables class.">CCommon</a></code>, initialized to <code>1.0f</code>. Add the following code to <code><a class="el" href="class_c_game.html#a74a75ef02b07f0f785de8aa6e7631b5d" title="The keyboard handler.">CGame::KeyboardHandler</a></code>: <pre class="fragment">const float fScaleFactor = 0.8f;
 const float fScaleFactorSq = sqr(fScaleFactor);
 
 if(m_pKeyboard-&gt;TriggerDown(VK_UP) &amp;&amp; m_fScale &lt; 1.0f){ 
@@ -265,8 +265,7 @@ if(m_pKeyboard-&gt;TriggerDown(VK_DOWN) &amp;&amp; m_fScale &gt; fScaleFactorSq)
     m_fScale = max(fScaleFactorSq, m_fScale*fScaleFactor);
     BeginGame(); 
 } //if
-</pre><p>The main things that must scale by <code>CCommon::m_fScale</code> are the initial position (as shown in <a class="el" href="#fig13">Fig. 13</a>), gravity, collision detection and response, sprite scale (as shown in <a class="el" href="#fig13">Fig. 13</a>), impulse magnitude, and ragdoll AI.</p>
-<p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
+</pre></div><div style="padding-left: 30px;" markdown="1">The main things that must scale by <code>CCommon::m_fScale</code> are the initial position (as shown in <a class="el" href="#fig13">Fig. 13</a>), gravity, collision detection and response, sprite scale (as shown in <a class="el" href="#fig13">Fig. 13</a>), impulse magnitude, and ragdoll AI. </div><p><a class="anchor" id="section7"></a></p><h1>7. What Next?</h1>
 <p>Next, take a look at the <a href="../box2drender/index.html">Box2D Render Library</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>

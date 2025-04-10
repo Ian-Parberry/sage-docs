@@ -19,15 +19,16 @@ initial state, that is, at value zero.
 \image html screenshot.png "Fig. 1: Screen shot in the initial configuration (zero)." width=60%
 
 
-The remainder of this page is divided into five sections.
+The remainder of this page is divided into six sections.
 \ref section2 "Section 2" lists the controls
 and their corresponding actions,
 \ref section3 "Section 3" tells you how to build it,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
@@ -199,7 +200,57 @@ An instance of `CCounter` is created in `CObjectManager::CreateCounter`
 which is called from `CGame::BeginGame`.
 
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+\anchor problem13-1
+## Problem 13.1
+
+<div style="padding-left: 30px;" markdown="1">
+There are many ways to build a binary counter. Suppose we represent
+a single bit as a triangle that tips left for zero
+(\ref fig10 "Fig. 10", left) and right for one 
+(\ref fig10 "Fig. 10", right).
+Let's call this a _gadget_ for short.
+Dropping a ball from above the middle of this triangle will
+tip it from one side to the other.
+
+\anchor fig10
+@image html newcounter0-1.png "Fig. 10: A single bit at zero (left) and one (right)." 
+
+Your task is to build a 4-bit counter from 4 of these gadgets arranged
+one above the other as shown in \ref fig11 "Fig. 11"
+with some extra shapes that makes the balls cascade on the
+left (what a one changes to a zero) from one gadget to the next.
+Note that the gadgets are arranged from the least significant 
+bit at the top to the most significant bit at the bottom as above.
+
+\anchor fig11
+@image html newcounter.png "Fig. 11: A four bit counter at zero."  width=30%
+
+Make a copy of the folder <span style="background-color:#D8E4D8;">`11. Box2D Blank Game`</span>
+in some place convenient (for example, the Desktop or your `Documents` folder)
+and modify it so that a ball is dropped from the top center
+of the window when the `Space` bar is pressed.
+Each ball cascades off the gadgets and collects at the bottom
+of the window having incremented the binary number represented
+by the gadgets from bottom to top. 
+\ref fig12 "Fig. 12" shows the rest states representing the 4-bit
+binary numbers.
+
+\anchor fig12
+\image html newcounter.gif "Fig. 12: Rest states while counting."
+
+Notice that in \ref fig12 "Fig. 12" the number represented is
+written in binary at top right of the window and the bit represented
+by each gadget is indicated by a 0 and a 1 character 
+printed above the gadget so that the triangle
+points to the right bit.
+It's not
+necessary for you to do that.
+</div>
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../lullaby/index.html">Cannon Lullaby Toy</a>.
 

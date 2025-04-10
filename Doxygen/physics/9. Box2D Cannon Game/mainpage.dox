@@ -24,8 +24,9 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
@@ -336,7 +337,59 @@ here but we will put it off until the <a href="../cannonstars/index.html">Box2D 
 
 
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+For the following problems you can either work directly in the
+folder <span style="background-color:#D8E4D8;">`9. Box2D Cannon Game`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository,
+or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;">`9. Box2D Cannon Game`</span>
+in some place convenient (for example, the Desktop or your `Documents` folder)
+and work there.
+
+
+\anchor problem9-1
+## Problem 9.1 
+
+<div style="padding-left: 30px;" markdown="1">
+<em>Rocket jumping</em> is the technique of using the recoil from a rocket launcher as a method of propulsion, first seen as a game mechanic in Doom in 1993. Modify the Cannon Game so that the player can point the cannon at the ground and use the recoil from cannon fire to launch the cannon into the air as shown
+in \ref fig10 "Fig. 10".
+ 
+\anchor fig10
+\image html rocket.png "Fig. 10: Rocket jumping the cannon." width=60%
+
+###Hint:
+You will need to make the following changes (you can either comment out code
+or delete it outright).
+
+<ol>
+
+<li>
+In `CGame::ProcessState`, comment out the call to
+`CGame::ProcessWinLose`
+so that you have time to experiment with the game.
+</li>
+
+<li>
+In the `CCannon` constructor `CCannon::CCannon`,
+disable the limits on the revolute joint between the cannon barrel and the base so that the cannon can point vertically downwards.
+</li>
+
+<li>
+In `CCannon::Fire`, comment out the cannon temperature change so that the cannon won't overheat.
+</li>
+
+<li>
+In `CCannon::Fire`, disable the cannon explosion when the barrel is pointing at the ground.
+</li>
+
+<li>
+In `CCannon::Fire`, increase the amount of recoil by a factor of four.
+</li>
+</ol>
+</div>
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../cannonstars/index.html">Box2D Cannon Game With Stars</a>.
 

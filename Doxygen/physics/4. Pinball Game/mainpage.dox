@@ -128,8 +128,8 @@ or (recommended) make a copy of the folder <span style="background-color:#D8E4D8
 in some place convenient (for example, the Desktop or your `Documents` folder)
 and work there.
 
-\anchor problem6-1
-## Problem 6.1
+\anchor problem4-1
+## Problem 4.1
 
 <div style="padding-left: 30px;" markdown="1">
 Add the following function to `CObjectManager` to create a regular polygonal bumper
@@ -180,22 +180,22 @@ but the bumpers will not light up. That is the subject of the next question.
 \anchor fig2
 \image html screenshot2.png "Fig. 2: Screen shot with polygonal bumpers." width=60%
 
-\anchor problem6-2
-## Problem 6.2
+\anchor problem4-2
+## Problem 4.2
 
 <div style="padding-left: 30px;" markdown="1">
-After completing \ref problem6-2 "Problem 6.1",
+After completing \ref problem4-1 "Problem 4.1",
 add code to `CObjectManager::NarrowPhase` to make the polygonal
 bumpers light up when hit.
 
-###Hints
+###Hints:
 
 Keep a vector of pointers to the new polygons 
 
     std::vector<Shapes::CCompoundShape*> m_vBumperList;
 
 and push a pointer to each polygonal bumper to the back of it in your function
-`CObjectManager::MakeBumper` from \ref problem6-2 "Problem 6.1".
+`CObjectManager::MakeBumper` from \ref problem4-1 "Problem 4.1".
 Then at the end of `CObjectManager::NarrowPhase`, if the local variable `bHit` is `true`
 then use the function
 <a href="../shapes/class_shapes_1_1_c_compound_shape.html#abef3eafc01c529d2d9618be7c3fc604e">`CCompoundshape::IsPartOf`</a>
