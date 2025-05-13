@@ -27,16 +27,16 @@ The remainder of this page is divided into six sections.
 \anchor visualstudio
 # 1. Microsoft Visual Studio
 
-If your computer already has Microsoft Visual Studio installed,
-check that it has the following three workloads as shown in
-\ref fig1 "Fig. 1":
+Download and install Visual Studio Community from
+[https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/).
+It's free, as opposed to the other versions of Visual Studio such as Professional and Enterprise.
+Make sure that you choose the following three workloads (also shown in
+\ref fig1 "Fig. 1"):
 Desktop development with C++, Game development with C++, and
 .NET desktop development.
-If not, you can install them from within Visual Studio without
+If your computer already has Microsoft Visual Studio installed
+but you do not have all of these workloads, you can install them from within Visual Studio without
 having to deinstall and reinstall the whole thing.
-You can get a copy of Visual Studio Community from
-[https://visualstudio.microsoft.com/vs/community/](https://visualstudio.microsoft.com/vs/community/).
-Make sure that you choose the workloads mentioned above.
 
 \anchor fig1
 \image html vsconfig.png "Fig 1. Visual Studio Workloads." width=95%
