@@ -1,10 +1,10 @@
 <map id="ObjectManager.cpp" name="ObjectManager.cpp">
-<area shape="rect" id="Node000001" title="Code for the class CObjectManager." alt="" coords="519,5,654,32"/>
+<area shape="rect" id="Node000001" title="Code for the object manager class CObjectManager." alt="" coords="519,5,654,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="323,80,501,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="557,35,458,76,455,71,555,30"/>
-<area shape="rect" id="Node000003" href="$_object_manager_8h.html" title="Interface for the class CObjectManager." alt="" coords="576,80,696,107"/>
+<area shape="rect" id="Node000003" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="576,80,696,107"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="597,31,621,66,617,69,593,34"/>
-<area shape="rect" id="Node000016" href="$_gate_8h.html" title="Interface for the class CGate." alt="" coords="322,155,382,181"/>
+<area shape="rect" id="Node000016" href="$_gate_8h.html" title="Interface for the gate class CGate." alt="" coords="322,155,382,181"/>
 <area shape="poly" id="edge33_Node000001_Node000016" title=" " alt="" coords="581,34,555,70,536,91,515,109,464,132,398,155,396,150,462,127,512,104,532,87,551,67,577,31"/>
 <area shape="rect" id="Node000022" title=" " alt="" coords="721,80,783,107"/>
 <area shape="poly" id="edge34_Node000001_Node000022" title=" " alt="" coords="616,30,710,71,708,76,614,35"/>
@@ -16,7 +16,7 @@
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="688,105,863,148,861,153,686,110"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="734,229,791,256"/>
 <area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="640,106,650,142,658,162,670,180,694,202,721,220,718,224,691,207,666,183,654,164,645,143,635,108"/>
-<area shape="rect" id="Node000008" href="$_quad_tree_8h.html" title="Interface for the classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="508,155,598,181"/>
+<area shape="rect" id="Node000008" href="$_quad_tree_8h.html" title="Interface for the quadtree classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="508,155,598,181"/>
 <area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="623,109,581,146,577,142,620,105"/>
 <area shape="rect" id="Node000011" title=" " alt="" coords="969,229,1038,256"/>
 <area shape="poly" id="edge26_Node000003_Node000011" title=" " alt="" coords="697,102,709,104,778,109,869,113,914,117,955,124,989,136,1013,153,1020,167,1023,184,1018,215,1012,214,1017,184,1015,169,1008,156,986,141,954,130,913,122,868,118,778,114,709,109,696,107"/>
@@ -27,9 +27,9 @@
 <area shape="rect" id="Node000015" title=" " alt="" coords="274,229,392,256"/>
 <area shape="poly" id="edge15_Node000003_Node000015" title=" " alt="" coords="596,110,537,130,474,157,415,190,364,223,361,218,412,185,472,152,535,125,594,105"/>
 <area shape="poly" id="edge17_Node000003_Node000016" title=" " alt="" coords="587,110,397,158,396,153,586,105"/>
-<area shape="rect" id="Node000017" href="$_common_8h.html" title="Interface for the class CCommon." alt="" coords="114,229,200,256"/>
+<area shape="rect" id="Node000017" href="$_common_8h.html" title="Interface for the common variables class CCommon." alt="" coords="114,229,200,256"/>
 <area shape="poly" id="edge27_Node000003_Node000017" title=" " alt="" coords="576,102,451,120,380,136,310,157,243,189,188,223,185,218,241,184,308,152,378,131,450,115,575,97"/>
-<area shape="rect" id="Node000020" href="$_object_8h.html" title="Interface for the class CObject." alt="" coords="1073,155,1143,181"/>
+<area shape="rect" id="Node000020" href="$_object_8h.html" title="Interface for the game object class CObject." alt="" coords="1073,155,1143,181"/>
 <area shape="poly" id="edge28_Node000003_Node000020" title=" " alt="" coords="697,102,710,104,882,126,1055,152,1058,153,1057,158,1054,157,882,132,709,109,696,107"/>
 <area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="590,179,720,224,718,229,589,184"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="519,229,587,256"/>

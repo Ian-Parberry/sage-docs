@@ -32,8 +32,9 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Controls
@@ -610,6 +611,179 @@ which is pretty close to linear in \f$n\f$.
 
 \anchor section6
 # 6. What Next?
+
+For the following problems,
+copy the folder <span style="background-color:#D8E4D8;">`3. Collision Math Toy`</span> from your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository
+to some place convenient (for example, the Desktop or your `Documents` folder) and work there.
+
+\anchor problem1
+## Problem 1
+
+<div style="padding-left: 30px;" markdown="1">
+The <span style="background-color:#D8E4D8;">`Collision Math Toy`</span> was designed so that there will almost always
+be balls in motion. The following changes will make sure that they always will eventually come to a halt.
+First, we give the launched balls some Z-axis friction by
+adding the line
+
+```cpp   
+d.m_fFriction = 0.001f;
+```
+to function `CGame::Launch()` in `Game.cpp` after the line
+that sets `d.m_fElasticity`.
+Next, in function `CObjectManager::MakeWorldEdges` in `ObjectManager.cpp`, find the line
+
+```cpp 
+arcDesc.m_fElasticity = 700.0f;
+```
+and change the elasticity from `700.0f` to `0.9f`.
+Similarly, in the line
+
+```cpp 
+ptDesc.m_fElasticity = 1.0f;
+```
+
+change the elasticity from `1.0f` to `0.9f`.
+Finally, in function `CObjectManager::MakeShapes`, find the line
+
+```cpp
+ptDesc.m_fElasticity = 500.0f;
+```
+
+and change the elasticity from `500.0f` to `0.9f`.
+Towards the end of the function you will find a line
+
+```cpp
+Shapes::CCircleDesc circleDesc(Vector2(0.75f*w, h/2.0f), r, 700.0);
+```
+
+in which you must change the last parameter (elasticity) from
+`700.0f` to `0.9f` as follows.
+
+```cpp
+Shapes::CCircleDesc circleDesc(Vector2(0.75f*w, h/2.0f), r, 0.9f);
+```
+
+Compile and run the resulting program, and launch a few balls.
+If you have done everthing correctly, the balls
+will bounce around for a few seconds and then stop.
+Notice that the collision detection and response numbers
+shown in the dialog box
+(AABB tests per iteration,
+AABB tests per second,
+full tests per second, and
+collisions per second, see \ref section2-4 "Section 2.4") remain high even though nothing can
+actually collide when the balls are stopped
+(see \ref section2-4 "Section 2.4").
+We will address this in the next problem.
+</div>
+
+\anchor problem2
+## Problem 2
+
+<div style="padding-left: 30px;" markdown="1">
+It makes sense that balls that are stopped should
+go into a dormant, or <em>sleep</em> mode in which they
+do not participate in collision detection and response
+unless they collide with a dynamic object, in which case
+they should stop sleeping.
+To this end, start with your code from
+\ref problem1 "Problem 1" and add
+the following private member variable to `CObject` in `Object.h`.
+
+```cpp
+bool m_bSleep = false;  ///< Sleep state.
+```
+Also in `Object.h`, add the following public writer and reader
+functions to `CObject` to enable other entities to access
+the sleep flag `m_bSleep`.
+
+```cpp
+void SetSleep(const bool); 
+const bool GetSleep() const;
+```
+    
+Add the code for these functions to `Object.cpp` as follows.
+
+```cpp
+void CObject::SetSleep(const bool b){
+  m_bSleep = b;
+} //SetSleeping
+
+const bool CObject::GetSleep() const{
+  return m_bSleep;
+} //GetSleeping
+```
+
+In `ObjectManager.cpp`, add the following code to
+`CObjectManager::Move` after the quadtree is updated
+and before the number of out of bounds balls is counted.
+
+```cpp
+for(auto const& p:m_stdShapes[(UINT)Shapes::eMotion::Dynamic]){
+  Shapes::CDynamicCircle* pCirc = (Shapes::CDynamicCircle*)p;
+  CObject* pObj = (CObject*)(p->GetUserPtr());
+
+  const bool bGoToSleep = pCirc->GetVel().LengthSquared() < 0.0001f;
+  if(bGoToSleep)pCirc->SetVel(Vector2(0.0f));
+
+  if(pObj != nullptr){
+    if(bGoToSleep)pObj->SetSleep(bGoToSleep);
+    pObj->m_eUnlitSprite = bGoToSleep? eSprite::Circle: eSprite::Ball;
+  } //if
+} //for
+```
+
+The for-loop iterates through all dynamic shapes.
+The first two lines of its body gets pointers
+to the dynamic circle the the corresponding object.
+The next two lines sets a local variable
+`bGoToSleep` to `true` iff the dynamic circle's velocity
+is very small, and if so, reduces the velocity to the zero vector.
+The if-statement is defensive programming since `pObj` will
+never be `nullptr` unless some far-reaching bug such as a buffer
+over-run makes it so. The body of the if-statement (which is
+always executed) sets the current objects's sleep flag
+if necessary, and changes its sprite from the usual `eSprite::Ball`
+to `eSprite::Circle` when sleeping.
+For example, in \ref fig29 "Fig. 29" you can see ten balls,
+six of which are sleeping (the colored circles) and four of which are not (the green and blue ball-bearings).
+
+\anchor fig29
+\image html sleeping.png "Fig. 29: Sleeping and non-sleeping balls." width=60%
+
+Below the for-loop you will find the following
+code that counts the number of out of bounds balls.
+
+```cpp
+for(auto const& p: m_stdShapes[(UINT)Shapes::eMotion::Dynamic]){ 
+  const Shapes::CAabb2D& aabb = p->GetAABB();
+  if(!(aabb && m_cAABB))
+    ++m_nLostBalls;
+} //for
+```
+
+There's no need to do this for out of bounds balls that are sleeping,
+so replace that code with the following.
+  
+```cpp
+for(auto const& p: m_stdShapes[(UINT)Shapes::eMotion::Dynamic]){ 
+  CObject* pObj = (CObject*)(p->GetUserPtr());
+  if(!pObj->GetSleep()){
+    const Shapes::CAabb2D& aabb = p->GetAABB();
+    if(!(aabb && m_cAABB))
+      ++m_nLostBalls;
+  } //if
+} //for
+```
+
+\anchor fig30
+\image html sleeping100.png "Fig. 30: One hundred sleeping balls with no collision detection happening." width=50%
+
+</div>
+
+\anchor section7
+# 7. What Next?
 
 Next, take a look at the <a href="../pinball/index.html">Pinball Game</a>.
 

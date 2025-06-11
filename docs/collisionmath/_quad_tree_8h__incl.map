@@ -1,5 +1,5 @@
 <map id="QuadTree.h" name="QuadTree.h">
-<area shape="rect" id="Node000001" title="Interface for the classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="184,5,273,32"/>
+<area shape="rect" id="Node000001" title="Interface for the quadtree classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="184,5,273,32"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,80,63,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,35,78,78,76,73,194,30"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="86,80,155,107"/>

@@ -1,20 +1,20 @@
 <map id="QuadTree.h" name="QuadTree.h">
-<area shape="rect" id="Node000001" title="Interface for the classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="179,5,268,32"/>
-<area shape="rect" id="Node000002" href="$_object_manager_8h.html" title="Interface for the class CObjectManager." alt="" coords="96,80,216,107"/>
+<area shape="rect" id="Node000001" title="Interface for the quadtree classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="179,5,268,32"/>
+<area shape="rect" id="Node000002" href="$_object_manager_8h.html" title="Interface for the object manager class CObjectManager." alt="" coords="96,80,216,107"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,45,169,81,166,78,200,42"/>
-<area shape="rect" id="Node000009" href="$_quad_tree_8cpp.html" title="Code for the classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="240,80,344,107"/>
+<area shape="rect" id="Node000009" href="$_quad_tree_8cpp.html" title="Code for the quadtree classes CQuadTree, CQuadTreeNode, and CQuadTreeLeaf." alt="" coords="240,80,344,107"/>
 <area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="248,42,282,78,278,81,244,45"/>
-<area shape="rect" id="Node000003" href="$_dialog_box_8cpp.html" title="Code for the class CDialogBox." alt="" coords="5,229,112,256"/>
+<area shape="rect" id="Node000003" href="$_dialog_box_8cpp.html" title="Code for the dialog box class CDialogBox." alt="" coords="5,229,112,256"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="104,116,78,133,58,156,52,174,51,194,57,229,52,230,46,194,47,173,54,153,75,129,101,112"/>
-<area shape="rect" id="Node000004" href="$_dialog_box_8h.html" title="Interface for the class CDialogBox." alt="" coords="68,155,161,181"/>
+<area shape="rect" id="Node000004" href="$_dialog_box_8h.html" title="Interface for the dialog box class CDialogBox." alt="" coords="68,155,161,181"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="144,122,124,156,119,153,139,119"/>
-<area shape="rect" id="Node000005" href="$_game_8h.html" title="Interface for the class CGame." alt="" coords="150,229,218,256"/>
+<area shape="rect" id="Node000005" href="$_game_8h.html" title="Interface for the game class CGame." alt="" coords="150,229,218,256"/>
 <area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="167,121,176,154,186,229,180,229,171,155,162,122"/>
-<area shape="rect" id="Node000008" href="$_object_manager_8cpp.html" title="Code for the class CObjectManager." alt="" coords="235,155,370,181"/>
+<area shape="rect" id="Node000008" href="$_object_manager_8cpp.html" title="Code for the object manager class CObjectManager." alt="" coords="235,155,370,181"/>
 <area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="196,111,278,152,276,156,194,116"/>
 <area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="98,195,70,231,66,227,93,192"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="139,191,174,227,170,231,135,194"/>
-<area shape="rect" id="Node000006" href="$_game_8cpp.html" title="Code for the class CGame." alt="" coords="92,304,174,331"/>
+<area shape="rect" id="Node000006" href="$_game_8cpp.html" title="Code for the game class CGame." alt="" coords="92,304,174,331"/>
 <area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="169,270,144,305,140,302,164,267"/>
 <area shape="rect" id="Node000007" href="$_main_8cpp.html" title="The home of WinMain." alt="" coords="197,304,272,331"/>
 <area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="203,267,228,302,224,305,199,270"/>
