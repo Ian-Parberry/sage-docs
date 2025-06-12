@@ -777,6 +777,89 @@ for(auto const& p: m_stdShapes[(UINT)Shapes::eMotion::Dynamic]){
 } //for
 ```
 
+`CObjectManager::BroadPhase` has two nested `for`-loops,
+the first repeating for the number of broad-phase iterations
+`m_nCIterations` and the second for each dynamic shape.
+After the first line of the body of the nested `for`-loop
+declare an object pointer `pObj1` and make it point to the
+first object (whose shape is a dynamic circle), then declare a `boolean` variable `bObj1Sleep` and
+set it to `true` if that object is asleep:
+
+```cpp
+CObject* pObj1 = (CObject*)pCirc->GetUserPtr();
+const bool bObj1Sleep = pObj1->GetSleep();
+```
+
+The following lines do narrow-phase collision
+detection response of the dynamic circle against the gate
+and all static shapes.
+
+```cpp
+m_pGate->NarrowPhase(pCirc); 
+
+for(auto const& k: v[(UINT)Shapes::eMotion::Static]) 
+  NarrowPhase(k, pCirc);
+```
+
+The above three lines need only be executed if the object
+is not asleep, so enclose them
+in an `if`-statement as follows.
+
+```cpp
+if(!bObj1Sleep){
+  m_pGate->NarrowPhase(pCirc);
+
+  for(auto const& k: v[(UINT)Shapes::eMotion::Static])
+    NarrowPhase(k, pCirc);
+} //if
+```
+The following lines do narrow-phase collision
+detection response of the dynamic circle against all
+kinematic shapes.
+
+```cpp 
+for(auto const& k: v[(UINT)Shapes::eMotion::Kinematic]) 
+  NarrowPhase(k, pCirc);
+```
+
+The above two lines need only be executed if the object
+is not asleep or the kinematic shapes are rotating, so enclose them
+in an `if`-statement as follows.
+
+```cpp 
+if(!bObj1Sleep || m_bRotate)
+  for(auto const& k: v[(UINT)Shapes::eMotion::Kinematic]) 
+    NarrowPhase(k, pCirc);
+```
+
+The following lines do narrow-phase collision
+detection response of the dynamic circle against all
+(later numbered) dynamic shapes.
+
+```cpp
+for(auto k=next(j); k!=dEnd; k++)
+  NarrowPhase(*k, pCirc);
+```
+
+Replace those two lines with the following:
+
+```cpp
+for(auto k=next(j); k!=dEnd; k++){
+  CObject* pObj2 = (CObject*)(*k)->GetUserPtr();
+
+  if(!(bObj1Sleep && pObj2->GetSleep()))
+    if(NarrowPhase(*k, pCirc)){
+      pObj1->SetSleep(false);
+      pObj2->SetSleep(false);
+    } //if
+} //for
+```
+Check that you have done this correctly by launching
+a large number of balls (say 100) and waiting until
+they all come to rest. The dialog box will show
+that no collision tests are being done, as shown
+in \ref fig30 "Fig. 30".
+
 \anchor fig30
 \image html sleeping100.png "Fig. 30: One hundred sleeping balls with no collision detection happening." width=50%
 
