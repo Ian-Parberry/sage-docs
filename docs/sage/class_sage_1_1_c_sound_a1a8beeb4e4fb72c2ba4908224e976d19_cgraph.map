@@ -1,6 +1,6 @@
 <map id="Sage::CSound::Loop" name="Sage::CSound::Loop">
 <area shape="rect" id="Node000001" title="Loop a sound." alt="" coords="5,29,148,56"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a1be9551e2557b2be52c8138cdfa0181b" title="Play sound." alt="" coords="196,29,336,56"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="196,29,336,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,40,180,40,180,45,148,45"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="233,30,228,21,232,11,245,5,266,3,288,5,301,12,298,16,287,10,266,8,246,10,236,15,233,20,238,27"/>
 </map>

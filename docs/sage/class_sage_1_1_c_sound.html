@@ -103,7 +103,6 @@ $(function(){ initResizable(false); });
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_sage_1_1_c_sound-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Sage::CSound Class Reference</div></div>
 </div><!--header-->
@@ -156,14 +155,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe00e938f0c637e80ae2e3d30faa5add" id="r_afe00e938f0c637e80ae2e3d30faa5add"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe00e938f0c637e80ae2e3d30faa5add">~CSound</a> ()</td></tr>
 <tr class="memdesc:afe00e938f0c637e80ae2e3d30faa5add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
 <tr class="separator:afe00e938f0c637e80ae2e3d30faa5add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50299d4b69d084660b473d4e54c34ee8" id="r_a50299d4b69d084660b473d4e54c34ee8"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
-<tr class="memitem:a50299d4b69d084660b473d4e54c34ee8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a50299d4b69d084660b473d4e54c34ee8">LoadMT</a> (<a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt;)</td></tr>
-<tr class="memdesc:a50299d4b69d084660b473d4e54c34ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load sounds multithreaded.  <br /></td></tr>
-<tr class="separator:a50299d4b69d084660b473d4e54c34ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0963bf4377958e9df04ea925c8a29ea" id="r_ab0963bf4377958e9df04ea925c8a29ea"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
-<tr class="memitem:ab0963bf4377958e9df04ea925c8a29ea"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab0963bf4377958e9df04ea925c8a29ea">Load</a> (<a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt;)</td></tr>
-<tr class="memdesc:ab0963bf4377958e9df04ea925c8a29ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load sounds.  <br /></td></tr>
-<tr class="separator:ab0963bf4377958e9df04ea925c8a29ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4362891451f6d032f1203f1bffc57baa" id="r_a4362891451f6d032f1203f1bffc57baa"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
+<tr class="memitem:a4362891451f6d032f1203f1bffc57baa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4362891451f6d032f1203f1bffc57baa">LoadMT</a> (<a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt; &amp;)</td></tr>
+<tr class="memdesc:a4362891451f6d032f1203f1bffc57baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load sounds multithreaded.  <br /></td></tr>
+<tr class="separator:a4362891451f6d032f1203f1bffc57baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262ce1618fe9f7ea5452d9fc39480e42" id="r_a262ce1618fe9f7ea5452d9fc39480e42"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
+<tr class="memitem:a262ce1618fe9f7ea5452d9fc39480e42"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a262ce1618fe9f7ea5452d9fc39480e42">Load</a> (<a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt; &amp;)</td></tr>
+<tr class="memdesc:a262ce1618fe9f7ea5452d9fc39480e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load sounds.  <br /></td></tr>
+<tr class="separator:a262ce1618fe9f7ea5452d9fc39480e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae64782440686b331efd7c0360fe60a1a" id="r_ae64782440686b331efd7c0360fe60a1a"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae64782440686b331efd7c0360fe60a1a">Loaded</a> () const</td></tr>
 <tr class="memdesc:ae64782440686b331efd7c0360fe60a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound loading completed.  <br /></td></tr>
 <tr class="separator:ae64782440686b331efd7c0360fe60a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,18 +170,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54ba4211e1d5b685ddaee1fa23a3691b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a54ba4211e1d5b685ddaee1fa23a3691b">Load</a> (t, const char *)</td></tr>
 <tr class="memdesc:a54ba4211e1d5b685ddaee1fa23a3691b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load sound.  <br /></td></tr>
 <tr class="separator:a54ba4211e1d5b685ddaee1fa23a3691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1be9551e2557b2be52c8138cdfa0181b" id="r_a1be9551e2557b2be52c8138cdfa0181b"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
-<tr class="memitem:a1be9551e2557b2be52c8138cdfa0181b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1be9551e2557b2be52c8138cdfa0181b">Play</a> (t, const Vector2 &amp;, float=1, float=0)</td></tr>
-<tr class="memdesc:a1be9551e2557b2be52c8138cdfa0181b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
-<tr class="separator:a1be9551e2557b2be52c8138cdfa0181b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33098a81781d44c7bff388e379bcf615" id="r_a33098a81781d44c7bff388e379bcf615"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
-<tr class="memitem:a33098a81781d44c7bff388e379bcf615"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a33098a81781d44c7bff388e379bcf615">Play</a> (t, const Vector3 &amp;, float=1, float=0)</td></tr>
-<tr class="memdesc:a33098a81781d44c7bff388e379bcf615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
-<tr class="separator:a33098a81781d44c7bff388e379bcf615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66643b51e382ebb65188b279fcbdec5a" id="r_a66643b51e382ebb65188b279fcbdec5a"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
-<tr class="memitem:a66643b51e382ebb65188b279fcbdec5a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a66643b51e382ebb65188b279fcbdec5a">Play</a> (t, float=1)</td></tr>
-<tr class="memdesc:a66643b51e382ebb65188b279fcbdec5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
-<tr class="separator:a66643b51e382ebb65188b279fcbdec5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24674816814c5cdaf4d642b5d584b4c3" id="r_a24674816814c5cdaf4d642b5d584b4c3"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
+<tr class="memitem:a24674816814c5cdaf4d642b5d584b4c3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a24674816814c5cdaf4d642b5d584b4c3">Play</a> (t, const Vector2 &amp;, float=1.0f, float=0.0f)</td></tr>
+<tr class="memdesc:a24674816814c5cdaf4d642b5d584b4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
+<tr class="separator:a24674816814c5cdaf4d642b5d584b4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7184920ea8a05476934115e50080ffa4" id="r_a7184920ea8a05476934115e50080ffa4"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
+<tr class="memitem:a7184920ea8a05476934115e50080ffa4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7184920ea8a05476934115e50080ffa4">Play</a> (t, const Vector3 &amp;, float=1.0f, float=0.0f)</td></tr>
+<tr class="memdesc:a7184920ea8a05476934115e50080ffa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
+<tr class="separator:a7184920ea8a05476934115e50080ffa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e5a1a72c47cb1b592e27c9973dd921" id="r_af5e5a1a72c47cb1b592e27c9973dd921"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
+<tr class="memitem:af5e5a1a72c47cb1b592e27c9973dd921"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af5e5a1a72c47cb1b592e27c9973dd921">Play</a> (t, float=1.0f)</td></tr>
+<tr class="memdesc:af5e5a1a72c47cb1b592e27c9973dd921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
+<tr class="separator:af5e5a1a72c47cb1b592e27c9973dd921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b95354bc33125caf71a7b6eabe6c73b" id="r_a4b95354bc33125caf71a7b6eabe6c73b"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
+<tr class="memitem:a4b95354bc33125caf71a7b6eabe6c73b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4b95354bc33125caf71a7b6eabe6c73b">Play</a> (t, float, float)</td></tr>
+<tr class="memdesc:a4b95354bc33125caf71a7b6eabe6c73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play sound.  <br /></td></tr>
+<tr class="separator:a4b95354bc33125caf71a7b6eabe6c73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bbfaa727641c4a3536933dcdaf99c51" id="r_a4bbfaa727641c4a3536933dcdaf99c51"><td class="memTemplParams" colspan="2">template&lt;class t &gt; </td></tr>
 <tr class="memitem:a4bbfaa727641c4a3536933dcdaf99c51"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4bbfaa727641c4a3536933dcdaf99c51">Loop</a> (t)</td></tr>
 <tr class="memdesc:a4bbfaa727641c4a3536933dcdaf99c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop a sound.  <br /></td></tr>
@@ -267,10 +270,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aac6a8953c53b11837a49e943606bfc7a" id="r_aac6a8953c53b11837a49e943606bfc7a"><td class="memItemLeft" align="right" valign="top"><a id="aac6a8953c53b11837a49e943606bfc7a" name="aac6a8953c53b11837a49e943606bfc7a"></a>
-AudioEngine *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pAudioEngine</b> = nullptr</td></tr>
-<tr class="memdesc:aac6a8953c53b11837a49e943606bfc7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">XAudio 2.8 Engine wrapped up in DirectXTK. <br /></td></tr>
-<tr class="separator:aac6a8953c53b11837a49e943606bfc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2026533cb8e76953aaecf8d3641fedec" id="r_a2026533cb8e76953aaecf8d3641fedec"><td class="memItemLeft" align="right" valign="top"><a id="a2026533cb8e76953aaecf8d3641fedec" name="a2026533cb8e76953aaecf8d3641fedec"></a>
+std::unique_ptr&lt; AudioEngine &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pAudioEngine</b></td></tr>
+<tr class="memdesc:a2026533cb8e76953aaecf8d3641fedec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to an audio engine. <br /></td></tr>
+<tr class="separator:a2026533cb8e76953aaecf8d3641fedec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2022b86e07977d01f672fa3fbd22a7b" id="r_af2022b86e07977d01f672fa3fbd22a7b"><td class="memItemLeft" align="right" valign="top"><a id="af2022b86e07977d01f672fa3fbd22a7b" name="af2022b86e07977d01f672fa3fbd22a7b"></a>
 <a class="el" href="class_sage_1_1_c_playable_sound_desc.html">CPlayableSoundDesc</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSound</b> = nullptr</td></tr>
 <tr class="memdesc:af2022b86e07977d01f672fa3fbd22a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playable sounds. <br /></td></tr>
@@ -310,12 +313,6 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>DEPTH</b> = 10
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bLoaded</b> = false</td></tr>
 <tr class="memdesc:a64ad40c90797ad055c8f5bef9e995e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sounds loaded flag. <br /></td></tr>
 <tr class="separator:a64ad40c90797ad055c8f5bef9e995e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a10945efb2dcd1df048c9570f79ae5cf8" id="r_a10945efb2dcd1df048c9570f79ae5cf8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10945efb2dcd1df048c9570f79ae5cf8">m_bSingularityViolation</a> = false</td></tr>
-<tr class="memdesc:a10945efb2dcd1df048c9570f79ae5cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enforces that this is a singular class.  <br /></td></tr>
-<tr class="separator:a10945efb2dcd1df048c9570f79ae5cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -531,7 +528,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Get the next instance that is not playing." alt="" coords="196,31,409,57"/>
 <area shape="rect" href="class_sage_1_1_c_sound.html#a564d22bb7476e4d6e3bafb276a52cd42" title="Loop a sound." alt="" coords="5,5,148,32"/>
 <area shape="poly" title=" " alt="" coords="180,33,148,29,148,24,181,28"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a33098a81781d44c7bff388e379bcf615" title="Play sound." alt="" coords="6,56,147,83"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a7184920ea8a05476934115e50080ffa4" title="Play sound." alt="" coords="6,56,147,83"/>
 <area shape="poly" title=" " alt="" coords="181,60,147,64,147,59,180,55"/>
 </map>
 </div>
@@ -572,17 +569,17 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="class_sage_1_1_c_sound_a405c088e6d79ea9ec8defe43f847ecf5_icgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a405c088e6d79ea9ec8defe43f847ecf5_icgraph" alt=""/></div>
 <map name="aclass_sage_1_1_c_sound_a405c088e6d79ea9ec8defe43f847ecf5_icgraph" id="aclass_sage_1_1_c_sound_a405c088e6d79ea9ec8defe43f847ecf5_icgraph">
 <area shape="rect" title="Initialize." alt="" coords="215,31,377,57"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#ab0963bf4377958e9df04ea925c8a29ea" title="Load sounds." alt="" coords="15,5,157,32"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a262ce1618fe9f7ea5452d9fc39480e42" title="Load sounds." alt="" coords="15,5,157,32"/>
 <area shape="poly" title=" " alt="" coords="199,35,157,30,158,25,200,30"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8" title="Load sounds multithreaded." alt="" coords="5,56,167,83"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a4362891451f6d032f1203f1bffc57baa" title="Load sounds multithreaded." alt="" coords="5,56,167,83"/>
 <area shape="poly" title=" " alt="" coords="200,58,168,62,167,57,199,53"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab0963bf4377958e9df04ea925c8a29ea" name="ab0963bf4377958e9df04ea925c8a29ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0963bf4377958e9df04ea925c8a29ea">&#9670;&#160;</a></span>Load() <span class="overload">[1/2]</span></h2>
+<a id="a262ce1618fe9f7ea5452d9fc39480e42" name="a262ce1618fe9f7ea5452d9fc39480e42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a262ce1618fe9f7ea5452d9fc39480e42">&#9670;&#160;</a></span>Load() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,7 +589,7 @@ template&lt;class t &gt; </div>
         <tr>
           <td class="memname">void Sage::CSound::Load </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt;</td>          <td class="paramname"><span class="paramname"><em>media</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>media</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -612,8 +609,8 @@ template&lt;class t &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_sage_1_1_c_sound_ab0963bf4377958e9df04ea925c8a29ea_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_ab0963bf4377958e9df04ea925c8a29ea_cgraph" alt=""/></div>
-<map name="aclass_sage_1_1_c_sound_ab0963bf4377958e9df04ea925c8a29ea_cgraph" id="aclass_sage_1_1_c_sound_ab0963bf4377958e9df04ea925c8a29ea_cgraph">
+<div class="center"><img src="class_sage_1_1_c_sound_a262ce1618fe9f7ea5452d9fc39480e42_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a262ce1618fe9f7ea5452d9fc39480e42_cgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_a262ce1618fe9f7ea5452d9fc39480e42_cgraph" id="aclass_sage_1_1_c_sound_a262ce1618fe9f7ea5452d9fc39480e42_cgraph">
 <area shape="rect" title="Load sounds." alt="" coords="5,35,148,61"/>
 <area shape="rect" href="class_sage_1_1_c_sound.html#a405c088e6d79ea9ec8defe43f847ecf5" title="Initialize." alt="" coords="198,5,360,32"/>
 <area shape="poly" title=" " alt="" coords="147,35,183,30,183,35,148,40"/>
@@ -754,8 +751,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a50299d4b69d084660b473d4e54c34ee8" name="a50299d4b69d084660b473d4e54c34ee8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50299d4b69d084660b473d4e54c34ee8">&#9670;&#160;</a></span>LoadMT()</h2>
+<a id="a4362891451f6d032f1203f1bffc57baa" name="a4362891451f6d032f1203f1bffc57baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4362891451f6d032f1203f1bffc57baa">&#9670;&#160;</a></span>LoadMT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -765,7 +762,7 @@ template&lt;class t &gt; </div>
         <tr>
           <td class="memname">void Sage::CSound::LoadMT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt;</td>          <td class="paramname"><span class="paramname"><em>media</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_sage_1_1_c_media_list.html">Sage::CMediaList</a>&lt; t &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>media</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -785,8 +782,8 @@ template&lt;class t &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_sage_1_1_c_sound_a50299d4b69d084660b473d4e54c34ee8_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a50299d4b69d084660b473d4e54c34ee8_cgraph" alt=""/></div>
-<map name="aclass_sage_1_1_c_sound_a50299d4b69d084660b473d4e54c34ee8_cgraph" id="aclass_sage_1_1_c_sound_a50299d4b69d084660b473d4e54c34ee8_cgraph">
+<div class="center"><img src="class_sage_1_1_c_sound_a4362891451f6d032f1203f1bffc57baa_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a4362891451f6d032f1203f1bffc57baa_cgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_a4362891451f6d032f1203f1bffc57baa_cgraph" id="aclass_sage_1_1_c_sound_a4362891451f6d032f1203f1bffc57baa_cgraph">
 <area shape="rect" title="Load sounds multithreaded." alt="" coords="5,43,167,69"/>
 <area shape="rect" href="class_sage_1_1_c_sound.html#a405c088e6d79ea9ec8defe43f847ecf5" title="Initialize." alt="" coords="220,5,382,32"/>
 <area shape="poly" title=" " alt="" coords="166,39,205,33,206,38,167,45"/>
@@ -888,7 +885,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_sage_1_1_c_sound_a1a8beeb4e4fb72c2ba4908224e976d19_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a1a8beeb4e4fb72c2ba4908224e976d19_cgraph" alt=""/></div>
 <map name="aclass_sage_1_1_c_sound_a1a8beeb4e4fb72c2ba4908224e976d19_cgraph" id="aclass_sage_1_1_c_sound_a1a8beeb4e4fb72c2ba4908224e976d19_cgraph">
 <area shape="rect" title="Loop a sound." alt="" coords="5,29,148,56"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a1be9551e2557b2be52c8138cdfa0181b" title="Play sound." alt="" coords="196,29,336,56"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="196,29,336,56"/>
 <area shape="poly" title=" " alt="" coords="148,40,180,40,180,45,148,45"/>
 <area shape="poly" title=" " alt="" coords="233,30,228,21,232,11,245,5,266,3,288,5,301,12,298,16,287,10,266,8,246,10,236,15,233,20,238,27"/>
 </map>
@@ -972,8 +969,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a1be9551e2557b2be52c8138cdfa0181b" name="a1be9551e2557b2be52c8138cdfa0181b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1be9551e2557b2be52c8138cdfa0181b">&#9670;&#160;</a></span>Play() <span class="overload">[1/3]</span></h2>
+<a id="a24674816814c5cdaf4d642b5d584b4c3" name="a24674816814c5cdaf4d642b5d584b4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24674816814c5cdaf4d642b5d584b4c3">&#9670;&#160;</a></span>Play() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -993,12 +990,12 @@ template&lt;class t &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitch</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1013,7 +1010,7 @@ template&lt;class t &gt; </div>
     <tr><td class="paramname">e</td><td>Type of sound to be played. </td></tr>
     <tr><td class="paramname">s</td><td>Position of emitter in 2D. </td></tr>
     <tr><td class="paramname">vol</td><td>Volume (defaults to 1.0f). </td></tr>
-    <tr><td class="paramname">p</td><td>Pitch (defaults to zero). </td></tr>
+    <tr><td class="paramname">pitch</td><td>Pitch (defaults to zero). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1021,8 +1018,8 @@ template&lt;class t &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_cgraph" alt=""/></div>
-<map name="aclass_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_cgraph" id="aclass_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_cgraph">
+<div class="center"><img src="class_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_cgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_cgraph" id="aclass_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_cgraph">
 <area shape="rect" title="Play sound." alt="" coords="5,29,146,56"/>
 <area shape="poly" title=" " alt="" coords="51,30,47,21,50,11,59,5,76,3,93,5,102,12,99,16,91,10,75,8,61,10,54,14,52,20,56,28"/>
 </map>
@@ -1030,25 +1027,27 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_icgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_icgraph" alt=""/></div>
-<map name="aclass_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_icgraph" id="aclass_sage_1_1_c_sound_a1be9551e2557b2be52c8138cdfa0181b_icgraph">
-<area shape="rect" title="Play sound." alt="" coords="196,81,336,108"/>
-<area shape="poly" title=" " alt="" coords="298,68,287,62,266,60,246,62,236,67,233,72,238,79,233,82,228,73,232,63,245,57,266,55,288,57,301,64"/>
+<div class="center"><img src="class_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_icgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_icgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_icgraph" id="aclass_sage_1_1_c_sound_a24674816814c5cdaf4d642b5d584b4c3_icgraph">
+<area shape="rect" title="Play sound." alt="" coords="196,107,336,133"/>
+<area shape="poly" title=" " alt="" coords="298,94,287,88,266,85,246,87,236,92,233,97,238,105,233,108,228,98,232,88,245,82,266,80,288,83,301,89"/>
 <area shape="rect" href="class_sage_1_1_c_sound.html#a1a8beeb4e4fb72c2ba4908224e976d19" title="Loop a sound." alt="" coords="5,5,148,32"/>
-<area shape="poly" title=" " alt="" coords="219,77,147,46,117,35,118,30,149,42,221,72"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a66643b51e382ebb65188b279fcbdec5a" title="Play sound." alt="" coords="6,56,147,83"/>
-<area shape="poly" title=" " alt="" coords="180,86,147,81,148,76,181,81"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#ac9f9d8cd94e9418079c09c0fd2c2b69c" title="Play a randomly varied sound." alt="" coords="6,107,147,133"/>
-<area shape="poly" title=" " alt="" coords="181,109,148,113,147,108,180,103"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a2b3522a7cab6678044df4415eb668f56" title="Play a randomly varied sound." alt="" coords="6,157,147,184"/>
-<area shape="poly" title=" " alt="" coords="221,117,149,148,118,159,117,154,147,143,219,112"/>
+<area shape="poly" title=" " alt="" coords="232,100,192,73,146,46,120,35,122,30,149,42,195,68,235,95"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a4b95354bc33125caf71a7b6eabe6c73b" title="Play sound." alt="" coords="6,56,147,83"/>
+<area shape="poly" title=" " alt="" coords="198,105,128,86,130,81,199,99"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#af5e5a1a72c47cb1b592e27c9973dd921" title="Play sound." alt="" coords="6,107,147,133"/>
+<area shape="poly" title=" " alt="" coords="180,123,147,123,147,117,180,117"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#ac9f9d8cd94e9418079c09c0fd2c2b69c" title="Play a randomly varied sound." alt="" coords="6,157,147,184"/>
+<area shape="poly" title=" " alt="" coords="199,141,130,159,128,154,198,135"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a2b3522a7cab6678044df4415eb668f56" title="Play a randomly varied sound." alt="" coords="6,208,147,235"/>
+<area shape="poly" title=" " alt="" coords="235,145,195,172,149,198,122,210,120,205,146,194,192,167,232,140"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a33098a81781d44c7bff388e379bcf615" name="a33098a81781d44c7bff388e379bcf615"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33098a81781d44c7bff388e379bcf615">&#9670;&#160;</a></span>Play() <span class="overload">[2/3]</span></h2>
+<a id="a7184920ea8a05476934115e50080ffa4" name="a7184920ea8a05476934115e50080ffa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7184920ea8a05476934115e50080ffa4">&#9670;&#160;</a></span>Play() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1068,12 +1067,12 @@ template&lt;class t &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>, </td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0f</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1096,8 +1095,8 @@ template&lt;class t &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_sage_1_1_c_sound_a33098a81781d44c7bff388e379bcf615_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a33098a81781d44c7bff388e379bcf615_cgraph" alt=""/></div>
-<map name="aclass_sage_1_1_c_sound_a33098a81781d44c7bff388e379bcf615_cgraph" id="aclass_sage_1_1_c_sound_a33098a81781d44c7bff388e379bcf615_cgraph">
+<div class="center"><img src="class_sage_1_1_c_sound_a7184920ea8a05476934115e50080ffa4_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a7184920ea8a05476934115e50080ffa4_cgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_a7184920ea8a05476934115e50080ffa4_cgraph" id="aclass_sage_1_1_c_sound_a7184920ea8a05476934115e50080ffa4_cgraph">
 <area shape="rect" title="Play sound." alt="" coords="5,5,146,32"/>
 <area shape="rect" href="class_sage_1_1_c_sound.html#a0f91cbf3b09d27b513cc99a4c571d654" title="Get the next instance that is not playing." alt="" coords="194,5,407,32"/>
 <area shape="poly" title=" " alt="" coords="146,16,178,16,178,21,146,21"/>
@@ -1106,8 +1105,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a66643b51e382ebb65188b279fcbdec5a" name="a66643b51e382ebb65188b279fcbdec5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66643b51e382ebb65188b279fcbdec5a">&#9670;&#160;</a></span>Play() <span class="overload">[3/3]</span></h2>
+<a id="a4b95354bc33125caf71a7b6eabe6c73b" name="a4b95354bc33125caf71a7b6eabe6c73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b95354bc33125caf71a7b6eabe6c73b">&#9670;&#160;</a></span>Play() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1122,7 +1121,61 @@ template&lt;class t &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>pitch</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Play a sound effect in mono. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">t</td><td>Sound enumerated type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Type of sound to be played. </td></tr>
+    <tr><td class="paramname">vol</td><td>Volume. </td></tr>
+    <tr><td class="paramname">pitch</td><td>Pitch. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Sound descriptor for playing sound. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_sage_1_1_c_sound_a4b95354bc33125caf71a7b6eabe6c73b_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a4b95354bc33125caf71a7b6eabe6c73b_cgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_a4b95354bc33125caf71a7b6eabe6c73b_cgraph" id="aclass_sage_1_1_c_sound_a4b95354bc33125caf71a7b6eabe6c73b_cgraph">
+<area shape="rect" title="Play sound." alt="" coords="5,29,146,56"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="194,29,334,56"/>
+<area shape="poly" title=" " alt="" coords="146,40,178,40,178,45,146,45"/>
+<area shape="poly" title=" " alt="" coords="232,30,226,21,230,11,243,5,264,3,286,5,298,12,296,16,285,10,264,8,244,10,234,15,231,20,236,27"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5e5a1a72c47cb1b592e27c9973dd921" name="af5e5a1a72c47cb1b592e27c9973dd921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e5a1a72c47cb1b592e27c9973dd921">&#9670;&#160;</a></span>Play() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_sage_1_1_c_sound_desc.html">CSoundDesc</a> Sage::CSound::Play </td>
+          <td>(</td>
+          <td class="paramtype">t</td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>vol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1143,10 +1196,10 @@ template&lt;class t &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_sage_1_1_c_sound_a66643b51e382ebb65188b279fcbdec5a_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a66643b51e382ebb65188b279fcbdec5a_cgraph" alt=""/></div>
-<map name="aclass_sage_1_1_c_sound_a66643b51e382ebb65188b279fcbdec5a_cgraph" id="aclass_sage_1_1_c_sound_a66643b51e382ebb65188b279fcbdec5a_cgraph">
+<div class="center"><img src="class_sage_1_1_c_sound_af5e5a1a72c47cb1b592e27c9973dd921_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_af5e5a1a72c47cb1b592e27c9973dd921_cgraph" alt=""/></div>
+<map name="aclass_sage_1_1_c_sound_af5e5a1a72c47cb1b592e27c9973dd921_cgraph" id="aclass_sage_1_1_c_sound_af5e5a1a72c47cb1b592e27c9973dd921_cgraph">
 <area shape="rect" title="Play sound." alt="" coords="5,29,146,56"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a1be9551e2557b2be52c8138cdfa0181b" title="Play sound." alt="" coords="194,29,334,56"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="194,29,334,56"/>
 <area shape="poly" title=" " alt="" coords="146,40,178,40,178,45,146,45"/>
 <area shape="poly" title=" " alt="" coords="232,30,226,21,230,11,243,5,264,3,286,5,298,12,296,16,285,10,264,8,244,10,234,15,231,20,236,27"/>
 </map>
@@ -1515,7 +1568,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_sage_1_1_c_sound_ac9f9d8cd94e9418079c09c0fd2c2b69c_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_ac9f9d8cd94e9418079c09c0fd2c2b69c_cgraph" alt=""/></div>
 <map name="aclass_sage_1_1_c_sound_ac9f9d8cd94e9418079c09c0fd2c2b69c_cgraph" id="aclass_sage_1_1_c_sound_ac9f9d8cd94e9418079c09c0fd2c2b69c_cgraph">
 <area shape="rect" title="Play a randomly varied sound." alt="" coords="5,29,146,56"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a1be9551e2557b2be52c8138cdfa0181b" title="Play sound." alt="" coords="194,29,334,56"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="194,29,334,56"/>
 <area shape="poly" title=" " alt="" coords="146,40,178,40,178,45,146,45"/>
 <area shape="poly" title=" " alt="" coords="232,30,226,21,230,11,243,5,264,3,286,5,298,12,296,16,285,10,264,8,244,10,234,15,231,20,236,27"/>
 </map>
@@ -1630,35 +1683,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_sage_1_1_c_sound_a2b3522a7cab6678044df4415eb668f56_cgraph.png" border="0" usemap="#aclass_sage_1_1_c_sound_a2b3522a7cab6678044df4415eb668f56_cgraph" alt=""/></div>
 <map name="aclass_sage_1_1_c_sound_a2b3522a7cab6678044df4415eb668f56_cgraph" id="aclass_sage_1_1_c_sound_a2b3522a7cab6678044df4415eb668f56_cgraph">
 <area shape="rect" title="Play a randomly varied sound." alt="" coords="5,29,146,56"/>
-<area shape="rect" href="class_sage_1_1_c_sound.html#a1be9551e2557b2be52c8138cdfa0181b" title="Play sound." alt="" coords="194,29,334,56"/>
+<area shape="rect" href="class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="194,29,334,56"/>
 <area shape="poly" title=" " alt="" coords="146,40,178,40,178,45,146,45"/>
 <area shape="poly" title=" " alt="" coords="232,30,226,21,230,11,243,5,264,3,286,5,298,12,296,16,285,10,264,8,244,10,234,15,231,20,236,27"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a10945efb2dcd1df048c9570f79ae5cf8" name="a10945efb2dcd1df048c9570f79ae5cf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10945efb2dcd1df048c9570f79ae5cf8">&#9670;&#160;</a></span>m_bSingularityViolation</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CSound::m_bSingularityViolation = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Singularity violation flag. </p>
 
 </div>
 </div>

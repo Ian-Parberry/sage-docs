@@ -1,13 +1,16 @@
 <map id="Sage::CSpriteRenderer::CSpriteRenderer" name="Sage::CSpriteRenderer::CSpriteRenderer">
-<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,56,162,99"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a787c9d9eabb8d0671fcd9d4860adec40" title="Move to new position." alt="" coords="234,13,403,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,58,238,41,239,46,163,63"/>
-<area shape="rect" id="Node000005" href="$class_sage_1_1_c_camera.html#a9cea93e4eaa931f448688ff0b0b54659" title="Set orthographic camera." alt="" coords="210,64,427,91"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,75,194,75,194,80,162,80"/>
-<area shape="rect" id="Node000006" href="$class_sage_1_1_c_camera.html#ade2fecf77d3484403ffc3fbc76d5d028" title="Set perspective camera." alt="" coords="212,115,424,141"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="163,92,239,108,238,113,162,97"/>
-<area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="475,13,640,40"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,24,460,24,460,29,403,29"/>
+<area shape="rect" id="Node000001" title="Constructor." alt="" coords="5,97,162,140"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a787c9d9eabb8d0671fcd9d4860adec40" title="Move to new position." alt="" coords="234,55,403,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,99,238,83,239,88,163,104"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_camera.html#a9cea93e4eaa931f448688ff0b0b54659" title="Set orthographic camera." alt="" coords="210,105,427,132"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="162,116,194,116,194,121,162,121"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_camera.html#ade2fecf77d3484403ffc3fbc76d5d028" title="Set perspective camera." alt="" coords="212,156,424,183"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="163,133,239,150,238,155,162,138"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="475,55,640,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,65,460,65,460,71,403,71"/>
 <area shape="rect" id="Node000004" href="$class_sage_1_1_c_camera.html#a79e0bf2f10d2cdc90b71ac25e68e2f80" title="Build the view frustum." alt="" coords="688,5,870,48"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="640,24,673,24,673,29,640,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="633,51,672,44,673,49,634,57"/>
+<area shape="rect" id="Node000005" href="$_sage_helpers_8h.html#a251ace6fd9fbc0c653c047bc791f30db" title="Clamping function." alt="" coords="732,96,826,123"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="634,79,718,95,717,100,633,85"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="742,97,735,87,740,77,755,71,779,69,805,72,819,78,817,83,804,77,779,75,756,77,743,81,740,87,746,94"/>
 </map>

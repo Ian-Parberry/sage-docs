@@ -1,0 +1,8 @@
+<map id="Sage::CSound::LoadMT" name="Sage::CSound::LoadMT">
+<area shape="rect" id="Node000001" title="Load sounds multithreaded." alt="" coords="5,43,167,69"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a405c088e6d79ea9ec8defe43f847ecf5" title="Initialize." alt="" coords="220,5,382,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,39,205,33,206,38,167,45"/>
+<area shape="rect" id="Node000003" href="$_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb" title="Spawn an image loading thread." alt="" coords="215,80,387,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,67,206,74,205,79,166,73"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="265,81,258,71,262,62,277,55,301,53,326,56,340,62,338,67,325,61,301,59,278,61,266,65,263,71,269,78"/>
+</map>

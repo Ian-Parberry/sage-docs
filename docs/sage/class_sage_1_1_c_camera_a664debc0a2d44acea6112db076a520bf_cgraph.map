@@ -1,5 +1,8 @@
 <map id="Sage::CCamera::Update" name="Sage::CCamera::Update">
-<area shape="rect" id="Node000001" title="Update matrices and frustum." alt="" coords="5,13,171,40"/>
+<area shape="rect" id="Node000001" title="Update matrices and frustum." alt="" coords="5,55,171,81"/>
 <area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a79e0bf2f10d2cdc90b71ac25e68e2f80" title="Build the view frustum." alt="" coords="219,5,400,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,24,203,24,203,29,171,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,51,203,44,204,49,164,57"/>
+<area shape="rect" id="Node000003" href="$_sage_helpers_8h.html#a251ace6fd9fbc0c653c047bc791f30db" title="Clamping function." alt="" coords="262,96,356,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,79,248,95,247,100,163,85"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="272,97,265,87,270,77,285,71,309,69,336,72,350,78,347,83,334,77,309,75,286,77,273,81,271,87,276,94"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="Sage::CSound::Vary" name="Sage::CSound::Vary">
 <area shape="rect" id="Node000001" title="Play a randomly varied sound." alt="" coords="5,29,146,56"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a1be9551e2557b2be52c8138cdfa0181b" title="Play sound." alt="" coords="194,29,334,56"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a24674816814c5cdaf4d642b5d584b4c3" title="Play sound." alt="" coords="194,29,334,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,40,178,40,178,45,146,45"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="232,30,226,21,230,11,243,5,264,3,286,5,298,12,296,16,285,10,264,8,244,10,234,15,231,20,236,27"/>
 </map>

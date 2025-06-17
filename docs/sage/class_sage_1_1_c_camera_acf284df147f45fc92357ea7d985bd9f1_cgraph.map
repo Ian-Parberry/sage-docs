@@ -1,7 +1,10 @@
 <map id="Sage::CCamera::AddToPitch" name="Sage::CCamera::AddToPitch">
-<area shape="rect" id="Node000001" title="Add to pitch." alt="" coords="5,13,196,40"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="244,13,409,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,24,228,24,228,29,196,29"/>
+<area shape="rect" id="Node000001" title="Add to pitch." alt="" coords="5,55,196,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="244,55,409,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,65,228,65,228,71,196,71"/>
 <area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#a79e0bf2f10d2cdc90b71ac25e68e2f80" title="Build the view frustum." alt="" coords="457,5,638,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,24,441,24,441,29,409,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="401,51,441,44,442,49,402,57"/>
+<area shape="rect" id="Node000004" href="$_sage_helpers_8h.html#a251ace6fd9fbc0c653c047bc791f30db" title="Clamping function." alt="" coords="500,96,595,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="402,79,486,95,485,100,401,85"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="510,97,504,87,508,77,523,71,548,69,574,72,588,78,586,83,573,77,548,75,524,77,512,81,509,87,515,94"/>
 </map>

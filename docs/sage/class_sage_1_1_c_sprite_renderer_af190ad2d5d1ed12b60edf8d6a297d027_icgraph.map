@@ -1,21 +1,23 @@
 <map id="Sage::CSpriteRenderer::GetSize" name="Sage::CSpriteRenderer::GetSize">
-<area shape="rect" id="Node000001" title="Get sprite size." alt="" coords="632,172,789,215"/>
-<area shape="poly" id="edge10_Node000001_Node000001" title=" " alt="" coords="743,159,731,153,710,151,691,153,680,157,675,163,677,171,671,172,670,162,676,153,690,147,711,145,733,148,746,154"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30" title="Draw single 2D sprite." alt="" coords="428,139,584,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="616,181,584,175,585,170,617,175"/>
-<area shape="rect" id="Node000009" href="$class_sage_1_1_c_sprite_renderer.html#a8a041ac7e5c30ba7c319cd2c95781cc9" title="Get bounding box." alt="" coords="428,205,584,248"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="617,211,585,217,584,211,616,206"/>
-<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="539,125,527,120,506,117,487,119,475,124,471,130,472,138,467,139,466,129,472,120,486,114,506,112,528,114,541,121"/>
+<area shape="rect" id="Node000001" title="Get sprite size." alt="" coords="632,205,789,248"/>
+<area shape="poly" id="edge11_Node000001_Node000001" title=" " alt="" coords="743,192,731,186,710,184,691,186,680,191,675,197,677,204,671,205,670,195,676,186,690,181,711,179,733,181,746,187"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#ac3515ab913c5849c73bbf52532b3ca30" title="Draw single 2D sprite." alt="" coords="428,172,584,215"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="616,214,584,209,585,203,617,209"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_sprite_renderer.html#a8a041ac7e5c30ba7c319cd2c95781cc9" title="Get bounding box." alt="" coords="428,239,584,281"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="617,245,585,250,584,245,616,239"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="539,159,527,153,506,151,487,153,475,157,471,163,472,171,467,172,466,162,472,153,486,147,506,145,528,148,541,154"/>
 <area shape="rect" id="Node000003" href="$class_sage_1_1_c_particle_engine2_d.html#af2874f74f3934678fc3a569f864565a2" title="Draw particles." alt="" coords="210,5,380,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,130,427,96,379,62,356,51,359,46,381,58,431,91,473,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="478,162,435,111,408,85,379,62,359,51,361,46,381,58,411,81,439,107,482,158"/>
 <area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#a26a0b45bee2aa7430a384068f0dec17c" title="Draw list of 3D sprites." alt="" coords="217,72,373,115"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="421,136,364,118,366,113,423,131"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="452,167,379,129,353,118,355,113,381,124,455,162"/>
 <area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite_renderer.html#ac9512ef5737a00c602c1252ad85668ae" title="Draw single 2D sprite." alt="" coords="217,139,373,181"/>
-<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="413,163,374,163,374,157,413,157"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="412,181,373,175,374,170,413,176"/>
 <area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite_renderer.html#acad1b13eba6b74a86015a1488124d02d" title="Draw circle." alt="" coords="217,205,373,248"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="423,189,366,207,364,202,421,184"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="413,211,374,217,373,212,412,205"/>
 <area shape="rect" id="Node000007" href="$class_sage_1_1_c_sprite_renderer.html#a3d5154f12a86d5a1ea274e464e7e8095" title="Draw 2D line." alt="" coords="217,272,373,315"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="434,192,430,195,415,212,407,228,398,245,382,262,364,274,361,269,378,258,393,242,402,226,410,209,426,191,431,188"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="438,224,429,229,406,246,381,262,357,274,355,269,379,258,403,241,427,224,436,220"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_sprite_renderer.html#a00cc72d08e21e4867e7c7440e03ddec9" title="Draw 2D line." alt="" coords="217,339,373,381"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="433,226,430,228,413,253,407,278,400,303,382,329,366,340,363,336,378,325,395,301,402,276,408,251,426,225,429,222"/>
 <area shape="rect" id="Node000008" href="$class_sage_1_1_c_sprite_renderer.html#a0191ebd603d2a41c8e4b3b9fa53496b5" title="Draw AABB." alt="" coords="5,272,162,315"/>
 <area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="201,296,162,296,162,291,201,291"/>
 </map>

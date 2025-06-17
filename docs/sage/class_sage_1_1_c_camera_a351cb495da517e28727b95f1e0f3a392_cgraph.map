@@ -1,7 +1,10 @@
 <map id="Sage::CCamera::SetRoll" name="Sage::CCamera::SetRoll">
-<area shape="rect" id="Node000001" title="Set roll." alt="" coords="5,13,172,40"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="220,13,385,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,204,24,204,29,172,29"/>
+<area shape="rect" id="Node000001" title="Set roll." alt="" coords="5,55,172,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="220,55,385,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,65,204,65,204,71,172,71"/>
 <area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#a79e0bf2f10d2cdc90b71ac25e68e2f80" title="Build the view frustum." alt="" coords="433,5,614,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,24,417,24,417,29,385,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="377,51,417,44,418,49,378,57"/>
+<area shape="rect" id="Node000004" href="$_sage_helpers_8h.html#a251ace6fd9fbc0c653c047bc791f30db" title="Clamping function." alt="" coords="476,96,571,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="378,79,462,95,461,100,377,85"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="486,97,480,87,484,77,499,71,524,69,550,72,564,78,562,83,549,77,524,75,500,77,488,81,485,87,491,94"/>
 </map>

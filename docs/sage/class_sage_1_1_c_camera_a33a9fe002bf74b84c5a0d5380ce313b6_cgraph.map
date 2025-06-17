@@ -1,7 +1,10 @@
 <map id="Sage::CCamera::SetYaw" name="Sage::CCamera::SetYaw">
-<area shape="rect" id="Node000001" title="Set yaw." alt="" coords="5,13,174,40"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="222,13,387,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,24,206,24,206,29,174,29"/>
+<area shape="rect" id="Node000001" title="Set yaw." alt="" coords="5,55,174,81"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_camera.html#a664debc0a2d44acea6112db076a520bf" title="Update matrices and frustum." alt="" coords="222,55,387,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,65,206,65,206,71,174,71"/>
 <area shape="rect" id="Node000003" href="$class_sage_1_1_c_camera.html#a79e0bf2f10d2cdc90b71ac25e68e2f80" title="Build the view frustum." alt="" coords="435,5,616,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,24,419,24,419,29,387,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="379,51,419,44,420,49,380,57"/>
+<area shape="rect" id="Node000004" href="$_sage_helpers_8h.html#a251ace6fd9fbc0c653c047bc791f30db" title="Clamping function." alt="" coords="478,96,573,123"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="380,79,464,95,463,100,379,85"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="488,97,482,87,486,77,501,71,526,69,552,72,566,78,564,83,551,77,526,75,502,77,490,81,487,87,493,94"/>
 </map>

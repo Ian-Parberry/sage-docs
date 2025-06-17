@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clamp_0',['clamp',['../_sage_helpers_8h.html#aa606b446b94f73be5401369438725769',1,'SageHelpers.h']]]
+  ['safe_5fdelete_0',['SAFE_DELETE',['../_sage_helpers_8h.html#a9bbcd82e77c41df827c09759def05c9a',1,'SageHelpers.h']]]
 ];

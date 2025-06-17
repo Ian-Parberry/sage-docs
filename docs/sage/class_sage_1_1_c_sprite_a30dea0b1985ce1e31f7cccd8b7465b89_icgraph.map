@@ -1,11 +1,13 @@
 <map id="Sage::CSprite::GetWidth" name="Sage::CSprite::GetWidth">
-<area shape="rect" id="Node000001" title="Get sprite width." alt="" coords="618,47,785,73"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#ad590e63bb80e78c8e1dd35fa8822448c" title="Get sprite width." alt="" coords="414,39,570,81"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="603,63,571,63,571,57,603,57"/>
+<area shape="rect" id="Node000001" title="Get sprite width." alt="" coords="618,80,785,107"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#ad590e63bb80e78c8e1dd35fa8822448c" title="Get sprite width." alt="" coords="414,72,570,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="603,96,571,96,571,91,603,91"/>
 <area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#acad1b13eba6b74a86015a1488124d02d" title="Draw circle." alt="" coords="210,5,366,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,47,366,42,366,37,399,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="410,69,355,51,357,46,411,64"/>
 <area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#a3d5154f12a86d5a1ea274e464e7e8095" title="Draw 2D line." alt="" coords="210,72,366,115"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="399,78,366,83,366,78,398,73"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="398,96,366,96,366,91,398,91"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite_renderer.html#a00cc72d08e21e4867e7c7440e03ddec9" title="Draw 2D line." alt="" coords="210,139,366,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="411,122,357,141,355,135,410,117"/>
 <area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite_renderer.html#a0191ebd603d2a41c8e4b3b9fa53496b5" title="Draw AABB." alt="" coords="5,72,162,115"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="194,96,162,96,162,91,194,91"/>
 </map>

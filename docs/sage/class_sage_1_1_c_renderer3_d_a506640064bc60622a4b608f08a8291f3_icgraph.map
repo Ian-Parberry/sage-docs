@@ -1,5 +1,5 @@
 <map id="Sage::CRenderer3D::BeginResourceUpload" name="Sage::CRenderer3D::BeginResourceUpload">
 <area shape="rect" id="Node000001" title="Begin uploading textures." alt="" coords="210,5,361,48"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a14930c07e0b35aa4112d9353557f96c2" title="Load sprites." alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a86f9ac17f4ea33c9a07126fa5ea7bd1f" title="Load sprites." alt="" coords="5,5,162,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,29,162,29,162,24,194,24"/>
 </map>

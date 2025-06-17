@@ -1,0 +1,20 @@
+<map id="Sage::CSpriteRenderer::LoadMT" name="Sage::CSpriteRenderer::LoadMT">
+<area shape="rect" id="Node000001" title="Load sprites multithreaded." alt="" coords="5,147,162,189"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a355d82ddc363143d90f5f75ed45bb0d6" title="Initialize." alt="" coords="218,105,374,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,150,202,142,203,147,163,155"/>
+<area shape="rect" id="Node000009" href="$_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb" title="Spawn an image loading thread." alt="" coords="210,196,382,223"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="163,181,210,190,208,195,162,186"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#a2a1db31db4713491985a847b6b0b3c02" title="Create effect." alt="" coords="430,5,586,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,102,429,58,441,52,443,57,431,62,341,107"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#a2af9f3291b6b4d7f5ea0b9f3ac1e6694" title="Create index buffer." alt="" coords="430,72,586,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="374,112,414,105,415,111,375,117"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite_renderer.html#ac40abdbc058fccaa392fd5a7edad0900" title="Create vertex buffer." alt="" coords="430,139,586,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="375,136,415,143,414,148,374,142"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_renderer3_d.html#a921f91e00fd654765c6bec553b838700" title="Initialize renderer." alt="" coords="434,205,582,248"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="359,146,383,158,408,174,431,191,440,196,438,200,429,196,405,179,381,162,357,151"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_renderer3_d.html#ab1ac966e9bc51855409130f782724cef" title="Create device dependent resources." alt="" coords="634,205,862,248"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="582,224,619,224,619,229,582,229"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_renderer3_d.html#a9c039ae8dbb3cc5f240e0604dce807ed" title="Load screen font." alt="" coords="910,205,1057,248"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="862,224,894,224,894,229,862,229"/>
+<area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="260,197,253,187,258,178,272,171,296,169,321,172,335,178,332,183,320,177,296,175,274,177,262,181,259,187,264,194"/>
+</map>

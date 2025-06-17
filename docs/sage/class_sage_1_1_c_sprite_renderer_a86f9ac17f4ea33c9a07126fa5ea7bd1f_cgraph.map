@@ -1,0 +1,25 @@
+<map id="Sage::CSpriteRenderer::Load" name="Sage::CSpriteRenderer::Load">
+<area shape="rect" id="Node000001" title="Load sprites." alt="" coords="5,105,162,148"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_renderer3_d.html#a506640064bc60622a4b608f08a8291f3" title="Begin uploading textures." alt="" coords="218,5,369,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,103,209,58,220,52,223,57,211,62,124,107"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_renderer3_d.html#adbf4017cb13222d1605158905f502e0a" title="End uploading textures." alt="" coords="220,72,367,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,112,204,105,205,110,162,117"/>
+<area shape="rect" id="Node000004" href="$class_sage_1_1_c_sprite_renderer.html#a355d82ddc363143d90f5f75ed45bb0d6" title="Initialize." alt="" coords="215,139,372,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,136,200,143,200,148,162,142"/>
+<area shape="rect" id="Node000011" href="$class_sage_1_1_c_settings_manager.html#ad1b3843d3ed095861945d846b255bc92" title="Load game settings." alt="" coords="210,239,377,281"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="120,146,247,228,244,232,117,151"/>
+<area shape="rect" id="Node000005" href="$class_sage_1_1_c_sprite_renderer.html#a2a1db31db4713491985a847b6b0b3c02" title="Create effect." alt="" coords="430,5,587,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="358,136,375,125,390,108,399,92,407,75,423,58,428,54,431,59,427,62,412,78,403,95,395,111,379,129,361,140"/>
+<area shape="rect" id="Node000006" href="$class_sage_1_1_c_sprite_renderer.html#a2af9f3291b6b4d7f5ea0b9f3ac1e6694" title="Create index buffer." alt="" coords="430,72,587,115"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="364,136,422,117,423,122,365,141"/>
+<area shape="rect" id="Node000007" href="$class_sage_1_1_c_sprite_renderer.html#ac40abdbc058fccaa392fd5a7edad0900" title="Create vertex buffer." alt="" coords="430,139,587,181"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="372,157,415,157,415,163,372,163"/>
+<area shape="rect" id="Node000008" href="$class_sage_1_1_c_renderer3_d.html#a921f91e00fd654765c6bec553b838700" title="Initialize renderer." alt="" coords="435,205,582,248"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="365,179,423,198,422,203,364,184"/>
+<area shape="rect" id="Node000009" href="$class_sage_1_1_c_renderer3_d.html#ab1ac966e9bc51855409130f782724cef" title="Create device dependent resources." alt="" coords="640,205,868,248"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="583,224,625,224,625,229,583,229"/>
+<area shape="rect" id="Node000010" href="$class_sage_1_1_c_renderer3_d.html#a9c039ae8dbb3cc5f240e0604dce807ed" title="Load screen font." alt="" coords="916,205,1063,248"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="868,224,900,224,900,229,868,229"/>
+<area shape="rect" id="Node000012" href="$class_sage_1_1_c_settings_manager.html#a8a7ac51ac63186bf2b1a26996d2b100b" title="Set window size information." alt="" coords="425,272,592,315"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="378,270,410,275,409,281,377,276"/>
+</map>

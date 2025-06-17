@@ -1,7 +1,7 @@
 <map id="Sage::CSound::Initialize" name="Sage::CSound::Initialize">
 <area shape="rect" id="Node000001" title="Initialize." alt="" coords="215,31,377,57"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#ab0963bf4377958e9df04ea925c8a29ea" title="Load sounds." alt="" coords="15,5,157,32"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sound.html#a262ce1618fe9f7ea5452d9fc39480e42" title="Load sounds." alt="" coords="15,5,157,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,35,157,30,158,25,200,30"/>
-<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sound.html#a50299d4b69d084660b473d4e54c34ee8" title="Load sounds multithreaded." alt="" coords="5,56,167,83"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sound.html#a4362891451f6d032f1203f1bffc57baa" title="Load sounds multithreaded." alt="" coords="5,56,167,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,58,168,62,167,57,199,53"/>
 </map>

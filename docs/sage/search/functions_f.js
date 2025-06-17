@@ -20,9 +20,13 @@ var searchData=
   ['setvel_17',['SetVel',['../class_sage_1_1_c_camera.html#a3ed455207e313414dead180d58dfe55a',1,'Sage::CCamera']]],
   ['setwinsize_18',['SetWinSize',['../class_sage_1_1_c_settings_manager.html#a8a7ac51ac63186bf2b1a26996d2b100b',1,'Sage::CSettingsManager']]],
   ['setyaw_19',['SetYaw',['../class_sage_1_1_c_camera.html#a33a9fe002bf74b84c5a0d5380ce313b6',1,'Sage::CCamera']]],
-  ['srand_20',['srand',['../class_sage_1_1_c_random.html#a88799734f848e1f9baca07ffbd1cc070',1,'Sage::CRandom::srand(UINT)'],['../class_sage_1_1_c_random.html#ad394ffa1ea93c111c77388f3ab8ef24f',1,'Sage::CRandom::srand()']]],
-  ['start_21',['Start',['../class_sage_1_1_c_event_timer.html#a7e11d20ff6b1eb039aa635f4fbfc7b36',1,'Sage::CEventTimer']]],
-  ['startloadingthread_22',['StartLoadingThread',['../_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb',1,'Sage::StartLoadingThread(CSpriteRenderer *pRenderer, CMediaList&lt; t &gt; m, bool *pFlag)'],['../_sage_loading_thread_8h.html#a14d2095562d0ef5297a4cd38812d6d7f',1,'Sage::StartLoadingThread(CSound *pAudio, CMediaList&lt; t &gt; m, bool *pFlag)']]],
-  ['step_23',['Step',['../class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f',1,'Sage::CParticleEngine']]],
-  ['stop_24',['Stop',['../class_sage_1_1_c_sound.html#a37ccd37b4e00ff0daf110f888ee24280',1,'Sage::CSound::Stop()'],['../class_sage_1_1_c_sound.html#a9a6fa009546ff7d53fc505d39e5ee7c2',1,'Sage::CSound::Stop(t)'],['../class_sage_1_1_c_sound.html#a08ff13fd976f3ce80f559a1be16198ac',1,'Sage::CSound::Stop(const CSoundDesc &amp;)']]]
+  ['sign_20',['sign',['../_sage_helpers_8h.html#aa6fab94f407107bde39fb59423ed1371',1,'Sage']]],
+  ['spline3_21',['spline3',['../_sage_helpers_8h.html#a030a29d704810c1a752d2d0ed0e36e75',1,'Sage']]],
+  ['spline5_22',['spline5',['../_sage_helpers_8h.html#a16e674a6b2418e53ed38eec3329a9f6c',1,'Sage']]],
+  ['sqr_23',['sqr',['../_sage_helpers_8h.html#a97ca82dfab284d49728735ee217bc74f',1,'Sage']]],
+  ['srand_24',['srand',['../class_sage_1_1_c_random.html#a88799734f848e1f9baca07ffbd1cc070',1,'Sage::CRandom::srand(UINT)'],['../class_sage_1_1_c_random.html#ad394ffa1ea93c111c77388f3ab8ef24f',1,'Sage::CRandom::srand()']]],
+  ['start_25',['Start',['../class_sage_1_1_c_event_timer.html#a7e11d20ff6b1eb039aa635f4fbfc7b36',1,'Sage::CEventTimer']]],
+  ['startloadingthread_26',['StartLoadingThread',['../_sage_loading_thread_8h.html#a4ecc28aa0b1488e724566956996673bb',1,'Sage::StartLoadingThread(CSpriteRenderer *pRenderer, CMediaList&lt; t &gt; m, bool *pFlag)'],['../_sage_loading_thread_8h.html#a14d2095562d0ef5297a4cd38812d6d7f',1,'Sage::StartLoadingThread(CSound *pAudio, CMediaList&lt; t &gt; m, bool *pFlag)']]],
+  ['step_27',['Step',['../class_sage_1_1_c_particle_engine.html#aebc9640270acf9d83595238d533c073f',1,'Sage::CParticleEngine']]],
+  ['stop_28',['Stop',['../class_sage_1_1_c_sound.html#a37ccd37b4e00ff0daf110f888ee24280',1,'Sage::CSound::Stop()'],['../class_sage_1_1_c_sound.html#a9a6fa009546ff7d53fc505d39e5ee7c2',1,'Sage::CSound::Stop(t)'],['../class_sage_1_1_c_sound.html#a08ff13fd976f3ce80f559a1be16198ac',1,'Sage::CSound::Stop(const CSoundDesc &amp;)']]]
 ];

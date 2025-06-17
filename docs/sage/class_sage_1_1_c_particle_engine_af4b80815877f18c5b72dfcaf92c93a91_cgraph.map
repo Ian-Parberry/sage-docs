@@ -1,0 +1,6 @@
+<map id="Sage::CParticleEngine::GetLifeFraction" name="Sage::CParticleEngine::GetLifeFraction">
+<area shape="rect" id="Node000001" title="Get life fraction." alt="" coords="5,21,159,64"/>
+<area shape="rect" id="Node000002" href="$_sage_helpers_8h.html#a251ace6fd9fbc0c653c047bc791f30db" title="Clamping function." alt="" coords="207,29,301,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,40,191,40,191,45,159,45"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="224,30,219,21,223,11,235,5,254,3,275,5,286,12,283,16,273,10,254,8,236,10,227,15,224,20,229,28"/>
+</map>

@@ -1,7 +1,7 @@
 <map id="Sage::CSpriteRenderer::Initialize" name="Sage::CSpriteRenderer::Initialize">
 <area shape="rect" id="Node000001" title="Initialize." alt="" coords="210,39,366,81"/>
-<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a14930c07e0b35aa4112d9353557f96c2" title="Load sprites." alt="" coords="5,5,162,48"/>
+<area shape="rect" id="Node000002" href="$class_sage_1_1_c_sprite_renderer.html#a86f9ac17f4ea33c9a07126fa5ea7bd1f" title="Load sprites." alt="" coords="5,5,162,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,47,161,42,162,37,194,42"/>
-<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#adc58cbeb01e943290082ba84d2e54704" title="Load sprites multithreaded." alt="" coords="5,72,162,115"/>
+<area shape="rect" id="Node000003" href="$class_sage_1_1_c_sprite_renderer.html#ab925ac4ff7f13d611561ebeb43cdf698" title="Load sprites multithreaded." alt="" coords="5,72,162,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,78,162,83,161,78,194,73"/>
 </map>
