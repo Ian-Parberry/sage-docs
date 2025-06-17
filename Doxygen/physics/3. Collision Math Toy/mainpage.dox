@@ -610,7 +610,7 @@ with certainty \f$R^2 = 0.996\f$,
 which is pretty close to linear in \f$n\f$.
 
 \anchor section6
-# 6.Problems
+# 6. Problems
 
 For the following problems,
 copy the folder <span style="background-color:#D8E4D8;">`3. Collision Math Toy`</span> from your
@@ -629,7 +629,7 @@ adding the line
 ```cpp   
 d.m_fFriction = 0.001f;
 ```
-to function `CGame::Launch()` in `Game.cpp` after the line
+to function `CGame::Launch` in `Game.cpp` after the line
 that sets `d.m_fElasticity`.
 Next, in function `CObjectManager::MakeWorldEdges` in `ObjectManager.cpp`, find the line
 
@@ -688,7 +688,11 @@ do not participate in collision detection and response
 unless they collide with a dynamic object, in which case
 they should stop sleeping.
 To this end, start with your code from
-\ref problem1 "Problem 1" and add
+\ref problem1 "Problem 1" and make the following changes.
+
+### Changes to `%CObject`
+
+Add
 the following private member variable to `CObject` in `Object.h`.
 
 ```cpp
@@ -714,6 +718,13 @@ const bool CObject::GetSleep() const{
   return m_bSleep;
 } //GetSleeping
 ```
+
+### Changes to `%CObjectManager`
+
+You will need to make changes to `CObjectManager::Move`
+and `CObjectManager::BroadPhase`.
+
+#### Changes to `%CObjectManager::Move`
 
 In `ObjectManager.cpp`, add the following code to
 `CObjectManager::Move` after the quadtree is updated
@@ -777,6 +788,8 @@ for(auto const& p: m_stdShapes[(UINT)Shapes::eMotion::Dynamic]){
 } //for
 ```
 
+#### Changes to `%CObjectManager::BroadPhase`
+
 `CObjectManager::BroadPhase` has two nested `for`-loops,
 the first repeating for the number of broad-phase iterations
 `m_nCIterations` and the second for each dynamic shape.
@@ -789,6 +802,8 @@ set it to `true` if that object is asleep:
 CObject* pObj1 = (CObject*)pCirc->GetUserPtr();
 const bool bObj1Sleep = pObj1->GetSleep();
 ```
+
+##### Static Shapes
 
 The following lines do narrow-phase collision
 detection response of the dynamic circle against the gate
@@ -813,6 +828,9 @@ if(!bObj1Sleep){
     NarrowPhase(k, pCirc);
 } //if
 ```
+
+##### Kinematic Shapes
+
 The following lines do narrow-phase collision
 detection response of the dynamic circle against all
 kinematic shapes.
@@ -824,13 +842,15 @@ for(auto const& k: v[(UINT)Shapes::eMotion::Kinematic])
 
 The above two lines need only be executed if the object
 is not asleep or the kinematic shapes are rotating, so enclose them
-in an `if`-statement as follows.
+in an `if`-statement as follows. Also, wake the object if a collision is detected.
 
 ```cpp 
 if(!bObj1Sleep || m_bRotate)
   for(auto const& k: v[(UINT)Shapes::eMotion::Kinematic]) 
-    NarrowPhase(k, pCirc);
+    if(NarrowPhase(k, pCirc))
+      pObj1->SetSleep(false); 
 ```
+##### Dynamic Shapes
 
 The following lines do narrow-phase collision
 detection response of the dynamic circle against all
