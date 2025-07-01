@@ -18,8 +18,9 @@ and their corresponding actions,
 \ref section4 "Section 4" gives you a list of actions to take in the game to see some of its
 important features,
 \ref section5 "Section 5" gives a breakdown of the code,
+\ref section6 "Section 6" contains some programming problems,
 and
-\ref section6 "Section 6" addresses the question "what next?".
+\ref section7 "Section 7" addresses the question "what next?".
 
 \anchor section2
 # 2. Keyboard Controls
@@ -130,6 +131,8 @@ This is the height of the center of the polygon when one face rests on the groun
 \anchor section5-1-1
 ###5.1.1 The Regular Tetrahedron
 
+A <a href="https://en.wikipedia.org/wiki/Tetrahedron#Regular_tetrahedron">regular tetrahedron</a>
+has 4 vertices, 6 edges, and 4 triangular faces.
 The tetrahedron object is an instance of `CObject` created in
 `CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
 `CInstanceDesc` has useful parameters for the object instance to be created including its
@@ -178,6 +181,8 @@ descriptor used to create the tetrahedron object in `CGame::CreateObjects` is
 \anchor section5-1-2
 ###5.1.2 The Regular Dodecahedron
 
+A <a href="https://en.wikipedia.org/wiki/Regular_dodecahedron">regular dodecahedron</a>
+has 20 vertices, 30 edges, and 12 pentagonal faces.
 The dodecahedron object is an instance of `CObject` created in
 `CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
 `CInstanceDesc` has useful parameters for the object instance to be created including its
@@ -234,6 +239,8 @@ descriptor used to create the dodecahedron object in `CGame::CreateObjects` is
 \anchor section5-1-3
 ###5.1.3 The Regular Icosahedron
 
+A <a href="https://en.wikipedia.org/wiki/Regular_icosahedron">regular icosahedron</a>
+has 12 vertices, 30 edges, and 20 triangular faces.
 The icosahedron object is an instance of `CObject` created in
 `CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
 `CInstanceDesc` has useful parameters for the object instance to be created including its
@@ -406,7 +413,49 @@ which triggers the calls to `myTickCallback` from Bullet Physics),
 the object types `eObject` of the objects colliding.
 
 \anchor section6
-# 6. What Next?
+# 6. Problems
+
+For the following problems you can either work directly in the
+folder <span style="background-color:#D8E4D8;">`15. Bullet Physics Block Toy`</span> in your
+copy of the <span style="background-color:#D8E4D8;">`sage-physics`</span> repository,
+or (recommended) make a copy of the folder <span style="background-color:#D8E4D8;">`15. Bullet Physics Block Toy`</span>
+in some place convenient (for example, the Desktop or your `Documents` folder)
+and work there.
+
+\anchor problem15-1
+## Problem 15.1
+
+\anchor fig7
+@image html octahedron.png "Fig. 7: A regular octahedron."  width=30%
+
+<div style="padding-left: 30px;" markdown="1">
+A <a href="https://en.wikipedia.org/wiki/Regular_octahedron">regular octahedron</a>
+has 6 vertices, 12 edges, and 8 triangular faces.
+Make a regular octahedron as shown in \ref fig7 "Fig. 7".
+</div>
+
+\anchor problem15-2
+## Problem 15.2
+
+\anchor fig8
+@image html column.png "Fig. 8: A cylinder."  width=30%
+
+<div style="padding-left: 30px;" markdown="1">
+Make a cylinder.
+</div>
+
+\anchor problem15-3
+## Problem 15.3
+
+\anchor fig9
+@image html cone.png "Fig. 9: A cone."  width=25%
+
+<div style="padding-left: 30px;" markdown="1">
+Make a cone.
+</div>
+
+\anchor section7
+# 7. What Next?
 
 This 3D toy is pretty rudimentary. Here is a To Do list of things that I need to get around to doing. 
 
