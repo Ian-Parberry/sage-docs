@@ -427,7 +427,7 @@ and work there.
 ## Problem 15.1
 
 \anchor fig7
-@image html octahedron.png "Fig. 7: A regular octahedron (left) and rotated (right)."  width=75%
+@image html octahedron.png "Fig. 7: A regular octahedron in its initial orientation (left) and rotated (right)."  width=75%
 
 <div style="padding-left: 30px;" markdown="1">
 A <a href="https://en.wikipedia.org/wiki/Regular_octahedron">regular octahedron</a>
