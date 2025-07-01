@@ -5,7 +5,7 @@
 # 1. Introduction
 
 \anchor fig1
-\image html all.gif "Fig. 1: Screen shots of various objects." width=60%
+\image html screenshot.png "Fig. 1: Screen shots of 3D world from above." width=70%
 
 A simple 3D toy using 
 [Bullet Physics](https://pybullet.org/wordpress/) consisting of various
@@ -26,7 +26,8 @@ and
 # 2. Keyboard Controls
 
 This toy can be played with either the keyboard or an 
-XBOX controller. 
+XBOX controller. The keyboard is disabled if a controller is
+plugged in.
 
 <center>
   <table>
@@ -166,7 +167,7 @@ object instance descriptor `CGame::CreateObjects` are
 `m_fTetrahedronSize/3.0f`, respectively.
 
 \anchor fig3
-\image html tetrahedron.png "Fig. 3: The tetrahedron in its initial orientation." width=40%
+\image html tetrahedron.png "Fig. 3: The tetrahedron in its initial orientation (left) and rotated (right)." width=75%
 
 The tetrahedron mesh created by `DirectX::GeometricPrimitive::CreateTetrahedron`
 has default orientation is shown in \ref fig3 "Fig. 3", whereas we
@@ -222,7 +223,7 @@ object instance descriptor `CGame::CreateObjects` are
   330.0f*sqrtf(5))/(40.0f*(sqrtf(5) - 1.0f));`, respectively.
 
 \anchor fig4
-\image html dodecahedron.png "Fig. 4: The dodecahedron in its initial orientation." width=40%
+\image html dodecahedron.png "Fig. 4: The dodecahedron in its initial orientation (left) and rotated (right)." width=75%
 
 The dodecahedron mesh created by `DirectX::GeometricPrimitive::CreateDodecahedron`
 has default orientation is shown in \ref fig4 "Fig. 4", whereas we
@@ -267,7 +268,7 @@ object instance descriptor `CGame::CreateObjects` are both equal to
 `m_IcosahedronSize`.
 
 \anchor fig5
-\image html icosahedron.png "Fig. 5: The icosahedron in its initial orientation." width=40%
+\image html icosahedron.png "Fig. 5: The icosahedron in its initial orientation (left) and rotated (right)." width=75%
 
 The icosahedron mesh created by `DirectX::GeometricPrimitive::CreateIcosahedron`
 has default orientation is shown in \ref fig5 "Fig. 5", whereas we
@@ -426,7 +427,7 @@ and work there.
 ## Problem 15.1
 
 \anchor fig7
-@image html octahedron.png "Fig. 7: A regular octahedron."  width=30%
+@image html octahedron.png "Fig. 7: A regular octahedron (left) and rotated (right)."  width=75%
 
 <div style="padding-left: 30px;" markdown="1">
 A <a href="https://en.wikipedia.org/wiki/Regular_octahedron">regular octahedron</a>
@@ -448,7 +449,7 @@ Make a cylinder.
 ## Problem 15.3
 
 \anchor fig9
-@image html cone.png "Fig. 9: A cone."  width=25%
+@image html cone.png "Fig. 9: A cone."  width=30%
 
 <div style="padding-left: 30px;" markdown="1">
 Make a cone.
