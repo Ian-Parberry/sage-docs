@@ -119,15 +119,24 @@ and the reverse as an instance of `PW2RW`.
 \anchor section5-1
 ##5.1 Shapes
 
-The game world contains a few convex polygons from
+The game world contains a few polygons from
 DirectXTK12's
 `GeometricPrimitive`. These polygons consist of a list of vertices and a list
 of edges joining them to form a triangle mesh.
+For example, \ref fig3 "Fig. 3" shows a 3D rendering of the edges
+in (from left to right)
+a tetrahedron, a dodecahedron, a sphere, and a teapot from `GeometricPrimitive`.
+Notice that curves such as those in the sphere and teapot
+are approximated by a series of straight lines.
+
+\anchor fig3
+\image html wireframe.png "Fig. 3: Wireframes for (left to right) a tetrahedron, a dodecahedron, a sphere, and a teapot." width=80%
+
 The _circumradius_ of a convex polygon mesh is the radius of the sphere that passes
 through all vertices.
-The _inradius_ of a convex polygon mesh is the radius of the largest sphere that
+The _in-radius_ of a convex polygon mesh is the radius of the largest sphere that
 can fit inside the polygon. 
-This is the height of the center of the polygon when one face rests on the ground.
+This is usualy the height of the center of the polygon when one face rests on the ground.
 
 \anchor section5-1-1
 ###5.1.1 The Regular Tetrahedron
@@ -152,25 +161,25 @@ The Cartesian coordinates of the vertices of a regular tetrahedron of circumradi
 (0, 0, 1)
 \f]
 Its edge length is therefore \f$2 \sqrt{2}/\sqrt{3}\f$.
-The inradius of a tetrahedron of edge length \f$1\f$ is
+The in-radius of a tetrahedron of edge length \f$1\f$ is
 \f$1/2\sqrt{6}\f$.
-The inradius of the tetrahedron created by `DirectX::GeometricPrimitive::CreateTetrahedron`
+The in-radius of the tetrahedron created by `DirectX::GeometricPrimitive::CreateTetrahedron`
 is therefore \f$2 \sqrt{2}/\sqrt{3}\f$ divided by \f$2\sqrt{6}\f$,
 that is, \f$1/3\f$.
 
 We ask `DirectX::GeometricPrimitive::CreateTetrahedron` to create a polygon mesh of circumradius
 `CCommon::m_fTetrahedronSize`, which is a constant set to `16.0f`.
-This will have an inradius of `CCommon::m_fTetrahedronSize/3`.
+This will have an in-radius of `CCommon::m_fTetrahedronSize/3`.
 Therefore the scale and vertical height of the tetrahedron
 object instance descriptor `CGame::CreateObjects` are
 `m_fTetrahedronSize` and
 `m_fTetrahedronSize/3.0f`, respectively.
 
-\anchor fig3
-\image html tetrahedron.png "Fig. 3: The tetrahedron in its initial orientation (left) and rotated (right)." width=75%
+\anchor fig4
+\image html tetrahedron.png "Fig. 4: The tetrahedron in its initial orientation (left) and rotated (right)." width=75%
 
 The tetrahedron mesh created by `DirectX::GeometricPrimitive::CreateTetrahedron`
-has default orientation is shown in \ref fig3 "Fig. 3", whereas we
+has default orientation is shown in \ref fig4 "Fig. 4", whereas we
 want its initial orientation to be with one face flat on the ground
 as shown in the appropriate frame of \ref fig1 "Fig. 1".
 This can be fixed by rotating it by \f$\pi/2\f$ around its X-axis.
@@ -207,26 +216,26 @@ The Cartesian coordinates of the vertices of a regular dodecahedron of circumrad
 can be obtained by multiplying these points by \f$1/\sqrt{3}\f$.
 This will have edge length \f$(\sqrt{5} - 1)/\sqrt{3}\f$.
 
-The inradius of a dodecahedron of edge length \f$1\f$ is
+The in-radius of a dodecahedron of edge length \f$1\f$ is
 \f$\sqrt{250+110\sqrt{5}}/40\f$.
-The inradius of the dodecahedron created by `DirectX::GeometricPrimitive::CreateDodecahedron`
+The in-radius of the dodecahedron created by `DirectX::GeometricPrimitive::CreateDodecahedron`
 is therefore \f$\sqrt{250+110\sqrt{5}}/40\f$ divided by \f$(\sqrt{5} - 1)/\sqrt{3}\f$,
 that is, \f$\sqrt{750+330\sqrt{5}}/40(\sqrt{5}-1)\f$.
 
 We ask `DirectX::GeometricPrimitive::CreateDodecahedron` to create a polygon mesh of circumradius
 `CCommon::m_fDodecahedronSize`, which is a constant set to `16.0f`.
-This will have an inradius of `CCommon::m_fDodecahedronSize/3`.
+This will have an in-radius of `CCommon::m_fDodecahedronSize/3`.
 Therefore the scale and vertical height of the dodecahedron
 object instance descriptor `CGame::CreateObjects` are
 `m_fDodecahedronSize` and
 `m_fDodecahedronSize*sqrtf(750.0f + 
   330.0f*sqrtf(5))/(40.0f*(sqrtf(5) - 1.0f));`, respectively.
 
-\anchor fig4
-\image html dodecahedron.png "Fig. 4: The dodecahedron in its initial orientation (left) and rotated (right)." width=75%
+\anchor fig5
+\image html dodecahedron.png "Fig. 5: The dodecahedron in its initial orientation (left) and rotated (right)." width=75%
 
 The dodecahedron mesh created by `DirectX::GeometricPrimitive::CreateDodecahedron`
-has default orientation is shown in \ref fig4 "Fig. 4", whereas we
+has default orientation is shown in \ref fig5 "Fig. 5", whereas we
 want its initial orientation to be with one face flat on the ground
 as shown in the appropriate frame of \ref fig1 "Fig. 1".
 This can be fixed by rotating it around its Z-axis by one half the _dihedral angle_,
@@ -261,17 +270,17 @@ The Cartesian coordinates of the vertices of a regular icosahedron of circumradi
 \f]
 where \f$\phi = (\sqrt{5} + 1)/2\f$.
 
-The inradius of the icosahedron created by `DirectX::GeometricPrimitive::CreateIcosahedron`
+The in-radius of the icosahedron created by `DirectX::GeometricPrimitive::CreateIcosahedron`
 is equal to \f$1\f$.
 Therefore the scale and vertical height of the icosahedron
 object instance descriptor `CGame::CreateObjects` are both equal to
 `m_IcosahedronSize`.
 
-\anchor fig5
-\image html icosahedron.png "Fig. 5: The icosahedron in its initial orientation (left) and rotated (right)." width=75%
+\anchor fig6
+\image html icosahedron.png "Fig. 6: The icosahedron in its initial orientation (left) and rotated (right)." width=75%
 
 The icosahedron mesh created by `DirectX::GeometricPrimitive::CreateIcosahedron`
-has default orientation is shown in \ref fig5 "Fig. 5", whereas we
+has default orientation is shown in \ref fig6 "Fig. 6", whereas we
 want its initial orientation to be with one face flat on the ground
 as shown in the appropriate frame of \ref fig1 "Fig. 1".
 This can be fixed by rotating it around its X-axis by one half the _dihedral angle_,
@@ -285,13 +294,12 @@ descriptor used to create the icosahedron object in `CGame::CreateObjects` is
 \anchor section5-1-4
 ###5.1.4 The Teapot
 
-\anchor fig6
-\image html teapot.png "Fig. 6: The teapot." width=40%
+\anchor fig7
+\image html teapot.png "Fig. 7: The teapot." width=40%
 
 Amusingly, the geometric primitives provided by DirectX include the teapot
 (commonly known as the <a href="https://en.wikipedia.org/wiki/Utah_teapot">Utah teapot</a>).
-Our teapot is shown in \ref fig6 "Fig. 6".
-
+Our teapot is shown in \ref fig7 "Fig. 7".
 
 The teapot object is an instance of `CObject` created in
 `CObjectManager::Create`, which takes as a parameter an instance descriptor `CInstanceDesc`.
@@ -426,33 +434,154 @@ and work there.
 \anchor problem15-1
 ## Problem 15.1
 
-\anchor fig7
-@image html octahedron.png "Fig. 7: A regular octahedron in its initial orientation (left) and rotated (right)."  width=75%
+\anchor fig8
+@image html octahedron.png "Fig. 8: A regular octahedron in its initial orientation (left) and rotated (right)."  width=75%
 
 <div style="padding-left: 30px;" markdown="1">
 A <a href="https://en.wikipedia.org/wiki/Regular_octahedron">regular octahedron</a>
 has 6 vertices, 12 edges, and 8 triangular faces.
-Make a regular octahedron as shown in \ref fig7 "Fig. 7".
+Make a regular octahedron as shown in \ref fig8 "Fig. 8".
+Here are the steps you need to take.
+<ol>
+<li>
+In `GameDefines.h`, add `Octahedron` to the definition of `eMesh` and add
+`Octahedron` to the definition of `eObject`. Then, `eObject::Octahedron`
+denote the type of an octahedron object and `eMesh::Octahedron` will denote
+the polygon mesh of an octahedron (which potentially be used for
+many octahedron oblects).
+</li>
+
+<li>
+In `CCommon`, add the following protected member variable.
+You can modify this value to change the octahedron's size.
+
+    const float m_fOctahedronSize = 24.0f;
+</li>
+
+<li>
+In `CGame::CreateObjects`, add the following code to create the octagon object.
+
+    d.m_eModelType = eModel::Unknown;
+    d.m_eMeshType = eMesh::Octahedron;
+    d.m_fScale = m_fOctahedronSize;
+    d.m_vPos = Vector3(-200.0f, d.m_fScale/sqrtf(6.0f), -100.0f);
+    const Vector3 v = Sage::Normalize(Vector3::UnitZ - Vector3::UnitX);
+    d.m_qOrientation = Quaternion::CreateFromAxisAngle(v, XM_PI/3.0f);
+    d.m_fMass = 3.0f;
+    d.m_fRestitution = 1.0f;
+    d.m_fFriction = 0.9f;
+  
+    m_pObjectManager->Create(eObject::Octahedron, d);
+
+The initial position `d.m_vPos` and orientation `d.m_qOrientation`
+need some explanation. The line
+
+  d.m_vPos = Vector3(-200.0f, d.m_fScale/sqrtf(6.0f), -100.0f);
+
+sets the position of the center of the octahedron, which is at
+\f$(x, z) = (-200, -100)\f$ on the plane of the floor.
+Note that `GeometricPrimitive::CreateOctahedron` creates an octagon mesh
+for an octagon of unit side and that the in-radius of such
+an octagon is \f$1/\sqrt{6}\f$. We will be scaling up by `d.m_fScale`,
+which gives an octahedron of side `d.m_fScale` and in-radius `d.m_fScale/sqrtf(6.0f)`,
+assuming that we can rotate it so that a flat face is parallel to the ground.
+The \f$y\f$ coordinate of `d.m_vPos` is therefore set to `d.m_fScale/sqrtf(6.0f)`.
+Unfortunately `GeometricPrimitive::CreateOctahedron` creates an octahedron
+mesh with the point down as shown in \ref fig8 "Fig. 8" (left).
+We can bring a face parallel to the floor by rotating about an
+axis parallel to a horizontal edge by \f$\pi/3\f$.
+We will use the axis of rotation to be in the direction of \f$(-1, 0, 1)\f$,
+which we obtain by subtracting the unit \f$x\f$ vector
+from the unit \f$y\f$ vector and normalizing the result `v`.
+
+    const Vector3 v = Sage::Normalize(Vector3::UnitZ - Vector3::UnitX);
+
+The octahedron's orientation is therefore the quaternion that rotates about `v`
+by \f$\pi/3\f$:
+
+    d.m_qOrientation = Quaternion::CreateFromAxisAngle(v, XM_PI/3.0f)
+
+</li>
+
+<li>
+In the `switch` statement of `CRenderer::UploadPrimitiveMesh`,
+add the following to create the octagon mesh.
+
+    case eMesh::Octahedron: GeometricPrimitive::CreateOctahedron(
+      pDesc->m_vecVertexBuffer, pDesc->m_vecIndexBuffer, pDesc->m_fScale);
+      break;
+</li>
+
+<li>
+In `CRenderer::LoadGeometricPrimitives`, add the following code
+which creates a mesh descriptor, sets the scale to `CCommon::m_fOctahedronSize`,
+textures it with a marble texture (which is already set in `GameSettings.xml`
+to the file `Media\Textures\marble.dds` which in turn is provided in the
+<span style="background-color:#D8E4D8;">Bullet Physics Block Toy</span>),
+sets the default effect (lighting etc.), and uploads the mesh
+by calling `CRenderer::UploadPrimitiveMesh`, which you updated in
+the previous step.
+
+    pDesc = new CMeshDesc(eMesh::Octahedron);
+    pDesc->m_fScale = m_fOctahedronSize;
+    UploadTexture("marble", eMesh::Octahedron);
+    UploadDefaultEffect(pDesc);
+    UploadPrimitiveMesh(pDesc);
+</li>
+</ol>
 </div>
 
 \anchor problem15-2
 ## Problem 15.2
 
-\anchor fig8
-@image html column.png "Fig. 8: A cylinder."  width=30%
+\anchor fig9
+@image html column.png "Fig. 9: A cylinder."  width=30%
 
 <div style="padding-left: 30px;" markdown="1">
-Make a cylinder.
+Following the method described in \ref problem15-1 "Problem 15.1"
+with the appropriate modifications,
+create a cylinder of mesh type `eMesh::Cylinder`
+of radius \f$8\f$ and height \f$40\f$ at position \f$(x, z) = (80, -100)\f$
+with the `marble` texture, as shown in \ref fig9 "Fig. 9".
 </div>
 
 \anchor problem15-3
 ## Problem 15.3
 
-\anchor fig9
-@image html cone.png "Fig. 9: A cone."  width=30%
+\anchor fig10
+@image html cone.png "Fig. 10: A cone."  width=30%
 
 <div style="padding-left: 30px;" markdown="1">
-Make a cone.
+Following the method described in \ref problem15-1 "Problem 15.1"
+with the appropriate modifications,
+create a cone of mesh type `eMesh::Cone`
+of radius \f$20\f$ and height \f$40\f$ at position \f$(x, z) = (120, -100)\f$
+with the `marble` texture, as shown in \ref fig10 "Fig. 10".
+</div>
+
+\anchor problem15-4
+## Problem 15.4
+
+\anchor fig11
+@image html pyramid.png "Fig. 11: A pyramid."  width=30%
+
+<div style="padding-left: 30px;" markdown="1">
+Following the method described in \ref problem15-1 "Problem 15.1"
+with the appropriate modifications,
+create a pyramid with a square base and equilateral triangle sides
+of mesh type `eMesh::Pyramid`
+of  height \f$40\f$ and the appropriate radius needed
+to make the triangle sides equilateral (you'll need to do some geometry)
+at position \f$(x, z) = (160, -100)\f$
+with the `marble` texture, as shown in \ref fig11 "Fig. 11".
+Unfortunately `GeometricPrimitive` does not have a `CreatePyramid` function,
+but `GeometricPrimitive::CreateCone` has an optional fifth parameter
+that specifies the number of sides in cone's base (recalling from
+\ref section5-1 "Section 5.1" that the circular base is approximated by
+a series of straight lines). Simply create the pyramid mesh by calling
+
+    GeometricPrimitive::CreateCone(pDesc->m_vecVertexBuffer, pDesc->m_vecIndexBuffer,
+      pDesc->m_fRadius, pDesc->m_fScale, 4);
 </div>
 
 \anchor section7
@@ -462,7 +591,6 @@ This 3D toy is pretty rudimentary. Here is a To Do list of things that I need to
 
 + Add the ability to use a convex hull for collisions on the models. I've gotten it working on the geometric primitives, but that's only because I save a local copy of the vertices. I've tried to access the vertices in a `Model`, but there seems to be no local copy. I can either override the DirectX function that loads from an `sdkmesh` or bite the bullet and write an `obj` file loader (saving a local copy of the vertex buffer in either). 
 + An `obj` file reader might be a good idea anyway. While you might prefer to shop a game with models in `sdkmesh` format, it might be better if we could use `obj`s in class.
-+ Add in the rest of the geometric primitives that DirectXTK12 provides, including cylinders and cones.
 + Use Bullet joints to make a table out of 4 cylinders and a block with bounding boxes around each part. Have the table come apart after enough hits.
 + Currently the camera can pass through objects, which is why back-face culling is currently turned off. Use Bullet Physics to prevent this from happening, then turn on back-face culling for a 2x increase in rendering speed.
 + A lot of the parameters for meshes and models are hard-coded. It would be better to read them from `gamesettings.xml` along with the other settings instead. Derive a class from `Sage::CSettings` and write the code for this.
