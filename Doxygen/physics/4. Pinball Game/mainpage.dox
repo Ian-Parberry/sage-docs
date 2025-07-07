@@ -49,6 +49,9 @@ and
 <td>Help (this document)</td>
 <tr>
 <td><center>F2</center></td>
+<td>Toggle frame rate display</td>
+<tr>
+<td><center>F3</center></td>
 <td>Toggle draw mode from "sprites only", to "sprites and lines", to "lines only"</td>
 <tr>
 <td><center>Space</center></td>

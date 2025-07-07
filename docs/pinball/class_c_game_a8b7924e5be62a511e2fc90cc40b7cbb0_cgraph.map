@@ -1,7 +1,9 @@
 <map id="CGame::RenderFrame" name="CGame::RenderFrame">
-<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,31,159,57"/>
+<area shape="rect" id="Node000001" title="Render an animation frame." alt="" coords="5,56,159,83"/>
 <area shape="rect" id="Node000002" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="231,5,389,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,33,215,27,215,32,159,38"/>
-<area shape="rect" id="Node000003" href="$class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="207,56,413,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,50,192,53,191,59,159,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,53,231,33,232,39,146,58"/>
+<area shape="rect" id="Node000003" href="$class_c_game.html#ad55e21c71b4cef261a09fca0520012f5" title="Draw frame rate text to screen." alt="" coords="212,56,408,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,67,196,67,196,72,159,72"/>
+<area shape="rect" id="Node000004" href="$class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="207,107,413,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,81,232,100,231,105,145,86"/>
 </map>

@@ -6,8 +6,8 @@
 <area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="164,235,204,230,205,235,165,240"/>
 <area shape="rect" id="Node000014" href="$class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="223,259,376,285"/>
 <area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="165,253,208,258,207,264,164,259"/>
-<area shape="rect" id="Node000024" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="223,360,376,387"/>
-<area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="111,258,264,349,261,354,108,263"/>
+<area shape="rect" id="Node000024" href="$class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="223,385,376,412"/>
+<area shape="poly" id="edge32_Node000001_Node000024" title=" " alt="" coords="107,258,269,374,266,379,104,263"/>
 <area shape="rect" id="Node000003" href="$class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Create and launch a ball." alt="" coords="734,5,851,32"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,78,378,59,434,41,509,28,585,20,718,15,719,20,586,26,510,34,436,47,379,64,331,83"/>
 <area shape="rect" id="Node000006" href="$class_c_object_manager.html#acd7fa3e1aa7512c071b0897c2c9d3a3b" title="Flip left flipper." alt="" coords="453,56,623,83"/>
@@ -56,7 +56,9 @@
 <area shape="poly" id="edge29_Node000022_Node000004" title=" " alt="" coords="1123,357,1147,346,1195,305,1261,243,1265,247,1198,309,1149,350,1126,362"/>
 <area shape="poly" id="edge30_Node000022_Node000005" title=" " alt="" coords="1142,363,1429,315,1430,320,1143,368"/>
 <area shape="rect" id="Node000025" href="$class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="459,360,617,387"/>
-<area shape="poly" id="edge33_Node000024_Node000025" title=" " alt="" coords="377,371,444,371,444,376,377,376"/>
-<area shape="rect" id="Node000026" href="$class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="435,411,641,437"/>
-<area shape="poly" id="edge34_Node000024_Node000026" title=" " alt="" coords="367,385,458,404,457,410,366,390"/>
+<area shape="poly" id="edge33_Node000024_Node000025" title=" " alt="" coords="377,388,443,381,444,386,377,393"/>
+<area shape="rect" id="Node000026" href="$class_c_game.html#ad55e21c71b4cef261a09fca0520012f5" title="Draw frame rate text to screen." alt="" coords="440,411,636,437"/>
+<area shape="poly" id="edge34_Node000024_Node000026" title=" " alt="" coords="377,404,425,409,425,415,377,409"/>
+<area shape="rect" id="Node000027" href="$class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="435,461,641,488"/>
+<area shape="poly" id="edge35_Node000024_Node000027" title=" " alt="" coords="335,410,436,447,462,454,460,459,434,452,333,415"/>
 </map>

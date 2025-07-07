@@ -194,12 +194,19 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a4348d4eda6cc858625e8cac09dcc1e7d" id="r_a4348d4eda6cc858625e8cac09dcc1e7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4348d4eda6cc858625e8cac09dcc1e7d">ProcessState</a> ()</td></tr>
 <tr class="memdesc:a4348d4eda6cc858625e8cac09dcc1e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process game state.  <br /></td></tr>
 <tr class="separator:a4348d4eda6cc858625e8cac09dcc1e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55e21c71b4cef261a09fca0520012f5" id="r_ad55e21c71b4cef261a09fca0520012f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad55e21c71b4cef261a09fca0520012f5">DrawFrameRateText</a> (const XMVECTORF32 &amp;)</td></tr>
+<tr class="memdesc:ad55e21c71b4cef261a09fca0520012f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw frame rate text to screen.  <br /></td></tr>
+<tr class="separator:ad55e21c71b4cef261a09fca0520012f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbc4c1ec3e3ce0cf871d9deb993a4a1" id="r_acbbc4c1ec3e3ce0cf871d9deb993a4a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbbc4c1ec3e3ce0cf871d9deb993a4a1">Launch</a> ()</td></tr>
 <tr class="memdesc:acbbc4c1ec3e3ce0cf871d9deb993a4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and launch a ball.  <br /></td></tr>
 <tr class="separator:acbbc4c1ec3e3ce0cf871d9deb993a4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:aebf03edb5525b616bdefb05d23b9aa36" id="r_aebf03edb5525b616bdefb05d23b9aa36"><td class="memItemLeft" align="right" valign="top"><a id="aebf03edb5525b616bdefb05d23b9aa36" name="aebf03edb5525b616bdefb05d23b9aa36"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bDrawFrameRate</b> = false</td></tr>
+<tr class="memdesc:aebf03edb5525b616bdefb05d23b9aa36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the frame rate. <br /></td></tr>
+<tr class="separator:aebf03edb5525b616bdefb05d23b9aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d6d7b949d4a47b7c5d03c9dbf4be6fd" id="r_a6d6d7b949d4a47b7c5d03c9dbf4be6fd"><td class="memItemLeft" align="right" valign="top"><a id="a6d6d7b949d4a47b7c5d03c9dbf4be6fd" name="a6d6d7b949d4a47b7c5d03c9dbf4be6fd"></a>
 <a class="el" href="_game_defines_8h.html#ae12dcfc1b1e01980b11e116e3af6807f">eGameState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_eGameState</b> = eGameState::Loading</td></tr>
 <tr class="memdesc:a6d6d7b949d4a47b7c5d03c9dbf4be6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game state. <br /></td></tr>
@@ -335,6 +342,51 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title="Begin playing the game." alt="" coords="544,5,687,32"/>
 <area shape="rect" href="class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="343,5,496,32"/>
 <area shape="poly" title=" " alt="" coords="529,21,497,21,497,16,529,16"/>
+<area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
+<area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
+<area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
+<area shape="poly" title=" " alt="" coords="120,21,88,21,88,16,120,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad55e21c71b4cef261a09fca0520012f5" name="ad55e21c71b4cef261a09fca0520012f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55e21c71b4cef261a09fca0520012f5">&#9670;&#160;</a></span>DrawFrameRateText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGame::DrawFrameRateText </td>
+          <td>(</td>
+          <td class="paramtype">const XMVECTORF32 &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the current frame rate to a hard-coded position in the window. The frame rate will be drawn in a hard-coded position using the font specified in <code>GameSettings.xml</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Text color from <code>Colors::</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_game_ad55e21c71b4cef261a09fca0520012f5_icgraph.png" border="0" usemap="#aclass_c_game_ad55e21c71b4cef261a09fca0520012f5_icgraph" alt=""/></div>
+<map name="aclass_c_game_ad55e21c71b4cef261a09fca0520012f5_icgraph" id="aclass_c_game_ad55e21c71b4cef261a09fca0520012f5_icgraph">
+<area shape="rect" title="Draw frame rate text to screen." alt="" coords="544,5,740,32"/>
+<area shape="rect" href="class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="343,5,496,32"/>
+<area shape="poly" title=" " alt="" coords="528,21,496,21,496,16,528,16"/>
 <area shape="rect" href="class_c_game.html#aec83638cb2fdd94ef098132eb59617d8" title="Process an animation frame." alt="" coords="136,5,295,32"/>
 <area shape="poly" title=" " alt="" coords="328,21,295,21,295,16,328,16"/>
 <area shape="rect" href="_main_8cpp.html#a4e25c396385b9a412e9e4c1010076520" title="The main entry point for this application." alt="" coords="5,5,88,32"/>
@@ -600,8 +652,8 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="164,235,204,230,205,235,165,240"/>
 <area shape="rect" href="class_c_game.html#a4348d4eda6cc858625e8cac09dcc1e7d" title="Process game state." alt="" coords="223,259,376,285"/>
 <area shape="poly" title=" " alt="" coords="165,253,208,258,207,264,164,259"/>
-<area shape="rect" href="class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="223,360,376,387"/>
-<area shape="poly" title=" " alt="" coords="111,258,264,349,261,354,108,263"/>
+<area shape="rect" href="class_c_game.html#a8b7924e5be62a511e2fc90cc40b7cbb0" title="Render an animation frame." alt="" coords="223,385,376,412"/>
+<area shape="poly" title=" " alt="" coords="107,258,269,374,266,379,104,263"/>
 <area shape="rect" href="class_c_game.html#acbbc4c1ec3e3ce0cf871d9deb993a4a1" title="Create and launch a ball." alt="" coords="734,5,851,32"/>
 <area shape="poly" title=" " alt="" coords="329,78,378,59,434,41,509,28,585,20,718,15,719,20,586,26,510,34,436,47,379,64,331,83"/>
 <area shape="rect" href="class_c_object_manager.html#acd7fa3e1aa7512c071b0897c2c9d3a3b" title="Flip left flipper." alt="" coords="453,56,623,83"/>
@@ -650,9 +702,11 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="1123,357,1147,346,1195,305,1261,243,1265,247,1198,309,1149,350,1126,362"/>
 <area shape="poly" title=" " alt="" coords="1142,363,1429,315,1430,320,1143,368"/>
 <area shape="rect" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="459,360,617,387"/>
-<area shape="poly" title=" " alt="" coords="377,371,444,371,444,376,377,376"/>
-<area shape="rect" href="class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="435,411,641,437"/>
-<area shape="poly" title=" " alt="" coords="367,385,458,404,457,410,366,390"/>
+<area shape="poly" title=" " alt="" coords="377,388,443,381,444,386,377,393"/>
+<area shape="rect" href="class_c_game.html#ad55e21c71b4cef261a09fca0520012f5" title="Draw frame rate text to screen." alt="" coords="440,411,636,437"/>
+<area shape="poly" title=" " alt="" coords="377,404,425,409,425,415,377,409"/>
+<area shape="rect" href="class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="435,461,641,488"/>
+<area shape="poly" title=" " alt="" coords="335,410,436,447,462,454,460,459,434,452,333,415"/>
 </map>
 </div>
 <div class="dynheader">
@@ -800,11 +854,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph.png" border="0" usemap="#aclass_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph" alt=""/></div>
 <map name="aclass_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph" id="aclass_c_game_a8b7924e5be62a511e2fc90cc40b7cbb0_cgraph">
-<area shape="rect" title="Render an animation frame." alt="" coords="5,31,159,57"/>
+<area shape="rect" title="Render an animation frame." alt="" coords="5,56,159,83"/>
 <area shape="rect" href="class_c_object_manager.html#a849420297e5c9bf08f073d90b448daf8" title="Draw all objects." alt="" coords="231,5,389,32"/>
-<area shape="poly" title=" " alt="" coords="159,33,215,27,215,32,159,38"/>
-<area shape="rect" href="class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="207,56,413,83"/>
-<area shape="poly" title=" " alt="" coords="159,50,192,53,191,59,159,55"/>
+<area shape="poly" title=" " alt="" coords="145,53,231,33,232,39,146,58"/>
+<area shape="rect" href="class_c_game.html#ad55e21c71b4cef261a09fca0520012f5" title="Draw frame rate text to screen." alt="" coords="212,56,408,83"/>
+<area shape="poly" title=" " alt="" coords="159,67,196,67,196,72,159,72"/>
+<area shape="rect" href="class_c_object_manager.html#a540f9609ea9a116178aec2c9a43a338a" title="Draw outlines of all objects." alt="" coords="207,107,413,133"/>
+<area shape="poly" title=" " alt="" coords="146,81,232,100,231,105,145,86"/>
 </map>
 </div>
 <div class="dynheader">
